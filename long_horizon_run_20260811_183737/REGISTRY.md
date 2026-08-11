@@ -19,11 +19,13 @@
 
 | HID | Claim | Evidence level | Next test |
 |---|---|---|---|
-| LH-A1 | Score-based `U_small_r2` is too narrow; **joint blocker VC Rem** for easiest-q pairs may admit legal r=2 shells | OPEN | Blocker-pair → multi-add exact microproblems |
-| LH-A2 | Global r=1 shell around official n100 S0 is empty of +1 (Gate1) | `GLOBAL_SHELL_EXCLUSION` | Negative-control already PASS; do not re-spend |
-| LH-C1 | V=3 plateaus at \|S\|=165 are structurally near-legal (few witness triples); exact local repair can kill residual V | OPEN | Analyze V3 elites; exact repair on witness support |
-| LH-B1 | Type-0/1 defect orbits can reach 165 under legality | OPEN / Wave2 TIMEOUT-heavy | Cheap smoke then diversify; avoid replaying same TIMEOUT seeds |
-| LH-D1 | Residual-conflict communities of V>0 elites yield smaller exact models than Hamming universes | OPEN | After LH-C1 structure dump |
+| LH-A1 | Joint blocker VC Rem for easiest-q pairs admits r=2 shells | **REJECTED** (joint_VC=4 always) | see LH-F001 |
+| LH-A2 | Global r=1 shell around official n100 S0 empty of +1 | `GLOBAL_SHELL_EXCLUSION` | do not re-spend |
+| LH-A3 | Low-LB cells have complementary (low joint VC) pairs | **REJECTED on 85-q sample** | LH-F002; try fullrem LB≤4 Add next |
+| LH-A4 | `U_fullrem_LBle4_r2` admits legal 165 | OPEN | CP-SAT now |
+| LH-C1 | V=3 elites locally refillable to V=0 at \|S\|=165 | **REJECTED for tested halos** | LH-F003 |
+| LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy | short smokes only |
+| LH-D1 | Residual communities beat Hamming U | **weakened** — refill infeasible; nonlocal free still open | |
 
 ## Frozen Wave2 facts (import)
 

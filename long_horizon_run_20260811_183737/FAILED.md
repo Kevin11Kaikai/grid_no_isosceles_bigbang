@@ -41,4 +41,18 @@
 
 ## This run
 
-_(append as experiments conclude)_
+### LH-F001 — easiest-16 pairwise co-insertion at r=2
+- Evidence: `EXPERIMENTS/LH1_blocker_pair/blocker_pair_pilot_n100.json` — joint_VC=4 for all 120 pairs; 0 pair-legal cores; 0 feasible 165.
+- Level: necessary-condition + enumeration under cover Rem.
+- Status: **DEAD** for “two exact-2 cells with |R|=2”.
+
+### LH-F002 — low-LB complementary pairs (broader sample)
+- Evidence: `mixed_pair_vc_scan.json`, `complementary_blocker_pairs.json` (85 qs / 3570 pairs): 0 with joint_VC≤3.
+- Level: finite verified on sampled qs (not all C(9836,2)).
+- Status: **DEAD as primary hope** that easy cells pair cheaply; reopen only with proof of complementary high-LB pairs or full-pair certificate search.
+
+### LH-F003 — V=3/V=2 elite residual refill
+- Evidence: `LH1_v3_residual/*`, `LH1_n64_sandbox/n64_v2_residual_refill.json` — cores legal; refill to 165/113 in involved∪halo (and expanded R_free) `INFEASIBLE_SCOPED`.
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD those refill universes**; do not spend primary budget re-refilling same elites without nonlocal free-sets.
+
