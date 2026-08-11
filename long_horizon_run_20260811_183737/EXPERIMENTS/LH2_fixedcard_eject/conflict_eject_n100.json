@@ -1,0 +1,44 @@
+{
+  "any_v0": false,
+  "best_V": 4,
+  "results": [
+    {
+      "accepts": 2,
+      "best_V": 4,
+      "iters": 1729,
+      "points": null,
+      "seed": 301,
+      "status": "BEST_V",
+      "wall_s": 75.02907276153564
+    },
+    {
+      "accepts": 4,
+      "best_V": 4,
+      "iters": 1571,
+      "points": null,
+      "seed": 302,
+      "status": "BEST_V",
+      "wall_s": 75.00404357910156
+    },
+    {
+      "accepts": 1,
+      "best_V": 8,
+      "iters": 1569,
+      "points": null,
+      "seed": 303,
+      "status": "BEST_V",
+      "wall_s": 75.0123291015625
+    },
+    {
+      "accepts": 1,
+      "best_V": 8,
+      "iters": 1572,
+      "points": null,
+      "seed": 304,
+      "status": "BEST_V",
+      "wall_s": 75.00046873092651
+    }
+  ],
+  "schema": "lh2_fixedcard_conflict_eject_v1",
+  "wall_s": 300.1453833580017
+}

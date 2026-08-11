@@ -1,0 +1,482 @@
+{
+  "schema": "grid_no_isosceles.search_result.v1",
+  "method": "orbit_defect_search",
+  "n": 100,
+  "target_size": 165,
+  "symmetry_type": 2,
+  "axis_offset": [
+    100,
+    100
+  ],
+  "axis_comment": "Reflection about n/2 axes (e.g. 32 for n=64, axes at X.0, Y.0)",
+  "mode": "defect",
+  "defect_budget": {
+    "min": 1,
+    "max": 8
+  },
+  "core_def": {
+    "soft_core": true,
+    "fix_core": false,
+    "n_core_orbits": 0,
+    "core_orbit_ids": [],
+    "core_points_note": 0
+  },
+  "universe": {
+    "universe_id": "orb_t2_defect_core0_free101_def120_part0_h8",
+    "fingerprint": "1161a3e347f75addaa82c320bf16f241a8098f76fd456359e53a616ccdfd0fd5",
+    "n_free_orbits": 101,
+    "n_defect_points": 120,
+    "n_partial_orbits": 0,
+    "notes": {
+      "halo_radius": 8,
+      "max_extra_orbits": 100,
+      "max_defect_pool": 120,
+      "agent_c_universe": "U_medium",
+      "baseline_fully_present_full": 0,
+      "baseline_partial": 130,
+      "include_truncated_as_partial": true,
+      "core_points": 0
+    }
+  },
+  "model_hash": "246fd3927a5d800fe47cd0df1205b1ffd824128c92d088311d0e2f9ab9357192",
+  "solver_status": "TIMEOUT",
+  "wall_time_s": 1800.1396217346191,
+  "time_budget_s": 1800.0,
+  "seed": 34,
+  "num_workers": 5,
+  "git_commit": "6126ae3f93d5b4be31b4fcf7c97069c05e32e50f",
+  "rounds": 65,
+  "final_cuts": 1445,
+  "round_log": [
+    {
+      "round": 1,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.636444091796875,
+      "selected_size": 165,
+      "cuts": 0,
+      "violations": 2380,
+      "cuts_added": 375
+    },
+    {
+      "round": 2,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.6850683689117432,
+      "selected_size": 165,
+      "cuts": 375,
+      "violations": 1268,
+      "cuts_added": 282
+    },
+    {
+      "round": 3,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.7473275661468506,
+      "selected_size": 165,
+      "cuts": 657,
+      "violations": 1032,
+      "cuts_added": 212
+    },
+    {
+      "round": 4,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.8103270530700684,
+      "selected_size": 165,
+      "cuts": 869,
+      "violations": 1244,
+      "cuts_added": 360
+    },
+    {
+      "round": 5,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.7909197807312012,
+      "selected_size": 165,
+      "cuts": 1229,
+      "violations": 625,
+      "cuts_added": 216
+    },
+    {
+      "round": 6,
+      "cpsat_status": "UNKNOWN",
+      "t": 31.862460613250732,
+      "cuts": 1445
+    },
+    {
+      "round": 7,
+      "cpsat_status": "UNKNOWN",
+      "t": 61.919429302215576,
+      "cuts": 1445
+    },
+    {
+      "round": 8,
+      "cpsat_status": "UNKNOWN",
+      "t": 91.9669258594513,
+      "cuts": 1445
+    },
+    {
+      "round": 9,
+      "cpsat_status": "UNKNOWN",
+      "t": 122.01918816566467,
+      "cuts": 1445
+    },
+    {
+      "round": 10,
+      "cpsat_status": "UNKNOWN",
+      "t": 152.07001042366028,
+      "cuts": 1445
+    },
+    {
+      "round": 11,
+      "cpsat_status": "UNKNOWN",
+      "t": 182.12325072288513,
+      "cuts": 1445
+    },
+    {
+      "round": 12,
+      "cpsat_status": "UNKNOWN",
+      "t": 212.17716598510742,
+      "cuts": 1445
+    },
+    {
+      "round": 13,
+      "cpsat_status": "UNKNOWN",
+      "t": 242.2306125164032,
+      "cuts": 1445
+    },
+    {
+      "round": 14,
+      "cpsat_status": "UNKNOWN",
+      "t": 272.275009393692,
+      "cuts": 1445
+    },
+    {
+      "round": 15,
+      "cpsat_status": "UNKNOWN",
+      "t": 302.3493251800537,
+      "cuts": 1445
+    },
+    {
+      "round": 16,
+      "cpsat_status": "UNKNOWN",
+      "t": 332.44133615493774,
+      "cuts": 1445
+    },
+    {
+      "round": 17,
+      "cpsat_status": "UNKNOWN",
+      "t": 362.49164056777954,
+      "cuts": 1445
+    },
+    {
+      "round": 18,
+      "cpsat_status": "UNKNOWN",
+      "t": 392.5462145805359,
+      "cuts": 1445
+    },
+    {
+      "round": 19,
+      "cpsat_status": "UNKNOWN",
+      "t": 422.59866094589233,
+      "cuts": 1445
+    },
+    {
+      "round": 20,
+      "cpsat_status": "UNKNOWN",
+      "t": 452.6538245677948,
+      "cuts": 1445
+    },
+    {
+      "round": 21,
+      "cpsat_status": "UNKNOWN",
+      "t": 482.7084925174713,
+      "cuts": 1445
+    },
+    {
+      "round": 22,
+      "cpsat_status": "UNKNOWN",
+      "t": 512.7552025318146,
+      "cuts": 1445
+    },
+    {
+      "round": 23,
+      "cpsat_status": "UNKNOWN",
+      "t": 542.8061480522156,
+      "cuts": 1445
+    },
+    {
+      "round": 24,
+      "cpsat_status": "UNKNOWN",
+      "t": 572.8627355098724,
+      "cuts": 1445
+    },
+    {
+      "round": 25,
+      "cpsat_status": "UNKNOWN",
+      "t": 602.9177293777466,
+      "cuts": 1445
+    },
+    {
+      "round": 26,
+      "cpsat_status": "UNKNOWN",
+      "t": 633.0097725391388,
+      "cuts": 1445
+    },
+    {
+      "round": 27,
+      "cpsat_status": "UNKNOWN",
+      "t": 663.1327934265137,
+      "cuts": 1445
+    },
+    {
+      "round": 28,
+      "cpsat_status": "UNKNOWN",
+      "t": 693.183746099472,
+      "cuts": 1445
+    },
+    {
+      "round": 29,
+      "cpsat_status": "UNKNOWN",
+      "t": 723.2397074699402,
+      "cuts": 1445
+    },
+    {
+      "round": 30,
+      "cpsat_status": "UNKNOWN",
+      "t": 753.3710820674896,
+      "cuts": 1445
+    },
+    {
+      "round": 31,
+      "cpsat_status": "UNKNOWN",
+      "t": 783.4291548728943,
+      "cuts": 1445
+    },
+    {
+      "round": 32,
+      "cpsat_status": "UNKNOWN",
+      "t": 813.5022213459015,
+      "cuts": 1445
+    },
+    {
+      "round": 33,
+      "cpsat_status": "UNKNOWN",
+      "t": 843.5637381076813,
+      "cuts": 1445
+    },
+    {
+      "round": 34,
+      "cpsat_status": "UNKNOWN",
+      "t": 873.6157326698303,
+      "cuts": 1445
+    },
+    {
+      "round": 35,
+      "cpsat_status": "UNKNOWN",
+      "t": 903.6664931774139,
+      "cuts": 1445
+    },
+    {
+      "round": 36,
+      "cpsat_status": "UNKNOWN",
+      "t": 933.8023629188538,
+      "cuts": 1445
+    },
+    {
+      "round": 37,
+      "cpsat_status": "UNKNOWN",
+      "t": 963.8746013641357,
+      "cuts": 1445
+    },
+    {
+      "round": 38,
+      "cpsat_status": "UNKNOWN",
+      "t": 993.9233484268188,
+      "cuts": 1445
+    },
+    {
+      "round": 39,
+      "cpsat_status": "UNKNOWN",
+      "t": 1023.9799191951752,
+      "cuts": 1445
+    },
+    {
+      "round": 40,
+      "cpsat_status": "UNKNOWN",
+      "t": 1054.052628993988,
+      "cuts": 1445
+    },
+    {
+      "round": 41,
+      "cpsat_status": "UNKNOWN",
+      "t": 1084.0788178443909,
+      "cuts": 1445
+    },
+    {
+      "round": 42,
+      "cpsat_status": "UNKNOWN",
+      "t": 1114.1186952590942,
+      "cuts": 1445
+    },
+    {
+      "round": 43,
+      "cpsat_status": "UNKNOWN",
+      "t": 1144.146829366684,
+      "cuts": 1445
+    },
+    {
+      "round": 44,
+      "cpsat_status": "UNKNOWN",
+      "t": 1174.2129051685333,
+      "cuts": 1445
+    },
+    {
+      "round": 45,
+      "cpsat_status": "UNKNOWN",
+      "t": 1204.2711589336395,
+      "cuts": 1445
+    },
+    {
+      "round": 46,
+      "cpsat_status": "UNKNOWN",
+      "t": 1234.3747375011444,
+      "cuts": 1445
+    },
+    {
+      "round": 47,
+      "cpsat_status": "UNKNOWN",
+      "t": 1264.4270124435425,
+      "cuts": 1445
+    },
+    {
+      "round": 48,
+      "cpsat_status": "UNKNOWN",
+      "t": 1294.4848647117615,
+      "cuts": 1445
+    },
+    {
+      "round": 49,
+      "cpsat_status": "UNKNOWN",
+      "t": 1324.5216927528381,
+      "cuts": 1445
+    },
+    {
+      "round": 50,
+      "cpsat_status": "UNKNOWN",
+      "t": 1354.5740566253662,
+      "cuts": 1445
+    },
+    {
+      "round": 51,
+      "cpsat_status": "UNKNOWN",
+      "t": 1384.73819231987,
+      "cuts": 1445
+    },
+    {
+      "round": 52,
+      "cpsat_status": "UNKNOWN",
+      "t": 1414.7887377738953,
+      "cuts": 1445
+    },
+    {
+      "round": 53,
+      "cpsat_status": "UNKNOWN",
+      "t": 1444.8384869098663,
+      "cuts": 1445
+    },
+    {
+      "round": 54,
+      "cpsat_status": "UNKNOWN",
+      "t": 1474.9287374019623,
+      "cuts": 1445
+    },
+    {
+      "round": 55,
+      "cpsat_status": "UNKNOWN",
+      "t": 1504.9832425117493,
+      "cuts": 1445
+    },
+    {
+      "round": 56,
+      "cpsat_status": "UNKNOWN",
+      "t": 1535.1264765262604,
+      "cuts": 1445
+    },
+    {
+      "round": 57,
+      "cpsat_status": "UNKNOWN",
+      "t": 1565.2249007225037,
+      "cuts": 1445
+    },
+    {
+      "round": 58,
+      "cpsat_status": "UNKNOWN",
+      "t": 1595.2822365760803,
+      "cuts": 1445
+    },
+    {
+      "round": 59,
+      "cpsat_status": "UNKNOWN",
+      "t": 1625.3334593772888,
+      "cuts": 1445
+    },
+    {
+      "round": 60,
+      "cpsat_status": "UNKNOWN",
+      "t": 1655.4248614311218,
+      "cuts": 1445
+    },
+    {
+      "round": 61,
+      "cpsat_status": "UNKNOWN",
+      "t": 1685.4803369045258,
+      "cuts": 1445
+    },
+    {
+      "round": 62,
+      "cpsat_status": "UNKNOWN",
+      "t": 1715.528240442276,
+      "cuts": 1445
+    },
+    {
+      "round": 63,
+      "cpsat_status": "UNKNOWN",
+      "t": 1745.6187505722046,
+      "cuts": 1445
+    },
+    {
+      "round": 64,
+      "cpsat_status": "UNKNOWN",
+      "t": 1775.668935060501,
+      "cuts": 1445
+    },
+    {
+      "round": 65,
+      "cpsat_status": "UNKNOWN",
+      "t": 1800.0542531013489,
+      "cuts": 1445
+    }
+  ],
+  "points": [],
+  "size": 0,
+  "points_hash": null,
+  "parent_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "defect_accounting": null,
+  "verify": {
+    "A": null,
+    "B": null
+  },
+  "scope": {
+    "n": 100,
+    "symmetry_type": 2,
+    "mode": "defect",
+    "defect_budget": [
+      1,
+      8
+    ],
+    "universe_id": "orb_t2_defect_core0_free101_def120_part0_h8",
+    "time_limit_s": 1800.0,
+    "seed": 34,
+    "model_hash": "246fd3927a5d800fe47cd0df1205b1ffd824128c92d088311d0e2f9ab9357192"
+  },
+  "candidate_path": null,
+  "pilot_tag": "long_n100_t2_defect_d1-8_s34",
+  "pilot_wall_time_s": 1800.2365863323212
+}
