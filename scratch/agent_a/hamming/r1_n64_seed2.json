@@ -1,0 +1,158 @@
+{
+  "command": "D:\\others\\grid_no_isosceles_bigbang\\src\\search\\hamming_shell_conflict.py --n 64 --r 1 --u-id U_small --seed 2 --time-budget-s 600 --per-round-s 30 --workers 5 --symmetry-mode asymmetric --out scratch/agent_a/hamming/r1_n64_seed2.json --checkpoint scratch/agent_a/checkpoints/r1_n64_seed2.ckpt.json --manifest scratch/agent_a/manifest.jsonl",
+  "meta": {
+    "best_illegal_V": 4,
+    "claim_note": "INFEASIBLE under declared scope only; not a global upper bound",
+    "final_cuts": 45,
+    "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+    "num_workers": 5,
+    "round_log": [
+      {
+        "V": 11,
+        "cuts_added": 4,
+        "n_cuts_total": 0,
+        "n_witness_cuts": 11,
+        "round": 1,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.016222000122070312
+      },
+      {
+        "V": 6,
+        "cuts_added": 5,
+        "n_cuts_total": 4,
+        "n_witness_cuts": 6,
+        "round": 2,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.055159568786621094
+      },
+      {
+        "V": 14,
+        "cuts_added": 3,
+        "n_cuts_total": 9,
+        "n_witness_cuts": 14,
+        "round": 3,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.08725905418395996
+      },
+      {
+        "V": 10,
+        "cuts_added": 5,
+        "n_cuts_total": 12,
+        "n_witness_cuts": 10,
+        "round": 4,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.11990594863891602
+      },
+      {
+        "V": 8,
+        "cuts_added": 4,
+        "n_cuts_total": 17,
+        "n_witness_cuts": 8,
+        "round": 5,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.1497211456298828
+      },
+      {
+        "V": 5,
+        "cuts_added": 2,
+        "n_cuts_total": 21,
+        "n_witness_cuts": 5,
+        "round": 6,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.16492652893066406
+      },
+      {
+        "V": 7,
+        "cuts_added": 3,
+        "n_cuts_total": 23,
+        "n_witness_cuts": 7,
+        "round": 7,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.18103289604187012
+      },
+      {
+        "V": 13,
+        "cuts_added": 5,
+        "n_cuts_total": 26,
+        "n_witness_cuts": 13,
+        "round": 8,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.20369696617126465
+      },
+      {
+        "V": 8,
+        "cuts_added": 3,
+        "n_cuts_total": 31,
+        "n_witness_cuts": 8,
+        "round": 9,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.23600387573242188
+      },
+      {
+        "V": 6,
+        "cuts_added": 4,
+        "n_cuts_total": 34,
+        "n_witness_cuts": 6,
+        "round": 10,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.26720595359802246
+      },
+      {
+        "V": 4,
+        "cuts_added": 3,
+        "n_cuts_total": 38,
+        "n_witness_cuts": 4,
+        "round": 11,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.282482385635376
+      },
+      {
+        "V": 7,
+        "cuts_added": 4,
+        "n_cuts_total": 41,
+        "n_witness_cuts": 7,
+        "round": 12,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.2974820137023926
+      },
+      {
+        "n_cuts": 45,
+        "round": 13,
+        "solver_status": "INFEASIBLE",
+        "t": 0.3135793209075928
+      }
+    ],
+    "rounds": 13,
+    "scope": {
+      "U_id": "U_small",
+      "halo": "none",
+      "n": 64,
+      "r": 1,
+      "seed": 2,
+      "symmetry_mode": "asymmetric",
+      "time_limit_s": 600.0,
+      "universe_hash": "34f1c6172b699d0d46ee8dce1ea1eedabd004be4a8d0e0c0a857e05a63ed321e"
+    },
+    "time_to_best_illegal_s": 0.282482385635376,
+    "wall_time_s": 0.3135793209075928
+  },
+  "n_add": 24,
+  "n_rem": 12,
+  "n_vars": 36,
+  "points": null,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "34f1c6172b699d0d46ee8dce1ea1eedabd004be4a8d0e0c0a857e05a63ed321e",
+  "wall_time_s": 0.6806089878082275
+}

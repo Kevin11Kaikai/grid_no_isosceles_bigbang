@@ -1,0 +1,16 @@
+{
+  "replay_not_original_8613": true,
+  "historical_log_missing": true,
+  "note": "Gate 0 optional NEW replay of current lns_exact_repair code; NOT a reconstruction of historical 8613-iter run",
+  "meta": {
+    "iterations": 2829,
+    "milp_calls": 2829,
+    "wall_time_s": 20.00003743171692,
+    "improvements": [],
+    "final_size": 112,
+    "initial_size": 112,
+    "seed": 9001
+  },
+  "best_size": 112,
+  "initial_size": 112
+}

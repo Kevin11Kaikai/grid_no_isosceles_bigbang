@@ -1,0 +1,38 @@
+{
+  "U_small_hash": "34f1c6172b699d0d46ee8dce1ea1eedabd004be4a8d0e0c0a857e05a63ed321e",
+  "V0_candidate_found": false,
+  "claim_note": "INFEASIBLE under scope (n=64,r=1,U_small) only \u2014 not global C(64)<=112",
+  "full_enumeration_confirm": {
+    "best_V": 2,
+    "checked": 3312,
+    "legal_found": false
+  },
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "runs": [
+    {
+      "U_id": "U_small",
+      "best_illegal_V": 6,
+      "file": "scratch/agent_a/hamming/r1_n64_seed1.json",
+      "final_cuts": 46,
+      "n_vars": 36,
+      "rounds": 13,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "34f1c6172b699d0d46ee8dce1ea1eedabd004be4a8d0e0c0a857e05a63ed321e",
+      "wall_time_s": 0.7424066066741943
+    },
+    {
+      "U_id": "U_small",
+      "best_illegal_V": 4,
+      "file": "scratch/agent_a/hamming/r1_n64_seed2.json",
+      "final_cuts": 45,
+      "n_vars": 36,
+      "rounds": 13,
+      "seed": 2,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "34f1c6172b699d0d46ee8dce1ea1eedabd004be4a8d0e0c0a857e05a63ed321e",
+      "wall_time_s": 0.6806089878082275
+    }
+  ],
+  "schema": "agent_a_hamming_n64_r1_summary_v1"
+}

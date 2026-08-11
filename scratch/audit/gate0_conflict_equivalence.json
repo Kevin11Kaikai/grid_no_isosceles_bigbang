@@ -1,0 +1,27 @@
+{
+  "gate": "Gate0",
+  "module": "src/verification/conflict_metric.py",
+  "tests_file": "tests/test_conflict_metric_equivalence.py",
+  "definition": "V(S)=sum_b sum_d C(m_b,d, 2) with m_b,d = count of other points at squared distance d from pivot b",
+  "equivalence_claim": "V(S)==0 iff verifier A accepts iff verifier B accepts (on structurally valid inputs); structurally invalid inputs rejected by all three",
+  "fixed_seeds": {
+    "random_n5": 11,
+    "random_n6": 22,
+    "random_n10": 33,
+    "random_n64": 101,
+    "random_n100": 202,
+    "baseline_perturbations": 7
+  },
+  "unittest_methods": 12,
+  "unittest_result": "OK",
+  "failures": 0,
+  "errors": 0,
+  "first_disagreement": null,
+  "command": "python tests/test_conflict_metric_equivalence.py",
+  "wall_time_s_approx": 0.28,
+  "notes": [
+    "Exhaustive subsets of [4]^2 for k=0..4 inclusive",
+    "Official SOL_64 and SOL_100 both have V=0 and A/B PASS",
+    "Witness cross-check uses illegal set with apex conflicts"
+  ]
+}

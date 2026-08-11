@@ -1,0 +1,523 @@
+{
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "targets": {
+    "n64": 113,
+    "n100": 165
+  },
+  "method": "Subset-sum over sizes of FULL orbits only (truncated/boundary orbits excluded from pure-orbit cardinality).",
+  "status_vocabulary": [
+    "cardinality_unreachable",
+    "cardinality_reachable_but_legality_open",
+    "mapping_semantics_blocked"
+  ],
+  "n64": {
+    "0": {
+      "symmetry_type": 0,
+      "offset": [
+        63,
+        63
+      ],
+      "comment": "Reflection about (n-1)/2 axes (standard for n even, axes at X.5, Y.5)",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": true,
+      "full_orbit_size_multiset": {
+        "4": 1024
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 113,
+        "max_sum": 4096,
+        "num_full_orbits": 1024,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 4,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    },
+    "1": {
+      "symmetry_type": 1,
+      "offset": [
+        62,
+        62
+      ],
+      "comment": "Reflection about n/2-1 axes (e.g. 31 for n=64, axes at X.0, Y.0)",
+      "fixed_full_orbit_coord": [
+        31,
+        31
+      ],
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "1": 1,
+        "2": 62,
+        "4": 961
+      },
+      "cardinality_reachability": {
+        "reachable": true,
+        "target": 113,
+        "max_sum": 3969,
+        "num_full_orbits": 1024,
+        "all_full_orbit_sizes_even": false,
+        "gcd_of_full_orbit_sizes": 1,
+        "proof_if_unreachable": null
+      },
+      "cardinality_status": "cardinality_reachable_but_legality_open",
+      "defects_required_for_cardinality": false,
+      "phase2_guidance": "compare_pure_orbit_vs_orbit_plus_defect",
+      "mapping_semantics_blocked": false
+    },
+    "2": {
+      "symmetry_type": 2,
+      "offset": [
+        64,
+        64
+      ],
+      "comment": "Reflection about n/2 axes (e.g. 32 for n=64, axes at X.0, Y.0)",
+      "fixed_full_orbit_coord": [
+        32,
+        32
+      ],
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "1": 1,
+        "2": 62,
+        "4": 961
+      },
+      "cardinality_reachability": {
+        "reachable": true,
+        "target": 113,
+        "max_sum": 3969,
+        "num_full_orbits": 1024,
+        "all_full_orbit_sizes_even": false,
+        "gcd_of_full_orbit_sizes": 1,
+        "proof_if_unreachable": null
+      },
+      "cardinality_status": "cardinality_reachable_but_legality_open",
+      "defects_required_for_cardinality": false,
+      "phase2_guidance": "compare_pure_orbit_vs_orbit_plus_defect",
+      "mapping_semantics_blocked": false
+    },
+    "3": {
+      "symmetry_type": 3,
+      "offset": [
+        64,
+        63
+      ],
+      "comment": "Mixed symmetry: x-axis at n/2, y-axis at (n-1)/2",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "2": 32,
+        "4": 992
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 113,
+        "max_sum": 4032,
+        "num_full_orbits": 1024,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 2,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    },
+    "4": {
+      "symmetry_type": 4,
+      "offset": [
+        62,
+        63
+      ],
+      "comment": "Mixed symmetry: x-axis at n/2-1, y-axis at (n-1)/2",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "2": 32,
+        "4": 992
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 113,
+        "max_sum": 4032,
+        "num_full_orbits": 1024,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 2,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    },
+    "5": {
+      "symmetry_type": 5,
+      "offset": [
+        63,
+        64
+      ],
+      "comment": "Mixed symmetry: x-axis at (n-1)/2, y-axis at n/2",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "2": 32,
+        "4": 992
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 113,
+        "max_sum": 4032,
+        "num_full_orbits": 1024,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 2,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    },
+    "6": {
+      "symmetry_type": 6,
+      "offset": [
+        63,
+        62
+      ],
+      "comment": "Mixed symmetry: x-axis at (n-1)/2, y-axis at n/2-1",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "2": 32,
+        "4": 992
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 113,
+        "max_sum": 4032,
+        "num_full_orbits": 1024,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 2,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    }
+  },
+  "n100": {
+    "0": {
+      "symmetry_type": 0,
+      "offset": [
+        99,
+        99
+      ],
+      "comment": "Reflection about (n-1)/2 axes (standard for n even, axes at X.5, Y.5)",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": true,
+      "full_orbit_size_multiset": {
+        "4": 2500
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 165,
+        "max_sum": 10000,
+        "num_full_orbits": 2500,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 4,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    },
+    "1": {
+      "symmetry_type": 1,
+      "offset": [
+        98,
+        98
+      ],
+      "comment": "Reflection about n/2-1 axes (e.g. 31 for n=64, axes at X.0, Y.0)",
+      "fixed_full_orbit_coord": [
+        49,
+        49
+      ],
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "1": 1,
+        "2": 98,
+        "4": 2401
+      },
+      "cardinality_reachability": {
+        "reachable": true,
+        "target": 165,
+        "max_sum": 9801,
+        "num_full_orbits": 2500,
+        "all_full_orbit_sizes_even": false,
+        "gcd_of_full_orbit_sizes": 1,
+        "proof_if_unreachable": null
+      },
+      "cardinality_status": "cardinality_reachable_but_legality_open",
+      "defects_required_for_cardinality": false,
+      "phase2_guidance": "compare_pure_orbit_vs_orbit_plus_defect",
+      "mapping_semantics_blocked": false
+    },
+    "2": {
+      "symmetry_type": 2,
+      "offset": [
+        100,
+        100
+      ],
+      "comment": "Reflection about n/2 axes (e.g. 32 for n=64, axes at X.0, Y.0)",
+      "fixed_full_orbit_coord": [
+        50,
+        50
+      ],
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "1": 1,
+        "2": 98,
+        "4": 2401
+      },
+      "cardinality_reachability": {
+        "reachable": true,
+        "target": 165,
+        "max_sum": 9801,
+        "num_full_orbits": 2500,
+        "all_full_orbit_sizes_even": false,
+        "gcd_of_full_orbit_sizes": 1,
+        "proof_if_unreachable": null
+      },
+      "cardinality_status": "cardinality_reachable_but_legality_open",
+      "defects_required_for_cardinality": false,
+      "phase2_guidance": "compare_pure_orbit_vs_orbit_plus_defect",
+      "mapping_semantics_blocked": false
+    },
+    "3": {
+      "symmetry_type": 3,
+      "offset": [
+        100,
+        99
+      ],
+      "comment": "Mixed symmetry: x-axis at n/2, y-axis at (n-1)/2",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "2": 50,
+        "4": 2450
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 165,
+        "max_sum": 9900,
+        "num_full_orbits": 2500,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 2,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    },
+    "4": {
+      "symmetry_type": 4,
+      "offset": [
+        98,
+        99
+      ],
+      "comment": "Mixed symmetry: x-axis at n/2-1, y-axis at (n-1)/2",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "2": 50,
+        "4": 2450
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 165,
+        "max_sum": 9900,
+        "num_full_orbits": 2500,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 2,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    },
+    "5": {
+      "symmetry_type": 5,
+      "offset": [
+        99,
+        100
+      ],
+      "comment": "Mixed symmetry: x-axis at (n-1)/2, y-axis at n/2",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "2": 50,
+        "4": 2450
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 165,
+        "max_sum": 9900,
+        "num_full_orbits": 2500,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 2,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    },
+    "6": {
+      "symmetry_type": 6,
+      "offset": [
+        99,
+        98
+      ],
+      "comment": "Mixed symmetry: x-axis at (n-1)/2, y-axis at n/2-1",
+      "fixed_full_orbit_coord": null,
+      "true_group_action_on_full_grid": false,
+      "full_orbit_size_multiset": {
+        "2": 50,
+        "4": 2450
+      },
+      "cardinality_reachability": {
+        "reachable": false,
+        "target": 165,
+        "max_sum": 9900,
+        "num_full_orbits": 2500,
+        "all_full_orbit_sizes_even": true,
+        "gcd_of_full_orbit_sizes": 2,
+        "proof_if_unreachable": "All FULL orbit sizes are even, target is odd \u21d2 impossible by parity."
+      },
+      "cardinality_status": "cardinality_unreachable",
+      "defects_required_for_cardinality": true,
+      "phase2_guidance": "defects_mandatory_for_target_cardinality",
+      "mapping_semantics_blocked": false
+    }
+  },
+  "summary_table": [
+    {
+      "n": 64,
+      "target": 113,
+      "type": 0,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    },
+    {
+      "n": 64,
+      "target": 113,
+      "type": 1,
+      "status": "cardinality_reachable_but_legality_open",
+      "defects_required": false,
+      "phase2": "compare_pure_orbit_vs_orbit_plus_defect"
+    },
+    {
+      "n": 64,
+      "target": 113,
+      "type": 2,
+      "status": "cardinality_reachable_but_legality_open",
+      "defects_required": false,
+      "phase2": "compare_pure_orbit_vs_orbit_plus_defect"
+    },
+    {
+      "n": 64,
+      "target": 113,
+      "type": 3,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    },
+    {
+      "n": 64,
+      "target": 113,
+      "type": 4,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    },
+    {
+      "n": 64,
+      "target": 113,
+      "type": 5,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    },
+    {
+      "n": 64,
+      "target": 113,
+      "type": 6,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    },
+    {
+      "n": 100,
+      "target": 165,
+      "type": 0,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    },
+    {
+      "n": 100,
+      "target": 165,
+      "type": 1,
+      "status": "cardinality_reachable_but_legality_open",
+      "defects_required": false,
+      "phase2": "compare_pure_orbit_vs_orbit_plus_defect"
+    },
+    {
+      "n": 100,
+      "target": 165,
+      "type": 2,
+      "status": "cardinality_reachable_but_legality_open",
+      "defects_required": false,
+      "phase2": "compare_pure_orbit_vs_orbit_plus_defect"
+    },
+    {
+      "n": 100,
+      "target": 165,
+      "type": 3,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    },
+    {
+      "n": 100,
+      "target": 165,
+      "type": 4,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    },
+    {
+      "n": 100,
+      "target": 165,
+      "type": 5,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    },
+    {
+      "n": 100,
+      "target": 165,
+      "type": 6,
+      "status": "cardinality_unreachable",
+      "defects_required": true,
+      "phase2": "defects_mandatory_for_target_cardinality"
+    }
+  ]
+}

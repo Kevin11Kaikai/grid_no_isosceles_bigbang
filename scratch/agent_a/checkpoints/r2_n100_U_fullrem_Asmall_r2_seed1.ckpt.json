@@ -1,0 +1,187 @@
+{
+  "best_illegal_V": 7,
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "n_cuts": 198,
+  "round_log_tail": [
+    {
+      "V": 14,
+      "cuts_added": 14,
+      "n_cuts_total": 0,
+      "n_witness_cuts": 14,
+      "round": 1,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.014211416244506836
+    },
+    {
+      "V": 18,
+      "cuts_added": 18,
+      "n_cuts_total": 14,
+      "n_witness_cuts": 18,
+      "round": 2,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.0606083869934082
+    },
+    {
+      "V": 13,
+      "cuts_added": 13,
+      "n_cuts_total": 32,
+      "n_witness_cuts": 13,
+      "round": 3,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.10701870918273926
+    },
+    {
+      "V": 11,
+      "cuts_added": 11,
+      "n_cuts_total": 45,
+      "n_witness_cuts": 11,
+      "round": 4,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.15430521965026855
+    },
+    {
+      "V": 14,
+      "cuts_added": 14,
+      "n_cuts_total": 56,
+      "n_witness_cuts": 14,
+      "round": 5,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.21730446815490723
+    },
+    {
+      "V": 14,
+      "cuts_added": 14,
+      "n_cuts_total": 70,
+      "n_witness_cuts": 14,
+      "round": 6,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.26430535316467285
+    },
+    {
+      "V": 10,
+      "cuts_added": 10,
+      "n_cuts_total": 84,
+      "n_witness_cuts": 10,
+      "round": 7,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.3100869655609131
+    },
+    {
+      "V": 11,
+      "cuts_added": 11,
+      "n_cuts_total": 94,
+      "n_witness_cuts": 11,
+      "round": 8,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.35622310638427734
+    },
+    {
+      "V": 8,
+      "cuts_added": 8,
+      "n_cuts_total": 105,
+      "n_witness_cuts": 8,
+      "round": 9,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.4036064147949219
+    },
+    {
+      "V": 12,
+      "cuts_added": 12,
+      "n_cuts_total": 113,
+      "n_witness_cuts": 12,
+      "round": 10,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.45183324813842773
+    },
+    {
+      "V": 10,
+      "cuts_added": 10,
+      "n_cuts_total": 125,
+      "n_witness_cuts": 10,
+      "round": 11,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.514437198638916
+    },
+    {
+      "V": 17,
+      "cuts_added": 17,
+      "n_cuts_total": 135,
+      "n_witness_cuts": 17,
+      "round": 12,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.5773007869720459
+    },
+    {
+      "V": 14,
+      "cuts_added": 14,
+      "n_cuts_total": 152,
+      "n_witness_cuts": 14,
+      "round": 13,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.6388974189758301
+    },
+    {
+      "V": 7,
+      "cuts_added": 7,
+      "n_cuts_total": 166,
+      "n_witness_cuts": 7,
+      "round": 14,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.6876590251922607
+    },
+    {
+      "V": 13,
+      "cuts_added": 13,
+      "n_cuts_total": 173,
+      "n_witness_cuts": 13,
+      "round": 15,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.7495629787445068
+    },
+    {
+      "V": 12,
+      "cuts_added": 12,
+      "n_cuts_total": 186,
+      "n_witness_cuts": 12,
+      "round": 16,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 0.8137080669403076
+    },
+    {
+      "n_cuts": 198,
+      "round": 17,
+      "solver_status": "INFEASIBLE",
+      "t": 0.8602287769317627
+    }
+  ],
+  "rounds": 17,
+  "scope": {
+    "U_id": "U_fullrem_Asmall_r2",
+    "halo": "none",
+    "n": 100,
+    "r": 2,
+    "seed": 1,
+    "symmetry_mode": "asymmetric",
+    "time_limit_s": 1800,
+    "universe_hash": "c7885d08d6f97923af324fd3e735d4a465733726cd090ee02fefe756b75f2c51"
+  },
+  "status_so_far": "INFEASIBLE_SCOPED",
+  "time_to_best_illegal_s": 0.6876590251922607,
+  "wall_time_s": 0.8602287769317627
+}

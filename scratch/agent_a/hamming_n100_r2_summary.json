@@ -1,0 +1,267 @@
+{
+  "CRITICAL_CONTRADICTION": false,
+  "V0_candidate_found": false,
+  "brute_confirm_n100_U_small_r1": {
+    "agrees_with_cpsat": true,
+    "best_V": 5,
+    "checked": 7936,
+    "legal_found": false
+  },
+  "brute_confirm_n64_U_small_r1": {
+    "agrees_with_cpsat": true,
+    "best_V": 2,
+    "checked": 3312,
+    "legal_found": false
+  },
+  "claim_discipline": "All INFEASIBLE_SCOPED results are scope-restricted; NOT a global C(100)<=164. TIMEOUT never equated to INFEASIBLE.",
+  "escalation_and_halo_runs": [
+    {
+      "U_id": "U_fullrem_Alarge_r2",
+      "best_illegal_V": 9,
+      "file": "scratch/agent_a/hamming/r2_n100_U_fullrem_Alarge_r2_seed1.json",
+      "final_cuts": 682,
+      "n_vars": 292,
+      "rounds": 44,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 2.1474549770355225,
+      "universe_hash": "e45a5788c9b8f67508a88249e8f1c043d8659fe05452b0ff05e5a4c153206462",
+      "wall_time_s": 2.366060972213745
+    },
+    {
+      "U_id": "U_fullrem_Asmall_r2",
+      "best_illegal_V": 7,
+      "file": "scratch/agent_a/hamming/r2_n100_U_fullrem_Asmall_r2_seed1.json",
+      "final_cuts": 198,
+      "n_vars": 208,
+      "rounds": 17,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 0.6876590251922607,
+      "universe_hash": "c7885d08d6f97923af324fd3e735d4a465733726cd090ee02fefe756b75f2c51",
+      "wall_time_s": 1.2186169624328613
+    },
+    {
+      "U_id": "U_fullrem_Asmall_r2",
+      "best_illegal_V": 7,
+      "file": "scratch/agent_a/hamming/r2_n100_U_fullrem_Asmall_r2_seed2.json",
+      "final_cuts": 189,
+      "n_vars": 208,
+      "rounds": 16,
+      "seed": 2,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 0.6881635189056396,
+      "universe_hash": "c7885d08d6f97923af324fd3e735d4a465733726cd090ee02fefe756b75f2c51",
+      "wall_time_s": 0.7524089813232422
+    },
+    {
+      "U_id": "U_large",
+      "best_illegal_V": 10,
+      "file": "scratch/agent_a/hamming/r2_n100_U_large_seed1.json",
+      "final_cuts": 433,
+      "n_vars": 176,
+      "rounds": 44,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 1.9028613567352295,
+      "universe_hash": "e6537270cd343a27423734087da3bf57c6b350530f62974b8bd5b17489d8e344",
+      "wall_time_s": 2.2828569412231445
+    },
+    {
+      "U_id": "U_large",
+      "best_illegal_V": 10,
+      "file": "scratch/agent_a/hamming/r2_n100_U_large_seed2.json",
+      "final_cuts": 427,
+      "n_vars": 176,
+      "rounds": 44,
+      "seed": 2,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 0.4420919418334961,
+      "universe_hash": "e6537270cd343a27423734087da3bf57c6b350530f62974b8bd5b17489d8e344",
+      "wall_time_s": 2.1992688179016113
+    },
+    {
+      "U_id": "U_medium",
+      "best_illegal_V": 10,
+      "file": "scratch/agent_a/hamming/r2_n100_U_medium_seed1.json",
+      "final_cuts": 146,
+      "n_vars": 96,
+      "rounds": 22,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 0.5640769004821777,
+      "universe_hash": "3eebdec7ec1b788bb4f794624746d73fafd7d68ce6c758c0512cfc197ae0a4ab",
+      "wall_time_s": 1.277759313583374
+    },
+    {
+      "U_id": "U_medium",
+      "best_illegal_V": 8,
+      "file": "scratch/agent_a/hamming/r2_n100_U_medium_seed2.json",
+      "final_cuts": 148,
+      "n_vars": 96,
+      "rounds": 22,
+      "seed": 2,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 0.05963730812072754,
+      "universe_hash": "3eebdec7ec1b788bb4f794624746d73fafd7d68ce6c758c0512cfc197ae0a4ab",
+      "wall_time_s": 1.1883060932159424
+    },
+    {
+      "U_id": "U_score_spatial_halo_r2",
+      "best_illegal_V": 15,
+      "file": "scratch/agent_a/hamming/r2_n100_U_score_spatial_halo_r2_seed1.json",
+      "final_cuts": 9268,
+      "n_vars": 1144,
+      "rounds": 360,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 53.78232192993164,
+      "universe_hash": "e08cd2f855ec34f1185f00628b349bd9430ce1e3d1364ab94ba0603ee4ded287",
+      "wall_time_s": 53.93864178657532
+    }
+  ],
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "halo_pilot_summary": {
+    "runs": [
+      {
+        "U_id": "U_fullrem_Asmall_r2",
+        "best_illegal_V": 7,
+        "final_cuts": 198,
+        "n_vars": 208,
+        "rounds": 17,
+        "seed": 1,
+        "status": "INFEASIBLE_SCOPED",
+        "universe_hash": "c7885d08d6f97923af324fd3e735d4a465733726cd090ee02fefe756b75f2c51",
+        "wall_time_s": 1.2186169624328613
+      },
+      {
+        "U_id": "U_fullrem_Asmall_r2",
+        "best_illegal_V": 7,
+        "final_cuts": 189,
+        "n_vars": 208,
+        "rounds": 16,
+        "seed": 2,
+        "status": "INFEASIBLE_SCOPED",
+        "universe_hash": "c7885d08d6f97923af324fd3e735d4a465733726cd090ee02fefe756b75f2c51",
+        "wall_time_s": 0.7524089813232422
+      },
+      {
+        "U_id": "U_fullrem_Alarge_r2",
+        "best_illegal_V": 9,
+        "final_cuts": 682,
+        "n_vars": 292,
+        "rounds": 44,
+        "seed": 1,
+        "status": "INFEASIBLE_SCOPED",
+        "universe_hash": "e45a5788c9b8f67508a88249e8f1c043d8659fe05452b0ff05e5a4c153206462",
+        "wall_time_s": 2.366060972213745
+      },
+      {
+        "U_id": "U_score_spatial_halo_r2",
+        "best_illegal_V": 15,
+        "final_cuts": 9268,
+        "n_vars": 1144,
+        "rounds": 360,
+        "seed": 1,
+        "status": "INFEASIBLE_SCOPED",
+        "universe_hash": "e08cd2f855ec34f1185f00628b349bd9430ce1e3d1364ab94ba0603ee4ded287",
+        "wall_time_s": 53.93864178657532
+      }
+    ]
+  },
+  "hash_verified_before_pilots": true,
+  "primary_U_small_r2_hash": "a100c8b65096256676e7959491c95b5868d3a71c7b43bdf0f27609e382d50e88",
+  "primary_U_small_r2_runs": [
+    {
+      "U_id": "U_small_r2",
+      "best_illegal_V": 7,
+      "file": "scratch/agent_a/hamming/r2_n100_seed1.json",
+      "final_cuts": 81,
+      "n_vars": 76,
+      "rounds": 15,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 0.20875930786132812,
+      "universe_hash": "a100c8b65096256676e7959491c95b5868d3a71c7b43bdf0f27609e382d50e88",
+      "wall_time_s": 0.7515287399291992
+    },
+    {
+      "U_id": "U_small_r2",
+      "best_illegal_V": 11,
+      "file": "scratch/agent_a/hamming/r2_n100_seed2.json",
+      "final_cuts": 91,
+      "n_vars": 76,
+      "rounds": 15,
+      "seed": 2,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 0.03929567337036133,
+      "universe_hash": "a100c8b65096256676e7959491c95b5868d3a71c7b43bdf0f27609e382d50e88",
+      "wall_time_s": 0.7452869415283203
+    },
+    {
+      "U_id": "U_small_r2",
+      "best_illegal_V": 10,
+      "file": "scratch/agent_a/hamming/r2_n100_seed3.json",
+      "final_cuts": 81,
+      "n_vars": 76,
+      "rounds": 15,
+      "seed": 3,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "asymmetric",
+      "time_to_best_illegal_s": 0.16395115852355957,
+      "universe_hash": "a100c8b65096256676e7959491c95b5868d3a71c7b43bdf0f27609e382d50e88",
+      "wall_time_s": 0.8058130741119385
+    },
+    {
+      "U_id": "U_small_r2",
+      "best_illegal_V": 13,
+      "file": "scratch/agent_a/hamming/r2_n100_seed4_sym.json",
+      "final_cuts": 25,
+      "n_vars": 76,
+      "rounds": 5,
+      "seed": 4,
+      "status": "INFEASIBLE_SCOPED",
+      "symmetry_mode": "symmetric",
+      "time_to_best_illegal_s": 0.11413264274597168,
+      "universe_hash": "a100c8b65096256676e7959491c95b5868d3a71c7b43bdf0f27609e382d50e88",
+      "wall_time_s": 0.5391936302185059
+    }
+  ],
+  "r3_followups": [
+    {
+      "U_id": "U_fullrem_Ahalo2_r3",
+      "best_illegal_V": 21,
+      "file": "scratch\\agent_a\\hamming\\r3_n100_U_fullrem_Ahalo2_r3_seed1.json",
+      "final_cuts": 4308,
+      "n_add": 400,
+      "n_vars": 564,
+      "rounds": 102,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "601be524fa1dfd4ccacdc542cd61ddb1b7320054e9b2cf9a5bcf1081c6203a95",
+      "wall_time_s": 11.074596405029297
+    },
+    {
+      "U_id": "U_fullrem_Alarge_r3",
+      "best_illegal_V": 13,
+      "file": "scratch\\agent_a\\hamming\\r3_n100_U_fullrem_Alarge_r3_seed1.json",
+      "final_cuts": 684,
+      "n_add": null,
+      "n_vars": 292,
+      "rounds": 33,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "e45a5788c9b8f67508a88249e8f1c043d8659fe05452b0ff05e5a4c153206462",
+      "wall_time_s": 2.0591981410980225
+    }
+  ],
+  "schema": "agent_a_hamming_n100_r2_summary_v1"
+}

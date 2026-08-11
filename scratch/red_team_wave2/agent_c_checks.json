@@ -1,0 +1,208 @@
+{
+  "status": "PARTIAL_SUMMARIES_PRESENT",
+  "clean_room": [
+    {
+      "n": 100,
+      "len": 165,
+      "unique": 165,
+      "expected_size": 165,
+      "card_ok": true,
+      "V": 3,
+      "verify_A_legal": false,
+      "verify_B_legal": false,
+      "A_witness": {
+        "pivot": [
+          2,
+          81
+        ],
+        "point_1": [
+          10,
+          95
+        ],
+        "point_2": [
+          18,
+          83
+        ],
+        "squared_distance": 260
+      },
+      "B_witness": {
+        "pivot": [
+          2,
+          81
+        ],
+        "a": [
+          10,
+          95
+        ],
+        "c": [
+          18,
+          83
+        ],
+        "squared_distance": 260
+      },
+      "V0": false,
+      "claimed_best_V": 3,
+      "V_matches_claim": true,
+      "seed": 101,
+      "second_check": {
+        "seed": 103,
+        "claimed_V": 3,
+        "V": 3,
+        "match": true,
+        "card_ok": true,
+        "legal_A": false
+      }
+    },
+    {
+      "n": 64,
+      "len": 113,
+      "unique": 113,
+      "expected_size": 113,
+      "card_ok": true,
+      "V": 2,
+      "verify_A_legal": false,
+      "verify_B_legal": false,
+      "A_witness": {
+        "pivot": [
+          59,
+          26
+        ],
+        "point_1": [
+          56,
+          61
+        ],
+        "point_2": [
+          62,
+          61
+        ],
+        "squared_distance": 1234
+      },
+      "B_witness": {
+        "pivot": [
+          59,
+          26
+        ],
+        "a": [
+          56,
+          61
+        ],
+        "c": [
+          62,
+          61
+        ],
+        "squared_distance": 1234
+      },
+      "V0": false,
+      "claimed_best_V": 2,
+      "V_matches_claim": true,
+      "seed": 201,
+      "second_check": {
+        "seed": 203,
+        "claimed_V": 2,
+        "V": 2,
+        "match": true,
+        "card_ok": true,
+        "legal_A": false
+      }
+    }
+  ],
+  "n100": {
+    "file": "scratch\\agent_c\\n100_fixed165_summary.json",
+    "incremental_exact_agree_all": true,
+    "any_v0": false,
+    "cardinality_shrinking_events": [],
+    "best_V_summary": 3,
+    "n_seeds": 8,
+    "seeds": [
+      {
+        "seed": 101,
+        "best_V": 3,
+        "v0_found": false,
+        "len_points": 165
+      },
+      {
+        "seed": 102,
+        "best_V": 3,
+        "v0_found": false,
+        "len_points": 165
+      },
+      {
+        "seed": 103,
+        "best_V": 3,
+        "v0_found": false,
+        "len_points": 165
+      },
+      {
+        "seed": 104,
+        "best_V": 3,
+        "v0_found": false,
+        "len_points": 165
+      },
+      {
+        "seed": 105,
+        "best_V": 3,
+        "v0_found": false,
+        "len_points": 165
+      },
+      {
+        "seed": 108,
+        "best_V": 3,
+        "v0_found": false,
+        "len_points": 165
+      },
+      {
+        "seed": 106,
+        "best_V": 5,
+        "v0_found": false,
+        "len_points": 165
+      },
+      {
+        "seed": 107,
+        "best_V": 6,
+        "v0_found": false,
+        "len_points": 165
+      }
+    ],
+    "note": "Fixed-cardinality min-V search; not a lower-bound claim; not certified.",
+    "pass": true
+  },
+  "n64": {
+    "file": "scratch\\agent_c\\n64_fixed113_summary.json",
+    "incremental_exact_agree_all": true,
+    "any_v0": false,
+    "cardinality_shrinking_events": [],
+    "best_V_summary": 2,
+    "n_seeds": 4,
+    "seeds": [
+      {
+        "seed": 201,
+        "best_V": 2,
+        "v0_found": false,
+        "len_points": 113
+      },
+      {
+        "seed": 202,
+        "best_V": 2,
+        "v0_found": false,
+        "len_points": 113
+      },
+      {
+        "seed": 203,
+        "best_V": 2,
+        "v0_found": false,
+        "len_points": 113
+      },
+      {
+        "seed": 204,
+        "best_V": 2,
+        "v0_found": false,
+        "len_points": 113
+      }
+    ],
+    "note": "Fixed-cardinality min-V search; not a lower-bound claim; not certified.",
+    "pass": true
+  },
+  "final_report_present": false,
+  "pass_partial": true,
+  "note": "Agent C fixed-cardinality summaries present; no formal wave2 report. Clean-room verified best |S|=165/113 points: V>0, card preserved, incremental_exact_agree_all=true."
+}

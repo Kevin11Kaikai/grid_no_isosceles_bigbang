@@ -1,0 +1,1581 @@
+{
+  "schema_version": "agent_a_blockers_v1",
+  "n": 100,
+  "baseline_size": 164,
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "expected_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "hash_ok": true,
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "V_baseline": 0,
+  "deterministic_seed": 0,
+  "blocker_definition": {
+    "Type1_q_as_pivot": "For unselected q and distinct p1,p2 in S0 with |p1-q|^2 = |p2-q|^2, certificate deletion-set / blocker edge is {p1,p2} (must hit at least one).",
+    "Type2_existing_pivot": "For unselected q and b,p in S0 with |q-b|^2 = |p-b|^2, certificate deletion-set / blocker edge is {b,p} (must hit at least one).",
+    "min_deletions": "Minimum deletions from S0 so no Type1/Type2 certificate remains = minimum vertex cover of the union of blocker edges (keep \u22641 point per Type1 distance class from q, and hit every Type2 edge).",
+    "exact_vs_approximate": "exact_min_hitting_set is set only when (a) LB==UB from sound bounds, or (b) bitset MIS DP finishes (involved\u2264EXACT_BITSET_MAX), or (c) branch-and-bound MIS finishes (involved\u2264EXACT_BB_MAX). Otherwise exact is null with lower_bound/upper_bound only. Greedy heuristics are NEVER labeled exact by themselves."
+  },
+  "exact_vs_approximate": "exact_min_hitting_set is set only when (a) LB==UB from sound bounds, or (b) bitset MIS DP finishes (involved\u2264EXACT_BITSET_MAX), or (c) branch-and-bound MIS finishes (involved\u2264EXACT_BB_MAX). Otherwise exact is null with lower_bound/upper_bound only. Greedy heuristics are NEVER labeled exact by themselves.",
+  "EXACT_BITSET_MAX": 18,
+  "EXACT_BB_MAX": 40,
+  "n_unselected_cells": 9836,
+  "summary_stats": {
+    "blocker_edge_count": {
+      "min": 3,
+      "max": 45,
+      "mean": 15.701504676697844,
+      "percentiles": {
+        "p0": 3.0,
+        "p1": 5.0,
+        "p5": 8.0,
+        "p10": 9.0,
+        "p25": 12.0,
+        "p50": 15.0,
+        "p75": 19.0,
+        "p90": 23.0,
+        "p95": 26.0,
+        "p99": 32.0,
+        "p100": 45.0
+      }
+    },
+    "lower_bound_min_deletions": {
+      "min": 2,
+      "max": 38,
+      "mean": 12.05693371289142,
+      "percentiles": {
+        "p0": 2.0,
+        "p1": 4.0,
+        "p5": 6.0,
+        "p10": 7.0,
+        "p25": 9.0,
+        "p50": 12.0,
+        "p75": 14.0,
+        "p90": 18.0,
+        "p95": 20.0,
+        "p99": 24.0,
+        "p100": 38.0
+      },
+      "histogram": {
+        "2": 16,
+        "3": 40,
+        "4": 72,
+        "5": 188,
+        "6": 376,
+        "7": 632,
+        "8": 712,
+        "9": 896,
+        "10": 888,
+        "11": 956,
+        "12": 972,
+        "13": 876,
+        "14": 772,
+        "15": 591,
+        "16": 453,
+        "17": 320,
+        "18": 271,
+        "19": 205,
+        "20": 216,
+        "21": 128,
+        "22": 82,
+        "23": 58,
+        "24": 33,
+        "25": 17,
+        "26": 25,
+        "27": 18,
+        "28": 12,
+        "29": 7,
+        "38": 4
+      }
+    },
+    "upper_bound_min_deletions": {
+      "min": 2,
+      "max": 40,
+      "mean": 12.13237088247255,
+      "percentiles": {
+        "p0": 2.0,
+        "p50": 12.0,
+        "p90": 18.0,
+        "p100": 40.0
+      }
+    },
+    "exact_min_hitting_set": {
+      "n_with_exact": 9370,
+      "n_unknown": 466,
+      "fraction_exact": 0.9526230174867832,
+      "status_histogram": {
+        "exact_bounds_coincide": 7450,
+        "exact_branch_and_bound": 1788,
+        "exact_bitset_dp": 132,
+        "intractable_mark_bounds_only": 466
+      },
+      "note": "exact set only via bounds-coincide / bitset / branch-and-bound; never a lone heuristic"
+    },
+    "zone_counts_all_unselected": {
+      "boundary_frame": 1444,
+      "mid_band": 5896,
+      "center_box": 2496
+    },
+    "multi_community_q_count_cc": 0,
+    "multi_community_q_count_lp": 0,
+    "multi_community_q_count_spatial_knn": 9836,
+    "multi_community_q_count_ring": 9828,
+    "easiest100_zone_distribution": {
+      "mid_band": 62,
+      "boundary_frame": 38
+    }
+  },
+  "easiest_to_insert_candidates": {
+    "ranking_key": "lower_bound_min_deletions ASC, blocker_edge_count ASC, upper_bound_min_deletions ASC, q lexicographic",
+    "disclaimer": "Structural insertion-difficulty ranks only. Does NOT claim any +1 construction exists; does NOT search for size 113/165.",
+    "top_20_summary": [
+      {
+        "q": [
+          24,
+          18
+        ],
+        "zone": "mid_band",
+        "ring_depth": 18,
+        "blocker_edge_count": 3,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 5,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 4,
+        "spatial_knn_communities_touched": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "n_ring_band_communities_touched": 1,
+        "ring_band_communities_touched": [
+          1
+        ]
+      },
+      {
+        "q": [
+          24,
+          81
+        ],
+        "zone": "mid_band",
+        "ring_depth": 18,
+        "blocker_edge_count": 3,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 5,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 4,
+        "spatial_knn_communities_touched": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "n_ring_band_communities_touched": 1,
+        "ring_band_communities_touched": [
+          1
+        ]
+      },
+      {
+        "q": [
+          75,
+          18
+        ],
+        "zone": "mid_band",
+        "ring_depth": 18,
+        "blocker_edge_count": 3,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 5,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 4,
+        "spatial_knn_communities_touched": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "n_ring_band_communities_touched": 1,
+        "ring_band_communities_touched": [
+          1
+        ]
+      },
+      {
+        "q": [
+          75,
+          81
+        ],
+        "zone": "mid_band",
+        "ring_depth": 18,
+        "blocker_edge_count": 3,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 5,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 4,
+        "spatial_knn_communities_touched": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "n_ring_band_communities_touched": 1,
+        "ring_band_communities_touched": [
+          1
+        ]
+      },
+      {
+        "q": [
+          3,
+          17
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 3,
+        "blocker_edge_count": 4,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 6,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          3,
+          82
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 3,
+        "blocker_edge_count": 4,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 6,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          7,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          96,
+          17
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 3,
+        "blocker_edge_count": 4,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 6,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          96,
+          82
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 3,
+        "blocker_edge_count": 4,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 6,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          5,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          4,
+          1
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 1,
+        "blocker_edge_count": 5,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 7,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          4,
+          98
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 1,
+        "blocker_edge_count": 5,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 7,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          95,
+          1
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 1,
+        "blocker_edge_count": 5,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 7,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          5,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          95,
+          98
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 1,
+        "blocker_edge_count": 5,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 7,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          5,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          0,
+          43
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 0,
+        "blocker_edge_count": 9,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 11,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 3,
+        "ring_band_communities_touched": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "q": [
+          0,
+          56
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 0,
+        "blocker_edge_count": 9,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 11,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 3,
+        "ring_band_communities_touched": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "q": [
+          99,
+          43
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 0,
+        "blocker_edge_count": 9,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 11,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          5,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "ring_band_communities_touched": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "q": [
+          99,
+          56
+        ],
+        "zone": "boundary_frame",
+        "ring_depth": 0,
+        "blocker_edge_count": 9,
+        "lower_bound_min_deletions": 2,
+        "upper_bound_min_deletions": 2,
+        "exact_min_hitting_set": 2,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 11,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          5,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "ring_band_communities_touched": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "q": [
+          4,
+          13
+        ],
+        "zone": "mid_band",
+        "ring_depth": 4,
+        "blocker_edge_count": 3,
+        "lower_bound_min_deletions": 3,
+        "upper_bound_min_deletions": 3,
+        "exact_min_hitting_set": 3,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 6,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          2,
+          5,
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          4,
+          86
+        ],
+        "zone": "mid_band",
+        "ring_depth": 4,
+        "blocker_edge_count": 3,
+        "lower_bound_min_deletions": 3,
+        "upper_bound_min_deletions": 3,
+        "exact_min_hitting_set": 3,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 6,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          1,
+          4,
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          18,
+          16
+        ],
+        "zone": "mid_band",
+        "ring_depth": 16,
+        "blocker_edge_count": 3,
+        "lower_bound_min_deletions": 3,
+        "upper_bound_min_deletions": 3,
+        "exact_min_hitting_set": 3,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 6,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 2,
+        "spatial_knn_communities_touched": [
+          2,
+          6
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      },
+      {
+        "q": [
+          18,
+          83
+        ],
+        "zone": "mid_band",
+        "ring_depth": 16,
+        "blocker_edge_count": 3,
+        "lower_bound_min_deletions": 3,
+        "upper_bound_min_deletions": 3,
+        "exact_min_hitting_set": 3,
+        "exact_status": "exact_bounds_coincide",
+        "involved_baseline_count": 6,
+        "n_communities_touched": 1,
+        "communities_touched": [
+          0
+        ],
+        "n_spatial_knn_communities_touched": 2,
+        "spatial_knn_communities_touched": [
+          1,
+          7
+        ],
+        "n_ring_band_communities_touched": 2,
+        "ring_band_communities_touched": [
+          0,
+          1
+        ]
+      }
+    ],
+    "min_lower_bound": 2,
+    "n_at_min_lower_bound": 16,
+    "multi_spatial_community_among_easiest": [
+      {
+        "q": [
+          24,
+          18
+        ],
+        "n_spatial_knn_communities_touched": 4,
+        "spatial_knn_communities_touched": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "n_ring_band_communities_touched": 1,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          24,
+          81
+        ],
+        "n_spatial_knn_communities_touched": 4,
+        "spatial_knn_communities_touched": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "n_ring_band_communities_touched": 1,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          75,
+          18
+        ],
+        "n_spatial_knn_communities_touched": 4,
+        "spatial_knn_communities_touched": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "n_ring_band_communities_touched": 1,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          75,
+          81
+        ],
+        "n_spatial_knn_communities_touched": 4,
+        "spatial_knn_communities_touched": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "n_ring_band_communities_touched": 1,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          3,
+          17
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          3,
+          82
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          7,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          96,
+          17
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          96,
+          82
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          5,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          4,
+          1
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 5,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          4,
+          98
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 5,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          95,
+          1
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          5,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 5,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          95,
+          98
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          5,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 5,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          0,
+          43
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 9,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          0,
+          56
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 9,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          99,
+          43
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          5,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 9,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          99,
+          56
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          4,
+          5,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 2,
+        "blocker_edge_count": 9,
+        "exact_min_hitting_set": 2
+      },
+      {
+        "q": [
+          4,
+          13
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          2,
+          5,
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          4,
+          86
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          1,
+          4,
+          6,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          18,
+          16
+        ],
+        "n_spatial_knn_communities_touched": 2,
+        "spatial_knn_communities_touched": [
+          2,
+          6
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          18,
+          83
+        ],
+        "n_spatial_knn_communities_touched": 2,
+        "spatial_knn_communities_touched": [
+          1,
+          7
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          47,
+          7
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          47,
+          92
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          1,
+          4,
+          5,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          52,
+          7
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          4,
+          6,
+          7,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          52,
+          92
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          3,
+          5,
+          6,
+          7,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          81,
+          16
+        ],
+        "n_spatial_knn_communities_touched": 2,
+        "spatial_knn_communities_touched": [
+          0,
+          4
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          81,
+          83
+        ],
+        "n_spatial_knn_communities_touched": 2,
+        "spatial_knn_communities_touched": [
+          3,
+          5
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          95,
+          13
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          4,
+          5,
+          7,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          95,
+          86
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          3,
+          4,
+          5,
+          6,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 3,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          10,
+          43
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          2,
+          5,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          10,
+          56
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          1,
+          3,
+          4,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          18,
+          6
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          5,
+          6,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          18,
+          93
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          3,
+          4,
+          7,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          23,
+          1
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          2,
+          6,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          23,
+          98
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          1,
+          3,
+          7,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          29,
+          5
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          1,
+          2,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          29,
+          94
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          1,
+          2,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          70,
+          5
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          0,
+          3,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          70,
+          94
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          0,
+          3,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          76,
+          1
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          2,
+          4,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          76,
+          98
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          1,
+          3,
+          5,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          81,
+          6
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          2,
+          4,
+          7,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          81,
+          93
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          1,
+          5,
+          6,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          89,
+          43
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          2,
+          7,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          89,
+          56
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          1,
+          3,
+          6,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 3,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 4,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          31,
+          17
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          2,
+          3,
+          6,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 6,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          31,
+          82
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          1,
+          3,
+          7,
+          8
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 6,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          68,
+          17
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          0,
+          1,
+          2,
+          4,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 6,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          68,
+          82
+        ],
+        "n_spatial_knn_communities_touched": 5,
+        "spatial_knn_communities_touched": [
+          1,
+          2,
+          3,
+          5,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 6,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          1,
+          16
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          6,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 7,
+        "exact_min_hitting_set": 3
+      },
+      {
+        "q": [
+          1,
+          83
+        ],
+        "n_spatial_knn_communities_touched": 3,
+        "spatial_knn_communities_touched": [
+          7,
+          8,
+          9
+        ],
+        "n_ring_band_communities_touched": 2,
+        "lower_bound_min_deletions": 3,
+        "blocker_edge_count": 7,
+        "exact_min_hitting_set": 3
+      }
+    ]
+  },
+  "paths": {
+    "full_detail_gz": "scratch/audit/agent_a/blocker_detail_n100.json.gz",
+    "communities": "scratch/audit/agent_a/blocker_communities_n100.json",
+    "top_k_full_in_gz": 200
+  },
+  "run_commands": [
+    "python scratch/audit/agent_a/scripts/blocker_audit.py --n 100",
+    "python scratch/audit/agent_a/scripts/blocker_audit.py --n all"
+  ],
+  "search_for_165_or_113": false,
+  "elapsed_sec": 6.761
+}

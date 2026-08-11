@@ -1,0 +1,18 @@
+{
+  "phase": "solve_mid_checkpoint",
+  "n": 100,
+  "symmetry_type": 0,
+  "mode": "partial",
+  "defect_budget": [
+    1,
+    8
+  ],
+  "seed": 22,
+  "rounds": 2518,
+  "cuts": 11850,
+  "elapsed_s": 900.5766549110413,
+  "model_hash": "8f4eff0eb74d73f889491fc8943ab54ced965801a76504b4d646db34c6e327f6",
+  "universe_id": "orb_t0_partial_core41_free141_def120_part24_h8",
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "best_legal_size": 0
+}

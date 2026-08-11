@@ -1,0 +1,110 @@
+{
+  "schema": "wave2_red_team_summary_v1",
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "audit_date": "2026-08-11",
+  "audit_revision": "post_agent_c_complete",
+  "critical_flaws": false,
+  "agent_a": {
+    "status": "COMPLETE",
+    "verdict": "PASS",
+    "critical_flaws": false,
+    "checks": {
+      "1_neg_control_r1": "PASS",
+      "2_r2_cardinality_hash_wording": "PASS",
+      "3_lazy_cuts": "PASS",
+      "6_timeout_vs_infeas": "PASS",
+      "7_scoped_not_global_ub": "PASS",
+      "8_candidates_cleanroom": "N/A_none",
+      "10_no_v0": "PASS"
+    },
+    "universe_hashes": {
+      "U_small_r1": "0e3710582f4533b788ccfbb58f5b69d2b92ce5571041ad53688cda601d4caac2",
+      "U_small_r2": "a100c8b65096256676e7959491c95b5868d3a71c7b43bdf0f27609e382d50e88"
+    },
+    "r2_card": {"R": 2, "A": 3, "S": 165},
+    "v0_candidates": false,
+    "repair_required": []
+  },
+  "agent_b": {
+    "status": "PENDING_INCOMPLETE",
+    "verdict": "PASS_PARTIAL",
+    "critical_flaws": false,
+    "final_report": false,
+    "smoke_audited": true,
+    "orbit_mapping_vs_gate1": "PASS",
+    "timeout_discipline": "PASS",
+    "long_t0_solver_status": "TIMEOUT",
+    "resume_in_progress": true,
+    "partial_s22_running": true,
+    "candidates": false,
+    "repair_required": ["RT-W2-01", "RT-W2-02"],
+    "note": "agent_b_wave2_report.md absent; keep PENDING"
+  },
+  "agent_c": {
+    "status": "COMPLETE",
+    "verdict": "PASS",
+    "critical_flaws": false,
+    "final_report": true,
+    "campaign_wall_s": 5707.336304187775,
+    "n_elites_checked": 62,
+    "manifest_lines": 16,
+    "incremental_exact_agree_all": true,
+    "cardinality_shrinking": false,
+    "any_v0": false,
+    "min_elite_V": {"n100": 3, "n64": 2},
+    "best_V": {"n100": 3, "n64": 2, "reproduce_1201": 2},
+    "external_halo_repair": {
+      "pass": true,
+      "pool_policy": "S_cup_halo_cup_deleted_cup_lowblocker",
+      "external_outside_baseline": {"n100": 1706, "n64": 1028},
+      "repair_accept_all_seeds": true
+    },
+    "cleanroom": {
+      "n100_best_V": 3,
+      "n64_best_V": 2,
+      "card_ok": true,
+      "V_matches_claim": true,
+      "elites_filename_V_match": true
+    },
+    "wording": {
+      "no_global_ub": true,
+      "no_lb_claim": true,
+      "no_timeout_infeas_issue": true
+    },
+    "protected_writes": false,
+    "repair_required": [],
+    "checks": {
+      "C1_fixed_cardinality": "PASS",
+      "C2_incremental_exact_elites": "PASS",
+      "C3_no_v0": "PASS",
+      "C4_timeout_wording": "PASS",
+      "C5_external_halo_repair": "PASS",
+      "C6_no_protected_writes": "PASS"
+    }
+  },
+  "ownership": {
+    "verdict": "PASS",
+    "protected_paths_mutated": false,
+    "notes": ["greedy.py dirty outside exclusive modules — Main info RT-W2-04"]
+  },
+  "gate2": {
+    "can_pass_if_b_clean": true,
+    "can_close_now": false,
+    "can_close_after_b": true,
+    "reason": "A PASS; C PASS; B campaign/report PENDING — close Gate2 after B finishes clean"
+  },
+  "repair_required_open": ["RT-W2-01", "RT-W2-02", "RT-W2-04"],
+  "repair_required_closed": ["RT-W2-03"],
+  "files_written": [
+    "audits/wave2_red_team.md",
+    "scratch/red_team_wave2/summary.json",
+    "scratch/red_team_wave2/run_audit_checks.py",
+    "scratch/red_team_wave2/run_agent_c_full_audit.py",
+    "scratch/red_team_wave2/agent_a_checks.json",
+    "scratch/red_team_wave2/agent_b_checks.json",
+    "scratch/red_team_wave2/agent_b_status_probe.json",
+    "scratch/red_team_wave2/agent_c_checks.json",
+    "scratch/red_team_wave2/agent_c_full_checks.json",
+    "scratch/red_team_wave2/ownership_checks.json"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "python_default": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "cwd": "D:\\others\\grid_no_isosceles_bigbang",
+  "venv_solver_exists": true,
+  "venv_solver_python": ".venv_solver\\Scripts\\python.exe",
+  "scipy_milp_smoke": {
+    "ok": true,
+    "error": null
+  },
+  "ortools_cpsat_smoke": {
+    "ok": true,
+    "error": null,
+    "interpreter": ".venv_solver"
+  },
+  "candidate_io_roundtrip": {
+    "ok": true,
+    "hash": "a77d03c49612fe9e074d220345a86604e12c17da81ec1793311854b80536e36f",
+    "path": "scratch/audit/_io_roundtrip_tmp.json"
+  },
+  "default_python_has_ortools": false,
+  "note": "OR-Tools is available via .venv_solver; default Anaconda python may lack ortools. MILP via scipy is available in default python."
+}

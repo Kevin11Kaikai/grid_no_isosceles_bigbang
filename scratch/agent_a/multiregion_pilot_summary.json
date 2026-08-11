@@ -1,0 +1,66 @@
+{
+  "note": "Giant projection CC never used as a small community; conflict_driven uses spatial_knn6 far bridges.",
+  "runs": [
+    {
+      "V_best": 0,
+      "baseline_size": 112,
+      "best_size": 112,
+      "improved": false,
+      "iterations": 69805,
+      "mode": "pure_spatial",
+      "n": 64,
+      "wall_time_s": 720.0159883499146
+    },
+    {
+      "V_best": 0,
+      "baseline_size": 112,
+      "best_size": 112,
+      "improved": false,
+      "iterations": 2,
+      "mode": "conflict_driven",
+      "n": 64,
+      "wall_time_s": 852.8150854110718
+    },
+    {
+      "V_best": 0,
+      "baseline_size": 112,
+      "best_size": 112,
+      "improved": false,
+      "iterations": 3,
+      "mode": "hybrid",
+      "n": 64,
+      "wall_time_s": 954.3016042709351
+    },
+    {
+      "V_best": 0,
+      "baseline_size": 164,
+      "best_size": 164,
+      "improved": false,
+      "iterations": 38738,
+      "mode": "pure_spatial",
+      "n": 100,
+      "wall_time_s": 600.0264792442322
+    },
+    {
+      "V_best": 0,
+      "baseline_size": 164,
+      "best_size": 164,
+      "improved": false,
+      "iterations": 14466,
+      "mode": "conflict_driven",
+      "n": 100,
+      "wall_time_s": 600.0565474033356
+    },
+    {
+      "V_best": 0,
+      "baseline_size": 164,
+      "best_size": 164,
+      "improved": false,
+      "iterations": 25263,
+      "mode": "hybrid",
+      "n": 100,
+      "wall_time_s": 600.039835691452
+    }
+  ],
+  "schema": "agent_a_multiregion_pilot_v1"
+}

@@ -1,0 +1,155 @@
+{
+  "phase": "axis_smoke",
+  "n": 100,
+  "target": 165,
+  "seed": 12,
+  "num_workers": 5,
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "wall_time_s": 10.672375202178955,
+  "rows": [
+    {
+      "n": 100,
+      "symmetry_type": 0,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        4
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 5.1952290534973145,
+      "model_hash": "324c258ea961b42705e27f57018cb9d38fe82a3d0809cf53acd55930acc3586c",
+      "universe_id": "orb_t0_defect_core41_free81_def48_part0_h6",
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t0_defect_d1-4_s12_20260811T202200Z.json",
+      "candidate": null
+    },
+    {
+      "n": 100,
+      "symmetry_type": 1,
+      "mode": "pure",
+      "defect_budget": [
+        0,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 0.542076587677002,
+      "model_hash": "7a0eeb821f944df68f7c09ffd1e28ab4ac864de9079cfa50c346030dc3a12402",
+      "universe_id": "orb_t1_pure_core0_free41_def0_part0_h6",
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t1_pure_d0-0_s12_20260811T202201Z.json",
+      "candidate": null
+    },
+    {
+      "n": 100,
+      "symmetry_type": 1,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        4
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 0.6132767200469971,
+      "model_hash": "be5b2287502e260cf2ce2be3347a928902d7f9f60c93272661c1c92b681c806a",
+      "universe_id": "orb_t1_defect_core0_free41_def48_part0_h6",
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t1_defect_d1-4_s12_20260811T202201Z.json",
+      "candidate": null
+    },
+    {
+      "n": 100,
+      "symmetry_type": 2,
+      "mode": "pure",
+      "defect_budget": [
+        0,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 0.5250177383422852,
+      "model_hash": "f69026c024aaf6bbaab5a644e7449a8af37711fa9e126ad61a47ff7face1ecc8",
+      "universe_id": "orb_t2_pure_core0_free41_def0_part0_h6",
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t2_pure_d0-0_s12_20260811T202202Z.json",
+      "candidate": null
+    },
+    {
+      "n": 100,
+      "symmetry_type": 2,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        4
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 0.5617306232452393,
+      "model_hash": "bbfaf5ee54a918a8c4309c049f5afa83a5a8517a2cc782049f4e4225d1e27aa1",
+      "universe_id": "orb_t2_defect_core0_free41_def48_part0_h6",
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t2_defect_d1-4_s12_20260811T202203Z.json",
+      "candidate": null
+    },
+    {
+      "n": 100,
+      "symmetry_type": 3,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        4
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 0.582442045211792,
+      "model_hash": "6958d6332b9c85e03731b404e5f3ce11d0b9628c01f394bd87b05881348ef663",
+      "universe_id": "orb_t3_defect_core7_free47_def48_part0_h6",
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t3_defect_d1-4_s12_20260811T202203Z.json",
+      "candidate": null
+    },
+    {
+      "n": 100,
+      "symmetry_type": 4,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        4
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 0.569068431854248,
+      "model_hash": "655afda0d265abb12a7fee4d009962c978f632520900e038255a62a4f69131c0",
+      "universe_id": "orb_t4_defect_core7_free47_def48_part0_h6",
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t4_defect_d1-4_s12_20260811T202204Z.json",
+      "candidate": null
+    },
+    {
+      "n": 100,
+      "symmetry_type": 5,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        4
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 0.5824301242828369,
+      "model_hash": "59cdb327ea29fc8fbbc71cce9e4cd27c558480591129682235dcd0e4c7ccd438",
+      "universe_id": "orb_t5_defect_core6_free46_def48_part0_h6",
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t5_defect_d1-4_s12_20260811T202205Z.json",
+      "candidate": null
+    },
+    {
+      "n": 100,
+      "symmetry_type": 6,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        4
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 0.6020922660827637,
+      "model_hash": "284f7638c869798af956a6820cbc5deb35d7d46b83dfe560f44c28c75c3ed0d9",
+      "universe_id": "orb_t6_defect_core6_free46_def48_part0_h6",
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t6_defect_d1-4_s12_20260811T202205Z.json",
+      "candidate": null
+    }
+  ]
+}

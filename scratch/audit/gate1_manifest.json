@@ -1,0 +1,327 @@
+{
+  "schema": "grid_no_isosceles.gate1_manifest.v1_consistency_patched",
+  "gate": 1,
+  "verdict": "PASS",
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "coordinate_convention": "0_to_n_minus_1",
+  "baselines": {
+    "n64": {
+      "size": 112,
+      "hash_sha256": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+      "gate0_match": true
+    },
+    "n100": {
+      "size": 164,
+      "hash_sha256": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+      "gate0_match": true
+    }
+  },
+  "wave2_allowed": true,
+  "wave2_entered": false,
+  "policy_path": "scratch/audit/phase0_neighborhood_policy.md",
+  "decision_path": "scratch/audit/gate1_decision.md",
+  "owners_wave2": {
+    "agent_a": {
+      "modules": [
+        "src/search/hamming_shell_conflict.py",
+        "src/search/conflict_multiregion.py"
+      ],
+      "phases": [
+        "Phase1_hamming_shell",
+        "Phase4_conflict_multiregion"
+      ],
+      "scratch_out": "scratch/agent_a/"
+    },
+    "agent_b": {
+      "modules": [
+        "src/search/orbit_defect_search.py"
+      ],
+      "phases": [
+        "Phase2_orbit_defect"
+      ],
+      "scratch_out": "scratch/agent_b/"
+    },
+    "agent_c": {
+      "modules": [
+        "src/search/fixed_cardinality_minconflict.py"
+      ],
+      "phases": [
+        "Phase3_fixed_cardinality_minconflict"
+      ],
+      "scratch_out": "scratch/agent_c/"
+    }
+  },
+  "artifacts": {
+    "gate0": [
+      {
+        "path": "scratch/audit/gate0_decision.md",
+        "sha256": "a5b9db4c445a28df9a98686a01707ec840ea63eb8ef4c22ca5fce489aa504e2b"
+      },
+      {
+        "path": "scratch/audit/phase0_baseline_reverify.json",
+        "sha256": "d99745ae7954c0a6616a9ba4ff2f539db13ef9e508302338adee1a3eedf85293",
+        "json_parseable": true
+      }
+    ],
+    "agent_a": [
+      {
+        "path": "scratch/audit/agent_a/agent_a_report.md",
+        "sha256": "d7b4be69534e20c0181c9bc1c981ab36882afbd57bb3ba0c1a50ca49710cd1fe"
+      },
+      {
+        "path": "scratch/audit/agent_a/blocker_stats_n64.json",
+        "sha256": "ca7386328140e036e61b848127fe51f6f72dfd332d32ecc313a303aff143882f",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_a/blocker_stats_n100.json",
+        "sha256": "d73368d7130d5ee3ac6f76c2fc8f1a6e7d6a514c88d651ed5b6da63409826867",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_a/blocker_communities_n64.json",
+        "sha256": "e8749f646765ff13c70a9e50ac7c2e445a2686ba57e56501c5ddddf31b5cc557",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_a/blocker_communities_n100.json",
+        "sha256": "acfa93e0e37e7614017768dd595feea0f3a91832d1e1f9a72175d12f1e24686e",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_a/blocker_detail_n64.json.gz",
+        "sha256": "829444dff102162d914c04221f49f4bf89e68b04e3755711cf94d008f3388628"
+      },
+      {
+        "path": "scratch/audit/agent_a/blocker_detail_n100.json.gz",
+        "sha256": "fb032389a33e8f1731c6a297cf4571e7c31233cadcfb404d77449d3dd6f79679"
+      },
+      {
+        "path": "scratch/audit/agent_a/scripts/blocker_audit.py",
+        "sha256": "ba242a328e3ebf4e44970791d4df1445e2059fcb2ccbb9d2c224e9c1f6865874"
+      }
+    ],
+    "agent_b": [
+      {
+        "path": "scratch/audit/agent_b/agent_b_report.md",
+        "sha256": "53805e6d89910a3f6a208ceb0523c97549757cf4dd341ce9f9352c16f9346325"
+      },
+      {
+        "path": "scratch/audit/agent_b/orbit_parity_reachability.json",
+        "sha256": "2f6aef24e1456be3a397d150bd4be756359c07f331cb4b41abc3f4f3400d39a8",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_b/orbit_completeness_n64.json",
+        "sha256": "e95ee2ca85f00fe09b543e783da077365ac790bbd395bed11f1f37a50a97ffdb",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_b/orbit_completeness_n100.json",
+        "sha256": "b005d16d3cd9bab586b3471b9e42c440d436716ebce8eca848624ea1b84e3ac2",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_b/scripts/orbit_audit.py",
+        "sha256": "9cb4d9dced0ea55f65f3f0e63119b84a4936a3cdcab0194f82a2903b9bdba06b"
+      }
+    ],
+    "agent_c": [
+      {
+        "path": "scratch/audit/agent_c/agent_c_report.md",
+        "sha256": "34d9d06ca87ee1d06774e527f452992d32748635f4c7618d3d11e7bd8598743c"
+      },
+      {
+        "path": "scratch/audit/agent_c/density_hamming_diagnostics_n64.json",
+        "sha256": "39344a67de29c271b8c4cad088587d7a6cf0e838bb7241ea7397089354eda537",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_c/density_hamming_diagnostics_n100.json",
+        "sha256": "c2b9cb5e9386498743f9c67a2a4deec81de24f3131043ecead098df4885364cf",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_c/universe_halo_diagnostics.json",
+        "sha256": "2286dfa4081bada86e062dff3b7514a008ec080ba2ee07b88412038b7694e558",
+        "json_parseable": true
+      },
+      {
+        "path": "scratch/audit/agent_c/scripts/run_density_hamming_audit.py",
+        "sha256": "e4116fac6ba1295e70491de27f98ffbe8822f6fd36222bb01cb7cf3dab95783b"
+      }
+    ],
+    "main_gate1_outputs": [
+      "scratch/audit/phase0_neighborhood_policy.md",
+      "scratch/audit/gate1_manifest.json",
+      "scratch/audit/gate1_decision.md"
+    ]
+  },
+  "repro_commands": {
+    "agent_a": [
+      "python scratch/audit/agent_a/scripts/blocker_audit.py --n 64",
+      "python scratch/audit/agent_a/scripts/blocker_audit.py --n all"
+    ],
+    "agent_b": [
+      "python scratch/audit/agent_b/scripts/orbit_audit.py"
+    ],
+    "agent_c": [
+      "python scratch/audit/agent_c/scripts/run_density_hamming_audit.py"
+    ],
+    "gate0": [
+      "python scratch/audit/_gate0_reverify_baselines.py"
+    ]
+  },
+  "cross_checks": {
+    "baseline_hashes_match_across_A_B_C_and_gate0": true,
+    "git_commit_match_across_A_B_C_and_gate0": true,
+    "coordinate_convention": "0_to_n_minus_1",
+    "agent_a_vs_agent_c_low_insert_qs": {
+      "n64": {
+        "status": "AGREE_STRONG",
+        "top20_intersection": 14,
+        "min_metric_set_intersection": [
+          [
+            62,
+            2
+          ],
+          [
+            62,
+            61
+          ]
+        ],
+        "note": "A ranks by blocker min-deletion LB (exact when bounds coincide); C ranks by direct insertion delta_V. Metrics differ but top cells overlap heavily; A min-LB={ (62,2),(62,61) } subset of C min-delta=2 set."
+      },
+      "n100": {
+        "status": "AGREE_PARTIAL",
+        "top20_intersection": 8,
+        "min_metric_set_intersection": [
+          [
+            24,
+            18
+          ],
+          [
+            24,
+            81
+          ],
+          [
+            75,
+            18
+          ],
+          [
+            75,
+            81
+          ]
+        ],
+        "note": "Shared mid-band quartet at A min LB=2 and C min delta_V=3; remaining easiest lists diverge because A counts certificate hitting-sets while C counts raw delta_V without deletes. Non-blocking; both feed the same Phase-1 add pool."
+      }
+    },
+    "agent_b_orbit_vs_agent_c_central_180": {
+      "n64": {
+        "status": "AGREE",
+        "B_type0_full_core_points": 108,
+        "C_points_with_180_image": 108,
+        "C_fraction": 0.9642857142857143,
+        "fully_symmetric": false,
+        "note": "B Type0 is Klein-four reflections; C is central 180 only. Counts agree (108/112). Unpaired listings differ by representation (B partial-orbit reps vs C unpaired present points) \u2014 not a math contradiction."
+      },
+      "n100": {
+        "status": "AGREE",
+        "B_type0_full_core_points": 164,
+        "C_points_with_180_image": 164,
+        "C_fraction": 1.0,
+        "fully_symmetric": true
+      }
+    },
+    "exact_vs_bound_vs_heuristic_vs_descriptive": {
+      "clear": true,
+      "notes": [
+        "A: exact_min_hitting_set only via bounds-coincide / bitset / BB; else LB/UB; greedy never labeled exact.",
+        "B: cardinality statuses from FULL-orbit subset-sum; structural_distance descriptive; legality open where reachable.",
+        "C: row/col/ring/occupancy descriptive; delta_V histograms exact relative to V; universe comfort heuristic guidance."
+      ]
+    },
+    "no_breakthrough_search": true,
+    "no_plus1_or_unverified_LB_claim": true,
+    "no_new_package_deps_required": true,
+    "required_artifacts_present_and_json_parseable": true,
+    "mapping_semantics_blocked_types": [],
+    "unresolved_math_contradictions": [],
+    "non_blocking_notes": [
+      "A vs C insertion difficulty metrics are related but not identical; partial top-20 disagreement on n100 is expected and documented.",
+      "B Type0 partner group vs C 180\u00b0 map are different transforms; completeness counts agree."
+    ]
+  },
+  "recommended_first_hamming_universe": {
+    "primary": {
+      "n": 100,
+      "universe_id": "U_small",
+      "r": 1,
+      "n_removable": 16,
+      "n_addable": 32,
+      "n_vars": 48
+    },
+    "secondary": {
+      "n": 64,
+      "universe_id": "U_small",
+      "r": 1,
+      "n_removable": 12,
+      "n_addable": 24,
+      "n_vars": 36
+    }
+  },
+  "phase2_defect_policy_summary": {
+    "defects_mandatory_types": [
+      0,
+      3,
+      4,
+      5,
+      6
+    ],
+    "compare_pure_vs_defect_types": [
+      1,
+      2
+    ],
+    "mapping_blocked_types": []
+  },
+  "consistency_check": {
+    "status": "WAVE2_READY",
+    "path_json": "scratch/audit/gate1_consistency_check.json",
+    "path_md": "scratch/audit/gate1_consistency_check.md",
+    "n100_deletion_bound_class": "GLOBAL_RIGOROUS_LOWER_BOUND",
+    "n100_primary_r": 2,
+    "n100_r1_role": "negative_control_only",
+    "n64_primary_r": 1,
+    "u_small_r2": {
+      "n_vars": 76,
+      "n_removable": 32,
+      "n_addable": 44,
+      "universe_hash_sha256": "a100c8b65096256676e7959491c95b5868d3a71c7b43bdf0f27609e382d50e88"
+    },
+    "u_small_48_hash_sha256": "0e3710582f4533b788ccfbb58f5b69d2b92ce5571041ad53688cda601d4caac2",
+    "giant_cc_not_used_as_small_community": true
+  },
+  "recommended_pilots": {
+    "n100_primary": {
+      "r": 2,
+      "U_id": "U_small_r2",
+      "n_vars": 76
+    },
+    "n64_primary": {
+      "r": 1,
+      "U_id": "U_small",
+      "n_vars": 36
+    },
+    "n100_negative_control": {
+      "r": 1,
+      "U_id": "U_small",
+      "n_vars": 48
+    }
+  },
+  "main_owned_artifact_hashes": {
+    "scratch/audit/phase0_neighborhood_policy.md": "84ccbdf56ea248dc171fbecd42611a36a30ff187c65d1f4c9ed9c32087f7efaf",
+    "scratch/audit/gate1_decision.md": "f1c22ce0f60aee85b2d1cee81c66bdd3158d3c1bbab141104a4368fb20c5b903",
+    "scratch/audit/gate1_consistency_check.json": "2af7068789eba211b3b3b3644babd0144e20448264a10b99aaea3c15b66bc25a",
+    "scratch/audit/gate1_consistency_check.md": "7800d83f855a9aa1251754f5900122063c02ed8b0073dad385128fe87c4fe56c"
+  }
+}

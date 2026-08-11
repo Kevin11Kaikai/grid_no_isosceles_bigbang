@@ -1,0 +1,147 @@
+{
+  "best_illegal_V": 6,
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "n_cuts": 46,
+  "round_log_tail": [
+    {
+      "V": 6,
+      "cuts_added": 2,
+      "n_cuts_total": 0,
+      "n_witness_cuts": 6,
+      "round": 1,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.02308821678161621
+    },
+    {
+      "V": 9,
+      "cuts_added": 3,
+      "n_cuts_total": 2,
+      "n_witness_cuts": 9,
+      "round": 2,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.06962394714355469
+    },
+    {
+      "V": 9,
+      "cuts_added": 4,
+      "n_cuts_total": 5,
+      "n_witness_cuts": 9,
+      "round": 3,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.1003568172454834
+    },
+    {
+      "V": 8,
+      "cuts_added": 4,
+      "n_cuts_total": 9,
+      "n_witness_cuts": 8,
+      "round": 4,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.1302638053894043
+    },
+    {
+      "V": 8,
+      "cuts_added": 4,
+      "n_cuts_total": 13,
+      "n_witness_cuts": 8,
+      "round": 5,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.1604938507080078
+    },
+    {
+      "V": 9,
+      "cuts_added": 5,
+      "n_cuts_total": 17,
+      "n_witness_cuts": 9,
+      "round": 6,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.1898045539855957
+    },
+    {
+      "V": 12,
+      "cuts_added": 5,
+      "n_cuts_total": 22,
+      "n_witness_cuts": 12,
+      "round": 7,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.22092080116271973
+    },
+    {
+      "V": 6,
+      "cuts_added": 5,
+      "n_cuts_total": 27,
+      "n_witness_cuts": 6,
+      "round": 8,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.2519865036010742
+    },
+    {
+      "V": 6,
+      "cuts_added": 5,
+      "n_cuts_total": 32,
+      "n_witness_cuts": 6,
+      "round": 9,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.2840456962585449
+    },
+    {
+      "V": 11,
+      "cuts_added": 3,
+      "n_cuts_total": 37,
+      "n_witness_cuts": 11,
+      "round": 10,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.3000469207763672
+    },
+    {
+      "V": 7,
+      "cuts_added": 3,
+      "n_cuts_total": 40,
+      "n_witness_cuts": 7,
+      "round": 11,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.32723164558410645
+    },
+    {
+      "V": 9,
+      "cuts_added": 3,
+      "n_cuts_total": 43,
+      "n_witness_cuts": 9,
+      "round": 12,
+      "selected_size": 113,
+      "solver_status": "OPTIMAL",
+      "t": 0.35910797119140625
+    },
+    {
+      "n_cuts": 46,
+      "round": 13,
+      "solver_status": "INFEASIBLE",
+      "t": 0.37711024284362793
+    }
+  ],
+  "rounds": 13,
+  "scope": {
+    "U_id": "U_small",
+    "halo": "none",
+    "n": 64,
+    "r": 1,
+    "seed": 1,
+    "symmetry_mode": "asymmetric",
+    "time_limit_s": 600.0,
+    "universe_hash": "34f1c6172b699d0d46ee8dce1ea1eedabd004be4a8d0e0c0a857e05a63ed321e"
+  },
+  "status_so_far": "INFEASIBLE_SCOPED",
+  "time_to_best_illegal_s": 0.02308821678161621,
+  "wall_time_s": 0.37711024284362793
+}

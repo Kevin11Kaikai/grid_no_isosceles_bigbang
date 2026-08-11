@@ -1,0 +1,26 @@
+{
+  "problem": "grid_no_isosceles",
+  "n": 5,
+  "size": 3,
+  "coordinate_convention": "0_to_n_minus_1",
+  "points": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "search_method": "gate0_io_smoke",
+  "seed": 0,
+  "timestamp_utc": "2026-08-11T19:31:28.860827+00:00",
+  "source_commit": null,
+  "parent_candidate": null,
+  "status": "UNVERIFIED"
+}

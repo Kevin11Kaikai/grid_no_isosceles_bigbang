@@ -1,2 +1,5 @@
 results/checkpoints/*.pkl
 __pycache__/
+.venv_solver/
+*.pyc
+.Python

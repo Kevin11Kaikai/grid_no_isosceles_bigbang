@@ -1,0 +1,30 @@
+[
+  {
+    "seed": 101,
+    "final_size": 112,
+    "iters": 5628,
+    "improvements": [],
+    "ok": true
+  },
+  {
+    "seed": 102,
+    "final_size": 112,
+    "iters": 5634,
+    "improvements": [],
+    "ok": true
+  },
+  {
+    "seed": 103,
+    "final_size": 112,
+    "iters": 5622,
+    "improvements": [],
+    "ok": true
+  },
+  {
+    "seed": 104,
+    "final_size": 112,
+    "iters": 5622,
+    "improvements": [],
+    "ok": true
+  }
+]

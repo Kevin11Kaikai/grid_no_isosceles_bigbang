@@ -1,0 +1,46 @@
+{
+  "status": "PENDING_INCOMPLETE",
+  "final_report_present": false,
+  "top_level_files": [
+    "axis_smoke_n100.json",
+    "axis_smoke_n64.json",
+    "axis_smoke_summary.json",
+    "manifest.jsonl",
+    "run_wave2_resume.py",
+    "wave2_resume.log"
+  ],
+  "resume_log_tail": "START long_n100_t0_defect_d1-8_s21 budget=3000s\r\nDONE long_n100_t0_defect_d1-8_s21 status=TIMEOUT size=0 wall=2999.9\r\nSTART long_n100_t0_partial_d1-8_s22 budget=2100s\r\n",
+  "latest_checkpoints": [
+    {
+      "file": "mid_n100_t0_partial_s22_20260811T215937Z.json",
+      "solver_status": null,
+      "pilot_tag": null,
+      "wall_time_s": null
+    },
+    {
+      "file": "mid_n100_t0_partial_s22_20260811T215437Z.json",
+      "solver_status": null,
+      "pilot_tag": null,
+      "wall_time_s": null
+    },
+    {
+      "file": "mid_n100_t0_partial_s22_20260811T214936Z.json",
+      "solver_status": null,
+      "pilot_tag": null,
+      "wall_time_s": null
+    },
+    {
+      "file": "mid_n100_t0_partial_s22_20260811T214436Z.json",
+      "solver_status": null,
+      "pilot_tag": null,
+      "wall_time_s": null
+    },
+    {
+      "file": "mid_n100_t0_partial_s22_20260811T213936Z.json",
+      "solver_status": null,
+      "pilot_tag": null,
+      "wall_time_s": null
+    }
+  ],
+  "note": "agent_b_wave2_report.md still absent; keep B PENDING"
+}

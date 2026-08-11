@@ -1,0 +1,119 @@
+{
+  "schema": "grid_no_isosceles.search_result.v1",
+  "method": "orbit_defect_search",
+  "n": 64,
+  "target_size": 113,
+  "symmetry_type": 1,
+  "axis_offset": [
+    62,
+    62
+  ],
+  "axis_comment": "Reflection about n/2-1 axes (e.g. 31 for n=64, axes at X.0, Y.0)",
+  "mode": "pure",
+  "defect_budget": {
+    "min": 0,
+    "max": 0
+  },
+  "core_def": {
+    "soft_core": true,
+    "fix_core": false,
+    "n_core_orbits": 0,
+    "core_orbit_ids": [],
+    "core_points_note": 0
+  },
+  "universe": {
+    "universe_id": "orb_t1_pure_core0_free61_def0_part0_h8",
+    "fingerprint": "87edf4cae918bf474241220b68fc1a3a72cbe11264b541122f8e893ba2df4615",
+    "n_free_orbits": 61,
+    "n_defect_points": 0,
+    "n_partial_orbits": 0,
+    "notes": {
+      "halo_radius": 8,
+      "max_extra_orbits": 60,
+      "max_defect_pool": 64,
+      "agent_c_universe": "U_medium",
+      "baseline_fully_present_full": 0,
+      "baseline_partial": 101,
+      "include_truncated_as_partial": true,
+      "core_points": 0
+    }
+  },
+  "model_hash": "534d8fdd53382a4f4a79ad47613e2273aa68a90936c8d138572de72f7e084349",
+  "solver_status": "INFEASIBLE",
+  "wall_time_s": 0.20345044136047363,
+  "time_budget_s": 30.0,
+  "seed": 11,
+  "num_workers": 5,
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "rounds": 3,
+  "final_cuts": 456,
+  "round_log": [
+    {
+      "round": 1,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.13323712348937988,
+      "selected_size": 113,
+      "cuts": 0,
+      "violations": 1340,
+      "cuts_added": 227
+    },
+    {
+      "round": 2,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.14824461936950684,
+      "selected_size": 113,
+      "cuts": 227,
+      "violations": 1144,
+      "cuts_added": 229
+    },
+    {
+      "round": 3,
+      "cpsat_status": "INFEASIBLE",
+      "t": 0.1610107421875,
+      "cuts": 456
+    }
+  ],
+  "points": [],
+  "size": 0,
+  "points_hash": null,
+  "parent_hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+  "defect_accounting": null,
+  "verify": {
+    "A": null,
+    "B": null
+  },
+  "scope": {
+    "n": 64,
+    "symmetry_type": 1,
+    "mode": "pure",
+    "defect_budget": [
+      0,
+      0
+    ],
+    "universe_id": "orb_t1_pure_core0_free61_def0_part0_h8",
+    "time_limit_s": 30.0,
+    "seed": 11,
+    "model_hash": "534d8fdd53382a4f4a79ad47613e2273aa68a90936c8d138572de72f7e084349"
+  },
+  "infeasible_record": {
+    "n": 64,
+    "axis": 1,
+    "mode": "pure",
+    "defect_budget": [
+      0,
+      0
+    ],
+    "core_def": {
+      "soft_core": true,
+      "fix_core": false,
+      "n_core_orbits": 0,
+      "core_orbit_ids": [],
+      "core_points_note": 0
+    },
+    "universe": "orb_t1_pure_core0_free61_def0_part0_h8",
+    "time_s": 0.20345044136047363,
+    "status": "INFEASIBLE",
+    "model_hash": "534d8fdd53382a4f4a79ad47613e2273aa68a90936c8d138572de72f7e084349",
+    "note": "Scoped to this universe/mode only; not a global upper bound."
+  }
+}

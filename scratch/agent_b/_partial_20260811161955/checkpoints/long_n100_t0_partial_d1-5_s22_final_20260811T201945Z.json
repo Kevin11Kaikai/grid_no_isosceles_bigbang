@@ -1,0 +1,1385 @@
+{
+  "schema": "grid_no_isosceles.search_result.v1",
+  "method": "orbit_defect_search",
+  "n": 100,
+  "target_size": 165,
+  "symmetry_type": 0,
+  "axis_offset": [
+    99,
+    99
+  ],
+  "axis_comment": "Reflection about (n-1)/2 axes (standard for n even, axes at X.5, Y.5)",
+  "mode": "partial",
+  "defect_budget": {
+    "min": 1,
+    "max": 5
+  },
+  "core_def": {
+    "soft_core": true,
+    "fix_core": false,
+    "n_core_orbits": 41,
+    "core_orbit_ids": [
+      15,
+      16,
+      48,
+      50,
+      89,
+      95,
+      100,
+      118,
+      138,
+      143,
+      145,
+      151,
+      152,
+      168,
+      188,
+      193,
+      212,
+      354,
+      355,
+      365,
+      398,
+      406,
+      407,
+      413,
+      504,
+      550,
+      1104,
+      1105,
+      1143,
+      1150,
+      1156,
+      1202,
+      1252,
+      1340,
+      1451,
+      1550,
+      1551,
+      1555,
+      1604,
+      1654,
+      1705
+    ],
+    "core_points_note": 164
+  },
+  "universe": {
+    "universe_id": "orb_t0_partial_core41_free141_def120_part24_h8",
+    "fingerprint": "d9591f3c6ef68f630f1396c751ffe3defa36c03d29cb847aa21e28c7fe2b819f",
+    "n_free_orbits": 141,
+    "n_defect_points": 120,
+    "n_partial_orbits": 24,
+    "notes": {
+      "halo_radius": 8,
+      "max_extra_orbits": 100,
+      "max_defect_pool": 120,
+      "agent_c_universe": "U_medium",
+      "baseline_fully_present_full": 41,
+      "baseline_partial": 0,
+      "include_truncated_as_partial": true,
+      "core_points": 164
+    }
+  },
+  "model_hash": "cf70c6a08eeb7c043805ff03b92c9c66d6074cd1819e5aa50c679faaa08cab25",
+  "solver_status": "TIMEOUT",
+  "wall_time_s": 62.17441916465759,
+  "time_budget_s": 2100.0,
+  "seed": 22,
+  "num_workers": 5,
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "rounds": 141,
+  "final_cuts": 10298,
+  "round_log": [
+    {
+      "round": 1,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.517791748046875,
+      "selected_size": 165,
+      "cuts": 0,
+      "violations": 455,
+      "cuts_added": 455
+    },
+    {
+      "round": 2,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.5490946769714355,
+      "selected_size": 165,
+      "cuts": 455,
+      "violations": 1683,
+      "cuts_added": 294
+    },
+    {
+      "round": 3,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.5966911315917969,
+      "selected_size": 165,
+      "cuts": 749,
+      "violations": 2578,
+      "cuts_added": 998
+    },
+    {
+      "round": 4,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.6925420761108398,
+      "selected_size": 165,
+      "cuts": 1747,
+      "violations": 1349,
+      "cuts_added": 267
+    },
+    {
+      "round": 5,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.7705698013305664,
+      "selected_size": 165,
+      "cuts": 2014,
+      "violations": 15,
+      "cuts_added": 15
+    },
+    {
+      "round": 6,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.8488128185272217,
+      "selected_size": 165,
+      "cuts": 2029,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 7,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.9111912250518799,
+      "selected_size": 165,
+      "cuts": 2048,
+      "violations": 16,
+      "cuts_added": 16
+    },
+    {
+      "round": 8,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.9744260311126709,
+      "selected_size": 165,
+      "cuts": 2064,
+      "violations": 21,
+      "cuts_added": 21
+    },
+    {
+      "round": 9,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.0426561832427979,
+      "selected_size": 165,
+      "cuts": 2085,
+      "violations": 14,
+      "cuts_added": 14
+    },
+    {
+      "round": 10,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.1200292110443115,
+      "selected_size": 165,
+      "cuts": 2099,
+      "violations": 17,
+      "cuts_added": 17
+    },
+    {
+      "round": 11,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.183260202407837,
+      "selected_size": 165,
+      "cuts": 2116,
+      "violations": 24,
+      "cuts_added": 24
+    },
+    {
+      "round": 12,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.2623019218444824,
+      "selected_size": 165,
+      "cuts": 2140,
+      "violations": 28,
+      "cuts_added": 28
+    },
+    {
+      "round": 13,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.3422987461090088,
+      "selected_size": 165,
+      "cuts": 2168,
+      "violations": 23,
+      "cuts_added": 23
+    },
+    {
+      "round": 14,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.4052989482879639,
+      "selected_size": 165,
+      "cuts": 2191,
+      "violations": 9,
+      "cuts_added": 9
+    },
+    {
+      "round": 15,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.4682998657226562,
+      "selected_size": 165,
+      "cuts": 2200,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 16,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.532411813735962,
+      "selected_size": 165,
+      "cuts": 2219,
+      "violations": 32,
+      "cuts_added": 32
+    },
+    {
+      "round": 17,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.5946781635284424,
+      "selected_size": 165,
+      "cuts": 2251,
+      "violations": 11,
+      "cuts_added": 11
+    },
+    {
+      "round": 18,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.6587843894958496,
+      "selected_size": 165,
+      "cuts": 2262,
+      "violations": 78,
+      "cuts_added": 78
+    },
+    {
+      "round": 19,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.722076177597046,
+      "selected_size": 165,
+      "cuts": 2340,
+      "violations": 18,
+      "cuts_added": 18
+    },
+    {
+      "round": 20,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.8162834644317627,
+      "selected_size": 165,
+      "cuts": 2358,
+      "violations": 8,
+      "cuts_added": 8
+    },
+    {
+      "round": 21,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.8940715789794922,
+      "selected_size": 165,
+      "cuts": 2366,
+      "violations": 25,
+      "cuts_added": 25
+    },
+    {
+      "round": 22,
+      "cpsat_status": "OPTIMAL",
+      "t": 1.97249174118042,
+      "selected_size": 165,
+      "cuts": 2391,
+      "violations": 27,
+      "cuts_added": 27
+    },
+    {
+      "round": 23,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.0641534328460693,
+      "selected_size": 165,
+      "cuts": 2418,
+      "violations": 24,
+      "cuts_added": 24
+    },
+    {
+      "round": 24,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.1635446548461914,
+      "selected_size": 165,
+      "cuts": 2442,
+      "violations": 8,
+      "cuts_added": 8
+    },
+    {
+      "round": 25,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.242313861846924,
+      "selected_size": 165,
+      "cuts": 2450,
+      "violations": 30,
+      "cuts_added": 30
+    },
+    {
+      "round": 26,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.3610148429870605,
+      "selected_size": 165,
+      "cuts": 2480,
+      "violations": 16,
+      "cuts_added": 16
+    },
+    {
+      "round": 27,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.4298908710479736,
+      "selected_size": 165,
+      "cuts": 2496,
+      "violations": 17,
+      "cuts_added": 17
+    },
+    {
+      "round": 28,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.523773193359375,
+      "selected_size": 165,
+      "cuts": 2513,
+      "violations": 25,
+      "cuts_added": 25
+    },
+    {
+      "round": 29,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.6011576652526855,
+      "selected_size": 165,
+      "cuts": 2538,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 30,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.679943799972534,
+      "selected_size": 165,
+      "cuts": 2557,
+      "violations": 24,
+      "cuts_added": 24
+    },
+    {
+      "round": 31,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.758491039276123,
+      "selected_size": 165,
+      "cuts": 2581,
+      "violations": 21,
+      "cuts_added": 21
+    },
+    {
+      "round": 32,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.8431556224823,
+      "selected_size": 165,
+      "cuts": 2602,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 33,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.9203433990478516,
+      "selected_size": 165,
+      "cuts": 2621,
+      "violations": 24,
+      "cuts_added": 24
+    },
+    {
+      "round": 34,
+      "cpsat_status": "OPTIMAL",
+      "t": 2.9818978309631348,
+      "selected_size": 165,
+      "cuts": 2645,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 35,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.0459420680999756,
+      "selected_size": 165,
+      "cuts": 2664,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 36,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.1261491775512695,
+      "selected_size": 165,
+      "cuts": 2683,
+      "violations": 21,
+      "cuts_added": 21
+    },
+    {
+      "round": 37,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.1917788982391357,
+      "selected_size": 165,
+      "cuts": 2704,
+      "violations": 25,
+      "cuts_added": 25
+    },
+    {
+      "round": 38,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.272641181945801,
+      "selected_size": 165,
+      "cuts": 2729,
+      "violations": 17,
+      "cuts_added": 17
+    },
+    {
+      "round": 39,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.33526611328125,
+      "selected_size": 165,
+      "cuts": 2746,
+      "violations": 16,
+      "cuts_added": 16
+    },
+    {
+      "round": 40,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.429556131362915,
+      "selected_size": 165,
+      "cuts": 2762,
+      "violations": 192,
+      "cuts_added": 55
+    },
+    {
+      "round": 41,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.5072596073150635,
+      "selected_size": 165,
+      "cuts": 2817,
+      "violations": 8,
+      "cuts_added": 8
+    },
+    {
+      "round": 42,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.569986343383789,
+      "selected_size": 165,
+      "cuts": 2825,
+      "violations": 24,
+      "cuts_added": 24
+    },
+    {
+      "round": 43,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.6642990112304688,
+      "selected_size": 165,
+      "cuts": 2849,
+      "violations": 99,
+      "cuts_added": 47
+    },
+    {
+      "round": 44,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.7627015113830566,
+      "selected_size": 165,
+      "cuts": 2896,
+      "violations": 27,
+      "cuts_added": 27
+    },
+    {
+      "round": 45,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.8448641300201416,
+      "selected_size": 165,
+      "cuts": 2923,
+      "violations": 20,
+      "cuts_added": 20
+    },
+    {
+      "round": 46,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.9140191078186035,
+      "selected_size": 165,
+      "cuts": 2943,
+      "violations": 8,
+      "cuts_added": 8
+    },
+    {
+      "round": 47,
+      "cpsat_status": "OPTIMAL",
+      "t": 3.9925317764282227,
+      "selected_size": 165,
+      "cuts": 2951,
+      "violations": 18,
+      "cuts_added": 18
+    },
+    {
+      "round": 48,
+      "cpsat_status": "OPTIMAL",
+      "t": 4.074318885803223,
+      "selected_size": 165,
+      "cuts": 2969,
+      "violations": 17,
+      "cuts_added": 17
+    },
+    {
+      "round": 49,
+      "cpsat_status": "OPTIMAL",
+      "t": 4.173638343811035,
+      "selected_size": 165,
+      "cuts": 2986,
+      "violations": 32,
+      "cuts_added": 32
+    },
+    {
+      "round": 50,
+      "cpsat_status": "OPTIMAL",
+      "t": 4.28529691696167,
+      "selected_size": 165,
+      "cuts": 3018,
+      "violations": 84,
+      "cuts_added": 84
+    },
+    {
+      "round": 51,
+      "cpsat_status": "OPTIMAL",
+      "t": 4.390367269515991,
+      "selected_size": 165,
+      "cuts": 3102,
+      "violations": 12,
+      "cuts_added": 12
+    },
+    {
+      "round": 52,
+      "cpsat_status": "OPTIMAL",
+      "t": 4.516891956329346,
+      "selected_size": 165,
+      "cuts": 3114,
+      "violations": 20,
+      "cuts_added": 20
+    },
+    {
+      "round": 53,
+      "cpsat_status": "OPTIMAL",
+      "t": 4.62751317024231,
+      "selected_size": 165,
+      "cuts": 3134,
+      "violations": 24,
+      "cuts_added": 24
+    },
+    {
+      "round": 54,
+      "cpsat_status": "OPTIMAL",
+      "t": 4.720762729644775,
+      "selected_size": 165,
+      "cuts": 3158,
+      "violations": 16,
+      "cuts_added": 16
+    },
+    {
+      "round": 55,
+      "cpsat_status": "OPTIMAL",
+      "t": 4.8319478034973145,
+      "selected_size": 165,
+      "cuts": 3174,
+      "violations": 9,
+      "cuts_added": 9
+    },
+    {
+      "round": 56,
+      "cpsat_status": "OPTIMAL",
+      "t": 4.924947023391724,
+      "selected_size": 165,
+      "cuts": 3183,
+      "violations": 8,
+      "cuts_added": 8
+    },
+    {
+      "round": 57,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.01775336265564,
+      "selected_size": 165,
+      "cuts": 3191,
+      "violations": 13,
+      "cuts_added": 13
+    },
+    {
+      "round": 58,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.120591402053833,
+      "selected_size": 165,
+      "cuts": 3204,
+      "violations": 198,
+      "cuts_added": 53
+    },
+    {
+      "round": 59,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.2306318283081055,
+      "selected_size": 165,
+      "cuts": 3257,
+      "violations": 13,
+      "cuts_added": 13
+    },
+    {
+      "round": 60,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.341618299484253,
+      "selected_size": 165,
+      "cuts": 3270,
+      "violations": 25,
+      "cuts_added": 25
+    },
+    {
+      "round": 61,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.42932653427124,
+      "selected_size": 165,
+      "cuts": 3295,
+      "violations": 20,
+      "cuts_added": 20
+    },
+    {
+      "round": 62,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.5086541175842285,
+      "selected_size": 165,
+      "cuts": 3315,
+      "violations": 74,
+      "cuts_added": 37
+    },
+    {
+      "round": 63,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.587019205093384,
+      "selected_size": 165,
+      "cuts": 3352,
+      "violations": 9,
+      "cuts_added": 9
+    },
+    {
+      "round": 64,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.664947509765625,
+      "selected_size": 165,
+      "cuts": 3361,
+      "violations": 13,
+      "cuts_added": 13
+    },
+    {
+      "round": 65,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.77531361579895,
+      "selected_size": 165,
+      "cuts": 3374,
+      "violations": 13,
+      "cuts_added": 13
+    },
+    {
+      "round": 66,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.870527505874634,
+      "selected_size": 165,
+      "cuts": 3387,
+      "violations": 8,
+      "cuts_added": 8
+    },
+    {
+      "round": 67,
+      "cpsat_status": "OPTIMAL",
+      "t": 5.949609041213989,
+      "selected_size": 165,
+      "cuts": 3395,
+      "violations": 72,
+      "cuts_added": 72
+    },
+    {
+      "round": 68,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.043791055679321,
+      "selected_size": 165,
+      "cuts": 3467,
+      "violations": 14,
+      "cuts_added": 14
+    },
+    {
+      "round": 69,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.123791217803955,
+      "selected_size": 165,
+      "cuts": 3481,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 70,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.200571060180664,
+      "selected_size": 165,
+      "cuts": 3500,
+      "violations": 13,
+      "cuts_added": 13
+    },
+    {
+      "round": 71,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.278958082199097,
+      "selected_size": 165,
+      "cuts": 3513,
+      "violations": 18,
+      "cuts_added": 18
+    },
+    {
+      "round": 72,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.3659772872924805,
+      "selected_size": 165,
+      "cuts": 3531,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 73,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.444202661514282,
+      "selected_size": 165,
+      "cuts": 3550,
+      "violations": 15,
+      "cuts_added": 15
+    },
+    {
+      "round": 74,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.5392022132873535,
+      "selected_size": 165,
+      "cuts": 3565,
+      "violations": 32,
+      "cuts_added": 32
+    },
+    {
+      "round": 75,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.630497932434082,
+      "selected_size": 165,
+      "cuts": 3597,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 76,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.715991497039795,
+      "selected_size": 165,
+      "cuts": 3616,
+      "violations": 14,
+      "cuts_added": 14
+    },
+    {
+      "round": 77,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.818535804748535,
+      "selected_size": 165,
+      "cuts": 3630,
+      "violations": 14,
+      "cuts_added": 14
+    },
+    {
+      "round": 78,
+      "cpsat_status": "OPTIMAL",
+      "t": 6.926694869995117,
+      "selected_size": 165,
+      "cuts": 3644,
+      "violations": 16,
+      "cuts_added": 16
+    },
+    {
+      "round": 79,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.006012678146362,
+      "selected_size": 165,
+      "cuts": 3660,
+      "violations": 17,
+      "cuts_added": 17
+    },
+    {
+      "round": 80,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.083242416381836,
+      "selected_size": 165,
+      "cuts": 3677,
+      "violations": 15,
+      "cuts_added": 15
+    },
+    {
+      "round": 81,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.164741277694702,
+      "selected_size": 165,
+      "cuts": 3692,
+      "violations": 13,
+      "cuts_added": 13
+    },
+    {
+      "round": 82,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.270229816436768,
+      "selected_size": 165,
+      "cuts": 3705,
+      "violations": 15,
+      "cuts_added": 15
+    },
+    {
+      "round": 83,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.384904146194458,
+      "selected_size": 165,
+      "cuts": 3720,
+      "violations": 9,
+      "cuts_added": 9
+    },
+    {
+      "round": 84,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.496163606643677,
+      "selected_size": 165,
+      "cuts": 3729,
+      "violations": 23,
+      "cuts_added": 23
+    },
+    {
+      "round": 85,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.5752973556518555,
+      "selected_size": 165,
+      "cuts": 3752,
+      "violations": 17,
+      "cuts_added": 17
+    },
+    {
+      "round": 86,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.654647588729858,
+      "selected_size": 165,
+      "cuts": 3769,
+      "violations": 6,
+      "cuts_added": 6
+    },
+    {
+      "round": 87,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.779642343521118,
+      "selected_size": 165,
+      "cuts": 3775,
+      "violations": 89,
+      "cuts_added": 23
+    },
+    {
+      "round": 88,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.872102737426758,
+      "selected_size": 165,
+      "cuts": 3798,
+      "violations": 15,
+      "cuts_added": 15
+    },
+    {
+      "round": 89,
+      "cpsat_status": "OPTIMAL",
+      "t": 7.949228048324585,
+      "selected_size": 165,
+      "cuts": 3813,
+      "violations": 18,
+      "cuts_added": 18
+    },
+    {
+      "round": 90,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.028098344802856,
+      "selected_size": 165,
+      "cuts": 3831,
+      "violations": 9,
+      "cuts_added": 9
+    },
+    {
+      "round": 91,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.131054162979126,
+      "selected_size": 165,
+      "cuts": 3840,
+      "violations": 9,
+      "cuts_added": 9
+    },
+    {
+      "round": 92,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.232786893844604,
+      "selected_size": 165,
+      "cuts": 3849,
+      "violations": 18,
+      "cuts_added": 18
+    },
+    {
+      "round": 93,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.31722378730774,
+      "selected_size": 165,
+      "cuts": 3867,
+      "violations": 9,
+      "cuts_added": 9
+    },
+    {
+      "round": 94,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.39715051651001,
+      "selected_size": 165,
+      "cuts": 3876,
+      "violations": 15,
+      "cuts_added": 15
+    },
+    {
+      "round": 95,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.482172012329102,
+      "selected_size": 165,
+      "cuts": 3891,
+      "violations": 6,
+      "cuts_added": 6
+    },
+    {
+      "round": 96,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.562845706939697,
+      "selected_size": 165,
+      "cuts": 3897,
+      "violations": 17,
+      "cuts_added": 17
+    },
+    {
+      "round": 97,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.658209800720215,
+      "selected_size": 165,
+      "cuts": 3914,
+      "violations": 13,
+      "cuts_added": 13
+    },
+    {
+      "round": 98,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.768092393875122,
+      "selected_size": 165,
+      "cuts": 3927,
+      "violations": 23,
+      "cuts_added": 23
+    },
+    {
+      "round": 99,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.862201929092407,
+      "selected_size": 165,
+      "cuts": 3950,
+      "violations": 9,
+      "cuts_added": 9
+    },
+    {
+      "round": 100,
+      "cpsat_status": "OPTIMAL",
+      "t": 8.955870866775513,
+      "selected_size": 165,
+      "cuts": 3959,
+      "violations": 15,
+      "cuts_added": 15
+    },
+    {
+      "round": 101,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.03341817855835,
+      "selected_size": 165,
+      "cuts": 3974,
+      "violations": 15,
+      "cuts_added": 15
+    },
+    {
+      "round": 102,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.129719495773315,
+      "selected_size": 165,
+      "cuts": 3989,
+      "violations": 17,
+      "cuts_added": 17
+    },
+    {
+      "round": 103,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.20895266532898,
+      "selected_size": 165,
+      "cuts": 4006,
+      "violations": 14,
+      "cuts_added": 14
+    },
+    {
+      "round": 104,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.302056789398193,
+      "selected_size": 165,
+      "cuts": 4020,
+      "violations": 16,
+      "cuts_added": 16
+    },
+    {
+      "round": 105,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.397945642471313,
+      "selected_size": 165,
+      "cuts": 4036,
+      "violations": 14,
+      "cuts_added": 14
+    },
+    {
+      "round": 106,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.50039291381836,
+      "selected_size": 165,
+      "cuts": 4050,
+      "violations": 15,
+      "cuts_added": 15
+    },
+    {
+      "round": 107,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.610271692276001,
+      "selected_size": 165,
+      "cuts": 4065,
+      "violations": 82,
+      "cuts_added": 29
+    },
+    {
+      "round": 108,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.704985857009888,
+      "selected_size": 165,
+      "cuts": 4094,
+      "violations": 19,
+      "cuts_added": 19
+    },
+    {
+      "round": 109,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.799609422683716,
+      "selected_size": 165,
+      "cuts": 4113,
+      "violations": 24,
+      "cuts_added": 24
+    },
+    {
+      "round": 110,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.89129376411438,
+      "selected_size": 165,
+      "cuts": 4137,
+      "violations": 82,
+      "cuts_added": 21
+    },
+    {
+      "round": 111,
+      "cpsat_status": "OPTIMAL",
+      "t": 9.984199047088623,
+      "selected_size": 165,
+      "cuts": 4158,
+      "violations": 163,
+      "cuts_added": 38
+    },
+    {
+      "round": 112,
+      "cpsat_status": "OPTIMAL",
+      "t": 10.094944477081299,
+      "selected_size": 165,
+      "cuts": 4196,
+      "violations": 43,
+      "cuts_added": 17
+    },
+    {
+      "round": 113,
+      "cpsat_status": "OPTIMAL",
+      "t": 10.200502634048462,
+      "selected_size": 165,
+      "cuts": 4213,
+      "violations": 128,
+      "cuts_added": 33
+    },
+    {
+      "round": 114,
+      "cpsat_status": "OPTIMAL",
+      "t": 10.310826301574707,
+      "selected_size": 165,
+      "cuts": 4246,
+      "violations": 103,
+      "cuts_added": 35
+    },
+    {
+      "round": 115,
+      "cpsat_status": "OPTIMAL",
+      "t": 10.414029836654663,
+      "selected_size": 165,
+      "cuts": 4281,
+      "violations": 122,
+      "cuts_added": 35
+    },
+    {
+      "round": 116,
+      "cpsat_status": "OPTIMAL",
+      "t": 10.522501945495605,
+      "selected_size": 165,
+      "cuts": 4316,
+      "violations": 143,
+      "cuts_added": 38
+    },
+    {
+      "round": 117,
+      "cpsat_status": "OPTIMAL",
+      "t": 10.635557174682617,
+      "selected_size": 165,
+      "cuts": 4354,
+      "violations": 74,
+      "cuts_added": 18
+    },
+    {
+      "round": 118,
+      "cpsat_status": "OPTIMAL",
+      "t": 10.756725072860718,
+      "selected_size": 165,
+      "cuts": 4372,
+      "violations": 113,
+      "cuts_added": 24
+    },
+    {
+      "round": 119,
+      "cpsat_status": "OPTIMAL",
+      "t": 10.865792274475098,
+      "selected_size": 165,
+      "cuts": 4396,
+      "violations": 276,
+      "cuts_added": 71
+    },
+    {
+      "round": 120,
+      "cpsat_status": "OPTIMAL",
+      "t": 10.97335410118103,
+      "selected_size": 165,
+      "cuts": 4467,
+      "violations": 252,
+      "cuts_added": 97
+    },
+    {
+      "round": 121,
+      "cpsat_status": "OPTIMAL",
+      "t": 11.083516120910645,
+      "selected_size": 165,
+      "cuts": 4564,
+      "violations": 196,
+      "cuts_added": 73
+    },
+    {
+      "round": 122,
+      "cpsat_status": "OPTIMAL",
+      "t": 11.209110021591187,
+      "selected_size": 165,
+      "cuts": 4637,
+      "violations": 193,
+      "cuts_added": 41
+    },
+    {
+      "round": 123,
+      "cpsat_status": "OPTIMAL",
+      "t": 11.318624019622803,
+      "selected_size": 165,
+      "cuts": 4678,
+      "violations": 446,
+      "cuts_added": 126
+    },
+    {
+      "round": 124,
+      "cpsat_status": "OPTIMAL",
+      "t": 11.443176984786987,
+      "selected_size": 165,
+      "cuts": 4804,
+      "violations": 523,
+      "cuts_added": 234
+    },
+    {
+      "round": 125,
+      "cpsat_status": "OPTIMAL",
+      "t": 11.553010702133179,
+      "selected_size": 165,
+      "cuts": 5038,
+      "violations": 87,
+      "cuts_added": 44
+    },
+    {
+      "round": 126,
+      "cpsat_status": "OPTIMAL",
+      "t": 11.662820100784302,
+      "selected_size": 165,
+      "cuts": 5082,
+      "violations": 575,
+      "cuts_added": 342
+    },
+    {
+      "round": 127,
+      "cpsat_status": "OPTIMAL",
+      "t": 11.817739963531494,
+      "selected_size": 165,
+      "cuts": 5424,
+      "violations": 839,
+      "cuts_added": 608
+    },
+    {
+      "round": 128,
+      "cpsat_status": "OPTIMAL",
+      "t": 11.973968982696533,
+      "selected_size": 165,
+      "cuts": 6032,
+      "violations": 331,
+      "cuts_added": 173
+    },
+    {
+      "round": 129,
+      "cpsat_status": "OPTIMAL",
+      "t": 12.095127582550049,
+      "selected_size": 165,
+      "cuts": 6205,
+      "violations": 374,
+      "cuts_added": 233
+    },
+    {
+      "round": 130,
+      "cpsat_status": "OPTIMAL",
+      "t": 12.313190460205078,
+      "selected_size": 165,
+      "cuts": 6438,
+      "violations": 750,
+      "cuts_added": 387
+    },
+    {
+      "round": 131,
+      "cpsat_status": "OPTIMAL",
+      "t": 12.4996018409729,
+      "selected_size": 165,
+      "cuts": 6825,
+      "violations": 853,
+      "cuts_added": 482
+    },
+    {
+      "round": 132,
+      "cpsat_status": "OPTIMAL",
+      "t": 12.7038414478302,
+      "selected_size": 165,
+      "cuts": 7307,
+      "violations": 549,
+      "cuts_added": 325
+    },
+    {
+      "round": 133,
+      "cpsat_status": "OPTIMAL",
+      "t": 12.95639419555664,
+      "selected_size": 165,
+      "cuts": 7632,
+      "violations": 807,
+      "cuts_added": 534
+    },
+    {
+      "round": 134,
+      "cpsat_status": "OPTIMAL",
+      "t": 13.188154935836792,
+      "selected_size": 165,
+      "cuts": 8166,
+      "violations": 696,
+      "cuts_added": 457
+    },
+    {
+      "round": 135,
+      "cpsat_status": "OPTIMAL",
+      "t": 13.487802743911743,
+      "selected_size": 165,
+      "cuts": 8623,
+      "violations": 736,
+      "cuts_added": 448
+    },
+    {
+      "round": 136,
+      "cpsat_status": "OPTIMAL",
+      "t": 13.705793857574463,
+      "selected_size": 165,
+      "cuts": 9071,
+      "violations": 89,
+      "cuts_added": 21
+    },
+    {
+      "round": 137,
+      "cpsat_status": "OPTIMAL",
+      "t": 14.034548997879028,
+      "selected_size": 165,
+      "cuts": 9092,
+      "violations": 624,
+      "cuts_added": 388
+    },
+    {
+      "round": 138,
+      "cpsat_status": "OPTIMAL",
+      "t": 17.57048463821411,
+      "selected_size": 165,
+      "cuts": 9480,
+      "violations": 508,
+      "cuts_added": 329
+    },
+    {
+      "round": 139,
+      "cpsat_status": "OPTIMAL",
+      "t": 20.04948902130127,
+      "selected_size": 165,
+      "cuts": 9809,
+      "violations": 265,
+      "cuts_added": 227
+    },
+    {
+      "round": 140,
+      "cpsat_status": "OPTIMAL",
+      "t": 31.859299421310425,
+      "selected_size": 165,
+      "cuts": 10036,
+      "violations": 392,
+      "cuts_added": 262
+    },
+    {
+      "round": 141,
+      "cpsat_status": "UNKNOWN",
+      "t": 62.12204313278198,
+      "cuts": 10298
+    }
+  ],
+  "points": [],
+  "size": 0,
+  "points_hash": null,
+  "parent_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "defect_accounting": null,
+  "verify": {
+    "A": null,
+    "B": null
+  },
+  "scope": {
+    "n": 100,
+    "symmetry_type": 0,
+    "mode": "partial",
+    "defect_budget": [
+      1,
+      5
+    ],
+    "universe_id": "orb_t0_partial_core41_free141_def120_part24_h8",
+    "time_limit_s": 2100.0,
+    "seed": 22,
+    "model_hash": "cf70c6a08eeb7c043805ff03b92c9c66d6074cd1819e5aa50c679faaa08cab25"
+  },
+  "candidate_path": null,
+  "pilot_tag": "long_n100_t0_partial_d1-5_s22",
+  "pilot_wall_time_s": 62.26809287071228
+}

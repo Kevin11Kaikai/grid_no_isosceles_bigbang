@@ -1,0 +1,28 @@
+{
+  "status": "PENDING_INCOMPLETE",
+  "final_report_present": false,
+  "smoke_summary_present": true,
+  "gate1_orbit_artifacts_present": true,
+  "resume_log_tail": "START long_n100_t0_defect_d1-8_s21 budget=3000s\r\nDONE long_n100_t0_defect_d1-8_s21 status=TIMEOUT size=0 wall=2999.9\r\nSTART long_n100_t0_partial_d1-8_s22 budget=2100s\r\n",
+  "status_counts": {
+    "TIMEOUT": 2,
+    "INFEASIBLE": 16
+  },
+  "timeout_as_infeas_violations": [],
+  "scoped_notes_ok": true,
+  "type0_timeout_not_infeas": true,
+  "gate1_orbit_artifact": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\audit\\agent_b\\agent_b_report.md",
+  "orbit_json_count": 3,
+  "n_smoke_rows": 18,
+  "candidates_dir_empty": true,
+  "pass_partial": true,
+  "note": "Final Agent B wave2 report PENDING; long n100 t0 run still in progress per wave2_resume.log. Audited smoke summary only.",
+  "orbit_mapping_vs_gate1": {
+    "checked": true,
+    "source": "scratch/audit/agent_b/agent_b_report.md",
+    "mentions_type0": true,
+    "gate1_report_mentions_mandatory": true,
+    "gate1_report_mentions_types_1_2_compare": true,
+    "pure_12_all_infeas": true
+  }
+}

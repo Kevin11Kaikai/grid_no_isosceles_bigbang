@@ -1,0 +1,28 @@
+{
+  "V_best": 0,
+  "baseline_size": 112,
+  "best_size": 112,
+  "claim_note": "pilot comparison only; no global UB; giant CC not used as community",
+  "improved": false,
+  "improvements": [],
+  "iterations": 2,
+  "last_region_meta": {
+    "bridge": {
+      "community_a": 0,
+      "community_b": 1,
+      "weight": 22660.0
+    },
+    "mode": "conflict_driven",
+    "n_seed_baseline": 100,
+    "n_spatial_knn_communities": 2,
+    "note": "spatial_knn communities + bbox halo; NOT giant projection CC",
+    "region_size": 4096
+  },
+  "mode": "conflict_driven",
+  "n": 64,
+  "oracle_legal": true,
+  "seed": 1,
+  "status": "COMPLETED",
+  "wall_time_s": 852.8150854110718,
+  "wall_time_s_outer": 852.8210825920105
+}

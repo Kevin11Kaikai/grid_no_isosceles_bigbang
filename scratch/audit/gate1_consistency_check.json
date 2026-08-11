@@ -1,0 +1,100 @@
+{
+  "schema": "gate1_consistency_check_v1",
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "baseline_hashes": {
+    "n64": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+    "n100": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+    "match_gate0": true
+  },
+  "n100_deletion_bound": {
+    "classification": "GLOBAL_RIGOROUS_LOWER_BOUND",
+    "also": "EXACT_MINIMUM_EQUALS_2_FOR_EASIEST_16",
+    "coverage": "all_unselected_cells",
+    "n_unselected_checked": 9836,
+    "formula_note": "n^2 - |S0| = 10000 - 164 = 9836",
+    "lower_bound_definition": "lb = max(type1_forced_lb, maximal_matching_lb) on blocker-edge vertex-cover instance; sound VC lower bounds per agent_a/scripts/blocker_audit.py",
+    "summary": {
+      "min_lower_bound_over_all_q": 2,
+      "min_upper_bound_over_all_q": 2,
+      "n_q_with_lb_eq_2": 16,
+      "n_q_with_lb_lt_2": 0,
+      "n_with_exact": 9370,
+      "n_bounds_only_intractable": 466,
+      "intractable_also_have_lb_ge_2": true
+    },
+    "easiest_16_qs_exact_min_deletions_2": [
+      [0, 43], [0, 56], [3, 17], [3, 82], [4, 1], [4, 98],
+      [24, 18], [24, 81], [75, 18], [75, 81],
+      [95, 1], [95, 98], [96, 17], [96, 82], [99, 43], [99, 56]
+    ],
+    "exact_status_of_easiest_16": "exact_bounds_coincide (LB==UB==2) for all 16",
+    "r1_exclusion_logic": {
+      "claim": "For Hamming r=1 shell |R|=1,|A|=2 aiming at size 165: each new q in A must be legal vs S0\\\\R. A sound LB>=2 for every q vs full S0 implies that deleting a single baseline point cannot clear all Type1/Type2 certificates for any q. Adding a second new point cannot remove certificates involving remaining baseline points. Therefore no legal S with |S|=165 exists inside the GLOBAL r=1 Hamming shell around S0.",
+      "scope_of_unsat": "global_r1_hamming_shell_around_official_baseline",
+      "forbidden_wording": "Do NOT write C(100)<=164 from this argument alone without dual-certified search; this is a structural exclusion of the r=1 shell model only.",
+      "holds_for_U_small_r1": true,
+      "holds_globally": true
+    },
+    "not": "HEURISTIC_ESTIMATE"
+  },
+  "n64_deletion_bound": {
+    "classification": "EXACT_MINIMUM_EQUALS_1_FOR_EASIEST_2_AND_GLOBAL_MIN_LB_EQUALS_1",
+    "n_unselected_checked": 3984,
+    "min_lower_bound_over_all_q": 1,
+    "n_q_with_lb_eq_1": 2,
+    "easiest_qs": [[62, 2], [62, 61]],
+    "exact_status": "exact_bounds_coincide LB==UB==1",
+    "r1_preclusion": false,
+    "keep_r1_as_primary_pilot": true
+  },
+  "u_small_48_definition": {
+    "source": "scratch/audit/agent_c/universe_halo_diagnostics.json baselines.n100.universes.U_small",
+    "n_removable": 16,
+    "n_addable": 32,
+    "n_vars": 48,
+    "selection_rule": "Remove: top removal_score (crowding+boundary+blocking; n100 already fully 180-symmetric). Add: lowest delta_V among DeltaV<=5 (empirical min DeltaV=3; 16 cells at <=3), mostly frame/mid, 2 center probes.",
+    "deterministic": "Explicit coordinate lists stored in Agent C JSON; reproducible without re-scoring if lists are used as canonical.",
+    "universe_hash_sha256": "0e3710582f4533b788ccfbb58f5b69d2b92ce5571041ad53688cda601d4caac2",
+    "not_from_giant_connected_component": true,
+    "giant_cc_note": "Agent A blocker-projection CC is one giant component (all 164 points). U_small is score/delta_V top-M from Agent C, NOT a connected-component cut of that giant graph.",
+    "includes_A_easiest_quartet": true,
+    "misses": "Any +1 whose Rem outside rem pool or Add outside add pool; deep-center mass; blocker-halo neighbors not in score/spatial selection."
+  },
+  "revised_pilots": {
+    "n100_primary_breakthrough": {
+      "r": 2,
+      "meaning": "|S0\\\\S|=2 and |S\\\\S0|=3 for target size 165",
+      "U_id": "U_small_r2",
+      "n_removable": 32,
+      "n_addable": 44,
+      "n_vars": 76,
+      "rem_source": "Agent C U_medium.removable_baseline_points (top-32 removal_score)",
+      "add_source": "union(Agent A all 16 qs with exact min deletions 2, Agent C U_small.addable_unselected_points)",
+      "universe_hash_sha256": "a100c8b65096256676e7959491c95b5868d3a71c7b43bdf0f27609e382d50e88",
+      "halo_enlarge": "Grow rem via C U_large; union remaining low-LB qs from A; spatial+blocker halo; then U_medium_r2 / U_large_r2",
+      "scoped_unsat_claim": "INFEASIBLE under scope=(n=100,r=2,U_small_r2,...) only — not a global C(100)<=164"
+    },
+    "n100_r1_negative_control": {
+      "r": 1,
+      "U_id": "U_small",
+      "n_vars": 48,
+      "role": "encoding sanity / negative control only; expected INFEASIBLE consistent with global blocker LB>=2",
+      "not_primary_breakthrough": true,
+      "time_budget_hint": "few minutes, single deterministic seed"
+    },
+    "n64_primary": {
+      "r": 1,
+      "U_id": "U_small",
+      "n_vars": 36,
+      "rationale": "Global min deletion LB/exact = 1 for two cells; r=1 not precluded"
+    }
+  },
+  "case_applied": "A_global_rigorous_lb_or_exact_min_equals_2",
+  "final_status": "WAVE2_READY",
+  "agent_artifacts_modified": false,
+  "main_artifacts_to_revise": [
+    "scratch/audit/phase0_neighborhood_policy.md",
+    "scratch/audit/gate1_decision.md",
+    "scratch/audit/gate1_manifest.json"
+  ]
+}

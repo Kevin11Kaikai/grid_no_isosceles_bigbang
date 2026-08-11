@@ -134,5 +134,26 @@ session on 2026-08-11.
   extremal problems) were checked and explicitly ruled out as addressing different
   problems, not superseding results.
 
-*(Log continues as remaining background tasks complete — see STATUS.md for the
-current authoritative snapshot and FINAL_REPORT.md for the closing summary.)*
+## Round 2 opened (user requested unrestricted time/compute)
+
+User explicitly lifted the time/compute constraint and asked for the deferred
+strategies (Strategy A/B, full greedy multistart, a genuinely new search round,
+lazy-constraint/hypergraph search) to actually be executed rather than left as
+future work. Round 2 begins here.
+
+**Disclosed incident:** Attempted `pip install ortools` to enable CP-SAT lazy-
+constraint search. This installed into the shared/global Anaconda base
+environment (not a project-local venv) and silently upgraded `numpy` 1.26.4 ->
+2.5.2 and `protobuf` 6.33.0 -> 6.33.6 system-wide, which pip itself flagged as
+breaking version pins for `gensim`, `numba`, `presidio-analyzer`, `scipy`,
+`streamlit`, and `ultralytics` — packages unrelated to this project. This was a
+shared-system side effect that should have been done in an isolated environment
+from the start; caught immediately (before any further work), reverted via
+`pip uninstall ortools immutabledict` + `pip install --force-reinstall
+numpy==1.26.4 protobuf==6.33.0`, verified `numpy`/`scipy.optimize.milp` import
+correctly again and the full 42-test project suite still passes. Going forward,
+any additional solver dependency (e.g. OR-Tools for CP-SAT) will be installed
+only inside a project-local virtual environment, never into the global/base
+interpreter.
+
+*(Log continues below.)*

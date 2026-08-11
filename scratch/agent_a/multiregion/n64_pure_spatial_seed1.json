@@ -1,0 +1,22 @@
+{
+  "V_best": 0,
+  "baseline_size": 112,
+  "best_size": 112,
+  "claim_note": "pilot comparison only; no global UB; giant CC not used as community",
+  "improved": false,
+  "improvements": [],
+  "iterations": 69805,
+  "last_region_meta": {
+    "k_boxes": 2,
+    "mode": "pure_spatial",
+    "n_spatial_knn_communities": 2,
+    "region_size": 198
+  },
+  "mode": "pure_spatial",
+  "n": 64,
+  "oracle_legal": true,
+  "seed": 1,
+  "status": "COMPLETED",
+  "wall_time_s": 720.0159883499146,
+  "wall_time_s_outer": 720.0219881534576
+}

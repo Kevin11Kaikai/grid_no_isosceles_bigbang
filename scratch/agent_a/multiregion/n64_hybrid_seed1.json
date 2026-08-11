@@ -1,0 +1,28 @@
+{
+  "V_best": 0,
+  "baseline_size": 112,
+  "best_size": 112,
+  "claim_note": "pilot comparison only; no global UB; giant CC not used as community",
+  "improved": false,
+  "improvements": [],
+  "iterations": 3,
+  "last_region_meta": {
+    "bridge": {
+      "community_a": 0,
+      "community_b": 1,
+      "weight": 22660.0
+    },
+    "mode": "hybrid",
+    "n_focus_qs": 10,
+    "n_spatial_knn_communities": 2,
+    "note": "hybrid spatial box \u222a knn bridge communities \u222a easiest/low-\u0394V halo",
+    "region_size": 4034
+  },
+  "mode": "hybrid",
+  "n": 64,
+  "oracle_legal": true,
+  "seed": 1,
+  "status": "COMPLETED",
+  "wall_time_s": 954.3016042709351,
+  "wall_time_s_outer": 954.3086042404175
+}

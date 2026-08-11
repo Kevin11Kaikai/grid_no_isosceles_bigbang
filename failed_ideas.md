@@ -59,6 +59,24 @@ happen to try.
 (longer budget); this n=64 result is treated as a completed negative data point for
 this session's compute budget, not as proof that 113 is unreachable.
 
+## F-004: Tabu with informed removal (Strategy A), seeded from official baselines
+
+**What was tried:** `src/search/tabu.py` — trial-remove small batches scored by how
+many sampled empty cells they free, tabu tenure on re-add, boundary-biased refill.
+Also multi-seed greedy LNS (4×90s, seeds 101–104) and a center-probe exact-MILP
+variant that frees frame points then repairs over the empty center box.
+
+**Result:**
+- Tabu n=64, ~150s effective (early plateau), seed=3: 4252 iters, stayed at 112
+- Tabu n=100, ~210s, seed=11: 1810 iters, stayed at 164
+- Greedy LNS n=64 multiseed: all four seeds stayed at 112 (~22k iters combined)
+- Direct check: 0 center cells (ring>11 / >26) are individually addable to either
+  baseline without removals
+
+**Status:** NEGATIVE under these budgets/seeds — not a proof that 113/165 are
+unreachable; different trajectories (SA+exact repair, longer multi-region destroy)
+remain open.
+
 ## F-004: Tabu search with informed removal (Proposer Strategy A) — PROVENANCE ANOMALY
 
 **What was tried:** `src/search/tabu.py`: remove the point(s) whose removal is

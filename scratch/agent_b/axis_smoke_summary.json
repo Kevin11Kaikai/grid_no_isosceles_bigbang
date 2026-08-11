@@ -1,0 +1,693 @@
+{
+  "phase": "axis_smoke_combined",
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "num_workers": 5,
+  "n64": {
+    "phase": "axis_smoke",
+    "n": 64,
+    "target": 113,
+    "seed": 11,
+    "num_workers": 5,
+    "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+    "wall_time_s": 50.49368166923523,
+    "rows": [
+      {
+        "n": 64,
+        "symmetry_type": 0,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "TIMEOUT",
+        "size": 0,
+        "wall_time_s": 29.57035779953003,
+        "model_hash": "996104bef53ca5708a00d050c81108390f4d164744327cc0189e8831e1dc9f6e",
+        "universe_id": "orb_t0_defect_core27_free87_def64_part0_h8",
+        "infeasible_record": null,
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n64_t0_defect_d1-8_s11_20260811T202846Z.json",
+        "candidate": null
+      },
+      {
+        "n": 64,
+        "symmetry_type": 1,
+        "mode": "pure",
+        "defect_budget": [
+          0,
+          0
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 0.20345044136047363,
+        "model_hash": "534d8fdd53382a4f4a79ad47613e2273aa68a90936c8d138572de72f7e084349",
+        "universe_id": "orb_t1_pure_core0_free61_def0_part0_h8",
+        "infeasible_record": {
+          "n": 64,
+          "axis": 1,
+          "mode": "pure",
+          "defect_budget": [
+            0,
+            0
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t1_pure_core0_free61_def0_part0_h8",
+          "time_s": 0.20345044136047363,
+          "status": "INFEASIBLE",
+          "model_hash": "534d8fdd53382a4f4a79ad47613e2273aa68a90936c8d138572de72f7e084349",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n64_t1_pure_d0-0_s11_20260811T202846Z.json",
+        "candidate": null
+      },
+      {
+        "n": 64,
+        "symmetry_type": 1,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          5
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 0.5964782238006592,
+        "model_hash": "e7978c082e9f3602bf005a82396d132e344bd5603bfffcfef77dc22d3eb5041e",
+        "universe_id": "orb_t1_defect_core0_free61_def64_part0_h8",
+        "infeasible_record": {
+          "n": 64,
+          "axis": 1,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            5
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t1_defect_core0_free61_def64_part0_h8",
+          "time_s": 0.5964782238006592,
+          "status": "INFEASIBLE",
+          "model_hash": "e7978c082e9f3602bf005a82396d132e344bd5603bfffcfef77dc22d3eb5041e",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n64_t1_defect_d1-5_s11_20260811T202847Z.json",
+        "candidate": null
+      },
+      {
+        "n": 64,
+        "symmetry_type": 2,
+        "mode": "pure",
+        "defect_budget": [
+          0,
+          0
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 0.20103955268859863,
+        "model_hash": "e941ad609331d22d381aa14eb0d496d4eae18bb22873ee1f34adb9a8f3c38a01",
+        "universe_id": "orb_t2_pure_core0_free61_def0_part0_h8",
+        "infeasible_record": {
+          "n": 64,
+          "axis": 2,
+          "mode": "pure",
+          "defect_budget": [
+            0,
+            0
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t2_pure_core0_free61_def0_part0_h8",
+          "time_s": 0.20103955268859863,
+          "status": "INFEASIBLE",
+          "model_hash": "e941ad609331d22d381aa14eb0d496d4eae18bb22873ee1f34adb9a8f3c38a01",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n64_t2_pure_d0-0_s11_20260811T202847Z.json",
+        "candidate": null
+      },
+      {
+        "n": 64,
+        "symmetry_type": 2,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          5
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 0.6905155181884766,
+        "model_hash": "409b1a9c0f2edefc63d274f1fd5b39d4f9bf8714ef68e3787028742cf4a8b185",
+        "universe_id": "orb_t2_defect_core0_free61_def64_part0_h8",
+        "infeasible_record": {
+          "n": 64,
+          "axis": 2,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            5
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t2_defect_core0_free61_def64_part0_h8",
+          "time_s": 0.6905155181884766,
+          "status": "INFEASIBLE",
+          "model_hash": "409b1a9c0f2edefc63d274f1fd5b39d4f9bf8714ef68e3787028742cf4a8b185",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n64_t2_defect_d1-5_s11_20260811T202848Z.json",
+        "candidate": null
+      },
+      {
+        "n": 64,
+        "symmetry_type": 3,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 6.156461238861084,
+        "model_hash": "e56a0698893ebdd988ebe36b13a00bc384f535ba6fee6d8da2fd14f8f85e9722",
+        "universe_id": "orb_t3_defect_core4_free64_def64_part0_h8",
+        "infeasible_record": {
+          "n": 64,
+          "axis": 3,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            8
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 4,
+            "core_orbit_ids": [
+              193,
+              209,
+              258,
+              544
+            ],
+            "core_points_note": 16
+          },
+          "universe": "orb_t3_defect_core4_free64_def64_part0_h8",
+          "time_s": 6.156461238861084,
+          "status": "INFEASIBLE",
+          "model_hash": "e56a0698893ebdd988ebe36b13a00bc384f535ba6fee6d8da2fd14f8f85e9722",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n64_t3_defect_d1-8_s11_20260811T202854Z.json",
+        "candidate": null
+      },
+      {
+        "n": 64,
+        "symmetry_type": 4,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 10.095839738845825,
+        "model_hash": "8efaf33184392b973e8821326c6e18964421d6fea3871012aad9ca4187c604ae",
+        "universe_id": "orb_t4_defect_core4_free64_def64_part0_h8",
+        "infeasible_record": {
+          "n": 64,
+          "axis": 4,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            8
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 4,
+            "core_orbit_ids": [
+              161,
+              177,
+              226,
+              512
+            ],
+            "core_points_note": 16
+          },
+          "universe": "orb_t4_defect_core4_free64_def64_part0_h8",
+          "time_s": 10.095839738845825,
+          "status": "INFEASIBLE",
+          "model_hash": "8efaf33184392b973e8821326c6e18964421d6fea3871012aad9ca4187c604ae",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n64_t4_defect_d1-8_s11_20260811T202904Z.json",
+        "candidate": null
+      },
+      {
+        "n": 64,
+        "symmetry_type": 5,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 0.8696024417877197,
+        "model_hash": "7f6276cc56329d609a7d4e17dcfb7b0de36f6ee5968fdc7360ee127e26024739",
+        "universe_id": "orb_t5_defect_core0_free60_def64_part0_h8",
+        "infeasible_record": {
+          "n": 64,
+          "axis": 5,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            8
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t5_defect_core0_free60_def64_part0_h8",
+          "time_s": 0.8696024417877197,
+          "status": "INFEASIBLE",
+          "model_hash": "7f6276cc56329d609a7d4e17dcfb7b0de36f6ee5968fdc7360ee127e26024739",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n64_t5_defect_d1-8_s11_20260811T202905Z.json",
+        "candidate": null
+      },
+      {
+        "n": 64,
+        "symmetry_type": 6,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 1.245753288269043,
+        "model_hash": "027a2276fb4cc77c4558fb81c5b5cf5ce6b617c8cb13892d73e17aeb7b56aa98",
+        "universe_id": "orb_t6_defect_core0_free60_def64_part0_h8",
+        "infeasible_record": {
+          "n": 64,
+          "axis": 6,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            8
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t6_defect_core0_free60_def64_part0_h8",
+          "time_s": 1.245753288269043,
+          "status": "INFEASIBLE",
+          "model_hash": "027a2276fb4cc77c4558fb81c5b5cf5ce6b617c8cb13892d73e17aeb7b56aa98",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n64_t6_defect_d1-8_s11_20260811T202906Z.json",
+        "candidate": null
+      }
+    ]
+  },
+  "n100": {
+    "phase": "axis_smoke",
+    "n": 100,
+    "target": 165,
+    "seed": 12,
+    "num_workers": 5,
+    "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+    "wall_time_s": 105.02334523200989,
+    "rows": [
+      {
+        "n": 100,
+        "symmetry_type": 0,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "TIMEOUT",
+        "size": 0,
+        "wall_time_s": 24.622435808181763,
+        "model_hash": "0a15019afa0632200adca48331d3600f4f029e087e3409f9cb1cf33fcb2c99e4",
+        "universe_id": "orb_t0_defect_core41_free121_def96_part0_h8",
+        "infeasible_record": null,
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t0_defect_d1-8_s12_20260811T202931Z.json",
+        "candidate": null
+      },
+      {
+        "n": 100,
+        "symmetry_type": 1,
+        "mode": "pure",
+        "defect_budget": [
+          0,
+          0
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 0.550349235534668,
+        "model_hash": "82a106a6426c072d4dbe1cd6275972992bdee5e25abdd69ebf718fbcdf2c8a7e",
+        "universe_id": "orb_t1_pure_core0_free81_def0_part0_h8",
+        "infeasible_record": {
+          "n": 100,
+          "axis": 1,
+          "mode": "pure",
+          "defect_budget": [
+            0,
+            0
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t1_pure_core0_free81_def0_part0_h8",
+          "time_s": 0.550349235534668,
+          "status": "INFEASIBLE",
+          "model_hash": "82a106a6426c072d4dbe1cd6275972992bdee5e25abdd69ebf718fbcdf2c8a7e",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t1_pure_d0-0_s12_20260811T202932Z.json",
+        "candidate": null
+      },
+      {
+        "n": 100,
+        "symmetry_type": 1,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          5
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 2.369518280029297,
+        "model_hash": "aa599035b0edf09548901261d343a715f41ee4289b1d110ee70b3c310fdd2900",
+        "universe_id": "orb_t1_defect_core0_free81_def96_part0_h8",
+        "infeasible_record": {
+          "n": 100,
+          "axis": 1,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            5
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t1_defect_core0_free81_def96_part0_h8",
+          "time_s": 2.369518280029297,
+          "status": "INFEASIBLE",
+          "model_hash": "aa599035b0edf09548901261d343a715f41ee4289b1d110ee70b3c310fdd2900",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t1_defect_d1-5_s12_20260811T202934Z.json",
+        "candidate": null
+      },
+      {
+        "n": 100,
+        "symmetry_type": 2,
+        "mode": "pure",
+        "defect_budget": [
+          0,
+          0
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 0.5229346752166748,
+        "model_hash": "6d4045ec034caa1c2a5531a935404d08e68630afa2e4cd281764c42c2af019b6",
+        "universe_id": "orb_t2_pure_core0_free81_def0_part0_h8",
+        "infeasible_record": {
+          "n": 100,
+          "axis": 2,
+          "mode": "pure",
+          "defect_budget": [
+            0,
+            0
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t2_pure_core0_free81_def0_part0_h8",
+          "time_s": 0.5229346752166748,
+          "status": "INFEASIBLE",
+          "model_hash": "6d4045ec034caa1c2a5531a935404d08e68630afa2e4cd281764c42c2af019b6",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t2_pure_d0-0_s12_20260811T202935Z.json",
+        "candidate": null
+      },
+      {
+        "n": 100,
+        "symmetry_type": 2,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          5
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 2.2188265323638916,
+        "model_hash": "8c31e5ce7626d27f8cc84841a5266e981304ef3bb62c595fb90abc8ce9989fff",
+        "universe_id": "orb_t2_defect_core0_free81_def96_part0_h8",
+        "infeasible_record": {
+          "n": 100,
+          "axis": 2,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            5
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 0,
+            "core_orbit_ids": [],
+            "core_points_note": 0
+          },
+          "universe": "orb_t2_defect_core0_free81_def96_part0_h8",
+          "time_s": 2.2188265323638916,
+          "status": "INFEASIBLE",
+          "model_hash": "8c31e5ce7626d27f8cc84841a5266e981304ef3bb62c595fb90abc8ce9989fff",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t2_defect_d1-5_s12_20260811T202937Z.json",
+        "candidate": null
+      },
+      {
+        "n": 100,
+        "symmetry_type": 3,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 23.509827613830566,
+        "model_hash": "ec69b385d11687b113cf5ea90dcab821f6b49ec8fb62b80cfada9a2acd070852",
+        "universe_id": "orb_t3_defect_core7_free87_def96_part0_h8",
+        "infeasible_record": {
+          "n": 100,
+          "axis": 3,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            8
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 7,
+            "core_orbit_ids": [
+              100,
+              145,
+              168,
+              188,
+              193,
+              1252,
+              1654
+            ],
+            "core_points_note": 28
+          },
+          "universe": "orb_t3_defect_core7_free87_def96_part0_h8",
+          "time_s": 23.509827613830566,
+          "status": "INFEASIBLE",
+          "model_hash": "ec69b385d11687b113cf5ea90dcab821f6b49ec8fb62b80cfada9a2acd070852",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t3_defect_d1-8_s12_20260811T203001Z.json",
+        "candidate": null
+      },
+      {
+        "n": 100,
+        "symmetry_type": 4,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 23.980100393295288,
+        "model_hash": "cdfe49aad1c19e1ba396e72c78a47d9f6c4190966e00da0fa490304dac0798b5",
+        "universe_id": "orb_t4_defect_core7_free87_def96_part0_h8",
+        "infeasible_record": {
+          "n": 100,
+          "axis": 4,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            8
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 7,
+            "core_orbit_ids": [
+              50,
+              95,
+              118,
+              138,
+              143,
+              1202,
+              1604
+            ],
+            "core_points_note": 28
+          },
+          "universe": "orb_t4_defect_core7_free87_def96_part0_h8",
+          "time_s": 23.980100393295288,
+          "status": "INFEASIBLE",
+          "model_hash": "cdfe49aad1c19e1ba396e72c78a47d9f6c4190966e00da0fa490304dac0798b5",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t4_defect_d1-8_s12_20260811T203025Z.json",
+        "candidate": null
+      },
+      {
+        "n": 100,
+        "symmetry_type": 5,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 12.751341581344604,
+        "model_hash": "7549cd31bcaacf239f9f8fdd99da93108f83f78f5accf011b910a643b6bd4fbe",
+        "universe_id": "orb_t5_defect_core6_free86_def96_part0_h8",
+        "infeasible_record": {
+          "n": 100,
+          "axis": 5,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            8
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 6,
+            "core_orbit_ids": [
+              16,
+              155,
+              362,
+              415,
+              1127,
+              1582
+            ],
+            "core_points_note": 24
+          },
+          "universe": "orb_t5_defect_core6_free86_def96_part0_h8",
+          "time_s": 12.751341581344604,
+          "status": "INFEASIBLE",
+          "model_hash": "7549cd31bcaacf239f9f8fdd99da93108f83f78f5accf011b910a643b6bd4fbe",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t5_defect_d1-8_s12_20260811T203038Z.json",
+        "candidate": null
+      },
+      {
+        "n": 100,
+        "symmetry_type": 6,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "status": "INFEASIBLE",
+        "size": 0,
+        "wall_time_s": 13.582425355911255,
+        "model_hash": "dba63ef46cb0a6f0035c3c4540a0348d9c00dd9c5e74330ffeff9e2bb313e5f5",
+        "universe_id": "orb_t6_defect_core6_free86_def96_part0_h8",
+        "infeasible_record": {
+          "n": 100,
+          "axis": 6,
+          "mode": "defect",
+          "defect_budget": [
+            1,
+            8
+          ],
+          "core_def": {
+            "soft_core": true,
+            "fix_core": false,
+            "n_core_orbits": 6,
+            "core_orbit_ids": [
+              15,
+              154,
+              361,
+              414,
+              1126,
+              1581
+            ],
+            "core_points_note": 24
+          },
+          "universe": "orb_t6_defect_core6_free86_def96_part0_h8",
+          "time_s": 13.582425355911255,
+          "status": "INFEASIBLE",
+          "model_hash": "dba63ef46cb0a6f0035c3c4540a0348d9c00dd9c5e74330ffeff9e2bb313e5f5",
+          "note": "Scoped to this universe/mode only; not a global upper bound."
+        },
+        "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\smoke_n100_t6_defect_d1-8_s12_20260811T203051Z.json",
+        "candidate": null
+      }
+    ]
+  }
+}

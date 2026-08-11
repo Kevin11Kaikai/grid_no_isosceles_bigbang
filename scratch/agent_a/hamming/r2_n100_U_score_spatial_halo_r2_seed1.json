@@ -1,0 +1,3629 @@
+{
+  "U_id": "U_score_spatial_halo_r2",
+  "meta": {
+    "best_illegal_V": 15,
+    "claim_note": "INFEASIBLE under declared scope only; not a global upper bound",
+    "final_cuts": 9268,
+    "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+    "num_workers": 5,
+    "round_log": [
+      {
+        "V": 49,
+        "cuts_added": 39,
+        "n_cuts_total": 0,
+        "n_witness_cuts": 49,
+        "round": 1,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.03844594955444336
+      },
+      {
+        "V": 45,
+        "cuts_added": 30,
+        "n_cuts_total": 39,
+        "n_witness_cuts": 45,
+        "round": 2,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.10036134719848633
+      },
+      {
+        "V": 47,
+        "cuts_added": 32,
+        "n_cuts_total": 69,
+        "n_witness_cuts": 47,
+        "round": 3,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.1627824306488037
+      },
+      {
+        "V": 32,
+        "cuts_added": 25,
+        "n_cuts_total": 101,
+        "n_witness_cuts": 32,
+        "round": 4,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.22591495513916016
+      },
+      {
+        "V": 43,
+        "cuts_added": 29,
+        "n_cuts_total": 126,
+        "n_witness_cuts": 43,
+        "round": 5,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.28951215744018555
+      },
+      {
+        "V": 49,
+        "cuts_added": 27,
+        "n_cuts_total": 155,
+        "n_witness_cuts": 49,
+        "round": 6,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.3524909019470215
+      },
+      {
+        "V": 39,
+        "cuts_added": 30,
+        "n_cuts_total": 182,
+        "n_witness_cuts": 39,
+        "round": 7,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.4315052032470703
+      },
+      {
+        "V": 26,
+        "cuts_added": 21,
+        "n_cuts_total": 212,
+        "n_witness_cuts": 26,
+        "round": 8,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.5085422992706299
+      },
+      {
+        "V": 32,
+        "cuts_added": 25,
+        "n_cuts_total": 233,
+        "n_witness_cuts": 32,
+        "round": 9,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.555917501449585
+      },
+      {
+        "V": 41,
+        "cuts_added": 31,
+        "n_cuts_total": 258,
+        "n_witness_cuts": 41,
+        "round": 10,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.6548333168029785
+      },
+      {
+        "V": 44,
+        "cuts_added": 29,
+        "n_cuts_total": 289,
+        "n_witness_cuts": 44,
+        "round": 11,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.7330825328826904
+      },
+      {
+        "V": 45,
+        "cuts_added": 24,
+        "n_cuts_total": 318,
+        "n_witness_cuts": 45,
+        "round": 12,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.8100090026855469
+      },
+      {
+        "V": 40,
+        "cuts_added": 27,
+        "n_cuts_total": 342,
+        "n_witness_cuts": 40,
+        "round": 13,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.8720443248748779
+      },
+      {
+        "V": 33,
+        "cuts_added": 16,
+        "n_cuts_total": 369,
+        "n_witness_cuts": 33,
+        "round": 14,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.9485616683959961
+      },
+      {
+        "V": 61,
+        "cuts_added": 47,
+        "n_cuts_total": 385,
+        "n_witness_cuts": 61,
+        "round": 15,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.0263595581054688
+      },
+      {
+        "V": 37,
+        "cuts_added": 21,
+        "n_cuts_total": 432,
+        "n_witness_cuts": 37,
+        "round": 16,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.1041507720947266
+      },
+      {
+        "V": 48,
+        "cuts_added": 34,
+        "n_cuts_total": 453,
+        "n_witness_cuts": 48,
+        "round": 17,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.1827139854431152
+      },
+      {
+        "V": 34,
+        "cuts_added": 24,
+        "n_cuts_total": 487,
+        "n_witness_cuts": 34,
+        "round": 18,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.2777132987976074
+      },
+      {
+        "V": 52,
+        "cuts_added": 29,
+        "n_cuts_total": 511,
+        "n_witness_cuts": 52,
+        "round": 19,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.3560564517974854
+      },
+      {
+        "V": 46,
+        "cuts_added": 28,
+        "n_cuts_total": 540,
+        "n_witness_cuts": 46,
+        "round": 20,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.4189164638519287
+      },
+      {
+        "V": 49,
+        "cuts_added": 36,
+        "n_cuts_total": 568,
+        "n_witness_cuts": 49,
+        "round": 21,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.5432159900665283
+      },
+      {
+        "V": 39,
+        "cuts_added": 25,
+        "n_cuts_total": 604,
+        "n_witness_cuts": 39,
+        "round": 22,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.659980058670044
+      },
+      {
+        "V": 36,
+        "cuts_added": 25,
+        "n_cuts_total": 629,
+        "n_witness_cuts": 36,
+        "round": 23,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.791410207748413
+      },
+      {
+        "V": 35,
+        "cuts_added": 24,
+        "n_cuts_total": 654,
+        "n_witness_cuts": 35,
+        "round": 24,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.9326786994934082
+      },
+      {
+        "V": 48,
+        "cuts_added": 34,
+        "n_cuts_total": 678,
+        "n_witness_cuts": 48,
+        "round": 25,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 2.0539112091064453
+      },
+      {
+        "V": 37,
+        "cuts_added": 19,
+        "n_cuts_total": 712,
+        "n_witness_cuts": 37,
+        "round": 26,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 2.194521427154541
+      },
+      {
+        "V": 27,
+        "cuts_added": 21,
+        "n_cuts_total": 731,
+        "n_witness_cuts": 27,
+        "round": 27,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 2.3981056213378906
+      },
+      {
+        "V": 35,
+        "cuts_added": 26,
+        "n_cuts_total": 752,
+        "n_witness_cuts": 35,
+        "round": 28,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 2.6196770668029785
+      },
+      {
+        "V": 23,
+        "cuts_added": 17,
+        "n_cuts_total": 778,
+        "n_witness_cuts": 23,
+        "round": 29,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 2.853041887283325
+      },
+      {
+        "V": 35,
+        "cuts_added": 26,
+        "n_cuts_total": 795,
+        "n_witness_cuts": 35,
+        "round": 30,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 3.0687150955200195
+      },
+      {
+        "V": 43,
+        "cuts_added": 21,
+        "n_cuts_total": 821,
+        "n_witness_cuts": 43,
+        "round": 31,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 3.2964344024658203
+      },
+      {
+        "V": 30,
+        "cuts_added": 17,
+        "n_cuts_total": 842,
+        "n_witness_cuts": 30,
+        "round": 32,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 3.5007455348968506
+      },
+      {
+        "V": 32,
+        "cuts_added": 20,
+        "n_cuts_total": 859,
+        "n_witness_cuts": 32,
+        "round": 33,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 3.6854968070983887
+      },
+      {
+        "V": 48,
+        "cuts_added": 34,
+        "n_cuts_total": 879,
+        "n_witness_cuts": 48,
+        "round": 34,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 3.8873729705810547
+      },
+      {
+        "V": 32,
+        "cuts_added": 17,
+        "n_cuts_total": 913,
+        "n_witness_cuts": 32,
+        "round": 35,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 4.074094295501709
+      },
+      {
+        "V": 41,
+        "cuts_added": 19,
+        "n_cuts_total": 930,
+        "n_witness_cuts": 41,
+        "round": 36,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 4.278186559677124
+      },
+      {
+        "V": 38,
+        "cuts_added": 32,
+        "n_cuts_total": 949,
+        "n_witness_cuts": 38,
+        "round": 37,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 4.48163366317749
+      },
+      {
+        "V": 45,
+        "cuts_added": 27,
+        "n_cuts_total": 981,
+        "n_witness_cuts": 45,
+        "round": 38,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 4.667125225067139
+      },
+      {
+        "V": 48,
+        "cuts_added": 23,
+        "n_cuts_total": 1008,
+        "n_witness_cuts": 48,
+        "round": 39,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 4.871432065963745
+      },
+      {
+        "V": 26,
+        "cuts_added": 20,
+        "n_cuts_total": 1031,
+        "n_witness_cuts": 26,
+        "round": 40,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 5.1129889488220215
+      },
+      {
+        "V": 40,
+        "cuts_added": 27,
+        "n_cuts_total": 1051,
+        "n_witness_cuts": 40,
+        "round": 41,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 5.358582973480225
+      },
+      {
+        "V": 49,
+        "cuts_added": 35,
+        "n_cuts_total": 1078,
+        "n_witness_cuts": 49,
+        "round": 42,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 5.558997869491577
+      },
+      {
+        "V": 24,
+        "cuts_added": 17,
+        "n_cuts_total": 1113,
+        "n_witness_cuts": 24,
+        "round": 43,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 5.758784294128418
+      },
+      {
+        "V": 33,
+        "cuts_added": 26,
+        "n_cuts_total": 1130,
+        "n_witness_cuts": 33,
+        "round": 44,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 5.976761102676392
+      },
+      {
+        "V": 25,
+        "cuts_added": 17,
+        "n_cuts_total": 1156,
+        "n_witness_cuts": 25,
+        "round": 45,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 6.163628339767456
+      },
+      {
+        "V": 42,
+        "cuts_added": 23,
+        "n_cuts_total": 1173,
+        "n_witness_cuts": 42,
+        "round": 46,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 6.3528618812561035
+      },
+      {
+        "V": 37,
+        "cuts_added": 16,
+        "n_cuts_total": 1196,
+        "n_witness_cuts": 37,
+        "round": 47,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 6.5451819896698
+      },
+      {
+        "V": 34,
+        "cuts_added": 19,
+        "n_cuts_total": 1212,
+        "n_witness_cuts": 34,
+        "round": 48,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 6.749571800231934
+      },
+      {
+        "V": 50,
+        "cuts_added": 33,
+        "n_cuts_total": 1231,
+        "n_witness_cuts": 50,
+        "round": 49,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 6.941787004470825
+      },
+      {
+        "V": 34,
+        "cuts_added": 22,
+        "n_cuts_total": 1264,
+        "n_witness_cuts": 34,
+        "round": 50,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 7.128349781036377
+      },
+      {
+        "V": 49,
+        "cuts_added": 38,
+        "n_cuts_total": 1286,
+        "n_witness_cuts": 49,
+        "round": 51,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 7.306952714920044
+      },
+      {
+        "V": 43,
+        "cuts_added": 30,
+        "n_cuts_total": 1324,
+        "n_witness_cuts": 43,
+        "round": 52,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 7.496273517608643
+      },
+      {
+        "V": 40,
+        "cuts_added": 30,
+        "n_cuts_total": 1354,
+        "n_witness_cuts": 40,
+        "round": 53,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 7.686187505722046
+      },
+      {
+        "V": 51,
+        "cuts_added": 37,
+        "n_cuts_total": 1384,
+        "n_witness_cuts": 51,
+        "round": 54,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 7.889416217803955
+      },
+      {
+        "V": 49,
+        "cuts_added": 35,
+        "n_cuts_total": 1421,
+        "n_witness_cuts": 49,
+        "round": 55,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 8.07508111000061
+      },
+      {
+        "V": 43,
+        "cuts_added": 33,
+        "n_cuts_total": 1456,
+        "n_witness_cuts": 43,
+        "round": 56,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 8.264803409576416
+      },
+      {
+        "V": 44,
+        "cuts_added": 31,
+        "n_cuts_total": 1489,
+        "n_witness_cuts": 44,
+        "round": 57,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 8.472479104995728
+      },
+      {
+        "V": 32,
+        "cuts_added": 17,
+        "n_cuts_total": 1520,
+        "n_witness_cuts": 32,
+        "round": 58,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 8.67316722869873
+      },
+      {
+        "V": 49,
+        "cuts_added": 36,
+        "n_cuts_total": 1537,
+        "n_witness_cuts": 49,
+        "round": 59,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 8.846449375152588
+      },
+      {
+        "V": 22,
+        "cuts_added": 18,
+        "n_cuts_total": 1573,
+        "n_witness_cuts": 22,
+        "round": 60,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 9.000006675720215
+      },
+      {
+        "V": 27,
+        "cuts_added": 17,
+        "n_cuts_total": 1591,
+        "n_witness_cuts": 27,
+        "round": 61,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 9.23522138595581
+      },
+      {
+        "V": 39,
+        "cuts_added": 24,
+        "n_cuts_total": 1608,
+        "n_witness_cuts": 39,
+        "round": 62,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 9.44820761680603
+      },
+      {
+        "V": 32,
+        "cuts_added": 20,
+        "n_cuts_total": 1632,
+        "n_witness_cuts": 32,
+        "round": 63,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 9.66067099571228
+      },
+      {
+        "V": 35,
+        "cuts_added": 17,
+        "n_cuts_total": 1652,
+        "n_witness_cuts": 35,
+        "round": 64,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 9.861421823501587
+      },
+      {
+        "V": 42,
+        "cuts_added": 36,
+        "n_cuts_total": 1669,
+        "n_witness_cuts": 42,
+        "round": 65,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 10.059244394302368
+      },
+      {
+        "V": 30,
+        "cuts_added": 18,
+        "n_cuts_total": 1705,
+        "n_witness_cuts": 30,
+        "round": 66,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 10.231858730316162
+      },
+      {
+        "V": 38,
+        "cuts_added": 35,
+        "n_cuts_total": 1723,
+        "n_witness_cuts": 38,
+        "round": 67,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 10.421086549758911
+      },
+      {
+        "V": 36,
+        "cuts_added": 21,
+        "n_cuts_total": 1758,
+        "n_witness_cuts": 36,
+        "round": 68,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 10.635129690170288
+      },
+      {
+        "V": 27,
+        "cuts_added": 13,
+        "n_cuts_total": 1779,
+        "n_witness_cuts": 27,
+        "round": 69,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 10.836337566375732
+      },
+      {
+        "V": 37,
+        "cuts_added": 22,
+        "n_cuts_total": 1792,
+        "n_witness_cuts": 37,
+        "round": 70,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 10.991990804672241
+      },
+      {
+        "V": 43,
+        "cuts_added": 27,
+        "n_cuts_total": 1814,
+        "n_witness_cuts": 43,
+        "round": 71,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 11.1812264919281
+      },
+      {
+        "V": 40,
+        "cuts_added": 26,
+        "n_cuts_total": 1841,
+        "n_witness_cuts": 40,
+        "round": 72,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 11.349533796310425
+      },
+      {
+        "V": 32,
+        "cuts_added": 22,
+        "n_cuts_total": 1867,
+        "n_witness_cuts": 32,
+        "round": 73,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 11.505800008773804
+      },
+      {
+        "V": 31,
+        "cuts_added": 18,
+        "n_cuts_total": 1889,
+        "n_witness_cuts": 31,
+        "round": 74,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 11.662907838821411
+      },
+      {
+        "V": 45,
+        "cuts_added": 31,
+        "n_cuts_total": 1907,
+        "n_witness_cuts": 45,
+        "round": 75,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 11.834569454193115
+      },
+      {
+        "V": 32,
+        "cuts_added": 26,
+        "n_cuts_total": 1938,
+        "n_witness_cuts": 32,
+        "round": 76,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 11.976696729660034
+      },
+      {
+        "V": 25,
+        "cuts_added": 22,
+        "n_cuts_total": 1964,
+        "n_witness_cuts": 25,
+        "round": 77,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 12.13294243812561
+      },
+      {
+        "V": 40,
+        "cuts_added": 25,
+        "n_cuts_total": 1986,
+        "n_witness_cuts": 40,
+        "round": 78,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 12.305141925811768
+      },
+      {
+        "V": 33,
+        "cuts_added": 20,
+        "n_cuts_total": 2011,
+        "n_witness_cuts": 33,
+        "round": 79,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 12.447854042053223
+      },
+      {
+        "V": 28,
+        "cuts_added": 22,
+        "n_cuts_total": 2031,
+        "n_witness_cuts": 28,
+        "round": 80,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 12.586877822875977
+      },
+      {
+        "V": 31,
+        "cuts_added": 19,
+        "n_cuts_total": 2053,
+        "n_witness_cuts": 31,
+        "round": 81,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 12.726837158203125
+      },
+      {
+        "V": 41,
+        "cuts_added": 27,
+        "n_cuts_total": 2072,
+        "n_witness_cuts": 41,
+        "round": 82,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 12.898864030838013
+      },
+      {
+        "V": 45,
+        "cuts_added": 39,
+        "n_cuts_total": 2099,
+        "n_witness_cuts": 45,
+        "round": 83,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 13.04041862487793
+      },
+      {
+        "V": 38,
+        "cuts_added": 29,
+        "n_cuts_total": 2138,
+        "n_witness_cuts": 38,
+        "round": 84,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 13.20433497428894
+      },
+      {
+        "V": 38,
+        "cuts_added": 22,
+        "n_cuts_total": 2167,
+        "n_witness_cuts": 38,
+        "round": 85,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 13.345489025115967
+      },
+      {
+        "V": 44,
+        "cuts_added": 26,
+        "n_cuts_total": 2189,
+        "n_witness_cuts": 44,
+        "round": 86,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 13.500394344329834
+      },
+      {
+        "V": 48,
+        "cuts_added": 29,
+        "n_cuts_total": 2215,
+        "n_witness_cuts": 48,
+        "round": 87,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 13.65473985671997
+      },
+      {
+        "V": 23,
+        "cuts_added": 19,
+        "n_cuts_total": 2244,
+        "n_witness_cuts": 23,
+        "round": 88,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 13.796238899230957
+      },
+      {
+        "V": 43,
+        "cuts_added": 30,
+        "n_cuts_total": 2263,
+        "n_witness_cuts": 43,
+        "round": 89,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 13.968969583511353
+      },
+      {
+        "V": 61,
+        "cuts_added": 40,
+        "n_cuts_total": 2293,
+        "n_witness_cuts": 61,
+        "round": 90,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 14.109923362731934
+      },
+      {
+        "V": 59,
+        "cuts_added": 45,
+        "n_cuts_total": 2333,
+        "n_witness_cuts": 59,
+        "round": 91,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 14.266397953033447
+      },
+      {
+        "V": 29,
+        "cuts_added": 21,
+        "n_cuts_total": 2378,
+        "n_witness_cuts": 29,
+        "round": 92,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 14.408347368240356
+      },
+      {
+        "V": 52,
+        "cuts_added": 37,
+        "n_cuts_total": 2399,
+        "n_witness_cuts": 52,
+        "round": 93,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 14.529389381408691
+      },
+      {
+        "V": 38,
+        "cuts_added": 20,
+        "n_cuts_total": 2436,
+        "n_witness_cuts": 38,
+        "round": 94,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 14.684024572372437
+      },
+      {
+        "V": 33,
+        "cuts_added": 24,
+        "n_cuts_total": 2456,
+        "n_witness_cuts": 33,
+        "round": 95,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 14.84100866317749
+      },
+      {
+        "V": 44,
+        "cuts_added": 33,
+        "n_cuts_total": 2480,
+        "n_witness_cuts": 44,
+        "round": 96,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 14.984216928482056
+      },
+      {
+        "V": 34,
+        "cuts_added": 23,
+        "n_cuts_total": 2513,
+        "n_witness_cuts": 34,
+        "round": 97,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 15.139639377593994
+      },
+      {
+        "V": 38,
+        "cuts_added": 27,
+        "n_cuts_total": 2536,
+        "n_witness_cuts": 38,
+        "round": 98,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 15.267730712890625
+      },
+      {
+        "V": 45,
+        "cuts_added": 22,
+        "n_cuts_total": 2563,
+        "n_witness_cuts": 45,
+        "round": 99,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 15.402745485305786
+      },
+      {
+        "V": 30,
+        "cuts_added": 25,
+        "n_cuts_total": 2585,
+        "n_witness_cuts": 30,
+        "round": 100,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 15.557000637054443
+      },
+      {
+        "V": 39,
+        "cuts_added": 26,
+        "n_cuts_total": 2610,
+        "n_witness_cuts": 39,
+        "round": 101,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 15.698970794677734
+      },
+      {
+        "V": 33,
+        "cuts_added": 15,
+        "n_cuts_total": 2636,
+        "n_witness_cuts": 33,
+        "round": 102,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 15.855387687683105
+      },
+      {
+        "V": 53,
+        "cuts_added": 35,
+        "n_cuts_total": 2651,
+        "n_witness_cuts": 53,
+        "round": 103,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 16.060914754867554
+      },
+      {
+        "V": 55,
+        "cuts_added": 42,
+        "n_cuts_total": 2686,
+        "n_witness_cuts": 55,
+        "round": 104,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 16.217844486236572
+      },
+      {
+        "V": 33,
+        "cuts_added": 21,
+        "n_cuts_total": 2728,
+        "n_witness_cuts": 33,
+        "round": 105,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 16.35855221748352
+      },
+      {
+        "V": 25,
+        "cuts_added": 17,
+        "n_cuts_total": 2749,
+        "n_witness_cuts": 25,
+        "round": 106,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 16.53965711593628
+      },
+      {
+        "V": 43,
+        "cuts_added": 29,
+        "n_cuts_total": 2766,
+        "n_witness_cuts": 43,
+        "round": 107,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 16.661383152008057
+      },
+      {
+        "V": 49,
+        "cuts_added": 28,
+        "n_cuts_total": 2795,
+        "n_witness_cuts": 49,
+        "round": 108,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 16.849066495895386
+      },
+      {
+        "V": 33,
+        "cuts_added": 24,
+        "n_cuts_total": 2823,
+        "n_witness_cuts": 33,
+        "round": 109,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 16.975066423416138
+      },
+      {
+        "V": 26,
+        "cuts_added": 7,
+        "n_cuts_total": 2847,
+        "n_witness_cuts": 26,
+        "round": 110,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 17.131534814834595
+      },
+      {
+        "V": 36,
+        "cuts_added": 26,
+        "n_cuts_total": 2854,
+        "n_witness_cuts": 36,
+        "round": 111,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 17.256565809249878
+      },
+      {
+        "V": 29,
+        "cuts_added": 19,
+        "n_cuts_total": 2880,
+        "n_witness_cuts": 29,
+        "round": 112,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 17.429341316223145
+      },
+      {
+        "V": 29,
+        "cuts_added": 18,
+        "n_cuts_total": 2899,
+        "n_witness_cuts": 29,
+        "round": 113,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 17.555711030960083
+      },
+      {
+        "V": 37,
+        "cuts_added": 21,
+        "n_cuts_total": 2917,
+        "n_witness_cuts": 37,
+        "round": 114,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 17.72091269493103
+      },
+      {
+        "V": 52,
+        "cuts_added": 32,
+        "n_cuts_total": 2938,
+        "n_witness_cuts": 52,
+        "round": 115,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 17.85554265975952
+      },
+      {
+        "V": 31,
+        "cuts_added": 21,
+        "n_cuts_total": 2970,
+        "n_witness_cuts": 31,
+        "round": 116,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 17.982332944869995
+      },
+      {
+        "V": 25,
+        "cuts_added": 18,
+        "n_cuts_total": 2991,
+        "n_witness_cuts": 25,
+        "round": 117,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 18.13822054862976
+      },
+      {
+        "V": 39,
+        "cuts_added": 23,
+        "n_cuts_total": 3009,
+        "n_witness_cuts": 39,
+        "round": 118,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 18.271942377090454
+      },
+      {
+        "V": 32,
+        "cuts_added": 26,
+        "n_cuts_total": 3032,
+        "n_witness_cuts": 32,
+        "round": 119,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 18.397282123565674
+      },
+      {
+        "V": 52,
+        "cuts_added": 36,
+        "n_cuts_total": 3058,
+        "n_witness_cuts": 52,
+        "round": 120,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 18.522056579589844
+      },
+      {
+        "V": 49,
+        "cuts_added": 28,
+        "n_cuts_total": 3094,
+        "n_witness_cuts": 49,
+        "round": 121,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 18.647659063339233
+      },
+      {
+        "V": 43,
+        "cuts_added": 22,
+        "n_cuts_total": 3122,
+        "n_witness_cuts": 43,
+        "round": 122,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 18.77305579185486
+      },
+      {
+        "V": 35,
+        "cuts_added": 15,
+        "n_cuts_total": 3144,
+        "n_witness_cuts": 35,
+        "round": 123,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 18.937833547592163
+      },
+      {
+        "V": 30,
+        "cuts_added": 20,
+        "n_cuts_total": 3159,
+        "n_witness_cuts": 30,
+        "round": 124,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 19.104692459106445
+      },
+      {
+        "V": 18,
+        "cuts_added": 11,
+        "n_cuts_total": 3179,
+        "n_witness_cuts": 18,
+        "round": 125,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 19.26255989074707
+      },
+      {
+        "V": 31,
+        "cuts_added": 20,
+        "n_cuts_total": 3190,
+        "n_witness_cuts": 31,
+        "round": 126,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 19.40590214729309
+      },
+      {
+        "V": 38,
+        "cuts_added": 28,
+        "n_cuts_total": 3210,
+        "n_witness_cuts": 38,
+        "round": 127,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 19.57252025604248
+      },
+      {
+        "V": 36,
+        "cuts_added": 20,
+        "n_cuts_total": 3238,
+        "n_witness_cuts": 36,
+        "round": 128,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 19.71173667907715
+      },
+      {
+        "V": 29,
+        "cuts_added": 20,
+        "n_cuts_total": 3258,
+        "n_witness_cuts": 29,
+        "round": 129,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 19.853684902191162
+      },
+      {
+        "V": 47,
+        "cuts_added": 30,
+        "n_cuts_total": 3278,
+        "n_witness_cuts": 47,
+        "round": 130,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 20.011120796203613
+      },
+      {
+        "V": 36,
+        "cuts_added": 28,
+        "n_cuts_total": 3308,
+        "n_witness_cuts": 36,
+        "round": 131,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 20.132356882095337
+      },
+      {
+        "V": 29,
+        "cuts_added": 21,
+        "n_cuts_total": 3336,
+        "n_witness_cuts": 29,
+        "round": 132,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 20.27683687210083
+      },
+      {
+        "V": 42,
+        "cuts_added": 32,
+        "n_cuts_total": 3357,
+        "n_witness_cuts": 42,
+        "round": 133,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 20.403719186782837
+      },
+      {
+        "V": 30,
+        "cuts_added": 24,
+        "n_cuts_total": 3389,
+        "n_witness_cuts": 30,
+        "round": 134,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 20.54406428337097
+      },
+      {
+        "V": 48,
+        "cuts_added": 36,
+        "n_cuts_total": 3413,
+        "n_witness_cuts": 48,
+        "round": 135,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 20.700978755950928
+      },
+      {
+        "V": 50,
+        "cuts_added": 31,
+        "n_cuts_total": 3449,
+        "n_witness_cuts": 50,
+        "round": 136,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 20.84077763557434
+      },
+      {
+        "V": 48,
+        "cuts_added": 35,
+        "n_cuts_total": 3480,
+        "n_witness_cuts": 48,
+        "round": 137,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 20.985432386398315
+      },
+      {
+        "V": 29,
+        "cuts_added": 22,
+        "n_cuts_total": 3515,
+        "n_witness_cuts": 29,
+        "round": 138,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 21.128328561782837
+      },
+      {
+        "V": 51,
+        "cuts_added": 30,
+        "n_cuts_total": 3537,
+        "n_witness_cuts": 51,
+        "round": 139,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 21.25137972831726
+      },
+      {
+        "V": 46,
+        "cuts_added": 32,
+        "n_cuts_total": 3567,
+        "n_witness_cuts": 46,
+        "round": 140,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 21.40762710571289
+      },
+      {
+        "V": 51,
+        "cuts_added": 29,
+        "n_cuts_total": 3599,
+        "n_witness_cuts": 51,
+        "round": 141,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 21.54605484008789
+      },
+      {
+        "V": 34,
+        "cuts_added": 24,
+        "n_cuts_total": 3628,
+        "n_witness_cuts": 34,
+        "round": 142,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 21.674729347229004
+      },
+      {
+        "V": 54,
+        "cuts_added": 36,
+        "n_cuts_total": 3652,
+        "n_witness_cuts": 54,
+        "round": 143,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 21.831522226333618
+      },
+      {
+        "V": 38,
+        "cuts_added": 28,
+        "n_cuts_total": 3688,
+        "n_witness_cuts": 38,
+        "round": 144,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 21.971665382385254
+      },
+      {
+        "V": 30,
+        "cuts_added": 25,
+        "n_cuts_total": 3716,
+        "n_witness_cuts": 30,
+        "round": 145,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 22.09746527671814
+      },
+      {
+        "V": 31,
+        "cuts_added": 23,
+        "n_cuts_total": 3741,
+        "n_witness_cuts": 31,
+        "round": 146,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 22.221361875534058
+      },
+      {
+        "V": 48,
+        "cuts_added": 33,
+        "n_cuts_total": 3764,
+        "n_witness_cuts": 48,
+        "round": 147,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 22.361318111419678
+      },
+      {
+        "V": 48,
+        "cuts_added": 33,
+        "n_cuts_total": 3797,
+        "n_witness_cuts": 48,
+        "round": 148,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 22.4863440990448
+      },
+      {
+        "V": 37,
+        "cuts_added": 26,
+        "n_cuts_total": 3830,
+        "n_witness_cuts": 37,
+        "round": 149,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 22.641308069229126
+      },
+      {
+        "V": 30,
+        "cuts_added": 20,
+        "n_cuts_total": 3856,
+        "n_witness_cuts": 30,
+        "round": 150,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 22.764471769332886
+      },
+      {
+        "V": 42,
+        "cuts_added": 28,
+        "n_cuts_total": 3876,
+        "n_witness_cuts": 42,
+        "round": 151,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 22.889397621154785
+      },
+      {
+        "V": 27,
+        "cuts_added": 21,
+        "n_cuts_total": 3904,
+        "n_witness_cuts": 27,
+        "round": 152,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 23.031827449798584
+      },
+      {
+        "V": 31,
+        "cuts_added": 25,
+        "n_cuts_total": 3925,
+        "n_witness_cuts": 31,
+        "round": 153,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 23.138625621795654
+      },
+      {
+        "V": 32,
+        "cuts_added": 16,
+        "n_cuts_total": 3950,
+        "n_witness_cuts": 32,
+        "round": 154,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 23.27885150909424
+      },
+      {
+        "V": 41,
+        "cuts_added": 28,
+        "n_cuts_total": 3966,
+        "n_witness_cuts": 41,
+        "round": 155,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 23.41986894607544
+      },
+      {
+        "V": 58,
+        "cuts_added": 39,
+        "n_cuts_total": 3994,
+        "n_witness_cuts": 58,
+        "round": 156,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 23.57651972770691
+      },
+      {
+        "V": 30,
+        "cuts_added": 18,
+        "n_cuts_total": 4033,
+        "n_witness_cuts": 30,
+        "round": 157,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 23.700230360031128
+      },
+      {
+        "V": 58,
+        "cuts_added": 40,
+        "n_cuts_total": 4051,
+        "n_witness_cuts": 58,
+        "round": 158,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 23.839004516601562
+      },
+      {
+        "V": 51,
+        "cuts_added": 33,
+        "n_cuts_total": 4091,
+        "n_witness_cuts": 51,
+        "round": 159,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 23.956997632980347
+      },
+      {
+        "V": 42,
+        "cuts_added": 29,
+        "n_cuts_total": 4124,
+        "n_witness_cuts": 42,
+        "round": 160,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 24.08219575881958
+      },
+      {
+        "V": 34,
+        "cuts_added": 20,
+        "n_cuts_total": 4153,
+        "n_witness_cuts": 34,
+        "round": 161,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 24.207287549972534
+      },
+      {
+        "V": 46,
+        "cuts_added": 32,
+        "n_cuts_total": 4173,
+        "n_witness_cuts": 46,
+        "round": 162,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 24.346070528030396
+      },
+      {
+        "V": 35,
+        "cuts_added": 24,
+        "n_cuts_total": 4205,
+        "n_witness_cuts": 35,
+        "round": 163,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 24.470269441604614
+      },
+      {
+        "V": 37,
+        "cuts_added": 27,
+        "n_cuts_total": 4229,
+        "n_witness_cuts": 37,
+        "round": 164,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 24.59626817703247
+      },
+      {
+        "V": 37,
+        "cuts_added": 30,
+        "n_cuts_total": 4256,
+        "n_witness_cuts": 37,
+        "round": 165,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 24.719828605651855
+      },
+      {
+        "V": 54,
+        "cuts_added": 33,
+        "n_cuts_total": 4286,
+        "n_witness_cuts": 54,
+        "round": 166,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 24.843982219696045
+      },
+      {
+        "V": 53,
+        "cuts_added": 36,
+        "n_cuts_total": 4319,
+        "n_witness_cuts": 53,
+        "round": 167,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 24.99992799758911
+      },
+      {
+        "V": 41,
+        "cuts_added": 28,
+        "n_cuts_total": 4355,
+        "n_witness_cuts": 41,
+        "round": 168,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 25.12299418449402
+      },
+      {
+        "V": 32,
+        "cuts_added": 19,
+        "n_cuts_total": 4383,
+        "n_witness_cuts": 32,
+        "round": 169,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 25.26450538635254
+      },
+      {
+        "V": 35,
+        "cuts_added": 20,
+        "n_cuts_total": 4402,
+        "n_witness_cuts": 35,
+        "round": 170,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 25.404114246368408
+      },
+      {
+        "V": 32,
+        "cuts_added": 23,
+        "n_cuts_total": 4422,
+        "n_witness_cuts": 32,
+        "round": 171,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 25.541921377182007
+      },
+      {
+        "V": 40,
+        "cuts_added": 26,
+        "n_cuts_total": 4445,
+        "n_witness_cuts": 40,
+        "round": 172,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 25.68293285369873
+      },
+      {
+        "V": 29,
+        "cuts_added": 18,
+        "n_cuts_total": 4471,
+        "n_witness_cuts": 29,
+        "round": 173,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 25.80814504623413
+      },
+      {
+        "V": 35,
+        "cuts_added": 24,
+        "n_cuts_total": 4489,
+        "n_witness_cuts": 35,
+        "round": 174,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 25.945570945739746
+      },
+      {
+        "V": 34,
+        "cuts_added": 27,
+        "n_cuts_total": 4513,
+        "n_witness_cuts": 34,
+        "round": 175,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 26.08776307106018
+      },
+      {
+        "V": 45,
+        "cuts_added": 28,
+        "n_cuts_total": 4540,
+        "n_witness_cuts": 45,
+        "round": 176,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 26.243220806121826
+      },
+      {
+        "V": 33,
+        "cuts_added": 23,
+        "n_cuts_total": 4568,
+        "n_witness_cuts": 33,
+        "round": 177,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 26.38201665878296
+      },
+      {
+        "V": 47,
+        "cuts_added": 32,
+        "n_cuts_total": 4591,
+        "n_witness_cuts": 47,
+        "round": 178,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 26.50654363632202
+      },
+      {
+        "V": 52,
+        "cuts_added": 36,
+        "n_cuts_total": 4623,
+        "n_witness_cuts": 52,
+        "round": 179,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 26.66258931159973
+      },
+      {
+        "V": 34,
+        "cuts_added": 23,
+        "n_cuts_total": 4659,
+        "n_witness_cuts": 34,
+        "round": 180,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 26.818547010421753
+      },
+      {
+        "V": 42,
+        "cuts_added": 23,
+        "n_cuts_total": 4682,
+        "n_witness_cuts": 42,
+        "round": 181,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 26.972744703292847
+      },
+      {
+        "V": 40,
+        "cuts_added": 29,
+        "n_cuts_total": 4705,
+        "n_witness_cuts": 40,
+        "round": 182,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 27.111300230026245
+      },
+      {
+        "V": 33,
+        "cuts_added": 22,
+        "n_cuts_total": 4734,
+        "n_witness_cuts": 33,
+        "round": 183,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 27.241694450378418
+      },
+      {
+        "V": 31,
+        "cuts_added": 15,
+        "n_cuts_total": 4756,
+        "n_witness_cuts": 31,
+        "round": 184,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 27.4121310710907
+      },
+      {
+        "V": 38,
+        "cuts_added": 26,
+        "n_cuts_total": 4771,
+        "n_witness_cuts": 38,
+        "round": 185,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 27.551396131515503
+      },
+      {
+        "V": 30,
+        "cuts_added": 14,
+        "n_cuts_total": 4797,
+        "n_witness_cuts": 30,
+        "round": 186,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 27.67668867111206
+      },
+      {
+        "V": 16,
+        "cuts_added": 7,
+        "n_cuts_total": 4811,
+        "n_witness_cuts": 16,
+        "round": 187,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 27.849674224853516
+      },
+      {
+        "V": 34,
+        "cuts_added": 25,
+        "n_cuts_total": 4818,
+        "n_witness_cuts": 34,
+        "round": 188,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 28.023917198181152
+      },
+      {
+        "V": 46,
+        "cuts_added": 31,
+        "n_cuts_total": 4843,
+        "n_witness_cuts": 46,
+        "round": 189,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 28.216104745864868
+      },
+      {
+        "V": 39,
+        "cuts_added": 23,
+        "n_cuts_total": 4874,
+        "n_witness_cuts": 39,
+        "round": 190,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 28.37589406967163
+      },
+      {
+        "V": 43,
+        "cuts_added": 26,
+        "n_cuts_total": 4897,
+        "n_witness_cuts": 43,
+        "round": 191,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 28.51699161529541
+      },
+      {
+        "V": 42,
+        "cuts_added": 32,
+        "n_cuts_total": 4923,
+        "n_witness_cuts": 42,
+        "round": 192,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 28.684005737304688
+      },
+      {
+        "V": 25,
+        "cuts_added": 18,
+        "n_cuts_total": 4955,
+        "n_witness_cuts": 25,
+        "round": 193,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 28.82382345199585
+      },
+      {
+        "V": 38,
+        "cuts_added": 26,
+        "n_cuts_total": 4973,
+        "n_witness_cuts": 38,
+        "round": 194,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 28.97775959968567
+      },
+      {
+        "V": 39,
+        "cuts_added": 29,
+        "n_cuts_total": 4999,
+        "n_witness_cuts": 39,
+        "round": 195,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 29.118473052978516
+      },
+      {
+        "V": 35,
+        "cuts_added": 23,
+        "n_cuts_total": 5028,
+        "n_witness_cuts": 35,
+        "round": 196,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 29.257532119750977
+      },
+      {
+        "V": 38,
+        "cuts_added": 22,
+        "n_cuts_total": 5051,
+        "n_witness_cuts": 38,
+        "round": 197,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 29.400896310806274
+      },
+      {
+        "V": 52,
+        "cuts_added": 35,
+        "n_cuts_total": 5073,
+        "n_witness_cuts": 52,
+        "round": 198,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 29.5249445438385
+      },
+      {
+        "V": 26,
+        "cuts_added": 19,
+        "n_cuts_total": 5108,
+        "n_witness_cuts": 26,
+        "round": 199,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 29.66490411758423
+      },
+      {
+        "V": 50,
+        "cuts_added": 36,
+        "n_cuts_total": 5127,
+        "n_witness_cuts": 50,
+        "round": 200,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 29.774134159088135
+      },
+      {
+        "V": 45,
+        "cuts_added": 33,
+        "n_cuts_total": 5163,
+        "n_witness_cuts": 45,
+        "round": 201,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 29.896416902542114
+      },
+      {
+        "V": 21,
+        "cuts_added": 18,
+        "n_cuts_total": 5196,
+        "n_witness_cuts": 21,
+        "round": 202,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 30.035239696502686
+      },
+      {
+        "V": 43,
+        "cuts_added": 22,
+        "n_cuts_total": 5214,
+        "n_witness_cuts": 43,
+        "round": 203,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 30.174037218093872
+      },
+      {
+        "V": 28,
+        "cuts_added": 21,
+        "n_cuts_total": 5236,
+        "n_witness_cuts": 28,
+        "round": 204,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 30.300466299057007
+      },
+      {
+        "V": 53,
+        "cuts_added": 32,
+        "n_cuts_total": 5257,
+        "n_witness_cuts": 53,
+        "round": 205,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 30.454427242279053
+      },
+      {
+        "V": 52,
+        "cuts_added": 36,
+        "n_cuts_total": 5289,
+        "n_witness_cuts": 52,
+        "round": 206,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 30.62278985977173
+      },
+      {
+        "V": 48,
+        "cuts_added": 31,
+        "n_cuts_total": 5325,
+        "n_witness_cuts": 48,
+        "round": 207,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 30.76500368118286
+      },
+      {
+        "V": 52,
+        "cuts_added": 31,
+        "n_cuts_total": 5356,
+        "n_witness_cuts": 52,
+        "round": 208,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 30.891103744506836
+      },
+      {
+        "V": 25,
+        "cuts_added": 15,
+        "n_cuts_total": 5387,
+        "n_witness_cuts": 25,
+        "round": 209,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 31.028300046920776
+      },
+      {
+        "V": 26,
+        "cuts_added": 21,
+        "n_cuts_total": 5402,
+        "n_witness_cuts": 26,
+        "round": 210,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 31.184850692749023
+      },
+      {
+        "V": 27,
+        "cuts_added": 15,
+        "n_cuts_total": 5423,
+        "n_witness_cuts": 27,
+        "round": 211,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 31.315253973007202
+      },
+      {
+        "V": 40,
+        "cuts_added": 28,
+        "n_cuts_total": 5438,
+        "n_witness_cuts": 40,
+        "round": 212,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 31.45293879508972
+      },
+      {
+        "V": 60,
+        "cuts_added": 42,
+        "n_cuts_total": 5466,
+        "n_witness_cuts": 60,
+        "round": 213,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 31.59183931350708
+      },
+      {
+        "V": 34,
+        "cuts_added": 15,
+        "n_cuts_total": 5508,
+        "n_witness_cuts": 34,
+        "round": 214,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 31.748435974121094
+      },
+      {
+        "V": 50,
+        "cuts_added": 37,
+        "n_cuts_total": 5523,
+        "n_witness_cuts": 50,
+        "round": 215,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 31.89308452606201
+      },
+      {
+        "V": 35,
+        "cuts_added": 25,
+        "n_cuts_total": 5560,
+        "n_witness_cuts": 35,
+        "round": 216,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 32.03075361251831
+      },
+      {
+        "V": 42,
+        "cuts_added": 37,
+        "n_cuts_total": 5585,
+        "n_witness_cuts": 42,
+        "round": 217,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 32.215057134628296
+      },
+      {
+        "V": 26,
+        "cuts_added": 20,
+        "n_cuts_total": 5622,
+        "n_witness_cuts": 26,
+        "round": 218,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 32.42296028137207
+      },
+      {
+        "V": 54,
+        "cuts_added": 34,
+        "n_cuts_total": 5642,
+        "n_witness_cuts": 54,
+        "round": 219,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 32.58805060386658
+      },
+      {
+        "V": 34,
+        "cuts_added": 26,
+        "n_cuts_total": 5676,
+        "n_witness_cuts": 34,
+        "round": 220,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 32.730695724487305
+      },
+      {
+        "V": 37,
+        "cuts_added": 20,
+        "n_cuts_total": 5702,
+        "n_witness_cuts": 37,
+        "round": 221,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 32.888413429260254
+      },
+      {
+        "V": 29,
+        "cuts_added": 9,
+        "n_cuts_total": 5722,
+        "n_witness_cuts": 29,
+        "round": 222,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 33.06056308746338
+      },
+      {
+        "V": 38,
+        "cuts_added": 27,
+        "n_cuts_total": 5731,
+        "n_witness_cuts": 38,
+        "round": 223,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 33.23587942123413
+      },
+      {
+        "V": 46,
+        "cuts_added": 37,
+        "n_cuts_total": 5758,
+        "n_witness_cuts": 46,
+        "round": 224,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 33.397756576538086
+      },
+      {
+        "V": 47,
+        "cuts_added": 35,
+        "n_cuts_total": 5795,
+        "n_witness_cuts": 47,
+        "round": 225,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 33.526055335998535
+      },
+      {
+        "V": 43,
+        "cuts_added": 20,
+        "n_cuts_total": 5830,
+        "n_witness_cuts": 43,
+        "round": 226,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 33.681318283081055
+      },
+      {
+        "V": 41,
+        "cuts_added": 24,
+        "n_cuts_total": 5850,
+        "n_witness_cuts": 41,
+        "round": 227,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 33.821120738983154
+      },
+      {
+        "V": 48,
+        "cuts_added": 40,
+        "n_cuts_total": 5874,
+        "n_witness_cuts": 48,
+        "round": 228,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 33.993504762649536
+      },
+      {
+        "V": 36,
+        "cuts_added": 28,
+        "n_cuts_total": 5914,
+        "n_witness_cuts": 36,
+        "round": 229,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 34.18272924423218
+      },
+      {
+        "V": 42,
+        "cuts_added": 25,
+        "n_cuts_total": 5942,
+        "n_witness_cuts": 42,
+        "round": 230,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 34.354408740997314
+      },
+      {
+        "V": 23,
+        "cuts_added": 9,
+        "n_cuts_total": 5967,
+        "n_witness_cuts": 23,
+        "round": 231,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 34.52011442184448
+      },
+      {
+        "V": 27,
+        "cuts_added": 16,
+        "n_cuts_total": 5976,
+        "n_witness_cuts": 27,
+        "round": 232,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 34.70984196662903
+      },
+      {
+        "V": 61,
+        "cuts_added": 42,
+        "n_cuts_total": 5992,
+        "n_witness_cuts": 61,
+        "round": 233,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 34.86783528327942
+      },
+      {
+        "V": 37,
+        "cuts_added": 27,
+        "n_cuts_total": 6034,
+        "n_witness_cuts": 37,
+        "round": 234,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 35.006670236587524
+      },
+      {
+        "V": 58,
+        "cuts_added": 43,
+        "n_cuts_total": 6061,
+        "n_witness_cuts": 58,
+        "round": 235,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 35.162014961242676
+      },
+      {
+        "V": 33,
+        "cuts_added": 25,
+        "n_cuts_total": 6104,
+        "n_witness_cuts": 33,
+        "round": 236,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 35.319239139556885
+      },
+      {
+        "V": 36,
+        "cuts_added": 22,
+        "n_cuts_total": 6129,
+        "n_witness_cuts": 36,
+        "round": 237,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 35.4847629070282
+      },
+      {
+        "V": 16,
+        "cuts_added": 13,
+        "n_cuts_total": 6151,
+        "n_witness_cuts": 16,
+        "round": 238,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 35.7255802154541
+      },
+      {
+        "V": 33,
+        "cuts_added": 28,
+        "n_cuts_total": 6164,
+        "n_witness_cuts": 33,
+        "round": 239,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 35.87915849685669
+      },
+      {
+        "V": 31,
+        "cuts_added": 28,
+        "n_cuts_total": 6192,
+        "n_witness_cuts": 31,
+        "round": 240,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 36.0045645236969
+      },
+      {
+        "V": 36,
+        "cuts_added": 20,
+        "n_cuts_total": 6220,
+        "n_witness_cuts": 36,
+        "round": 241,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 36.16270136833191
+      },
+      {
+        "V": 39,
+        "cuts_added": 34,
+        "n_cuts_total": 6240,
+        "n_witness_cuts": 39,
+        "round": 242,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 36.30493903160095
+      },
+      {
+        "V": 46,
+        "cuts_added": 38,
+        "n_cuts_total": 6274,
+        "n_witness_cuts": 46,
+        "round": 243,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 36.4447968006134
+      },
+      {
+        "V": 37,
+        "cuts_added": 34,
+        "n_cuts_total": 6312,
+        "n_witness_cuts": 37,
+        "round": 244,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 36.61509990692139
+      },
+      {
+        "V": 31,
+        "cuts_added": 21,
+        "n_cuts_total": 6346,
+        "n_witness_cuts": 31,
+        "round": 245,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 36.79281497001648
+      },
+      {
+        "V": 40,
+        "cuts_added": 19,
+        "n_cuts_total": 6367,
+        "n_witness_cuts": 40,
+        "round": 246,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 36.919535875320435
+      },
+      {
+        "V": 52,
+        "cuts_added": 31,
+        "n_cuts_total": 6386,
+        "n_witness_cuts": 52,
+        "round": 247,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 37.07568979263306
+      },
+      {
+        "V": 33,
+        "cuts_added": 19,
+        "n_cuts_total": 6417,
+        "n_witness_cuts": 33,
+        "round": 248,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 37.20220685005188
+      },
+      {
+        "V": 42,
+        "cuts_added": 24,
+        "n_cuts_total": 6436,
+        "n_witness_cuts": 42,
+        "round": 249,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 37.360546588897705
+      },
+      {
+        "V": 28,
+        "cuts_added": 21,
+        "n_cuts_total": 6460,
+        "n_witness_cuts": 28,
+        "round": 250,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 37.48524332046509
+      },
+      {
+        "V": 29,
+        "cuts_added": 17,
+        "n_cuts_total": 6481,
+        "n_witness_cuts": 29,
+        "round": 251,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 37.62693905830383
+      },
+      {
+        "V": 36,
+        "cuts_added": 27,
+        "n_cuts_total": 6498,
+        "n_witness_cuts": 36,
+        "round": 252,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 37.751039028167725
+      },
+      {
+        "V": 30,
+        "cuts_added": 20,
+        "n_cuts_total": 6525,
+        "n_witness_cuts": 30,
+        "round": 253,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 37.884761333465576
+      },
+      {
+        "V": 50,
+        "cuts_added": 33,
+        "n_cuts_total": 6545,
+        "n_witness_cuts": 50,
+        "round": 254,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 37.99397015571594
+      },
+      {
+        "V": 40,
+        "cuts_added": 37,
+        "n_cuts_total": 6578,
+        "n_witness_cuts": 40,
+        "round": 255,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 38.119306325912476
+      },
+      {
+        "V": 30,
+        "cuts_added": 27,
+        "n_cuts_total": 6615,
+        "n_witness_cuts": 30,
+        "round": 256,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 38.258902072906494
+      },
+      {
+        "V": 45,
+        "cuts_added": 30,
+        "n_cuts_total": 6642,
+        "n_witness_cuts": 45,
+        "round": 257,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 38.38533043861389
+      },
+      {
+        "V": 37,
+        "cuts_added": 30,
+        "n_cuts_total": 6672,
+        "n_witness_cuts": 37,
+        "round": 258,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 38.52565836906433
+      },
+      {
+        "V": 32,
+        "cuts_added": 24,
+        "n_cuts_total": 6702,
+        "n_witness_cuts": 32,
+        "round": 259,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 38.68110013008118
+      },
+      {
+        "V": 47,
+        "cuts_added": 32,
+        "n_cuts_total": 6726,
+        "n_witness_cuts": 47,
+        "round": 260,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 38.836193323135376
+      },
+      {
+        "V": 31,
+        "cuts_added": 25,
+        "n_cuts_total": 6758,
+        "n_witness_cuts": 31,
+        "round": 261,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 38.993266582489014
+      },
+      {
+        "V": 18,
+        "cuts_added": 9,
+        "n_cuts_total": 6783,
+        "n_witness_cuts": 18,
+        "round": 262,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 39.11766791343689
+      },
+      {
+        "V": 27,
+        "cuts_added": 17,
+        "n_cuts_total": 6792,
+        "n_witness_cuts": 27,
+        "round": 263,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 39.2583909034729
+      },
+      {
+        "V": 29,
+        "cuts_added": 21,
+        "n_cuts_total": 6809,
+        "n_witness_cuts": 29,
+        "round": 264,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 39.41504216194153
+      },
+      {
+        "V": 35,
+        "cuts_added": 22,
+        "n_cuts_total": 6830,
+        "n_witness_cuts": 35,
+        "round": 265,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 39.572859048843384
+      },
+      {
+        "V": 44,
+        "cuts_added": 28,
+        "n_cuts_total": 6852,
+        "n_witness_cuts": 44,
+        "round": 266,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 39.69627523422241
+      },
+      {
+        "V": 39,
+        "cuts_added": 32,
+        "n_cuts_total": 6880,
+        "n_witness_cuts": 39,
+        "round": 267,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 39.856181383132935
+      },
+      {
+        "V": 35,
+        "cuts_added": 22,
+        "n_cuts_total": 6912,
+        "n_witness_cuts": 35,
+        "round": 268,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 40.02484464645386
+      },
+      {
+        "V": 46,
+        "cuts_added": 33,
+        "n_cuts_total": 6934,
+        "n_witness_cuts": 46,
+        "round": 269,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 40.165242433547974
+      },
+      {
+        "V": 40,
+        "cuts_added": 28,
+        "n_cuts_total": 6967,
+        "n_witness_cuts": 40,
+        "round": 270,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 40.306607484817505
+      },
+      {
+        "V": 26,
+        "cuts_added": 22,
+        "n_cuts_total": 6995,
+        "n_witness_cuts": 26,
+        "round": 271,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 40.44794845581055
+      },
+      {
+        "V": 51,
+        "cuts_added": 37,
+        "n_cuts_total": 7017,
+        "n_witness_cuts": 51,
+        "round": 272,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 40.57384395599365
+      },
+      {
+        "V": 48,
+        "cuts_added": 39,
+        "n_cuts_total": 7054,
+        "n_witness_cuts": 48,
+        "round": 273,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 40.713616609573364
+      },
+      {
+        "V": 50,
+        "cuts_added": 29,
+        "n_cuts_total": 7093,
+        "n_witness_cuts": 50,
+        "round": 274,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 40.839908599853516
+      },
+      {
+        "V": 38,
+        "cuts_added": 21,
+        "n_cuts_total": 7122,
+        "n_witness_cuts": 38,
+        "round": 275,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 40.964662313461304
+      },
+      {
+        "V": 64,
+        "cuts_added": 45,
+        "n_cuts_total": 7143,
+        "n_witness_cuts": 64,
+        "round": 276,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 41.12160801887512
+      },
+      {
+        "V": 38,
+        "cuts_added": 23,
+        "n_cuts_total": 7188,
+        "n_witness_cuts": 38,
+        "round": 277,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 41.278340578079224
+      },
+      {
+        "V": 41,
+        "cuts_added": 24,
+        "n_cuts_total": 7211,
+        "n_witness_cuts": 41,
+        "round": 278,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 41.435518980026245
+      },
+      {
+        "V": 32,
+        "cuts_added": 24,
+        "n_cuts_total": 7235,
+        "n_witness_cuts": 32,
+        "round": 279,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 41.573079347610474
+      },
+      {
+        "V": 38,
+        "cuts_added": 29,
+        "n_cuts_total": 7259,
+        "n_witness_cuts": 38,
+        "round": 280,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 41.6807279586792
+      },
+      {
+        "V": 36,
+        "cuts_added": 28,
+        "n_cuts_total": 7288,
+        "n_witness_cuts": 36,
+        "round": 281,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 41.819920778274536
+      },
+      {
+        "V": 45,
+        "cuts_added": 33,
+        "n_cuts_total": 7316,
+        "n_witness_cuts": 45,
+        "round": 282,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 41.97254133224487
+      },
+      {
+        "V": 42,
+        "cuts_added": 25,
+        "n_cuts_total": 7349,
+        "n_witness_cuts": 42,
+        "round": 283,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 42.0965850353241
+      },
+      {
+        "V": 38,
+        "cuts_added": 26,
+        "n_cuts_total": 7374,
+        "n_witness_cuts": 38,
+        "round": 284,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 42.23540210723877
+      },
+      {
+        "V": 24,
+        "cuts_added": 15,
+        "n_cuts_total": 7400,
+        "n_witness_cuts": 24,
+        "round": 285,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 42.37517476081848
+      },
+      {
+        "V": 44,
+        "cuts_added": 28,
+        "n_cuts_total": 7415,
+        "n_witness_cuts": 44,
+        "round": 286,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 42.50192880630493
+      },
+      {
+        "V": 40,
+        "cuts_added": 27,
+        "n_cuts_total": 7443,
+        "n_witness_cuts": 40,
+        "round": 287,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 42.6267876625061
+      },
+      {
+        "V": 30,
+        "cuts_added": 20,
+        "n_cuts_total": 7470,
+        "n_witness_cuts": 30,
+        "round": 288,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 42.75287485122681
+      },
+      {
+        "V": 33,
+        "cuts_added": 22,
+        "n_cuts_total": 7490,
+        "n_witness_cuts": 33,
+        "round": 289,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 42.8789165019989
+      },
+      {
+        "V": 27,
+        "cuts_added": 19,
+        "n_cuts_total": 7512,
+        "n_witness_cuts": 27,
+        "round": 290,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 43.034215688705444
+      },
+      {
+        "V": 34,
+        "cuts_added": 24,
+        "n_cuts_total": 7531,
+        "n_witness_cuts": 34,
+        "round": 291,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 43.178959608078
+      },
+      {
+        "V": 58,
+        "cuts_added": 48,
+        "n_cuts_total": 7555,
+        "n_witness_cuts": 58,
+        "round": 292,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 43.332441329956055
+      },
+      {
+        "V": 40,
+        "cuts_added": 25,
+        "n_cuts_total": 7603,
+        "n_witness_cuts": 40,
+        "round": 293,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 43.459254026412964
+      },
+      {
+        "V": 41,
+        "cuts_added": 29,
+        "n_cuts_total": 7628,
+        "n_witness_cuts": 41,
+        "round": 294,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 43.592355251312256
+      },
+      {
+        "V": 45,
+        "cuts_added": 32,
+        "n_cuts_total": 7657,
+        "n_witness_cuts": 45,
+        "round": 295,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 43.732248067855835
+      },
+      {
+        "V": 48,
+        "cuts_added": 31,
+        "n_cuts_total": 7689,
+        "n_witness_cuts": 48,
+        "round": 296,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 43.89186978340149
+      },
+      {
+        "V": 41,
+        "cuts_added": 30,
+        "n_cuts_total": 7720,
+        "n_witness_cuts": 41,
+        "round": 297,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 44.01804971694946
+      },
+      {
+        "V": 51,
+        "cuts_added": 29,
+        "n_cuts_total": 7750,
+        "n_witness_cuts": 51,
+        "round": 298,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 44.17929172515869
+      },
+      {
+        "V": 53,
+        "cuts_added": 31,
+        "n_cuts_total": 7779,
+        "n_witness_cuts": 53,
+        "round": 299,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 44.32533574104309
+      },
+      {
+        "V": 28,
+        "cuts_added": 23,
+        "n_cuts_total": 7810,
+        "n_witness_cuts": 28,
+        "round": 300,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 44.48298978805542
+      },
+      {
+        "V": 47,
+        "cuts_added": 31,
+        "n_cuts_total": 7833,
+        "n_witness_cuts": 47,
+        "round": 301,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 44.672667503356934
+      },
+      {
+        "V": 37,
+        "cuts_added": 22,
+        "n_cuts_total": 7864,
+        "n_witness_cuts": 37,
+        "round": 302,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 44.853198289871216
+      },
+      {
+        "V": 45,
+        "cuts_added": 32,
+        "n_cuts_total": 7886,
+        "n_witness_cuts": 45,
+        "round": 303,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 45.01199960708618
+      },
+      {
+        "V": 48,
+        "cuts_added": 32,
+        "n_cuts_total": 7918,
+        "n_witness_cuts": 48,
+        "round": 304,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 45.19944453239441
+      },
+      {
+        "V": 33,
+        "cuts_added": 21,
+        "n_cuts_total": 7950,
+        "n_witness_cuts": 33,
+        "round": 305,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 45.38942337036133
+      },
+      {
+        "V": 38,
+        "cuts_added": 23,
+        "n_cuts_total": 7971,
+        "n_witness_cuts": 38,
+        "round": 306,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 45.531015157699585
+      },
+      {
+        "V": 42,
+        "cuts_added": 25,
+        "n_cuts_total": 7994,
+        "n_witness_cuts": 42,
+        "round": 307,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 45.68958759307861
+      },
+      {
+        "V": 23,
+        "cuts_added": 18,
+        "n_cuts_total": 8019,
+        "n_witness_cuts": 23,
+        "round": 308,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 45.845531702041626
+      },
+      {
+        "V": 33,
+        "cuts_added": 15,
+        "n_cuts_total": 8037,
+        "n_witness_cuts": 33,
+        "round": 309,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 46.049049615859985
+      },
+      {
+        "V": 44,
+        "cuts_added": 27,
+        "n_cuts_total": 8052,
+        "n_witness_cuts": 44,
+        "round": 310,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 46.21874690055847
+      },
+      {
+        "V": 38,
+        "cuts_added": 25,
+        "n_cuts_total": 8079,
+        "n_witness_cuts": 38,
+        "round": 311,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 46.39394807815552
+      },
+      {
+        "V": 41,
+        "cuts_added": 31,
+        "n_cuts_total": 8104,
+        "n_witness_cuts": 41,
+        "round": 312,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 46.54292821884155
+      },
+      {
+        "V": 35,
+        "cuts_added": 19,
+        "n_cuts_total": 8135,
+        "n_witness_cuts": 35,
+        "round": 313,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 46.698527336120605
+      },
+      {
+        "V": 24,
+        "cuts_added": 12,
+        "n_cuts_total": 8154,
+        "n_witness_cuts": 24,
+        "round": 314,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 46.90217089653015
+      },
+      {
+        "V": 39,
+        "cuts_added": 21,
+        "n_cuts_total": 8166,
+        "n_witness_cuts": 39,
+        "round": 315,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 47.081767320632935
+      },
+      {
+        "V": 34,
+        "cuts_added": 27,
+        "n_cuts_total": 8187,
+        "n_witness_cuts": 34,
+        "round": 316,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 47.27147316932678
+      },
+      {
+        "V": 44,
+        "cuts_added": 30,
+        "n_cuts_total": 8214,
+        "n_witness_cuts": 44,
+        "round": 317,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 47.396399974823
+      },
+      {
+        "V": 43,
+        "cuts_added": 31,
+        "n_cuts_total": 8244,
+        "n_witness_cuts": 43,
+        "round": 318,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 47.51287007331848
+      },
+      {
+        "V": 27,
+        "cuts_added": 21,
+        "n_cuts_total": 8275,
+        "n_witness_cuts": 27,
+        "round": 319,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 47.65408277511597
+      },
+      {
+        "V": 32,
+        "cuts_added": 21,
+        "n_cuts_total": 8296,
+        "n_witness_cuts": 32,
+        "round": 320,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 47.83665728569031
+      },
+      {
+        "V": 40,
+        "cuts_added": 26,
+        "n_cuts_total": 8317,
+        "n_witness_cuts": 40,
+        "round": 321,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 48.008256673812866
+      },
+      {
+        "V": 54,
+        "cuts_added": 39,
+        "n_cuts_total": 8343,
+        "n_witness_cuts": 54,
+        "round": 322,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 48.213852405548096
+      },
+      {
+        "V": 39,
+        "cuts_added": 28,
+        "n_cuts_total": 8382,
+        "n_witness_cuts": 39,
+        "round": 323,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 48.36907362937927
+      },
+      {
+        "V": 60,
+        "cuts_added": 42,
+        "n_cuts_total": 8410,
+        "n_witness_cuts": 60,
+        "round": 324,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 48.51364040374756
+      },
+      {
+        "V": 16,
+        "cuts_added": 12,
+        "n_cuts_total": 8452,
+        "n_witness_cuts": 16,
+        "round": 325,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 48.662721395492554
+      },
+      {
+        "V": 41,
+        "cuts_added": 24,
+        "n_cuts_total": 8464,
+        "n_witness_cuts": 41,
+        "round": 326,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 48.787461042404175
+      },
+      {
+        "V": 43,
+        "cuts_added": 33,
+        "n_cuts_total": 8488,
+        "n_witness_cuts": 43,
+        "round": 327,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 48.96489906311035
+      },
+      {
+        "V": 53,
+        "cuts_added": 34,
+        "n_cuts_total": 8521,
+        "n_witness_cuts": 53,
+        "round": 328,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 49.1347017288208
+      },
+      {
+        "V": 48,
+        "cuts_added": 29,
+        "n_cuts_total": 8555,
+        "n_witness_cuts": 48,
+        "round": 329,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 49.29503536224365
+      },
+      {
+        "V": 28,
+        "cuts_added": 14,
+        "n_cuts_total": 8584,
+        "n_witness_cuts": 28,
+        "round": 330,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 49.436867475509644
+      },
+      {
+        "V": 34,
+        "cuts_added": 21,
+        "n_cuts_total": 8598,
+        "n_witness_cuts": 34,
+        "round": 331,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 49.59370684623718
+      },
+      {
+        "V": 31,
+        "cuts_added": 18,
+        "n_cuts_total": 8619,
+        "n_witness_cuts": 31,
+        "round": 332,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 49.75160813331604
+      },
+      {
+        "V": 21,
+        "cuts_added": 16,
+        "n_cuts_total": 8637,
+        "n_witness_cuts": 21,
+        "round": 333,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 49.88185524940491
+      },
+      {
+        "V": 28,
+        "cuts_added": 18,
+        "n_cuts_total": 8653,
+        "n_witness_cuts": 28,
+        "round": 334,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 50.036885261535645
+      },
+      {
+        "V": 52,
+        "cuts_added": 31,
+        "n_cuts_total": 8671,
+        "n_witness_cuts": 52,
+        "round": 335,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 50.205562591552734
+      },
+      {
+        "V": 29,
+        "cuts_added": 20,
+        "n_cuts_total": 8702,
+        "n_witness_cuts": 29,
+        "round": 336,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 50.346705198287964
+      },
+      {
+        "V": 41,
+        "cuts_added": 31,
+        "n_cuts_total": 8722,
+        "n_witness_cuts": 41,
+        "round": 337,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 50.53610038757324
+      },
+      {
+        "V": 29,
+        "cuts_added": 23,
+        "n_cuts_total": 8753,
+        "n_witness_cuts": 29,
+        "round": 338,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 50.71623158454895
+      },
+      {
+        "V": 45,
+        "cuts_added": 28,
+        "n_cuts_total": 8776,
+        "n_witness_cuts": 45,
+        "round": 339,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 50.858782052993774
+      },
+      {
+        "V": 39,
+        "cuts_added": 24,
+        "n_cuts_total": 8804,
+        "n_witness_cuts": 39,
+        "round": 340,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 50.985957860946655
+      },
+      {
+        "V": 37,
+        "cuts_added": 26,
+        "n_cuts_total": 8828,
+        "n_witness_cuts": 37,
+        "round": 341,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 51.12798261642456
+      },
+      {
+        "V": 32,
+        "cuts_added": 19,
+        "n_cuts_total": 8854,
+        "n_witness_cuts": 32,
+        "round": 342,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 51.271239280700684
+      },
+      {
+        "V": 40,
+        "cuts_added": 26,
+        "n_cuts_total": 8873,
+        "n_witness_cuts": 40,
+        "round": 343,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 51.40931797027588
+      },
+      {
+        "V": 32,
+        "cuts_added": 27,
+        "n_cuts_total": 8899,
+        "n_witness_cuts": 32,
+        "round": 344,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 51.55040621757507
+      },
+      {
+        "V": 44,
+        "cuts_added": 27,
+        "n_cuts_total": 8926,
+        "n_witness_cuts": 44,
+        "round": 345,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 51.68875432014465
+      },
+      {
+        "V": 47,
+        "cuts_added": 23,
+        "n_cuts_total": 8953,
+        "n_witness_cuts": 47,
+        "round": 346,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 51.84407329559326
+      },
+      {
+        "V": 33,
+        "cuts_added": 21,
+        "n_cuts_total": 8976,
+        "n_witness_cuts": 33,
+        "round": 347,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 52.00013756752014
+      },
+      {
+        "V": 27,
+        "cuts_added": 25,
+        "n_cuts_total": 8997,
+        "n_witness_cuts": 27,
+        "round": 348,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 52.125495195388794
+      },
+      {
+        "V": 44,
+        "cuts_added": 32,
+        "n_cuts_total": 9022,
+        "n_witness_cuts": 44,
+        "round": 349,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 52.267491579055786
+      },
+      {
+        "V": 24,
+        "cuts_added": 10,
+        "n_cuts_total": 9054,
+        "n_witness_cuts": 24,
+        "round": 350,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 52.41070199012756
+      },
+      {
+        "V": 47,
+        "cuts_added": 26,
+        "n_cuts_total": 9064,
+        "n_witness_cuts": 47,
+        "round": 351,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 52.56764554977417
+      },
+      {
+        "V": 33,
+        "cuts_added": 20,
+        "n_cuts_total": 9090,
+        "n_witness_cuts": 33,
+        "round": 352,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 52.737273931503296
+      },
+      {
+        "V": 23,
+        "cuts_added": 19,
+        "n_cuts_total": 9110,
+        "n_witness_cuts": 23,
+        "round": 353,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 52.890697956085205
+      },
+      {
+        "V": 44,
+        "cuts_added": 28,
+        "n_cuts_total": 9129,
+        "n_witness_cuts": 44,
+        "round": 354,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 53.03326916694641
+      },
+      {
+        "V": 52,
+        "cuts_added": 29,
+        "n_cuts_total": 9157,
+        "n_witness_cuts": 52,
+        "round": 355,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 53.17194843292236
+      },
+      {
+        "V": 28,
+        "cuts_added": 22,
+        "n_cuts_total": 9186,
+        "n_witness_cuts": 28,
+        "round": 356,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 53.32895374298096
+      },
+      {
+        "V": 51,
+        "cuts_added": 31,
+        "n_cuts_total": 9208,
+        "n_witness_cuts": 51,
+        "round": 357,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 53.485456705093384
+      },
+      {
+        "V": 35,
+        "cuts_added": 19,
+        "n_cuts_total": 9239,
+        "n_witness_cuts": 35,
+        "round": 358,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 53.62389898300171
+      },
+      {
+        "V": 15,
+        "cuts_added": 10,
+        "n_cuts_total": 9258,
+        "n_witness_cuts": 15,
+        "round": 359,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 53.78232192993164
+      },
+      {
+        "n_cuts": 9268,
+        "round": 360,
+        "solver_status": "INFEASIBLE",
+        "t": 53.934640645980835
+      }
+    ],
+    "rounds": 360,
+    "scope": {
+      "U_id": "U_score_spatial_halo_r2",
+      "halo": "none",
+      "n": 100,
+      "r": 2,
+      "seed": 1,
+      "symmetry_mode": "asymmetric",
+      "time_limit_s": 1800,
+      "universe_hash": "e08cd2f855ec34f1185f00628b349bd9430ce1e3d1364ab94ba0603ee4ded287"
+    },
+    "time_to_best_illegal_s": 53.78232192993164,
+    "wall_time_s": 53.934640645980835
+  },
+  "n_add": 1076,
+  "n_rem": 68,
+  "n_vars": 1144,
+  "points": null,
+  "seed": 1,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "e08cd2f855ec34f1185f00628b349bd9430ce1e3d1364ab94ba0603ee4ded287",
+  "wall_time_s": 53.93864178657532
+}

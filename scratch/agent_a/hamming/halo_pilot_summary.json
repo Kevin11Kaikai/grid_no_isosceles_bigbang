@@ -1,0 +1,48 @@
+{
+  "runs": [
+    {
+      "U_id": "U_fullrem_Asmall_r2",
+      "best_illegal_V": 7,
+      "final_cuts": 198,
+      "n_vars": 208,
+      "rounds": 17,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "c7885d08d6f97923af324fd3e735d4a465733726cd090ee02fefe756b75f2c51",
+      "wall_time_s": 1.2186169624328613
+    },
+    {
+      "U_id": "U_fullrem_Asmall_r2",
+      "best_illegal_V": 7,
+      "final_cuts": 189,
+      "n_vars": 208,
+      "rounds": 16,
+      "seed": 2,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "c7885d08d6f97923af324fd3e735d4a465733726cd090ee02fefe756b75f2c51",
+      "wall_time_s": 0.7524089813232422
+    },
+    {
+      "U_id": "U_fullrem_Alarge_r2",
+      "best_illegal_V": 9,
+      "final_cuts": 682,
+      "n_vars": 292,
+      "rounds": 44,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "e45a5788c9b8f67508a88249e8f1c043d8659fe05452b0ff05e5a4c153206462",
+      "wall_time_s": 2.366060972213745
+    },
+    {
+      "U_id": "U_score_spatial_halo_r2",
+      "best_illegal_V": 15,
+      "final_cuts": 9268,
+      "n_vars": 1144,
+      "rounds": 360,
+      "seed": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "e08cd2f855ec34f1185f00628b349bd9430ce1e3d1364ab94ba0603ee4ded287",
+      "wall_time_s": 53.93864178657532
+    }
+  ]
+}

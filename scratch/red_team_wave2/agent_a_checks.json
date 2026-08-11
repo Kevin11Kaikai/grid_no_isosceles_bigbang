@@ -1,0 +1,166 @@
+{
+  "check1_neg_control": {
+    "pass": true,
+    "hash_ok": true,
+    "status": "INFEASIBLE_SCOPED",
+    "solver_final": "INFEASIBLE",
+    "wall_s": 0.7657055854797363,
+    "rounds": 17,
+    "scope": {
+      "U_id": "U_small",
+      "halo": "none",
+      "n": 100,
+      "r": 1,
+      "seed": 1,
+      "symmetry_mode": "asymmetric",
+      "time_limit_s": 300.0,
+      "universe_hash": "0e3710582f4533b788ccfbb58f5b69d2b92ce5571041ad53688cda601d4caac2"
+    },
+    "report_distinguishes_scoped_vs_gate1_global": true,
+    "role": "negative_control",
+    "note": "Matches Gate1 global r=1 exclusion; timeout was not used; FEASIBLE+legal did not occur."
+  },
+  "check2_r2_primary": {
+    "pass": true,
+    "n_rem": 32,
+    "n_add": 44,
+    "reconstruct": {
+      "|S|": 165,
+      "|R|": 2,
+      "|A|": 3
+    },
+    "hash_ok": true,
+    "primary_runs": 4,
+    "all_INFEASIBLE_SCOPED": true,
+    "wording_ok": true,
+    "report_no_global_ub_claim": true
+  },
+  "check3_lazy_cuts": {
+    "pass": true,
+    "n_cuts_checked": 15,
+    "n_witnesses_on_sample_incumbent": 23,
+    "incumbent_V": 23,
+    "samples": [
+      {
+        "trip": [
+          [
+            0,
+            15
+          ],
+          [
+            2,
+            18
+          ],
+          [
+            3,
+            17
+          ]
+        ],
+        "val": 3,
+        "const": 2
+      },
+      {
+        "trip": [
+          [
+            0,
+            43
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            43
+          ]
+        ],
+        "val": 3,
+        "const": 1
+      },
+      {
+        "trip": [
+          [
+            0,
+            43
+          ],
+          [
+            1,
+            39
+          ],
+          [
+            2,
+            43
+          ]
+        ],
+        "val": 3,
+        "const": 1
+      },
+      {
+        "trip": [
+          [
+            0,
+            43
+          ],
+          [
+            1,
+            45
+          ],
+          [
+            2,
+            43
+          ]
+        ],
+        "val": 3,
+        "const": 1
+      },
+      {
+        "trip": [
+          [
+            0,
+            43
+          ],
+          [
+            1,
+            54
+          ],
+          [
+            2,
+            43
+          ]
+        ],
+        "val": 3,
+        "const": 1
+      }
+    ],
+    "seed1_all_selected_size_165": true
+  },
+  "check67_status_wording": {
+    "pass": true,
+    "scan_issues": [],
+    "observed_statuses": [
+      "INFEASIBLE_SCOPED"
+    ],
+    "bad_timeout_infeas_labels": []
+  },
+  "check10_no_v0": {
+    "pass": true,
+    "V0_candidate_found_flags": {
+      "n100": false,
+      "n64": false
+    },
+    "candidate_files": []
+  },
+  "n64_primary": {
+    "pass": true,
+    "hash": "34f1c6172b699d0d46ee8dce1ea1eedabd004be4a8d0e0c0a857e05a63ed321e",
+    "n_rem": 12,
+    "n_add": 24,
+    "enum_confirm": {
+      "best_V": 2,
+      "checked": 3312,
+      "legal_found": false
+    }
+  },
+  "findings": [],
+  "agent_a_overall_pass": true
+}

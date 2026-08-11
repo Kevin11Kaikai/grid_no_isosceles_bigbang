@@ -1,0 +1,1817 @@
+{
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "n": 64,
+  "baseline_size": 112,
+  "baseline_hash_sha256": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+  "expected_gate0_hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+  "hash_matches_gate0": true,
+  "partner_transform": {
+    "source": "data/external/subsets_of_the_grid_with_no_isosceles_triangles.ipynb cell with get_symmetric_partners",
+    "offsets_formula": [
+      "(n-1,n-1)",
+      "(n-2,n-2)",
+      "(n,n)",
+      "(n,n-1)",
+      "(n-2,n-1)",
+      "(n-1,n)",
+      "(n-1,n-2)"
+    ],
+    "partners": "sym_x,sym_y = offset_x-x, offset_y-y; partners={(sym_x,y),(x,sym_y),(sym_x,sym_y)} filtered to in-grid and !=p",
+    "orbit_definition": "Connected components under notebook partner relation; FULL orbit iff all formal Klein-four images in-grid and component equals formal in-grid orbit"
+  },
+  "types": {
+    "0": {
+      "symmetry_type": 0,
+      "offset": [
+        63,
+        63
+      ],
+      "comment": "Reflection about (n-1)/2 axes (standard for n even, axes at X.5, Y.5)",
+      "axis_info": {
+        "offset_x": 63,
+        "offset_y": 63,
+        "axis_x_A": 31.5,
+        "axis_y_A": 31.5,
+        "integer_fixed_x": false,
+        "integer_fixed_y": false,
+        "fixed_x_coord": null,
+        "fixed_y_coord": null
+      },
+      "fixed_full_orbit_coord": null,
+      "action_semantics": "true_group_action_on_full_grid",
+      "true_group_action_on_full_grid": true,
+      "points_with_out_of_grid_formal_image": 0,
+      "orbit_summary": {
+        "num_orbits": 1024,
+        "size_distribution": {
+          "4": 1024
+        },
+        "size_bucket_distribution": {
+          "4": 1024
+        },
+        "num_full_orbits": 1024,
+        "full_orbit_size_distribution": {
+          "4": 1024
+        },
+        "num_boundary_truncated_orbits": 0,
+        "num_fixed_point_orbits": 0,
+        "num_axis_nonfixed_orbits": 0,
+        "num_other_size_orbits": 0,
+        "other_sizes_present": [],
+        "max_fully_symmetric_core_size_full_orbits_only": 4096
+      },
+      "baseline_completeness": {
+        "baseline_size": 112,
+        "orbits_fully_present": 27,
+        "orbits_fully_present_and_full_type": 27,
+        "orbits_partially_present": 2,
+        "orbits_empty": 995,
+        "points_in_fully_present_full_orbits": 108,
+        "max_fully_symmetric_core_in_baseline": 108,
+        "structural_distance": {
+          "deletes_to_remove_all_partial_orbit_points": 4,
+          "adds_to_complete_all_partial_orbits": 4,
+          "baseline_size_after_deleting_partial_orbit_points": 108,
+          "note": "Descriptive only: deletes = points currently in incomplete orbits; adds = missing partners to complete those orbits. Not a search."
+        },
+        "partial_orbit_examples": [
+          {
+            "orbit_repr": [
+              62,
+              2
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              4,
+              26
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          }
+        ],
+        "is_fully_symmetric_all_orbits": false,
+        "is_union_of_full_type_orbits_only": false
+      }
+    },
+    "1": {
+      "symmetry_type": 1,
+      "offset": [
+        62,
+        62
+      ],
+      "comment": "Reflection about n/2-1 axes (e.g. 31 for n=64, axes at X.0, Y.0)",
+      "axis_info": {
+        "offset_x": 62,
+        "offset_y": 62,
+        "axis_x_A": 31.0,
+        "axis_y_A": 31.0,
+        "integer_fixed_x": true,
+        "integer_fixed_y": true,
+        "fixed_x_coord": 31,
+        "fixed_y_coord": 31
+      },
+      "fixed_full_orbit_coord": [
+        31,
+        31
+      ],
+      "action_semantics": "restricted_not_true_group_action_on_full_grid",
+      "true_group_action_on_full_grid": false,
+      "points_with_out_of_grid_formal_image": 127,
+      "orbit_summary": {
+        "num_orbits": 1089,
+        "size_distribution": {
+          "1": 4,
+          "2": 124,
+          "4": 961
+        },
+        "size_bucket_distribution": {
+          "4": 961,
+          "2": 124,
+          "1": 4
+        },
+        "num_full_orbits": 1024,
+        "full_orbit_size_distribution": {
+          "1": 1,
+          "2": 62,
+          "4": 961
+        },
+        "num_boundary_truncated_orbits": 65,
+        "num_fixed_point_orbits": 4,
+        "num_axis_nonfixed_orbits": 62,
+        "num_other_size_orbits": 0,
+        "other_sizes_present": [],
+        "max_fully_symmetric_core_size_full_orbits_only": 3969
+      },
+      "baseline_completeness": {
+        "baseline_size": 112,
+        "orbits_fully_present": 1,
+        "orbits_fully_present_and_full_type": 0,
+        "orbits_partially_present": 101,
+        "orbits_empty": 987,
+        "points_in_fully_present_full_orbits": 0,
+        "max_fully_symmetric_core_in_baseline": 0,
+        "structural_distance": {
+          "deletes_to_remove_all_partial_orbit_points": 110,
+          "adds_to_complete_all_partial_orbits": 278,
+          "baseline_size_after_deleting_partial_orbit_points": 2,
+          "note": "Descriptive only: deletes = points currently in incomplete orbits; adds = missing partners to complete those orbits. Not a search."
+        },
+        "partial_orbit_examples": [
+          {
+            "orbit_repr": [
+              62,
+              0
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              1
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              2
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              3
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              40
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              23
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              24
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              25
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              29
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              30
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              61
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              60
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              59
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              10
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              11
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              40
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              39
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              36
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              27
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              29
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          }
+        ],
+        "is_fully_symmetric_all_orbits": false,
+        "is_union_of_full_type_orbits_only": false
+      }
+    },
+    "2": {
+      "symmetry_type": 2,
+      "offset": [
+        64,
+        64
+      ],
+      "comment": "Reflection about n/2 axes (e.g. 32 for n=64, axes at X.0, Y.0)",
+      "axis_info": {
+        "offset_x": 64,
+        "offset_y": 64,
+        "axis_x_A": 32.0,
+        "axis_y_A": 32.0,
+        "integer_fixed_x": true,
+        "integer_fixed_y": true,
+        "fixed_x_coord": 32,
+        "fixed_y_coord": 32
+      },
+      "fixed_full_orbit_coord": [
+        32,
+        32
+      ],
+      "action_semantics": "restricted_not_true_group_action_on_full_grid",
+      "true_group_action_on_full_grid": false,
+      "points_with_out_of_grid_formal_image": 127,
+      "orbit_summary": {
+        "num_orbits": 1089,
+        "size_distribution": {
+          "1": 4,
+          "2": 124,
+          "4": 961
+        },
+        "size_bucket_distribution": {
+          "1": 4,
+          "2": 124,
+          "4": 961
+        },
+        "num_full_orbits": 1024,
+        "full_orbit_size_distribution": {
+          "1": 1,
+          "2": 62,
+          "4": 961
+        },
+        "num_boundary_truncated_orbits": 65,
+        "num_fixed_point_orbits": 4,
+        "num_axis_nonfixed_orbits": 62,
+        "num_other_size_orbits": 0,
+        "other_sizes_present": [],
+        "max_fully_symmetric_core_size_full_orbits_only": 3969
+      },
+      "baseline_completeness": {
+        "baseline_size": 112,
+        "orbits_fully_present": 1,
+        "orbits_fully_present_and_full_type": 0,
+        "orbits_partially_present": 99,
+        "orbits_empty": 989,
+        "points_in_fully_present_full_orbits": 0,
+        "max_fully_symmetric_core_in_baseline": 0,
+        "structural_distance": {
+          "deletes_to_remove_all_partial_orbit_points": 110,
+          "adds_to_complete_all_partial_orbits": 270,
+          "baseline_size_after_deleting_partial_orbit_points": 2,
+          "note": "Descriptive only: deletes = points currently in incomplete orbits; adds = missing partners to complete those orbits. Not a search."
+        },
+        "partial_orbit_examples": [
+          {
+            "orbit_repr": [
+              0,
+              1
+            ],
+            "orbit_size": 2,
+            "present": 1,
+            "missing": 1,
+            "is_full_orbit_type": false,
+            "is_boundary_truncated": true
+          },
+          {
+            "orbit_repr": [
+              0,
+              2
+            ],
+            "orbit_size": 2,
+            "present": 1,
+            "missing": 1,
+            "is_full_orbit_type": false,
+            "is_boundary_truncated": true
+          },
+          {
+            "orbit_repr": [
+              0,
+              25
+            ],
+            "orbit_size": 2,
+            "present": 1,
+            "missing": 1,
+            "is_full_orbit_type": false,
+            "is_boundary_truncated": true
+          },
+          {
+            "orbit_repr": [
+              0,
+              26
+            ],
+            "orbit_size": 2,
+            "present": 1,
+            "missing": 1,
+            "is_full_orbit_type": false,
+            "is_boundary_truncated": true
+          },
+          {
+            "orbit_repr": [
+              1,
+              63
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              62
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              61
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              60
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              23
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              40
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              39
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              26
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              34
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              33
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              2,
+              3
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              2,
+              60
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              53
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              12
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              23
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              40
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          }
+        ],
+        "is_fully_symmetric_all_orbits": false,
+        "is_union_of_full_type_orbits_only": false
+      }
+    },
+    "3": {
+      "symmetry_type": 3,
+      "offset": [
+        64,
+        63
+      ],
+      "comment": "Mixed symmetry: x-axis at n/2, y-axis at (n-1)/2",
+      "axis_info": {
+        "offset_x": 64,
+        "offset_y": 63,
+        "axis_x_A": 32.0,
+        "axis_y_A": 31.5,
+        "integer_fixed_x": true,
+        "integer_fixed_y": false,
+        "fixed_x_coord": 32,
+        "fixed_y_coord": null
+      },
+      "fixed_full_orbit_coord": null,
+      "action_semantics": "restricted_not_true_group_action_on_full_grid",
+      "true_group_action_on_full_grid": false,
+      "points_with_out_of_grid_formal_image": 64,
+      "orbit_summary": {
+        "num_orbits": 1056,
+        "size_distribution": {
+          "2": 64,
+          "4": 992
+        },
+        "size_bucket_distribution": {
+          "2": 64,
+          "4": 992
+        },
+        "num_full_orbits": 1024,
+        "full_orbit_size_distribution": {
+          "2": 32,
+          "4": 992
+        },
+        "num_boundary_truncated_orbits": 32,
+        "num_fixed_point_orbits": 0,
+        "num_axis_nonfixed_orbits": 32,
+        "num_other_size_orbits": 0,
+        "other_sizes_present": [],
+        "max_fully_symmetric_core_size_full_orbits_only": 4032
+      },
+      "baseline_completeness": {
+        "baseline_size": 112,
+        "orbits_fully_present": 6,
+        "orbits_fully_present_and_full_type": 4,
+        "orbits_partially_present": 46,
+        "orbits_empty": 1004,
+        "points_in_fully_present_full_orbits": 16,
+        "max_fully_symmetric_core_in_baseline": 16,
+        "structural_distance": {
+          "deletes_to_remove_all_partial_orbit_points": 92,
+          "adds_to_complete_all_partial_orbits": 92,
+          "baseline_size_after_deleting_partial_orbit_points": 20,
+          "note": "Descriptive only: deletes = points currently in incomplete orbits; adds = missing partners to complete those orbits. Not a search."
+        },
+        "partial_orbit_examples": [
+          {
+            "orbit_repr": [
+              1,
+              62
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              61
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              3
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              23
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              25
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              33
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              2,
+              3
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              2,
+              11
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              2,
+              40
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              36
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              30
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              3,
+              52
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              27
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              59,
+              62
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              5,
+              56
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              59,
+              17
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              5,
+              25
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              5,
+              26
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              6,
+              7
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              25
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          }
+        ],
+        "is_fully_symmetric_all_orbits": false,
+        "is_union_of_full_type_orbits_only": false
+      }
+    },
+    "4": {
+      "symmetry_type": 4,
+      "offset": [
+        62,
+        63
+      ],
+      "comment": "Mixed symmetry: x-axis at n/2-1, y-axis at (n-1)/2",
+      "axis_info": {
+        "offset_x": 62,
+        "offset_y": 63,
+        "axis_x_A": 31.0,
+        "axis_y_A": 31.5,
+        "integer_fixed_x": true,
+        "integer_fixed_y": false,
+        "fixed_x_coord": 31,
+        "fixed_y_coord": null
+      },
+      "fixed_full_orbit_coord": null,
+      "action_semantics": "restricted_not_true_group_action_on_full_grid",
+      "true_group_action_on_full_grid": false,
+      "points_with_out_of_grid_formal_image": 64,
+      "orbit_summary": {
+        "num_orbits": 1056,
+        "size_distribution": {
+          "2": 64,
+          "4": 992
+        },
+        "size_bucket_distribution": {
+          "4": 992,
+          "2": 64
+        },
+        "num_full_orbits": 1024,
+        "full_orbit_size_distribution": {
+          "2": 32,
+          "4": 992
+        },
+        "num_boundary_truncated_orbits": 32,
+        "num_fixed_point_orbits": 0,
+        "num_axis_nonfixed_orbits": 32,
+        "num_other_size_orbits": 0,
+        "other_sizes_present": [],
+        "max_fully_symmetric_core_size_full_orbits_only": 4032
+      },
+      "baseline_completeness": {
+        "baseline_size": 112,
+        "orbits_fully_present": 6,
+        "orbits_fully_present_and_full_type": 4,
+        "orbits_partially_present": 46,
+        "orbits_empty": 1004,
+        "points_in_fully_present_full_orbits": 16,
+        "max_fully_symmetric_core_in_baseline": 16,
+        "structural_distance": {
+          "deletes_to_remove_all_partial_orbit_points": 92,
+          "adds_to_complete_all_partial_orbits": 92,
+          "baseline_size_after_deleting_partial_orbit_points": 20,
+          "note": "Descriptive only: deletes = points currently in incomplete orbits; adds = missing partners to complete those orbits. Not a search."
+        },
+        "partial_orbit_examples": [
+          {
+            "orbit_repr": [
+              0,
+              1
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              3
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              23
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              25
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              30
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              61
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              3
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              11
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              23
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              27
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              33
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              60,
+              52
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              60,
+              36
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              3,
+              37
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              1
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              56
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              17
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              4,
+              38
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              57,
+              7
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              5,
+              25
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          }
+        ],
+        "is_fully_symmetric_all_orbits": false,
+        "is_union_of_full_type_orbits_only": false
+      }
+    },
+    "5": {
+      "symmetry_type": 5,
+      "offset": [
+        63,
+        64
+      ],
+      "comment": "Mixed symmetry: x-axis at (n-1)/2, y-axis at n/2",
+      "axis_info": {
+        "offset_x": 63,
+        "offset_y": 64,
+        "axis_x_A": 31.5,
+        "axis_y_A": 32.0,
+        "integer_fixed_x": false,
+        "integer_fixed_y": true,
+        "fixed_x_coord": null,
+        "fixed_y_coord": 32
+      },
+      "fixed_full_orbit_coord": null,
+      "action_semantics": "restricted_not_true_group_action_on_full_grid",
+      "true_group_action_on_full_grid": false,
+      "points_with_out_of_grid_formal_image": 64,
+      "orbit_summary": {
+        "num_orbits": 1056,
+        "size_distribution": {
+          "2": 64,
+          "4": 992
+        },
+        "size_bucket_distribution": {
+          "2": 64,
+          "4": 992
+        },
+        "num_full_orbits": 1024,
+        "full_orbit_size_distribution": {
+          "2": 32,
+          "4": 992
+        },
+        "num_boundary_truncated_orbits": 32,
+        "num_fixed_point_orbits": 0,
+        "num_axis_nonfixed_orbits": 32,
+        "num_other_size_orbits": 0,
+        "other_sizes_present": [],
+        "max_fully_symmetric_core_size_full_orbits_only": 4032
+      },
+      "baseline_completeness": {
+        "baseline_size": 112,
+        "orbits_fully_present": 3,
+        "orbits_fully_present_and_full_type": 0,
+        "orbits_partially_present": 54,
+        "orbits_empty": 999,
+        "points_in_fully_present_full_orbits": 0,
+        "max_fully_symmetric_core_in_baseline": 0,
+        "structural_distance": {
+          "deletes_to_remove_all_partial_orbit_points": 106,
+          "adds_to_complete_all_partial_orbits": 110,
+          "baseline_size_after_deleting_partial_orbit_points": 6,
+          "note": "Descriptive only: deletes = points currently in incomplete orbits; adds = missing partners to complete those orbits. Not a search."
+        },
+        "partial_orbit_examples": [
+          {
+            "orbit_repr": [
+              0,
+              1
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              62
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              63,
+              39
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              26
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              2
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              3
+            ],
+            "orbit_size": 4,
+            "present": 3,
+            "missing": 1,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              60
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              23
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              40
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              34
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              31
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              11
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              12
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              27
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              28
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              4,
+              26
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              4,
+              27
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              1
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              62
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              57
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          }
+        ],
+        "is_fully_symmetric_all_orbits": false,
+        "is_union_of_full_type_orbits_only": false
+      }
+    },
+    "6": {
+      "symmetry_type": 6,
+      "offset": [
+        63,
+        62
+      ],
+      "comment": "Mixed symmetry: x-axis at (n-1)/2, y-axis at n/2-1",
+      "axis_info": {
+        "offset_x": 63,
+        "offset_y": 62,
+        "axis_x_A": 31.5,
+        "axis_y_A": 31.0,
+        "integer_fixed_x": false,
+        "integer_fixed_y": true,
+        "fixed_x_coord": null,
+        "fixed_y_coord": 31
+      },
+      "fixed_full_orbit_coord": null,
+      "action_semantics": "restricted_not_true_group_action_on_full_grid",
+      "true_group_action_on_full_grid": false,
+      "points_with_out_of_grid_formal_image": 64,
+      "orbit_summary": {
+        "num_orbits": 1056,
+        "size_distribution": {
+          "2": 64,
+          "4": 992
+        },
+        "size_bucket_distribution": {
+          "4": 992,
+          "2": 64
+        },
+        "num_full_orbits": 1024,
+        "full_orbit_size_distribution": {
+          "2": 32,
+          "4": 992
+        },
+        "num_boundary_truncated_orbits": 32,
+        "num_fixed_point_orbits": 0,
+        "num_axis_nonfixed_orbits": 32,
+        "num_other_size_orbits": 0,
+        "other_sizes_present": [],
+        "max_fully_symmetric_core_size_full_orbits_only": 4032
+      },
+      "baseline_completeness": {
+        "baseline_size": 112,
+        "orbits_fully_present": 3,
+        "orbits_fully_present_and_full_type": 0,
+        "orbits_partially_present": 54,
+        "orbits_empty": 999,
+        "points_in_fully_present_full_orbits": 0,
+        "max_fully_symmetric_core_in_baseline": 0,
+        "structural_distance": {
+          "deletes_to_remove_all_partial_orbit_points": 106,
+          "adds_to_complete_all_partial_orbits": 110,
+          "baseline_size_after_deleting_partial_orbit_points": 6,
+          "note": "Descriptive only: deletes = points currently in incomplete orbits; adds = missing partners to complete those orbits. Not a search."
+        },
+        "partial_orbit_examples": [
+          {
+            "orbit_repr": [
+              63,
+              0
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              1
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              24
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              0,
+              25
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              61
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              2
+            ],
+            "orbit_size": 4,
+            "present": 3,
+            "missing": 1,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              59
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              40
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              39
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              1,
+              29
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              62,
+              30
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              10
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              2,
+              51
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              2,
+              36
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              61,
+              27
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              59,
+              25
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              4,
+              26
+            ],
+            "orbit_size": 4,
+            "present": 1,
+            "missing": 3,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              62
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              61
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          },
+          {
+            "orbit_repr": [
+              58,
+              56
+            ],
+            "orbit_size": 4,
+            "present": 2,
+            "missing": 2,
+            "is_full_orbit_type": true,
+            "is_boundary_truncated": false
+          }
+        ],
+        "is_fully_symmetric_all_orbits": false,
+        "is_union_of_full_type_orbits_only": false
+      }
+    }
+  },
+  "symmetry_guided_repo_note": "src/search/symmetry_guided.py uses ONLY central 180\u00b0 reflect(x,y)=(n-1-x,n-1-y), i.e. notebook Type 0's rxy alone, not the 7 reflection-axis offset types."
+}

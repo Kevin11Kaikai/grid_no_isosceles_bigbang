@@ -1,0 +1,210 @@
+{
+  "status": "COMPLETE",
+  "verdict": "PASS",
+  "critical_flaws": false,
+  "report_present": true,
+  "campaign_wall_s": 5707.336304187775,
+  "manifest_lines": 16,
+  "n_elites": 62,
+  "best_V": {
+    "n100": 3,
+    "n64": 2,
+    "reproduce": 2
+  },
+  "checks": {
+    "1_fixed_cardinality": {
+      "pass": true,
+      "summary_seed_checkpoint_fails": [],
+      "elite_fails": []
+    },
+    "2_incremental_vs_exact_elites": {
+      "pass": true,
+      "summary_agree": {
+        "n100": true,
+        "n64": true,
+        "manifest_all_agree": true
+      },
+      "elite_name_V_mismatches": [],
+      "n_elites_checked": 62,
+      "best_elites_sample": [
+        {
+          "file": "n100_V3_seed101_02e722eb6367189d.json",
+          "n": 100,
+          "V": 3,
+          "card_ok": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "02e722eb6367189d4e0d6c018de6a4527b7f205032f84db39c30b1f35eba46c5"
+        },
+        {
+          "file": "n100_V3_seed101_683de0e232c95bb8.json",
+          "n": 100,
+          "V": 3,
+          "card_ok": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "683de0e232c95bb87929361ca02dfcc0539f37d5116d48b58255634a268317ea"
+        },
+        {
+          "file": "n100_V3_seed102_9cca156861c695e3.json",
+          "n": 100,
+          "V": 3,
+          "card_ok": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "9cca156861c695e3ac195f59152a6769f510c0ea2fea6cff5f965d3a99d04ce0"
+        },
+        {
+          "file": "n100_V3_seed102_d8ea4c95e803f1e6.json",
+          "n": 100,
+          "V": 3,
+          "card_ok": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "d8ea4c95e803f1e6b45f957b98ca0f933bcfdc0e5cdce482c5f9c6328751a111"
+        },
+        {
+          "file": "n100_V3_seed104_3d71a4da03864dbe.json",
+          "n": 100,
+          "V": 3,
+          "card_ok": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "3d71a4da03864dbe02801f9f66240ed009dc5ec4bebab72ed9d07d78aafa7d4e"
+        },
+        {
+          "file": "n100_V3_seed104_c78f91193b74bc08.json",
+          "n": 100,
+          "V": 3,
+          "card_ok": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "c78f91193b74bc081f4fbc67ff893eca43d4066f755a64a82fde82f4161d266b"
+        },
+        {
+          "file": "n100_V3_seed105_c78f91193b74bc08.json",
+          "n": 100,
+          "V": 3,
+          "card_ok": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "c78f91193b74bc081f4fbc67ff893eca43d4066f755a64a82fde82f4161d266b"
+        },
+        {
+          "file": "n100_V3_seed105_f9a9a14282b60451.json",
+          "n": 100,
+          "V": 3,
+          "card_ok": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "f9a9a14282b604519464f9d514ea7959ec81848893909901321cf465d42db5ea"
+        }
+      ],
+      "cleanroom": {
+        "n100_seed101": {
+          "n": 100,
+          "len": 165,
+          "unique": 165,
+          "target": 165,
+          "card_ok": true,
+          "V": 3,
+          "claimed_V": 3,
+          "V_matches_claim": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "683de0e232c95bb87929361ca02dfcc0539f37d5116d48b58255634a268317ea"
+        },
+        "n64_seed201": {
+          "n": 64,
+          "len": 113,
+          "unique": 113,
+          "target": 113,
+          "card_ok": true,
+          "V": 2,
+          "claimed_V": 2,
+          "V_matches_claim": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "9def3296d554473dd00f4eaf1aa617635561be60aa7dd7101fbd7878e0eac2a2"
+        },
+        "reproduce_1201": {
+          "n": 64,
+          "len": 113,
+          "unique": 113,
+          "target": 113,
+          "card_ok": true,
+          "V": 2,
+          "claimed_V": 2,
+          "V_matches_claim": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "2f5f9e6c519a53157d1a115879be9fecb3f0718cc8f55c48785ffe2bb8176a00"
+        },
+        "elite_n100_V10_seed104_32c52437cc3164f6.json": {
+          "n": 100,
+          "len": 165,
+          "unique": 165,
+          "target": 165,
+          "card_ok": true,
+          "V": 10,
+          "claimed_V": 10,
+          "V_matches_claim": true,
+          "V0": false,
+          "legal_A": false,
+          "legal_B": false,
+          "hash": "32c52437cc3164f6c7cc98c37f19f90d941c9c286d5711f3529b1fcdac28b0a5"
+        }
+      }
+    },
+    "3_no_v0": {
+      "pass": true,
+      "summary_any_v0": false,
+      "manifest_v0": false,
+      "v0_elite_files": [],
+      "report_claims_none": true,
+      "min_elite_V_n100": 3,
+      "min_elite_V_n64": 2
+    },
+    "4_timeout_wording": {
+      "pass": true,
+      "has_global_ub_wording": false,
+      "manifest_status_tokens": [],
+      "note": "Heuristic search; no CP-SAT TIMEOUT/INFEASIBLE statuses in Agent C I/O",
+      "summary_notes_ok": true
+    },
+    "5_external_halo_repair": {
+      "pass": true,
+      "code_checks": {
+        "expanded_repair_pool_fn": true,
+        "never_S_only_doc": true,
+        "pool_includes_halo": true,
+        "pool_includes_recently_deleted": true,
+        "pool_policy_meta": true,
+        "report_claims_external_halo": true,
+        "moves_use_external": true,
+        "external_outside_baseline_n100": 1706,
+        "external_outside_baseline_n64": 1028,
+        "halo_size_n100": 1828,
+        "halo_size_n64": 1090
+      },
+      "repair_accept_all_seeds": true
+    },
+    "6_no_protected_writes": {
+      "pass": true,
+      "protected_hits": []
+    }
+  },
+  "findings": [],
+  "repair_required": []
+}

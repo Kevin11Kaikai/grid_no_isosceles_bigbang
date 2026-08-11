@@ -1,0 +1,62 @@
+{
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "n64": {
+    "n": 64,
+    "source": "data.baselines.official_raw.SOL_64",
+    "size": 112,
+    "size_ok": true,
+    "all_int": true,
+    "in_bounds": true,
+    "no_duplicates": true,
+    "verifier_A": {
+      "pass": true,
+      "witness": {}
+    },
+    "verifier_B": {
+      "pass": true,
+      "witness": null
+    },
+    "V": 0,
+    "hash_from_raw": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+    "certified_hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+    "hash_matches_certified": true,
+    "certified_size": 112,
+    "certify_status": "DUAL_VERIFIED",
+    "certify_hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+    "commands": [
+      "python scratch/audit/_gate0_reverify_baselines.py  # n=64 from official_raw",
+      "certify_candidate(..., out_dir='scratch/audit/certify_scratch')"
+    ],
+    "gate0_ok": true
+  },
+  "n100": {
+    "n": 100,
+    "source": "data.baselines.official_raw.SOL_100",
+    "size": 164,
+    "size_ok": true,
+    "all_int": true,
+    "in_bounds": true,
+    "no_duplicates": true,
+    "verifier_A": {
+      "pass": true,
+      "witness": {}
+    },
+    "verifier_B": {
+      "pass": true,
+      "witness": null
+    },
+    "V": 0,
+    "hash_from_raw": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+    "certified_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+    "hash_matches_certified": true,
+    "certified_size": 164,
+    "certify_status": "DUAL_VERIFIED",
+    "certify_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+    "commands": [
+      "python scratch/audit/_gate0_reverify_baselines.py  # n=100 from official_raw",
+      "certify_candidate(..., out_dir='scratch/audit/certify_scratch')"
+    ],
+    "gate0_ok": true
+  },
+  "both_ok": true
+}

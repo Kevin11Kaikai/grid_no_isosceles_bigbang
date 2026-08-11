@@ -1,0 +1,9627 @@
+{
+  "schema_version": "agent_a_blockers_v1",
+  "n": 64,
+  "baseline_size": 112,
+  "baseline_hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "deterministic_seed": 0,
+  "blocker_definition": {
+    "Type1_q_as_pivot": "For unselected q and distinct p1,p2 in S0 with |p1-q|^2 = |p2-q|^2, certificate deletion-set / blocker edge is {p1,p2} (must hit at least one).",
+    "Type2_existing_pivot": "For unselected q and b,p in S0 with |q-b|^2 = |p-b|^2, certificate deletion-set / blocker edge is {b,p} (must hit at least one).",
+    "min_deletions": "Minimum deletions from S0 so no Type1/Type2 certificate remains = minimum vertex cover of the union of blocker edges (keep \u22641 point per Type1 distance class from q, and hit every Type2 edge).",
+    "exact_vs_approximate": "exact_min_hitting_set is set only when (a) LB==UB from sound bounds, or (b) bitset MIS DP finishes (involved\u2264EXACT_BITSET_MAX), or (c) branch-and-bound MIS finishes (involved\u2264EXACT_BB_MAX). Otherwise exact is null with lower_bound/upper_bound only. Greedy heuristics are NEVER labeled exact by themselves."
+  },
+  "exact_vs_approximate": "exact_min_hitting_set is set only when (a) LB==UB from sound bounds, or (b) bitset MIS DP finishes (involved\u2264EXACT_BITSET_MAX), or (c) branch-and-bound MIS finishes (involved\u2264EXACT_BB_MAX). Otherwise exact is null with lower_bound/upper_bound only. Greedy heuristics are NEVER labeled exact by themselves.",
+  "EXACT_BITSET_MAX": 18,
+  "EXACT_BB_MAX": 40,
+  "partition_methods": {
+    "full_projection_cc": "CC of union of all Type1/Type2 blocker edges. Often one giant component \u21d2 entire S0 is conflict-coupled (RH-3).",
+    "spatial_knn6_cc": "Operational multi-community partition: CC of undirected 6-NN spatial graph on S0; conflict bridges between these communities measure non-local coupling.",
+    "ring_band_partition": "Baseline points bucketed by ring-depth bands.",
+    "type2_only_projection_cc": "CC using only Type2 blocker edges.",
+    "label_propagation": "Deterministic LP on full projection adjacency.",
+    "frequency_threshold_cc": "CC after keeping edges with frequency >= thr."
+  },
+  "bipartite_incidence": {
+    "left": "unselected_cells_q",
+    "right": "certificates_blocker_edges_as_2sets",
+    "n_left": 3984,
+    "n_right_unique_certificates": 6102,
+    "top_certificates_by_q_frequency": [
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            1,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 76
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            30
+          ],
+          [
+            1,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 76
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            5
+          ],
+          [
+            24,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 76
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            58
+          ],
+          [
+            24,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 76
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            5
+          ],
+          [
+            49,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 76
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            58
+          ],
+          [
+            49,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 76
+      },
+      {
+        "certificate_edge": [
+          [
+            62,
+            23
+          ],
+          [
+            62,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 76
+      },
+      {
+        "certificate_edge": [
+          [
+            62,
+            30
+          ],
+          [
+            62,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 76
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            2
+          ],
+          [
+            18,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 75
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            61
+          ],
+          [
+            18,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 75
+      },
+      {
+        "certificate_edge": [
+          [
+            45,
+            2
+          ],
+          [
+            55,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 75
+      },
+      {
+        "certificate_edge": [
+          [
+            45,
+            61
+          ],
+          [
+            55,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 75
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 74
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            46
+          ],
+          [
+            5,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 74
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            7
+          ],
+          [
+            58,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 74
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            46
+          ],
+          [
+            58,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 74
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            30
+          ],
+          [
+            1,
+            60
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            1,
+            60
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            25,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            7
+          ],
+          [
+            25,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            56
+          ],
+          [
+            25,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            62
+          ],
+          [
+            25,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            1
+          ],
+          [
+            58,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            7
+          ],
+          [
+            58,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            56
+          ],
+          [
+            58,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            62
+          ],
+          [
+            58,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            62,
+            3
+          ],
+          [
+            62,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            62,
+            3
+          ],
+          [
+            62,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            62,
+            30
+          ],
+          [
+            62,
+            60
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            62,
+            40
+          ],
+          [
+            62,
+            60
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 73
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            1
+          ],
+          [
+            58,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            62
+          ],
+          [
+            58,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            60
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            57,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            63,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            62
+          ],
+          [
+            57,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            62
+          ],
+          [
+            63,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            1
+          ],
+          [
+            58,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            62
+          ],
+          [
+            58,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            22
+          ],
+          [
+            11,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            37
+          ],
+          [
+            11,
+            41
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            5
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            56
+          ],
+          [
+            14,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            16,
+            0
+          ],
+          [
+            46,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            16,
+            63
+          ],
+          [
+            46,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            17,
+            0
+          ],
+          [
+            47,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            17,
+            63
+          ],
+          [
+            47,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            5
+          ],
+          [
+            49,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            56
+          ],
+          [
+            49,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            22
+          ],
+          [
+            52,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            37
+          ],
+          [
+            52,
+            41
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 70
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            5
+          ],
+          [
+            24,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 69
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            52
+          ],
+          [
+            24,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 69
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            1
+          ],
+          [
+            25,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 69
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            56
+          ],
+          [
+            25,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 69
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            1
+          ],
+          [
+            38,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 69
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            56
+          ],
+          [
+            38,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 69
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            5
+          ],
+          [
+            39,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 69
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            52
+          ],
+          [
+            39,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 69
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            17
+          ],
+          [
+            5,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 68
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            38
+          ],
+          [
+            5,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 68
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            0
+          ],
+          [
+            16,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 68
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            63
+          ],
+          [
+            16,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 68
+      },
+      {
+        "certificate_edge": [
+          [
+            47,
+            0
+          ],
+          [
+            53,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 68
+      },
+      {
+        "certificate_edge": [
+          [
+            47,
+            63
+          ],
+          [
+            53,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 68
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            17
+          ],
+          [
+            58,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 68
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            38
+          ],
+          [
+            58,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 68
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            38
+          ],
+          [
+            0,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            62
+          ],
+          [
+            6,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            30
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            2
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            33
+          ],
+          [
+            1,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            61
+          ],
+          [
+            7,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            11
+          ],
+          [
+            2,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            11
+          ],
+          [
+            24,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            36
+          ],
+          [
+            2,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            52
+          ],
+          [
+            24,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            38
+          ],
+          [
+            5,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            38
+          ],
+          [
+            5,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            46
+          ],
+          [
+            5,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            56
+          ],
+          [
+            5,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            46
+          ],
+          [
+            6,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            7
+          ],
+          [
+            38,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            56
+          ],
+          [
+            38,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            7
+          ],
+          [
+            49,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            56
+          ],
+          [
+            49,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            11
+          ],
+          [
+            61,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            52
+          ],
+          [
+            61,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            1
+          ],
+          [
+            57,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            1
+          ],
+          [
+            63,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            46
+          ],
+          [
+            57,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            62
+          ],
+          [
+            63,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            1
+          ],
+          [
+            58,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            1
+          ],
+          [
+            58,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            1
+          ],
+          [
+            58,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            7
+          ],
+          [
+            58,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            38
+          ],
+          [
+            58,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            38
+          ],
+          [
+            58,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            46
+          ],
+          [
+            58,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            56
+          ],
+          [
+            58,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            61,
+            11
+          ],
+          [
+            61,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            61,
+            36
+          ],
+          [
+            61,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            63,
+            1
+          ],
+          [
+            63,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            63,
+            38
+          ],
+          [
+            63,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 67
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            1
+          ],
+          [
+            38,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            62
+          ],
+          [
+            38,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            2
+          ],
+          [
+            45,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            2
+          ],
+          [
+            55,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            1,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            61
+          ],
+          [
+            45,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            61
+          ],
+          [
+            55,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            7
+          ],
+          [
+            49,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            17
+          ],
+          [
+            57,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            46
+          ],
+          [
+            57,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            56
+          ],
+          [
+            49,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            1
+          ],
+          [
+            38,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            17
+          ],
+          [
+            58,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            46
+          ],
+          [
+            58,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            62
+          ],
+          [
+            38,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            2
+          ],
+          [
+            45,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            2
+          ],
+          [
+            55,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            61
+          ],
+          [
+            45,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            61
+          ],
+          [
+            55,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            2
+          ],
+          [
+            56,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            61
+          ],
+          [
+            56,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            0
+          ],
+          [
+            46,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            63
+          ],
+          [
+            46,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            7
+          ],
+          [
+            58,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            56
+          ],
+          [
+            58,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            17,
+            0
+          ],
+          [
+            53,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            17,
+            63
+          ],
+          [
+            53,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            2
+          ],
+          [
+            56,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            61
+          ],
+          [
+            56,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            1
+          ],
+          [
+            57,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            1
+          ],
+          [
+            63,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            62
+          ],
+          [
+            57,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            62
+          ],
+          [
+            63,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 66
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            25
+          ],
+          [
+            58,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 64
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            38
+          ],
+          [
+            58,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 64
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            25
+          ],
+          [
+            63,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 64
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            38
+          ],
+          [
+            63,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 64
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            26
+          ],
+          [
+            59,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 64
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            37
+          ],
+          [
+            59,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 64
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            27
+          ],
+          [
+            24,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 63
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            36
+          ],
+          [
+            24,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 63
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            5
+          ],
+          [
+            61,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 63
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            58
+          ],
+          [
+            61,
+            36
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 63
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            11
+          ],
+          [
+            49,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 61
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            52
+          ],
+          [
+            49,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 61
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            5
+          ],
+          [
+            61,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 61
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            58
+          ],
+          [
+            61,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 61
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            2
+          ],
+          [
+            10,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 60
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            61
+          ],
+          [
+            10,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 60
+      },
+      {
+        "certificate_edge": [
+          [
+            53,
+            0
+          ],
+          [
+            55,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 60
+      },
+      {
+        "certificate_edge": [
+          [
+            53,
+            63
+          ],
+          [
+            55,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 60
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            17
+          ],
+          [
+            11,
+            22
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 49
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            46
+          ],
+          [
+            11,
+            41
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 49
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            22
+          ],
+          [
+            57,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 49
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            41
+          ],
+          [
+            57,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 49
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            25
+          ],
+          [
+            59,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 49
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            38
+          ],
+          [
+            59,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 49
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            17
+          ],
+          [
+            25,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 47
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            46
+          ],
+          [
+            25,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 47
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            7
+          ],
+          [
+            58,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 47
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            56
+          ],
+          [
+            58,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 47
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            30
+          ],
+          [
+            5,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 40
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            33
+          ],
+          [
+            5,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 40
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            25
+          ],
+          [
+            11,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 40
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            38
+          ],
+          [
+            11,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 40
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            26
+          ],
+          [
+            58,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 40
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            37
+          ],
+          [
+            58,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 40
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            25
+          ],
+          [
+            62,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 40
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            38
+          ],
+          [
+            62,
+            30
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 40
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 37
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            60
+          ],
+          [
+            5,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 37
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            11
+          ],
+          [
+            14,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 37
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            52
+          ],
+          [
+            14,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 37
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            5
+          ],
+          [
+            61,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 37
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            58
+          ],
+          [
+            61,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 37
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            1
+          ],
+          [
+            62,
+            3
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 37
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            62
+          ],
+          [
+            62,
+            60
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 37
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            25
+          ],
+          [
+            18,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 36
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            38
+          ],
+          [
+            18,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 36
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            17
+          ],
+          [
+            38,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 36
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            46
+          ],
+          [
+            38,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 36
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            1
+          ],
+          [
+            57,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 36
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            62
+          ],
+          [
+            57,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 36
+      },
+      {
+        "certificate_edge": [
+          [
+            45,
+            2
+          ],
+          [
+            63,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 36
+      },
+      {
+        "certificate_edge": [
+          [
+            45,
+            61
+          ],
+          [
+            63,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 36
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            1
+          ],
+          [
+            11,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 34
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            62
+          ],
+          [
+            11,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 34
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            26
+          ],
+          [
+            57,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 34
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            37
+          ],
+          [
+            57,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 34
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            25
+          ],
+          [
+            2,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            38
+          ],
+          [
+            2,
+            36
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            30
+          ],
+          [
+            2,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            33
+          ],
+          [
+            2,
+            36
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            25
+          ],
+          [
+            10,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            38
+          ],
+          [
+            10,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            2
+          ],
+          [
+            38,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            61
+          ],
+          [
+            38,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            0
+          ],
+          [
+            38,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            63
+          ],
+          [
+            38,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            1
+          ],
+          [
+            55,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            7
+          ],
+          [
+            53,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            56
+          ],
+          [
+            53,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            62
+          ],
+          [
+            55,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            7
+          ],
+          [
+            59,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            56
+          ],
+          [
+            59,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            53,
+            0
+          ],
+          [
+            58,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            53,
+            63
+          ],
+          [
+            58,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            59,
+            26
+          ],
+          [
+            62,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            59,
+            37
+          ],
+          [
+            62,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            61,
+            27
+          ],
+          [
+            62,
+            30
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            61,
+            27
+          ],
+          [
+            63,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            61,
+            36
+          ],
+          [
+            62,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            61,
+            36
+          ],
+          [
+            63,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 32
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            2
+          ],
+          [
+            11,
+            22
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            5,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            5,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            61
+          ],
+          [
+            11,
+            41
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            27
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            36
+          ],
+          [
+            7,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            56,
+            2
+          ],
+          [
+            61,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            56,
+            61
+          ],
+          [
+            61,
+            36
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            17
+          ],
+          [
+            62,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            46
+          ],
+          [
+            62,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 30
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            25
+          ],
+          [
+            6,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            38
+          ],
+          [
+            6,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            11
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            52
+          ],
+          [
+            14,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            17
+          ],
+          [
+            24,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            46
+          ],
+          [
+            24,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            11
+          ],
+          [
+            57,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            52
+          ],
+          [
+            57,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            7
+          ],
+          [
+            61,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            56
+          ],
+          [
+            61,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            17
+          ],
+          [
+            63,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            46
+          ],
+          [
+            63,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            59,
+            26
+          ],
+          [
+            63,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            59,
+            37
+          ],
+          [
+            63,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 29
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            25
+          ],
+          [
+            11,
+            22
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            38
+          ],
+          [
+            11,
+            41
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            17,
+            0
+          ],
+          [
+            38,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            17,
+            63
+          ],
+          [
+            38,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            7
+          ],
+          [
+            46,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            56
+          ],
+          [
+            46,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            22
+          ],
+          [
+            63,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            26
+          ],
+          [
+            59,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            37
+          ],
+          [
+            59,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            41
+          ],
+          [
+            63,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 28
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            3
+          ],
+          [
+            10,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            25,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            8,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            25,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            60
+          ],
+          [
+            10,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            17
+          ],
+          [
+            14,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            46
+          ],
+          [
+            14,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            22
+          ],
+          [
+            24,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            41
+          ],
+          [
+            24,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            7
+          ],
+          [
+            62,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            56
+          ],
+          [
+            62,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            11
+          ],
+          [
+            52,
+            22
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            52
+          ],
+          [
+            52,
+            41
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            5
+          ],
+          [
+            57,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            58
+          ],
+          [
+            57,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            53,
+            0
+          ],
+          [
+            62,
+            3
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            53,
+            63
+          ],
+          [
+            62,
+            60
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            55,
+            2
+          ],
+          [
+            62,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            55,
+            61
+          ],
+          [
+            62,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 27
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            5,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            5,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            17
+          ],
+          [
+            24,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            46
+          ],
+          [
+            24,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            11
+          ],
+          [
+            59,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            52
+          ],
+          [
+            59,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            5
+          ],
+          [
+            57,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            58
+          ],
+          [
+            57,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            22
+          ],
+          [
+            59,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            41
+          ],
+          [
+            59,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            25
+          ],
+          [
+            62,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            38
+          ],
+          [
+            62,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 26
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            30
+          ],
+          [
+            25,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 25
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            33
+          ],
+          [
+            25,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 25
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            17
+          ],
+          [
+            11,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 25
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            46
+          ],
+          [
+            11,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 25
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            7
+          ],
+          [
+            62,
+            30
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 25
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            56
+          ],
+          [
+            62,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 25
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            26
+          ],
+          [
+            57,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 25
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            37
+          ],
+          [
+            57,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 25
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            49,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            30
+          ],
+          [
+            5,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            33
+          ],
+          [
+            5,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            49,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            2
+          ],
+          [
+            16,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            8,
+            61
+          ],
+          [
+            16,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            7
+          ],
+          [
+            62,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            56
+          ],
+          [
+            62,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            2
+          ],
+          [
+            38,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            61
+          ],
+          [
+            38,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            1
+          ],
+          [
+            45,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            62
+          ],
+          [
+            45,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            47,
+            0
+          ],
+          [
+            55,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            47,
+            63
+          ],
+          [
+            55,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            17
+          ],
+          [
+            62,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            46
+          ],
+          [
+            62,
+            30
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 24
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            2
+          ],
+          [
+            6,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            2,
+            36
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            2,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            61
+          ],
+          [
+            6,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            27
+          ],
+          [
+            14,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            36
+          ],
+          [
+            14,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            24,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            62
+          ],
+          [
+            24,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            2
+          ],
+          [
+            25,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            61
+          ],
+          [
+            25,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            0
+          ],
+          [
+            18,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            63
+          ],
+          [
+            18,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            7
+          ],
+          [
+            24,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            7
+          ],
+          [
+            24,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            56
+          ],
+          [
+            24,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            56
+          ],
+          [
+            24,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            16,
+            0
+          ],
+          [
+            18,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            16,
+            0
+          ],
+          [
+            39,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            16,
+            63
+          ],
+          [
+            18,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            16,
+            63
+          ],
+          [
+            39,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            17,
+            0
+          ],
+          [
+            24,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            17,
+            63
+          ],
+          [
+            24,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            2
+          ],
+          [
+            25,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            61
+          ],
+          [
+            25,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            5
+          ],
+          [
+            38,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            11
+          ],
+          [
+            47,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            52
+          ],
+          [
+            47,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            58
+          ],
+          [
+            38,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            7
+          ],
+          [
+            39,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            56
+          ],
+          [
+            39,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            1
+          ],
+          [
+            45,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            7
+          ],
+          [
+            56,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            56
+          ],
+          [
+            56,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            62
+          ],
+          [
+            45,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            5
+          ],
+          [
+            49,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            5
+          ],
+          [
+            58,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            11
+          ],
+          [
+            46,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            11
+          ],
+          [
+            49,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            52
+          ],
+          [
+            46,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            52
+          ],
+          [
+            49,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            58
+          ],
+          [
+            49,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            58
+          ],
+          [
+            58,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            45,
+            2
+          ],
+          [
+            47,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            45,
+            2
+          ],
+          [
+            53,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            45,
+            61
+          ],
+          [
+            47,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            45,
+            61
+          ],
+          [
+            53,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            5
+          ],
+          [
+            61,
+            36
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            58
+          ],
+          [
+            61,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            59,
+            26
+          ],
+          [
+            61,
+            36
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            59,
+            37
+          ],
+          [
+            61,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            61,
+            27
+          ],
+          [
+            62,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            61,
+            36
+          ],
+          [
+            62,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 23
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            30
+          ],
+          [
+            25,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            33
+          ],
+          [
+            25,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            5,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            59,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            7
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            25
+          ],
+          [
+            6,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            38
+          ],
+          [
+            6,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            56
+          ],
+          [
+            8,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            62
+          ],
+          [
+            59,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            2
+          ],
+          [
+            39,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            61
+          ],
+          [
+            39,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            5
+          ],
+          [
+            25,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            7
+          ],
+          [
+            38,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            56
+          ],
+          [
+            38,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            58
+          ],
+          [
+            25,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            2
+          ],
+          [
+            38,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            61
+          ],
+          [
+            38,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            11
+          ],
+          [
+            56,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            52
+          ],
+          [
+            56,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            1
+          ],
+          [
+            49,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            7
+          ],
+          [
+            45,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            56
+          ],
+          [
+            45,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            25,
+            62
+          ],
+          [
+            49,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            1
+          ],
+          [
+            62,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            7
+          ],
+          [
+            49,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            56
+          ],
+          [
+            49,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            62
+          ],
+          [
+            62,
+            30
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            55,
+            2
+          ],
+          [
+            58,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            55,
+            61
+          ],
+          [
+            58,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            17
+          ],
+          [
+            58,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            46
+          ],
+          [
+            58,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            7
+          ],
+          [
+            62,
+            23
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            56
+          ],
+          [
+            62,
+            40
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 22
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            25
+          ],
+          [
+            1,
+            30
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            25
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            38
+          ],
+          [
+            1,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            38
+          ],
+          [
+            6,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            30
+          ],
+          [
+            11,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            33
+          ],
+          [
+            11,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            27
+          ],
+          [
+            5,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            27
+          ],
+          [
+            52,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            36
+          ],
+          [
+            5,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            36
+          ],
+          [
+            52,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            10,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            1
+          ],
+          [
+            45,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            17
+          ],
+          [
+            11,
+            41
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            17
+          ],
+          [
+            39,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            46
+          ],
+          [
+            11,
+            22
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            46
+          ],
+          [
+            39,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            62
+          ],
+          [
+            10,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            62
+          ],
+          [
+            45,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            1
+          ],
+          [
+            39,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            62
+          ],
+          [
+            39,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            2
+          ],
+          [
+            25,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            7,
+            61
+          ],
+          [
+            25,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            22
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            26
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            26
+          ],
+          [
+            24,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            26
+          ],
+          [
+            61,
+            36
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            37
+          ],
+          [
+            14,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            37
+          ],
+          [
+            24,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            37
+          ],
+          [
+            61,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            41
+          ],
+          [
+            14,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            5
+          ],
+          [
+            17,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            14,
+            58
+          ],
+          [
+            17,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            16,
+            0
+          ],
+          [
+            25,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            16,
+            63
+          ],
+          [
+            25,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            2
+          ],
+          [
+            39,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            2
+          ],
+          [
+            58,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            61
+          ],
+          [
+            39,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            18,
+            61
+          ],
+          [
+            58,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            5
+          ],
+          [
+            45,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            5
+          ],
+          [
+            57,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            5
+          ],
+          [
+            58,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            58
+          ],
+          [
+            45,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            58
+          ],
+          [
+            57,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            24,
+            58
+          ],
+          [
+            58,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            1
+          ],
+          [
+            56,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            7
+          ],
+          [
+            47,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            56
+          ],
+          [
+            47,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            38,
+            62
+          ],
+          [
+            56,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            11
+          ],
+          [
+            52,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            11
+          ],
+          [
+            59,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            52
+          ],
+          [
+            52,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            39,
+            52
+          ],
+          [
+            59,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            46,
+            0
+          ],
+          [
+            49,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            46,
+            63
+          ],
+          [
+            49,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            7
+          ],
+          [
+            52,
+            22
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            7
+          ],
+          [
+            52,
+            26
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            56
+          ],
+          [
+            52,
+            37
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            49,
+            56
+          ],
+          [
+            52,
+            41
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            22
+          ],
+          [
+            58,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            26
+          ],
+          [
+            62,
+            30
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            37
+          ],
+          [
+            62,
+            33
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            52,
+            41
+          ],
+          [
+            58,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            53,
+            0
+          ],
+          [
+            58,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            53,
+            63
+          ],
+          [
+            58,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            1
+          ],
+          [
+            63,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            57,
+            62
+          ],
+          [
+            63,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            25
+          ],
+          [
+            61,
+            36
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            58,
+            38
+          ],
+          [
+            61,
+            27
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            62,
+            30
+          ],
+          [
+            63,
+            25
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            62,
+            33
+          ],
+          [
+            63,
+            38
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 21
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            25
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            0,
+            38
+          ],
+          [
+            14,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            3
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            5,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            23
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            30
+          ],
+          [
+            11,
+            41
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            33
+          ],
+          [
+            11,
+            22
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            40
+          ],
+          [
+            14,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            60
+          ],
+          [
+            8,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            1,
+            61
+          ],
+          [
+            6,
+            62
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            27
+          ],
+          [
+            6,
+            17
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            27
+          ],
+          [
+            24,
+            11
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            36
+          ],
+          [
+            6,
+            46
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            2,
+            36
+          ],
+          [
+            24,
+            52
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            25
+          ],
+          [
+            7,
+            61
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            5,
+            38
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            1
+          ],
+          [
+            24,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            6,
+            62
+          ],
+          [
+            24,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            0
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            10,
+            63
+          ],
+          [
+            14,
+            56
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            22
+          ],
+          [
+            17,
+            0
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            26
+          ],
+          [
+            14,
+            5
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            37
+          ],
+          [
+            14,
+            58
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      },
+      {
+        "certificate_edge": [
+          [
+            11,
+            41
+          ],
+          [
+            17,
+            63
+          ]
+        ],
+        "n_qs_blocked_by_this_edge": 20
+      }
+    ]
+  },
+  "projection_graph": {
+    "n_vertices_baseline": 112,
+    "n_edges": 6102,
+    "n_type2_edges": 5978,
+    "edge_frequency_percentiles": {
+      "p0": 1.0,
+      "p50": 7.0,
+      "p90": 19.0,
+      "p99": 68.98999999999978,
+      "p100": 76.0
+    },
+    "n_connected_components_including_isolates": 1,
+    "n_non_isolate_communities": 1,
+    "frequency_threshold_partitions": {
+      "1": {
+        "min_edge_frequency": 1,
+        "n_edges": 6102,
+        "n_cc_including_isolates": 1,
+        "n_non_isolate_communities": 1,
+        "largest_cc_size": 112
+      },
+      "2": {
+        "min_edge_frequency": 2,
+        "n_edges": 5738,
+        "n_cc_including_isolates": 1,
+        "n_non_isolate_communities": 1,
+        "largest_cc_size": 112
+      },
+      "5": {
+        "min_edge_frequency": 5,
+        "n_edges": 4258,
+        "n_cc_including_isolates": 1,
+        "n_non_isolate_communities": 1,
+        "largest_cc_size": 112
+      },
+      "7": {
+        "min_edge_frequency": 7,
+        "n_edges": 3408,
+        "n_cc_including_isolates": 1,
+        "n_non_isolate_communities": 1,
+        "largest_cc_size": 112
+      },
+      "10": {
+        "min_edge_frequency": 10,
+        "n_edges": 2302,
+        "n_cc_including_isolates": 1,
+        "n_non_isolate_communities": 1,
+        "largest_cc_size": 112
+      }
+    },
+    "type2_only_n_cc": 1,
+    "type2_only_n_non_isolate": 1
+  },
+  "communities_connected_components": [
+    {
+      "community_id": 0,
+      "partition_method": "connected_components_full_projection",
+      "size": 112,
+      "is_isolate_singleton": false,
+      "baseline_points": [
+        [
+          58,
+          56
+        ],
+        [
+          55,
+          2
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          61,
+          52
+        ],
+        [
+          1,
+          40
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          58,
+          62
+        ],
+        [
+          63,
+          25
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          58,
+          7
+        ],
+        [
+          58,
+          25
+        ],
+        [
+          38,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          49,
+          56
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          24,
+          11
+        ],
+        [
+          38,
+          62
+        ],
+        [
+          61,
+          27
+        ],
+        [
+          38,
+          7
+        ],
+        [
+          49,
+          7
+        ],
+        [
+          61,
+          36
+        ],
+        [
+          57,
+          17
+        ],
+        [
+          39,
+          11
+        ],
+        [
+          56,
+          61
+        ],
+        [
+          45,
+          61
+        ],
+        [
+          0,
+          38
+        ],
+        [
+          1,
+          33
+        ],
+        [
+          47,
+          0
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          10,
+          63
+        ],
+        [
+          0,
+          62
+        ],
+        [
+          59,
+          26
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          61
+        ],
+        [
+          7,
+          61
+        ],
+        [
+          52,
+          26
+        ],
+        [
+          11,
+          22
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          53,
+          0
+        ],
+        [
+          55,
+          61
+        ],
+        [
+          52,
+          41
+        ],
+        [
+          11,
+          37
+        ],
+        [
+          62,
+          30
+        ],
+        [
+          57,
+          46
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          63,
+          38
+        ],
+        [
+          24,
+          52
+        ],
+        [
+          58,
+          17
+        ],
+        [
+          6,
+          46
+        ],
+        [
+          24,
+          58
+        ],
+        [
+          39,
+          52
+        ],
+        [
+          59,
+          37
+        ],
+        [
+          16,
+          63
+        ],
+        [
+          63,
+          62
+        ],
+        [
+          62,
+          60
+        ],
+        [
+          5,
+          38
+        ],
+        [
+          52,
+          37
+        ],
+        [
+          2,
+          27
+        ],
+        [
+          5,
+          56
+        ],
+        [
+          62,
+          23
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          5,
+          62
+        ],
+        [
+          8,
+          61
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          1,
+          61
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          46,
+          63
+        ],
+        [
+          25,
+          62
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          24,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          58,
+          46
+        ],
+        [
+          11,
+          26
+        ],
+        [
+          58,
+          38
+        ],
+        [
+          39,
+          5
+        ],
+        [
+          1,
+          30
+        ],
+        [
+          5,
+          46
+        ],
+        [
+          11,
+          41
+        ],
+        [
+          14,
+          58
+        ],
+        [
+          17,
+          63
+        ],
+        [
+          61,
+          11
+        ],
+        [
+          62,
+          40
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          60
+        ],
+        [
+          57,
+          62
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          49,
+          58
+        ],
+        [
+          6,
+          62
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          56,
+          2
+        ],
+        [
+          45,
+          2
+        ],
+        [
+          47,
+          63
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          62,
+          33
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          39,
+          58
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          52,
+          22
+        ],
+        [
+          49,
+          5
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          53,
+          63
+        ],
+        [
+          14,
+          56
+        ]
+      ],
+      "spatial_span": {
+        "bbox": [
+          [
+            0,
+            0
+          ],
+          [
+            63,
+            63
+          ]
+        ],
+        "bbox_diag2": 7938,
+        "max_pairwise_d2": 7938,
+        "centroid": [
+          31.446428571428573,
+          31.5
+        ]
+      },
+      "internal_projection_edges": 6102,
+      "external_projection_edges": 0,
+      "n_candidate_qs_touching": 3984,
+      "spatially_far_but_conflict_coupled": true
+    }
+  ],
+  "communities_label_propagation": [
+    {
+      "community_id": 0,
+      "partition_method": "label_propagation",
+      "size": 112,
+      "is_isolate_singleton": false,
+      "baseline_points": [
+        [
+          58,
+          56
+        ],
+        [
+          55,
+          2
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          61,
+          52
+        ],
+        [
+          1,
+          40
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          58,
+          62
+        ],
+        [
+          63,
+          25
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          58,
+          7
+        ],
+        [
+          58,
+          25
+        ],
+        [
+          38,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          49,
+          56
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          24,
+          11
+        ],
+        [
+          38,
+          62
+        ],
+        [
+          61,
+          27
+        ],
+        [
+          38,
+          7
+        ],
+        [
+          49,
+          7
+        ],
+        [
+          61,
+          36
+        ],
+        [
+          57,
+          17
+        ],
+        [
+          39,
+          11
+        ],
+        [
+          56,
+          61
+        ],
+        [
+          45,
+          61
+        ],
+        [
+          0,
+          38
+        ],
+        [
+          1,
+          33
+        ],
+        [
+          47,
+          0
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          10,
+          63
+        ],
+        [
+          0,
+          62
+        ],
+        [
+          59,
+          26
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          61
+        ],
+        [
+          7,
+          61
+        ],
+        [
+          52,
+          26
+        ],
+        [
+          11,
+          22
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          53,
+          0
+        ],
+        [
+          55,
+          61
+        ],
+        [
+          52,
+          41
+        ],
+        [
+          11,
+          37
+        ],
+        [
+          62,
+          30
+        ],
+        [
+          57,
+          46
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          63,
+          38
+        ],
+        [
+          24,
+          52
+        ],
+        [
+          58,
+          17
+        ],
+        [
+          6,
+          46
+        ],
+        [
+          24,
+          58
+        ],
+        [
+          39,
+          52
+        ],
+        [
+          59,
+          37
+        ],
+        [
+          16,
+          63
+        ],
+        [
+          63,
+          62
+        ],
+        [
+          62,
+          60
+        ],
+        [
+          5,
+          38
+        ],
+        [
+          52,
+          37
+        ],
+        [
+          2,
+          27
+        ],
+        [
+          5,
+          56
+        ],
+        [
+          62,
+          23
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          5,
+          62
+        ],
+        [
+          8,
+          61
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          1,
+          61
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          46,
+          63
+        ],
+        [
+          25,
+          62
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          24,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          58,
+          46
+        ],
+        [
+          11,
+          26
+        ],
+        [
+          58,
+          38
+        ],
+        [
+          39,
+          5
+        ],
+        [
+          1,
+          30
+        ],
+        [
+          5,
+          46
+        ],
+        [
+          11,
+          41
+        ],
+        [
+          14,
+          58
+        ],
+        [
+          17,
+          63
+        ],
+        [
+          61,
+          11
+        ],
+        [
+          62,
+          40
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          60
+        ],
+        [
+          57,
+          62
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          49,
+          58
+        ],
+        [
+          6,
+          62
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          56,
+          2
+        ],
+        [
+          45,
+          2
+        ],
+        [
+          47,
+          63
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          62,
+          33
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          39,
+          58
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          52,
+          22
+        ],
+        [
+          49,
+          5
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          53,
+          63
+        ],
+        [
+          14,
+          56
+        ]
+      ],
+      "spatial_span": {
+        "bbox": [
+          [
+            0,
+            0
+          ],
+          [
+            63,
+            63
+          ]
+        ],
+        "bbox_diag2": 7938,
+        "max_pairwise_d2": 7938,
+        "centroid": [
+          31.446428571428573,
+          31.5
+        ]
+      },
+      "internal_projection_edges": 6102,
+      "external_projection_edges": 0,
+      "n_candidate_qs_touching": 3984,
+      "spatially_far_but_conflict_coupled": true
+    }
+  ],
+  "communities_spatial_knn6": [
+    {
+      "community_id": 0,
+      "partition_method": "spatial_knn6_cc",
+      "size": 56,
+      "is_isolate_singleton": false,
+      "baseline_points": [
+        [
+          58,
+          56
+        ],
+        [
+          55,
+          2
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          61,
+          52
+        ],
+        [
+          58,
+          62
+        ],
+        [
+          63,
+          25
+        ],
+        [
+          58,
+          7
+        ],
+        [
+          58,
+          25
+        ],
+        [
+          38,
+          56
+        ],
+        [
+          49,
+          56
+        ],
+        [
+          38,
+          62
+        ],
+        [
+          61,
+          27
+        ],
+        [
+          38,
+          7
+        ],
+        [
+          49,
+          7
+        ],
+        [
+          61,
+          36
+        ],
+        [
+          57,
+          17
+        ],
+        [
+          39,
+          11
+        ],
+        [
+          56,
+          61
+        ],
+        [
+          45,
+          61
+        ],
+        [
+          47,
+          0
+        ],
+        [
+          59,
+          26
+        ],
+        [
+          52,
+          26
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          53,
+          0
+        ],
+        [
+          55,
+          61
+        ],
+        [
+          52,
+          41
+        ],
+        [
+          62,
+          30
+        ],
+        [
+          57,
+          46
+        ],
+        [
+          63,
+          38
+        ],
+        [
+          58,
+          17
+        ],
+        [
+          39,
+          52
+        ],
+        [
+          59,
+          37
+        ],
+        [
+          63,
+          62
+        ],
+        [
+          62,
+          60
+        ],
+        [
+          52,
+          37
+        ],
+        [
+          62,
+          23
+        ],
+        [
+          46,
+          63
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          58,
+          46
+        ],
+        [
+          58,
+          38
+        ],
+        [
+          39,
+          5
+        ],
+        [
+          61,
+          11
+        ],
+        [
+          62,
+          40
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          57,
+          62
+        ],
+        [
+          49,
+          58
+        ],
+        [
+          56,
+          2
+        ],
+        [
+          45,
+          2
+        ],
+        [
+          47,
+          63
+        ],
+        [
+          62,
+          33
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          39,
+          58
+        ],
+        [
+          52,
+          22
+        ],
+        [
+          49,
+          5
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          53,
+          63
+        ]
+      ],
+      "spatial_span": {
+        "bbox": [
+          [
+            38,
+            0
+          ],
+          [
+            63,
+            63
+          ]
+        ],
+        "bbox_diag2": 4594,
+        "max_pairwise_d2": 4346,
+        "centroid": [
+          53.464285714285715,
+          31.5
+        ]
+      },
+      "internal_projection_edges": 1531,
+      "external_projection_edges": 3040,
+      "n_candidate_qs_touching": 3982,
+      "spatially_far_but_conflict_coupled": true
+    },
+    {
+      "community_id": 1,
+      "partition_method": "spatial_knn6_cc",
+      "size": 56,
+      "is_isolate_singleton": false,
+      "baseline_points": [
+        [
+          1,
+          40
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          24,
+          11
+        ],
+        [
+          0,
+          38
+        ],
+        [
+          1,
+          33
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          10,
+          63
+        ],
+        [
+          0,
+          62
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          61
+        ],
+        [
+          7,
+          61
+        ],
+        [
+          11,
+          22
+        ],
+        [
+          11,
+          37
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          24,
+          52
+        ],
+        [
+          6,
+          46
+        ],
+        [
+          24,
+          58
+        ],
+        [
+          16,
+          63
+        ],
+        [
+          5,
+          38
+        ],
+        [
+          2,
+          27
+        ],
+        [
+          5,
+          56
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          5,
+          62
+        ],
+        [
+          8,
+          61
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          1,
+          61
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          25,
+          62
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          24,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          11,
+          26
+        ],
+        [
+          1,
+          30
+        ],
+        [
+          5,
+          46
+        ],
+        [
+          11,
+          41
+        ],
+        [
+          14,
+          58
+        ],
+        [
+          17,
+          63
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          60
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          62
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          14,
+          56
+        ]
+      ],
+      "spatial_span": {
+        "bbox": [
+          [
+            0,
+            0
+          ],
+          [
+            25,
+            63
+          ]
+        ],
+        "bbox_diag2": 4594,
+        "max_pairwise_d2": 4346,
+        "centroid": [
+          9.428571428571429,
+          31.5
+        ]
+      },
+      "internal_projection_edges": 1531,
+      "external_projection_edges": 3040,
+      "n_candidate_qs_touching": 3982,
+      "spatially_far_but_conflict_coupled": true
+    }
+  ],
+  "communities_ring_band": [
+    {
+      "community_id": 0,
+      "partition_method": "ring_band_partition",
+      "size": 46,
+      "is_isolate_singleton": false,
+      "baseline_points": [
+        [
+          58,
+          1
+        ],
+        [
+          1,
+          40
+        ],
+        [
+          58,
+          62
+        ],
+        [
+          63,
+          25
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          38,
+          62
+        ],
+        [
+          0,
+          38
+        ],
+        [
+          1,
+          33
+        ],
+        [
+          47,
+          0
+        ],
+        [
+          10,
+          63
+        ],
+        [
+          0,
+          62
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          53,
+          0
+        ],
+        [
+          62,
+          30
+        ],
+        [
+          63,
+          38
+        ],
+        [
+          16,
+          63
+        ],
+        [
+          63,
+          62
+        ],
+        [
+          62,
+          60
+        ],
+        [
+          62,
+          23
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          5,
+          62
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          1,
+          61
+        ],
+        [
+          46,
+          63
+        ],
+        [
+          25,
+          62
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          1,
+          30
+        ],
+        [
+          17,
+          63
+        ],
+        [
+          62,
+          40
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          60
+        ],
+        [
+          57,
+          62
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          62
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          47,
+          63
+        ],
+        [
+          62,
+          33
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          53,
+          63
+        ]
+      ],
+      "spatial_span": {
+        "bbox": [
+          [
+            0,
+            0
+          ],
+          [
+            63,
+            63
+          ]
+        ],
+        "bbox_diag2": 7938,
+        "max_pairwise_d2": 7690,
+        "centroid": [
+          30.17391304347826,
+          31.5
+        ]
+      },
+      "internal_projection_edges": 1005,
+      "external_projection_edges": 2996,
+      "n_candidate_qs_touching": 3980,
+      "spatially_far_but_conflict_coupled": true
+    },
+    {
+      "community_id": 1,
+      "partition_method": "ring_band_partition",
+      "size": 54,
+      "is_isolate_singleton": false,
+      "baseline_points": [
+        [
+          58,
+          56
+        ],
+        [
+          55,
+          2
+        ],
+        [
+          61,
+          52
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          58,
+          7
+        ],
+        [
+          58,
+          25
+        ],
+        [
+          38,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          49,
+          56
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          61,
+          27
+        ],
+        [
+          38,
+          7
+        ],
+        [
+          49,
+          7
+        ],
+        [
+          61,
+          36
+        ],
+        [
+          57,
+          17
+        ],
+        [
+          56,
+          61
+        ],
+        [
+          45,
+          61
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          59,
+          26
+        ],
+        [
+          18,
+          61
+        ],
+        [
+          7,
+          61
+        ],
+        [
+          55,
+          61
+        ],
+        [
+          57,
+          46
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          58,
+          17
+        ],
+        [
+          6,
+          46
+        ],
+        [
+          24,
+          58
+        ],
+        [
+          59,
+          37
+        ],
+        [
+          5,
+          38
+        ],
+        [
+          2,
+          27
+        ],
+        [
+          5,
+          56
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          8,
+          61
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          24,
+          5
+        ],
+        [
+          58,
+          46
+        ],
+        [
+          58,
+          38
+        ],
+        [
+          39,
+          5
+        ],
+        [
+          5,
+          46
+        ],
+        [
+          14,
+          58
+        ],
+        [
+          61,
+          11
+        ],
+        [
+          49,
+          58
+        ],
+        [
+          56,
+          2
+        ],
+        [
+          45,
+          2
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          39,
+          58
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          49,
+          5
+        ],
+        [
+          14,
+          56
+        ]
+      ],
+      "spatial_span": {
+        "bbox": [
+          [
+            2,
+            2
+          ],
+          [
+            61,
+            61
+          ]
+        ],
+        "bbox_diag2": 6962,
+        "max_pairwise_d2": 5882,
+        "centroid": [
+          32.51851851851852,
+          31.5
+        ]
+      },
+      "internal_projection_edges": 1391,
+      "external_projection_edges": 3088,
+      "n_candidate_qs_touching": 3984,
+      "spatially_far_but_conflict_coupled": true
+    },
+    {
+      "community_id": 2,
+      "partition_method": "ring_band_partition",
+      "size": 12,
+      "is_isolate_singleton": false,
+      "baseline_points": [
+        [
+          24,
+          11
+        ],
+        [
+          39,
+          11
+        ],
+        [
+          52,
+          26
+        ],
+        [
+          11,
+          22
+        ],
+        [
+          52,
+          41
+        ],
+        [
+          11,
+          37
+        ],
+        [
+          24,
+          52
+        ],
+        [
+          39,
+          52
+        ],
+        [
+          52,
+          37
+        ],
+        [
+          11,
+          26
+        ],
+        [
+          11,
+          41
+        ],
+        [
+          52,
+          22
+        ]
+      ],
+      "spatial_span": {
+        "bbox": [
+          [
+            11,
+            11
+          ],
+          [
+            52,
+            52
+          ]
+        ],
+        "bbox_diag2": 3362,
+        "max_pairwise_d2": 2042,
+        "centroid": [
+          31.5,
+          31.5
+        ]
+      },
+      "internal_projection_edges": 66,
+      "external_projection_edges": 1196,
+      "n_candidate_qs_touching": 3718,
+      "spatially_far_but_conflict_coupled": true
+    }
+  ],
+  "communities_type2_only": [
+    {
+      "community_id": 0,
+      "partition_method": "type2_only_projection_cc",
+      "size": 112,
+      "is_isolate_singleton": false,
+      "baseline_points": [
+        [
+          58,
+          56
+        ],
+        [
+          55,
+          2
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          61,
+          52
+        ],
+        [
+          1,
+          40
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          58,
+          62
+        ],
+        [
+          63,
+          25
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          58,
+          7
+        ],
+        [
+          58,
+          25
+        ],
+        [
+          38,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          49,
+          56
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          24,
+          11
+        ],
+        [
+          38,
+          62
+        ],
+        [
+          61,
+          27
+        ],
+        [
+          38,
+          7
+        ],
+        [
+          49,
+          7
+        ],
+        [
+          61,
+          36
+        ],
+        [
+          57,
+          17
+        ],
+        [
+          39,
+          11
+        ],
+        [
+          56,
+          61
+        ],
+        [
+          45,
+          61
+        ],
+        [
+          0,
+          38
+        ],
+        [
+          1,
+          33
+        ],
+        [
+          47,
+          0
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          10,
+          63
+        ],
+        [
+          0,
+          62
+        ],
+        [
+          59,
+          26
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          61
+        ],
+        [
+          7,
+          61
+        ],
+        [
+          52,
+          26
+        ],
+        [
+          11,
+          22
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          53,
+          0
+        ],
+        [
+          55,
+          61
+        ],
+        [
+          52,
+          41
+        ],
+        [
+          11,
+          37
+        ],
+        [
+          62,
+          30
+        ],
+        [
+          57,
+          46
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          63,
+          38
+        ],
+        [
+          24,
+          52
+        ],
+        [
+          58,
+          17
+        ],
+        [
+          6,
+          46
+        ],
+        [
+          24,
+          58
+        ],
+        [
+          39,
+          52
+        ],
+        [
+          59,
+          37
+        ],
+        [
+          16,
+          63
+        ],
+        [
+          63,
+          62
+        ],
+        [
+          62,
+          60
+        ],
+        [
+          5,
+          38
+        ],
+        [
+          52,
+          37
+        ],
+        [
+          2,
+          27
+        ],
+        [
+          5,
+          56
+        ],
+        [
+          62,
+          23
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          5,
+          62
+        ],
+        [
+          8,
+          61
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          1,
+          61
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          46,
+          63
+        ],
+        [
+          25,
+          62
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          24,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          58,
+          46
+        ],
+        [
+          11,
+          26
+        ],
+        [
+          58,
+          38
+        ],
+        [
+          39,
+          5
+        ],
+        [
+          1,
+          30
+        ],
+        [
+          5,
+          46
+        ],
+        [
+          11,
+          41
+        ],
+        [
+          14,
+          58
+        ],
+        [
+          17,
+          63
+        ],
+        [
+          61,
+          11
+        ],
+        [
+          62,
+          40
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          60
+        ],
+        [
+          57,
+          62
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          49,
+          58
+        ],
+        [
+          6,
+          62
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          56,
+          2
+        ],
+        [
+          45,
+          2
+        ],
+        [
+          47,
+          63
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          62,
+          33
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          39,
+          58
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          52,
+          22
+        ],
+        [
+          49,
+          5
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          53,
+          63
+        ],
+        [
+          14,
+          56
+        ]
+      ],
+      "spatial_span": {
+        "bbox": [
+          [
+            0,
+            0
+          ],
+          [
+            63,
+            63
+          ]
+        ],
+        "bbox_diag2": 7938,
+        "max_pairwise_d2": 7938,
+        "centroid": [
+          31.446428571428573,
+          31.5
+        ]
+      },
+      "internal_projection_edges": 5978,
+      "external_projection_edges": 0,
+      "n_candidate_qs_touching": 3984,
+      "spatially_far_but_conflict_coupled": true
+    }
+  ],
+  "conflict_bridges_spatial_knn6": [
+    {
+      "community_a": 0,
+      "community_b": 1,
+      "conflict_bridge_weight": 22660,
+      "centroid_d2": 1939.1441326530612,
+      "spatially_far_but_conflict_coupled": true
+    }
+  ],
+  "conflict_bridges_ring_band": [
+    {
+      "community_a": 0,
+      "community_b": 1,
+      "conflict_bridge_weight": 23216,
+      "centroid_d2": 5.497174833588751,
+      "spatially_far_but_conflict_coupled": false
+    },
+    {
+      "community_a": 1,
+      "community_b": 2,
+      "conflict_bridge_weight": 7128,
+      "centroid_d2": 1.037379972565159,
+      "spatially_far_but_conflict_coupled": false
+    },
+    {
+      "community_a": 0,
+      "community_b": 2,
+      "conflict_bridge_weight": 4730,
+      "centroid_d2": 1.7585066162570868,
+      "spatially_far_but_conflict_coupled": false
+    }
+  ],
+  "spatially_far_but_conflict_coupled_communities_cc": [
+    {
+      "community_id": 0,
+      "partition_method": "connected_components_full_projection",
+      "size": 112,
+      "is_isolate_singleton": false,
+      "baseline_points": [
+        [
+          58,
+          56
+        ],
+        [
+          55,
+          2
+        ],
+        [
+          58,
+          1
+        ],
+        [
+          61,
+          52
+        ],
+        [
+          1,
+          40
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          58,
+          62
+        ],
+        [
+          63,
+          25
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          58,
+          7
+        ],
+        [
+          58,
+          25
+        ],
+        [
+          38,
+          56
+        ],
+        [
+          25,
+          56
+        ],
+        [
+          49,
+          56
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          24,
+          11
+        ],
+        [
+          38,
+          62
+        ],
+        [
+          61,
+          27
+        ],
+        [
+          38,
+          7
+        ],
+        [
+          49,
+          7
+        ],
+        [
+          61,
+          36
+        ],
+        [
+          57,
+          17
+        ],
+        [
+          39,
+          11
+        ],
+        [
+          56,
+          61
+        ],
+        [
+          45,
+          61
+        ],
+        [
+          0,
+          38
+        ],
+        [
+          1,
+          33
+        ],
+        [
+          47,
+          0
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          10,
+          63
+        ],
+        [
+          0,
+          62
+        ],
+        [
+          59,
+          26
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          61
+        ],
+        [
+          7,
+          61
+        ],
+        [
+          52,
+          26
+        ],
+        [
+          11,
+          22
+        ],
+        [
+          62,
+          3
+        ],
+        [
+          53,
+          0
+        ],
+        [
+          55,
+          61
+        ],
+        [
+          52,
+          41
+        ],
+        [
+          11,
+          37
+        ],
+        [
+          62,
+          30
+        ],
+        [
+          57,
+          46
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          63,
+          38
+        ],
+        [
+          24,
+          52
+        ],
+        [
+          58,
+          17
+        ],
+        [
+          6,
+          46
+        ],
+        [
+          24,
+          58
+        ],
+        [
+          39,
+          52
+        ],
+        [
+          59,
+          37
+        ],
+        [
+          16,
+          63
+        ],
+        [
+          63,
+          62
+        ],
+        [
+          62,
+          60
+        ],
+        [
+          5,
+          38
+        ],
+        [
+          52,
+          37
+        ],
+        [
+          2,
+          27
+        ],
+        [
+          5,
+          56
+        ],
+        [
+          62,
+          23
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          5,
+          62
+        ],
+        [
+          8,
+          61
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          1,
+          61
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          46,
+          63
+        ],
+        [
+          25,
+          62
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          24,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          58,
+          46
+        ],
+        [
+          11,
+          26
+        ],
+        [
+          58,
+          38
+        ],
+        [
+          39,
+          5
+        ],
+        [
+          1,
+          30
+        ],
+        [
+          5,
+          46
+        ],
+        [
+          11,
+          41
+        ],
+        [
+          14,
+          58
+        ],
+        [
+          17,
+          63
+        ],
+        [
+          61,
+          11
+        ],
+        [
+          62,
+          40
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          60
+        ],
+        [
+          57,
+          62
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          49,
+          58
+        ],
+        [
+          6,
+          62
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          0,
+          25
+        ],
+        [
+          56,
+          2
+        ],
+        [
+          45,
+          2
+        ],
+        [
+          47,
+          63
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          62,
+          33
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          39,
+          58
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          18,
+          2
+        ],
+        [
+          52,
+          22
+        ],
+        [
+          49,
+          5
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          53,
+          63
+        ],
+        [
+          14,
+          56
+        ]
+      ],
+      "spatial_span": {
+        "bbox": [
+          [
+            0,
+            0
+          ],
+          [
+            63,
+            63
+          ]
+        ],
+        "bbox_diag2": 7938,
+        "max_pairwise_d2": 7938,
+        "centroid": [
+          31.446428571428573,
+          31.5
+        ]
+      },
+      "internal_projection_edges": 6102,
+      "external_projection_edges": 0,
+      "n_candidate_qs_touching": 3984,
+      "spatially_far_but_conflict_coupled": true
+    }
+  ],
+  "spatially_far_conflict_bridges_knn": [
+    {
+      "community_a": 0,
+      "community_b": 1,
+      "conflict_bridge_weight": 22660,
+      "centroid_d2": 1939.1441326530612,
+      "spatially_far_but_conflict_coupled": true
+    }
+  ],
+  "spatially_far_conflict_bridges_ring": [],
+  "summary": {
+    "n_communities_total_cc": 1,
+    "n_non_isolate_communities_cc": 1,
+    "n_communities_lp": 1,
+    "n_non_isolate_communities_lp": 1,
+    "n_spatial_knn_communities": 2,
+    "n_ring_band_communities": 3,
+    "n_type2_communities": 1,
+    "n_spatially_far_coupled_cc": 1,
+    "n_spatially_far_knn_bridges": 1,
+    "n_spatially_far_ring_bridges": 0,
+    "largest_community_size_cc": 112,
+    "largest_community_size_knn": 56,
+    "multi_community_q_count_cc": 0,
+    "multi_community_q_count_lp": 0,
+    "multi_community_q_count_spatial_knn": 3980,
+    "multi_community_q_count_ring": 3982,
+    "note_giant_projection_cc": "If n_communities_total_cc==1, full blocker projection couples all of S0; use spatial_knn6 + conflict bridges for multi-region design."
+  },
+  "paths": {
+    "blocker_stats": "scratch/audit/agent_a/blocker_stats_n64.json",
+    "detail_gz": "scratch/audit/agent_a/blocker_detail_n64.json.gz"
+  },
+  "run_commands": [
+    "python scratch/audit/agent_a/scripts/blocker_audit.py --n 64",
+    "python scratch/audit/agent_a/scripts/blocker_audit.py --n all"
+  ],
+  "search_for_165_or_113": false,
+  "elapsed_sec": 2.619
+}

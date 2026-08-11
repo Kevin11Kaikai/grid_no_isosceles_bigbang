@@ -55,3 +55,28 @@ def greedy_multistart(
     best_meta["trials_run"] = trial
     best_meta["wall_time_s"] = time.time() - t0
     return best, best_meta
+
+
+if __name__ == "__main__":
+    import json
+
+    from src.verification.oracle_verifier import is_legal_pivot_method
+
+    n = int(sys.argv[1]) if len(sys.argv) > 1 else 64
+    budget = float(sys.argv[2]) if len(sys.argv) > 2 else 120.0
+    seed0 = int(sys.argv[3]) if len(sys.argv) > 3 else 1
+
+    best, meta = greedy_multistart(
+        n, num_starts=10**9, time_budget_s=budget, seed0=seed0,
+        orders=("random", "boundary_first", "center_first"),
+    )
+    ok, witness = is_legal_pivot_method(best, n)
+    if not ok:
+        raise AssertionError(f"greedy_multistart produced illegal state! witness={witness}")
+    meta["final_size"] = len(best)
+    print(json.dumps(meta, indent=2))
+    os.makedirs("logs", exist_ok=True)
+    out = f"logs/greedy_multistart_n{n}_seed{seed0}.json"
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump({"meta": meta, "points": best}, f)
+    print(f"wrote {out}")

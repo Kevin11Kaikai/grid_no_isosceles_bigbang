@@ -1,0 +1,355 @@
+{
+  "U_id": "U_fullrem_Alarge_r3",
+  "meta": {
+    "best_illegal_V": 13,
+    "claim_note": "INFEASIBLE under declared scope only; not a global upper bound",
+    "final_cuts": 684,
+    "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+    "num_workers": 5,
+    "round_log": [
+      {
+        "V": 22,
+        "cuts_added": 22,
+        "n_cuts_total": 0,
+        "n_witness_cuts": 22,
+        "round": 1,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.01859760284423828
+      },
+      {
+        "V": 18,
+        "cuts_added": 18,
+        "n_cuts_total": 22,
+        "n_witness_cuts": 18,
+        "round": 2,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.06616377830505371
+      },
+      {
+        "V": 16,
+        "cuts_added": 16,
+        "n_cuts_total": 40,
+        "n_witness_cuts": 16,
+        "round": 3,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.11416482925415039
+      },
+      {
+        "V": 19,
+        "cuts_added": 19,
+        "n_cuts_total": 56,
+        "n_witness_cuts": 19,
+        "round": 4,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.17826080322265625
+      },
+      {
+        "V": 21,
+        "cuts_added": 21,
+        "n_cuts_total": 75,
+        "n_witness_cuts": 21,
+        "round": 5,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.22526097297668457
+      },
+      {
+        "V": 22,
+        "cuts_added": 22,
+        "n_cuts_total": 96,
+        "n_witness_cuts": 22,
+        "round": 6,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.27326178550720215
+      },
+      {
+        "V": 24,
+        "cuts_added": 24,
+        "n_cuts_total": 118,
+        "n_witness_cuts": 24,
+        "round": 7,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.3203587532043457
+      },
+      {
+        "V": 20,
+        "cuts_added": 20,
+        "n_cuts_total": 142,
+        "n_witness_cuts": 20,
+        "round": 8,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.3673586845397949
+      },
+      {
+        "V": 22,
+        "cuts_added": 22,
+        "n_cuts_total": 162,
+        "n_witness_cuts": 22,
+        "round": 9,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.4123575687408447
+      },
+      {
+        "V": 19,
+        "cuts_added": 19,
+        "n_cuts_total": 184,
+        "n_witness_cuts": 19,
+        "round": 10,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.4729623794555664
+      },
+      {
+        "V": 21,
+        "cuts_added": 21,
+        "n_cuts_total": 203,
+        "n_witness_cuts": 21,
+        "round": 11,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.536963701248169
+      },
+      {
+        "V": 21,
+        "cuts_added": 21,
+        "n_cuts_total": 224,
+        "n_witness_cuts": 21,
+        "round": 12,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.5849621295928955
+      },
+      {
+        "V": 20,
+        "cuts_added": 20,
+        "n_cuts_total": 245,
+        "n_witness_cuts": 20,
+        "round": 13,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.6334927082061768
+      },
+      {
+        "V": 25,
+        "cuts_added": 25,
+        "n_cuts_total": 265,
+        "n_witness_cuts": 25,
+        "round": 14,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.681077241897583
+      },
+      {
+        "V": 25,
+        "cuts_added": 25,
+        "n_cuts_total": 290,
+        "n_witness_cuts": 25,
+        "round": 15,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.7450747489929199
+      },
+      {
+        "V": 22,
+        "cuts_added": 22,
+        "n_cuts_total": 315,
+        "n_witness_cuts": 22,
+        "round": 16,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.7922158241271973
+      },
+      {
+        "V": 24,
+        "cuts_added": 24,
+        "n_cuts_total": 337,
+        "n_witness_cuts": 24,
+        "round": 17,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.8564000129699707
+      },
+      {
+        "V": 20,
+        "cuts_added": 20,
+        "n_cuts_total": 361,
+        "n_witness_cuts": 20,
+        "round": 18,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.9035258293151855
+      },
+      {
+        "V": 21,
+        "cuts_added": 21,
+        "n_cuts_total": 381,
+        "n_witness_cuts": 21,
+        "round": 19,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.9515259265899658
+      },
+      {
+        "V": 31,
+        "cuts_added": 31,
+        "n_cuts_total": 402,
+        "n_witness_cuts": 31,
+        "round": 20,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.9986250400543213
+      },
+      {
+        "V": 19,
+        "cuts_added": 19,
+        "n_cuts_total": 433,
+        "n_witness_cuts": 19,
+        "round": 21,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.0462124347686768
+      },
+      {
+        "V": 22,
+        "cuts_added": 22,
+        "n_cuts_total": 452,
+        "n_witness_cuts": 22,
+        "round": 22,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.1088159084320068
+      },
+      {
+        "V": 20,
+        "cuts_added": 20,
+        "n_cuts_total": 474,
+        "n_witness_cuts": 20,
+        "round": 23,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.156705617904663
+      },
+      {
+        "V": 20,
+        "cuts_added": 20,
+        "n_cuts_total": 494,
+        "n_witness_cuts": 20,
+        "round": 24,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.2037055492401123
+      },
+      {
+        "V": 24,
+        "cuts_added": 24,
+        "n_cuts_total": 514,
+        "n_witness_cuts": 24,
+        "round": 25,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.2517890930175781
+      },
+      {
+        "V": 20,
+        "cuts_added": 20,
+        "n_cuts_total": 538,
+        "n_witness_cuts": 20,
+        "round": 26,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.2997100353240967
+      },
+      {
+        "V": 16,
+        "cuts_added": 16,
+        "n_cuts_total": 558,
+        "n_witness_cuts": 16,
+        "round": 27,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.3617360591888428
+      },
+      {
+        "V": 25,
+        "cuts_added": 25,
+        "n_cuts_total": 574,
+        "n_witness_cuts": 25,
+        "round": 28,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.4250702857971191
+      },
+      {
+        "V": 16,
+        "cuts_added": 16,
+        "n_cuts_total": 599,
+        "n_witness_cuts": 16,
+        "round": 29,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.4890697002410889
+      },
+      {
+        "V": 30,
+        "cuts_added": 30,
+        "n_cuts_total": 615,
+        "n_witness_cuts": 30,
+        "round": 30,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.6140697002410889
+      },
+      {
+        "V": 26,
+        "cuts_added": 26,
+        "n_cuts_total": 645,
+        "n_witness_cuts": 26,
+        "round": 31,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.694199800491333
+      },
+      {
+        "V": 13,
+        "cuts_added": 13,
+        "n_cuts_total": 671,
+        "n_witness_cuts": 13,
+        "round": 32,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.805800199508667
+      },
+      {
+        "n_cuts": 684,
+        "round": 33,
+        "solver_status": "INFEASIBLE",
+        "t": 2.0591981410980225
+      }
+    ],
+    "rounds": 33,
+    "scope": {
+      "U_id": "U_fullrem_Alarge_r3",
+      "halo": "none",
+      "n": 100,
+      "r": 3,
+      "seed": 1,
+      "symmetry_mode": "asymmetric",
+      "time_limit_s": 2400,
+      "universe_hash": "e45a5788c9b8f67508a88249e8f1c043d8659fe05452b0ff05e5a4c153206462"
+    },
+    "time_to_best_illegal_s": 1.805800199508667,
+    "wall_time_s": 2.0591981410980225
+  },
+  "n_vars": 292,
+  "points": null,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "e45a5788c9b8f67508a88249e8f1c043d8659fe05452b0ff05e5a4c153206462"
+}

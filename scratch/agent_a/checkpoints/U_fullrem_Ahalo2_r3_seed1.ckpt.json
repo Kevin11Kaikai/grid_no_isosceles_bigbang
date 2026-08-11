@@ -1,0 +1,217 @@
+{
+  "best_illegal_V": 21,
+  "git_commit": "148808f422cba7e8ca232ebb4710b84782086342",
+  "n_cuts": 4308,
+  "round_log_tail": [
+    {
+      "V": 58,
+      "cuts_added": 58,
+      "n_cuts_total": 3516,
+      "n_witness_cuts": 58,
+      "round": 83,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 7.48912501335144
+    },
+    {
+      "V": 52,
+      "cuts_added": 52,
+      "n_cuts_total": 3574,
+      "n_witness_cuts": 52,
+      "round": 84,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 7.585124969482422
+    },
+    {
+      "V": 68,
+      "cuts_added": 68,
+      "n_cuts_total": 3626,
+      "n_witness_cuts": 68,
+      "round": 85,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 7.712125539779663
+    },
+    {
+      "V": 42,
+      "cuts_added": 42,
+      "n_cuts_total": 3694,
+      "n_witness_cuts": 42,
+      "round": 86,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 7.854239225387573
+    },
+    {
+      "V": 33,
+      "cuts_added": 33,
+      "n_cuts_total": 3736,
+      "n_witness_cuts": 33,
+      "round": 87,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 8.013319730758667
+    },
+    {
+      "V": 40,
+      "cuts_added": 40,
+      "n_cuts_total": 3769,
+      "n_witness_cuts": 40,
+      "round": 88,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 8.123969793319702
+    },
+    {
+      "V": 35,
+      "cuts_added": 35,
+      "n_cuts_total": 3809,
+      "n_witness_cuts": 35,
+      "round": 89,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 8.26718521118164
+    },
+    {
+      "V": 32,
+      "cuts_added": 32,
+      "n_cuts_total": 3844,
+      "n_witness_cuts": 32,
+      "round": 90,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 8.379184246063232
+    },
+    {
+      "V": 49,
+      "cuts_added": 49,
+      "n_cuts_total": 3876,
+      "n_witness_cuts": 49,
+      "round": 91,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 8.536309242248535
+    },
+    {
+      "V": 59,
+      "cuts_added": 59,
+      "n_cuts_total": 3925,
+      "n_witness_cuts": 59,
+      "round": 92,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 8.66430950164795
+    },
+    {
+      "V": 46,
+      "cuts_added": 46,
+      "n_cuts_total": 3984,
+      "n_witness_cuts": 46,
+      "round": 93,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 8.775311470031738
+    },
+    {
+      "V": 38,
+      "cuts_added": 38,
+      "n_cuts_total": 4030,
+      "n_witness_cuts": 38,
+      "round": 94,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 8.900308847427368
+    },
+    {
+      "V": 45,
+      "cuts_added": 45,
+      "n_cuts_total": 4068,
+      "n_witness_cuts": 45,
+      "round": 95,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 9.01338267326355
+    },
+    {
+      "V": 41,
+      "cuts_added": 41,
+      "n_cuts_total": 4113,
+      "n_witness_cuts": 41,
+      "round": 96,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 9.154680013656616
+    },
+    {
+      "V": 39,
+      "cuts_added": 39,
+      "n_cuts_total": 4154,
+      "n_witness_cuts": 39,
+      "round": 97,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 9.312256574630737
+    },
+    {
+      "V": 24,
+      "cuts_added": 24,
+      "n_cuts_total": 4193,
+      "n_witness_cuts": 24,
+      "round": 98,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 9.487424612045288
+    },
+    {
+      "V": 23,
+      "cuts_added": 23,
+      "n_cuts_total": 4217,
+      "n_witness_cuts": 23,
+      "round": 99,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 9.772173166275024
+    },
+    {
+      "V": 33,
+      "cuts_added": 33,
+      "n_cuts_total": 4240,
+      "n_witness_cuts": 33,
+      "round": 100,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 10.010480403900146
+    },
+    {
+      "V": 35,
+      "cuts_added": 35,
+      "n_cuts_total": 4273,
+      "n_witness_cuts": 35,
+      "round": 101,
+      "selected_size": 165,
+      "solver_status": "OPTIMAL",
+      "t": 10.377731561660767
+    },
+    {
+      "n_cuts": 4308,
+      "round": 102,
+      "solver_status": "INFEASIBLE",
+      "t": 11.074596405029297
+    }
+  ],
+  "rounds": 102,
+  "scope": {
+    "U_id": "U_fullrem_Ahalo2_r3",
+    "halo": "none",
+    "n": 100,
+    "r": 3,
+    "seed": 1,
+    "symmetry_mode": "asymmetric",
+    "time_limit_s": 3600,
+    "universe_hash": "601be524fa1dfd4ccacdc542cd61ddb1b7320054e9b2cf9a5bcf1081c6203a95"
+  },
+  "status_so_far": "INFEASIBLE_SCOPED",
+  "time_to_best_illegal_s": 6.807267904281616,
+  "wall_time_s": 11.074596405029297
+}

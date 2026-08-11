@@ -1,0 +1,296 @@
+{
+  "4": {
+    "n": 4,
+    "lower_bound_found": 6,
+    "lower_bound_meta": {
+      "trials_run": 985755,
+      "wall_time_s": 45.00015115737915
+    },
+    "target_tested": 7,
+    "status": "INFEASIBLE_PROVEN",
+    "ub_wall_time_s": 4.2262468338012695,
+    "ub_rounds": 15,
+    "ub_final_cuts": 124,
+    "verdict": "EXACT: C(4) = 6 (upper bound machine-proven via lazy CP-SAT, lower bound via greedy construction)"
+  },
+  "5": {
+    "n": 5,
+    "lower_bound_found": 7,
+    "lower_bound_meta": {
+      "trials_run": 516857,
+      "wall_time_s": 45.0001323223114
+    },
+    "target_tested": 8,
+    "status": "INFEASIBLE_PROVEN",
+    "ub_wall_time_s": 28.44664168357849,
+    "ub_rounds": 56,
+    "ub_final_cuts": 405,
+    "verdict": "EXACT: C(5) = 7 (upper bound machine-proven via lazy CP-SAT, lower bound via greedy construction)"
+  },
+  "6": {
+    "n": 6,
+    "lower_bound_found": 9,
+    "lower_bound_meta": {
+      "trials_run": 333512,
+      "wall_time_s": 45.00398564338684
+    },
+    "target_tested": 10,
+    "status": "INFEASIBLE_PROVEN",
+    "ub_wall_time_s": 36.0607213973999,
+    "ub_rounds": 69,
+    "ub_final_cuts": 839,
+    "verdict": "EXACT: C(6) = 9 (upper bound machine-proven via lazy CP-SAT, lower bound via greedy construction)"
+  },
+  "7": {
+    "n": 7,
+    "lower_bound_found": 10,
+    "lower_bound_meta": {
+      "trials_run": 229789,
+      "wall_time_s": 45.000635862350464
+    },
+    "target_tested": 11,
+    "status": "INFEASIBLE_PROVEN",
+    "ub_wall_time_s": 159.51505661010742,
+    "ub_rounds": 192,
+    "ub_final_cuts": 1943,
+    "verdict": "EXACT: C(7) = 10 (upper bound machine-proven via lazy CP-SAT, lower bound via greedy construction)"
+  },
+  "8": {
+    "n": 8,
+    "lower_bound_found": 13,
+    "lower_bound_meta": {
+      "trials_run": 185414,
+      "wall_time_s": 45.00044560432434
+    },
+    "target_tested": 14,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 177.4869921207428,
+    "ub_rounds": 137,
+    "ub_final_cuts": 3051,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "9": {
+    "n": 9,
+    "lower_bound_found": 16,
+    "lower_bound_meta": {
+      "trials_run": 154715,
+      "wall_time_s": 45.00052452087402
+    },
+    "target_tested": 17,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 162.10100674629211,
+    "ub_rounds": 101,
+    "ub_final_cuts": 4372,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "10": {
+    "n": 10,
+    "lower_bound_found": 16,
+    "lower_bound_meta": {
+      "trials_run": 143540,
+      "wall_time_s": 45.000579595565796
+    },
+    "target_tested": 17,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.0863742828369,
+    "ub_rounds": 250,
+    "ub_final_cuts": 7760,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "11": {
+    "n": 11,
+    "lower_bound_found": 18,
+    "lower_bound_meta": {
+      "trials_run": 108425,
+      "wall_time_s": 45.01197123527527
+    },
+    "target_tested": 19,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.03442764282227,
+    "ub_rounds": 264,
+    "ub_final_cuts": 10823,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "12": {
+    "n": 12,
+    "lower_bound_found": 19,
+    "lower_bound_meta": {
+      "trials_run": 89672,
+      "wall_time_s": 45.02944016456604
+    },
+    "target_tested": 20,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.22432446479797,
+    "ub_rounds": 271,
+    "ub_final_cuts": 13093,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "13": {
+    "n": 13,
+    "lower_bound_found": 21,
+    "lower_bound_meta": {
+      "trials_run": 73233,
+      "wall_time_s": 45.00022220611572
+    },
+    "target_tested": 22,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.94003772735596,
+    "ub_rounds": 423,
+    "ub_final_cuts": 22851,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "14": {
+    "n": 14,
+    "lower_bound_found": 22,
+    "lower_bound_meta": {
+      "trials_run": 85078,
+      "wall_time_s": 45.000345945358276
+    },
+    "target_tested": 23,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.10932278633118,
+    "ub_rounds": 451,
+    "ub_final_cuts": 30566,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "15": {
+    "n": 15,
+    "lower_bound_found": 24,
+    "lower_bound_meta": {
+      "trials_run": 109554,
+      "wall_time_s": 45.00030255317688
+    },
+    "target_tested": 25,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.69189453125,
+    "ub_rounds": 505,
+    "ub_final_cuts": 33930,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "16": {
+    "n": 16,
+    "lower_bound_found": 26,
+    "lower_bound_meta": {
+      "trials_run": 61415,
+      "wall_time_s": 45.000030279159546
+    },
+    "target_tested": 27,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.18040132522583,
+    "ub_rounds": 303,
+    "ub_final_cuts": 33958,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "18": {
+    "n": 18,
+    "lower_bound_found": 28,
+    "lower_bound_meta": {
+      "trials_run": 45408,
+      "wall_time_s": 45.00048899650574
+    },
+    "target_tested": 29,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.04116368293762,
+    "ub_rounds": 297,
+    "ub_final_cuts": 35738,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "20": {
+    "n": 20,
+    "lower_bound_found": 31,
+    "lower_bound_meta": {
+      "trials_run": 34901,
+      "wall_time_s": 45.00173902511597
+    },
+    "target_tested": 32,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.07088255882263,
+    "ub_rounds": 262,
+    "ub_final_cuts": 40273,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "22": {
+    "n": 22,
+    "lower_bound_found": 33,
+    "lower_bound_meta": {
+      "trials_run": 28995,
+      "wall_time_s": 45.00034713745117
+    },
+    "target_tested": 34,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.46494245529175,
+    "ub_rounds": 315,
+    "ub_final_cuts": 51375,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "25": {
+    "n": 25,
+    "lower_bound_found": 37,
+    "lower_bound_meta": {
+      "trials_run": 30191,
+      "wall_time_s": 45.00160217285156
+    },
+    "target_tested": 38,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.00029277801514,
+    "ub_rounds": 409,
+    "ub_final_cuts": 59182,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "28": {
+    "n": 28,
+    "lower_bound_found": 40,
+    "lower_bound_meta": {
+      "trials_run": 21863,
+      "wall_time_s": 45.00039577484131
+    },
+    "target_tested": 41,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.02599263191223,
+    "ub_rounds": 384,
+    "ub_final_cuts": 60771,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "30": {
+    "n": 30,
+    "lower_bound_found": 43,
+    "lower_bound_meta": {
+      "trials_run": 18541,
+      "wall_time_s": 45.00067114830017
+    },
+    "target_tested": 44,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.76626753807068,
+    "ub_rounds": 360,
+    "ub_final_cuts": 64574,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "35": {
+    "n": 35,
+    "lower_bound_found": 48,
+    "lower_bound_meta": {
+      "trials_run": 12652,
+      "wall_time_s": 45.001404762268066
+    },
+    "target_tested": 49,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 240.75471234321594,
+    "ub_rounds": 336,
+    "ub_final_cuts": 67768,
+    "verdict": "INCONCLUSIVE within budget"
+  },
+  "40": {
+    "n": 40,
+    "lower_bound_found": 56,
+    "lower_bound_meta": {
+      "trials_run": 8920,
+      "wall_time_s": 45.003562450408936
+    },
+    "target_tested": 57,
+    "status": "INCONCLUSIVE",
+    "ub_wall_time_s": 239.99640011787415,
+    "ub_rounds": 278,
+    "ub_final_cuts": 75707,
+    "verdict": "INCONCLUSIVE within budget"
+  }
+}
