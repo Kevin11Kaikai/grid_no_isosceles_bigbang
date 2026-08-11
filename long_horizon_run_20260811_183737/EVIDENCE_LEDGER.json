@@ -1,0 +1,30 @@
+{
+  "schema": "evidence_ledger_v1",
+  "run_id": "long_horizon_run_20260811_183737",
+  "entries": [
+    {
+      "id": "E000",
+      "utc": "2026-08-11T22:37:37Z",
+      "event": "bootstrap",
+      "summary": "Incumbents C(64)>=112, C(100)>=164 re-read from certified JSON; hashes match Gate0/1.",
+      "level": "DUAL_VERIFIED_CONSTRUCTION",
+      "artifacts": [
+        "results/certified/n64_k112_baseline_official.json",
+        "results/certified/n100_k164_baseline_official.json",
+        "INCUMBENT.json"
+      ]
+    },
+    {
+      "id": "E001",
+      "utc": "2026-08-11T22:37:37Z",
+      "event": "import_wave2",
+      "summary": "Imported Wave2 scoped INFEAS on U_small_r2 lineage and Agent C V=3/2 plateaus; B incomplete.",
+      "level": "SCOPED_INFEASIBLE / HEURISTIC",
+      "artifacts": [
+        "scratch/agent_a/hamming_n100_r2_summary.json",
+        "scratch/agent_c/agent_c_wave2_report.md",
+        "audits/wave2_red_team.md"
+      ]
+    }
+  ]
+}

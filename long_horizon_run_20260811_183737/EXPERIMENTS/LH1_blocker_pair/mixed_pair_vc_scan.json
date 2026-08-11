@@ -1,0 +1,17 @@
+{
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "interpretation": "joint_vc>2 kills co-insertion of that pair at Hamming r=2; joint_vc==3 is necessary-ok only for r>=3; easy2\u00d7easy2 previously all 4.",
+  "joint_vc_histogram_all_scanned_pairs": {
+    "4": 130,
+    "5": 54,
+    "6": 6
+  },
+  "n_easy2": 16,
+  "n_lb3": 4,
+  "n_lb4": 0,
+  "n_promising_joint_vc_le_2": 0,
+  "n_promising_joint_vc_le_3": 0,
+  "promising": [],
+  "schema": "lh1_mixed_pair_vc_v1",
+  "wall_time_s": 0.43283867835998535
+}

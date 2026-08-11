@@ -1,0 +1,22 @@
+{
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "best_pairs": [],
+  "joint_vc_histogram": {
+    "4": 162,
+    "5": 588,
+    "None": 2820
+  },
+  "n_joint_le_2": 0,
+  "n_joint_le_3": 0,
+  "n_pairs": 3570,
+  "n_qs": 85,
+  "qs_lb_hist": {
+    "2": 16,
+    "3": 35,
+    "4": 5,
+    "5": 9,
+    "6": 20
+  },
+  "schema": "lh1_complementary_blocker_pairs_v1",
+  "wall_time_s": 168.93812489509583
+}

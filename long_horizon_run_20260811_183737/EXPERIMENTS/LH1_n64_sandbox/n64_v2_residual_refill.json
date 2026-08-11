@@ -1,0 +1,109 @@
+{
+  "n_legal": 0,
+  "results": [
+    {
+      "V": 2,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 3,
+        "cuts": 358,
+        "rounds": 359,
+        "status": "INFEASIBLE_SCOPED"
+      },
+      "elite": "n64_V2_seed201_9def3296d554473d.json",
+      "n_involved": 4,
+      "n_pool": 307,
+      "n_witness": 2,
+      "need": 4,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "V": 2,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 10,
+        "cuts": 359,
+        "rounds": 360,
+        "status": "INFEASIBLE_SCOPED"
+      },
+      "elite": "n64_V2_seed201_a2c2bf2b84561518.json",
+      "n_involved": 5,
+      "n_pool": 299,
+      "n_witness": 2,
+      "need": 5,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "V": 2,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 3,
+        "cuts": 358,
+        "rounds": 359,
+        "status": "INFEASIBLE_SCOPED"
+      },
+      "elite": "n64_V2_seed202_9def3296d554473d.json",
+      "n_involved": 4,
+      "n_pool": 307,
+      "n_witness": 2,
+      "need": 4,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "V": 2,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 12,
+        "cuts": 534,
+        "rounds": 535,
+        "status": "INFEASIBLE_SCOPED"
+      },
+      "elite": "n64_V2_seed204_6e2471bb13e45407.json",
+      "n_involved": 5,
+      "n_pool": 445,
+      "n_witness": 2,
+      "need": 5,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "V": 2,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 2,
+        "cuts": 536,
+        "rounds": 537,
+        "status": "INFEASIBLE_SCOPED"
+      },
+      "elite": "n64_V2_seed204_a52b8cb756a66b57.json",
+      "n_involved": 5,
+      "n_pool": 445,
+      "n_witness": 2,
+      "need": 5,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "V": 2,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 12,
+        "cuts": 534,
+        "rounds": 535,
+        "status": "INFEASIBLE_SCOPED"
+      },
+      "elite": "n64_V2_seed301_6e2471bb13e45407.json",
+      "n_involved": 5,
+      "n_pool": 445,
+      "n_witness": 2,
+      "need": 5,
+      "status": "INFEASIBLE_SCOPED"
+    }
+  ],
+  "schema": "lh1_n64_v2_residual_refill_v1",
+  "wall_time_s": 45.840359926223755
+}

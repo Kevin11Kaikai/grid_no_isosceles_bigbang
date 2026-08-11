@@ -1,0 +1,833 @@
+{
+  "V_values": [
+    3
+  ],
+  "any_legal": false,
+  "elites": [
+    {
+      "V_recomputed": 3,
+      "file": "n100_V3_seed101_02e722eb6367189d.json",
+      "involved_points": [
+        [
+          2,
+          43
+        ],
+        [
+          3,
+          98
+        ],
+        [
+          26,
+          59
+        ],
+        [
+          29,
+          98
+        ],
+        [
+          47,
+          92
+        ],
+        [
+          91,
+          86
+        ],
+        [
+          98,
+          0
+        ]
+      ],
+      "n_distinct_pivots": 3,
+      "n_involved_points": 7,
+      "n_witness_triples": 3,
+      "oracle_legal": false,
+      "pivot_mult": {
+        "(26, 59)": 1,
+        "(47, 92)": 1,
+        "(98, 0)": 1
+      },
+      "witnesses": [
+        {
+          "a": [
+            29,
+            98
+          ],
+          "b": [
+            47,
+            92
+          ],
+          "d2": 1530,
+          "pivot": [
+            26,
+            59
+          ]
+        },
+        {
+          "a": [
+            3,
+            98
+          ],
+          "b": [
+            91,
+            86
+          ],
+          "d2": 1972,
+          "pivot": [
+            47,
+            92
+          ]
+        },
+        {
+          "a": [
+            2,
+            43
+          ],
+          "b": [
+            47,
+            92
+          ],
+          "d2": 11065,
+          "pivot": [
+            98,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "V_recomputed": 3,
+      "file": "n100_V3_seed101_683de0e232c95bb8.json",
+      "involved_points": [
+        [
+          2,
+          81
+        ],
+        [
+          7,
+          94
+        ],
+        [
+          8,
+          93
+        ],
+        [
+          10,
+          95
+        ],
+        [
+          18,
+          83
+        ],
+        [
+          22,
+          95
+        ],
+        [
+          23,
+          99
+        ]
+      ],
+      "n_distinct_pivots": 3,
+      "n_involved_points": 7,
+      "n_witness_triples": 3,
+      "oracle_legal": false,
+      "pivot_mult": {
+        "(2, 81)": 1,
+        "(23, 99)": 1,
+        "(8, 93)": 1
+      },
+      "witnesses": [
+        {
+          "a": [
+            10,
+            95
+          ],
+          "b": [
+            18,
+            83
+          ],
+          "d2": 260,
+          "pivot": [
+            2,
+            81
+          ]
+        },
+        {
+          "a": [
+            18,
+            83
+          ],
+          "b": [
+            22,
+            95
+          ],
+          "d2": 200,
+          "pivot": [
+            8,
+            93
+          ]
+        },
+        {
+          "a": [
+            7,
+            94
+          ],
+          "b": [
+            18,
+            83
+          ],
+          "d2": 281,
+          "pivot": [
+            23,
+            99
+          ]
+        }
+      ]
+    },
+    {
+      "V_recomputed": 3,
+      "file": "n100_V3_seed102_9cca156861c695e3.json",
+      "involved_points": [
+        [
+          76,
+          99
+        ],
+        [
+          77,
+          95
+        ],
+        [
+          81,
+          83
+        ],
+        [
+          89,
+          95
+        ],
+        [
+          91,
+          93
+        ],
+        [
+          92,
+          94
+        ],
+        [
+          97,
+          81
+        ]
+      ],
+      "n_distinct_pivots": 3,
+      "n_involved_points": 7,
+      "n_witness_triples": 3,
+      "oracle_legal": false,
+      "pivot_mult": {
+        "(76, 99)": 1,
+        "(91, 93)": 1,
+        "(97, 81)": 1
+      },
+      "witnesses": [
+        {
+          "a": [
+            81,
+            83
+          ],
+          "b": [
+            92,
+            94
+          ],
+          "d2": 281,
+          "pivot": [
+            76,
+            99
+          ]
+        },
+        {
+          "a": [
+            77,
+            95
+          ],
+          "b": [
+            81,
+            83
+          ],
+          "d2": 200,
+          "pivot": [
+            91,
+            93
+          ]
+        },
+        {
+          "a": [
+            81,
+            83
+          ],
+          "b": [
+            89,
+            95
+          ],
+          "d2": 260,
+          "pivot": [
+            97,
+            81
+          ]
+        }
+      ]
+    },
+    {
+      "V_recomputed": 3,
+      "file": "n100_V3_seed102_d8ea4c95e803f1e6.json",
+      "involved_points": [
+        [
+          11,
+          0
+        ],
+        [
+          68,
+          94
+        ],
+        [
+          95,
+          86
+        ],
+        [
+          96,
+          1
+        ],
+        [
+          96,
+          43
+        ],
+        [
+          96,
+          97
+        ],
+        [
+          97,
+          0
+        ]
+      ],
+      "n_distinct_pivots": 3,
+      "n_involved_points": 7,
+      "n_witness_triples": 3,
+      "oracle_legal": false,
+      "pivot_mult": {
+        "(68, 94)": 1,
+        "(96, 1)": 1,
+        "(96, 43)": 1
+      },
+      "witnesses": [
+        {
+          "a": [
+            95,
+            86
+          ],
+          "b": [
+            96,
+            97
+          ],
+          "d2": 793,
+          "pivot": [
+            68,
+            94
+          ]
+        },
+        {
+          "a": [
+            11,
+            0
+          ],
+          "b": [
+            95,
+            86
+          ],
+          "d2": 7226,
+          "pivot": [
+            96,
+            1
+          ]
+        },
+        {
+          "a": [
+            95,
+            86
+          ],
+          "b": [
+            97,
+            0
+          ],
+          "d2": 1850,
+          "pivot": [
+            96,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "V_recomputed": 3,
+      "file": "n100_V3_seed104_3d71a4da03864dbe.json",
+      "involved_points": [
+        [
+          2,
+          99
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          56
+        ],
+        [
+          3,
+          98
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          31,
+          5
+        ],
+        [
+          88,
+          99
+        ]
+      ],
+      "n_distinct_pivots": 3,
+      "n_involved_points": 7,
+      "n_witness_triples": 3,
+      "oracle_legal": false,
+      "pivot_mult": {
+        "(3, 56)": 1,
+        "(3, 98)": 1,
+        "(31, 5)": 1
+      },
+      "witnesses": [
+        {
+          "a": [
+            2,
+            99
+          ],
+          "b": [
+            4,
+            13
+          ],
+          "d2": 1850,
+          "pivot": [
+            3,
+            56
+          ]
+        },
+        {
+          "a": [
+            4,
+            13
+          ],
+          "b": [
+            88,
+            99
+          ],
+          "d2": 7226,
+          "pivot": [
+            3,
+            98
+          ]
+        },
+        {
+          "a": [
+            3,
+            2
+          ],
+          "b": [
+            4,
+            13
+          ],
+          "d2": 793,
+          "pivot": [
+            31,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "V_recomputed": 3,
+      "file": "n100_V3_seed104_c78f91193b74bc08.json",
+      "involved_points": [
+        [
+          8,
+          93
+        ],
+        [
+          22,
+          95
+        ],
+        [
+          24,
+          81
+        ],
+        [
+          65,
+          94
+        ],
+        [
+          91,
+          93
+        ],
+        [
+          92,
+          84
+        ]
+      ],
+      "n_distinct_pivots": 3,
+      "n_involved_points": 6,
+      "n_witness_triples": 3,
+      "oracle_legal": false,
+      "pivot_mult": {
+        "(22, 95)": 1,
+        "(24, 81)": 1,
+        "(65, 94)": 1
+      },
+      "witnesses": [
+        {
+          "a": [
+            8,
+            93
+          ],
+          "b": [
+            24,
+            81
+          ],
+          "d2": 200,
+          "pivot": [
+            22,
+            95
+          ]
+        },
+        {
+          "a": [
+            91,
+            93
+          ],
+          "b": [
+            92,
+            84
+          ],
+          "d2": 4633,
+          "pivot": [
+            24,
+            81
+          ]
+        },
+        {
+          "a": [
+            22,
+            95
+          ],
+          "b": [
+            24,
+            81
+          ],
+          "d2": 1850,
+          "pivot": [
+            65,
+            94
+          ]
+        }
+      ]
+    },
+    {
+      "V_recomputed": 3,
+      "file": "n100_V3_seed105_c78f91193b74bc08.json",
+      "involved_points": [
+        [
+          8,
+          93
+        ],
+        [
+          22,
+          95
+        ],
+        [
+          24,
+          81
+        ],
+        [
+          65,
+          94
+        ],
+        [
+          91,
+          93
+        ],
+        [
+          92,
+          84
+        ]
+      ],
+      "n_distinct_pivots": 3,
+      "n_involved_points": 6,
+      "n_witness_triples": 3,
+      "oracle_legal": false,
+      "pivot_mult": {
+        "(22, 95)": 1,
+        "(24, 81)": 1,
+        "(65, 94)": 1
+      },
+      "witnesses": [
+        {
+          "a": [
+            8,
+            93
+          ],
+          "b": [
+            24,
+            81
+          ],
+          "d2": 200,
+          "pivot": [
+            22,
+            95
+          ]
+        },
+        {
+          "a": [
+            91,
+            93
+          ],
+          "b": [
+            92,
+            84
+          ],
+          "d2": 4633,
+          "pivot": [
+            24,
+            81
+          ]
+        },
+        {
+          "a": [
+            22,
+            95
+          ],
+          "b": [
+            24,
+            81
+          ],
+          "d2": 1850,
+          "pivot": [
+            65,
+            94
+          ]
+        }
+      ]
+    },
+    {
+      "V_recomputed": 3,
+      "file": "n100_V3_seed105_f9a9a14282b60451.json",
+      "involved_points": [
+        [
+          2,
+          18
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          18,
+          16
+        ],
+        [
+          22,
+          4
+        ],
+        [
+          23,
+          0
+        ]
+      ],
+      "n_distinct_pivots": 3,
+      "n_involved_points": 7,
+      "n_witness_triples": 3,
+      "oracle_legal": false,
+      "pivot_mult": {
+        "(2, 18)": 1,
+        "(23, 0)": 1,
+        "(8, 6)": 1
+      },
+      "witnesses": [
+        {
+          "a": [
+            10,
+            4
+          ],
+          "b": [
+            18,
+            16
+          ],
+          "d2": 260,
+          "pivot": [
+            2,
+            18
+          ]
+        },
+        {
+          "a": [
+            18,
+            16
+          ],
+          "b": [
+            22,
+            4
+          ],
+          "d2": 200,
+          "pivot": [
+            8,
+            6
+          ]
+        },
+        {
+          "a": [
+            7,
+            5
+          ],
+          "b": [
+            18,
+            16
+          ],
+          "d2": 281,
+          "pivot": [
+            23,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "V_recomputed": 3,
+      "file": "n100_V3_seed108_4ef6d9e106ab21ab.json",
+      "involved_points": [
+        [
+          8,
+          6
+        ],
+        [
+          22,
+          4
+        ],
+        [
+          24,
+          18
+        ],
+        [
+          65,
+          5
+        ],
+        [
+          91,
+          6
+        ],
+        [
+          92,
+          15
+        ]
+      ],
+      "n_distinct_pivots": 3,
+      "n_involved_points": 6,
+      "n_witness_triples": 3,
+      "oracle_legal": false,
+      "pivot_mult": {
+        "(22, 4)": 1,
+        "(24, 18)": 1,
+        "(65, 5)": 1
+      },
+      "witnesses": [
+        {
+          "a": [
+            8,
+            6
+          ],
+          "b": [
+            24,
+            18
+          ],
+          "d2": 200,
+          "pivot": [
+            22,
+            4
+          ]
+        },
+        {
+          "a": [
+            91,
+            6
+          ],
+          "b": [
+            92,
+            15
+          ],
+          "d2": 4633,
+          "pivot": [
+            24,
+            18
+          ]
+        },
+        {
+          "a": [
+            22,
+            4
+          ],
+          "b": [
+            24,
+            18
+          ],
+          "d2": 1850,
+          "pivot": [
+            65,
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "implication": "If n_involved_points is small, exact repair over those points + local halo is a cheap microproblem distinct from Wave2 Hamming U_small_r2.",
+  "intersection_involved_all_elites": [],
+  "involved_sizes": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    6,
+    6,
+    7,
+    6
+  ],
+  "n_elites": 9,
+  "schema": "lh1_v3_residual_v1",
+  "union_involved_size": 48,
+  "witness_triple_counts": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ]
+}

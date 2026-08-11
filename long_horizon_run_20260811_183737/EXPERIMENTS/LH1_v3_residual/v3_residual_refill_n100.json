@@ -1,0 +1,234 @@
+{
+  "n_core_illegal": 0,
+  "n_elites": 9,
+  "n_legal": 0,
+  "results": [
+    {
+      "V_core": 0,
+      "brute": {
+        "checked": 1,
+        "n_solo": 7,
+        "status": "EXHAUSTED_NO_LEGAL"
+      },
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 4,
+        "cuts": 987,
+        "n_pool": 828,
+        "need": 7,
+        "rounds": 988,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 32.23739290237427
+      },
+      "elite": "n100_V3_seed101_02e722eb6367189d.json",
+      "n_core": 158,
+      "n_involved": 7,
+      "n_pool": 828,
+      "need": 7,
+      "status": "INFEASIBLE_SCOPED",
+      "wall_s": 32.5610671043396
+    },
+    {
+      "V_core": 0,
+      "brute": {
+        "checked": 1,
+        "n_solo": 7,
+        "status": "EXHAUSTED_NO_LEGAL"
+      },
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 15,
+        "cuts": 715,
+        "n_pool": 584,
+        "need": 7,
+        "rounds": 716,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 22.77435874938965
+      },
+      "elite": "n100_V3_seed101_683de0e232c95bb8.json",
+      "n_core": 158,
+      "n_involved": 7,
+      "n_pool": 584,
+      "need": 7,
+      "status": "INFEASIBLE_SCOPED",
+      "wall_s": 22.806357383728027
+    },
+    {
+      "V_core": 0,
+      "brute": {
+        "checked": 1,
+        "n_solo": 7,
+        "status": "EXHAUSTED_NO_LEGAL"
+      },
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 10,
+        "cuts": 732,
+        "n_pool": 584,
+        "need": 7,
+        "rounds": 733,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 24.07720136642456
+      },
+      "elite": "n100_V3_seed102_9cca156861c695e3.json",
+      "n_core": 158,
+      "n_involved": 7,
+      "n_pool": 584,
+      "need": 7,
+      "status": "INFEASIBLE_SCOPED",
+      "wall_s": 24.1082022190094
+    },
+    {
+      "V_core": 0,
+      "brute": {
+        "checked": 1,
+        "n_solo": 7,
+        "status": "EXHAUSTED_NO_LEGAL"
+      },
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 6,
+        "cuts": 763,
+        "n_pool": 631,
+        "need": 7,
+        "rounds": 764,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 25.461617946624756
+      },
+      "elite": "n100_V3_seed102_d8ea4c95e803f1e6.json",
+      "n_core": 158,
+      "n_involved": 7,
+      "n_pool": 631,
+      "need": 7,
+      "status": "INFEASIBLE_SCOPED",
+      "wall_s": 25.495178699493408
+    },
+    {
+      "V_core": 0,
+      "brute": {
+        "checked": 1,
+        "n_solo": 7,
+        "status": "EXHAUSTED_NO_LEGAL"
+      },
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 25,
+        "cuts": 741,
+        "n_pool": 631,
+        "need": 7,
+        "rounds": 742,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 23.633572340011597
+      },
+      "elite": "n100_V3_seed104_3d71a4da03864dbe.json",
+      "n_core": 158,
+      "n_involved": 7,
+      "n_pool": 631,
+      "need": 7,
+      "status": "INFEASIBLE_SCOPED",
+      "wall_s": 23.666152238845825
+    },
+    {
+      "V_core": 0,
+      "brute": {
+        "checked": 1,
+        "n_solo": 6,
+        "status": "EXHAUSTED_NO_LEGAL"
+      },
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 14,
+        "cuts": 1067,
+        "n_pool": 895,
+        "need": 6,
+        "rounds": 1068,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 35.84392285346985
+      },
+      "elite": "n100_V3_seed104_c78f91193b74bc08.json",
+      "n_core": 159,
+      "n_involved": 6,
+      "n_pool": 895,
+      "need": 6,
+      "status": "INFEASIBLE_SCOPED",
+      "wall_s": 35.895923137664795
+    },
+    {
+      "V_core": 0,
+      "brute": {
+        "checked": 1,
+        "n_solo": 6,
+        "status": "EXHAUSTED_NO_LEGAL"
+      },
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 14,
+        "cuts": 1067,
+        "n_pool": 895,
+        "need": 6,
+        "rounds": 1068,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 35.84322762489319
+      },
+      "elite": "n100_V3_seed105_c78f91193b74bc08.json",
+      "n_core": 159,
+      "n_involved": 6,
+      "n_pool": 895,
+      "need": 6,
+      "status": "INFEASIBLE_SCOPED",
+      "wall_s": 35.88022756576538
+    },
+    {
+      "V_core": 0,
+      "brute": {
+        "checked": 1,
+        "n_solo": 7,
+        "status": "EXHAUSTED_NO_LEGAL"
+      },
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 7,
+        "cuts": 760,
+        "n_pool": 584,
+        "need": 7,
+        "rounds": 761,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 24.306638956069946
+      },
+      "elite": "n100_V3_seed105_f9a9a14282b60451.json",
+      "n_core": 158,
+      "n_involved": 7,
+      "n_pool": 584,
+      "need": 7,
+      "status": "INFEASIBLE_SCOPED",
+      "wall_s": 24.33864116668701
+    },
+    {
+      "V_core": 0,
+      "brute": {
+        "checked": 1,
+        "n_solo": 6,
+        "status": "EXHAUSTED_NO_LEGAL"
+      },
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 13,
+        "cuts": 1032,
+        "n_pool": 895,
+        "need": 6,
+        "rounds": 1033,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 34.855553150177
+      },
+      "elite": "n100_V3_seed108_4ef6d9e106ab21ab.json",
+      "n_core": 159,
+      "n_involved": 6,
+      "n_pool": 895,
+      "need": 6,
+      "status": "INFEASIBLE_SCOPED",
+      "wall_s": 34.89211368560791
+    }
+  ],
+  "schema": "lh1_v3_residual_refill_v1",
+  "wall_time_s": 259.9348223209381
+}

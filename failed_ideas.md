@@ -112,3 +112,153 @@ rounds of this project.
 **Status:** Reported as an additional (fourth) negative data point, clearly
 provenance-flagged. Not treated as an official, main-agent-authored part of the
 Round 1 search plan.
+
+## Round 2 (user explicitly lifted time/compute constraints)
+
+The user asked, after Round 1's report, whether the project had stopped early due
+to time pressure rather than genuinely searching for a new lower bound. In
+response, all time/compute constraints were explicitly lifted and Round 2 executed
+the strategies Round 1 had deferred to future work, plus one more (CP-SAT
+lazy-constraint global search). A real Round 2 Proposer subagent was also
+dispatched; see `scratch/proposer/proposal_round2.md` and the new H-005 through
+H-008 entries in `hypotheses.md`.
+
+## F-005: Simulated annealing with periodic exact repair (Strategy B), 30 min each, n=64 and n=100
+
+**What was tried:** `src/search/sa_exact_repair.py`: SA over regional exact-MILP
+repairs, accepting size-decreasing moves probabilistically (Metropolis criterion,
+T0=3.0, alpha=0.9995) rather than Round 1's strict size-monotonic hill-climb — the
+explicit goal was to escape the exactly-flat local optimum quantified by H-006/
+H-006b. n=64: 105006 iterations/MILP calls, 1800s. n=100: 60032 iterations/MILP
+calls, 1800s.
+
+**Result:** No improvement on either grid (112->112, 164->164). Notably,
+`accepted_worse_moves: 0` on both runs — the SA acceptance criterion never actually
+triggered in practice at these parameters, because every attempted regional repair
+either matched or exceeded the current region's occupancy (consistent with H-006:
+individual small regions rarely have room to legally shrink-then-improve, so the
+"worse" branch was essentially never offered a size-decreasing candidate to accept
+in the first place). This means this run did not yet actually test the
+escape-a-local-optimum mechanism it was designed to test.
+
+**Interpretation:** A genuine negative result for these exact parameters, but not
+yet a fair test of the SA mechanism itself. Future work: a version whose move set
+is point-level (add/remove single points, not whole-region MILP repairs) as the
+Round 2 Proposer specifically recommended, so worse-accepting moves actually occur
+in practice, would be a more direct test.
+
+**Status:** STOP RULE E territory for this specific region-repair-based SA variant
+at these parameters. Not conclusive evidence against the general SA approach.
+
+## F-006: Multi-region exact ILP repair (Strategy 2), 30 min each, n=64 and n=100, k=3 regions/iteration
+
+**What was tried:** `src/search/lns_multiregion.py`: destroys 3 regions (union, avg
+combined size ~384-417 cells) per iteration and repairs their union in ONE exact
+0-1 ILP call, directly testing whether coordinated multi-region changes (which
+Round 1's single-region repair is structurally incapable of finding) unlock any
+improvement. n=64: 87960 iterations. n=100: 44980 iterations.
+
+**Result:** No improvement on either grid (112->112, 164->164).
+
+**Interpretation:** This is the strategy the Round 2 Proposer rated most likely to
+find a real improvement, specifically because H-006/H-006b show even single-point
+and single-orbit-pair removal open zero frontier — multi-region joint repair was
+the most plausible remaining place slack could exist. That it also found nothing
+across ~133000 combined iterations is a materially stronger negative result than
+Round 1's alone, though the Proposer's calibration recommendation (test m in
+{200,400,800,1200,1600} to find HiGHS's actual tractability ceiling on this
+constraint structure before picking a size) was not run first — this session used
+k=3 regions x 150-cell caps (~400 combined) directly, informed by but not
+identical to the Proposer's staged recommendation.
+
+**Status:** Negative result recorded; STOP RULE E is approaching for this specific
+region-count/size configuration, but the Proposer's suggested larger-m calibration
+sweep and the specific "symmetric region + its reflection" experiment remain
+genuinely untried variations, not yet ruled out.
+
+## F-007: Symmetry-guided from-scratch multistart (Strategy 3), 30 min each, n=64 and n=100
+
+**What was tried:** `src/search/symmetry_guided.py`: builds legal sets FROM
+SCRATCH (not seeded from the baseline) under an explicit central-symmetry
+constraint (point-pairs placed jointly), with a symmetry-breaking probability
+sweep (0%-20% single-point placements). n=64: 44686 trials, best 79 points. n=100:
+13538 trials, best 119 points.
+
+**Result:** Far below the seeded baselines (79/112 for n=64, 119/164 for n=100) --
+expected and unsurprising, since 30 minutes of from-scratch greedy-style
+construction cannot compete with the official notebook's own far more expensive
+evolved search that originally produced 112/164. This run answers a different
+question than "can we beat the baseline" -- it is a (negative, as expected)
+data point on how much of the baseline's advantage comes from its
+construction *process* (extensive evolved search) versus the symmetry property
+itself.
+
+**Interpretation:** Not a meaningful test of H-001's necessity by itself, since it
+was never going to reach baseline-competitive sizes in this budget regardless of
+the symmetry constraint. The Round 2 Proposer's suggested matched comparison
+(symmetric-orbit-space search vs. equal-budget unconstrained point-space search,
+watching for relative convergence speed and any absolute size gap) would be a
+fairer test and was not run this session.
+
+**Status:** Recorded as an honest, if not especially informative on its own,
+negative data point. Superseded in informativeness by H-006b (orbit-level flat
+local optimum, tested directly against the true baseline, not a from-scratch
+reconstruction).
+
+## F-008: Greedy multistart from scratch (Strategy A remainder), 30 min each, n=64 and n=100
+
+**What was tried:** `src/search/greedy.py` `greedy_multistart`, finally run to a
+full dedicated 30-minute budget on both grids (deprioritized in Round 1). n=64:
+44048 trials (random/boundary-first/center-first orders), best 83 points. n=100:
+13319 trials, best 121 points.
+
+**Result:** Far below baseline (83/112, 121/164), same expected shape as F-007 --
+from-scratch single-pass greedy construction, even with tens of thousands of
+random restarts, is not competitive with the officially evolved 112/164
+constructions. Consistent with F-001's original deprioritization rationale.
+
+**Status:** Confirms F-001's original judgment call was reasonable; formally
+closes out the "should we have run this" question raised implicitly by the user's
+"did you only reproduce the baseline" question -- yes, it was run, to a full
+budget, and it does not change the picture.
+
+## F-009: CP-SAT lazy-constraint global search, warm-started, n=64 and n=100
+
+**What was tried:** `src/search/cpsat_lazy.py` `cpsat_lazy_maximize`: whole-grid
+0-1 program (one boolean per cell), lazy isosceles-triple cut generation,
+warm-started from the certified baseline as an initial hint. First attempt (n=64:
+4 rounds in 994s; n=100: 1 round consuming the full 3300s budget) revealed a real
+inefficiency -- starting from zero cuts, the unconstrained relaxation trivially
+selects every grid cell, producing an enormous violation set whose extraction and
+cut-generation dominated the round's wall time, especially for n=100 (10000
+variables). Fixed by adding `seed_cuts_from_points` (see `cpsat_lazy.py` and
+`hypotheses.md`/Proposer proposal Section 2.4-2): derive a large global cut set
+directly from the baseline's own pivot structure (773812 cuts for n=64 in 0.6s,
+2000000 (capped) for n=100 in 2.7s) BEFORE the lazy loop starts, so the very first
+solve is already meaningfully constrained.
+
+**Result (first, unseeded attempt):** No improvement found (112->112, 164->164),
+but n=100's single round did not converge to a legal solution within budget at
+all -- an INCONCLUSIVE outcome for that specific run, not a clean negative one.
+Re-run with seeding (see STATUS.md / ROUND_LOG.md for final numbers) to get a
+fair, efficient test of this strategy before drawing a conclusion.
+
+**Status:** See ROUND_LOG.md Round 2 section for the final, properly-seeded
+outcome; this entry documents the honest first-attempt inefficiency and its fix,
+per this project's discipline of disclosing what didn't work on the first try
+rather than only reporting the polished final version.
+
+## Bonus result (not a failure): small-n exact C(n) sweep
+
+`src/search/cpsat_small_n_sweep.py` combined a quick greedy lower bound with a
+CP-SAT lazy infeasibility proof at target = (lower bound + 1). Because
+infeasibility under a partial (lazily-built) constraint set is a valid
+infeasibility certificate for the TRUE fully-constrained problem (removing
+constraints can only enlarge the feasible region), a proven-infeasible result here
+is a genuine, machine-checked EXACT value of C(n), not just a bound. Result:
+**C(4)=6, C(5)=7, C(6)=9, C(7)=10 all machine-proven exact** within a 45s lower
+bound + up to 240s upper-bound-proof budget each. n=8 through n=40 (tested at
+several values) remained INCONCLUSIVE within the same per-n budget (lower bounds
+recorded but neither proven optimal nor beaten) -- see `logs/cpsat_small_n_sweep.json`
+for the full table. This is a genuinely new, correct, machine-verified result
+this project did not have before, orthogonal to the main n=64/n=100 question.

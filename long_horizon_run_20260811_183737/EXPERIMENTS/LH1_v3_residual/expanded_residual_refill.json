@@ -1,0 +1,159 @@
+{
+  "n_legal": 0,
+  "results": [
+    {
+      "R_free": 2,
+      "R_halo": 5,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 5,
+        "cuts": 1081,
+        "rounds": 1082,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 36.73384881019592
+      },
+      "elite": "n100_V3_seed101_02e722eb6367189d.json",
+      "n_core": 146,
+      "n_free": 19,
+      "n_pool": 721,
+      "need": 19,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "R_free": 3,
+      "R_halo": 6,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 5,
+        "cuts": 1464,
+        "rounds": 1465,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 53.73296546936035
+      },
+      "elite": "n100_V3_seed101_02e722eb6367189d.json",
+      "n_core": 145,
+      "n_free": 20,
+      "n_pool": 1012,
+      "need": 20,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "R_free": 2,
+      "R_halo": 5,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 11,
+        "cuts": 1004,
+        "rounds": 1005,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 36.571635484695435
+      },
+      "elite": "n100_V3_seed101_683de0e232c95bb8.json",
+      "n_core": 150,
+      "n_free": 15,
+      "n_pool": 542,
+      "need": 15,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "R_free": 3,
+      "R_halo": 6,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 11,
+        "cuts": 1248,
+        "rounds": 1249,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 48.208659172058105
+      },
+      "elite": "n100_V3_seed101_683de0e232c95bb8.json",
+      "n_core": 149,
+      "n_free": 16,
+      "n_pool": 639,
+      "need": 16,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "R_free": 2,
+      "R_halo": 5,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 10,
+        "cuts": 830,
+        "rounds": 831,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 28.62069272994995
+      },
+      "elite": "n100_V3_seed102_9cca156861c695e3.json",
+      "n_core": 150,
+      "n_free": 15,
+      "n_pool": 542,
+      "need": 15,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "R_free": 3,
+      "R_halo": 6,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 9,
+        "cuts": 979,
+        "rounds": 980,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 34.068302154541016
+      },
+      "elite": "n100_V3_seed102_9cca156861c695e3.json",
+      "n_core": 149,
+      "n_free": 16,
+      "n_pool": 639,
+      "need": 16,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "R_free": 2,
+      "R_halo": 5,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 6,
+        "cuts": 753,
+        "rounds": 754,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 25.512612342834473
+      },
+      "elite": "n100_V3_seed102_d8ea4c95e803f1e6.json",
+      "n_core": 147,
+      "n_free": 18,
+      "n_pool": 551,
+      "need": 18,
+      "status": "INFEASIBLE_SCOPED"
+    },
+    {
+      "R_free": 3,
+      "R_halo": 6,
+      "V_core": 0,
+      "core_legal": true,
+      "cpsat": {
+        "best_illegal_V": 6,
+        "cuts": 1104,
+        "rounds": 1105,
+        "status": "INFEASIBLE_SCOPED",
+        "wall_s": 35.526689767837524
+      },
+      "elite": "n100_V3_seed102_d8ea4c95e803f1e6.json",
+      "n_core": 145,
+      "n_free": 20,
+      "n_pool": 766,
+      "need": 20,
+      "status": "INFEASIBLE_SCOPED"
+    }
+  ],
+  "schema": "lh1_expanded_residual_refill_v1",
+  "wall_time_s": 299.85571360588074
+}
