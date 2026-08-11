@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """LH-1 Route A: new universe U_fullrem_LBle4_r2 — Rem=all S0, Add=all unselected with LB<=4.
 
-Distinct from Wave2 U_fullrem_A* (score/halo add pools). Uses blocker LB filter.
+Distinct from Wave2 U_fullrem_A* (score/halo add pools). Uses blocker LB filter
+from Gate-1 Agent A compact detail (no re-scan of 9836 cells).
 """
 from __future__ import annotations
 
-import importlib.util
+import gzip
 import json
 import os
 import sys
@@ -25,44 +26,27 @@ from src.structures.candidate_io import sha256_of_points  # noqa: E402
 
 Point = Tuple[int, int]
 N = 100
-AUDIT = os.path.join(ROOT, "scratch", "audit", "agent_a", "scripts", "blocker_audit.py")
-
-
-def load_ba():
-    spec = importlib.util.spec_from_file_location("ba_u", AUDIT)
-    mod = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
-    spec.loader.exec_module(mod)
-    return mod
+DETAIL_GZ = os.path.join(
+    ROOT, "scratch", "audit", "agent_a", "blocker_detail_n100.json.gz"
+)
 
 
 def main():
     t0 = time.time()
-    ba = load_ba()
     s0 = sorted((int(x), int(y)) for x, y in SOL_100)
-    s0_set = set(s0)
-    maps = ba.precompute_pivot_maps(s0)
 
-    # Collect Add = all q with LB <= 4 (exact when available)
+    with gzip.open(DETAIL_GZ, "rt", encoding="utf-8") as f:
+        detail = json.load(f)
     add: List[Point] = []
     lb_hist = {}
-    # Scanning all 9836 is OK if analyze_q is fast enough; use LB via quick bound first
-    # For speed: compute type1_forced + matching quickly by calling analyze_q
-    # Budget: analyze all unselected — Agent A did this once; we re-do for LB<=4 filter only
-    # Optimization: only check cells where a cheap LB proxy is small
-    for x in range(N):
-        for y in range(N):
-            q = (x, y)
-            if q in s0_set:
-                continue
-            rec = ba.analyze_q(q, s0, maps, N)
-            lb = rec["lower_bound_min_deletions"]
-            lb_hist[lb] = lb_hist.get(lb, 0) + 1
-            if lb <= 4:
-                add.append(q)
+    for rec in detail["all_qs_compact"]:
+        lb = int(rec["lower_bound_min_deletions"])
+        lb_hist[lb] = lb_hist.get(lb, 0) + 1
+        if lb <= 4:
+            add.append((int(rec["q"][0]), int(rec["q"][1])))
 
     rem = list(s0)
-    add = sorted(add)
+    add = sorted(set(add))
     uh = universe_hash(rem, add)
     uni = {
         "U_id": "U_fullrem_LBle4_r2",
