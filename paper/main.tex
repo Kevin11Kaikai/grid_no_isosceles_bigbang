@@ -1,0 +1,251 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\newtheorem{definition}{Definition}
+\newtheorem{observation}{Observation}
+
+\title{An Auditable AI-Assisted Search for Isosceles-Triangle-Free \\ Subsets of Integer Grids}
+\author{Anonymous Research Draft}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study Problem 6.59 of Georgiev, G\'omez-Serrano, Tao, and Wagner
+\cite{georgiev2025mathematical}: for a positive integer $n$, let $C(n)$ denote the
+size of the largest subset $S$ of the integer grid $[n]^2=\{0,\dots,n-1\}^2$ such
+that no three distinct points $a,b,c\in S$ satisfy $|a-b|=|b-c|$ (using exact
+integer squared distances, and including degenerate collinear equally-spaced
+triples). We independently reproduce and dual-certify, via two independently
+implemented exact integer verifiers, the previously published constructions
+establishing $C(64)\ge 112$ and $C(100)\ge 164$ \cite{georgiev2025mathematical,
+alphaevolverepo}. Using a large-neighborhood-search procedure with exact
+integer-linear-programming regional repair (via \texttt{scipy.optimize.milp}),
+seeded from these baselines, we ran 33{,}766 independently-solved exact regional
+repairs across both grids (8{,}613 on the $64\times64$ grid, 25{,}153 on the
+$100\times100$ grid) and found no legal construction exceeding either baseline
+within this computational budget. We report this as a genuine negative result, not
+a limitation to be glossed over. We do not prove optimality of any construction
+reported here, and priority for any apparently-new result remains subject to
+external literature verification. All verifiers, tests, and search code are
+provided for independent reproduction.
+\end{abstract}
+
+\section{Introduction}
+
+Problem 6.59 of \cite{georgiev2025mathematical} asks for the largest
+isosceles-triangle-free subset of an $n \times n$ integer grid, where "isosceles"
+includes the degenerate case of three collinear, equally spaced points. The paper
+reports that AlphaEvolve, an LLM-guided evolutionary search system, found
+constructions of size 112 (for $n=64$) and 164 (for $n=100$), improving on a
+previously known 110-point construction for $n=64$ found after "many months" of
+prior effort. This paper is primarily a verification-and-search report, not a claim
+of new mathematical results: we (1) independently reproduce and dual-certify the
+published constructions using two independently implemented exact verifiers, (2)
+describe a genuine multi-agent research process (a Proposer, a clean-room
+Independent Verifier, and an adversarial Red Team, each a separate AI agent
+instance with restricted file-write scope) used to generate and audit this work, and
+(3) report a systematic, but ultimately negative, computational search for
+improving constructions. The emphasis throughout is auditability: every claim in
+this paper is backed by a specific file, hash, or reproducible command in the
+accompanying repository.
+
+\section{Problem Formulation}
+
+\begin{definition}
+For a positive integer $n$, let $[n]^2 = \{0,1,\dots,n-1\}^2$. A finite set
+$S \subseteq [n]^2$ is \emph{isosceles-free} if for every three pairwise distinct
+points $a,b,c \in S$,
+\[
+  d^2(a,b) \neq d^2(b,c), \qquad \text{where } d^2(p,q) = (p_x-q_x)^2 + (p_y-q_y)^2.
+\]
+Equivalently, for every $b \in S$, the multiset of squared distances from $b$ to
+every other point of $S$ has no repeated value. This condition explicitly includes
+the degenerate case of three distinct collinear equally spaced points (where $b$ is
+the midpoint of the segment joining $a$ and $c$). $C(n)$ is the maximum cardinality
+of an isosceles-free subset of $[n]^2$.
+\end{definition}
+
+We emphasize the condition is a \emph{per-pivot} uniqueness condition: two disjoint
+pairs of points in $S$ may legitimately share a squared distance, as long as no
+single point of $S$ has two equal-distance neighbors.
+
+\section{Related Work}
+
+The source problem and prior best known values are due to \cite{georgiev2025mathematical}
+and the accompanying official problem repository \cite{alphaevolverepo}. A related
+but distinct, strictly weaker problem -- avoiding only isosceles \emph{right}
+triangles rather than all isosceles triangles -- was studied by
+\cite{karolyi2026salem} with an $\Omega(n^{1.3})$ Salem-Spencer-type construction
+over the Gaussian integers; since any isosceles-triangle-free set is automatically
+isosceles-right-triangle-free but not conversely, that bound is not directly
+comparable to (and does not supersede) constructions for Problem 6.59. We checked
+two further candidate related papers (an abstract-level check via automated
+literature search) and found neither addresses this exact problem; see the
+accompanying repository's \texttt{record\_registry.md} for full detail and explicit
+scope caveats on this literature check.
+
+\section{Exact Verification}
+
+We implement two independently coded exact integer verifiers (Section~4 of the
+accompanying repository): a pivot-distance-uniqueness method and an independent
+brute-force triple enumeration (both in \texttt{src/verification/oracle\_verifier.py}),
+and a second, clean-room verifier using a vectorized squared-distance matrix with
+per-row sorting (\texttt{src/verification\_independent/independent\_verifier.py}),
+built by an independent subagent without access to the first verifier's source. All
+legality decisions use exact Python arbitrary-precision or bounded-integer
+arithmetic; no floating-point distance comparison is ever used for a legality
+verdict. The two verifiers agree on all 42 unit/fuzz tests run across the project
+(15 for the primary oracle, including a 300-trial randomized cross-check against an
+$O(|S|^3)$ brute-force triple enumeration; 21 for the independent verifier,
+including its own 200-trial fuzz cross-check against a separately-written brute
+force; plus 3 further tests validating the search-side MILP repair against brute
+force, and 3 validating the incremental search cache against the oracle). Both
+baseline constructions pass both verifiers, and were additionally spot-checked by
+hand by the Red Team subagent (sample pairwise squared distances recomputed
+manually from the raw coordinate lists).
+
+\section{Search Methodology}
+
+Our search state is an incremental isosceles-free set data structure with
+$O(|S|)$-per-operation add/remove/swap (\texttt{src/search/incremental\_state.py}),
+stress-tested against the slow oracle across 500 fully-cross-checked random moves in
+the project's own test suite and a further 4500+ operations checked by the Red Team,
+with zero divergence found in either. Our main search route is a large neighborhood
+search seeded from the published baselines: repeatedly destroy a region (a random
+axis-aligned box, a row/column band, or a boundary-frame window) and repair it
+EXACTLY by solving a 0-1 integer linear program over the region's currently-empty
+cells with \texttt{scipy.optimize.milp} (HiGHS) -- as opposed to the greedy
+single-pass repair used in the original AlphaEvolve-evolved search program, which
+imports but never calls \texttt{scipy.optimize.milp}. Candidates individually
+incompatible with the fixed remainder of the set are pre-filtered before the ILP is
+built; the MILP formulation's constraints derive from per-pivot squared-distance
+groupings (\texttt{src/search/lns\_exact\_repair.py} docstring gives the full
+derivation). Every accepted new-best state is re-verified by the slow oracle before
+being reported.
+
+\section{Adversarial Multi-Agent Loop}
+
+This project used genuinely independent Claude Code subagents in three roles: a
+Proposer (search-strategy design, structural observations, no self-judging),
+a clean-room Independent Verifier (no access to the first verifier's implementation),
+and a Red Team (actively adversarial, scope-restricted to an audit directory,
+required to construct and test invalid inputs, incremental-state divergence hunts,
+serialization round-trips, a from-scratch MILP-encoding correctness check on
+synthetic instances, and a project-wide scan for overclaiming language). Each role
+wrote only within its assigned file scope; promotion of any candidate to a certified
+artifact was performed solely by the main agent's \texttt{certify.py} pipeline,
+which always re-reads candidates from disk rather than trusting in-memory state.
+The Red Team subagent ran six required adversarial attacks (definition correctness
+across all pivot orderings, 4500+ incremental-state operations checked after every
+move, malformed-input injection across 12 categories, serialization round-tripping,
+a project-wide overclaim scan, and MILP-vs-brute-force validation) and returned an
+overall PASS verdict, with one low-severity documentation-accuracy finding (the
+search module's docstring overstated intermediate-state oracle-verification
+frequency; the actual returned output was unaffected) that was subsequently fixed.
+Full findings: \texttt{audits/red\_team\_round1.md}.
+
+\section{Computational Results}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Item & $n=64$ & $n=100$ & Status \\
+\midrule
+Baseline size & 112 & 164 & DUAL\_VERIFIED \\
+LNS+MILP exact regional repairs run & 8{,}613 & 25{,}153 & -- \\
+Wall-clock time & 60s & 420s & -- \\
+Best size found by our search & 112 & 164 & no improvement \\
+\bottomrule
+\end{tabular}
+\caption{Search outcomes. Both baselines were dual-verified (two independently
+implemented exact integer verifiers). No construction exceeding either baseline
+size was found within the computational budget of this session.}
+\end{table}
+
+\section{Structural Observations}
+
+We record two data-supported (but sample-size-2, unproven) observations on the two
+published baselines: near-total invariance under central point symmetry (100.0\% for
+$n=100$, 96.4\% for $n=64$), and a large empty central region (points confined to
+Chebyshev-ring $\le 11$ of a possible 31 for $n=64$; ring $\le 26$ of a possible 49
+for $n=100$). See \texttt{hypotheses.md} in the accompanying repository (hypotheses
+H-001, H-002) for full detail, evidence, and falsification strategy.
+
+\section{Independent Certification}
+
+A candidate is promoted to DUAL\_VERIFIED only by \texttt{src/verification/certify.py},
+which (1) re-reads the candidate strictly from disk, (2) checks structural validity
+(bounds, no duplicates, size-field consistency with the actual point count),
+(3) runs the primary oracle verifier, and (4) runs the independent clean-room
+verifier; only if both agree the set is legal is the candidate copied into
+\texttt{results/certified/}. The certified point sets' sha-256 hashes (computed over
+a canonical, order-independent sorted representation) are: n=64 baseline
+\texttt{47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292}; n=100
+baseline \texttt{8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1}
+(full detail in \texttt{artifact\_hashes.json}).
+
+\section{Limitations}
+
+We do not prove that either baseline construction, or any construction found in this
+project's search, is optimal. Our literature search for competing or superior
+constructions (Section 3, and \texttt{record\_registry.md}) used a bounded set of
+queries and two abstract-level paper checks; it is not an exhaustive systematic
+review. A negative search result (no improvement found) does not establish that no
+larger construction exists -- it establishes only that the specific search routes,
+seeds, and time budgets used in this session did not find one. All AI-generated
+reasoning in this project, including this manuscript, may contain undetected errors
+despite the dual-verification and adversarial-review process; exact computational
+verification (Section 4) is the only claim in this paper backed by a
+machine-checked, reproducible guarantee.
+
+\section{Conclusion}
+
+We independently reproduced and dual-certified the published 112-point ($n=64$) and
+164-point ($n=100$) isosceles-triangle-free grid constructions from Problem 6.59,
+and ran a genuine multi-agent research loop including an exact-ILP-based large
+neighborhood search (33{,}766 total regional repairs across both grids). No
+construction exceeding either published baseline was found within this session's
+compute budget, and our literature audit found no evidence of any external
+construction doing so either. We do not prove optimality, and priority for any
+future apparently-new result remains subject to external verification. See
+\texttt{FINAL\_REPORT.md} in the accompanying repository for the full final verdict
+and disclosed limitations, including an explicit statement that this was a single
+bounded research session rather than a longer unattended search.
+
+\appendix
+\section{Certified Coordinates}
+Full coordinate lists for both certified baselines are provided verbatim in the
+accompanying repository at \texttt{results/certified/n64\_k112\_baseline\_official.json}
+and \texttt{results/certified/n100\_k164\_baseline\_official.json}, and are omitted
+from this printed appendix for length (112 and 164 integer coordinate pairs
+respectively).
+
+\section{Verification Algorithms}
+\textbf{Pivot-distance method} (primary oracle): for each point $b \in S$, compute
+the squared distance to every other point of $S$; reject if any value repeats.
+$O(|S|^2)$ time, exact integer arithmetic throughout.
+
+\textbf{Brute-force triple method} (cross-check): for every ordered triple of
+distinct points $(a,b,c)$ with $b$ the candidate apex, reject if
+$d^2(a,b) = d^2(b,c)$. $O(|S|^3)$, used only for cross-checking on small $|S|$.
+
+\textbf{Independent verifier}: builds the full pairwise squared-distance matrix via
+vectorized integer (int64) arithmetic, then for each row (pivot) sorts the
+off-diagonal values and scans for adjacent duplicates; any candidate duplicate is
+re-confirmed with Python arbitrary-precision arithmetic before being reported.
+
+\section{Reproducibility}
+See \texttt{REPRODUCIBILITY.md} in the accompanying repository for exact commands.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

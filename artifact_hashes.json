@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-08-11T18:10:00Z",
+  "notes": "SHA-256 of file bytes (not just point sets) for key artifacts. For candidate point-set hashes (order-independent), see the hash_sha256 field inside each results/certified/*.json record, computed by src/structures/candidate_io.py:sha256_of_points over the canonical sorted point list.",
+  "files": {
+    "data/external/subsets_of_the_grid_with_no_isosceles_triangles.ipynb": "653accd24369672f1cc757b203dae311f1489895a1cb8e6242d3308fe657891d",
+    "results/certified/n64_k112_baseline_official.json": "31baec106cfc0ad361d14aa1c6ae7d0149b2df9514797e60caf6c4666a3cc06b",
+    "results/certified/n100_k164_baseline_official.json": "08e1ff1da169450ef2f7b1df832d7f0b8be513af8183d123c39ee9904e4760cf"
+  },
+  "official_notebook_git_blob_sha": "c0d665a986ece2f7efd220f2f179ebf2935149e5",
+  "official_notebook_source_url": "https://raw.githubusercontent.com/google-deepmind/alphaevolve_repository_of_problems/main/experiments/subsets_of_the_grid_with_no_isosceles_triangles/subsets_of_the_grid_with_no_isosceles_triangles.ipynb",
+  "point_set_hashes": {
+    "n64_k112_baseline": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+    "n100_k164_baseline": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+  }
+}

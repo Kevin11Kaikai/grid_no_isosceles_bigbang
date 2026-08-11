@@ -1,0 +1,2 @@
+results/checkpoints/*.pkl
+__pycache__/

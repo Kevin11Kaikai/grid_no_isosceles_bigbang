@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "iterations": 25153,
+    "milp_calls": 25153,
+    "wall_time_s": 420.00891852378845,
+    "improvements": [],
+    "final_size": 164,
+    "initial_size": 164,
+    "seed": 7
+  },
+  "best_size": 164
+}
