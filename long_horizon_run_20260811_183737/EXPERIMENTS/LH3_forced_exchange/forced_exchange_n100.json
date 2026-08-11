@@ -1,0 +1,53 @@
+{
+  "any_v0": false,
+  "best_V": 28,
+  "note": "Prevents baseline+1 V=3 basin documented in LH2_elite_distance.",
+  "results": [
+    {
+      "best_V": 37,
+      "final_add": 3,
+      "final_remove_from_s0": 2,
+      "iters": 3736,
+      "points": null,
+      "r_min": 2,
+      "seed": 401,
+      "status": "BEST_V",
+      "wall_s": 100.0018527507782
+    },
+    {
+      "best_V": 49,
+      "final_add": 3,
+      "final_remove_from_s0": 2,
+      "iters": 5142,
+      "points": null,
+      "r_min": 2,
+      "seed": 402,
+      "status": "BEST_V",
+      "wall_s": 100.00982975959778
+    },
+    {
+      "best_V": 28,
+      "final_add": 3,
+      "final_remove_from_s0": 2,
+      "iters": 5357,
+      "points": null,
+      "r_min": 2,
+      "seed": 403,
+      "status": "BEST_V",
+      "wall_s": 100.01422667503357
+    },
+    {
+      "best_V": 38,
+      "final_add": 3,
+      "final_remove_from_s0": 2,
+      "iters": 5699,
+      "points": null,
+      "r_min": 2,
+      "seed": 404,
+      "status": "BEST_V",
+      "wall_s": 100.0134220123291
+    }
+  ],
+  "schema": "lh3_fixedcard_forced_exchange_v1",
+  "wall_s": 400.48881912231445
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "lh2_v3_elite_distance_v1",
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "elites": [
+    {
+      "file": "n100_V3_seed101_02e722eb6367189d.json",
+      "hamming_remove": 0,
+      "hamming_add": 1,
+      "symmetric_diff": 1,
+      "size": 165
+    },
+    {
+      "file": "n100_V3_seed101_683de0e232c95bb8.json",
+      "hamming_remove": 0,
+      "hamming_add": 1,
+      "symmetric_diff": 1,
+      "size": 165
+    },
+    {
+      "file": "n100_V3_seed102_9cca156861c695e3.json",
+      "hamming_remove": 0,
+      "hamming_add": 1,
+      "symmetric_diff": 1,
+      "size": 165
+    },
+    {
+      "file": "n100_V3_seed102_d8ea4c95e803f1e6.json",
+      "hamming_remove": 0,
+      "hamming_add": 1,
+      "symmetric_diff": 1,
+      "size": 165
+    },
+    {
+      "file": "n100_V3_seed104_3d71a4da03864dbe.json",
+      "hamming_remove": 0,
+      "hamming_add": 1,
+      "symmetric_diff": 1,
+      "size": 165
+    },
+    {
+      "file": "n100_V3_seed104_c78f91193b74bc08.json",
+      "hamming_remove": 0,
+      "hamming_add": 1,
+      "symmetric_diff": 1,
+      "size": 165
+    },
+    {
+      "file": "n100_V3_seed105_c78f91193b74bc08.json",
+      "hamming_remove": 0,
+      "hamming_add": 1,
+      "symmetric_diff": 1,
+      "size": 165
+    },
+    {
+      "file": "n100_V3_seed105_f9a9a14282b60451.json",
+      "hamming_remove": 0,
+      "hamming_add": 1,
+      "symmetric_diff": 1,
+      "size": 165
+    },
+    {
+      "file": "n100_V3_seed108_4ef6d9e106ab21ab.json",
+      "hamming_remove": 0,
+      "hamming_add": 1,
+      "symmetric_diff": 1,
+      "size": 165
+    }
+  ],
+  "min_remove": 0,
+  "min_add": 1
+}

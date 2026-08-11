@@ -1,0 +1,11 @@
+{
+  "U_id": "U_fullrem_frameR6_r2_long",
+  "status": "INFEASIBLE_SCOPED",
+  "best_illegal_V": 22,
+  "rounds": 823,
+  "final_cuts": 36994,
+  "wall_time_s": 342.4904842376709,
+  "n_add": 2464,
+  "universe_hash": "9e31412235f11ea760584f4ef81c194eb12111950ce17ab0e79f57fd7e202e36",
+  "points": null
+}

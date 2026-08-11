@@ -1,0 +1,10 @@
+{
+  "U_id": "U_fullrem_midband10_26_r2",
+  "status": "TIMEOUT_INCONCLUSIVE",
+  "best_illegal_V": 26,
+  "rounds": 439,
+  "final_cuts": 19523,
+  "wall_time_s": 120.03225421905518,
+  "n_add": 4276,
+  "universe_hash": "bf25f6f9fec18e680cc9e9814c32e71724ce1c69c7a613ededc1ba4df784744f"
+}
