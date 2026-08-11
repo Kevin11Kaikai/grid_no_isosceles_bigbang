@@ -56,3 +56,18 @@
 - Level: `SCOPED_INFEASIBLE`.
 - Status: **DEAD those refill universes**; do not spend primary budget re-refilling same elites without nonlocal free-sets.
 
+### LH-F004 — U_fullrem_LBle4 r=2 and r=3
+- Evidence: `LH1_hamming_newU/shell_r2_seed1.json`, `shell_r3_LBle4_seed1.json` — both `INFEASIBLE_SCOPED` (292 vars, hash `8214a82a…`).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD** that Add filter at r≤3 with full Rem.
+
+### LH-F005 — U_exact2covers_LBle5_r2
+- Evidence: `LH2_single_q_large_add/shell_r2_seed1.json` — `INFEASIBLE_SCOPED` (356 vars).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD**.
+
+### LH-F006 — r=4 easiest-pair micro (heuristic triple add)
+- Evidence: `LH2_r4_pair_micro/r4_easiest_pair_micro.json` — 108/120 pairs pair-legal under some size-4 cover; 0 completed to 165 under capped 3-add enum.
+- Level: mixed (pair-legal finite; triple enum incomplete).
+- Status: escalate to CP-SAT r=4 (in progress); do not treat as full kill of r=4.
+

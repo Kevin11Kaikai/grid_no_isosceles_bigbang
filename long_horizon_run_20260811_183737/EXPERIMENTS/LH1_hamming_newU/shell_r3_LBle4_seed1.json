@@ -1,0 +1,369 @@
+{
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "claim_discipline": "Scoped only.",
+  "meta": {
+    "best_illegal_V": 11,
+    "claim_note": "INFEASIBLE under declared scope only; not a global upper bound",
+    "final_cuts": 744,
+    "git_commit": null,
+    "num_workers": 5,
+    "round_log": [
+      {
+        "V": 21,
+        "cuts_added": 21,
+        "n_cuts_total": 0,
+        "n_witness_cuts": 21,
+        "round": 1,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.02155160903930664
+      },
+      {
+        "V": 26,
+        "cuts_added": 26,
+        "n_cuts_total": 21,
+        "n_witness_cuts": 26,
+        "round": 2,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.05255699157714844
+      },
+      {
+        "V": 22,
+        "cuts_added": 22,
+        "n_cuts_total": 47,
+        "n_witness_cuts": 22,
+        "round": 3,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.08455705642700195
+      },
+      {
+        "V": 17,
+        "cuts_added": 17,
+        "n_cuts_total": 69,
+        "n_witness_cuts": 17,
+        "round": 4,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.13263893127441406
+      },
+      {
+        "V": 18,
+        "cuts_added": 18,
+        "n_cuts_total": 86,
+        "n_witness_cuts": 18,
+        "round": 5,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.17914915084838867
+      },
+      {
+        "V": 21,
+        "cuts_added": 21,
+        "n_cuts_total": 104,
+        "n_witness_cuts": 21,
+        "round": 6,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.2261486053466797
+      },
+      {
+        "V": 22,
+        "cuts_added": 22,
+        "n_cuts_total": 125,
+        "n_witness_cuts": 22,
+        "round": 7,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.2731490135192871
+      },
+      {
+        "V": 19,
+        "cuts_added": 19,
+        "n_cuts_total": 147,
+        "n_witness_cuts": 19,
+        "round": 8,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.321148157119751
+      },
+      {
+        "V": 33,
+        "cuts_added": 33,
+        "n_cuts_total": 166,
+        "n_witness_cuts": 33,
+        "round": 9,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.36914873123168945
+      },
+      {
+        "V": 20,
+        "cuts_added": 20,
+        "n_cuts_total": 199,
+        "n_witness_cuts": 20,
+        "round": 10,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.4171483516693115
+      },
+      {
+        "V": 26,
+        "cuts_added": 26,
+        "n_cuts_total": 219,
+        "n_witness_cuts": 26,
+        "round": 11,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.46414947509765625
+      },
+      {
+        "V": 37,
+        "cuts_added": 37,
+        "n_cuts_total": 245,
+        "n_witness_cuts": 37,
+        "round": 12,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.5126903057098389
+      },
+      {
+        "V": 33,
+        "cuts_added": 33,
+        "n_cuts_total": 282,
+        "n_witness_cuts": 33,
+        "round": 13,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.5596966743469238
+      },
+      {
+        "V": 18,
+        "cuts_added": 18,
+        "n_cuts_total": 315,
+        "n_witness_cuts": 18,
+        "round": 14,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.6076967716217041
+      },
+      {
+        "V": 32,
+        "cuts_added": 32,
+        "n_cuts_total": 333,
+        "n_witness_cuts": 32,
+        "round": 15,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.655695915222168
+      },
+      {
+        "V": 23,
+        "cuts_added": 23,
+        "n_cuts_total": 365,
+        "n_witness_cuts": 23,
+        "round": 16,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.7026968002319336
+      },
+      {
+        "V": 21,
+        "cuts_added": 21,
+        "n_cuts_total": 388,
+        "n_witness_cuts": 21,
+        "round": 17,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.7506961822509766
+      },
+      {
+        "V": 21,
+        "cuts_added": 21,
+        "n_cuts_total": 409,
+        "n_witness_cuts": 21,
+        "round": 18,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.7967712879180908
+      },
+      {
+        "V": 17,
+        "cuts_added": 17,
+        "n_cuts_total": 430,
+        "n_witness_cuts": 17,
+        "round": 19,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.8447713851928711
+      },
+      {
+        "V": 24,
+        "cuts_added": 24,
+        "n_cuts_total": 447,
+        "n_witness_cuts": 24,
+        "round": 20,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.8917725086212158
+      },
+      {
+        "V": 23,
+        "cuts_added": 23,
+        "n_cuts_total": 471,
+        "n_witness_cuts": 23,
+        "round": 21,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.939328670501709
+      },
+      {
+        "V": 25,
+        "cuts_added": 25,
+        "n_cuts_total": 494,
+        "n_witness_cuts": 25,
+        "round": 22,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.9873278141021729
+      },
+      {
+        "V": 20,
+        "cuts_added": 20,
+        "n_cuts_total": 519,
+        "n_witness_cuts": 20,
+        "round": 23,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.0349066257476807
+      },
+      {
+        "V": 17,
+        "cuts_added": 17,
+        "n_cuts_total": 539,
+        "n_witness_cuts": 17,
+        "round": 24,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.0819075107574463
+      },
+      {
+        "V": 20,
+        "cuts_added": 20,
+        "n_cuts_total": 556,
+        "n_witness_cuts": 20,
+        "round": 25,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.128906488418579
+      },
+      {
+        "V": 18,
+        "cuts_added": 18,
+        "n_cuts_total": 576,
+        "n_witness_cuts": 18,
+        "round": 26,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.1769068241119385
+      },
+      {
+        "V": 41,
+        "cuts_added": 41,
+        "n_cuts_total": 594,
+        "n_witness_cuts": 41,
+        "round": 27,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.2249066829681396
+      },
+      {
+        "V": 26,
+        "cuts_added": 26,
+        "n_cuts_total": 635,
+        "n_witness_cuts": 26,
+        "round": 28,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.2889070510864258
+      },
+      {
+        "V": 25,
+        "cuts_added": 25,
+        "n_cuts_total": 661,
+        "n_witness_cuts": 25,
+        "round": 29,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.3509070873260498
+      },
+      {
+        "V": 18,
+        "cuts_added": 18,
+        "n_cuts_total": 686,
+        "n_witness_cuts": 18,
+        "round": 30,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.415907382965088
+      },
+      {
+        "V": 14,
+        "cuts_added": 14,
+        "n_cuts_total": 704,
+        "n_witness_cuts": 14,
+        "round": 31,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.4799079895019531
+      },
+      {
+        "V": 11,
+        "cuts_added": 11,
+        "n_cuts_total": 718,
+        "n_witness_cuts": 11,
+        "round": 32,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.590477705001831
+      },
+      {
+        "V": 15,
+        "cuts_added": 15,
+        "n_cuts_total": 729,
+        "n_witness_cuts": 15,
+        "round": 33,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 1.7025370597839355
+      },
+      {
+        "n_cuts": 744,
+        "round": 34,
+        "solver_status": "INFEASIBLE",
+        "t": 1.8436870574951172
+      }
+    ],
+    "rounds": 34,
+    "scope": {
+      "U_id": "U_fullrem_LBle4_r3",
+      "halo": "none",
+      "n": 100,
+      "r": 3,
+      "seed": 1,
+      "symmetry_mode": "asymmetric",
+      "time_limit_s": 300.0,
+      "universe_hash": "8214a82a8989de838d390ac69a12e23c41e8cc2742c0a3b6026c304427e2c80c"
+    },
+    "time_to_best_illegal_s": 1.590477705001831,
+    "wall_time_s": 1.8436870574951172
+  },
+  "n_add": 128,
+  "n_rem": 164,
+  "points": null,
+  "r": 3,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "8214a82a8989de838d390ac69a12e23c41e8cc2742c0a3b6026c304427e2c80c",
+  "wall_s": 2.15089750289917
+}

@@ -1,0 +1,1691 @@
+{
+  "claim_discipline": "Scoped microproblems; promote only with dual+certificate.",
+  "feasible": [],
+  "n_feasible_165": 0,
+  "n_pair_legal_any_cover": 108,
+  "n_pairs": 120,
+  "rows": [
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        0,
+        56
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 0,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        3,
+        17
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        3,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        4,
+        1
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        4,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        24,
+        18
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        24,
+        81
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        75,
+        18
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        75,
+        81
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 0,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        43
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        3,
+        17
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 0,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        3,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        4,
+        1
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        4,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        24,
+        18
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        24,
+        81
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        75,
+        18
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        75,
+        81
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 0,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        0,
+        56
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        3,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        4,
+        1
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        4,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 0,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        24,
+        18
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        24,
+        81
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        75,
+        18
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        75,
+        81
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        3,
+        17
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        4,
+        1
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        4,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        24,
+        18
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 0,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        24,
+        81
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        75,
+        18
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        75,
+        81
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        3,
+        82
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        4,
+        98
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        24,
+        18
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        24,
+        81
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        75,
+        18
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        75,
+        81
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 0,
+      "q1": [
+        4,
+        1
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        24,
+        18
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        24,
+        81
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        75,
+        18
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        75,
+        81
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 0,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        4,
+        98
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        24,
+        81
+      ]
+    },
+    {
+      "covers_checked": 9,
+      "found": false,
+      "n_covers_enum": 9,
+      "n_pair_legal": 9,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        75,
+        18
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        75,
+        81
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        75,
+        18
+      ]
+    },
+    {
+      "covers_checked": 9,
+      "found": false,
+      "n_covers_enum": 9,
+      "n_pair_legal": 9,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        75,
+        81
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        75,
+        18
+      ],
+      "q2": [
+        75,
+        81
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        75,
+        18
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        75,
+        18
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 0,
+      "q1": [
+        75,
+        18
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        75,
+        18
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        75,
+        18
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        75,
+        18
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        75,
+        81
+      ],
+      "q2": [
+        95,
+        1
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        75,
+        81
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        75,
+        81
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 0,
+      "q1": [
+        75,
+        81
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        75,
+        81
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        75,
+        81
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 4,
+      "found": false,
+      "n_covers_enum": 4,
+      "n_pair_legal": 4,
+      "q1": [
+        95,
+        1
+      ],
+      "q2": [
+        95,
+        98
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        95,
+        1
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        95,
+        1
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        95,
+        1
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        95,
+        1
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        95,
+        98
+      ],
+      "q2": [
+        96,
+        17
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        95,
+        98
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        95,
+        98
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        95,
+        98
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        96,
+        17
+      ],
+      "q2": [
+        96,
+        82
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 0,
+      "q1": [
+        96,
+        17
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        96,
+        17
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 1,
+      "q1": [
+        96,
+        82
+      ],
+      "q2": [
+        99,
+        43
+      ]
+    },
+    {
+      "covers_checked": 1,
+      "found": false,
+      "n_covers_enum": 1,
+      "n_pair_legal": 0,
+      "q1": [
+        96,
+        82
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    },
+    {
+      "covers_checked": 2,
+      "found": false,
+      "n_covers_enum": 2,
+      "n_pair_legal": 2,
+      "q1": [
+        99,
+        43
+      ],
+      "q2": [
+        99,
+        56
+      ]
+    }
+  ],
+  "schema": "lh2_r4_easiest_pair_micro_v1",
+  "wall_s": 4.670409679412842
+}

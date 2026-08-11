@@ -1,0 +1,41 @@
+{
+  "schema": "lh2_orbit_smoke_summary_v1",
+  "runs": [
+    {
+      "n": 100,
+      "type": 2,
+      "mode": "pure",
+      "seed": 51,
+      "time_s": 45,
+      "status": "INFEASIBLE",
+      "scoped_note": true,
+      "model_hash": "9f6f34e22b1b3c006042c4200571059637e2d3035e9a6bb8be757bfcfcf4f97c"
+    },
+    {
+      "n": 100,
+      "type": 2,
+      "mode": "defect",
+      "dmin": 1,
+      "dmax": 6,
+      "seed": 52,
+      "time_s": 90,
+      "status": "INFEASIBLE",
+      "scoped_note": true,
+      "model_hash": "3dd49113e6eabe357cc6160d5586ced61818d1000d684fa6909c09c7bae2b261"
+    },
+    {
+      "n": 64,
+      "type": 0,
+      "mode": "defect",
+      "dmin": 1,
+      "dmax": 6,
+      "seed": 61,
+      "time_s": 60,
+      "status": "TIMEOUT",
+      "scoped_note": true,
+      "not_infeasible": true,
+      "model_hash": "ea24eccb8e4b79c810210136fb40373f496aa2510a4f8a91f5a9733a4e81063e"
+    }
+  ],
+  "interpretation": "Type2 pure/defect universes (Wave2-style build) scoped INFEAS for n100. n64 t0 defect TIMEOUT≠INFEAS."
+}
