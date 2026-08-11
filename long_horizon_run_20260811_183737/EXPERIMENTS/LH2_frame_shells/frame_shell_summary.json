@@ -1,0 +1,86 @@
+{
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "claim_discipline": "Scoped only.",
+  "schema": "lh2_frame_shells_v1",
+  "summaries": [
+    {
+      "R": 2,
+      "U_id": "U_fullrem_frameR2_r2",
+      "best_illegal_V": 21,
+      "final_cuts": 14347,
+      "n_add": 1084,
+      "n_vars": 1248,
+      "r": 2,
+      "rounds": 312,
+      "status": "TIMEOUT_INCONCLUSIVE",
+      "universe_hash": "61a4e8d559985c7fc9f5433b9e27c82803528b9c4bdcee9ec5c25ef13816b8a8",
+      "wall_time_s": 90.42060136795044
+    },
+    {
+      "R": 2,
+      "U_id": "U_fullrem_frameR2_r4",
+      "best_illegal_V": 50,
+      "final_cuts": 16375,
+      "n_add": 1084,
+      "n_vars": 1248,
+      "r": 4,
+      "rounds": 218,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "61a4e8d559985c7fc9f5433b9e27c82803528b9c4bdcee9ec5c25ef13816b8a8",
+      "wall_time_s": 81.93471002578735
+    },
+    {
+      "R": 4,
+      "U_id": "U_fullrem_frameR4_r2",
+      "best_illegal_V": 25,
+      "final_cuts": 12724,
+      "n_add": 1784,
+      "n_vars": 1948,
+      "r": 2,
+      "rounds": 272,
+      "status": "TIMEOUT_INCONCLUSIVE",
+      "universe_hash": "b102a418312105b7d7e3515cde481b9c71f0a4cfdf22839b7edd97039d4a1879",
+      "wall_time_s": 90.01231145858765
+    },
+    {
+      "R": 4,
+      "U_id": "U_fullrem_frameR4_r4",
+      "best_illegal_V": 48,
+      "final_cuts": 20647,
+      "n_add": 1784,
+      "n_vars": 1948,
+      "r": 4,
+      "rounds": 268,
+      "status": "TIMEOUT_INCONCLUSIVE",
+      "universe_hash": "b102a418312105b7d7e3515cde481b9c71f0a4cfdf22839b7edd97039d4a1879",
+      "wall_time_s": 90.04832196235657
+    },
+    {
+      "R": 6,
+      "U_id": "U_fullrem_frameR6_r2",
+      "best_illegal_V": 19,
+      "final_cuts": 18385,
+      "n_add": 2464,
+      "n_vars": 2628,
+      "r": 2,
+      "rounds": 414,
+      "status": "TIMEOUT_INCONCLUSIVE",
+      "universe_hash": "9e31412235f11ea760584f4ef81c194eb12111950ce17ab0e79f57fd7e202e36",
+      "wall_time_s": 90.06252384185791
+    },
+    {
+      "R": 6,
+      "U_id": "U_fullrem_frameR6_r4",
+      "best_illegal_V": 44,
+      "final_cuts": 25532,
+      "n_add": 2464,
+      "n_vars": 2628,
+      "r": 4,
+      "rounds": 347,
+      "status": "TIMEOUT_INCONCLUSIVE",
+      "universe_hash": "9e31412235f11ea760584f4ef81c194eb12111950ce17ab0e79f57fd7e202e36",
+      "wall_time_s": 90.25186729431152
+    }
+  ],
+  "wall_s": 533.3082180023193
+}

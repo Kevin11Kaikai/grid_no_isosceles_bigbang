@@ -66,8 +66,23 @@
 - Level: `SCOPED_INFEASIBLE`.
 - Status: **DEAD**.
 
-### LH-F006 — r=4 easiest-pair micro (heuristic triple add)
-- Evidence: `LH2_r4_pair_micro/r4_easiest_pair_micro.json` — 108/120 pairs pair-legal under some size-4 cover; 0 completed to 165 under capped 3-add enum.
-- Level: mixed (pair-legal finite; triple enum incomplete).
-- Status: escalate to CP-SAT r=4 (in progress); do not treat as full kill of r=4.
+### LH-F006 — r=4 easiest-pair / LBle5 CP-SAT
+- Evidence: `r4_easiest_pair_micro.json` + `cpsat_r4_shells.json` — paircover and fullrem LBle5 at r=4 both `INFEASIBLE_SCOPED`.
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD** LB≤5 Add at r≤4 with those Rem definitions.
+
+### LH-F007 — frame R2 fullrem r=4
+- Evidence: `LH2_frame_shells/U_fullrem_frameR2_r4.json` — `INFEASIBLE_SCOPED` (1084 adds).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD** outer ring≤2 Add at r=4.
+
+### LH-F008 — n64 exact1-cover Rem r=1
+- Evidence: `LH2_n64_cert_r1/shell_r1_seed1.json` — `INFEASIBLE_SCOPED` (20 vars).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD** that tiny cert universe (score U_small already dead).
+
+### LH-F009 — conflict-eject fixed-card (seeds 301–304)
+- Evidence: best V=4 in 75s×4; no V=0.
+- Level: `HEURISTIC`.
+- Status: operator underperforms Wave2 C (V=3); deprioritize unless redesigned.
 

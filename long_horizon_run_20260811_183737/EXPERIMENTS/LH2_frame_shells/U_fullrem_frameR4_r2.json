@@ -1,0 +1,13 @@
+{
+  "U_id": "U_fullrem_frameR4_r2",
+  "R": 4,
+  "r": 2,
+  "n_add": 1784,
+  "n_vars": 1948,
+  "universe_hash": "b102a418312105b7d7e3515cde481b9c71f0a4cfdf22839b7edd97039d4a1879",
+  "status": "TIMEOUT_INCONCLUSIVE",
+  "best_illegal_V": 25,
+  "rounds": 272,
+  "final_cuts": 12724,
+  "wall_time_s": 90.01231145858765
+}

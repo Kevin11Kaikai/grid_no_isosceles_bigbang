@@ -1,0 +1,152 @@
+{
+  "baseline_hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292",
+  "meta": {
+    "best_illegal_V": 2,
+    "claim_note": "INFEASIBLE under declared scope only; not a global upper bound",
+    "final_cuts": 21,
+    "git_commit": null,
+    "num_workers": 5,
+    "round_log": [
+      {
+        "V": 13,
+        "cuts_added": 2,
+        "n_cuts_total": 0,
+        "n_witness_cuts": 13,
+        "round": 1,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.010381221771240234
+      },
+      {
+        "V": 6,
+        "cuts_added": 2,
+        "n_cuts_total": 2,
+        "n_witness_cuts": 6,
+        "round": 2,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.04060959815979004
+      },
+      {
+        "V": 5,
+        "cuts_added": 2,
+        "n_cuts_total": 4,
+        "n_witness_cuts": 5,
+        "round": 3,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.05872654914855957
+      },
+      {
+        "V": 9,
+        "cuts_added": 2,
+        "n_cuts_total": 6,
+        "n_witness_cuts": 9,
+        "round": 4,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.07434248924255371
+      },
+      {
+        "V": 8,
+        "cuts_added": 3,
+        "n_cuts_total": 8,
+        "n_witness_cuts": 8,
+        "round": 5,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.09034085273742676
+      },
+      {
+        "V": 5,
+        "cuts_added": 2,
+        "n_cuts_total": 11,
+        "n_witness_cuts": 5,
+        "round": 6,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.10634112358093262
+      },
+      {
+        "V": 7,
+        "cuts_added": 2,
+        "n_cuts_total": 13,
+        "n_witness_cuts": 7,
+        "round": 7,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.12143397331237793
+      },
+      {
+        "V": 15,
+        "cuts_added": 2,
+        "n_cuts_total": 15,
+        "n_witness_cuts": 15,
+        "round": 8,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.13776659965515137
+      },
+      {
+        "V": 23,
+        "cuts_added": 3,
+        "n_cuts_total": 17,
+        "n_witness_cuts": 23,
+        "round": 9,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.15286731719970703
+      },
+      {
+        "V": 2,
+        "cuts_added": 1,
+        "n_cuts_total": 20,
+        "n_witness_cuts": 2,
+        "round": 10,
+        "selected_size": 113,
+        "solver_status": "OPTIMAL",
+        "t": 0.16807126998901367
+      },
+      {
+        "n_cuts": 21,
+        "round": 11,
+        "solver_status": "INFEASIBLE",
+        "t": 0.1780712604522705
+      }
+    ],
+    "rounds": 11,
+    "scope": {
+      "U_id": "U_n64_exact1covers_LBle3_r1",
+      "halo": "none",
+      "n": 64,
+      "r": 1,
+      "seed": 1,
+      "symmetry_mode": "asymmetric",
+      "time_limit_s": 120.0,
+      "universe_hash": "3932d094ad2a1d7b493463e4b9e0c5cb79075d6c4a435d6cd955c24a40e89115"
+    },
+    "time_to_best_illegal_s": 0.16807126998901367,
+    "wall_time_s": 0.1780712604522705
+  },
+  "points": null,
+  "status": "INFEASIBLE_SCOPED",
+  "universe": {
+    "U_id": "U_n64_exact1covers_LBle3_r1",
+    "easy": [
+      [
+        62,
+        2
+      ],
+      [
+        62,
+        61
+      ]
+    ],
+    "n_add": 18,
+    "n_easy": 2,
+    "n_rem": 2,
+    "n_vars": 20,
+    "universe_hash": "3932d094ad2a1d7b493463e4b9e0c5cb79075d6c4a435d6cd955c24a40e89115"
+  },
+  "wall_s": 0.5387313365936279
+}
