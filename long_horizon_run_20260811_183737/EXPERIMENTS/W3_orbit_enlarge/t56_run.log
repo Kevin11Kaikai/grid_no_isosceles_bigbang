@@ -13,3 +13,16 @@
   "candidate": null
 }
 {"start": "t6_xlarge", "seed": 861}
+{
+  "symmetry_type": 6,
+  "seed": 861,
+  "status": "TIMEOUT",
+  "size": 0,
+  "universe_id": "orb_t6_defect_core6_free326_def320_part0_h18",
+  "model_hash": "e27bb7691c85ac28e92ce5fbb3a253cdf00373f7630793b4bbcbe09202987087",
+  "wall_time_s": 1800.7307479381561,
+  "rounds": 584,
+  "final_cuts": 86223,
+  "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_xlarge_n100_t6_defect_s861_20260812T103653Z.json",
+  "candidate": null
+}
