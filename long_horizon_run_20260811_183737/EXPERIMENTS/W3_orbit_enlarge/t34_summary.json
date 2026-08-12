@@ -1,0 +1,35 @@
+{
+  "schema": "w3_orbit_t34_v1",
+  "rows": [
+    {
+      "status": "TIMEOUT",
+      "size": 0,
+      "universe_id": "orb_t3_defect_core7_free287_def280_part0_h16",
+      "n_free": 287,
+      "n_def": 280,
+      "model_hash": "0cfcb2d7d6567aff23411da80941089782c3b03c4fce1c5a86a0c28c4369864f",
+      "wall_time_s": 1800.4887247085571,
+      "rounds": 447,
+      "final_cuts": 58468,
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_xlarge_n100_t3_defect_s531_20260812T044443Z.json",
+      "candidate": null,
+      "symmetry_type": 3,
+      "seed": 531
+    },
+    {
+      "status": "TIMEOUT",
+      "size": 0,
+      "universe_id": "orb_t4_defect_core7_free287_def280_part0_h16",
+      "n_free": 287,
+      "n_def": 280,
+      "model_hash": "d37f77ec33a60d06980e5b3466250a16d4ac942f7b95b3910816ac6f538d6507",
+      "wall_time_s": 1800.505776166916,
+      "rounds": 439,
+      "final_cuts": 59024,
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_xlarge_n100_t4_defect_s541_20260812T051444Z.json",
+      "candidate": null,
+      "symmetry_type": 4,
+      "seed": 541
+    }
+  ]
+}

@@ -15,3 +15,18 @@
   "seed": 531
 }
 {"start": "t4_xlarge", "seed": 541, "time_s": 1800.0}
+{
+  "status": "TIMEOUT",
+  "size": 0,
+  "universe_id": "orb_t4_defect_core7_free287_def280_part0_h16",
+  "n_free": 287,
+  "n_def": 280,
+  "model_hash": "d37f77ec33a60d06980e5b3466250a16d4ac942f7b95b3910816ac6f538d6507",
+  "wall_time_s": 1800.505776166916,
+  "rounds": 439,
+  "final_cuts": 59024,
+  "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_xlarge_n100_t4_defect_s541_20260812T051444Z.json",
+  "candidate": null,
+  "symmetry_type": 4,
+  "seed": 541
+}
