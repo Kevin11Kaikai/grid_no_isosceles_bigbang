@@ -303,3 +303,15 @@
 - Evidence: `EXPERIMENTS/W3_large_destroy/summary.json` — 13 plans (frames d2–d5, boxes, row bands); all `final_size=164`; several recover incumbent hash `8a84216d…`; center boxes remove 0 (empty-center). `any_plus=false`.
 - Level: `SCOPED` region-optimal under tested destroys (not global UB).
 - Status: **Region-local repair from S0 does not beat 164** on these plans; try global-refill after destroy / long LNS.
+
+### LH-F048 — Global refill after frame destroy of S0
+- Evidence: `EXPERIMENTS/W3_global_refill/summary.json` — frame_d2: `MAX_PROVED` best=164 (=incumbent hash); frame_d3/d4: best=164 then escalate `TIMEOUT` (not proved). `any_plus=false`.
+- Level: `SCOPED_MAX` (d2) + `TIMEOUT_INCONCLUSIVE` (d3/d4 escalate).
+- Status: **d2 kill: no legal >164 containing the depth-2 frame complement core**; escalate d3/d4 with longer prove budget.
+
+### LH-F049 — Exact-LNS from S0 (30min) + global-refill long d3/d4
+- Evidence:
+  - LNS from S0: terminal `937031` — `final_size=164`, 131044 MILP iters, **0 improvements**, incumbent hash.
+  - `EXPERIMENTS/W3_global_refill/summary_long.json` — frame_d3/d4_long 20min each: best=164, escalate `TIMEOUT` (not MAX_PROVED), incumbent hash.
+- Level: `WEAK_NEGATIVE` (S0 LNS plateau) + `TIMEOUT_INCONCLUSIVE` (d3/d4 prove >164).
+- Status: **S0 region-LNS unlikely to leave 164 in 30min**; d2 still the only proved max=164 under frame complement.

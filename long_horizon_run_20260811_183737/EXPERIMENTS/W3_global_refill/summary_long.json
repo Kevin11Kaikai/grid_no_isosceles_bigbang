@@ -1,0 +1,42 @@
+{
+  "schema": "w3_global_refill_long_v1",
+  "rows": [
+    {
+      "status": "TIMEOUT",
+      "core": 84,
+      "free": 428,
+      "best_legal_size": 164,
+      "proved_max": null,
+      "rounds": 41,
+      "final_cuts": 26428,
+      "wall_s": 1200.1004130840302,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "best_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+      "plan": "frame_d3_long"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 72,
+      "free": 808,
+      "best_legal_size": 164,
+      "proved_max": null,
+      "rounds": 39,
+      "final_cuts": 158020,
+      "wall_s": 1200.0799753665924,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "best_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+      "plan": "frame_d4_long"
+    }
+  ],
+  "any_plus": false
+}

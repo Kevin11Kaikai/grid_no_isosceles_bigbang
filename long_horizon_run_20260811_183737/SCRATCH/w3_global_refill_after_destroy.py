@@ -114,7 +114,11 @@ def maximize_from_core(core: List[Point], time_s: float, workers: int, seed: int
             status = "MAX_PROVED"
             break
         if code not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
+            # Escalation solve timed out — keep searching within wall budget.
             status = "TIMEOUT"
+            if lb_extra > 0 and time.time() - t0 < time_s - 5:
+                # Soften: retry same LB with a longer round next loop.
+                continue
             break
         sel = list(core) + [p for p, v in z.items() if solver.Value(v) == 1]
         w = witnesses(sel)
@@ -133,6 +137,8 @@ def maximize_from_core(core: List[Point], time_s: float, workers: int, seed: int
             cuts.add(tuple(sorted(trip)))
         if len(cuts) == before:
             status = "TIMEOUT"
+            if time.time() - t0 < time_s - 5:
+                continue
             break
         if rounds % 50 == 0:
             print(json.dumps({"round": rounds, "cuts": len(cuts), "best": best_size}), flush=True)
