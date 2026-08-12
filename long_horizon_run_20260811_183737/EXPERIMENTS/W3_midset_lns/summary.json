@@ -1,0 +1,103 @@
+{
+  "schema": "w3_midset_lns_v1",
+  "mid_size": 137,
+  "mid_hash": "c4816cc445f88ccad8038db2a23204de5a36d7e20a87b162eb78d66d221fc046",
+  "lns_rows": [
+    {
+      "seed": 301,
+      "frac": [
+        0.15,
+        0.45
+      ],
+      "iterations": 7133,
+      "wall_time_s": 600.0621089935303,
+      "improvements": [],
+      "final_size": 137,
+      "initial_size": 137,
+      "oracle": true,
+      "indep": true,
+      "size": 137,
+      "hash": "c4816cc445f88ccad8038db2a23204de5a36d7e20a87b162eb78d66d221fc046"
+    },
+    {
+      "seed": 302,
+      "frac": [
+        0.25,
+        0.55
+      ],
+      "iterations": 7013,
+      "wall_time_s": 600.0686528682709,
+      "improvements": [],
+      "final_size": 137,
+      "initial_size": 137,
+      "oracle": true,
+      "indep": true,
+      "size": 137,
+      "hash": "c4816cc445f88ccad8038db2a23204de5a36d7e20a87b162eb78d66d221fc046"
+    },
+    {
+      "seed": 303,
+      "frac": [
+        0.35,
+        0.65
+      ],
+      "iterations": 6981,
+      "wall_time_s": 600.0833485126495,
+      "improvements": [],
+      "final_size": 137,
+      "initial_size": 137,
+      "oracle": true,
+      "indep": true,
+      "size": 137,
+      "hash": "c4816cc445f88ccad8038db2a23204de5a36d7e20a87b162eb78d66d221fc046"
+    }
+  ],
+  "destroy_rows": [
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 107,
+      "free": 53,
+      "best_legal_size": 107,
+      "proved_max": 160,
+      "k": 30
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 87,
+      "free": 244,
+      "best_legal_size": 137,
+      "proved_max": null,
+      "rounds": 17,
+      "final_cuts": 6043,
+      "wall_s": 480.0346190929413,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 137,
+        "hash": "f7ba9c8d1974d85938fc41a66e968585c784d40343645de45336a3ed1b84c08f"
+      },
+      "best_hash": "f7ba9c8d1974d85938fc41a66e968585c784d40343645de45336a3ed1b84c08f",
+      "k": 50
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 67,
+      "free": 814,
+      "best_legal_size": 136,
+      "proved_max": null,
+      "rounds": 16,
+      "final_cuts": 157354,
+      "wall_s": 480.0949969291687,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 136,
+        "hash": "304ef2baa14f6b4f2ffa3cc3b46db0d2f6811d03991acdcdaa9d0529a446aadd"
+      },
+      "best_hash": "304ef2baa14f6b4f2ffa3cc3b46db0d2f6811d03991acdcdaa9d0529a446aadd",
+      "k": 70
+    }
+  ],
+  "best": 137,
+  "any_plus": false
+}

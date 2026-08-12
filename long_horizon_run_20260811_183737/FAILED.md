@@ -345,3 +345,8 @@
 - Evidence: `EXPERIMENTS/W3_parity_long/summary.json` — `TIMEOUT` best=138 (same plateau as 5min); 54 rounds / 285660 cuts / ~1800s; dual OK hash `5855ccab…`.
 - Level: `TIMEOUT_INCONCLUSIVE` (not proved max; not +1).
 - Status: **Deprioritize same parity cut-loop wall**; try LNS from midset / new cores.
+
+### LH-F056 — Midset (parity 137) aggressive LNS + redestroy
+- Evidence: `EXPERIMENTS/W3_midset_lns/summary.json` — LNS 3×10min / 0 improvements size=137; redestroy k30 CAPACITY_FAIL cap160; k50/70 TIMEOUT ≤137.
+- Level: `WEAK_NEGATIVE / TIMEOUT_INCONCLUSIVE`.
+- Status: **Deprioritize stock LNS from ~137 parity midsets** at these destroy fracs.
