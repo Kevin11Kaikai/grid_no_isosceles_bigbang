@@ -252,6 +252,18 @@
         "EXPERIMENTS/W3_forbid_rem_refill/summary.json",
         "EXPERIMENTS/W3_forbid_rem_long/summary.json"
       ]
+    },
+    {
+      "id": "E022",
+      "utc": "2026-08-12T20:46:14Z",
+      "event": "nons0_midset_lineage",
+      "summary": "Non-S0 midset: intact CAPACITY_FAIL 138; destroy best 139; soft-165 V=84 stuck. No +1.",
+      "level": "CAPACITY_FAIL / SCOPED_MAX / WEAK_NEGATIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_midset_global_max/summary.json",
+        "EXPERIMENTS/W3_midset_destroy_max/summary.json",
+        "EXPERIMENTS/W3_nons0_fixedcard/summary_proper.json"
+      ]
     }
   ],
   "events": [

@@ -401,3 +401,8 @@
 - Evidence: `EXPERIMENTS/W3_midset_global_max/summary.json` — free=1, cap=138, `CAPACITY_FAIL`.
 - Level: `CAPACITY_FAIL` (near-maximal under individual addability).
 - Status: **Must destroy midset to grow**; intact midset cannot reach 165.
+
+### LH-F066 — Midset destroy + global maximize
+- Evidence: `EXPERIMENTS/W3_midset_destroy_max/summary.json` — k20 CAPACITY_FAIL; k40 MAX_PROVED 138; k60 TIMEOUT best=139. `any_plus=false`.
+- Level: `CAPACITY_FAIL / SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
+- Status: **This midset lineage plateaus ≤139**; need different construction families.
