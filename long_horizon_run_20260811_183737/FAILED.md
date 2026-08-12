@@ -199,7 +199,12 @@
 - Status: **Open but distinct U did not yield +1 in 45min**; escalate with ≥2h Type0 agent_c or other types+cert_lb2.
 
 ### LH-F031 — Type5 xlarge defect s805 (15min probe)
-- Evidence: `EXPERIMENTS/W3_orbit_enlarge/xlarge_t5_defect_s805.json` — `TIMEOUT` size=0 under 900s xlarge.
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/xlarge_t5_defect_s805.json` — `TIMEOUT` size=0; `orb_t5_defect_core6_free326_def320_part0_h18`; 626r/93339 cuts / ~900s.
 - Level: `TIMEOUT_INCONCLUSIVE` (short probe).
 - Status: **Not killed**; do not treat as INFEAS.
+
+### LH-F032 — Type6 xlarge defect s806 (15min probe)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/xlarge_t6_defect_s806.json` — `TIMEOUT` size=0; `orb_t6_defect_core6_free326_def320_part0_h18`; 605r/91889 cuts / ~900s.
+- Level: `TIMEOUT_INCONCLUSIVE` (short probe).
+- Status: **Not killed**; Types 0–6 xlarge all TIMEOUT≠INFEAS under tested budgets.
 
