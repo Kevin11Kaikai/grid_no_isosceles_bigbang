@@ -1,0 +1,68 @@
+{
+  "schema": "w3_rem3_forced_exchange_v1",
+  "results": [
+    {
+      "seed": 801,
+      "r_min": 3,
+      "best_V": 45,
+      "iters": 8970,
+      "final_remove_from_s0": 3,
+      "final_add": 4,
+      "status": "BEST_V",
+      "wall_s": 150.0132486820221
+    },
+    {
+      "seed": 802,
+      "r_min": 3,
+      "best_V": 42,
+      "iters": 8866,
+      "final_remove_from_s0": 3,
+      "final_add": 4,
+      "status": "BEST_V",
+      "wall_s": 150.01381731033325
+    },
+    {
+      "seed": 803,
+      "r_min": 3,
+      "best_V": 70,
+      "iters": 8841,
+      "final_remove_from_s0": 3,
+      "final_add": 4,
+      "status": "BEST_V",
+      "wall_s": 150.00484776496887
+    },
+    {
+      "seed": 804,
+      "r_min": 3,
+      "best_V": 65,
+      "iters": 9049,
+      "final_remove_from_s0": 3,
+      "final_add": 4,
+      "status": "BEST_V",
+      "wall_s": 150.00334215164185
+    },
+    {
+      "seed": 805,
+      "r_min": 3,
+      "best_V": 76,
+      "iters": 8819,
+      "final_remove_from_s0": 3,
+      "final_add": 4,
+      "status": "BEST_V",
+      "wall_s": 150.0019063949585
+    },
+    {
+      "seed": 806,
+      "r_min": 3,
+      "best_V": 81,
+      "iters": 8910,
+      "final_remove_from_s0": 3,
+      "final_add": 4,
+      "status": "BEST_V",
+      "wall_s": 150.00048637390137
+    }
+  ],
+  "best_V": 42,
+  "any_v0": false,
+  "wall_s": 900.5780820846558
+}

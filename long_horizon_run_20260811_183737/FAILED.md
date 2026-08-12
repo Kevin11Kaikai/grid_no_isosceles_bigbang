@@ -258,3 +258,8 @@
 - Evidence: `EXPERIMENTS/W3_rem2_residual/fullstrip_addable_extend.json` ¡ª 5/5 seeds `INFEASIBLE_SCOPED` in <0.2s each (cores 104¨C121; free=addable only).
 - Level: `SCOPED_INFEASIBLE`.
 - Status: **DEAD rem2 residual-repair family** for sampled seeds (soft+full strip); need new illegal seeds or non-residual constructions.
+
+### LH-F041 ¡ª Forced rem>=3 fixed-card exchange
+- Evidence: `EXPERIMENTS/W3_rem3_exchange/forced_exchange_rem3.json` ¡ª 6¡Á150s, best_V=42, any_v0=false (worse than rem2 best_V¡Ö25).
+- Level: `WEAK_NEGATIVE` / plateau.
+- Status: **Deprioritize naive rem3 swap LS**; residual/exact needed if revisiting.
