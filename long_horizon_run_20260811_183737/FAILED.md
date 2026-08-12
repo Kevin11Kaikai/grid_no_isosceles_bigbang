@@ -325,3 +325,13 @@
 - Evidence: `EXPERIMENTS/W3_hs2_delete_max/summary.json` — 8/8 `MAX_PROVED` best=164 (=incumbent hash); each core=162, free=3, cap=165 but cannot select all 3.
 - Level: `SCOPED_MAX` (strong micro-obstruction: keep S0\{hs2} ⇒ max legal 164).
 - Status: **DEAD \"delete one easy HS2 then refill to 165 keeping the rest of S0\"**; aligns with LH-F020 Hamming INFEAS.
+
+### LH-F052 — Joint HS2-pair delete + global maximize (8 pairs)
+- Evidence: `EXPERIMENTS/W3_joint_hs2_delete_max/summary.json` — 8/8 `MAX_PROVED` best=164 (=incumbent hash `8a84216d…`); cores=160, free=6, cap=166.
+- Level: `SCOPED_MAX`.
+- Status: **DEAD \"keep S0 minus two disjoint easy HS2s and refill to 165\"**; extends LH-F051 / W3-A4.
+
+### LH-F053 — Grow-134 structured destroy + global maximize
+- Evidence: `EXPERIMENTS/W3_grow_destroy_max/summary.json` — grow best 134; destroy best **138** (parity_even TIMEOUT 300s); frame_d3/d4 `MAX_PROVED` 134; several `CAPACITY_FAIL` (<165). `any_plus=false`.
+- Level: `HEURISTIC / SCOPED_MAX / TIMEOUT_INCONCLUSIVE` (parity TIMEOUT ≠ proved max).
+- Status: **Deprioritize shallow grow-core frame/random destroys**; escalate long parity / large free-pool maximize only if information-positive.

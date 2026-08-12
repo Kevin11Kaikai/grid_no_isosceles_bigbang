@@ -34,6 +34,8 @@
 | W3-C0 | Soft S0+1 fixed-card seed grind | **BLOCKED** (LH-F016) | — |
 | W3-G1 | Pattern/grow exact-LNS reaches ≥165 | **weakened** best 133–135 (LH-F046) | LNS from S0 / large-destroy |
 | W3-R3 | rem3 residual elites repair to 165 | **REJECTED** s802; s801 soft TIMEOUT (LH-F045/046) | — |
+| W3-A5 | Delete easy HS2 / joint HS2 from S0 then global max ⇒ 165 | **REJECTED** MAX_PROVED 164 (LH-F051/052) | — |
+| W3-G2 | Structured destroy+global max from grow-134 ⇒ 165 | **weakened** best 138 parity TIMEOUT (LH-F053) | long parity escalate |
 
 ## Frozen Wave2 facts (import)
 

@@ -206,6 +206,19 @@
         "EXPERIMENTS/W3_rem3_residual/soft_extend_s801_long.json",
         "EXPERIMENTS/W3_rem3_residual/core_maximize_s802.json"
       ]
+    },
+    {
+      "id": "E018",
+      "utc": "2026-08-12T14:54:52Z",
+      "event": "hs2_delete_max_and_lns",
+      "summary": "HS2-delete\u00d78 and joint-HS2\u00d78 MAX_PROVED 164; S0 exact-LNS 0 improve; grow-destroy best 138 parity TIMEOUT. No +1.",
+      "level": "SCOPED_MAX / HEURISTIC / TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_hs2_delete_max/summary.json",
+        "EXPERIMENTS/W3_joint_hs2_delete_max/summary.json",
+        "EXPERIMENTS/W3_lns_from_legal/summary.json",
+        "EXPERIMENTS/W3_grow_destroy_max/summary.json"
+      ]
     }
   ],
   "events": [
@@ -234,6 +247,16 @@
         "LH-F046"
       ],
       "note": "all pattern/grow/rem3 jobs finished"
+    },
+    {
+      "ts": "2026-08-12T14:54:52Z",
+      "event": "w3_joint_hs_grow_destroy",
+      "refs": [
+        "LH-F051",
+        "LH-F052",
+        "LH-F053"
+      ],
+      "note": "S0 HS basins locked at 164; grow parity free-pool up to 138 only"
     }
   ]
 }
