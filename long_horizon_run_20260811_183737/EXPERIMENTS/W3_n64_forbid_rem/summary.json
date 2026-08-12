@@ -1,0 +1,45 @@
+{
+  "schema": "w3_n64_forbid_rem_v1",
+  "rows": [
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 112,
+      "free": 0,
+      "best_legal_size": 112,
+      "proved_max": 112,
+      "plan": "plain_S0"
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 92,
+      "free": 1,
+      "best_legal_size": 92,
+      "proved_max": 93,
+      "plan": "forbid20",
+      "k": 20,
+      "seed": 41
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 82,
+      "free": 7,
+      "best_legal_size": 82,
+      "proved_max": 89,
+      "plan": "forbid30",
+      "k": 30,
+      "seed": 42
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 72,
+      "free": 11,
+      "best_legal_size": 72,
+      "proved_max": 83,
+      "plan": "forbid40",
+      "k": 40,
+      "seed": 43
+    }
+  ],
+  "best": 112,
+  "any_plus": false
+}

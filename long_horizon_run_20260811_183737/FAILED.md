@@ -406,3 +406,8 @@
 - Evidence: `EXPERIMENTS/W3_midset_destroy_max/summary.json` — k20 CAPACITY_FAIL; k40 MAX_PROVED 138; k60 TIMEOUT best=139. `any_plus=false`.
 - Level: `CAPACITY_FAIL / SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
 - Status: **This midset lineage plateaus ≤139**; need different construction families.
+
+### LH-F067 — n64 sandbox: plain S0 max + forbid-Rem
+- Evidence: `EXPERIMENTS/W3_n64_forbid_rem/summary.json` — plain_S0 `CAPACITY_FAIL` free=0 cap=112 (S0 maximal under singleton add); forbid20/30/40 all `CAPACITY_FAIL` caps 93/89/83 <113.
+- Level: `CAPACITY_FAIL` (scoped; not global UB).
+- Status: **n64 +1 requires destroy+refill (not pure add)**; forbid-Rem alone insufficient at these k for cap≥113.
