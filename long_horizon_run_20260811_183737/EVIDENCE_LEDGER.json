@@ -159,6 +159,31 @@
         "EXPERIMENTS/W3_orbit_enlarge/xlarge_t1_defect_s601.json",
         "EXPERIMENTS/W3_orbit_enlarge/partial_t0_s511.json"
       ]
+    },
+    {
+      "id": "E015",
+      "utc": "2026-08-12TWave3",
+      "event": "w3_orbit_t2_t3_t4_timeout",
+      "summary": "Type2/3/4 xlarge defects all TIMEOUT size=0 under free~287–327 / def280–320 / h16–18; cuts 58k–100k; still TIMEOUT_INCONCLUSIVE.",
+      "level": "TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_orbit_enlarge/xlarge_t2_defect_s702.json",
+        "EXPERIMENTS/W3_orbit_enlarge/long_t3_defect_s531_xlarge.json",
+        "EXPERIMENTS/W3_orbit_enlarge/xlarge_t3_defect_s703.json",
+        "EXPERIMENTS/W3_orbit_enlarge/long_t4_defect_s541_xlarge.json",
+        "EXPERIMENTS/W3_orbit_enlarge/xlarge_t4_defect_s704.json"
+      ]
+    },
+    {
+      "id": "E016",
+      "utc": "2026-08-12TWave3",
+      "event": "w3_orbit_mega_and_certlb2_launched",
+      "summary": "Launched Type0 cert_lb2 s801 and Type0 mega 2h s811 (360/h20) after types 0–4 xlarge TIMEOUT; both still open.",
+      "level": "PROCESS",
+      "artifacts": [
+        "SCRATCH/w3_orbit_certlb2_t0.py",
+        "SCRATCH/w3_orbit_t0_mega_2h.py"
+      ]
     }
   ]
 }
