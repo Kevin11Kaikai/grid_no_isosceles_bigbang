@@ -173,3 +173,8 @@
 - Level: `TIMEOUT_INCONCLUSIVE`.
 - Status: **Open**; Type1 remains cut-heavy / round-sparse vs Type0.
 
+### LH-F026 — Forced rem≥2 fixed-card exchange (long)
+- Evidence: `EXPERIMENTS/LH3_forced_exchange/forced_exchange_n100_long.json` — 6×180s seeds, best_V=29, any_v0=false (short batch earlier best_V=28). Leaves S0+1 basin but plateau far above V=0.
+- Level: `WEAK_NEGATIVE` / search plateau (not scoped UNSAT).
+- Status: **Deprioritize naive swap LS**; need stronger neighborhood or exact residual repair.
+

@@ -1,0 +1,68 @@
+{
+  "schema": "lh3_fixedcard_forced_exchange_v2_long",
+  "results": [
+    {
+      "seed": 501,
+      "r_min": 2,
+      "best_V": 48,
+      "iters": 10678,
+      "final_remove_from_s0": 2,
+      "final_add": 3,
+      "status": "BEST_V",
+      "wall_s": 180.00524258613586
+    },
+    {
+      "seed": 502,
+      "r_min": 2,
+      "best_V": 33,
+      "iters": 10512,
+      "final_remove_from_s0": 2,
+      "final_add": 3,
+      "status": "BEST_V",
+      "wall_s": 180.0158154964447
+    },
+    {
+      "seed": 503,
+      "r_min": 2,
+      "best_V": 45,
+      "iters": 10353,
+      "final_remove_from_s0": 2,
+      "final_add": 3,
+      "status": "BEST_V",
+      "wall_s": 180.01193261146545
+    },
+    {
+      "seed": 504,
+      "r_min": 2,
+      "best_V": 29,
+      "iters": 10301,
+      "final_remove_from_s0": 2,
+      "final_add": 3,
+      "status": "BEST_V",
+      "wall_s": 180.00599074363708
+    },
+    {
+      "seed": 505,
+      "r_min": 2,
+      "best_V": 41,
+      "iters": 10290,
+      "final_remove_from_s0": 2,
+      "final_add": 3,
+      "status": "BEST_V",
+      "wall_s": 180.00375604629517
+    },
+    {
+      "seed": 506,
+      "r_min": 2,
+      "best_V": 41,
+      "iters": 10092,
+      "final_remove_from_s0": 2,
+      "final_add": 3,
+      "status": "BEST_V",
+      "wall_s": 180.01270365715027
+    }
+  ],
+  "best_V": 29,
+  "any_v0": false,
+  "wall_s": 1080.647005558014
+}

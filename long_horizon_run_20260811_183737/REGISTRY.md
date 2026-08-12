@@ -30,6 +30,7 @@
 | W3-A2 | Cross spatial-knn Rem/Add r=2/3 admits 165 | **REJECTED** (LH-F018/019) | need new Rem/Add or orbit |
 | W3-A3 | Force exact HS2 for easy q + large Add ⇒ legal 165 | **REJECTED** 8/8 (LH-F020) | — |
 | W3-A4 | Joint HS pair forced-delete r=|Rem| ⇒ legal 165 | **REJECTED** 10/10 (LH-F022) | orbit primary |
+| W3-C1 | Forced rem≥2 fixed-card LS reaches V=0 | **weakened** best_V≈28–29 (LH-F026) | exact/residual, not more swap LS |
 | W3-C0 | Soft S0+1 fixed-card seed grind | **BLOCKED** (LH-F016) | require remove≥2 / new formulation |
 
 ## Frozen Wave2 facts (import)
