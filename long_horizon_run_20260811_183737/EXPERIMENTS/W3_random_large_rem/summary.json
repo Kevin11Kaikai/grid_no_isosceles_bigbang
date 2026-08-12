@@ -1,0 +1,57 @@
+{
+  "schema": "w3_random_large_rem_v1",
+  "rows": [
+    {
+      "status": "TIMEOUT",
+      "core": 84,
+      "free": 375,
+      "best_legal_size": 164,
+      "proved_max": null,
+      "rounds": 31,
+      "final_cuts": 19110,
+      "wall_s": 900.0312616825104,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "best_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+      "k": 80,
+      "seed": 11
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 64,
+      "free": 1222,
+      "best_legal_size": 164,
+      "proved_max": null,
+      "rounds": 24,
+      "final_cuts": 494960,
+      "wall_s": 900.7187783718109,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "best_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+      "k": 100,
+      "seed": 12
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 44,
+      "free": 3713,
+      "best_legal_size": 44,
+      "proved_max": null,
+      "rounds": 2,
+      "final_cuts": 13863886,
+      "wall_s": 321.48158717155457,
+      "k": 120,
+      "seed": 13
+    }
+  ],
+  "best": 164,
+  "any_plus": false
+}

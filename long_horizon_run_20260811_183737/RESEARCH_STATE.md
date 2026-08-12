@@ -1,24 +1,25 @@
 ﻿# RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-12 (midset LNS; grow-union running)
+**Updated:** 2026-08-12 (random large Rem harvest)
 
 ## Incumbent
 - n=64 **112** / n=100 **164** — **no legal +1**
 
-## Strong scoped (S0 basins)
-- HS2 / joint HS2 / certfreq Rem / frame_d2 → **MAX_PROVED 164** (=incumbent)
+## Hard scoped facts (S0-related)
+| Setting | Result |
+|---|---|
+| HS2 / joint HS2 delete | MAX_PROVED 164 |
+| certfreq Rem ≤64 | MAX_PROVED 164 |
+| frame_d2 global refill | MAX_PROVED 164 |
+| random Rem 80/100 maximize | TIMEOUT best=164 incumbent (F059) |
 
-## Non-S0 constructions
-- Grow/pattern LNS ≤135; grow-destroy / parity ≤138; midset LNS stuck 137 (F056)
-- Parity 30m TIMEOUT≠proved max
+## Non-S0
+- Grow/LNS/parity/midset/union: plateau ≤138; no +1
 
-## In flight
-- Grow-union universe maximize (multi-grow defect pool + S0 cells)
-
-## Next
-1. Harvest grow-union; if plateau ≪165, try new universes (not S0-subset cores).  
-2. Avoid killed Hamming/rem2/S0+1/HS2-keep-S0.  
-3. Dual-verify before promote.
+## Next 3
+1. Longer escalate prove≥165 under Rem80/100 cores (TIMEOUT≠INFEAS) OR leave S0 basin via forced-forbidden incumbent cells.  
+2. Fixed-card V-minimize at 165 from non-S0 warm starts (not S0+1 soft grind).  
+3. Dual-verify before any promote.
 
 ## Discipline
 TIMEOUT ≠ INFEAS; scoped ≠ global; standing order push.

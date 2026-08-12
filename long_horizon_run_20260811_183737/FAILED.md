@@ -360,3 +360,8 @@
 - Evidence: `EXPERIMENTS/W3_grow_union_universe/summary_warm.json` — warm start 131; `TIMEOUT` best=131 (no improve); 32 rounds / 241032 cuts / ~1500s.
 - Level: `TIMEOUT_INCONCLUSIVE` / `WEAK_NEGATIVE` for this universe+cut-loop.
 - Status: **Deprioritize plain cut-maximize over multi-grow∪S0 at ~25min**; need better search or different U.
+
+### LH-F059 — Large random Rem from S0 + global maximize
+- Evidence: `EXPERIMENTS/W3_random_large_rem/summary.json` — Rem80/100: `TIMEOUT` best=164 (=incumbent hash) in ~900s (recovered S0; not proved max). Rem120: early stall best=44 (core) after huge cut dump — `TIMEOUT_INCONCLUSIVE`/tool stress.
+- Level: `TIMEOUT_INCONCLUSIVE` (not UB); weak signal that large Rem still returns to S0 basin quickly for k≤100.
+- Status: Open for longer prove-≥165 under Rem80 cores; not a +1.
