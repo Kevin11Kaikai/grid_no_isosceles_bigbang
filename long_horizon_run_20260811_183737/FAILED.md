@@ -350,3 +350,8 @@
 - Evidence: `EXPERIMENTS/W3_midset_lns/summary.json` — LNS 3×10min / 0 improvements size=137; redestroy k30 CAPACITY_FAIL cap160; k50/70 TIMEOUT ≤137.
 - Level: `WEAK_NEGATIVE / TIMEOUT_INCONCLUSIVE`.
 - Status: **Deprioritize stock LNS from ~137 parity midsets** at these destroy fracs.
+
+### LH-F057 — Grow-union universe maximize (cold LB≥130)
+- Evidence: `EXPERIMENTS/W3_grow_union_universe/summary.json` — universe=1087 (8 grows+S0); `TIMEOUT` best=0 / 26 rounds / 241k cuts / 1200s.
+- Level: `TIMEOUT_INCONCLUSIVE` + **method bug** (cold LB≥130 never recorded a legal seed).
+- Status: **Invalid as capacity/UB claim**; rerun warm-started (`summary_warm.json`).

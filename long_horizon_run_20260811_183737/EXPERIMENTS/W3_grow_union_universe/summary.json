@@ -1,0 +1,89 @@
+{
+  "schema": "w3_grow_union_v1",
+  "grow_rows": [
+    {
+      "size": 131,
+      "seed": 202,
+      "mode": "boundary_first",
+      "iters": 1014,
+      "oracle": true,
+      "indep": true,
+      "hash": "d968bf90c80d0ff1f38e2f06c1fa2692d0088e29b924416ef18858382e05294e"
+    },
+    {
+      "size": 131,
+      "seed": 203,
+      "mode": "spiral_mix",
+      "iters": 1024,
+      "oracle": true,
+      "indep": true,
+      "hash": "9a7cc51bcca48b9683c140f0aa6d9c8ad0864fe19c54613a508e690f85eadae9"
+    },
+    {
+      "size": 131,
+      "seed": 301,
+      "mode": "boundary_first",
+      "iters": 1011,
+      "oracle": true,
+      "indep": true,
+      "hash": "2c300e907fc2a89bbacd65d11ec202d133cd41cf8bbe0710c93360caa6316070"
+    },
+    {
+      "size": 131,
+      "seed": 401,
+      "mode": "spiral_mix",
+      "iters": 967,
+      "oracle": true,
+      "indep": true,
+      "hash": "fd06985e806900713e8e5f59560352a9d76277273395344c5fa0df3c5b722dbd"
+    },
+    {
+      "size": 130,
+      "seed": 501,
+      "mode": "random",
+      "iters": 1003,
+      "oracle": true,
+      "indep": true,
+      "hash": "b76e59d145bb28acccf8709ca321653fd47e0b73286b9cf4da4d136d987dcea7"
+    },
+    {
+      "size": 130,
+      "seed": 601,
+      "mode": "center_first",
+      "iters": 1012,
+      "oracle": true,
+      "indep": true,
+      "hash": "2086996f2c209c8b6925950d899b77c9ea03ede7106b272ba5464afd1e367fb9"
+    },
+    {
+      "size": 131,
+      "seed": 701,
+      "mode": "boundary_first",
+      "iters": 1011,
+      "oracle": true,
+      "indep": true,
+      "hash": "679f95662911816854bb03a0e78b7ad9404c45cbb5b8238c7edd711a0161f12d"
+    },
+    {
+      "size": 129,
+      "seed": 801,
+      "mode": "spiral_mix",
+      "iters": 969,
+      "oracle": true,
+      "indep": true,
+      "hash": "69ee7a8e42735cb92e4930129a1b197e7fc86025248d97c59691a8af017ab1e0"
+    }
+  ],
+  "universe_size": 1087,
+  "maximize": {
+    "status": "TIMEOUT",
+    "universe": 1087,
+    "best_legal_size": 0,
+    "proved_max": null,
+    "rounds": 26,
+    "final_cuts": 241032,
+    "wall_s": 1200.750783920288
+  },
+  "best": 0,
+  "any_plus": false
+}
