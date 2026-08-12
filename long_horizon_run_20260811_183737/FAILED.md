@@ -373,3 +373,11 @@
   - k=80: `TIMEOUT` best=134 dual OK (left S0 basin; not +1)
 - Level: `CAPACITY_FAIL / SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
 - Status: **Leaving S0 by blacklisting Rem is necessary but insufficient at these seeds**; escalate k=80 long / structured Rem.
+
+### LH-F061 — Long forbid-Rem (30min ×3)
+- Evidence: `EXPERIMENTS/W3_forbid_rem_long/summary.json`
+  - rand80: TIMEOUT best=134 (~30m)
+  - rand100: TIMEOUT best=**139** (~30m)
+  - certfreq60 forbid: `MAX_PROVED` 134 in ~4s (cap free=94)
+- Level: `TIMEOUT_INCONCLUSIVE / SCOPED_MAX`.
+- Status: certfreq60-forbid **dead** at max 134; rand100 forbid open but plateau ≪165.

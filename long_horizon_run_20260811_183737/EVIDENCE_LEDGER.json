@@ -241,6 +241,17 @@
         "EXPERIMENTS/W3_midset_lns/summary.json",
         "EXPERIMENTS/W3_grow_union_universe/summary_warm.json"
       ]
+    },
+    {
+      "id": "E021",
+      "utc": "2026-08-12T19:12:23Z",
+      "event": "forbid_rem_long",
+      "summary": "Forbid-Rem: k60 MAX=128; certfreq60 MAX=134; rand100 TIMEOUT best=139. No +1. Without forbid Rem snaps to S0.",
+      "level": "SCOPED_MAX / TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_forbid_rem_refill/summary.json",
+        "EXPERIMENTS/W3_forbid_rem_long/summary.json"
+      ]
     }
   ],
   "events": [
