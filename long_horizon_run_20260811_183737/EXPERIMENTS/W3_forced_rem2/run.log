@@ -1,0 +1,13 @@
+{"U_id": "U_v3cert_rem_Add_multicomm3_r2", "n_rem": 94, "n_add": 9832, "hash": "772d7413735b5f1f", "r": 2}
+{
+  "U_id": "U_v3cert_rem_Add_multicomm3_r2",
+  "status": "TIMEOUT_INCONCLUSIVE",
+  "universe_hash": "772d7413735b5f1f7c56f495e7a83851af62ce60c59651be22f09f027dfde164",
+  "n_rem": 94,
+  "n_add": 9832,
+  "best_illegal_V": 24,
+  "rounds": 494,
+  "final_cuts": 19421,
+  "wall_time_s": 180.34968948364258,
+  "note": "forced r=2; Rem=V3-involved\u222ae16-involved; Add multicomm>=3; not S0+1 grind"
+}

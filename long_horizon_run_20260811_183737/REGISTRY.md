@@ -27,7 +27,8 @@
 | LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy (Wave2 B closed no +1) | W3 R1: enlarge defect/halo/time; s401 45min + xlarge queued |
 | LH-D1 | Residual communities beat Hamming U | **weakened** — refill infeasible; nonlocal free still open | |
 | W3-A1 | Cert-involved / certfreq Rem+low-LB Add r=2 admits 165 | **REJECTED** e16/e56/top48 (LH-F015/017) | try cross-knn / residual nonlocal only |
-| W3-A2 | Cross spatial-knn Rem/Add r=2 admits 165 | OPEN (bridge_top REJECTED) | corners/left-right pilots |
+| W3-A2 | Cross spatial-knn Rem/Add r=2/3 admits 165 | **REJECTED** (LH-F018/019) | need new Rem/Add or orbit |
+| W3-A3 | Force exact HS2 for easy q + large Add ⇒ legal 165 | **REJECTED** 8/8 (LH-F020) | try multi-q joint HS / orbit |
 | W3-C0 | Soft S0+1 fixed-card seed grind | **BLOCKED** (LH-F016) | require remove≥2 / new formulation |
 
 ## Frozen Wave2 facts (import)

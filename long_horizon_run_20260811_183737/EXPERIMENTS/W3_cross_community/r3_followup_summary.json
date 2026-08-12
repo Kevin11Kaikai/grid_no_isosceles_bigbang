@@ -1,0 +1,47 @@
+{
+  "rows": [
+    {
+      "U_id": "U_cross_knn_bridge_top_LBle7_r3",
+      "best_illegal_V": 21,
+      "final_cuts": 5418,
+      "n_add": 1234,
+      "n_rem": 39,
+      "parent_r2_U_id": "U_cross_knn_bridge_top_LBle7_r2",
+      "phase": "cheap",
+      "r": 3,
+      "rounds": 310,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "6afb5cb03a1dd50eca44350a78fa4ff9b3eb88fedc0d2561443cfbdc85dbdde5",
+      "wall_time_s": 32.45342659950256
+    },
+    {
+      "U_id": "U_cross_knn_corners_vs_sides_LBle7_r3",
+      "best_illegal_V": 22,
+      "final_cuts": 6286,
+      "n_add": 1280,
+      "n_rem": 52,
+      "parent_r2_U_id": "U_cross_knn_corners_vs_sides_LBle7_r2",
+      "phase": "cheap",
+      "r": 3,
+      "rounds": 321,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "c420f5f79a2b4db69f116a2d9ac2f13454f28ac342d82bdaa8e23d3c2916b567",
+      "wall_time_s": 35.016358375549316
+    },
+    {
+      "U_id": "U_cross_knn_left_vs_right_LBle8_r3",
+      "best_illegal_V": 24,
+      "final_cuts": 10951,
+      "n_add": 1936,
+      "n_rem": 56,
+      "parent_r2_U_id": "U_cross_knn_left_vs_right_LBle8_r2",
+      "phase": "cheap",
+      "r": 3,
+      "rounds": 485,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "a0cf4e5d2286b3c1ea7fe0b9cd5c631e1439f8be26091f2ef327ad9f30a264f5",
+      "wall_time_s": 68.74529576301575
+    }
+  ],
+  "schema": "w3_cross_r3_v1"
+}

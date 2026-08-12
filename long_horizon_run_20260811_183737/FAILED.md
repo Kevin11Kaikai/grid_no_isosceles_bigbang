@@ -133,8 +133,23 @@
 - Level: `SCOPED_INFEASIBLE`.
 - Status: **DEAD that U_id**.
 
-### LH-F018 — W3 cross-knn bridge_top LBle7 r=2
-- Evidence: `EXPERIMENTS/W3_cross_community/U_cross_knn_bridge_top_LBle7_r2_cheap.json` — `INFEASIBLE_SCOPED` (~40s, hash `6afb5cb0…`).
+### LH-F018 — W3 cross-knn r=2 partitions (bridge / corners / left-right)
+- Evidence: `EXPERIMENTS/W3_cross_community/summary.json` — all three `INFEASIBLE_SCOPED` (hashes `6afb5cb0…`, `c420f5f7…`, `a0cf4e5d…`).
 - Level: `SCOPED_INFEASIBLE`.
-- Status: **DEAD that U_id**; other cross partitions still open until tested.
+- Status: **DEAD those r=2 U_ids**.
+
+### LH-F019 — W3 cross-knn same Rem/Add at r=3
+- Evidence: `EXPERIMENTS/W3_cross_community/r3_followup_summary.json` — all three `INFEASIBLE_SCOPED` in <70s.
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD those r=3 U_ids**; do not re-spend; need new Rem/Add structure or orbit path.
+
+### LH-F020 — Forced exact HS2 delete for 8 easiest qs + large Add (r=2)
+- Evidence: `EXPERIMENTS/W3_forced_hitset/summary.json` — 8/8 `INFEASIBLE_SCOPED` (~46s each). Rem=exact size-2 hitting set; Add=LB≤8∪halo; no legal 165.
+- Level: `SCOPED_INFEASIBLE` (strong micro-obstruction for “clear one easy q then +2 adds”).
+- Status: **DEAD that microproblem family for those 8 qs / Add defs**; pair-HS / multi-q / orbit remain.
+
+### LH-F021 — Near-unrestricted multicomm Add Hamming (deprioritized)
+- Evidence: `U_fullrem_Add_multicomm4_r2` and `U_v3cert_rem_Add_multicomm3_r2` TIMEOUT with |Add|≈9800.
+- Level: `TIMEOUT_INCONCLUSIVE` (low information).
+- Status: **Deprioritized**; do not spend primary long budget on ≈full-grid Add.
 

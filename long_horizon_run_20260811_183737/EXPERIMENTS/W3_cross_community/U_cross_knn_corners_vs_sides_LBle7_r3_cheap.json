@@ -1,0 +1,15 @@
+{
+  "U_id": "U_cross_knn_corners_vs_sides_LBle7_r3",
+  "best_illegal_V": 22,
+  "final_cuts": 6286,
+  "n_add": 1280,
+  "n_rem": 52,
+  "parent_r2_U_id": "U_cross_knn_corners_vs_sides_LBle7_r2",
+  "phase": "cheap",
+  "points": null,
+  "r": 3,
+  "rounds": 321,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "c420f5f79a2b4db69f116a2d9ac2f13454f28ac342d82bdaa8e23d3c2916b567",
+  "wall_time_s": 35.016358375549316
+}

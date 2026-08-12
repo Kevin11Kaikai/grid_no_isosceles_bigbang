@@ -1,0 +1,26 @@
+{
+  "U_id": "U_forced_hs2_q75_18_r2",
+  "best_illegal_V": 15,
+  "final_cuts": 2482,
+  "hs": [
+    [
+      8,
+      6
+    ],
+    [
+      77,
+      4
+    ]
+  ],
+  "n_add": 2123,
+  "n_rem": 2,
+  "points": null,
+  "q": [
+    75,
+    18
+  ],
+  "rounds": 711,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "d80c095b6a827bb75bc2bc2cb9eb36328007e053f7b9a307696744a781095f49",
+  "wall_time_s": 47.586993932724
+}

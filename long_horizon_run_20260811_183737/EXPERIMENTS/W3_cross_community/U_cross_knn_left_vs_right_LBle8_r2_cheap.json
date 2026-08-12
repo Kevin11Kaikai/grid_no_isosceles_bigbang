@@ -1,0 +1,25 @@
+{
+  "U_id": "U_cross_knn_left_vs_right_LBle8_r2",
+  "add_cids": [
+    4,
+    5,
+    9
+  ],
+  "best_illegal_V": 15,
+  "final_cuts": 10990,
+  "lb_max": 8,
+  "n_add": 1936,
+  "n_rem": 56,
+  "phase": "cheap",
+  "points": null,
+  "rem_cids": [
+    6,
+    7,
+    8
+  ],
+  "rounds": 646,
+  "status": "INFEASIBLE_SCOPED",
+  "tag": "left_vs_right",
+  "universe_hash": "a0cf4e5d2286b3c1ea7fe0b9cd5c631e1439f8be26091f2ef327ad9f30a264f5",
+  "wall_time_s": 92.11032962799072
+}

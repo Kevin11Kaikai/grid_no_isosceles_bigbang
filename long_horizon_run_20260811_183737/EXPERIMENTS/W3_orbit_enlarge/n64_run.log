@@ -1,0 +1,14 @@
+{"start": "n64_t0_defect_enlarge", "time_s": 1200.0, "seed": 641}
+{
+  "status": "TIMEOUT",
+  "size": 0,
+  "universe_id": "orb_t0_defect_core27_free187_def160_part0_h12",
+  "n_free_orbits": 187,
+  "n_defect_points": 160,
+  "model_hash": "9574c551456d16c8fcb7c740ee15a5ba38f133921029bb140f202403cc9f4eec",
+  "wall_time_s": 1199.990794658661,
+  "rounds": 2860,
+  "final_cuts": 24024,
+  "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_n64_t0_defect_s641_20260812T023604Z.json",
+  "candidate": null
+}

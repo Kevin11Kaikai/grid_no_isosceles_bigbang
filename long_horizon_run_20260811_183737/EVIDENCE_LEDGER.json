@@ -104,6 +104,27 @@
         "EXPERIMENTS/W3_cert_nonlocal/partial_summary.json",
         "EXPERIMENTS/W3_cert_nonlocal/U_cert_involved_e56_Add_LBle6_r2_cheap.json"
       ]
+    },
+    {
+      "id": "E010",
+      "utc": "2026-08-12TWave3",
+      "event": "w3_cross_knn_r2_r3_killed",
+      "summary": "Three structured cross spatial-knn Rem/Add universes INFEASIBLE_SCOPED at r=2 and r=3.",
+      "level": "SCOPED_INFEASIBLE",
+      "artifacts": [
+        "EXPERIMENTS/W3_cross_community/summary.json",
+        "EXPERIMENTS/W3_cross_community/r3_followup_summary.json"
+      ]
+    },
+    {
+      "id": "E011",
+      "utc": "2026-08-12TWave3",
+      "event": "w3_forced_hitset_hs2",
+      "summary": "8/8 easiest-q exact HS2 forced-delete r=2 shells INFEASIBLE_SCOPED with large Add pools; strong micro-obstruction.",
+      "level": "SCOPED_INFEASIBLE",
+      "artifacts": [
+        "EXPERIMENTS/W3_forced_hitset/summary.json"
+      ]
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "U_id": "U_cross_knn_left_vs_right_LBle8_r3",
+  "best_illegal_V": 24,
+  "final_cuts": 10951,
+  "n_add": 1936,
+  "n_rem": 56,
+  "parent_r2_U_id": "U_cross_knn_left_vs_right_LBle8_r2",
+  "phase": "cheap",
+  "points": null,
+  "r": 3,
+  "rounds": 485,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "a0cf4e5d2286b3c1ea7fe0b9cd5c631e1439f8be26091f2ef327ad9f30a264f5",
+  "wall_time_s": 68.74529576301575
+}

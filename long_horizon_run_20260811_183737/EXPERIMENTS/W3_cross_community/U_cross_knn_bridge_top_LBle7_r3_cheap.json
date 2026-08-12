@@ -1,0 +1,15 @@
+{
+  "U_id": "U_cross_knn_bridge_top_LBle7_r3",
+  "best_illegal_V": 21,
+  "final_cuts": 5418,
+  "n_add": 1234,
+  "n_rem": 39,
+  "parent_r2_U_id": "U_cross_knn_bridge_top_LBle7_r2",
+  "phase": "cheap",
+  "points": null,
+  "r": 3,
+  "rounds": 310,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "6afb5cb03a1dd50eca44350a78fa4ff9b3eb88fedc0d2561443cfbdc85dbdde5",
+  "wall_time_s": 32.45342659950256
+}

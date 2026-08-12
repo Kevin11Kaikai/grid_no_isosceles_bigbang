@@ -30,3 +30,58 @@
 }
 {"built": {"U_id": "U_cross_knn_corners_vs_sides_LBle7_r2", "tag": "corners_vs_sides", "rem_cids": [0, 1, 2, 3], "add_cids": [4, 5, 6, 7, 8, 9], "lb_max": 7, "n_rem": 52, "n_add": 1280, "universe_hash": "c420f5f79a2b4db69f116a2d9ac2f13454f28ac342d82bdaa8e23d3c2916b567"}}
 {"cheapkill_start": "U_cross_knn_corners_vs_sides_LBle7_r2", "budget_s": 150.0}
+{
+  "U_id": "U_cross_knn_corners_vs_sides_LBle7_r2",
+  "tag": "corners_vs_sides",
+  "rem_cids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "add_cids": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "lb_max": 7,
+  "n_rem": 52,
+  "n_add": 1280,
+  "universe_hash": "c420f5f79a2b4db69f116a2d9ac2f13454f28ac342d82bdaa8e23d3c2916b567",
+  "status": "INFEASIBLE_SCOPED",
+  "best_illegal_V": 13,
+  "rounds": 427,
+  "final_cuts": 6305,
+  "wall_time_s": 46.903550148010254,
+  "phase": "cheap"
+}
+{"built": {"U_id": "U_cross_knn_left_vs_right_LBle8_r2", "tag": "left_vs_right", "rem_cids": [6, 7, 8], "add_cids": [4, 5, 9], "lb_max": 8, "n_rem": 56, "n_add": 1936, "universe_hash": "a0cf4e5d2286b3c1ea7fe0b9cd5c631e1439f8be26091f2ef327ad9f30a264f5"}}
+{"cheapkill_start": "U_cross_knn_left_vs_right_LBle8_r2", "budget_s": 150.0}
+{
+  "U_id": "U_cross_knn_left_vs_right_LBle8_r2",
+  "tag": "left_vs_right",
+  "rem_cids": [
+    6,
+    7,
+    8
+  ],
+  "add_cids": [
+    4,
+    5,
+    9
+  ],
+  "lb_max": 8,
+  "n_rem": 56,
+  "n_add": 1936,
+  "universe_hash": "a0cf4e5d2286b3c1ea7fe0b9cd5c631e1439f8be26091f2ef327ad9f30a264f5",
+  "status": "INFEASIBLE_SCOPED",
+  "best_illegal_V": 15,
+  "rounds": 646,
+  "final_cuts": 10990,
+  "wall_time_s": 92.11032962799072,
+  "phase": "cheap"
+}
+{"done": true, "n_rows": 3}

@@ -1,0 +1,210 @@
+{
+  "any_legal": false,
+  "n_tried": 8,
+  "rows": [
+    {
+      "U_id": "U_forced_hs2_q24_18_r2",
+      "best_illegal_V": 11,
+      "final_cuts": 2450,
+      "hs": [
+        [
+          22,
+          4
+        ],
+        [
+          92,
+          15
+        ]
+      ],
+      "n_add": 2119,
+      "n_rem": 2,
+      "q": [
+        24,
+        18
+      ],
+      "rounds": 710,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "56b987243222aae483688ab55d32bea01dd0efb36a41bf0cdc74d2af02df980b",
+      "wall_time_s": 47.756046533584595
+    },
+    {
+      "U_id": "U_forced_hs2_q24_81_r2",
+      "best_illegal_V": 13,
+      "final_cuts": 2476,
+      "hs": [
+        [
+          22,
+          95
+        ],
+        [
+          91,
+          93
+        ]
+      ],
+      "n_add": 2123,
+      "n_rem": 2,
+      "q": [
+        24,
+        81
+      ],
+      "rounds": 710,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "0f017c4b48d3cf64b9ef33a0680a553c7abf8607772f2fa542ef37bb92ed3bf1",
+      "wall_time_s": 47.51323890686035
+    },
+    {
+      "U_id": "U_forced_hs2_q75_18_r2",
+      "best_illegal_V": 15,
+      "final_cuts": 2482,
+      "hs": [
+        [
+          8,
+          6
+        ],
+        [
+          77,
+          4
+        ]
+      ],
+      "n_add": 2123,
+      "n_rem": 2,
+      "q": [
+        75,
+        18
+      ],
+      "rounds": 711,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "d80c095b6a827bb75bc2bc2cb9eb36328007e053f7b9a307696744a781095f49",
+      "wall_time_s": 47.586993932724
+    },
+    {
+      "U_id": "U_forced_hs2_q75_81_r2",
+      "best_illegal_V": 15,
+      "final_cuts": 2500,
+      "hs": [
+        [
+          8,
+          93
+        ],
+        [
+          77,
+          95
+        ]
+      ],
+      "n_add": 2123,
+      "n_rem": 2,
+      "q": [
+        75,
+        81
+      ],
+      "rounds": 711,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "19380ff071a1e27f89c9fabda910f423ec2ac28d2563792b722bddb9f6bdfdab",
+      "wall_time_s": 47.83700132369995
+    },
+    {
+      "U_id": "U_forced_hs2_q3_17_r2",
+      "best_illegal_V": 14,
+      "final_cuts": 2426,
+      "hs": [
+        [
+          2,
+          18
+        ],
+        [
+          3,
+          61
+        ]
+      ],
+      "n_add": 2084,
+      "n_rem": 2,
+      "q": [
+        3,
+        17
+      ],
+      "rounds": 697,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "57caa20946082b3dadad1ec48bd45caff808609e2a185d61738c9171f9d04851",
+      "wall_time_s": 45.70478868484497
+    },
+    {
+      "U_id": "U_forced_hs2_q3_82_r2",
+      "best_illegal_V": 15,
+      "final_cuts": 2394,
+      "hs": [
+        [
+          2,
+          81
+        ],
+        [
+          3,
+          38
+        ]
+      ],
+      "n_add": 2084,
+      "n_rem": 2,
+      "q": [
+        3,
+        82
+      ],
+      "rounds": 699,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "8fa8190d649cb209f29311220fb01683818ae82c7bbe7f3032ff2d471776ad20",
+      "wall_time_s": 46.927343130111694
+    },
+    {
+      "U_id": "U_forced_hs2_q96_17_r2",
+      "best_illegal_V": 13,
+      "final_cuts": 2415,
+      "hs": [
+        [
+          96,
+          61
+        ],
+        [
+          97,
+          18
+        ]
+      ],
+      "n_add": 2084,
+      "n_rem": 2,
+      "q": [
+        96,
+        17
+      ],
+      "rounds": 699,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "5dd4365ed575165c81ca4452a021ee9b598d3be7bd39e4d518ccfe4f34be11cc",
+      "wall_time_s": 46.03041338920593
+    },
+    {
+      "U_id": "U_forced_hs2_q96_82_r2",
+      "best_illegal_V": 15,
+      "final_cuts": 2402,
+      "hs": [
+        [
+          96,
+          38
+        ],
+        [
+          97,
+          81
+        ]
+      ],
+      "n_add": 2084,
+      "n_rem": 2,
+      "q": [
+        96,
+        82
+      ],
+      "rounds": 697,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "47bbd0d3271fad0609369a94c770dce9d3fc140d86476e4ea63c198531248633",
+      "wall_time_s": 45.93717312812805
+    }
+  ],
+  "schema": "w3_forced_hitset_v1",
+  "status_counts": {
+    "INFEASIBLE_SCOPED": 8
+  }
+}

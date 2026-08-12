@@ -1,0 +1,18 @@
+{
+  "phase": "solve_mid_checkpoint",
+  "n": 100,
+  "symmetry_type": 0,
+  "mode": "defect",
+  "defect_budget": [
+    1,
+    12
+  ],
+  "seed": 401,
+  "rounds": 3138,
+  "cuts": 34173,
+  "elapsed_s": 2403.180035352707,
+  "model_hash": "b85d7777b839964990e1be02c9b19469f9841b3a92ff4e092eb46af036498b40",
+  "universe_id": "orb_t0_defect_core41_free261_def220_part0_h14",
+  "git_commit": "0937e1310b7979faa232cbcab53bde1f761bb31e",
+  "best_legal_size": 0
+}
