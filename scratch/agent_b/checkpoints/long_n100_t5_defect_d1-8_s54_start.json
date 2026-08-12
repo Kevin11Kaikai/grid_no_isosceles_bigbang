@@ -1,0 +1,15 @@
+{
+  "phase": "long_pilot_start",
+  "tag": "long_n100_t5_defect_d1-8_s54",
+  "n": 100,
+  "symmetry_type": 5,
+  "mode": "defect",
+  "defect_budget": [
+    1,
+    8
+  ],
+  "time_budget_s": 1080.0,
+  "seed": 54,
+  "git_commit": "3300c6dd62b17f5955fca7a41cb9b45b9d7538a1",
+  "axis_type": 5
+}
