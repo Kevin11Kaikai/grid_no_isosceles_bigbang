@@ -223,3 +223,8 @@
 - Evidence: `EXPERIMENTS/W3_orbit_enlarge/long2h_t0_defect_s901.json` ¡ª `TIMEOUT` size=0; `orb_t0_defect_core41_free361_def320_part0_h18`; 4108 rounds / 91864 cuts / ~7200s; hash `e8dddbff¡­`.
 - Level: `TIMEOUT_INCONCLUSIVE`.
 - Status: **Still open**; 2h on agent_c U did not produce FEASIBLE. Prefer new encodings / residual repair over further same-U wall-time.
+
+### LH-F035 ¡ª n64 forced HS2 r=2 (4 easiest LB=2 qs)
+- Evidence: `EXPERIMENTS/W3_n64_hitset/summary.json` ¡ª 4/4 `INFEASIBLE_SCOPED` in ~1s.
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD that n64 micro family**; aligns with n100 LH-F020.

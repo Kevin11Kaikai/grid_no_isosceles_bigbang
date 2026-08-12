@@ -1,0 +1,93 @@
+{
+  "schema": "w3_n64_hitset_v1",
+  "rows": [
+    {
+      "U_id": "U_n64_hs2_q1_25_r2",
+      "q": [
+        1,
+        25
+      ],
+      "hs": [
+        [
+          24,
+          52
+        ],
+        [
+          25,
+          62
+        ]
+      ],
+      "status": "INFEASIBLE_SCOPED",
+      "best_illegal_V": 12,
+      "rounds": 59,
+      "wall": 1.1879942417144775,
+      "n_add": 168
+    },
+    {
+      "U_id": "U_n64_hs2_q1_38_r2",
+      "q": [
+        1,
+        38
+      ],
+      "hs": [
+        [
+          24,
+          11
+        ],
+        [
+          25,
+          1
+        ]
+      ],
+      "status": "INFEASIBLE_SCOPED",
+      "best_illegal_V": 14,
+      "rounds": 58,
+      "wall": 1.1008822917938232,
+      "n_add": 168
+    },
+    {
+      "U_id": "U_n64_hs2_q4_26_r2",
+      "q": [
+        4,
+        26
+      ],
+      "hs": [
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          61
+        ]
+      ],
+      "status": "INFEASIBLE_SCOPED",
+      "best_illegal_V": 11,
+      "rounds": 59,
+      "wall": 1.1829180717468262,
+      "n_add": 168
+    },
+    {
+      "U_id": "U_n64_hs2_q4_37_r2",
+      "q": [
+        4,
+        37
+      ],
+      "hs": [
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          61
+        ]
+      ],
+      "status": "INFEASIBLE_SCOPED",
+      "best_illegal_V": 11,
+      "rounds": 60,
+      "wall": 1.2691149711608887,
+      "n_add": 168
+    }
+  ]
+}
