@@ -426,3 +426,18 @@
 - Evidence: `EXPERIMENTS/W3_new_families/family_E_n64.json` — readd paths best=112 (TIMEOUT/MAX_PROVED); forbid CAPACITY_FAIL <113; diagmod4_r0_readd `MAX_PROVED` 112.
 - Level: `SCOPED_MAX / CAPACITY_FAIL / TIMEOUT_INCONCLUSIVE`.
 - Status: **No n64 +1**; structured readd snaps to 112 basin.
+
+### LH-F071 — Newfam D: intersection-core of diverse grows
+- Evidence: `EXPERIMENTS/W3_new_families/family_D.json` — 6/6 pairs `SKIP_SMALL_INTER` (inter sizes 1–4). Grows nearly disjoint.
+- Level: `CHEAP_KILL`.
+- Status: **DEAD intersection-core from random diverse grows**; try same-mode or lattice pairs only if needed.
+
+### LH-F072 — Lattice destroy-refill (mod3 grow 135)
+- Evidence: `EXPERIMENTS/W3_new_families/family_lattice_destroy.json` — best **137** (block_checker TIMEOUT); several TIMEOUT≤135; diagband/rand25 CAPACITY_FAIL. `any_plus=false`.
+- Level: `TIMEOUT_INCONCLUSIVE / CAPACITY_FAIL`.
+- Status: **Lattice lineage plateaus ≤137** (same band as midset); deprioritize.
+
+### LH-F073 — Ring-even escalate
+- Evidence: `EXPERIMENTS/W3_new_families/family_ring_even_esc.json` — grow from even-ring S0 seed recovers **incumbent S0** hash `8a84216d…`; even_core_forbid_odd `MAX_PROVED` 130; grow+forbid CAPACITY_FAIL 164.
+- Level: `SCOPED_MAX` + S0-snap.
+- Status: **DEAD ring-even as leave-S0 seed** (snaps to S0).

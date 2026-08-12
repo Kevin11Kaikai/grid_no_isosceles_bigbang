@@ -1,0 +1,50 @@
+{
+  "schema": "w3_ring_even_esc_v1",
+  "grow": {
+    "size": 164,
+    "oracle": true,
+    "indep": true,
+    "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+    "seed_size": 104,
+    "mode": "boundary_first"
+  },
+  "rows": [
+    {
+      "status": "MAX_PROVED",
+      "core": 104,
+      "free": 80,
+      "best_legal_size": 130,
+      "proved_max": 130,
+      "rounds": 3,
+      "final_cuts": 524,
+      "wall_s": 0.4062514305114746,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 130,
+        "hash": "0f86326b0f22bc637c9d0b3b7dcf3f01e640155166707613ea5e60114216ea4f"
+      },
+      "best_hash": "0f86326b0f22bc637c9d0b3b7dcf3f01e640155166707613ea5e60114216ea4f",
+      "plan": "even_core_forbid_odd"
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 164,
+      "free": 0,
+      "best_legal_size": 164,
+      "proved_max": 164,
+      "plan": "even_grow_forbid_odd",
+      "grow_size": 164
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 164,
+      "free": 0,
+      "best_legal_size": 164,
+      "proved_max": 164,
+      "plan": "even_grow_readd"
+    }
+  ],
+  "best": 164,
+  "any_plus": false
+}

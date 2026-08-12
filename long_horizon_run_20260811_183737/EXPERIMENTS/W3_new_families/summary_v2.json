@@ -1,0 +1,11 @@
+{
+  "schema": "w3_newfam_v2_v1",
+  "phases": {
+    "lat": {
+      "best": 137,
+      "any_plus": false
+    }
+  },
+  "any_plus": false,
+  "best": 137
+}

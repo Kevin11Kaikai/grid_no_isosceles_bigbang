@@ -1,0 +1,37 @@
+{
+  "schema": "w3_newfam_D_v1",
+  "rows": [
+    {
+      "plan": "inter_0_1",
+      "status": "SKIP_SMALL_INTER",
+      "inter": 2
+    },
+    {
+      "plan": "inter_0_2",
+      "status": "SKIP_SMALL_INTER",
+      "inter": 2
+    },
+    {
+      "plan": "inter_0_3",
+      "status": "SKIP_SMALL_INTER",
+      "inter": 1
+    },
+    {
+      "plan": "inter_1_2",
+      "status": "SKIP_SMALL_INTER",
+      "inter": 2
+    },
+    {
+      "plan": "inter_1_3",
+      "status": "SKIP_SMALL_INTER",
+      "inter": 4
+    },
+    {
+      "plan": "inter_2_3",
+      "status": "SKIP_SMALL_INTER",
+      "inter": 1
+    }
+  ],
+  "best": 0,
+  "any_plus": false
+}
