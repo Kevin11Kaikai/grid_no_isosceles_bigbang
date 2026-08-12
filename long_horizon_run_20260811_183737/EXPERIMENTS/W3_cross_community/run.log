@@ -1,0 +1,32 @@
+{"built": {"U_id": "U_cross_knn_bridge_top_LBle7_r2", "tag": "bridge_top", "rem_cids": [6, 8], "add_cids": [0, 1, 2, 3, 4, 5, 7, 9], "lb_max": 7, "n_rem": 39, "n_add": 1234, "universe_hash": "6afb5cb03a1dd50eca44350a78fa4ff9b3eb88fedc0d2561443cfbdc85dbdde5"}}
+{"cheapkill_start": "U_cross_knn_bridge_top_LBle7_r2", "budget_s": 150.0}
+{
+  "U_id": "U_cross_knn_bridge_top_LBle7_r2",
+  "tag": "bridge_top",
+  "rem_cids": [
+    6,
+    8
+  ],
+  "add_cids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9
+  ],
+  "lb_max": 7,
+  "n_rem": 39,
+  "n_add": 1234,
+  "universe_hash": "6afb5cb03a1dd50eca44350a78fa4ff9b3eb88fedc0d2561443cfbdc85dbdde5",
+  "status": "INFEASIBLE_SCOPED",
+  "best_illegal_V": 14,
+  "rounds": 412,
+  "final_cuts": 5470,
+  "wall_time_s": 39.83649730682373,
+  "phase": "cheap"
+}
+{"built": {"U_id": "U_cross_knn_corners_vs_sides_LBle7_r2", "tag": "corners_vs_sides", "rem_cids": [0, 1, 2, 3], "add_cids": [4, 5, 6, 7, 8, 9], "lb_max": 7, "n_rem": 52, "n_add": 1280, "universe_hash": "c420f5f79a2b4db69f116a2d9ac2f13454f28ac342d82bdaa8e23d3c2916b567"}}
+{"cheapkill_start": "U_cross_knn_corners_vs_sides_LBle7_r2", "budget_s": 150.0}

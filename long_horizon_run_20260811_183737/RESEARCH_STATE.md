@@ -1,45 +1,49 @@
 # RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-12 (Gate2 Main close + Agent B Wave2 closure)  
-**Remote:** `origin/master` (sync after Gate2 commit)  
-**Phase:** Gate2 **PASS/CLOSED**; Wave3 ranking authorized. LH-4 enlarged orbit work remains live (separate from Wave2 B freeze).
+**Updated:** 2026-08-12 (Wave3 started post-Gate2)  
+**Remote:** `origin/master`  
+**Phase:** Gate2 **PASS/CLOSED**; Wave3 ranking funded; Explore→CheapKill loop active.
 
 ## Incumbent
 
-- n=64 **112** / n=100 **164** — no promotion; **no legal +1** from Wave2 A/B/C
+- n=64 **112** / n=100 **164** — no promotion; **no legal +1**
 
-## Wave2 closure (authoritative)
+## Wave3 ranking (funded)
 
-| Agent | Verdict | Headline |
+Canonical: `scratch/wave3/ranking_memo.md` (LH copy `WAVE3_RANKING.md`)
+
+| Rank | Route | Status |
 |---|---|---|
-| A | PASS | n100 r=2 + halos `INFEASIBLE_SCOPED`; n64 r=1 scoped INFEAS; multi-region no +1 |
-| B | PASS (COMPLETE) | No candidates; Type0 longs **TIMEOUT** size=0; many other axes scoped INFEAS |
-| C | PASS | Best V=3 @165 / V=2 @113; no V=0 |
-| Red Team | A/B/C PASS | Gate2 closed |
-| Gate2 | **PASS / CLOSED** | `scratch/wave2/gate2_decision.md`; `WAVE3_READY` |
+| R1 PRIMARY | Enlarged Type0 orbit-defect TIMEOUT | s401 45min in flight (`def220/h14`); next = xlarge 320/h18/`U_large` |
+| R2 SECONDARY | Cert-driven Hamming Rem/Add outside Wave2 U_* | several new U_ids cheap-killed SCOPED INFEAS; cross-knn pilots running |
+| BLOCKED | Agent C S0+1 soft grind | `scratch/wave3/agent_c_s0plus1_block.md` |
+| HOLD | FunSearch | no new structure yet |
 
-**Discipline:** TIMEOUT ≠ INFEASIBLE; scoped INFEAS ≠ global UB; C plateau ≠ impossibility.
+## Wave3 cheap-kill ledger (n100 r=2 unless noted)
 
-## Live lead (LH-4, post-Wave2)
+| U_id | Status | Notes |
+|---|---|---|
+| `U_cert_involved_e16_Add_e56_r2` | INFEASIBLE_SCOPED | <1s; LH-F015 |
+| `U_certfreq_top48_Add_LBle5_r2` | INFEASIBLE_SCOPED | ~4.5s; LH-F015 |
+| `U_cert_involved_e56_Add_LBle6_r2` | INFEASIBLE_SCOPED | ~24s |
+| `U_fullrem_Add_multicomm4_r2` | TIMEOUT_INCONCLUSIVE | ~9800 Add ≈ unrestricted; **deprioritized** |
+| Cross-knn community shells | running | `EXPERIMENTS/W3_cross_community/` |
 
-Enlarged defect orbits (`max_extra=220`, `max_defect=220`, `halo=14`) remain the open TIMEOUT track — distinct from Wave2 B frozen universes:
+## Live lead (R1)
 
 | Run | Status | Notes |
 |---|---|---|
 | Type0 20min s301 | TIMEOUT | 1921 rounds / 32186 cuts |
 | Type1 20min s302 | TIMEOUT | 114 rounds / 19919 cuts |
-| Type0 **45min** s401 | check / continue | see `EXPERIMENTS/LH4_orbit_enlarged/` |
+| Type0 **45min** s401 | in flight | mid-checkpoints under `scratch/agent_b/checkpoints/` |
+| Type0 xlarge s501 | queued | `SCRATCH/w3_orbit_enlarge_next.py` after s401 |
 
-## Critical process finding (unchanged)
+## Discipline
 
-All Wave2 `n100_V3` elites = **S0 ∪ {q}** (Hamming remove=0). Soft |S|=165 never left that basin.
+TIMEOUT ≠ INFEASIBLE; scoped INFEAS ≠ global UB; no seed grinding; dual-verify before promote.
 
-## Next 3 actions (Gate2 obstruction-driven)
+## Next 3 actions
 
-1. Wave3: fund open TIMEOUT Type0 enlargements and/or certificate-driven Hamming Rem/Add outside killed Wave2 U_ids.
-2. Do **not** grind C soft S0+1 seeds; require remove≥2 or nonlocal free vars.
-3. Main Wave3 ranking memo → top 1–2 routes; hold FunSearch.
-
-## Standing order
-
-Push after meaningful events; continue; no Hard Stop for polish.
+1. Collect s401 45min result; if TIMEOUT, launch xlarge Type0 (320/18/U_large, ≥60min).
+2. Finish cross-community cheap-kills; escalate only structured TIMEOUT survivors.
+3. Keep C S0+1 blocked; hold FunSearch.

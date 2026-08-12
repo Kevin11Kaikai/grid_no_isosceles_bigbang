@@ -1,0 +1,29 @@
+{
+  "U_id": "U_cross_knn_corners_vs_sides_LBle7_r2",
+  "add_cids": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "best_illegal_V": 13,
+  "final_cuts": 6305,
+  "lb_max": 7,
+  "n_add": 1280,
+  "n_rem": 52,
+  "phase": "cheap",
+  "points": null,
+  "rem_cids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "rounds": 427,
+  "status": "INFEASIBLE_SCOPED",
+  "tag": "corners_vs_sides",
+  "universe_hash": "c420f5f79a2b4db69f116a2d9ac2f13454f28ac342d82bdaa8e23d3c2916b567",
+  "wall_time_s": 46.903550148010254
+}

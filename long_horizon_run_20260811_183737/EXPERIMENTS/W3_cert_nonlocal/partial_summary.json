@@ -1,0 +1,25 @@
+{
+  "schema": "w3_cert_nonlocal_partial_v1",
+  "note": "Stopped before escalating near-full Add (multicomm4 ~9800 adds ≈ unrestricted). TIMEOUT there is low-information vs structured cross-community / orbit enlarge.",
+  "completed_cheap": [
+    {
+      "U_id": "U_cert_involved_e56_Add_LBle6_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "529a5b310f0a3ce40eb6d60903b39b8e8035614bc737084a9ab510dcab23ec70",
+      "wall_time_s": 23.91
+    },
+    {
+      "U_id": "U_fullrem_Add_multicomm4_r2",
+      "status": "TIMEOUT_INCONCLUSIVE",
+      "universe_hash": "f1a92804d0438984de10e56353f3ecc70dac1d979c77f6db74c9e11a64ca4801",
+      "n_add": 9800,
+      "note": "near-unrestricted Add; deprioritized (do not spend primary long budget)"
+    }
+  ],
+  "aborted": [
+    "U_fullrem_Add_multicomm4_r3",
+    "U_certfreq_top80_Add_midband_r2",
+    "long escalations"
+  ],
+  "redirect": "EXPERIMENTS/W3_cross_community + R1 orbit enlarge"
+}

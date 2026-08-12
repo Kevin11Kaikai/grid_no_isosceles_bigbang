@@ -22,10 +22,13 @@
 | LH-A1 | Joint blocker VC Rem for easiest-q pairs admits r=2 shells | **REJECTED** (joint_VC=4 always) | see LH-F001 |
 | LH-A2 | Global r=1 shell around official n100 S0 empty of +1 | `GLOBAL_SHELL_EXCLUSION` | do not re-spend |
 | LH-A3 | Low-LB cells have complementary (low joint VC) pairs | **REJECTED on 85-q sample** | LH-F002; try fullrem LB≤4 Add next |
-| LH-A4 | `U_fullrem_LBle4_r2` admits legal 165 | OPEN | CP-SAT now |
+| LH-A4 | `U_fullrem_LBle4_r2` admits legal 165 | **REJECTED** (LH-F004) | — |
 | LH-C1 | V=3 elites locally refillable to V=0 at \|S\|=165 | **REJECTED for tested halos** | LH-F003 |
-| LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy (Wave2 B closed no +1) | enlarge defect/halo/time (LH-4); do not treat Wave2 TIMEOUT as empty |
+| LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy (Wave2 B closed no +1) | W3 R1: enlarge defect/halo/time; s401 45min + xlarge queued |
 | LH-D1 | Residual communities beat Hamming U | **weakened** — refill infeasible; nonlocal free still open | |
+| W3-A1 | Cert-involved / certfreq Rem+low-LB Add r=2 admits 165 | **REJECTED** e16/e56/top48 (LH-F015/017) | try cross-knn / residual nonlocal only |
+| W3-A2 | Cross spatial-knn Rem/Add r=2 admits 165 | OPEN (bridge_top REJECTED) | corners/left-right pilots |
+| W3-C0 | Soft S0+1 fixed-card seed grind | **BLOCKED** (LH-F016) | require remove≥2 / new formulation |
 
 ## Frozen Wave2 facts (import)
 

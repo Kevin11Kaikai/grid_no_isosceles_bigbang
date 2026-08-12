@@ -71,6 +71,39 @@
         "audits/wave2_red_team.md",
         "scratch/red_team_wave2/summary.json"
       ]
+    },
+    {
+      "id": "E007",
+      "utc": "2026-08-12TWave3",
+      "event": "wave3_ranking_memo",
+      "summary": "Wave3 funds R1 enlarged Type0 orbit TIMEOUT and R2 cert-driven Hamming outside killed U_ids; blocks C S0+1 soft grind; holds FunSearch.",
+      "level": "PROCESS_DECISION",
+      "artifacts": [
+        "scratch/wave3/ranking_memo.md",
+        "scratch/wave3/agent_c_s0plus1_block.md",
+        "WAVE3_RANKING.md"
+      ]
+    },
+    {
+      "id": "E008",
+      "utc": "2026-08-12TWave3",
+      "event": "w3_cert_hamming_cheapkill",
+      "summary": "U_cert_involved_e16_Add_e56_r2 and U_certfreq_top48_Add_LBle5_r2 both INFEASIBLE_SCOPED in seconds; not global UB.",
+      "level": "SCOPED_INFEASIBLE",
+      "artifacts": [
+        "EXPERIMENTS/W3_cert_hamming/summary.json"
+      ]
+    },
+    {
+      "id": "E009",
+      "utc": "2026-08-12TWave3",
+      "event": "w3_cert_nonlocal_partial",
+      "summary": "e56/LBle6 INFEASIBLE_SCOPED; multicomm4 near-full Add TIMEOUT deprioritized; redirected to cross-knn structured Rem/Add.",
+      "level": "SCOPED_INFEASIBLE / TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_cert_nonlocal/partial_summary.json",
+        "EXPERIMENTS/W3_cert_nonlocal/U_cert_involved_e56_Add_LBle6_r2_cheap.json"
+      ]
     }
   ]
 }

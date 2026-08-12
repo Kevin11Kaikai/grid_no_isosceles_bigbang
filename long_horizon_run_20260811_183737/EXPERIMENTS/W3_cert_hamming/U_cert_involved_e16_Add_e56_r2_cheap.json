@@ -1,0 +1,233 @@
+{
+  "U_id": "U_cert_involved_e16_Add_e56_r2",
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "best_illegal_V": 6,
+  "final_cuts": 237,
+  "meta": {
+    "best_illegal_V": 6,
+    "claim_note": "INFEASIBLE under declared scope only; not a global upper bound",
+    "final_cuts": 237,
+    "git_commit": null,
+    "num_workers": 3,
+    "round_log": [
+      {
+        "V": 15,
+        "cuts_added": 14,
+        "n_cuts_total": 0,
+        "n_witness_cuts": 15,
+        "round": 1,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.014000415802001953
+      },
+      {
+        "V": 18,
+        "cuts_added": 14,
+        "n_cuts_total": 14,
+        "n_witness_cuts": 18,
+        "round": 2,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.044000864028930664
+      },
+      {
+        "V": 9,
+        "cuts_added": 9,
+        "n_cuts_total": 28,
+        "n_witness_cuts": 9,
+        "round": 3,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.09110212326049805
+      },
+      {
+        "V": 20,
+        "cuts_added": 17,
+        "n_cuts_total": 37,
+        "n_witness_cuts": 20,
+        "round": 4,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.12310314178466797
+      },
+      {
+        "V": 16,
+        "cuts_added": 16,
+        "n_cuts_total": 54,
+        "n_witness_cuts": 16,
+        "round": 5,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.1551990509033203
+      },
+      {
+        "V": 16,
+        "cuts_added": 13,
+        "n_cuts_total": 70,
+        "n_witness_cuts": 16,
+        "round": 6,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.18719863891601562
+      },
+      {
+        "V": 13,
+        "cuts_added": 9,
+        "n_cuts_total": 83,
+        "n_witness_cuts": 13,
+        "round": 7,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.21879315376281738
+      },
+      {
+        "V": 12,
+        "cuts_added": 12,
+        "n_cuts_total": 92,
+        "n_witness_cuts": 12,
+        "round": 8,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.25087857246398926
+      },
+      {
+        "V": 11,
+        "cuts_added": 11,
+        "n_cuts_total": 104,
+        "n_witness_cuts": 11,
+        "round": 9,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.2828786373138428
+      },
+      {
+        "V": 21,
+        "cuts_added": 19,
+        "n_cuts_total": 115,
+        "n_witness_cuts": 21,
+        "round": 10,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.3145182132720947
+      },
+      {
+        "V": 16,
+        "cuts_added": 16,
+        "n_cuts_total": 134,
+        "n_witness_cuts": 16,
+        "round": 11,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.3455166816711426
+      },
+      {
+        "V": 11,
+        "cuts_added": 11,
+        "n_cuts_total": 150,
+        "n_witness_cuts": 11,
+        "round": 12,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.37651658058166504
+      },
+      {
+        "V": 13,
+        "cuts_added": 10,
+        "n_cuts_total": 161,
+        "n_witness_cuts": 13,
+        "round": 13,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.40851664543151855
+      },
+      {
+        "V": 10,
+        "cuts_added": 7,
+        "n_cuts_total": 171,
+        "n_witness_cuts": 10,
+        "round": 14,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.44051671028137207
+      },
+      {
+        "V": 9,
+        "cuts_added": 9,
+        "n_cuts_total": 178,
+        "n_witness_cuts": 9,
+        "round": 15,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.4725489616394043
+      },
+      {
+        "V": 23,
+        "cuts_added": 22,
+        "n_cuts_total": 187,
+        "n_witness_cuts": 23,
+        "round": 16,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.5045180320739746
+      },
+      {
+        "V": 16,
+        "cuts_added": 12,
+        "n_cuts_total": 209,
+        "n_witness_cuts": 16,
+        "round": 17,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.5357022285461426
+      },
+      {
+        "V": 13,
+        "cuts_added": 10,
+        "n_cuts_total": 221,
+        "n_witness_cuts": 13,
+        "round": 18,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.567739725112915
+      },
+      {
+        "V": 6,
+        "cuts_added": 6,
+        "n_cuts_total": 231,
+        "n_witness_cuts": 6,
+        "round": 19,
+        "selected_size": 165,
+        "solver_status": "OPTIMAL",
+        "t": 0.6147408485412598
+      },
+      {
+        "n_cuts": 237,
+        "round": 20,
+        "solver_status": "INFEASIBLE",
+        "t": 0.655501127243042
+      }
+    ],
+    "rounds": 20,
+    "scope": {
+      "U_id": "U_cert_involved_e16_Add_e56_r2",
+      "halo": "none",
+      "n": 100,
+      "r": 2,
+      "seed": 501,
+      "symmetry_mode": "asymmetric",
+      "time_limit_s": 90.0,
+      "universe_hash": "b59dcc1ea84b6fd49c75292b73276e30e66947ee86f5a4c888d5f2211f8f1f18"
+    },
+    "time_to_best_illegal_s": 0.6147408485412598,
+    "wall_time_s": 0.655501127243042
+  },
+  "n_add": 56,
+  "n_rem": 84,
+  "n_vars": 140,
+  "note": "certificate-involved Rem for LB<=2 qs; Add LB<=3; r=2; not Wave2 score-U",
+  "points": null,
+  "rounds": 20,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "b59dcc1ea84b6fd49c75292b73276e30e66947ee86f5a4c888d5f2211f8f1f18",
+  "wall_time_s": 0.9093852043151855
+}

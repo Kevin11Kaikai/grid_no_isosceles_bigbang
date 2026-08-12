@@ -1,0 +1,29 @@
+{
+  "U_id": "U_cross_knn_bridge_top_LBle7_r2",
+  "add_cids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9
+  ],
+  "best_illegal_V": 14,
+  "final_cuts": 5470,
+  "lb_max": 7,
+  "n_add": 1234,
+  "n_rem": 39,
+  "phase": "cheap",
+  "points": null,
+  "rem_cids": [
+    6,
+    8
+  ],
+  "rounds": 412,
+  "status": "INFEASIBLE_SCOPED",
+  "tag": "bridge_top",
+  "universe_hash": "6afb5cb03a1dd50eca44350a78fa4ff9b3eb88fedc0d2561443cfbdc85dbdde5",
+  "wall_time_s": 39.83649730682373
+}

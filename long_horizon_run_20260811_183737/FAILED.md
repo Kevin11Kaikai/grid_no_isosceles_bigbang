@@ -118,3 +118,23 @@
 - Level: mix `SCOPED_INFEASIBLE` + `TIMEOUT_INCONCLUSIVE` — **not** global empty.
 - Status: **Wave2 B route frozen as no-+1 under those universes/budgets**; Type0 TIMEOUT remains **open** for enlarged/longer models (LH-4). Do not re-label TIMEOUT as INFEASIBLE.
 
+### LH-F015 — W3 cert-involved e16 / certfreq-top48 Hamming r=2
+- Evidence: `EXPERIMENTS/W3_cert_hamming/summary.json` — both `INFEASIBLE_SCOPED` in <5s (hashes `b59dcc1e…`, `8ac6c1d5…`).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD those U_ids**; nonlocal / broader Add and orbit enlarge remain live.
+
+### LH-F016 — Agent C S0+1 soft seed grinding (Wave3 block)
+- Evidence: Gate2 + elite Hamming-remove=0 analysis; `scratch/wave3/agent_c_s0plus1_block.md`.
+- Level: process / basin diagnostic.
+- Status: **BLOCKED** for primary budget; reopen only with remove≥2 or nonlocal free vars / new formulation.
+
+### LH-F017 — W3 cert-involved e56 Add LBle6 r=2
+- Evidence: `EXPERIMENTS/W3_cert_nonlocal/U_cert_involved_e56_Add_LBle6_r2_cheap.json` — `INFEASIBLE_SCOPED` (~24s, hash `529a5b31…`).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD that U_id**.
+
+### LH-F018 — W3 cross-knn bridge_top LBle7 r=2
+- Evidence: `EXPERIMENTS/W3_cross_community/U_cross_knn_bridge_top_LBle7_r2_cheap.json` — `INFEASIBLE_SCOPED` (~40s, hash `6afb5cb0…`).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD that U_id**; other cross partitions still open until tested.
+

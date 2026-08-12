@@ -1,0 +1,39 @@
+{"built": "U_cert_involved_e56_Add_LBle6_r2", "r": 2, "n_rem": 152, "n_add": 692, "hash": "529a5b310f0a3ce4"}
+{"built": "U_fullrem_Add_multicomm4_r2", "r": 2, "n_rem": 164, "n_add": 9800, "hash": "f1a92804d0438984"}
+{"built": "U_fullrem_Add_multicomm4_r3", "r": 3, "n_rem": 164, "n_add": 9800, "hash": "f1a92804d0438984"}
+{"built": "U_certfreq_top80_Add_midband_r2", "r": 2, "n_rem": 80, "n_add": 5612, "hash": "e0b97c81347030e7"}
+{"cheapkill_start": "U_cert_involved_e56_Add_LBle6_r2", "budget_s": 120.0}
+{
+  "U_id": "U_cert_involved_e56_Add_LBle6_r2",
+  "r": 2,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "529a5b310f0a3ce40eb6d60903b39b8e8035614bc737084a9ab510dcab23ec70",
+  "n_rem": 152,
+  "n_add": 692,
+  "n_vars": 844,
+  "best_illegal_V": 13,
+  "rounds": 233,
+  "final_cuts": 5827,
+  "wall_time_s": 23.91117572784424,
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "note": "broader cert-involved Rem (LB<=3); Add LB<=6",
+  "phase": "cheap"
+}
+{"cheapkill_start": "U_fullrem_Add_multicomm4_r2", "budget_s": 120.0}
+{
+  "U_id": "U_fullrem_Add_multicomm4_r2",
+  "r": 2,
+  "status": "TIMEOUT_INCONCLUSIVE",
+  "universe_hash": "f1a92804d0438984de10e56353f3ecc70dac1d979c77f6db74c9e11a64ca4801",
+  "n_rem": 164,
+  "n_add": 9800,
+  "n_vars": 9964,
+  "best_illegal_V": 21,
+  "rounds": 325,
+  "final_cuts": 14837,
+  "wall_time_s": 120.44694995880127,
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "note": "full Rem; Add=nonlocal multi-community qs (>=4 knn CCs)",
+  "phase": "cheap"
+}
+{"cheapkill_start": "U_fullrem_Add_multicomm4_r3", "budget_s": 120.0}

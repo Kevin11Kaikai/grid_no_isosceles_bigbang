@@ -1,0 +1,38 @@
+{"built": "U_cert_involved_e16_Add_e56_r2", "n_rem": 84, "n_add": 56, "hash": "b59dcc1ea84b6fd4"}
+{"built": "U_certfreq_top48_Add_LBle5_r2", "n_rem": 48, "n_add": 316, "hash": "8ac6c1d5a6ddf0e8"}
+{"cheapkill_start": "U_cert_involved_e16_Add_e56_r2", "budget_s": 90.0}
+{
+  "phase": "cheap",
+  "U_id": "U_cert_involved_e16_Add_e56_r2",
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "b59dcc1ea84b6fd49c75292b73276e30e66947ee86f5a4c888d5f2211f8f1f18",
+  "n_rem": 84,
+  "n_add": 56,
+  "n_vars": 140,
+  "best_illegal_V": 6,
+  "rounds": 20,
+  "final_cuts": 237,
+  "wall_time_s": 0.9093852043151855,
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "note": "certificate-involved Rem for LB<=2 qs; Add LB<=3; r=2; not Wave2 score-U"
+}
+{"cheapkill_start": "U_certfreq_top48_Add_LBle5_r2", "budget_s": 90.0}
+{
+  "phase": "cheap",
+  "U_id": "U_certfreq_top48_Add_LBle5_r2",
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "8ac6c1d5a6ddf0e882e64326a42f2e923e816a45bce495560ce1e4d397ba2e7b",
+  "n_rem": 48,
+  "n_add": 316,
+  "n_vars": 364,
+  "best_illegal_V": 10,
+  "rounds": 107,
+  "final_cuts": 1273,
+  "wall_time_s": 4.487780809402466,
+  "baseline_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "note": "Rem=top48 q-weighted cert-frequency verts; Add LB<=5; r=2"
+}
+{
+  "summary": "D:\\others\\grid_no_isosceles_bigbang\\long_horizon_run_20260811_183737\\EXPERIMENTS\\W3_cert_hamming\\summary.json",
+  "n_rows": 2
+}
