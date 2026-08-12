@@ -24,10 +24,11 @@
 | s501 Type0 xlarge | **free361/def320/h18** | 3600s | **86273** | TIMEOUT size=0 |
 | s521 Type1 xlarge | free321/def320/h18 | 2400s | 68574 | TIMEOUT size=0 |
 | s601 Type1 xlarge | free321/def320/h18 | 2400s | 76897 | TIMEOUT size=0 |
-| Type2 xlarge | (SCRATCH live) | — | — | running |
-| Type3/4 xlarge | queued | 1800s ea | — | next |
+| Type2 xlarge s702 | free321/def320/h18 | 1800s | 75512 | TIMEOUT size=0 (LH-F027) |
+| Type3 xlarge s703 | — | 1800s | — | **running** |
+| Type4 xlarge | queued | 1800s | — | next |
 
-Cut growth on Type0 xlarge (34k→86k) shows search still exploring; no FEASIBLE yet.
+Cut growth on Type0 xlarge (34k→86k) shows search still exploring; no FEASIBLE yet. Forced rem≥2 LS best_V=29 (LH-F026).
 
 ## R2 cert micro obstruction map
 
@@ -35,6 +36,6 @@ Single-HS2 (8/8) and joint-HS pairs (10/10) `INFEASIBLE_SCOPED` under large Add 
 
 ## Next 3
 
-1. Finish Type2 live; run Type3/4 enlarged defects.  
-2. If all TIMEOUT: try longer Type0 (≥2h) **or** new core/defect policy (not same U).  
+1. Finish Type3; run Type4 enlarged defect.  
+2. If TIMEOUT: new defect-pool policy (cert-prioritized) or ≥2h Type0 — not same U replay.  
 3. Keep R2 from reopening killed U_ids; no C S0+1; FunSearch held.

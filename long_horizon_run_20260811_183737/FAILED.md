@@ -178,3 +178,8 @@
 - Level: `WEAK_NEGATIVE` / search plateau (not scoped UNSAT).
 - Status: **Deprioritize naive swap LS**; need stronger neighborhood or exact residual repair.
 
+### LH-F027 — Type2 xlarge defect s702 (30min)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/xlarge_t2_defect_s702.json` — `TIMEOUT` size=0; `orb_t2_defect_core0_free321_def320_part0_h18`; mid ~418r/73k cuts @16min.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Open**; continue Type3/4 enlarge then reconsider defect-pool construction.
+
