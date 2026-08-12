@@ -1,0 +1,84 @@
+{
+  "schema": "w3_rem2_soft_brute_v1",
+  "rows": [
+    {
+      "seed": 504,
+      "V": 25,
+      "status": "CAPACITY_FAIL",
+      "core": 160,
+      "addable": 4
+    },
+    {
+      "seed": 601,
+      "V": 31,
+      "status": "INFEASIBLE_SCOPED",
+      "core": 160,
+      "addable": 5,
+      "need": 5,
+      "combos": 1
+    },
+    {
+      "seed": 601,
+      "V": 31,
+      "status": "INFEASIBLE_SCOPED",
+      "core": 155,
+      "addable": 10,
+      "need": 10,
+      "combos": 1
+    },
+    {
+      "seed": 601,
+      "V": 31,
+      "status": "INFEASIBLE_SCOPED",
+      "core": 150,
+      "addable": 15,
+      "need": 15,
+      "combos": 1
+    },
+    {
+      "seed": 605,
+      "V": 28,
+      "status": "CAPACITY_FAIL",
+      "core": 160,
+      "addable": 4
+    },
+    {
+      "seed": 605,
+      "V": 28,
+      "status": "CAPACITY_FAIL",
+      "core": 155,
+      "addable": 9
+    },
+    {
+      "seed": 605,
+      "V": 28,
+      "status": "INFEASIBLE_SCOPED",
+      "core": 150,
+      "addable": 16,
+      "need": 15,
+      "combos": 16
+    },
+    {
+      "seed": 702,
+      "V": 28,
+      "status": "CAPACITY_FAIL",
+      "core": 160,
+      "addable": 4
+    },
+    {
+      "seed": 702,
+      "V": 28,
+      "status": "CAPACITY_FAIL",
+      "core": 155,
+      "addable": 9
+    },
+    {
+      "seed": 702,
+      "V": 28,
+      "status": "CAPACITY_FAIL",
+      "core": 150,
+      "addable": 14
+    }
+  ],
+  "any_legal": false
+}

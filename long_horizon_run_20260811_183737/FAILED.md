@@ -248,3 +248,8 @@
 - Evidence: `EXPERIMENTS/W3_rem2_residual/soft_core_extend_long.json` ¡ª core160 need=5: 30min TIMEOUT (4451r/105k cuts); core155 need=10: 20min TIMEOUT.
 - Level: `TIMEOUT_INCONCLUSIVE`.
 - Status: **Open**; maximize-from-core160 launched to prove max size.
+
+### LH-F039 ¡ª rem2 soft cores capacity / brute
+- Evidence: `EXPERIMENTS/W3_rem2_residual/soft_brute_capacity.json` + `addable_screen.json` ¡ª soft cores ~150¨C160 typically have addable¡Öneed; seed504 k=5 CAPACITY_FAIL (4<5 ? max¡Ü164); seed601 k=5/10/15 unique combos all `INFEASIBLE_SCOPED`.
+- Level: `SCOPED_INFEASIBLE` / `CAPACITY_FAIL`.
+- Status: **Soft near-full cores dead for these seeds**; prefer full-involved strip + addable-restricted exact extend.

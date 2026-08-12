@@ -1,29 +1,27 @@
 ﻿# NEXT_SESSION (≤1 page)
 
-**Run:** `long_horizon_run_20260811_183737/`
+**Run:** `long_horizon_run_20260811_183737/`  
 **Read:** `RESEARCH_STATE.md`, `FAILED.md`, `scratch/wave3/ranking_memo.md`
 
 ## Status
 
-Gate2 CLOSED → Wave3 executed. Incumbents **still 112 / 164**. **No legal +1.** FunSearch held. C S0+1 blocked.
+Wave3 post-Gate2. Incumbents **112/164**. **No legal +1.** FunSearch held. C S0+1 blocked.
 
-## Wave3 ranking outcomes
+## Done (high signal)
 
-| Route | Result |
-|---|---|
-| R1 enlarged soft_core orbit (types 0–4, mega, cert_lb2) | All **TIMEOUT size=0** (not INFEAS). Largest: free401/h20 @2h, 121k cuts. |
-| R1 fix_core | **SCOPED INFEAS** (LH-F033) — do not use |
-| R2 cert Hamming / HS2 / joint-HS / cross-knn | **SCOPED INFEAS** (LH-F015–F022, F035) |
-| C S0+1 soft grind | **BLOCKED** |
+- Soft_core orbit types **0–6** xlarge / mega / cert_lb2: all **TIMEOUT size=0** (TIMEOUT≠INFEAS).
+- `fix_core=True` Type0: **SCOPED INFEAS** (LH-F033).
+- Cert Hamming / HS2 / joint-HS / cross-knn / n64 HS2: **SCOPED INFEAS** (LH-F015–F022, F035).
+- rem2 residual: full involved-strip core extend **INFEASIBLE_SCOPED**; soft_core extend TIMEOUT.
 
-## Live
+## Live lead (new formulation)
 
-- Type5 then Type6 xlarge 30min each (`EXPERIMENTS/W3_orbit_enlarge/t56_job.py`).
+**`SCRATCH/w3_rem2_core_maximize.py`** — strip top conflict pivots from V=25 rem2 soft state → legal core (~160) → maximize free adds with lazy cuts. Output: `EXPERIMENTS/W3_rem2_residual/core160_maximize.json` (+ `CANDIDATES/` if ≥165 dual-ok).
 
-## Resume priorities
+## Resume
 
-1. Collect `long_t5_defect_s851_xlarge.json` / `long_t6_defect_s861_xlarge.json`.
-2. If still TIMEOUT: **stop replaying soft Type0 enlargements**; invent new model (different cardinality exchange, nonlocal residual with remove≥2 outside killed U_ids, or structure not tried).
-3. Dual-verify any |S|≥165 before promote / claim_registry touch.
+1. Collect `core160_maximize.json`; if `best_legal_size≥165` and dual OK → certificate bundle + promote path.  
+2. Else: vary strip-k / longer wall / different soft seeds with **remove≥2** (not S0+1).  
+3. Do **not** replay soft Type0 orbit same-U short runs; FunSearch still held unless new structure justifies.
 
-Push checkpoints; no force-push; ignore `.venv_solver`.
+Push; no force-push; ignore `.venv_solver`.

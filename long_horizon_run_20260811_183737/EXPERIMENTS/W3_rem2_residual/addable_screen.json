@@ -1,0 +1,431 @@
+{
+  "schema": "w3_rem2_addable_screen_v1",
+  "n": 9,
+  "hopeful": [
+    {
+      "tag": "seed504_v25",
+      "V": 25,
+      "k": 0,
+      "core": 121,
+      "addable": 61,
+      "max_possible": 182,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed601_v31",
+      "V": 31,
+      "k": 0,
+      "core": 110,
+      "addable": 82,
+      "max_possible": 192,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed601_v31",
+      "V": 31,
+      "k": 5,
+      "core": 160,
+      "addable": 5,
+      "max_possible": 165,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed601_v31",
+      "V": 31,
+      "k": 10,
+      "core": 155,
+      "addable": 10,
+      "max_possible": 165,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed601_v31",
+      "V": 31,
+      "k": 15,
+      "core": 150,
+      "addable": 15,
+      "max_possible": 165,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed602_v36",
+      "V": 36,
+      "k": 0,
+      "core": 104,
+      "addable": 121,
+      "max_possible": 225,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed603_v36",
+      "V": 36,
+      "k": 0,
+      "core": 108,
+      "addable": 111,
+      "max_possible": 219,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed604_v29",
+      "V": 29,
+      "k": 0,
+      "core": 112,
+      "addable": 82,
+      "max_possible": 194,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed605_v28",
+      "V": 28,
+      "k": 0,
+      "core": 113,
+      "addable": 90,
+      "max_possible": 203,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed605_v28",
+      "V": 28,
+      "k": 15,
+      "core": 150,
+      "addable": 16,
+      "max_possible": 166,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed701_v35",
+      "V": 35,
+      "k": 0,
+      "core": 108,
+      "addable": 109,
+      "max_possible": 217,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed702_v28",
+      "V": 28,
+      "k": 0,
+      "core": 117,
+      "addable": 65,
+      "max_possible": 182,
+      "can_reach_165": true
+    },
+    {
+      "tag": "seed703_v35",
+      "V": 35,
+      "k": 0,
+      "core": 110,
+      "addable": 82,
+      "max_possible": 192,
+      "can_reach_165": true
+    }
+  ],
+  "results": [
+    {
+      "tag": "seed504_v25",
+      "V": 25,
+      "rows": [
+        {
+          "k": 0,
+          "core": 121,
+          "addable": 61,
+          "max_possible": 182,
+          "can_reach_165": true
+        },
+        {
+          "k": 5,
+          "core": 160,
+          "addable": 4,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 10,
+          "core": 155,
+          "addable": 9,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 15,
+          "core": 152,
+          "addable": 12,
+          "max_possible": 164,
+          "can_reach_165": false
+        }
+      ]
+    },
+    {
+      "tag": "seed601_v31",
+      "V": 31,
+      "rows": [
+        {
+          "k": 0,
+          "core": 110,
+          "addable": 82,
+          "max_possible": 192,
+          "can_reach_165": true
+        },
+        {
+          "k": 5,
+          "core": 160,
+          "addable": 5,
+          "max_possible": 165,
+          "can_reach_165": true
+        },
+        {
+          "k": 10,
+          "core": 155,
+          "addable": 10,
+          "max_possible": 165,
+          "can_reach_165": true
+        },
+        {
+          "k": 15,
+          "core": 150,
+          "addable": 15,
+          "max_possible": 165,
+          "can_reach_165": true
+        }
+      ]
+    },
+    {
+      "tag": "seed602_v36",
+      "V": 36,
+      "rows": [
+        {
+          "k": 0,
+          "core": 104,
+          "addable": 121,
+          "max_possible": 225,
+          "can_reach_165": true
+        },
+        {
+          "k": 5,
+          "core": 159,
+          "addable": 5,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 10,
+          "core": 154,
+          "addable": 10,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 15,
+          "core": 149,
+          "addable": 15,
+          "max_possible": 164,
+          "can_reach_165": false
+        }
+      ]
+    },
+    {
+      "tag": "seed603_v36",
+      "V": 36,
+      "rows": [
+        {
+          "k": 0,
+          "core": 108,
+          "addable": 111,
+          "max_possible": 219,
+          "can_reach_165": true
+        },
+        {
+          "k": 5,
+          "core": 160,
+          "addable": 4,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 10,
+          "core": 155,
+          "addable": 9,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 15,
+          "core": 150,
+          "addable": 14,
+          "max_possible": 164,
+          "can_reach_165": false
+        }
+      ]
+    },
+    {
+      "tag": "seed604_v29",
+      "V": 29,
+      "rows": [
+        {
+          "k": 0,
+          "core": 112,
+          "addable": 82,
+          "max_possible": 194,
+          "can_reach_165": true
+        },
+        {
+          "k": 5,
+          "core": 159,
+          "addable": 5,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 10,
+          "core": 154,
+          "addable": 10,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 15,
+          "core": 149,
+          "addable": 15,
+          "max_possible": 164,
+          "can_reach_165": false
+        }
+      ]
+    },
+    {
+      "tag": "seed605_v28",
+      "V": 28,
+      "rows": [
+        {
+          "k": 0,
+          "core": 113,
+          "addable": 90,
+          "max_possible": 203,
+          "can_reach_165": true
+        },
+        {
+          "k": 5,
+          "core": 160,
+          "addable": 4,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 10,
+          "core": 155,
+          "addable": 9,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 15,
+          "core": 150,
+          "addable": 16,
+          "max_possible": 166,
+          "can_reach_165": true
+        }
+      ]
+    },
+    {
+      "tag": "seed701_v35",
+      "V": 35,
+      "rows": [
+        {
+          "k": 0,
+          "core": 108,
+          "addable": 109,
+          "max_possible": 217,
+          "can_reach_165": true
+        },
+        {
+          "k": 5,
+          "core": 159,
+          "addable": 5,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 10,
+          "core": 155,
+          "addable": 9,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 15,
+          "core": 150,
+          "addable": 14,
+          "max_possible": 164,
+          "can_reach_165": false
+        }
+      ]
+    },
+    {
+      "tag": "seed702_v28",
+      "V": 28,
+      "rows": [
+        {
+          "k": 0,
+          "core": 117,
+          "addable": 65,
+          "max_possible": 182,
+          "can_reach_165": true
+        },
+        {
+          "k": 5,
+          "core": 160,
+          "addable": 4,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 10,
+          "core": 155,
+          "addable": 9,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 15,
+          "core": 150,
+          "addable": 14,
+          "max_possible": 164,
+          "can_reach_165": false
+        }
+      ]
+    },
+    {
+      "tag": "seed703_v35",
+      "V": 35,
+      "rows": [
+        {
+          "k": 0,
+          "core": 110,
+          "addable": 82,
+          "max_possible": 192,
+          "can_reach_165": true
+        },
+        {
+          "k": 5,
+          "core": 159,
+          "addable": 5,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 10,
+          "core": 155,
+          "addable": 9,
+          "max_possible": 164,
+          "can_reach_165": false
+        },
+        {
+          "k": 15,
+          "core": 150,
+          "addable": 14,
+          "max_possible": 164,
+          "can_reach_165": false
+        }
+      ]
+    }
+  ]
+}
