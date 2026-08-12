@@ -1,2 +1,18 @@
 {"core": 87, "free": 335, "need": 78, "witnesses": 45}
 {"tag": "soft_s801_long", "round": 20, "cuts": 4860, "note": "round_unknown_continue", "elapsed": 212.15073823928833}
+{"tag": "soft_s801_long", "round": 30, "cuts": 4860, "note": "round_unknown_continue", "elapsed": 514.0775213241577}
+{"tag": "soft_s801_long", "round": 40, "cuts": 4860, "note": "round_unknown_continue", "elapsed": 815.8540773391724}
+{"tag": "soft_s801_long", "round": 50, "cuts": 4860, "note": "round_unknown_continue", "elapsed": 1117.918496131897}
+{"tag": "soft_s801_long", "round": 60, "cuts": 4860, "note": "round_unknown_continue", "elapsed": 1419.9019396305084}
+{"tag": "soft_s801_long", "round": 70, "cuts": 4860, "note": "round_unknown_continue", "elapsed": 1721.6671345233917}
+{
+  "tag": "soft_s801_long",
+  "status": "TIMEOUT",
+  "core_size": 87,
+  "need": 78,
+  "free": 335,
+  "rounds": 73,
+  "final_cuts": 4860,
+  "wall_s": 1800.05100274086,
+  "dual": null
+}

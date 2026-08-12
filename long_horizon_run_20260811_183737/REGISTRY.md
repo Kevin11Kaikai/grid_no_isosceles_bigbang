@@ -24,14 +24,16 @@
 | LH-A3 | Low-LB cells have complementary (low joint VC) pairs | **REJECTED on 85-q sample** | LH-F002; try fullrem LB≤4 Add next |
 | LH-A4 | `U_fullrem_LBle4_r2` admits legal 165 | **REJECTED** (LH-F004) | — |
 | LH-C1 | V=3 elites locally refillable to V=0 at \|S\|=165 | **REJECTED for tested halos** | LH-F003 |
-| LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy | Types0–4 xlarge + cert_lb2 TIMEOUT; s901 Type0 2h in flight |
+| LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy | Types0–6 xlarge + cert_lb2 + 2h TIMEOUT; deprioritize same-U wall |
 | LH-D1 | Residual communities beat Hamming U | **weakened** — refill infeasible; nonlocal free still open | |
-| W3-A1 | Cert-involved / certfreq Rem+low-LB Add r=2 admits 165 | **REJECTED** e16/e56/top48 (LH-F015/017) | try cross-knn / residual nonlocal only |
-| W3-A2 | Cross spatial-knn Rem/Add r=2/3 admits 165 | **REJECTED** (LH-F018/019) | need new Rem/Add or orbit |
+| W3-A1 | Cert-involved / certfreq Rem+low-LB Add r=2 admits 165 | **REJECTED** e16/e56/top48 (LH-F015/017) | — |
+| W3-A2 | Cross spatial-knn Rem/Add r=2/3 admits 165 | **REJECTED** (LH-F018/019) | — |
 | W3-A3 | Force exact HS2 for easy q + large Add ⇒ legal 165 | **REJECTED** 8/8 (LH-F020) | — |
-| W3-A4 | Joint HS pair forced-delete r=|Rem| ⇒ legal 165 | **REJECTED** 10/10 (LH-F022) | orbit primary |
-| W3-C1 | Forced rem≥2 fixed-card LS reaches V=0 | **weakened** best_V≈28–29 (LH-F026) | exact/residual, not more swap LS |
-| W3-C0 | Soft S0+1 fixed-card seed grind | **BLOCKED** (LH-F016) | require remove≥2 / new formulation |
+| W3-A4 | Joint HS pair forced-delete r=|Rem| ⇒ legal 165 | **REJECTED** 10/10 (LH-F022) | — |
+| W3-C1 | Forced rem≥2 fixed-card LS reaches V=0 | **weakened** best_V≈25–29 (LH-F026) | — |
+| W3-C0 | Soft S0+1 fixed-card seed grind | **BLOCKED** (LH-F016) | — |
+| W3-G1 | Pattern/grow exact-LNS reaches ≥165 | **weakened** best 133–135 (LH-F046) | LNS from S0 / large-destroy |
+| W3-R3 | rem3 residual elites repair to 165 | **REJECTED** s802; s801 soft TIMEOUT (LH-F045/046) | — |
 
 ## Frozen Wave2 facts (import)
 

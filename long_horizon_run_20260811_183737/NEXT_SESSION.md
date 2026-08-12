@@ -1,18 +1,23 @@
-﻿# NEXT_SESSION (≤1 page)
+﻿# NEXT_SESSION
 
 **Run:** `long_horizon_run_20260811_183737/`  
-**Read:** `RESEARCH_STATE.md`, `FAILED.md` (through LH-F045), `scratch/wave3/ranking_memo.md`
+**Read:** `RESEARCH_STATE.md`, `FAILED.md` (LH-F046+)
 
 ## Status
-Wave3. Incumbents **112/164**. No legal +1. Hamming spatial/dispersed families dead. rem3 residual deprioritized (max=164 on s802 core).
 
-## Live
-- `W3_pattern_lns` (screen→LNS)
-- `W3_from_scratch` exact LNS + grow_v3
+Incumbents 112/164. Parallel pattern/grow/rem3 jobs **harvested** — no +1.
 
-## Resume
-1. Harvest pattern/from-scratch; dual-verify ≥165 before promote.
-2. If plateau <164: longer LNS on best grow/pattern starts; optional rem3 s801 soft long (TIMEOUT-open only).
-3. Avoid killed Hamming / rem2 / S0+1 / rem3 s802 residual.
+## Harvest snapshot
 
-Push; no force-push; ignore `.venv_solver`.
+- pattern-LNS best 133; grow-LNS best 134; grow_v3 best 135  
+- rem3 s802 maximize recovered incumbent 164 (hash `8a84216d…`); s801 soft TIMEOUT 1800s
+
+## Resume / live
+
+1. Exact-LNS from S0 and from legal ~135 with larger destroy (see `SCRATCH/w3_lns_from_legal.py`).  
+2. Do not reopen rem2 residual / killed Hamming / S0+1.  
+3. Push after checkpoints.
+
+## Standing order
+
+`git add -A` → commit → `git push origin master` (no force). Ignore `.venv_solver`.

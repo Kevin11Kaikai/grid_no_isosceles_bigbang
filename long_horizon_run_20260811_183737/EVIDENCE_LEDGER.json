@@ -192,6 +192,20 @@
         "SCRATCH/w3_orbit_certlb2_t0.py",
         "SCRATCH/w3_orbit_t0_mega_2h.py"
       ]
+    },
+    {
+      "id": "E017",
+      "utc": "2026-08-12T13:27:40Z",
+      "event": "w3_harvest_pattern_grow_rem3",
+      "summary": "Harvest: pattern-LNS best 133; grow-LNS 134; grow_v3 135; rem3 s802 max=164 incumbent hash; s801 soft TIMEOUT 1800s. No +1.",
+      "level": "HEURISTIC / TIMEOUT_INCONCLUSIVE / SCOPED",
+      "artifacts": [
+        "EXPERIMENTS/W3_pattern_lns/summary_v2.json",
+        "EXPERIMENTS/W3_grow_lns/summary.json",
+        "EXPERIMENTS/W3_from_scratch/grow_v3.json",
+        "EXPERIMENTS/W3_rem3_residual/soft_extend_s801_long.json",
+        "EXPERIMENTS/W3_rem3_residual/core_maximize_s802.json"
+      ]
     }
   ],
   "events": [
@@ -212,6 +226,14 @@
         "EXPERIMENTS/W3_rem3_residual/core_maximize_s802.json"
       ],
       "note": "LH-F045; max legal 164 on s802 soft core"
+    },
+    {
+      "ts": "2026-08-12T13:27:40Z",
+      "event": "harvest_parallel_jobs",
+      "refs": [
+        "LH-F046"
+      ],
+      "note": "all pattern/grow/rem3 jobs finished"
     }
   ]
 }

@@ -1,0 +1,163 @@
+{
+  "schema": "w3_from_scratch_grow_v3",
+  "rows": [
+    {
+      "n": 100,
+      "seed": 201,
+      "mode": "boundary_first",
+      "size": 134,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 2176,
+      "wall_s": 180.18035531044006,
+      "points_hash": "38f39db12dbd1913119b24c6740f09fa32ddd56a98a961a6b2f03e21f61a66bd"
+    },
+    {
+      "n": 100,
+      "seed": 202,
+      "mode": "boundary_first",
+      "size": 135,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 1247,
+      "wall_s": 180.17303109169006,
+      "points_hash": "a66d25ada4f2f3a8ff448a045fed758e0d8947ad06054f72987394ea5769bc23"
+    },
+    {
+      "n": 100,
+      "seed": 203,
+      "mode": "boundary_first",
+      "size": 133,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 1177,
+      "wall_s": 180.1326642036438,
+      "points_hash": "a92eab6f899e5456d83ec440bb43386f4e4d81233896a675f256d589b19464e5"
+    },
+    {
+      "n": 100,
+      "seed": 201,
+      "mode": "spiral_mix",
+      "size": 133,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 1050,
+      "wall_s": 180.2456030845642,
+      "points_hash": "23a8b9507397cdfeffeb8c6372cb5d51ba590ac93060e6b386f5f14c18832e05"
+    },
+    {
+      "n": 100,
+      "seed": 202,
+      "mode": "spiral_mix",
+      "size": 132,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 1085,
+      "wall_s": 180.02481627464294,
+      "points_hash": "76d6eac695e03ed40fa6cfe0107168750a06cb0ec13f8aff6bf6c6691ddb968c"
+    },
+    {
+      "n": 100,
+      "seed": 203,
+      "mode": "spiral_mix",
+      "size": 135,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 1052,
+      "wall_s": 180.20616555213928,
+      "points_hash": "dbf6f199209ced4c33dbf2428e1a802efcfec2b21db8116cf864643f45544767"
+    },
+    {
+      "n": 100,
+      "seed": 201,
+      "mode": "random",
+      "size": 129,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 1198,
+      "wall_s": 180.05879926681519,
+      "points_hash": "0b1afdd4b5cc5a018e5f9df6b93dfe14a73ceb7f9dd5939c3a19407fa6680c9c"
+    },
+    {
+      "n": 100,
+      "seed": 202,
+      "mode": "random",
+      "size": 129,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 1241,
+      "wall_s": 180.09463381767273,
+      "points_hash": "61eb06d6fc9ae3ce4fe8a464850aeac77531997abce47c8a0f9926e01f601795"
+    },
+    {
+      "n": 100,
+      "seed": 203,
+      "mode": "random",
+      "size": 130,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 1244,
+      "wall_s": 180.27394723892212,
+      "points_hash": "bb9d559d7259e22a7b103ae284b2aabda79b20979541cdfc893c2ea670a43cac"
+    },
+    {
+      "n": 100,
+      "seed": 201,
+      "mode": "center_first",
+      "size": 128,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 1277,
+      "wall_s": 180.09729146957397,
+      "points_hash": "851f0c714e7e6eabfa1cb0e4a1af9be9421083962722ec17fad4762e08734294"
+    },
+    {
+      "n": 100,
+      "seed": 202,
+      "mode": "center_first",
+      "size": 129,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 2201,
+      "wall_s": 180.0423445701599,
+      "points_hash": "93f87cfc1ee1779acae712fa2e9972a1801cec51f7f77fe4920b6dd98dac5f93"
+    },
+    {
+      "n": 100,
+      "seed": 203,
+      "mode": "center_first",
+      "size": 130,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "iters": 2169,
+      "wall_s": 180.03995895385742,
+      "points_hash": "eb483d6b7455e3bc13487fe1271ab9318aa204d58f0c89fbc74a3ced0ce11600"
+    }
+  ],
+  "best_size": 135,
+  "best": {
+    "n": 100,
+    "seed": 202,
+    "mode": "boundary_first",
+    "size": 135,
+    "V": 0,
+    "oracle_legal": true,
+    "independent_legal": true,
+    "iters": 1247,
+    "wall_s": 180.17303109169006,
+    "points_hash": "a66d25ada4f2f3a8ff448a045fed758e0d8947ad06054f72987394ea5769bc23"
+  },
+  "wall_s": 2161.6936552524567
+}

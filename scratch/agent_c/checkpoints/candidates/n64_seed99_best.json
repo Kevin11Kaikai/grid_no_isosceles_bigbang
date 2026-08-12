@@ -459,15 +459,15 @@
   ],
   "search_method": "fixed_cardinality_minconflict",
   "seed": 99,
-  "timestamp_utc": "2026-08-11T20:18:15.080610+00:00",
+  "timestamp_utc": "2026-08-12T13:20:52.823161+00:00",
   "source_commit": null,
   "parent_candidate": "official_baseline",
   "status": "UNVERIFIED",
   "target_size": 113,
   "V": 2,
   "init_method": "orbit_informed",
-  "iterations": 3100,
-  "wall_s": 8.016157388687134,
+  "iterations": 3300,
+  "wall_s": 8.085210084915161,
   "size_fixed": true,
   "schema": "grid_no_isosceles.search_result.v1"
 }

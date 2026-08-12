@@ -288,3 +288,13 @@
 - Evidence: `EXPERIMENTS/W3_from_scratch/grow_long.json` �� best legal size **137** (boundary_first); far below 165; matches prior grow plateau ~135.
 - Level: `WEAK_NEGATIVE`.
 - Status: **Deprioritize plain grow**; need stronger destroy/refill or structure.
+
+### LH-F046 — Parallel harvest: pattern-LNS / grow-LNS / grow_v3 / rem3 long
+- Evidence:
+  - `EXPERIMENTS/W3_pattern_lns/summary_v2.json` — best_final **133** (annulus); dual OK; `beats_164=false`.
+  - `EXPERIMENTS/W3_grow_lns/summary.json` — best_final **134**; dual OK; `beats_164=false`.
+  - `EXPERIMENTS/W3_from_scratch/grow_v3.json` — best_size **135**; dual OK.
+  - `EXPERIMENTS/W3_rem3_residual/soft_extend_s801_long.json` — soft core87 need78 `TIMEOUT` ~1800s (73 rounds / 4860 cuts).
+  - `core_maximize_s802.json` — maximize soft core → legal **164** with incumbent hash `8a84216d…` (not a new construction).
+- Level: `WEAK_NEGATIVE` (grow/pattern plateau) + `TIMEOUT_INCONCLUSIVE` (s801 soft) + `SCOPED` (s802 max=164).
+- Status: **Deprioritize plain pattern/grow LNS at 10–15min**; escalate destroy-refill from S0/legal-135. rem3 residual elites closed except optional mega-budget on s801 only if needed.
