@@ -1,0 +1,12 @@
+{
+  "status": "TIMEOUT",
+  "size": 0,
+  "universe_id": "orb_t0_defect_core41_free361_def320_part0_h18",
+  "model_hash": "e8dddbffcf9d9c29b4362f4f0f9e79a18867bbe558ecc1d824675872c9137c56",
+  "wall_time_s": 7200.7988822460175,
+  "rounds": 4108,
+  "final_cuts": 91864,
+  "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_2h_n100_t0_defect_s901_20260812T075846Z.json",
+  "candidate": null,
+  "elapsed_wrapper_s": 7200.887943267822
+}

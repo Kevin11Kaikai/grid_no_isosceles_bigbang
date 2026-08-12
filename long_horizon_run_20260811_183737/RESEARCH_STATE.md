@@ -1,28 +1,33 @@
 ﻿# RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-12 (mega s811 TIMEOUT)
+**Updated:** 2026-08-12 (post Type0 2h)  
 **Phase:** Wave3 continues; incumbents unchanged.
 
 ## Incumbent
 
 - n=64 **112** / n=100 **164** — **no legal +1**
 
-## Wave3 ranking
+## Orbit campaign summary
 
-- R1 orbit TIMEOUT track (primary)
-- R2 cert Hamming killed (LH-F015–F022)
-- C S0+1 blocked; FunSearch held
+Types **0–6** xlarge + Type0 **cert_lb2** + Type0 **2h** all **TIMEOUT** size=0 (LH-F024–F034).  
+`fix_core=True` scoped INFEAS (LH-F033). Soft-core remains open but stagnant.
 
-## Headline
-
-Largest run so far: Type0 mega s811 **2h**, universe `free401/def360/h20` → **TIMEOUT size=0** (121k cuts). Types 0–4 xlarge + cert_lb2 also TIMEOUT. No FEASIBLE.
+| Notable | Wall | Cuts | Notes |
+|---|---:|---:|---|
+| s501 Type0 1h | 3600s | 86273 | TIMEOUT |
+| s901 Type0 2h | 7200s | 91864 | TIMEOUT (LH-F034) — cuts barely grew vs 1h |
+| s801 cert_lb2 | 2700s | 50113 | more rounds, fewer cuts |
 
 ## Live
 
-- s901 Type0 2h agent_c (mid ~85min, size=0)
+- Type1 **cert_lb2** s821 (40min) running
 
 ## Next 3
 
-1. Finish s901.
-2. New formulation / ranking — avoid replaying same U short.
-3. Keep FunSearch held; no C S0+1 grind.
+1. Collect s821; if TIMEOUT shift hard to residual/exact repair of rem≥2 illegal cores (not more Type0 wall).  
+2. Keep Hamming killed U_ids closed; S0+1 blocked.  
+3. FunSearch held.
+
+## Discipline
+
+TIMEOUT ≠ INFEASIBLE; scoped INFEAS ≠ global UB; dual-verify before promote.

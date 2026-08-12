@@ -209,7 +209,17 @@
 - Status: **Not killed**; Types 0â€“6 xlarge all TIMEOUTâ‰ INFEAS under tested budgets.
 
 
-### LH-F033 ¡ª Type0 fix_core=True vs soft_core (enlarged U)
-- Evidence: `EXPERIMENTS/W3_orbit_enlarge/fixcore_compare.json` ¡ª fix_core `INFEASIBLE` in ~8s (scoped); soft_core `TIMEOUT` 600s size=0 on same free241/def200/h14.
+### LH-F033 ? Type0 fix_core=True vs soft_core (enlarged U)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/fixcore_compare.json` ? fix_core `INFEASIBLE` in ~8s (scoped); soft_core `TIMEOUT` 600s size=0 on same free241/def200/h14.
 - Level: `SCOPED_INFEASIBLE` (fix) + `TIMEOUT_INCONCLUSIVE` (soft).
 - Status: **fix_core killed for this U**; soft_core remains the live TIMEOUT path (default). Not a global UB.
+
+### LH-F034 ? Type0 xlarge defect 2h s901
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/long2h_t0_defect_s901.json` ? `TIMEOUT` size=0; `orb_t0_defect_core41_free361_def320_part0_h18`; 4108 rounds / 91864 cuts / ~7200s; hash `e8dddbff?`.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Still open**; 2h on agent_c U did not produce FEASIBLE. Prefer new encodings / residual repair over further same-U wall-time.
+
+### LH-F034 ¡ª Type0 xlarge defect 2h s901
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/long2h_t0_defect_s901.json` ¡ª `TIMEOUT` size=0; `orb_t0_defect_core41_free361_def320_part0_h18`; 4108 rounds / 91864 cuts / ~7200s; hash `e8dddbff¡­`.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Still open**; 2h on agent_c U did not produce FEASIBLE. Prefer new encodings / residual repair over further same-U wall-time.
