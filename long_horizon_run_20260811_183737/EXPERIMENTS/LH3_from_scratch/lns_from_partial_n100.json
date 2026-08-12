@@ -1,0 +1,181 @@
+{
+  "beats_164": false,
+  "final_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "final_size": 164,
+  "independent_legal": true,
+  "meta": {
+    "best_size": null,
+    "final_size": 164,
+    "improvements": [
+      {
+        "iteration": 16,
+        "region_kind": "frame_window",
+        "size": 137,
+        "t": 0.2500178813934326
+      },
+      {
+        "iteration": 34,
+        "region_kind": "frame_window",
+        "size": 138,
+        "t": 0.4187479019165039
+      },
+      {
+        "iteration": 39,
+        "region_kind": "frame_window",
+        "size": 139,
+        "t": 0.46929359436035156
+      },
+      {
+        "iteration": 56,
+        "region_kind": "frame_window",
+        "size": 140,
+        "t": 0.6323437690734863
+      },
+      {
+        "iteration": 104,
+        "region_kind": "row_col",
+        "size": 141,
+        "t": 1.152822494506836
+      },
+      {
+        "iteration": 123,
+        "region_kind": "frame_window",
+        "size": 142,
+        "t": 1.37221360206604
+      },
+      {
+        "iteration": 125,
+        "region_kind": "frame_window",
+        "size": 143,
+        "t": 1.403306007385254
+      },
+      {
+        "iteration": 139,
+        "region_kind": "frame_window",
+        "size": 145,
+        "t": 1.5797975063323975
+      },
+      {
+        "iteration": 148,
+        "region_kind": "row_col",
+        "size": 146,
+        "t": 1.6758944988250732
+      },
+      {
+        "iteration": 155,
+        "region_kind": "box",
+        "size": 147,
+        "t": 1.7750649452209473
+      },
+      {
+        "iteration": 192,
+        "region_kind": "row_col",
+        "size": 148,
+        "t": 2.3542866706848145
+      },
+      {
+        "iteration": 313,
+        "region_kind": "box",
+        "size": 149,
+        "t": 3.8988916873931885
+      },
+      {
+        "iteration": 667,
+        "region_kind": "frame_window",
+        "size": 150,
+        "t": 7.995136260986328
+      },
+      {
+        "iteration": 737,
+        "region_kind": "box",
+        "size": 151,
+        "t": 8.773816108703613
+      },
+      {
+        "iteration": 817,
+        "region_kind": "box",
+        "size": 152,
+        "t": 9.594419717788696
+      },
+      {
+        "iteration": 1778,
+        "region_kind": "frame_window",
+        "size": 153,
+        "t": 21.07916831970215
+      },
+      {
+        "iteration": 5755,
+        "region_kind": "frame_window",
+        "size": 154,
+        "t": 68.38285398483276
+      },
+      {
+        "iteration": 6084,
+        "region_kind": "frame_window",
+        "size": 155,
+        "t": 72.2405264377594
+      },
+      {
+        "iteration": 6407,
+        "region_kind": "box",
+        "size": 156,
+        "t": 76.2394962310791
+      },
+      {
+        "iteration": 6514,
+        "region_kind": "box",
+        "size": 157,
+        "t": 77.60508966445923
+      },
+      {
+        "iteration": 6530,
+        "region_kind": "box",
+        "size": 158,
+        "t": 77.79549217224121
+      },
+      {
+        "iteration": 6531,
+        "region_kind": "frame_window",
+        "size": 159,
+        "t": 77.82513070106506
+      },
+      {
+        "iteration": 8300,
+        "region_kind": "frame_window",
+        "size": 160,
+        "t": 100.35631346702576
+      },
+      {
+        "iteration": 8463,
+        "region_kind": "frame_window",
+        "size": 161,
+        "t": 102.46820425987244
+      },
+      {
+        "iteration": 8469,
+        "region_kind": "frame_window",
+        "size": 162,
+        "t": 102.52846455574036
+      },
+      {
+        "iteration": 8812,
+        "region_kind": "box",
+        "size": 163,
+        "t": 106.86114048957825
+      },
+      {
+        "iteration": 11039,
+        "region_kind": "frame_window",
+        "size": 164,
+        "t": 135.66588044166565
+      }
+    ],
+    "iterations": 23843,
+    "milp_calls": 23843,
+    "wall_time_s": 300.00084257125854
+  },
+  "oracle_legal": true,
+  "start_hash": "e6060c5117dffb089be78469add96a7209c09205ae02a9f6cf929cebace62c66",
+  "start_size": 136,
+  "wall_s": 300.09435963630676
+}
