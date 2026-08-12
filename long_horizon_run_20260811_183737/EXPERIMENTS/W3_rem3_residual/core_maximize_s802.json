@@ -1,0 +1,17 @@
+{
+  "schema": "w3_rem3_core_maximize_v1",
+  "core": 98,
+  "free": 173,
+  "status": "FEASIBLE_LEGAL",
+  "rounds": 2,
+  "cuts": 2439,
+  "best_legal_size": 164,
+  "wall_s": 0.14299798011779785,
+  "dual": {
+    "oracle": true,
+    "indep": true,
+    "size": 164,
+    "V": 0,
+    "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+  }
+}

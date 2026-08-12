@@ -1,0 +1,13 @@
+{
+  "u_id": "U_spatial_knn32_s80_Add_opp400_r2",
+  "status": "INFEASIBLE_SCOPED",
+  "rem": 32,
+  "add": 400,
+  "uh": "76e3c5ed63082101d291e5a8edab866c8231ac07c0236832764fdaaeb7b28f18",
+  "meta": {
+    "rounds": 134,
+    "cuts": null,
+    "wall_time_s": 6.09253716468811,
+    "best_size": null
+  }
+}

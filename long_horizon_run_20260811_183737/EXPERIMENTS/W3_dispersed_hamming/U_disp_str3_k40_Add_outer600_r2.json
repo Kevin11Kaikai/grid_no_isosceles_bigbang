@@ -1,0 +1,11 @@
+{
+  "u_id": "U_disp_str3_k40_Add_outer600_r2",
+  "status": "INFEASIBLE_SCOPED",
+  "rem": 40,
+  "add": 600,
+  "uh": "b8ce684fb4c455642189f202a063ec6f6004c0b71f5d380ec3ea9378e8c84e68",
+  "meta": {
+    "rounds": 201,
+    "wall_time_s": 13.078953266143799
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "u_id": "U_disp_str7_k24_Add_outer450_r2",
+  "status": "INFEASIBLE_SCOPED",
+  "rem": 24,
+  "add": 450,
+  "uh": "0ade1451fab210ebc26d36bcc3e85c98a4745abede45f2fb5efa4735c6f68dd7",
+  "meta": {
+    "rounds": 151,
+    "wall_time_s": 7.419619083404541
+  }
+}

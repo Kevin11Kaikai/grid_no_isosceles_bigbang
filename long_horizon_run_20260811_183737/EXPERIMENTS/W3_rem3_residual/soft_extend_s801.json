@@ -1,0 +1,11 @@
+{
+  "tag": "soft_s801",
+  "status": "TIMEOUT",
+  "core_size": 87,
+  "need": 78,
+  "free": 335,
+  "rounds": 14,
+  "final_cuts": 4860,
+  "wall_s": 31.573254108428955,
+  "dual": null
+}

@@ -1,19 +1,3 @@
-{"start": "U_spatial_knn24_s0_Add_opp400_r2", "rem": 24, "add": 400, "uh": "071a11c98527"}
-{"u_id": "U_spatial_knn24_s0_Add_opp400_r2", "status": "INFEASIBLE_SCOPED", "rem": 24, "add": 400, "uh": "071a11c985278b9ad8d974b0483b31b12c7526e6bd81a6359e2226b8c13546d1", "meta": {"rounds": 134, "cuts": null, "wall_time_s": 5.8433873653411865, "best_size": null}}
-{"start": "U_spatial_knn24_s0_Add_outer_r8_20_500_r2", "rem": 24, "add": 500, "uh": "c21eb341fb93"}
-{"u_id": "U_spatial_knn24_s0_Add_outer_r8_20_500_r2", "status": "INFEASIBLE_SCOPED", "rem": 24, "add": 500, "uh": "c21eb341fb93e1f2db32b6172d22afae0fb0bc594c2ffab56410468857e77fbf", "meta": {"rounds": 167, "cuts": null, "wall_time_s": 7.7830119132995605, "best_size": null}}
-{"start": "U_spatial_knn24_s40_Add_opp400_r2", "rem": 24, "add": 400, "uh": "2072e147fe6b"}
-{"u_id": "U_spatial_knn24_s40_Add_opp400_r2", "status": "INFEASIBLE_SCOPED", "rem": 24, "add": 400, "uh": "2072e147fe6ba2b479250432198e48f22b1f7598d8b04dd057e50cc0ef1bcd62", "meta": {"rounds": 134, "cuts": null, "wall_time_s": 5.866096496582031, "best_size": null}}
-{"start": "U_spatial_knn24_s40_Add_outer_r8_20_500_r2", "rem": 24, "add": 500, "uh": "8533080fce85"}
-{"u_id": "U_spatial_knn24_s40_Add_outer_r8_20_500_r2", "status": "INFEASIBLE_SCOPED", "rem": 24, "add": 500, "uh": "8533080fce85f98190df19697fa56114399ca18bdb712e63b0ecc3ab95e14cd7", "meta": {"rounds": 167, "cuts": null, "wall_time_s": 7.9484052658081055, "best_size": null}}
-{"start": "U_spatial_knn32_s80_Add_opp400_r2", "rem": 32, "add": 400, "uh": "76e3c5ed6308"}
-{"u_id": "U_spatial_knn32_s80_Add_opp400_r2", "status": "INFEASIBLE_SCOPED", "rem": 32, "add": 400, "uh": "76e3c5ed63082101d291e5a8edab866c8231ac07c0236832764fdaaeb7b28f18", "meta": {"rounds": 134, "cuts": null, "wall_time_s": 6.09253716468811, "best_size": null}}
-{"start": "U_spatial_knn32_s80_Add_outer_r8_20_500_r2", "rem": 32, "add": 500, "uh": "b9a0c225cbfe"}
-{"u_id": "U_spatial_knn32_s80_Add_outer_r8_20_500_r2", "status": "INFEASIBLE_SCOPED", "rem": 32, "add": 500, "uh": "b9a0c225cbfe1c7b9877ad53bc87f11300d30aa9b52611131690f588e9cbed1a", "meta": {"rounds": 167, "cuts": null, "wall_time_s": 8.472912311553955, "best_size": null}}
-{"start": "U_spatial_knn32_s120_Add_opp400_r2", "rem": 32, "add": 400, "uh": "d359fc7315c8"}
-{"u_id": "U_spatial_knn32_s120_Add_opp400_r2", "status": "INFEASIBLE_SCOPED", "rem": 32, "add": 400, "uh": "d359fc7315c896c7c1fbfaacab3bfdeb65b6399496926825e43aa5b93526cfb2", "meta": {"rounds": 134, "cuts": null, "wall_time_s": 6.367425441741943, "best_size": null}}
-{"start": "U_spatial_knn32_s120_Add_outer_r8_20_500_r2", "rem": 32, "add": 500, "uh": "46b8450a096e"}
-{"u_id": "U_spatial_knn32_s120_Add_outer_r8_20_500_r2", "status": "INFEASIBLE_SCOPED", "rem": 32, "add": 500, "uh": "46b8450a096ee2285079c9468cb4d47b93c8433e1a450cec6380f63fbdd1d8d0", "meta": {"rounds": 167, "cuts": null, "wall_time_s": 8.038002014160156, "best_size": null}}
 {
   "schema": "w3_spatial_hamming_v1",
   "rows": [

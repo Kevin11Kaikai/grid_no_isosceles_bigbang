@@ -263,3 +263,13 @@
 - Evidence: `EXPERIMENTS/W3_rem3_exchange/forced_exchange_rem3.json` ¡ª 6¡Á150s, best_V=42, any_v0=false (worse than rem2 best_V¡Ö25).
 - Level: `WEAK_NEGATIVE` / plateau.
 - Status: **Deprioritize naive rem3 swap LS**; residual/exact needed if revisiting.
+
+### LH-F042 â€” Spatial-block Hamming Rem/Add r=2 (new U_ids)
+- Evidence: `EXPERIMENTS/W3_spatial_hamming/summary.json` â€” 8/8 `INFEASIBLE_SCOPED` (knn Rem 24/32 Ã— opp/outer Add; ~57s total).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD that spatial-block Hamming family**; not a global UB. Prefer dispersed Rem or non-Hamming constructions.
+
+### LH-F043 â€” rem3 soft/partial exact residual s802
+- Evidence: `EXPERIMENTS/W3_rem3_residual/soft_extend_s802.json` + `partial_extend_s802.json` â€” soft core98 need67 free173 `INFEASIBLE_SCOPED` (~0.8s); partial core143 need22 free22 `INFEASIBLE_SCOPED`.
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD for rem3 elite s802 cores**; seed 801 residual still in flight. Does not kill rem3 construction broadly.

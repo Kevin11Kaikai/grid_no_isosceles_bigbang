@@ -1,0 +1,11 @@
+{
+  "tag": "soft_s802",
+  "status": "INFEASIBLE_SCOPED",
+  "core_size": 98,
+  "need": 67,
+  "free": 173,
+  "rounds": 6,
+  "final_cuts": 1224,
+  "wall_s": 0.8240499496459961,
+  "dual": null
+}

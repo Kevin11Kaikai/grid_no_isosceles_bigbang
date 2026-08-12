@@ -1,0 +1,2 @@
+{"n": 100, "seed": 201, "mode": "boundary_first", "size": 134, "V": 0, "oracle_legal": true, "independent_legal": true, "iters": 3121, "wall_s": 180.065678358078, "points_hash": "38f39db12dbd1913119b24c6740f09fa32ddd56a98a961a6b2f03e21f61a66bd"}
+{"n": 100, "seed": 202, "mode": "boundary_first", "size": 135, "V": 0, "oracle_legal": true, "independent_legal": true, "iters": 3231, "wall_s": 180.02110648155212, "points_hash": "a66d25ada4f2f3a8ff448a045fed758e0d8947ad06054f72987394ea5769bc23"}

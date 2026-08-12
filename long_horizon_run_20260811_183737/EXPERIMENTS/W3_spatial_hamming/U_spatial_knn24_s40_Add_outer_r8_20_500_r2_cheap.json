@@ -1,0 +1,13 @@
+{
+  "u_id": "U_spatial_knn24_s40_Add_outer_r8_20_500_r2",
+  "status": "INFEASIBLE_SCOPED",
+  "rem": 24,
+  "add": 500,
+  "uh": "8533080fce85f98190df19697fa56114399ca18bdb712e63b0ecc3ab95e14cd7",
+  "meta": {
+    "rounds": 167,
+    "cuts": null,
+    "wall_time_s": 7.9484052658081055,
+    "best_size": null
+  }
+}

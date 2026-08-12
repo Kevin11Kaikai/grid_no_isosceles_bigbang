@@ -1,13 +1,3 @@
-{"phase": "elite", "seed": 802}
-{"seed": 802, "best_V": 42, "rem": 3, "add": 4}
-{"seed": 802, "soft_core": 98, "involved": 67, "witnesses": 42, "addable": 173, "need": 67}
-{"tag": "soft_s802", "status": "INFEASIBLE_SCOPED", "core_size": 98, "need": 67, "free": 173, "rounds": 6, "final_cuts": 1224, "wall_s": 0.8240499496459961, "dual": null}
-{"tag": "partial_s802", "status": "INFEASIBLE_SCOPED", "core_size": 143, "need": 22, "free": 22, "rounds": 2, "final_cuts": 10, "wall_s": 0.029000043869018555, "dual": null}
-{"phase": "elite", "seed": 801}
-{"seed": 801, "best_V": 45, "rem": 3, "add": 4}
-{"seed": 801, "soft_core": 87, "involved": 78, "witnesses": 45, "addable": 335, "need": 78}
-{"tag": "soft_s801", "status": "TIMEOUT", "core_size": 87, "need": 78, "free": 335, "rounds": 14, "final_cuts": 4860, "wall_s": 31.573254108428955, "dual": null}
-{"tag": "partial_s801", "status": "INFEASIBLE_SCOPED", "core_size": 147, "need": 18, "free": 18, "rounds": 2, "final_cuts": 3, "wall_s": 0.014000415802001953, "dual": null}
 {
   "schema": "w3_rem3_exact_residual_v1",
   "rows": [

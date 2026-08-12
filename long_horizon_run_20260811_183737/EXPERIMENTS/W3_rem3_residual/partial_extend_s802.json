@@ -1,0 +1,11 @@
+{
+  "tag": "partial_s802",
+  "status": "INFEASIBLE_SCOPED",
+  "core_size": 143,
+  "need": 22,
+  "free": 22,
+  "rounds": 2,
+  "final_cuts": 10,
+  "wall_s": 0.029000043869018555,
+  "dual": null
+}
