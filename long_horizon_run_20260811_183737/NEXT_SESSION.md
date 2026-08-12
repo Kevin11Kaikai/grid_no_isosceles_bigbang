@@ -1,26 +1,28 @@
 # NEXT_SESSION (≤1 page)
 
 **Run:** `long_horizon_run_20260811_183737/`  
-**Read:** `RESEARCH_STATE.md`, `FAILED.md`, `scratch/wave3/ranking_memo.md`
+**Read:** `RESEARCH_STATE.md`, `FAILED.md`
 
 ## Status
 
-Wave3 active post-Gate2. Incumbents **112 / 164**. No legal +1. FunSearch held. C S0+1 blocked.
+Gate2 CLOSED. Wave3 active. Incumbents still 112/164. No legal +1.
 
-## Orbit R1 (TIMEOUT open, not empty)
+## Orbit xlarge campaign
 
-Finished TIMEOUT size=0: s401, s641(n64), s511 partial, **s501 Type0 xlarge 60min (86k cuts)**, s521/s601 Type1 xlarge.  
-**Live:** Type2 xlarge (`SCRATCH/w3_orbit_t2_xlarge.py`).  
-**Next:** Type3/4 xlarge (`SCRATCH/w3_orbit_t34_xlarge.py`) then consider ≥2h Type0 or new defect policy.
+Types **0–4** xlarge all **TIMEOUT** size=0 (LH-F024–F029).  
+**Live:** Type0 `defect_rank=cert_lb2` s801 (45min) — distinct U fingerprint.
 
-## R2
+## Other
 
-Cert/cross/HS2/joint-HS micros all `INFEASIBLE_SCOPED` (LH-F015–F022). Do not reopen without new Rem/Add.
+- Joint HS pairs dead (LH-F022); forced rem≥2 LS best_V≈29 (LH-F026).
+- S0+1 soft grind blocked; FunSearch held.
 
-## Resume commands
+## Resume
 
-```text
-.venv_solver\Scripts\python.exe -u long_horizon_run_20260811_183737\SCRATCH\w3_orbit_t34_xlarge.py
-```
+1. Collect `EXPERIMENTS/W3_orbit_enlarge/certlb2_t0_defect_s801.json`.
+2. If FEASIBLE → dual-verify + certificates. If TIMEOUT → ≥2h Type0 or Type1/5 cert_lb2.
+3. Do not reopen killed Hamming U_ids / joint-HS / S0+1.
 
-Dual-verify any |S|≥165 before promote. Push checkpoints; no force-push; ignore `.venv_solver`.
+## Standing order
+
+Commit+push after checkpoints. No force-push. Ignore `.venv_solver`.

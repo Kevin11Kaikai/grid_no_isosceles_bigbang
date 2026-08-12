@@ -188,3 +188,8 @@
 - Level: `TIMEOUT_INCONCLUSIVE`.
 - Status: **Open**; Type4 + cert_lb2 Type0 next.
 
+### LH-F029 — Type4 xlarge defect s704 (30min)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/xlarge_t4_defect_s704.json` — `TIMEOUT` size=0; `orb_t4_defect_core7_free327_def320_part0_h18`; 806 rounds / 100067 cuts / ~1800s; hash `39dd3b23…`.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Open**; Types 0–4 xlarge all TIMEOUT≠INFEAS; cert_lb2 Type0 is next distinct U.
+
