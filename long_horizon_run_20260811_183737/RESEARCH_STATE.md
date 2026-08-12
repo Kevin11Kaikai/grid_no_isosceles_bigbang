@@ -1,29 +1,28 @@
 # RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-12 ~00:28 local  
-**Remote:** `origin/master` (push standing order active)  
-**Phase:** LH-3 far-from-S0 construction; midband r=2 still TIMEOUT@600s
+**Updated:** 2026-08-12 ~00:55 local  
+**Remote:** `origin/master` (standing-order pushes active)  
+**Phase:** LH-3/4 — far-from-S0 constructions underperform; exact LNS returns to ≤164 basin
 
 ## Incumbent
 
-- n=64: **112** / n=100: **164** — unchanged
+- n=64: **112** / n=100: **164** DUAL_VERIFIED — **no promotion**
 
-## Latest results
+## Session headline
 
-| Line | Outcome |
-|---|---|
-| From-scratch grow | best legal **n100=135**, **n64=88** |
-| Half-baseline rebuild | best **164/112** (recovered S0 at keep=0.75); keep=0.5 → ~130–136 |
-| Midband Add r=2 @600s | `TIMEOUT_INCONCLUSIVE` (not INFEAS; 1148 rounds) |
-| Frame R2/R6 r=2 long | `INFEASIBLE_SCOPED` |
-| V3 elites | all = S0+1 |
+1. Wave2 V=3 elites = **S0∪{q}** only.
+2. Many S0 Hamming shells with restricted Add = `INFEASIBLE_SCOPED` (low-LB through r=4; frame r=2).
+3. Midband Add r=2 @600s = TIMEOUT (open).
+4. From-scratch/patterns ~132–135; half-rebuild+LNS climbs to **164**, does not beat.
+5. LNS from annulus pattern: see `EXPERIMENTS/LH3_patterns/lns_from_annulus.json`.
+6. Orbit n100 types 2–6 short Wave2-style universes: scoped INFEAS.
 
-## Running / next
+## Next 3 actions
 
-1. LNS-exact from half-rebuild start (~136) — in progress
-2. If no beat of 164: try SA/exact multi-region from partial; orbit types 5–6
-3. Midband left as TIMEOUT (optional later longer / different r)
+1. Inspect annulus-LNS final size; if <164, hybrid pattern∪S0-core.
+2. Enlarge orbit universes (not Wave2 halo caps) for type0/1 defects.
+3. Consider literature constructions / notebook generator replay with exact repair.
 
 ## Standing order
 
-Commit+push after meaningful checkpoints; continue; no Hard Stop.
+Push after checkpoints; continue; no Hard Stop on report polish.

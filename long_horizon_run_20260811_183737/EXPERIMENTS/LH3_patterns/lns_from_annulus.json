@@ -1,0 +1,37 @@
+{
+  "beats_164": false,
+  "final_hash": "a2698580be0da1c89feb1ed230ef9ff3a310b2a12d45e2139bee2caa26d50a22",
+  "final_size": 136,
+  "improvements": [
+    {
+      "iteration": 11,
+      "region_kind": "box",
+      "size": 133,
+      "t": 0.17068147659301758
+    },
+    {
+      "iteration": 412,
+      "region_kind": "row_col",
+      "size": 134,
+      "t": 4.494858264923096
+    },
+    {
+      "iteration": 498,
+      "region_kind": "box",
+      "size": 135,
+      "t": 5.450536489486694
+    },
+    {
+      "iteration": 5194,
+      "region_kind": "box",
+      "size": 136,
+      "t": 57.84920287132263
+    }
+  ],
+  "independent_legal": true,
+  "iterations": 37513,
+  "milp_calls": 37513,
+  "oracle_legal": true,
+  "start_size": 132,
+  "wall_s": 445.055438041687
+}
