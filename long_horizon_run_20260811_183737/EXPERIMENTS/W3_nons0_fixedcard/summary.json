@@ -1,0 +1,31 @@
+{
+  "schema": "w3_nons0_fixedcard_v1",
+  "mid_size": 137,
+  "mid_hash": "d50be677ef2d130d4549d046fa2fb8389d427c786637ad09558d03f8ff10230f",
+  "best_V": 364,
+  "iters": 1735571,
+  "improvements": [
+    {
+      "iter": 21,
+      "V": 367,
+      "wall": 0.015629053115844727
+    },
+    {
+      "iter": 34,
+      "V": 366,
+      "wall": 0.0312955379486084
+    },
+    {
+      "iter": 46,
+      "V": 364,
+      "wall": 0.0312955379486084
+    }
+  ],
+  "n_improvements": 3,
+  "oracle_legal": false,
+  "indep_legal": false,
+  "size": 165,
+  "hash": "449327b26f4e4c3882947fbcff88b3e1dcb40ce8329f84515bac0d1100654160",
+  "hamming_rem_from_S0": 99,
+  "wall_s": 1200.0019257068634
+}

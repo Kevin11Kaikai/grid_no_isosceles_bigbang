@@ -381,3 +381,8 @@
   - certfreq60 forbid: `MAX_PROVED` 134 in ~4s (cap free=94)
 - Level: `TIMEOUT_INCONCLUSIVE / SCOPED_MAX`.
 - Status: certfreq60-forbid **dead** at max 134; rand100 forbid open but plateau ≪165.
+
+### LH-F062 — Naive non-S0 fixed-card (random pad + 1-for-1)
+- Evidence: `EXPERIMENTS/W3_nons0_fixedcard/summary.json` — mid 137; start_V=372; best_V=364 after 1.7M iters / 20min; ham_rem=99; not legal.
+- Level: `WEAK_NEGATIVE` (method too weak / bad pad).
+- Status: **Deprioritize random-pad 1-for-1**; proper tempered search from greedy pad in flight.
