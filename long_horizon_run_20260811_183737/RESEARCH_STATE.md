@@ -25,10 +25,11 @@
 | s521 Type1 xlarge | free321/def320/h18 | 2400s | 68574 | TIMEOUT size=0 |
 | s601 Type1 xlarge | free321/def320/h18 | 2400s | 76897 | TIMEOUT size=0 |
 | Type2 xlarge s702 | free321/def320/h18 | 1800s | 75512 | TIMEOUT size=0 (LH-F027) |
-| Type3 xlarge s703 | — | 1800s | — | **running** |
-| Type4 xlarge | queued | 1800s | — | next |
+| Type3 xlarge s703 | free327/def320/h18 | 1800s | 97485 | TIMEOUT size=0 (LH-F028) |
+| Type4 xlarge s704 | — | 1800s | — | **running** |
+| Type0 cert_lb2 s801 | new defect_rank | 2700s | — | queued after Type4 |
 
-Cut growth on Type0 xlarge (34k→86k) shows search still exploring; no FEASIBLE yet. Forced rem≥2 LS best_V=29 (LH-F026).
+Cut growth on Type0 xlarge (34k→86k) shows search still exploring; no FEASIBLE yet. Forced rem≥2 LS best_V=29 (LH-F026). `defect_rank=cert_lb2` changes U fingerprint (8-point pool delta).
 
 ## R2 cert micro obstruction map
 
@@ -36,6 +37,6 @@ Single-HS2 (8/8) and joint-HS pairs (10/10) `INFEASIBLE_SCOPED` under large Add 
 
 ## Next 3
 
-1. Finish Type3; run Type4 enlarged defect.  
-2. If TIMEOUT: new defect-pool policy (cert-prioritized) or ≥2h Type0 — not same U replay.  
+1. Finish Type4; launch Type0 cert_lb2 (new U).  
+2. If still TIMEOUT: ≥2h Type0 or other symmetry with cert_lb2 — not same U replay.  
 3. Keep R2 from reopening killed U_ids; no C S0+1; FunSearch held.

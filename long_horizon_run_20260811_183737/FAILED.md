@@ -179,7 +179,12 @@
 - Status: **Deprioritize naive swap LS**; need stronger neighborhood or exact residual repair.
 
 ### LH-F027 — Type2 xlarge defect s702 (30min)
-- Evidence: `EXPERIMENTS/W3_orbit_enlarge/xlarge_t2_defect_s702.json` — `TIMEOUT` size=0; `orb_t2_defect_core0_free321_def320_part0_h18`; mid ~418r/73k cuts @16min.
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/xlarge_t2_defect_s702.json` — `TIMEOUT` size=0; `orb_t2_defect_core0_free321_def320_part0_h18`; 438 rounds / 75512 cuts / ~1800s.
 - Level: `TIMEOUT_INCONCLUSIVE`.
 - Status: **Open**; continue Type3/4 enlarge then reconsider defect-pool construction.
+
+### LH-F028 — Type3 xlarge defect s703 (30min)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/xlarge_t3_defect_s703.json` — `TIMEOUT` size=0; `orb_t3_defect_core7_free327_def320_part0_h18`; 815 rounds / 97485 cuts / ~1800s; hash `85d59560…`.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Open**; Type4 + cert_lb2 Type0 next.
 
