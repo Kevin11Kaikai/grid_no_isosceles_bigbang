@@ -294,6 +294,30 @@ def _load_agent_c_pools(n: int, universe_id: str = "U_medium") -> Dict[str, List
     return {"addable": addable, "removable": removable}
 
 
+def _cert_lb2_defect_freq(n: int) -> Dict[Point, int]:
+    """Frequency of baseline-involved points / easy qs from Agent-A blocker detail.
+
+    Used only to *rank* the defect pool (same pool family, different truncation order).
+    """
+    path = ROOT / "scratch" / "audit" / "agent_a" / f"blocker_detail_n{n}.json.gz"
+    if not path.exists():
+        return {}
+    import gzip
+
+    with gzip.open(path, "rt", encoding="utf-8") as f:
+        detail = json.load(f)
+    freq: Dict[Point, int] = {}
+    for r in detail.get("top_k_full_records", []):
+        if int(r.get("lower_bound_min_deletions", 99)) > 2:
+            continue
+        q = (int(r["q"][0]), int(r["q"][1]))
+        freq[q] = freq.get(q, 0) + 3
+        for p in r.get("involved_baseline_points", []):
+            pt = (int(p[0]), int(p[1]))
+            freq[pt] = freq.get(pt, 0) + 1
+    return freq
+
+
 def _chebyshev(a: Point, b: Point) -> int:
     return max(abs(a[0] - b[0]), abs(a[1] - b[1]))
 
@@ -368,6 +392,7 @@ def build_universe(
     max_defect_pool: int = 96,
     agent_c_universe: str = "U_medium",
     include_truncated_as_partial: bool = True,
+    defect_rank: str = "agent_c",
 ) -> Universe:
     """Build a scoped orbit/defect universe around the official baseline."""
     classif = classify_baseline_orbits(n, symmetry_type, orbits)
@@ -485,9 +510,11 @@ def build_universe(
         # prevent double-counting. Filtering them out made odd targets with a full
         # Type-0 core cardinality-infeasible (no exterior defect vars left).
         add_set = set(pools["addable"])
+        cert_freq = _cert_lb2_defect_freq(n) if defect_rank == "cert_lb2" else {}
         cleaned = sorted(
             defect_set,
             key=lambda p: (
+                -cert_freq.get(p, 0),
                 0 if p in add_set else 1,
                 0 if p not in free_point_set else 1,
                 p[0],
@@ -496,9 +523,10 @@ def build_universe(
         )
         defect_points = cleaned[:max_defect_pool]
 
+    rank_tag = "" if defect_rank in ("", "agent_c") else f"_rk{defect_rank}"
     uid = (
         f"orb_t{symmetry_type}_{mode}_core{len(core_full)}_free{len(free_ids)}"
-        f"_def{len(defect_points)}_part{len(partial_ids)}_h{halo_radius}"
+        f"_def{len(defect_points)}_part{len(partial_ids)}_h{halo_radius}{rank_tag}"
     )
     return Universe(
         universe_id=uid,
@@ -513,6 +541,7 @@ def build_universe(
             "max_extra_orbits": max_extra_orbits,
             "max_defect_pool": max_defect_pool,
             "agent_c_universe": agent_c_universe,
+            "defect_rank": defect_rank,
             "baseline_fully_present_full": len(core_full),
             "baseline_partial": len(classif["partial"]),
             "include_truncated_as_partial": include_truncated_as_partial,
@@ -586,6 +615,7 @@ class SearchConfig:
     max_extra_orbits: int = 80
     max_defect_pool: int = 96
     agent_c_universe: str = "U_medium"
+    defect_rank: str = "agent_c"  # agent_c | cert_lb2 (defect pool truncation order)
     max_cuts_per_round: int = 50000
     soft_core: bool = True  # core orbits hintable / preferred, not hard-fixed
     fix_core: bool = False  # if True, force all baseline FULL orbits on
@@ -642,6 +672,7 @@ def solve_orbit_defect(cfg: SearchConfig) -> Dict[str, Any]:
         max_extra_orbits=cfg.max_extra_orbits,
         max_defect_pool=cfg.max_defect_pool,
         agent_c_universe=cfg.agent_c_universe,
+        defect_rank=cfg.defect_rank,
     )
 
     free_orbit_ids = list(universe.free_orbit_ids)
