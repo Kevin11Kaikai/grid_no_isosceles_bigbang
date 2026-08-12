@@ -386,3 +386,8 @@
 - Evidence: `EXPERIMENTS/W3_nons0_fixedcard/summary.json` — mid 137; start_V=372; best_V=364 after 1.7M iters / 20min; ham_rem=99; not legal.
 - Level: `WEAK_NEGATIVE` (method too weak / bad pad).
 - Status: **Deprioritize random-pad 1-for-1**; proper tempered search from greedy pad in flight.
+
+### LH-F063 — Proper non-S0 fixed-card (greedy pad V=84 + Agent-C moves 30m)
+- Evidence: `EXPERIMENTS/W3_nons0_fixedcard/summary_proper.json` — start/best_V=**84**; 105k iters / 13.7k accepts; ham_rem=96; no V drop; not legal.
+- Level: `WEAK_NEGATIVE` (plateau ≫ rem2 basin V≈25–29).
+- Status: **Non-S0 midset pad has much harder V landscape** than S0+1; exact-repair loop next.

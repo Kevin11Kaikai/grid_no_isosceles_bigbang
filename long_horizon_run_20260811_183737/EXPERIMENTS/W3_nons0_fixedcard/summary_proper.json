@@ -1,0 +1,15 @@
+{
+  "schema": "w3_nons0_fixedcard_proper_v1",
+  "start_pad_V": 84,
+  "best_V": 84,
+  "iters": 105354,
+  "accepted": 13762,
+  "oracle": false,
+  "indep": false,
+  "size": 165,
+  "hash": "ff5b395053b36a66098bc57ed11897992de1208690a962248f5197c4368c4875",
+  "hamming_rem_from_S0": 96,
+  "wall_s": 1800.0015351772308,
+  "mid_hash": "d50be677ef2d130d4549d046fa2fb8389d427c786637ad09558d03f8ff10230f",
+  "mid_size": 137
+}
