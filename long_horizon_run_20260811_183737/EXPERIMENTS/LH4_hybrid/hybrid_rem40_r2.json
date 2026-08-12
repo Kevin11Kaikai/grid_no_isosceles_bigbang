@@ -1,0 +1,11 @@
+{
+  "status": "TIMEOUT_INCONCLUSIVE",
+  "best_illegal_V": 14,
+  "rounds": 1490,
+  "final_cuts": 29153,
+  "wall_time_s": 480.2281093597412,
+  "universe_hash": "5ced656f7bb1db0e5359cd5603e8920ec0ed69f658fb4df607b3cad0872a7b84",
+  "n_rem": 40,
+  "n_add": 7584,
+  "wall_s": 480.58033299446106
+}

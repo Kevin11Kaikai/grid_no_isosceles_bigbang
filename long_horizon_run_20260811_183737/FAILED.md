@@ -101,3 +101,13 @@
 - Level: `HEURISTIC` / partial.
 - Status: no V=0 signal; do not grind same 45s residual refills.
 
+### LH-F013 — annulus pattern + exact LNS
+- Evidence: `LH3_patterns/lns_from_annulus.json` — 132→136 in 420s; no path to 164.
+- Level: `HEURISTIC`.
+- Status: weak basin; needs S0-core fusion or different generator.
+
+### LH-F014 — midband fullrem r=2 @600s
+- Evidence: `LH2_midband_shells/U_fullrem_midband10_26_r2_long.json` — TIMEOUT_INCONCLUSIVE.
+- Level: TIMEOUT (not INFEAS).
+- Status: open but expensive; deprioritize vs orbit enlarge / hybrid.
+
