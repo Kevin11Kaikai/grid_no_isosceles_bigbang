@@ -1,0 +1,2 @@
+{"kind": "modular", "params": {"a": 1, "b": 2, "c": 5}, "cand_size": 2000, "size": 64, "V": 0, "oracle_legal": true, "independent_legal": true, "hash": "13dc3d2d5413a0c1888bb7db29eba07f6edf31e06f146baa43a52a22727210c0"}
+{"kind": "modular", "params": {"a": 2, "b": 3, "c": 5}, "cand_size": 2000, "size": 91, "V": 0, "oracle_legal": true, "independent_legal": true, "hash": "81fd076a3234813d950f594a8994b4f742409a029910659556af167fcaca959e"}
