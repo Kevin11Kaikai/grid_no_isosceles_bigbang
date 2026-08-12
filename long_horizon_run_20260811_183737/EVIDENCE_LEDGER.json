@@ -125,6 +125,27 @@
       "artifacts": [
         "EXPERIMENTS/W3_forced_hitset/summary.json"
       ]
+    },
+    {
+      "id": "E012",
+      "utc": "2026-08-12TWave3",
+      "event": "w3_joint_hs_pairs",
+      "summary": "10/10 joint exact-HS pair forced-delete shells INFEASIBLE_SCOPED at r=4; any_legal=false.",
+      "level": "SCOPED_INFEASIBLE",
+      "artifacts": [
+        "EXPERIMENTS/W3_joint_hs/summary.json"
+      ]
+    },
+    {
+      "id": "E013",
+      "utc": "2026-08-12TWave3",
+      "event": "w3_orbit_s401_n64_timeout",
+      "summary": "Enlarged Type0 n100 s401 45min TIMEOUT size=0; n64 s641 20min TIMEOUT size=0; launched xlarge s501 + partial s511.",
+      "level": "TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/LH4_orbit_enlarged/long_t0_defect_s401_45min.json",
+        "EXPERIMENTS/W3_orbit_enlarge/n64_t0_defect_s641.json"
+      ]
     }
   ]
 }

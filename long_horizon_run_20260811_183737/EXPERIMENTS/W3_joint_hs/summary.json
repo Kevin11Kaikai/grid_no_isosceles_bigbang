@@ -1,0 +1,410 @@
+{
+  "any_legal": false,
+  "n_tried": 10,
+  "rows": [
+    {
+      "U_id": "U_joint_hs_q24_18__q24_81_r4",
+      "best_illegal_V": 26,
+      "final_cuts": 2890,
+      "hs1": [
+        [
+          22,
+          4
+        ],
+        [
+          92,
+          15
+        ]
+      ],
+      "hs2": [
+        [
+          22,
+          95
+        ],
+        [
+          91,
+          93
+        ]
+      ],
+      "n_add": 2206,
+      "n_rem": 4,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        24,
+        81
+      ],
+      "r": 4,
+      "rounds": 446,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "682e98897791037be0ca633c318d4e283c634218c68c6fa52b556a02a4d362cb",
+      "wall_time_s": 32.14053225517273
+    },
+    {
+      "U_id": "U_joint_hs_q24_18__q75_18_r4",
+      "best_illegal_V": 23,
+      "final_cuts": 2953,
+      "hs1": [
+        [
+          22,
+          4
+        ],
+        [
+          92,
+          15
+        ]
+      ],
+      "hs2": [
+        [
+          8,
+          6
+        ],
+        [
+          77,
+          4
+        ]
+      ],
+      "n_add": 2206,
+      "n_rem": 4,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        75,
+        18
+      ],
+      "r": 4,
+      "rounds": 445,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "e2e0f7e2c431754e6c2228c92bf43a9a9ec075f65d3f5dfe3423e69a5f25cb8e",
+      "wall_time_s": 31.514066696166992
+    },
+    {
+      "U_id": "U_joint_hs_q24_18__q75_81_r4",
+      "best_illegal_V": 27,
+      "final_cuts": 2870,
+      "hs1": [
+        [
+          22,
+          4
+        ],
+        [
+          92,
+          15
+        ]
+      ],
+      "hs2": [
+        [
+          8,
+          93
+        ],
+        [
+          77,
+          95
+        ]
+      ],
+      "n_add": 2206,
+      "n_rem": 4,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        75,
+        81
+      ],
+      "r": 4,
+      "rounds": 445,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "34d68cf08e6306988dad8ddc7222c50605819aba9d3df65820780e496f01bc91",
+      "wall_time_s": 31.681350231170654
+    },
+    {
+      "U_id": "U_joint_hs_q24_18__q3_17_r4",
+      "best_illegal_V": 29,
+      "final_cuts": 2863,
+      "hs1": [
+        [
+          22,
+          4
+        ],
+        [
+          92,
+          15
+        ]
+      ],
+      "hs2": [
+        [
+          2,
+          18
+        ],
+        [
+          3,
+          61
+        ]
+      ],
+      "n_add": 2167,
+      "n_rem": 4,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        3,
+        17
+      ],
+      "r": 4,
+      "rounds": 437,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "e43c7c614c66b3c63be1cf3141bc48dac84542f85bef6c2f716ebcf125b57d19",
+      "wall_time_s": 30.544670820236206
+    },
+    {
+      "U_id": "U_joint_hs_q24_18__q3_82_r4",
+      "best_illegal_V": 25,
+      "final_cuts": 2872,
+      "hs1": [
+        [
+          22,
+          4
+        ],
+        [
+          92,
+          15
+        ]
+      ],
+      "hs2": [
+        [
+          2,
+          81
+        ],
+        [
+          3,
+          38
+        ]
+      ],
+      "n_add": 2167,
+      "n_rem": 4,
+      "q1": [
+        24,
+        18
+      ],
+      "q2": [
+        3,
+        82
+      ],
+      "r": 4,
+      "rounds": 437,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "ba9b533887c49d28fcab2d1db4a26c99426af51c970550d9b9f7fac73404d72b",
+      "wall_time_s": 30.30228352546692
+    },
+    {
+      "U_id": "U_joint_hs_q24_81__q75_18_r4",
+      "best_illegal_V": 31,
+      "final_cuts": 2899,
+      "hs1": [
+        [
+          22,
+          95
+        ],
+        [
+          91,
+          93
+        ]
+      ],
+      "hs2": [
+        [
+          8,
+          6
+        ],
+        [
+          77,
+          4
+        ]
+      ],
+      "n_add": 2210,
+      "n_rem": 4,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        75,
+        18
+      ],
+      "r": 4,
+      "rounds": 444,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "2433e69ff56256b13d15c15a4ee1984628eac9879799e2483d14adcb92f8b0e1",
+      "wall_time_s": 31.2132408618927
+    },
+    {
+      "U_id": "U_joint_hs_q24_81__q75_81_r4",
+      "best_illegal_V": 27,
+      "final_cuts": 2967,
+      "hs1": [
+        [
+          22,
+          95
+        ],
+        [
+          91,
+          93
+        ]
+      ],
+      "hs2": [
+        [
+          8,
+          93
+        ],
+        [
+          77,
+          95
+        ]
+      ],
+      "n_add": 2210,
+      "n_rem": 4,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        75,
+        81
+      ],
+      "r": 4,
+      "rounds": 445,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "4262f2ef3cd857edcb997980bf97f2adae2364805d2c438a00000b3ad45f8988",
+      "wall_time_s": 31.480353593826294
+    },
+    {
+      "U_id": "U_joint_hs_q24_81__q3_17_r4",
+      "best_illegal_V": 30,
+      "final_cuts": 2838,
+      "hs1": [
+        [
+          22,
+          95
+        ],
+        [
+          91,
+          93
+        ]
+      ],
+      "hs2": [
+        [
+          2,
+          18
+        ],
+        [
+          3,
+          61
+        ]
+      ],
+      "n_add": 2171,
+      "n_rem": 4,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        3,
+        17
+      ],
+      "r": 4,
+      "rounds": 437,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "a10c5b1c3b8ae57d5e5592095b93b42716ebf487eb6e0e89e314484cc5e5443b",
+      "wall_time_s": 30.061436653137207
+    },
+    {
+      "U_id": "U_joint_hs_q24_81__q3_82_r4",
+      "best_illegal_V": 27,
+      "final_cuts": 2862,
+      "hs1": [
+        [
+          22,
+          95
+        ],
+        [
+          91,
+          93
+        ]
+      ],
+      "hs2": [
+        [
+          2,
+          81
+        ],
+        [
+          3,
+          38
+        ]
+      ],
+      "n_add": 2171,
+      "n_rem": 4,
+      "q1": [
+        24,
+        81
+      ],
+      "q2": [
+        3,
+        82
+      ],
+      "r": 4,
+      "rounds": 436,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "fb6b6953416cd1d8af05d2450b5e14b20ea1f79746ec4f8d7890b517b802b026",
+      "wall_time_s": 30.29306721687317
+    },
+    {
+      "U_id": "U_joint_hs_q75_18__q75_81_r4",
+      "best_illegal_V": 26,
+      "final_cuts": 2944,
+      "hs1": [
+        [
+          8,
+          6
+        ],
+        [
+          77,
+          4
+        ]
+      ],
+      "hs2": [
+        [
+          8,
+          93
+        ],
+        [
+          77,
+          95
+        ]
+      ],
+      "n_add": 2210,
+      "n_rem": 4,
+      "q1": [
+        75,
+        18
+      ],
+      "q2": [
+        75,
+        81
+      ],
+      "r": 4,
+      "rounds": 445,
+      "status": "INFEASIBLE_SCOPED",
+      "universe_hash": "ac54b253b200dfc7076df09092424d4f5b8d2b2cd96dade43b4422820eb955af",
+      "wall_time_s": 31.239904403686523
+    }
+  ],
+  "schema": "w3_joint_hs_v1",
+  "status_counts": {
+    "INFEASIBLE_SCOPED": 10
+  }
+}

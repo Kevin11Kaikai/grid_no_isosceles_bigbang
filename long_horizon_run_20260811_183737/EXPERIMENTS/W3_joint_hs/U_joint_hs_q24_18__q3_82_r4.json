@@ -1,0 +1,41 @@
+{
+  "U_id": "U_joint_hs_q24_18__q3_82_r4",
+  "best_illegal_V": 25,
+  "final_cuts": 2872,
+  "hs1": [
+    [
+      22,
+      4
+    ],
+    [
+      92,
+      15
+    ]
+  ],
+  "hs2": [
+    [
+      2,
+      81
+    ],
+    [
+      3,
+      38
+    ]
+  ],
+  "n_add": 2167,
+  "n_rem": 4,
+  "points": null,
+  "q1": [
+    24,
+    18
+  ],
+  "q2": [
+    3,
+    82
+  ],
+  "r": 4,
+  "rounds": 437,
+  "status": "INFEASIBLE_SCOPED",
+  "universe_hash": "ba9b533887c49d28fcab2d1db4a26c99426af51c970550d9b9f7fac73404d72b",
+  "wall_time_s": 28.310206174850464
+}

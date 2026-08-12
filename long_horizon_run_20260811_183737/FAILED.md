@@ -153,3 +153,8 @@
 - Level: `TIMEOUT_INCONCLUSIVE` (low information).
 - Status: **Deprioritized**; do not spend primary long budget on ≈full-grid Add.
 
+### LH-F022 — Joint exact-HS pairs (r=|Rem|) among easiest qs
+- Evidence: `EXPERIMENTS/W3_joint_hs/` — 10/10 pairs `INFEASIBLE_SCOPED` at r=4 with large Add (~32–?s each).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD that pair-HS forced-delete family** for sampled easiest pairs; orbit / other formulations remain.
+
