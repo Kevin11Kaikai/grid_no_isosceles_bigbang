@@ -1,26 +1,18 @@
 # NEXT_SESSION (≤1 page)
 
 **Run:** `long_horizon_run_20260811_183737/`  
-**HEAD tip:** see `git log -1` on `origin/master`  
 **Read:** `RESEARCH_STATE.md`, `FAILED.md`, `EXPERIMENTS/LH4_orbit_enlarged/`
 
-## Live lead
+## Resume
 
-Enlarged Type0/1 **defect** orbits TIMEOUT (not INFEAS) with universe ~free261/def220/h14.  
-Long 1200s Type0 run: `EXPERIMENTS/LH4_orbit_enlarged/long_t0_defect_s301.json` (or in progress).
+1. Check whether `long_t0_defect_s401_45min.json` exists / completed.
+2. If TIMEOUT: continue enlarged Type0/1 defect with ≥45–60 min budgets (primary).
+3. Do **not** restart baseline+1 fixed-card or frame/low-LB r=2 shells.
 
-## Do not repeat without new reason
+## Incumbent
 
-- baseline+1 soft |S|=165 search  
-- U_small_r2 / low-LB≤5 r≤4 / frame r=2 fullrem (INFEAS)  
-- treating TIMEOUT as INFEASIBLE
-
-## Next 3 actions
-
-1. Read long Type0 result; if TIMEOUT, push budget or diversify seeds/types with same enlarged caps.
-2. Type1 enlarged defect long run.
-3. Hybrid annulus∪S0-core LNS only after orbit long results land.
+Still dual-verified 112 / 164 only.
 
 ## Standing order
 
-Push checkpoints to `origin/master`; continue; no Hard Stop for polish.
+`git add -A` → commit → `git push origin master` after checkpoints. No force-push.
