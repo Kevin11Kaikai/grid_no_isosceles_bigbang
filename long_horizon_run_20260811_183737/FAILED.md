@@ -365,3 +365,11 @@
 - Evidence: `EXPERIMENTS/W3_random_large_rem/summary.json` — Rem80/100: `TIMEOUT` best=164 (=incumbent hash) in ~900s (recovered S0; not proved max). Rem120: early stall best=44 (core) after huge cut dump — `TIMEOUT_INCONCLUSIVE`/tool stress.
 - Level: `TIMEOUT_INCONCLUSIVE` (not UB); weak signal that large Rem still returns to S0 basin quickly for k≤100.
 - Status: Open for longer prove-≥165 under Rem80 cores; not a +1.
+
+### LH-F060 — Forbid-Rem refill (blacklist deleted S0 points)
+- Evidence: `EXPERIMENTS/W3_forbid_rem_refill/summary.json`
+  - k=40: `CAPACITY_FAIL` cap=127
+  - k=60: `MAX_PROVED` 128 (cap=169) — scoped max ≪165
+  - k=80: `TIMEOUT` best=134 dual OK (left S0 basin; not +1)
+- Level: `CAPACITY_FAIL / SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
+- Status: **Leaving S0 by blacklisting Rem is necessary but insufficient at these seeds**; escalate k=80 long / structured Rem.

@@ -46,3 +46,4 @@
 - Agent C: no V=0; plateaus match Gate1 empirical min direct-insertion ΔV.
 - Red Team Wave2: A/B/C PASS; Gate2 PASS/CLOSED (`scratch/wave2/gate2_decision.md`); legal +1 none.
 - Agent B Wave2: Type0 longs TIMEOUT size=0; many axes scoped INFEAS; `any_legal_plus1=false`; no candidates.
+| W3-F1 | Blacklist Rem from S0 then global max ⇒ 165 | **weakened** F060: k60 MAX=128; k80 TIMEOUT 134 | long k80 / structured Rem |

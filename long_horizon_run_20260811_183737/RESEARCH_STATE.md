@@ -1,25 +1,22 @@
 ﻿# RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-12 (random large Rem harvest)
+**Updated:** 2026-08-12 (forbid-Rem)
 
 ## Incumbent
 - n=64 **112** / n=100 **164** — **no legal +1**
 
-## Hard scoped facts (S0-related)
-| Setting | Result |
-|---|---|
-| HS2 / joint HS2 delete | MAX_PROVED 164 |
-| certfreq Rem ≤64 | MAX_PROVED 164 |
-| frame_d2 global refill | MAX_PROVED 164 |
-| random Rem 80/100 maximize | TIMEOUT best=164 incumbent (F059) |
+## Key new fact (F060)
+Keeping a large S0 core while **forbidding** deleted points blocks S0 recovery:
+- Rem40 forbid → capacity 127
+- Rem60 forbid → **proved max 128**
+- Rem80 forbid → best 134 TIMEOUT (non-S0 hash)
 
-## Non-S0
-- Grow/LNS/parity/midset/union: plateau ≤138; no +1
+Without blacklist, Rem80/100 **snap back** to incumbent (F059).
 
 ## Next 3
-1. Longer escalate prove≥165 under Rem80/100 cores (TIMEOUT≠INFEAS) OR leave S0 basin via forced-forbidden incumbent cells.  
-2. Fixed-card V-minimize at 165 from non-S0 warm starts (not S0+1 soft grind).  
-3. Dual-verify before any promote.
+1. Long escalate forbid Rem80/100 (TIMEOUT≠INFEAS).  
+2. Structured Rem blacklist (HS2-involved / certfreq) + maximize.  
+3. Fixed-card from non-S0 134 midset (not S0+1).
 
 ## Discipline
 TIMEOUT ≠ INFEAS; scoped ≠ global; standing order push.

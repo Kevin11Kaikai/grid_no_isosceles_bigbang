@@ -1,0 +1,54 @@
+{
+  "schema": "w3_forbid_rem_refill_v1",
+  "rows": [
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 124,
+      "free": 3,
+      "best_legal_size": 124,
+      "proved_max": 127,
+      "k": 40,
+      "seed": 21
+    },
+    {
+      "status": "MAX_PROVED",
+      "core": 104,
+      "free": 65,
+      "best_legal_size": 128,
+      "proved_max": 128,
+      "rounds": 3,
+      "final_cuts": 322,
+      "wall_s": 0.09805822372436523,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 128,
+        "hash": "34f12bd4561102029b268519febc1f71903d76b1aae00c36c455e74eb8c944f5"
+      },
+      "best_hash": "34f12bd4561102029b268519febc1f71903d76b1aae00c36c455e74eb8c944f5",
+      "k": 60,
+      "seed": 22
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 84,
+      "free": 305,
+      "best_legal_size": 134,
+      "proved_max": null,
+      "rounds": 31,
+      "final_cuts": 11527,
+      "wall_s": 900.2361257076263,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 134,
+        "hash": "ac3c63735e36cf7bfb3276ca24aa95401832985aa311724696061c634f8663c9"
+      },
+      "best_hash": "ac3c63735e36cf7bfb3276ca24aa95401832985aa311724696061c634f8663c9",
+      "k": 80,
+      "seed": 23
+    }
+  ],
+  "best": 134,
+  "any_plus": false
+}
