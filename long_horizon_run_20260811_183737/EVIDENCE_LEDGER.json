@@ -45,6 +45,32 @@
         "EXPERIMENTS/LH1_v3_residual/expanded_residual_refill.json",
         "EXPERIMENTS/LH1_n64_sandbox/n64_v2_residual_refill.json"
       ]
+    },
+    {
+      "id": "E005",
+      "utc": "2026-08-12TGate2",
+      "event": "wave2_agent_b_complete",
+      "summary": "Agent B Wave2 closed: no legal +1; Type0 longs TIMEOUT size=0 (n100~3000s, n64~2400s); many other axes scoped INFEASIBLE with non-global notes; candidates empty.",
+      "level": "SCOPED_INFEASIBLE / TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "scratch/agent_b/agent_b_wave2_report.md",
+        "scratch/agent_b/n100_orbit_defect_summary.json",
+        "scratch/agent_b/n64_orbit_defect_summary.json",
+        "scratch/agent_b/axis_smoke_summary.json"
+      ]
+    },
+    {
+      "id": "E006",
+      "utc": "2026-08-12TGate2",
+      "event": "gate2_pass_closed",
+      "summary": "Gate2 PASS/CLOSED: A/B/C Red Team PASS; no legal +1; no new LB/UB; WAVE3_READY.",
+      "level": "GATE_DECISION",
+      "artifacts": [
+        "scratch/wave2/gate2_decision.md",
+        "scratch/wave2/gate2_manifest.json",
+        "audits/wave2_red_team.md",
+        "scratch/red_team_wave2/summary.json"
+      ]
     }
   ]
 }

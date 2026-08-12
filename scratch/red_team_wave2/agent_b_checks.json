@@ -1,22 +1,50 @@
 {
-  "status": "PENDING_INCOMPLETE",
-  "final_report_present": false,
+  "status": "COMPLETE",
+  "verdict": "PASS",
+  "final_report_present": true,
+  "final_report_path": "scratch/agent_b/agent_b_wave2_report.md",
   "smoke_summary_present": true,
-  "gate1_orbit_artifacts_present": true,
-  "resume_log_tail": "START long_n100_t0_defect_d1-8_s21 budget=3000s\r\nDONE long_n100_t0_defect_d1-8_s21 status=TIMEOUT size=0 wall=2999.9\r\nSTART long_n100_t0_partial_d1-8_s22 budget=2100s\r\n",
-  "status_counts": {
+  "n100_summary_present": true,
+  "n64_summary_present": true,
+  "gate1_orbit_offsets_present": true,
+  "campaign_finished": true,
+  "resume_incomplete": false,
+  "status_counts_smoke": {
     "TIMEOUT": 2,
     "INFEASIBLE": 16
+  },
+  "status_counts_long_n100": {
+    "TIMEOUT": 8,
+    "INFEASIBLE": 2
+  },
+  "status_counts_long_n64": {
+    "TIMEOUT": 3,
+    "INFEASIBLE": 1
   },
   "timeout_as_infeas_violations": [],
   "scoped_notes_ok": true,
   "type0_timeout_not_infeas": true,
-  "gate1_orbit_artifact": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\audit\\agent_b\\agent_b_report.md",
-  "orbit_json_count": 3,
-  "n_smoke_rows": 18,
+  "uses_INFEASIBLE_SCOPED_token": false,
+  "soft_naming_accepted": true,
+  "soft_naming_note": "INFEASIBLE rows carry explicit scoped / not-global-UB notes (RT-W2-02 soft closed)",
+  "any_legal_plus1": false,
   "candidates_dir_empty": true,
-  "pass_partial": true,
-  "note": "Final Agent B wave2 report PENDING; long n100 t0 run still in progress per wave2_resume.log. Audited smoke summary only.",
+  "best_long": {
+    "n100": {
+      "tag": "long_n100_t0_defect_d1-8_s21",
+      "status": "TIMEOUT",
+      "size": 0,
+      "wall_time_s": 2999.874529361725,
+      "model_hash": "55de47db07e8ed5c14f583631cf2c1d5fb6fcf5e206e49601dc9ca2638334a1f"
+    },
+    "n64": {
+      "tag": "long_n64_t0_defect_d1-8_s41",
+      "status": "TIMEOUT",
+      "size": 0,
+      "wall_time_s": 2400.051169872284,
+      "model_hash": "fe48a306f50c6bbd7cc31c92d2124591dfaab6b1455057bed42378375cca82ac"
+    }
+  },
   "orbit_mapping_vs_gate1": {
     "checked": true,
     "source": "scratch/audit/agent_b/agent_b_report.md",
@@ -24,5 +52,11 @@
     "gate1_report_mentions_mandatory": true,
     "gate1_report_mentions_types_1_2_compare": true,
     "pure_12_all_infeas": true
-  }
+  },
+  "repair_required": [],
+  "repair_required_closed": ["RT-W2-01", "RT-W2-02"],
+  "critical_flaws": false,
+  "evidence_level": "SCOPED_INFEASIBLE + TIMEOUT_INCONCLUSIVE (no global UB; no legal +1)",
+  "gate2_close": true,
+  "audited_at": "2026-08-12TGate2_Main"
 }

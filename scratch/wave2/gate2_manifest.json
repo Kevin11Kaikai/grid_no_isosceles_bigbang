@@ -1,0 +1,257 @@
+{
+  "schema": "grid_no_isosceles.gate2_manifest.v1",
+  "gate": 2,
+  "verdict": "PASS",
+  "closed": true,
+  "wave3_ready": true,
+  "legal_plus1": false,
+  "new_lower_bound_claimed": false,
+  "global_upper_bound_claimed": false,
+  "synthesis_date": "2026-08-12",
+  "base_git_commit": "ffe7123b5d5f60a879ea599f75aee87d218c8159",
+  "gate1_ref": {
+    "decision": "scratch/audit/gate1_decision.md",
+    "manifest": "scratch/audit/gate1_manifest.json",
+    "policy": "scratch/audit/phase0_neighborhood_policy.md",
+    "verdict": "PASS",
+    "wave2_allowed": true
+  },
+  "discipline": {
+    "timeout_ne_infeasible": true,
+    "scoped_infeasible_ne_global_ub": true,
+    "heuristic_failure_ne_impossibility": true
+  },
+  "agents": {
+    "A": {
+      "status": "COMPLETE",
+      "red_team": "PASS",
+      "modules": [
+        "src/search/hamming_shell_conflict.py",
+        "src/search/conflict_multiregion.py"
+      ],
+      "scratch": "scratch/agent_a/",
+      "headline": {
+        "n100_r1_neg_control": "INFEASIBLE_SCOPED",
+        "n100_r2_U_small_r2": "INFEASIBLE_SCOPED_4of4",
+        "n64_r1_U_small": "INFEASIBLE_SCOPED",
+        "multiregion_size_improve": false,
+        "legal_plus1": false
+      },
+      "evidence_levels": [
+        "SCOPED_INFEASIBLE",
+        "HEURISTIC"
+      ]
+    },
+    "B": {
+      "status": "COMPLETE",
+      "red_team": "PASS",
+      "modules": [
+        "src/search/orbit_defect_search.py"
+      ],
+      "scratch": "scratch/agent_b/",
+      "headline": {
+        "any_legal_plus1": false,
+        "candidates": "none",
+        "best_long_n100": "TIMEOUT Type0 defect ~3000s size=0",
+        "best_long_n64": "TIMEOUT Type0 defect ~2400s size=0",
+        "smoke_status_counts": {
+          "TIMEOUT": 2,
+          "INFEASIBLE": 16
+        },
+        "long_n100_status_counts": {
+          "TIMEOUT": 8,
+          "INFEASIBLE": 2
+        },
+        "long_n64_status_counts": {
+          "TIMEOUT": 3,
+          "INFEASIBLE": 1
+        },
+        "status_token_note": "Uses INFEASIBLE with scoped notes (soft RT-W2-02 accepted)"
+      },
+      "evidence_levels": [
+        "SCOPED_INFEASIBLE",
+        "TIMEOUT_INCONCLUSIVE"
+      ]
+    },
+    "C": {
+      "status": "COMPLETE",
+      "red_team": "PASS",
+      "modules": [
+        "src/search/fixed_cardinality_minconflict.py"
+      ],
+      "scratch": "scratch/agent_c/",
+      "headline": {
+        "n100_best_V_at_165": 3,
+        "n64_best_V_at_113": 2,
+        "any_v0": false,
+        "incremental_exact_agree": true,
+        "legal_plus1": false
+      },
+      "evidence_levels": [
+        "HEURISTIC"
+      ]
+    }
+  },
+  "red_team": {
+    "audit": "audits/wave2_red_team.md",
+    "summary": "scratch/red_team_wave2/summary.json",
+    "critical_flaws": false,
+    "agent_verdicts": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS"
+    },
+    "repair_required_open": [
+      "RT-W2-04"
+    ],
+    "repair_required_closed": [
+      "RT-W2-01",
+      "RT-W2-02",
+      "RT-W2-03"
+    ],
+    "notes": {
+      "RT-W2-02": "Soft: B uses INFEASIBLE token + scoped note; accepted non-blocking",
+      "RT-W2-04": "Info: greedy.py dirty outside Wave2 exclusives — Main housekeeping"
+    }
+  },
+  "artifacts": {
+    "agent_a": [
+      {
+        "path": "scratch/agent_a/agent_a_wave2_report.md",
+        "sha256": "43340baf7ce6e0a757a1cc70098bfcc499cba685ab70b50817b86eb574f37507",
+        "bytes": 5551
+      },
+      {
+        "path": "scratch/agent_a/manifest.jsonl",
+        "sha256": "1eadac4bdc3c0c40b607cc24255518b209f68d170f1c801e17b3059e6aa39f12",
+        "bytes": 7026
+      },
+      {
+        "path": "scratch/agent_a/negative_control_n100_r1.json",
+        "sha256": "99894d5397f13c0588f22625faa259ca9aaed90645f414e5f785380525a87287",
+        "bytes": 5496
+      },
+      {
+        "path": "scratch/agent_a/hamming_n100_r2_summary.json",
+        "sha256": "f4b51b7de73f7f97d48360c1021e957d9ab6ecd8a8439bb102ce1d90c0eb7a30",
+        "bytes": 9144
+      },
+      {
+        "path": "scratch/agent_a/hamming_n64_r1_summary.json",
+        "sha256": "f08008d786868424cc513e9d6ca8ffff9bf8ba51d88bba6de8275de5eeb6bf49",
+        "bytes": 1224
+      },
+      {
+        "path": "scratch/agent_a/multiregion_pilot_summary.json",
+        "sha256": "ed740f81f6d56ed004d31d83ce64bda91c8c7436a5012c4ed70b560edb6dba8d",
+        "bytes": 1550
+      }
+    ],
+    "agent_b": [
+      {
+        "path": "scratch/agent_b/agent_b_wave2_report.md",
+        "sha256": "d9c5c11731e0b6f9986743a362a3aa2babd68c8a78fb3db77a7a4313d7370e45",
+        "bytes": 4422
+      },
+      {
+        "path": "scratch/agent_b/manifest.jsonl",
+        "sha256": "497c93bb5521f81543026d619fd55473b0cfd8a3568070e8b471b4d50e19107f",
+        "bytes": 85851
+      },
+      {
+        "path": "scratch/agent_b/axis_smoke_summary.json",
+        "sha256": "4995034872336703777353b9d74fb84efd358fdd90de6f5cc1f0d6dcfa735056",
+        "bytes": 23497
+      },
+      {
+        "path": "scratch/agent_b/n100_orbit_defect_summary.json",
+        "sha256": "783600e7021001b8c550fb7321c151cfd647e014c20f61939ec9349a3113eb96",
+        "bytes": 11860
+      },
+      {
+        "path": "scratch/agent_b/n64_orbit_defect_summary.json",
+        "sha256": "6c3462244996c055893224ba32f5ca3ae8bb888ee2cfa274d0d4a34d7f20d7bf",
+        "bytes": 5471
+      }
+    ],
+    "agent_c": [
+      {
+        "path": "scratch/agent_c/agent_c_wave2_report.md",
+        "sha256": "a725899ce19834336be32ec6b7af1eae69daacbd182a09007dbc66bfabf24b2f",
+        "bytes": 3908
+      },
+      {
+        "path": "scratch/agent_c/manifest.jsonl",
+        "sha256": "db6d30609ec61c4beb231e61691aeb45155ebee4ade522b298555b9f96c5f1b9",
+        "bytes": 7992
+      },
+      {
+        "path": "scratch/agent_c/n100_fixed165_summary.json",
+        "sha256": "eab31435e960c2cfe64af5a998cdba3728a55241f7f67464c2dd0cf292ff8780",
+        "bytes": 74444
+      },
+      {
+        "path": "scratch/agent_c/n64_fixed113_summary.json",
+        "sha256": "39385fe6896f0023f944168ebd44be0a8bb28dd77b7b919170d4108304f3dccb",
+        "bytes": 26748
+      },
+      {
+        "path": "scratch/agent_c/campaign_meta.json",
+        "sha256": "2822c70a211021d82ae567cefc23c8453c51e307a3cdaae3cbc8185faa9d9a39",
+        "bytes": 5895
+      },
+      {
+        "path": "scratch/agent_c/reproduce_best.json",
+        "sha256": "30743662466a649201a7c7e16e982db11cc747b8722d9157f354569154ab8823",
+        "bytes": 4646
+      }
+    ],
+    "red_team": [
+      {
+        "path": "audits/wave2_red_team.md",
+        "role": "primary_audit_memo"
+      },
+      {
+        "path": "scratch/red_team_wave2/summary.json",
+        "role": "machine_summary"
+      },
+      {
+        "path": "scratch/red_team_wave2/agent_a_checks.json",
+        "sha256": "27026fdb64bd1fe89d04b4fc3f581bfa768aa020e73d5c8c0af519d4e66b1db2",
+        "bytes": 3183
+      },
+      {
+        "path": "scratch/red_team_wave2/agent_b_checks.json",
+        "role": "updated_at_gate2_b_close"
+      },
+      {
+        "path": "scratch/red_team_wave2/agent_c_checks.json",
+        "sha256": "ab597e7090911a85df3996d6b521da3e3551ee21bf3bc40424362d900486e9c3",
+        "bytes": 4384
+      },
+      {
+        "path": "scratch/red_team_wave2/agent_c_full_checks.json",
+        "sha256": "28fb120815caed25399ed44b9c88cd297c22100501b9189facce807ef7a8c021",
+        "bytes": 6167
+      },
+      {
+        "path": "scratch/red_team_wave2/ownership_checks.json",
+        "sha256": "eb0481b6c3273441dcd66101a43550cf1cdaa83c2e33e8fe6d993561b58571af",
+        "bytes": 2277
+      }
+    ],
+    "gate2": [
+      {
+        "path": "scratch/wave2/gate2_decision.md"
+      },
+      {
+        "path": "scratch/wave2/gate2_manifest.json"
+      }
+    ]
+  },
+  "next_actions": [
+    "Wave3: prioritize open TIMEOUT Type0 orbit-defect enlargements and/or certificate-driven Hamming Rem/Add outside killed Wave2 U_ids",
+    "Do not grind Agent C S0+1 soft seeds; require remove>=2 or nonlocal free vars",
+    "Main Wave3 ranking memo: pick top 1-2 routes; hold FunSearch"
+  ]
+}

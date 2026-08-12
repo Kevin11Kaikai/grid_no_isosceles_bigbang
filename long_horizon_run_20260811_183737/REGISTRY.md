@@ -8,7 +8,7 @@
 | ID | Route | Owner bias | Status | Budget share (initial) | Notes |
 |---|---|---|---|---:|---|
 | A | Hamming-shell / blocker hypergraph exchange | Agent A lineage | LIVE — evolve beyond Wave2 score-U | ~40% | Wave2 killed `U_small_r2` + several halos SCOPED; next = certificate-driven Rem/Add |
-| B | Orbit / structure + defect | Agent B lineage | LIVE — incomplete Wave2 | ~20% | Long TIMEOUT; Type1 pure INFEASIBLE; report absent |
+| B | Orbit / structure + defect | Agent B lineage | LIVE — Wave2 COMPLETE (no +1); Type0 TIMEOUT open | ~20% | Wave2 freeze: report PASS; pure T1/T2 scoped INFEAS; Type0 longs TIMEOUT≠INFEAS; LH enlarge still live |
 | C | Fixed-cardinality min-conflict | Agent C lineage | LIVE — plateau | ~15% | Best V=3 (n100@165), V=2 (n64@113); no V=0 |
 | D | Hybrid / multi-region / residual-conflict exact repair | Main+A | LIVE | ~10% | Wave2 multi-region no +1; residual V-elite repair open |
 | K | Critic / cheap-kill / red-team discipline | Critic | ALWAYS ON | ~10% | Kill repeats; enforce scopes |
@@ -24,7 +24,7 @@
 | LH-A3 | Low-LB cells have complementary (low joint VC) pairs | **REJECTED on 85-q sample** | LH-F002; try fullrem LB≤4 Add next |
 | LH-A4 | `U_fullrem_LBle4_r2` admits legal 165 | OPEN | CP-SAT now |
 | LH-C1 | V=3 elites locally refillable to V=0 at \|S\|=165 | **REJECTED for tested halos** | LH-F003 |
-| LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy | short smokes only |
+| LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy (Wave2 B closed no +1) | enlarge defect/halo/time (LH-4); do not treat Wave2 TIMEOUT as empty |
 | LH-D1 | Residual communities beat Hamming U | **weakened** — refill infeasible; nonlocal free still open | |
 
 ## Frozen Wave2 facts (import)
@@ -34,4 +34,5 @@
 - Escalated rem/add/halo shells (medium/large/fullrem/spatial-halo/r3 variants): all `INFEASIBLE_SCOPED` under Agent A budgets — still **scoped**.
 - n64 `U_small` r=1: `INFEASIBLE_SCOPED` + brute 3312 shells agree.
 - Agent C: no V=0; plateaus match Gate1 empirical min direct-insertion ΔV.
-- Red Team Wave2: A/C PASS; B provisional/PENDING report.
+- Red Team Wave2: A/B/C PASS; Gate2 PASS/CLOSED (`scratch/wave2/gate2_decision.md`); legal +1 none.
+- Agent B Wave2: Type0 longs TIMEOUT size=0; many axes scoped INFEAS; `any_legal_plus1=false`; no candidates.

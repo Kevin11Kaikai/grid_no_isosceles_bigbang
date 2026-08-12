@@ -111,3 +111,10 @@
 - Level: TIMEOUT (not INFEAS).
 - Status: open but expensive; deprioritize vs orbit enlarge / hybrid.
 
+### IMP-F008 — Wave2 Agent B orbit/defect freeze (no +1)
+- Evidence: `scratch/agent_b/agent_b_wave2_report.md`, `n100_orbit_defect_summary.json`, `n64_orbit_defect_summary.json`, `axis_smoke_summary.json`.
+- Smoke: Type0 defect TIMEOUT; types 1–6 mostly scoped INFEASIBLE (with non-global notes).
+- Long best: n100 Type0 defect/partial TIMEOUT size=0; n64 Type0 defect TIMEOUT size=0; `any_legal_plus1=false`.
+- Level: mix `SCOPED_INFEASIBLE` + `TIMEOUT_INCONCLUSIVE` — **not** global empty.
+- Status: **Wave2 B route frozen as no-+1 under those universes/budgets**; Type0 TIMEOUT remains **open** for enlarged/longer models (LH-4). Do not re-label TIMEOUT as INFEASIBLE.
+

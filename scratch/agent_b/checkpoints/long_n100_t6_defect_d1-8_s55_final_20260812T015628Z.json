@@ -1,0 +1,345 @@
+{
+  "schema": "grid_no_isosceles.search_result.v1",
+  "method": "orbit_defect_search",
+  "n": 100,
+  "target_size": 165,
+  "symmetry_type": 6,
+  "axis_offset": [
+    99,
+    98
+  ],
+  "axis_comment": "Mixed symmetry: x-axis at (n-1)/2, y-axis at n/2-1",
+  "mode": "defect",
+  "defect_budget": {
+    "min": 1,
+    "max": 8
+  },
+  "core_def": {
+    "soft_core": true,
+    "fix_core": false,
+    "n_core_orbits": 6,
+    "core_orbit_ids": [
+      15,
+      154,
+      361,
+      414,
+      1126,
+      1581
+    ],
+    "core_points_note": 24
+  },
+  "universe": {
+    "universe_id": "orb_t6_defect_core6_free106_def120_part0_h8",
+    "fingerprint": "c3e1c302e2be8d499909a40a36d4e27b4b1988bc0decefdfb8b077c640d50237",
+    "n_free_orbits": 106,
+    "n_defect_points": 120,
+    "n_partial_orbits": 0,
+    "notes": {
+      "halo_radius": 8,
+      "max_extra_orbits": 100,
+      "max_defect_pool": 120,
+      "agent_c_universe": "U_medium",
+      "baseline_fully_present_full": 6,
+      "baseline_partial": 65,
+      "include_truncated_as_partial": true,
+      "core_points": 24
+    }
+  },
+  "model_hash": "8f1a405fd596e90d18a22270af0ac81d5df7f6ab46389513f88c18045fec28d1",
+  "solver_status": "TIMEOUT",
+  "wall_time_s": 1080.0796692371368,
+  "time_budget_s": 1080,
+  "seed": 55,
+  "num_workers": 5,
+  "git_commit": "ffe7123b5d5f60a879ea599f75aee87d218c8159",
+  "rounds": 40,
+  "final_cuts": 1838,
+  "round_log": [
+    {
+      "round": 1,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.45835185050964355,
+      "selected_size": 165,
+      "cuts": 0,
+      "violations": 2257,
+      "cuts_added": 362
+    },
+    {
+      "round": 2,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.5057380199432373,
+      "selected_size": 165,
+      "cuts": 362,
+      "violations": 2372,
+      "cuts_added": 398
+    },
+    {
+      "round": 3,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.5540995597839355,
+      "selected_size": 165,
+      "cuts": 760,
+      "violations": 792,
+      "cuts_added": 192
+    },
+    {
+      "round": 4,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.6012089252471924,
+      "selected_size": 165,
+      "cuts": 952,
+      "violations": 832,
+      "cuts_added": 177
+    },
+    {
+      "round": 5,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.662388801574707,
+      "selected_size": 165,
+      "cuts": 1129,
+      "violations": 694,
+      "cuts_added": 207
+    },
+    {
+      "round": 6,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.7239325046539307,
+      "selected_size": 165,
+      "cuts": 1336,
+      "violations": 797,
+      "cuts_added": 218
+    },
+    {
+      "round": 7,
+      "cpsat_status": "OPTIMAL",
+      "t": 0.8029329776763916,
+      "selected_size": 165,
+      "cuts": 1554,
+      "violations": 848,
+      "cuts_added": 284
+    },
+    {
+      "round": 8,
+      "cpsat_status": "UNKNOWN",
+      "t": 34.23691439628601,
+      "cuts": 1838
+    },
+    {
+      "round": 9,
+      "cpsat_status": "UNKNOWN",
+      "t": 67.6644823551178,
+      "cuts": 1838
+    },
+    {
+      "round": 10,
+      "cpsat_status": "UNKNOWN",
+      "t": 101.08385705947876,
+      "cuts": 1838
+    },
+    {
+      "round": 11,
+      "cpsat_status": "UNKNOWN",
+      "t": 134.50622820854187,
+      "cuts": 1838
+    },
+    {
+      "round": 12,
+      "cpsat_status": "UNKNOWN",
+      "t": 167.9229428768158,
+      "cuts": 1838
+    },
+    {
+      "round": 13,
+      "cpsat_status": "UNKNOWN",
+      "t": 201.32998061180115,
+      "cuts": 1838
+    },
+    {
+      "round": 14,
+      "cpsat_status": "UNKNOWN",
+      "t": 234.77035903930664,
+      "cuts": 1838
+    },
+    {
+      "round": 15,
+      "cpsat_status": "UNKNOWN",
+      "t": 268.1859006881714,
+      "cuts": 1838
+    },
+    {
+      "round": 16,
+      "cpsat_status": "UNKNOWN",
+      "t": 301.5980851650238,
+      "cuts": 1838
+    },
+    {
+      "round": 17,
+      "cpsat_status": "UNKNOWN",
+      "t": 335.06459856033325,
+      "cuts": 1838
+    },
+    {
+      "round": 18,
+      "cpsat_status": "UNKNOWN",
+      "t": 368.4791088104248,
+      "cuts": 1838
+    },
+    {
+      "round": 19,
+      "cpsat_status": "UNKNOWN",
+      "t": 401.89416122436523,
+      "cuts": 1838
+    },
+    {
+      "round": 20,
+      "cpsat_status": "UNKNOWN",
+      "t": 435.30889225006104,
+      "cuts": 1838
+    },
+    {
+      "round": 21,
+      "cpsat_status": "UNKNOWN",
+      "t": 468.7245738506317,
+      "cuts": 1838
+    },
+    {
+      "round": 22,
+      "cpsat_status": "UNKNOWN",
+      "t": 502.1415812969208,
+      "cuts": 1838
+    },
+    {
+      "round": 23,
+      "cpsat_status": "UNKNOWN",
+      "t": 535.5535809993744,
+      "cuts": 1838
+    },
+    {
+      "round": 24,
+      "cpsat_status": "UNKNOWN",
+      "t": 568.9673981666565,
+      "cuts": 1838
+    },
+    {
+      "round": 25,
+      "cpsat_status": "UNKNOWN",
+      "t": 602.3852970600128,
+      "cuts": 1838
+    },
+    {
+      "round": 26,
+      "cpsat_status": "UNKNOWN",
+      "t": 635.8656680583954,
+      "cuts": 1838
+    },
+    {
+      "round": 27,
+      "cpsat_status": "UNKNOWN",
+      "t": 669.2825784683228,
+      "cuts": 1838
+    },
+    {
+      "round": 28,
+      "cpsat_status": "UNKNOWN",
+      "t": 702.7016680240631,
+      "cuts": 1838
+    },
+    {
+      "round": 29,
+      "cpsat_status": "UNKNOWN",
+      "t": 736.1246581077576,
+      "cuts": 1838
+    },
+    {
+      "round": 30,
+      "cpsat_status": "UNKNOWN",
+      "t": 769.5420439243317,
+      "cuts": 1838
+    },
+    {
+      "round": 31,
+      "cpsat_status": "UNKNOWN",
+      "t": 802.9511172771454,
+      "cuts": 1838
+    },
+    {
+      "round": 32,
+      "cpsat_status": "UNKNOWN",
+      "t": 836.3664219379425,
+      "cuts": 1838
+    },
+    {
+      "round": 33,
+      "cpsat_status": "UNKNOWN",
+      "t": 869.7771294116974,
+      "cuts": 1838
+    },
+    {
+      "round": 34,
+      "cpsat_status": "UNKNOWN",
+      "t": 903.1856417655945,
+      "cuts": 1838
+    },
+    {
+      "round": 35,
+      "cpsat_status": "UNKNOWN",
+      "t": 936.659502029419,
+      "cuts": 1838
+    },
+    {
+      "round": 36,
+      "cpsat_status": "UNKNOWN",
+      "t": 970.0696425437927,
+      "cuts": 1838
+    },
+    {
+      "round": 37,
+      "cpsat_status": "UNKNOWN",
+      "t": 1003.4823229312897,
+      "cuts": 1838
+    },
+    {
+      "round": 38,
+      "cpsat_status": "UNKNOWN",
+      "t": 1036.9162783622742,
+      "cuts": 1838
+    },
+    {
+      "round": 39,
+      "cpsat_status": "UNKNOWN",
+      "t": 1070.3767335414886,
+      "cuts": 1838
+    },
+    {
+      "round": 40,
+      "cpsat_status": "UNKNOWN",
+      "t": 1080.0349118709564,
+      "cuts": 1838
+    }
+  ],
+  "points": [],
+  "size": 0,
+  "points_hash": null,
+  "parent_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+  "defect_accounting": null,
+  "verify": {
+    "A": null,
+    "B": null
+  },
+  "scope": {
+    "n": 100,
+    "symmetry_type": 6,
+    "mode": "defect",
+    "defect_budget": [
+      1,
+      8
+    ],
+    "universe_id": "orb_t6_defect_core6_free106_def120_part0_h8",
+    "time_limit_s": 1080,
+    "seed": 55,
+    "model_hash": "8f1a405fd596e90d18a22270af0ac81d5df7f6ab46389513f88c18045fec28d1"
+  },
+  "candidate_path": null,
+  "pilot_tag": "long_n100_t6_defect_d1-8_s55",
+  "pilot_wall_time_s": 1080.1647384166718
+}

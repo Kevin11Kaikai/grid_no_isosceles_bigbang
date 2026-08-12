@@ -1,8 +1,8 @@
 # Agent B Wave-2 Report — Orbit / Core / Defect Search
 
-- **git_commit**: `797afdeb5e2cb4da0f4850e138a28735bf809518`
+- **git_commit**: `ffe7123b5d5f60a879ea599f75aee87d218c8159`
 - **workers**: ~25% cores → default `5`
-- **total_wall_time_s**: 17884.3
+- **total_wall_time_s**: 19118.7
 - **targets**: n100→165, n64→113
 
 ## Hard constraints observed
@@ -55,6 +55,7 @@
 - long_n100_t3_defect_d1-8_s51: **TIMEOUT** size=0 wall=1500.2s cand=None
 - long_n100_t4_defect_d1-8_s52: **TIMEOUT** size=0 wall=1200.2s cand=None
 - long_n100_t5_defect_d1-8_s54: **TIMEOUT** size=0 wall=1080.2s cand=None
+- long_n100_t6_defect_d1-8_s55: **TIMEOUT** size=0 wall=1080.2s cand=None
 
 ## n64 long pilots
 
