@@ -335,3 +335,13 @@
 - Evidence: `EXPERIMENTS/W3_grow_destroy_max/summary.json` — grow best 134; destroy best **138** (parity_even TIMEOUT 300s); frame_d3/d4 `MAX_PROVED` 134; several `CAPACITY_FAIL` (<165). `any_plus=false`.
 - Level: `HEURISTIC / SCOPED_MAX / TIMEOUT_INCONCLUSIVE` (parity TIMEOUT ≠ proved max).
 - Status: **Deprioritize shallow grow-core frame/random destroys**; escalate long parity / large free-pool maximize only if information-positive.
+
+### LH-F054 — Cert-freq Rem top16/32/48/64 + global maximize on S0
+- Evidence: `EXPERIMENTS/W3_certfreq_destroy/summary.json` — 4/4 `MAX_PROVED` best=164 (=incumbent hash). Even core=100 (top64 Rem) free=203 recovers only S0.
+- Level: `SCOPED_MAX`.
+- Status: **DEAD \"delete top cert-involved points from S0 then refill past 164\"** under these Rem sizes.
+
+### LH-F055 — Parity-even long maximize 30min from grow-134 core
+- Evidence: `EXPERIMENTS/W3_parity_long/summary.json` — `TIMEOUT` best=138 (same plateau as 5min); 54 rounds / 285660 cuts / ~1800s; dual OK hash `5855ccab…`.
+- Level: `TIMEOUT_INCONCLUSIVE` (not proved max; not +1).
+- Status: **Deprioritize same parity cut-loop wall**; try LNS from midset / new cores.

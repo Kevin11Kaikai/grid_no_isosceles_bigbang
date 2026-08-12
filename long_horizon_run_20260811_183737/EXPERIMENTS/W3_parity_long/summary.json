@@ -1,0 +1,24 @@
+{
+  "schema": "w3_parity_long_v1",
+  "rows": [
+    {
+      "status": "TIMEOUT",
+      "core": 67,
+      "free": 895,
+      "best_legal_size": 138,
+      "proved_max": null,
+      "rounds": 54,
+      "final_cuts": 285660,
+      "wall_s": 1800.7312715053558,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 138,
+        "hash": "5855ccab3cb3ad987683516b3b6a85c5c9bf4d11b42a6b19b67463f046627cf7"
+      },
+      "best_hash": "5855ccab3cb3ad987683516b3b6a85c5c9bf4d11b42a6b19b67463f046627cf7",
+      "plan": "parity_even_long_30m"
+    }
+  ],
+  "grow_hash": "dffcae74217b5f8a90dd250dd0bbd08d3a7dd451daf87582b7423ad50d58c14f"
+}

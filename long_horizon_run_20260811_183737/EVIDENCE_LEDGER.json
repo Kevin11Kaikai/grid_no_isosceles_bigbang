@@ -219,6 +219,17 @@
         "EXPERIMENTS/W3_lns_from_legal/summary.json",
         "EXPERIMENTS/W3_grow_destroy_max/summary.json"
       ]
+    },
+    {
+      "id": "E019",
+      "utc": "2026-08-12T15:25:52Z",
+      "event": "certfreq_and_parity_long",
+      "summary": "Certfreq Rem top16-64 all MAX_PROVED 164; parity_even 30m TIMEOUT at 138 (same plateau). No +1.",
+      "level": "SCOPED_MAX / TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_certfreq_destroy/summary.json",
+        "EXPERIMENTS/W3_parity_long/summary.json"
+      ]
     }
   ],
   "events": [

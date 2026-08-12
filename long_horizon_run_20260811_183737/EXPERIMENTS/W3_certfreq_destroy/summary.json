@@ -1,0 +1,83 @@
+{
+  "schema": "w3_certfreq_destroy_v1",
+  "rows": [
+    {
+      "status": "MAX_PROVED",
+      "core": 148,
+      "free": 20,
+      "best_legal_size": 164,
+      "proved_max": 164,
+      "rounds": 3,
+      "final_cuts": 16,
+      "wall_s": 0.0312497615814209,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "best_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+      "plan": "certfreq_top16",
+      "n_removed": 16
+    },
+    {
+      "status": "MAX_PROVED",
+      "core": 132,
+      "free": 47,
+      "best_legal_size": 164,
+      "proved_max": 164,
+      "rounds": 3,
+      "final_cuts": 75,
+      "wall_s": 0.0468754768371582,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "best_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+      "plan": "certfreq_top32",
+      "n_removed": 32
+    },
+    {
+      "status": "MAX_PROVED",
+      "core": 116,
+      "free": 90,
+      "best_legal_size": 164,
+      "proved_max": 164,
+      "rounds": 3,
+      "final_cuts": 400,
+      "wall_s": 0.09375262260437012,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "best_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+      "plan": "certfreq_top48",
+      "n_removed": 48
+    },
+    {
+      "status": "MAX_PROVED",
+      "core": 100,
+      "free": 203,
+      "best_legal_size": 164,
+      "proved_max": 164,
+      "rounds": 3,
+      "final_cuts": 3365,
+      "wall_s": 16.153778314590454,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "best_hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1",
+      "plan": "certfreq_top64",
+      "n_removed": 64
+    }
+  ],
+  "any_plus": false,
+  "best": 164
+}
