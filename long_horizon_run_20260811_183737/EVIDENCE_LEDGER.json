@@ -8,7 +8,9 @@
       "event": "bootstrap",
       "summary": "Incumbents C(64)>=112, C(100)>=164 re-read from certified JSON.",
       "level": "DUAL_VERIFIED_CONSTRUCTION",
-      "artifacts": ["INCUMBENT.json"]
+      "artifacts": [
+        "INCUMBENT.json"
+      ]
     },
     {
       "id": "E001",
@@ -16,7 +18,9 @@
       "event": "import_wave2",
       "summary": "Wave2 scoped INFEAS on U_small_r2 lineage; Agent C V=3/2 plateaus; B incomplete.",
       "level": "SCOPED_INFEASIBLE / HEURISTIC",
-      "artifacts": ["scratch/agent_a/hamming_n100_r2_summary.json"]
+      "artifacts": [
+        "scratch/agent_a/hamming_n100_r2_summary.json"
+      ]
     },
     {
       "id": "E002",
@@ -24,7 +28,9 @@
       "event": "lh1_blocker_pair",
       "summary": "All 120 easiest-16 pairs have joint_VC=4; r=2 co-insertion necessary-condition fails.",
       "level": "NECESSARY_CONDITION_FAIL",
-      "artifacts": ["EXPERIMENTS/LH1_blocker_pair/blocker_pair_pilot_n100.json"]
+      "artifacts": [
+        "EXPERIMENTS/LH1_blocker_pair/blocker_pair_pilot_n100.json"
+      ]
     },
     {
       "id": "E003",
@@ -32,7 +38,9 @@
       "event": "lh1_complementary_pairs",
       "summary": "3570 pairs among 85 low-LB qs: 0 with joint_VC<=3.",
       "level": "FINITE_VERIFIED_SAMPLE",
-      "artifacts": ["EXPERIMENTS/LH1_blocker_pair/complementary_blocker_pairs.json"]
+      "artifacts": [
+        "EXPERIMENTS/LH1_blocker_pair/complementary_blocker_pairs.json"
+      ]
     },
     {
       "id": "E004",
@@ -164,7 +172,7 @@
       "id": "E015",
       "utc": "2026-08-12TWave3",
       "event": "w3_orbit_t2_t3_t4_timeout",
-      "summary": "Type2/3/4 xlarge defects all TIMEOUT size=0 under free~287–327 / def280–320 / h16–18; cuts 58k–100k; still TIMEOUT_INCONCLUSIVE.",
+      "summary": "Type2/3/4 xlarge defects all TIMEOUT size=0 under free~287\u2013327 / def280\u2013320 / h16\u201318; cuts 58k\u2013100k; still TIMEOUT_INCONCLUSIVE.",
       "level": "TIMEOUT_INCONCLUSIVE",
       "artifacts": [
         "EXPERIMENTS/W3_orbit_enlarge/xlarge_t2_defect_s702.json",
@@ -178,12 +186,32 @@
       "id": "E016",
       "utc": "2026-08-12TWave3",
       "event": "w3_orbit_mega_and_certlb2_launched",
-      "summary": "Launched Type0 cert_lb2 s801 and Type0 mega 2h s811 (360/h20) after types 0–4 xlarge TIMEOUT; both still open.",
+      "summary": "Launched Type0 cert_lb2 s801 and Type0 mega 2h s811 (360/h20) after types 0\u20134 xlarge TIMEOUT; both still open.",
       "level": "PROCESS",
       "artifacts": [
         "SCRATCH/w3_orbit_certlb2_t0.py",
         "SCRATCH/w3_orbit_t0_mega_2h.py"
       ]
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-08-12T08:21:41",
+      "event": "w3_spatial_dispersed_hamming_kill",
+      "refs": [
+        "EXPERIMENTS/W3_spatial_hamming/summary.json",
+        "EXPERIMENTS/W3_dispersed_hamming/summary.json"
+      ],
+      "note": "LH-F042/F044 SCOPED INFEAS"
+    },
+    {
+      "ts": "2026-08-12T08:21:41",
+      "event": "w3_rem3_residual_harvest",
+      "refs": [
+        "EXPERIMENTS/W3_rem3_residual/summary.json",
+        "EXPERIMENTS/W3_rem3_residual/core_maximize_s802.json"
+      ],
+      "note": "LH-F045; max legal 164 on s802 soft core"
     }
   ]
 }

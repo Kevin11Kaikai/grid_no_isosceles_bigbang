@@ -1,0 +1,340 @@
+{
+  "schema": "w3_pattern_screen_v1",
+  "rows": [
+    {
+      "kind": "annulus",
+      "params": {
+        "r0": 2,
+        "r1": 8
+      },
+      "cand_size": 2492,
+      "size": 128,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "1f504520c54545845efcf34973bd8aee8d6367c7911cadfdaebbb9a918a186ed"
+    },
+    {
+      "kind": "checker",
+      "params": {
+        "period": 5,
+        "phase": 1
+      },
+      "cand_size": 5000,
+      "size": 124,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "532e0b4cbb49b9b8fd2226ba93c7d03af570a7815c63435edd3d34e268ffcedc"
+    },
+    {
+      "kind": "checker",
+      "params": {
+        "period": 4,
+        "phase": 1
+      },
+      "cand_size": 4992,
+      "size": 123,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "0c05ec84ed49d47a8fc928908201e27fb1f79de85481c6b9a6abcfff0706bdf7"
+    },
+    {
+      "kind": "diag",
+      "params": {
+        "width": 2
+      },
+      "cand_size": 5000,
+      "size": 123,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "defe144407d8e078d50a020b50b49a92cfd6e833499f1d4d0e2048266c7d29f6"
+    },
+    {
+      "kind": "annulus",
+      "params": {
+        "r0": 4,
+        "r1": 12
+      },
+      "cand_size": 2988,
+      "size": 123,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "0f47026a56d56b1a17010dfb6589c7e0e0f96fdd2668f3d168207f299f43d1c2"
+    },
+    {
+      "kind": "checker",
+      "params": {
+        "period": 4,
+        "phase": 0
+      },
+      "cand_size": 5008,
+      "size": 122,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "f92423b36cb0e9741ce7410313e3753752a6b1fcee8c0b4624dc779de806b6da"
+    },
+    {
+      "kind": "checker",
+      "params": {
+        "period": 3,
+        "phase": 0
+      },
+      "cand_size": 5002,
+      "size": 119,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "977588b1007088499d58004aef8be3d2a0c088a1c28a33ceff4e107968b52998"
+    },
+    {
+      "kind": "checker",
+      "params": {
+        "period": 3,
+        "phase": 1
+      },
+      "cand_size": 4998,
+      "size": 119,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "4e04743a0c297fc55a6c2dd7f43e75e5946f063784b395106a6004366f3fe5ef"
+    },
+    {
+      "kind": "checker",
+      "params": {
+        "period": 5,
+        "phase": 0
+      },
+      "cand_size": 5000,
+      "size": 118,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "83be6bbc5bcd76066ef4bf3278318d69adf84d7572c1eee447c4c5aaa472a489"
+    },
+    {
+      "kind": "diag",
+      "params": {
+        "width": 4
+      },
+      "cand_size": 5002,
+      "size": 118,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "55ef5b1b9ada82051ef8bc33ecbfa14c726760055d4f06ed4a7833198db665c4"
+    },
+    {
+      "kind": "annulus",
+      "params": {
+        "r0": 6,
+        "r1": 14
+      },
+      "cand_size": 2844,
+      "size": 117,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "102b429ef8f25c897696eeadd1ca75bfda6cb198a7608d15d0fb49a96cf4a327"
+    },
+    {
+      "kind": "annulus",
+      "params": {
+        "r0": 8,
+        "r1": 18
+      },
+      "cand_size": 3212,
+      "size": 115,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "91c48c4a6fde28f8fdc87ee955f52d9a0fe5f1a0dc930c0ce37b0fa1ba8ef31b"
+    },
+    {
+      "kind": "diag",
+      "params": {
+        "width": 3
+      },
+      "cand_size": 4999,
+      "size": 111,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "17129596cb961f3e0578dacdead0e461894ca526ce9bcb7aafbae0807ce2b0f0"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 2,
+        "b": 3,
+        "c": 7
+      },
+      "cand_size": 1429,
+      "size": 97,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "8fb0a3f0542eceb96b1074f1980ce779ddcc3e6e2291c4c9d8a958a02a980fca"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 1,
+        "b": 3,
+        "c": 7
+      },
+      "cand_size": 1429,
+      "size": 96,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "560ee28f8810aa1ba870abdbab51fa36831e706f3e902e974ae2097a8bc02dfb"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 1,
+        "b": 2,
+        "c": 7
+      },
+      "cand_size": 1429,
+      "size": 95,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "f3ed25ac01ccb64f00317520866728c35efe9ec08475dedc5518cb3be0145bdf"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 2,
+        "b": 3,
+        "c": 5
+      },
+      "cand_size": 2000,
+      "size": 91,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "81fd076a3234813d950f594a8994b4f742409a029910659556af167fcaca959e"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 2,
+        "b": 3,
+        "c": 9
+      },
+      "cand_size": 1134,
+      "size": 89,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "5b0ec224c9f563ceb26495b9321055d06c3782a54c873857eb4970e2bc8a879a"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 1,
+        "b": 2,
+        "c": 9
+      },
+      "cand_size": 1112,
+      "size": 87,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "19e35a38690be11f6244b99bb355ae1c17697f55ddf45d0017dc25c7009d3182"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 1,
+        "b": 3,
+        "c": 9
+      },
+      "cand_size": 1134,
+      "size": 87,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "57a8b8721ff2add90802f1f44613a22b82dbb25936cadc0d05ffcd0b52c25770"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 1,
+        "b": 2,
+        "c": 8
+      },
+      "cand_size": 1250,
+      "size": 79,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "53e9435fadd104ceebe5319bccd076b4c72d98844d904359d820ed6c963757bc"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 2,
+        "b": 3,
+        "c": 8
+      },
+      "cand_size": 1250,
+      "size": 79,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "da546ff0feacbd6a08cf17ba5aebd7dd03efaba36fe9b26e8577a1025339223e"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 1,
+        "b": 3,
+        "c": 8
+      },
+      "cand_size": 1250,
+      "size": 66,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "4b0b514bdbd0edcaea4efdcff5b39ff2b418f220367e93636496392042102f19"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 1,
+        "b": 2,
+        "c": 5
+      },
+      "cand_size": 2000,
+      "size": 64,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "13dc3d2d5413a0c1888bb7db29eba07f6edf31e06f146baa43a52a22727210c0"
+    },
+    {
+      "kind": "modular",
+      "params": {
+        "a": 1,
+        "b": 3,
+        "c": 5
+      },
+      "cand_size": 2000,
+      "size": 64,
+      "V": 0,
+      "oracle_legal": true,
+      "independent_legal": true,
+      "hash": "807237537724426e0229d68bc4313eabbfcb4a32e1ac5035c482464a1f8ef07d"
+    }
+  ],
+  "wall_s": 500.4795799255371
+}

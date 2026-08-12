@@ -273,3 +273,13 @@
 - Evidence: `EXPERIMENTS/W3_rem3_residual/soft_extend_s802.json` + `partial_extend_s802.json` — soft core98 need67 free173 `INFEASIBLE_SCOPED` (~0.8s); partial core143 need22 free22 `INFEASIBLE_SCOPED`.
 - Level: `SCOPED_INFEASIBLE`.
 - Status: **DEAD for rem3 elite s802 cores**; seed 801 residual still in flight. Does not kill rem3 construction broadly.
+
+### LH-F044 — Dispersed-stride Hamming Rem/Add r=2
+- Evidence: `EXPERIMENTS/W3_dispersed_hamming/summary.json` — 3/3 `INFEASIBLE_SCOPED` (stride Rem 24–40 × outer Add).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD dispersed-stride Hamming family** (with spatial knn-block LH-F042). Prefer non-Hamming / pattern grow.
+
+### LH-F045 — rem3 exact residual elites s802/s801
+- Evidence: `EXPERIMENTS/W3_rem3_residual/summary.json` + `core_maximize_s802.json` — s802 soft/partial INFEAS; maximize soft-core → legal **164** (not +1); s801 soft `TIMEOUT` (~32s escalate-open), partial INFEAS.
+- Level: `SCOPED_INFEASIBLE` / `TIMEOUT_INCONCLUSIVE` (s801 soft).
+- Status: **Deprioritize rem3 residual for these elites**; optional long soft s801 only if pattern/from-scratch stall.
