@@ -355,3 +355,8 @@
 - Evidence: `EXPERIMENTS/W3_grow_union_universe/summary.json` — universe=1087 (8 grows+S0); `TIMEOUT` best=0 / 26 rounds / 241k cuts / 1200s.
 - Level: `TIMEOUT_INCONCLUSIVE` + **method bug** (cold LB≥130 never recorded a legal seed).
 - Status: **Invalid as capacity/UB claim**; rerun warm-started (`summary_warm.json`).
+
+### LH-F058 — Grow-union warm maximize 25min
+- Evidence: `EXPERIMENTS/W3_grow_union_universe/summary_warm.json` — warm start 131; `TIMEOUT` best=131 (no improve); 32 rounds / 241032 cuts / ~1500s.
+- Level: `TIMEOUT_INCONCLUSIVE` / `WEAK_NEGATIVE` for this universe+cut-loop.
+- Status: **Deprioritize plain cut-maximize over multi-grow∪S0 at ~25min**; need better search or different U.

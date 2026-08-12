@@ -1,0 +1,17 @@
+{
+  "schema": "w3_grow_union_warm_v1",
+  "status": "TIMEOUT",
+  "universe": 1087,
+  "best_legal_size": 131,
+  "proved_max": null,
+  "rounds": 32,
+  "final_cuts": 241032,
+  "wall_s": 1501.7874827384949,
+  "dual": {
+    "oracle": true,
+    "indep": true,
+    "size": 131,
+    "hash": "d968bf90c80d0ff1f38e2f06c1fa2692d0088e29b924416ef18858382e05294e"
+  },
+  "best_hash": "d968bf90c80d0ff1f38e2f06c1fa2692d0088e29b924416ef18858382e05294e"
+}

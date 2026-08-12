@@ -230,6 +230,17 @@
         "EXPERIMENTS/W3_certfreq_destroy/summary.json",
         "EXPERIMENTS/W3_parity_long/summary.json"
       ]
+    },
+    {
+      "id": "E020",
+      "utc": "2026-08-12T17:20:02Z",
+      "event": "grow_union_and_midset",
+      "summary": "Midset LNS stuck 137; grow-union cold bug then warm TIMEOUT@131; no +1. Random large Rem in flight.",
+      "level": "WEAK_NEGATIVE / TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_midset_lns/summary.json",
+        "EXPERIMENTS/W3_grow_union_universe/summary_warm.json"
+      ]
     }
   ],
   "events": [
