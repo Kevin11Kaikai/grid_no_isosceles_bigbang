@@ -198,3 +198,8 @@
 - Level: `TIMEOUT_INCONCLUSIVE`.
 - Status: **Open but distinct U did not yield +1 in 45min**; escalate with ≥2h Type0 agent_c or other types+cert_lb2.
 
+### LH-F031 — Type5 xlarge defect s805 (15min probe)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/xlarge_t5_defect_s805.json` — `TIMEOUT` size=0 under 900s xlarge.
+- Level: `TIMEOUT_INCONCLUSIVE` (short probe).
+- Status: **Not killed**; do not treat as INFEAS.
+
