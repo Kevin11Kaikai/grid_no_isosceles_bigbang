@@ -1,0 +1,11 @@
+{
+  "n": 64,
+  "target": 113,
+  "num_constraints": 40207368,
+  "enum_time_s": 222.01709914207458,
+  "build_time_s": 390.2977411746979,
+  "solve_time_s": 5203.228771686554,
+  "total_time_s": 5815.551542043686,
+  "status": "UNKNOWN",
+  "verdict": "INCONCLUSIVE within time budget"
+}
