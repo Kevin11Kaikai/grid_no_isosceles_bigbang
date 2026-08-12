@@ -228,8 +228,22 @@ def exact_extend(
             status = "INFEASIBLE_SCOPED"
             break
         if code not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
+            # Keep searching until wall budget; one UNKNOWN round ≠ campaign TIMEOUT.
             status = "TIMEOUT"
-            break
+            if rounds % 10 == 0:
+                print(
+                    json.dumps(
+                        {
+                            "tag": tag,
+                            "round": rounds,
+                            "cuts": len(cuts),
+                            "note": "round_unknown_continue",
+                            "elapsed": time.time() - t0,
+                        }
+                    ),
+                    flush=True,
+                )
+            continue
         sel = list(core) + [p for p, v in z.items() if solver.Value(v) == 1]
         assert len(sel) == TARGET
         w = witnesses(sel)
@@ -241,8 +255,22 @@ def exact_extend(
         for trip in w:
             cuts.add(tuple(sorted(trip)))
         if len(cuts) == before:
+            # No progress on cuts — bump seed and continue until wall.
             status = "TIMEOUT"
-            break
+            if rounds % 10 == 0:
+                print(
+                    json.dumps(
+                        {
+                            "tag": tag,
+                            "round": rounds,
+                            "cuts": len(cuts),
+                            "note": "no_new_cuts_continue",
+                            "elapsed": time.time() - t0,
+                        }
+                    ),
+                    flush=True,
+                )
+            continue
         if rounds % 25 == 0:
             print(
                 json.dumps(
