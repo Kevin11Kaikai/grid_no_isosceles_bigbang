@@ -1,0 +1,61 @@
+{
+  "schema": "w3_rem2_fullstrip_addable_extend_v1",
+  "rows": [
+    {
+      "status": "INFEASIBLE_SCOPED",
+      "core": 104,
+      "free": 121,
+      "need": 61,
+      "rounds": 3,
+      "final_cuts": 568,
+      "wall_time_s": 0.11099934577941895,
+      "seed": 602,
+      "start_V": 36
+    },
+    {
+      "status": "INFEASIBLE_SCOPED",
+      "core": 108,
+      "free": 111,
+      "need": 57,
+      "rounds": 4,
+      "final_cuts": 547,
+      "wall_time_s": 0.09793496131896973,
+      "seed": 603,
+      "start_V": 36
+    },
+    {
+      "status": "INFEASIBLE_SCOPED",
+      "core": 113,
+      "free": 90,
+      "need": 52,
+      "rounds": 3,
+      "final_cuts": 326,
+      "wall_time_s": 0.0691063404083252,
+      "seed": 605,
+      "start_V": 28
+    },
+    {
+      "status": "INFEASIBLE_SCOPED",
+      "core": 108,
+      "free": 107,
+      "need": 57,
+      "rounds": 4,
+      "final_cuts": 491,
+      "wall_time_s": 0.1120002269744873,
+      "seed": 701,
+      "start_V": 38
+    },
+    {
+      "status": "INFEASIBLE_SCOPED",
+      "core": 121,
+      "free": 61,
+      "need": 44,
+      "rounds": 3,
+      "final_cuts": 127,
+      "wall_time_s": 0.03499937057495117,
+      "seed": 504,
+      "start_V": 25
+    }
+  ],
+  "any_legal": false
+}

@@ -253,3 +253,8 @@
 - Evidence: `EXPERIMENTS/W3_rem2_residual/soft_brute_capacity.json` + `addable_screen.json` ¡ª soft cores ~150¨C160 typically have addable¡Öneed; seed504 k=5 CAPACITY_FAIL (4<5 ? max¡Ü164); seed601 k=5/10/15 unique combos all `INFEASIBLE_SCOPED`.
 - Level: `SCOPED_INFEASIBLE` / `CAPACITY_FAIL`.
 - Status: **Soft near-full cores dead for these seeds**; prefer full-involved strip + addable-restricted exact extend.
+
+### LH-F040 ¡ª rem2 full-involved strip + addable-restricted extend
+- Evidence: `EXPERIMENTS/W3_rem2_residual/fullstrip_addable_extend.json` ¡ª 5/5 seeds `INFEASIBLE_SCOPED` in <0.2s each (cores 104¨C121; free=addable only).
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD rem2 residual-repair family** for sampled seeds (soft+full strip); need new illegal seeds or non-residual constructions.
