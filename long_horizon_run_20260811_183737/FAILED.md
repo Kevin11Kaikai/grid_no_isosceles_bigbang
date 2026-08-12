@@ -411,3 +411,18 @@
 - Evidence: `EXPERIMENTS/W3_n64_forbid_rem/summary.json` — plain_S0 `CAPACITY_FAIL` free=0 cap=112 (S0 maximal under singleton add); forbid20/30/40 all `CAPACITY_FAIL` caps 93/89/83 <113.
 - Level: `CAPACITY_FAIL` (scoped; not global UB).
 - Status: **n64 +1 requires destroy+refill (not pure add)**; forbid-Rem alone insufficient at these k for cap≥113.
+
+### LH-F068 — Newfam AB: ring/col/diag blacklist Rem (cheap-kill)
+- Evidence: `EXPERIMENTS/W3_new_families/family_AB.json` — ring_odd MAX_PROVED 130; colmod3_r1/r2 MAX_PROVED 133; most others CAPACITY_FAIL (<165); ring_even TIMEOUT best=60 (cold core, free=1652). `any_plus=false`.
+- Level: `SCOPED_MAX / CAPACITY_FAIL / TIMEOUT_INCONCLUSIVE`.
+- Status: **Kill shallow ring-odd/colmod blacklist**; fund ring_even warm escalate.
+
+### LH-F069 — Newfam C: modular lattice grow
+- Evidence: `EXPERIMENTS/W3_new_families/family_C.json` — grows 129–136 then all `CAPACITY_FAIL` free=0 (near-maximal). Best grow 136 (mod3 ox1 oy2).
+- Level: `CAPACITY_FAIL` / `WEAK_NEGATIVE` for pure add after lattice grow.
+- Status: **Must destroy lattice sets to grow**; fund lattice destroy-refill (v2).
+
+### LH-F070 — Newfam E: n64 structured destroy readd/forbid
+- Evidence: `EXPERIMENTS/W3_new_families/family_E_n64.json` — readd paths best=112 (TIMEOUT/MAX_PROVED); forbid CAPACITY_FAIL <113; diagmod4_r0_readd `MAX_PROVED` 112.
+- Level: `SCOPED_MAX / CAPACITY_FAIL / TIMEOUT_INCONCLUSIVE`.
+- Status: **No n64 +1**; structured readd snaps to 112 basin.

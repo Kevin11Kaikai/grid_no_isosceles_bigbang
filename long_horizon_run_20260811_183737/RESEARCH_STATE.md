@@ -1,20 +1,21 @@
 ﻿# RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-12 (n64 sandbox)
+**Updated:** 2026-08-12 (newfam AB/C/E cheap-kill)
 
 ## Incumbent
 - n=64 **112** / n=100 **164** — **no legal +1**
 
-## Stretch summary
-- Prior parallel jobs harvested (pattern/grow/rem3).
-- n100 S0-preserving refill routes → 164 / MAX_PROVED 164.
-- Forbid-Rem / midset lineage → leave basin, plateau ≤139; soft-165 V=84.
-- n64: S0 has **zero** singleton-addable cells (F067).
+## New families (F068–F070)
+| Family | Result |
+|---|---|
+| Ring/col/diag blacklist | MAX≤133 or CAPACITY; ring_even TIMEOUT open |
+| Modular lattice grow | 129–136 then free=0 |
+| n64 structured destroy | ≤112; no +1 |
 
-## Next 3
-1. n100/n64: destroy+refill constructions that are **not** S0-snap-back and not the exhausted midset.  
-2. Avoid killed Hamming/rem2/S0+1 soft grind.  
-3. Dual-verify before promote.
+## In flight / next
+1. Lattice destroy-refill + ring_even escalate + intersection D (v2).  
+2. Dual-verify before promote.  
+3. Avoid S0-snap / midset≤139 / Hamming / rem2 / S0+1.
 
 ## Discipline
 TIMEOUT ≠ INFEAS; scoped ≠ global; standing order push.

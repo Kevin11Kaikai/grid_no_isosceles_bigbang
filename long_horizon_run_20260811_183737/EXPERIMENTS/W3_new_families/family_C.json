@@ -1,0 +1,65 @@
+{
+  "schema": "w3_newfam_C_v1",
+  "rows": [
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 133,
+      "free": 0,
+      "best_legal_size": 133,
+      "proved_max": 133,
+      "plan": "lat3_0_0_boundary_first",
+      "grow_size": 133,
+      "grow_hash": "c38bffa80c0309c28c3f9a292f3c070229cc51499a2ff1b27a368c989857a499"
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 136,
+      "free": 0,
+      "best_legal_size": 136,
+      "proved_max": 136,
+      "plan": "lat3_1_2_boundary_first",
+      "grow_size": 136,
+      "grow_hash": "2aaae945f54f0db0751488f76cc5f3793df6dc0d843fc178a28bbc68152481f8"
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 129,
+      "free": 0,
+      "best_legal_size": 129,
+      "proved_max": 129,
+      "plan": "lat4_0_1_center_first",
+      "grow_size": 129,
+      "grow_hash": "ca4bade1e718e2a31702314c253b77dd93666a85672f556e0a8ebbe354fa4902"
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 132,
+      "free": 0,
+      "best_legal_size": 132,
+      "proved_max": 132,
+      "plan": "lat5_0_0_boundary_first",
+      "grow_size": 132,
+      "grow_hash": "9532313b1f8c0268b8091d50dfae6f7aed5372e561f0fa0fd8510850aefd94f2"
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 131,
+      "free": 0,
+      "best_legal_size": 131,
+      "proved_max": 131,
+      "plan": "lat5_2_3_spiral",
+      "grow_size": 131,
+      "grow_hash": "ca18e273b69e2d023fe270f85dbb8bfadff892ef35ad92cfe6a42d6c66f364e5"
+    }
+  ],
+  "best": 136,
+  "any_plus": false,
+  "best_grow": {
+    "size": 136,
+    "oracle": true,
+    "indep": true,
+    "hash": "2aaae945f54f0db0751488f76cc5f3793df6dc0d843fc178a28bbc68152481f8",
+    "seed_size": 38,
+    "mode": "boundary_first"
+  }
+}
