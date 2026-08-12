@@ -243,3 +243,8 @@
 - Evidence: `EXPERIMENTS/W3_rem2_residual/soft_core_extend_summary.json` ¡ª 8 plans all `TIMEOUT` (cores 130¨C160); full-involved strip was INFEAS (LH-F036).
 - Level: `TIMEOUT_INCONCLUSIVE` (soft) + prior scoped INFEAS (full strip).
 - Status: **Escalate largest cores (160/155)** with longer budget; not yet killed.
+
+### LH-F038 ¡ª rem2 soft long extend core160/155
+- Evidence: `EXPERIMENTS/W3_rem2_residual/soft_core_extend_long.json` ¡ª core160 need=5: 30min TIMEOUT (4451r/105k cuts); core155 need=10: 20min TIMEOUT.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Open**; maximize-from-core160 launched to prove max size.

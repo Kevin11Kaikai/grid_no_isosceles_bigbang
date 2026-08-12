@@ -1,4 +1,3 @@
-{"start": "t5_xlarge", "seed": 851}
 {
   "symmetry_type": 5,
   "seed": 851,
@@ -12,4 +11,3 @@
   "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_xlarge_n100_t5_defect_s851_20260812T100652Z.json",
   "candidate": null
 }
-{"start": "t6_xlarge", "seed": 861}

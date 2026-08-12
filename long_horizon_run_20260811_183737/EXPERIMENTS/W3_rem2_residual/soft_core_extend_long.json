@@ -1,0 +1,22 @@
+{
+  "schema": "w3_rem2_soft_long_v1",
+  "rows": [
+    {
+      "status": "TIMEOUT",
+      "core_size": 160,
+      "rounds": 4451,
+      "final_cuts": 105744,
+      "wall_time_s": 1800.074628353119,
+      "k": 5
+    },
+    {
+      "status": "TIMEOUT",
+      "core_size": 155,
+      "rounds": 2347,
+      "final_cuts": 142619,
+      "wall_time_s": 1200.874490737915,
+      "k": 10
+    }
+  ],
+  "any_legal": false
+}
