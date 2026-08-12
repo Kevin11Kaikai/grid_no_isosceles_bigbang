@@ -14,8 +14,8 @@ Canonical: `scratch/wave3/ranking_memo.md`
 
 | Rank | Route | Status |
 |---|---|---|
-| R1 PRIMARY | Enlarged Type0 orbit-defect | s401 45min **TIMEOUT** size=0; n64 enlarge TIMEOUT; **xlarge 320/h18/U_large s501 60min + partial s511 in flight** |
-| R2 SECONDARY | Cert Hamming / microproblems | many new U_ids SCOPED INFEAS (see FAILED LH-F015–F020) |
+| R1 PRIMARY | Enlarged orbit-defect | s401 45min TIMEOUT; s511 partial 20min TIMEOUT; **s501 Type0 xlarge 60min running**; **s601 Type1 xlarge 40min launched** |
+| R2 SECONDARY | Cert Hamming / microproblems | LH-F015–F022 many SCOPED INFEAS; joint-HS pairs dead |
 | BLOCKED | Agent C S0+1 soft grind | active block |
 | HOLD | FunSearch | no new structure |
 
@@ -31,8 +31,9 @@ Canonical: `scratch/wave3/ranking_memo.md`
 
 | Job | Universe | Budget | Status |
 |---|---|---:|---|
-| s501 xlarge defect | max_extra=320, halo=18, U_large, dmax=16 | 3600s | running (~5min mid: rounds/cuts advancing) |
-| s511 partial | max_extra=280, halo=16, U_large | 1200s | running |
+| s501 Type0 xlarge defect | free361/def320/h18 | 3600s | running (~20min: 1606 rounds / 68400 cuts, size=0) |
+| s601 Type1 xlarge defect | 320/h18/dmax20 | 2400s | **launched** |
+| s511 Type0 partial | free321/def280/part24/h16 | 1200s | **TIMEOUT** size=0 (1562r / 71759 cuts) |
 
 ## Discipline
 
@@ -40,6 +41,6 @@ TIMEOUT ≠ INFEASIBLE; scoped INFEAS ≠ global UB; dual-verify before promote.
 
 ## Next 3
 
-1. Collect s501/s511; if TIMEOUT try soft_core=False / Type1 xlarge / longer budget; if FEASIBLE dual-verify.
-2. Stop new joint-HS pair micros (LH-F022 dead); only novel Rem/Add structure.
+1. Collect s501/s601; FEASIBLE → dual-verify; TIMEOUT → change core policy / longer / other types.
+2. No more joint-HS pair micros (LH-F022); Hamming only for novel Rem/Add.
 3. Keep C S0+1 blocked; FunSearch held.

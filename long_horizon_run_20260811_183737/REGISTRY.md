@@ -24,7 +24,7 @@
 | LH-A3 | Low-LB cells have complementary (low joint VC) pairs | **REJECTED on 85-q sample** | LH-F002; try fullrem LB≤4 Add next |
 | LH-A4 | `U_fullrem_LBle4_r2` admits legal 165 | **REJECTED** (LH-F004) | — |
 | LH-C1 | V=3 elites locally refillable to V=0 at \|S\|=165 | **REJECTED for tested halos** | LH-F003 |
-| LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy (Wave2 B closed no +1) | W3 R1: s401 45min TIMEOUT; s501 xlarge 60min + s511 partial in flight |
+| LH-B1 | Type-0/1 defect orbits can reach 165 | OPEN / TIMEOUT-heavy (Wave2 B closed no +1) | s511 partial TIMEOUT; s501 Type0 60min + s601 Type1 40min in flight |
 | LH-D1 | Residual communities beat Hamming U | **weakened** — refill infeasible; nonlocal free still open | |
 | W3-A1 | Cert-involved / certfreq Rem+low-LB Add r=2 admits 165 | **REJECTED** e16/e56/top48 (LH-F015/017) | try cross-knn / residual nonlocal only |
 | W3-A2 | Cross spatial-knn Rem/Add r=2/3 admits 165 | **REJECTED** (LH-F018/019) | need new Rem/Add or orbit |

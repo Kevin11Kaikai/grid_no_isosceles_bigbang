@@ -158,3 +158,8 @@
 - Level: `SCOPED_INFEASIBLE`.
 - Status: **DEAD that pair-HS forced-delete family** for sampled easiest-6 pairs; no Rem=3 overlaps; orbit / other formulations remain.
 
+### LH-F023 — Type0 partial xlarge s511 (20min)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/partial_t0_s511.json` — `TIMEOUT` size=0; universe `orb_t0_partial_core41_free321_def280_part24_h16`; 1562 rounds / 71759 cuts / ~1200s.
+- Level: `TIMEOUT_INCONCLUSIVE` (not killed).
+- Status: **Open but deprioritize short partial vs Type0/1 defect longs**; escalate only with new partial-orbit selection.
+
