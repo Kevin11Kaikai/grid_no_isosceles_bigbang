@@ -1,0 +1,440 @@
+{
+  "best_pattern": "annulus_0_5",
+  "best_size": 132,
+  "n": 100,
+  "n_patterns": 43,
+  "results": [
+    {
+      "V": 0,
+      "hash": "d8ef1aa73c6e71188fbbacf23b9208e7eac13823d9d962dadf6b14d5f9b2fa5f",
+      "independent_legal": true,
+      "n_candidates": 3400,
+      "oracle_legal": true,
+      "pattern": "mod_1_0_3",
+      "points": null,
+      "size": 95
+    },
+    {
+      "V": 0,
+      "hash": "c39fed6eb69e389ae760e3d2528f49a910cf748d9776cf475b0d494127ade52b",
+      "independent_legal": true,
+      "n_candidates": 3400,
+      "oracle_legal": true,
+      "pattern": "mod_0_1_3",
+      "points": null,
+      "size": 97
+    },
+    {
+      "V": 0,
+      "hash": "9d15a24c1405fa4266f340f7e8e87a6e06501746c46be8939fd02c48b7d14dbf",
+      "independent_legal": true,
+      "n_candidates": 3334,
+      "oracle_legal": true,
+      "pattern": "mod_1_1_3",
+      "points": null,
+      "size": 96
+    },
+    {
+      "V": 0,
+      "hash": "19cdbf894385a072a32deae417284ca54d9b4504341d26b3a994a418e790c210",
+      "independent_legal": true,
+      "n_candidates": 3334,
+      "oracle_legal": true,
+      "pattern": "mod_1_2_3",
+      "points": null,
+      "size": 96
+    },
+    {
+      "V": 0,
+      "hash": "fee7e383181be3cbe1a642e92eebe3310c8e101b79a5159b0f8a930e94622cb8",
+      "independent_legal": true,
+      "n_candidates": 3334,
+      "oracle_legal": true,
+      "pattern": "mod_2_1_3",
+      "points": null,
+      "size": 100
+    },
+    {
+      "V": 0,
+      "hash": "4e525a31102dc61186a0cb5f89e40ec7d95517d56c11d6385bd094d31355adc2",
+      "independent_legal": true,
+      "n_candidates": 2500,
+      "oracle_legal": true,
+      "pattern": "mod_1_0_4",
+      "points": null,
+      "size": 88
+    },
+    {
+      "V": 0,
+      "hash": "4b4c393fa1f50ec73d082c7ef94f4a87cb3c3b35d3166d1aac25c48905b3a861",
+      "independent_legal": true,
+      "n_candidates": 2500,
+      "oracle_legal": true,
+      "pattern": "mod_0_1_4",
+      "points": null,
+      "size": 91
+    },
+    {
+      "V": 0,
+      "hash": "6f20b01de7a7f62ef03e071ec6e07a3c8d3d21cff7c3e0b45777b3728d5715e8",
+      "independent_legal": true,
+      "n_candidates": 2500,
+      "oracle_legal": true,
+      "pattern": "mod_1_1_4",
+      "points": null,
+      "size": 84
+    },
+    {
+      "V": 0,
+      "hash": "cbd2a66f2a916215f2cc15fa40bd384246329b8ce73ca3338eb2ae7be881ae12",
+      "independent_legal": true,
+      "n_candidates": 2500,
+      "oracle_legal": true,
+      "pattern": "mod_1_2_4",
+      "points": null,
+      "size": 88
+    },
+    {
+      "V": 0,
+      "hash": "a9ba88876e309ddbec9c69c22e275f7af7f5709ccdf693fcb15f96afab04c219",
+      "independent_legal": true,
+      "n_candidates": 2500,
+      "oracle_legal": true,
+      "pattern": "mod_2_1_4",
+      "points": null,
+      "size": 88
+    },
+    {
+      "V": 0,
+      "hash": "789e536b230609922ba8fac42b88db26faf52426555a7844dbe8fbddae30213f",
+      "independent_legal": true,
+      "n_candidates": 2000,
+      "oracle_legal": true,
+      "pattern": "mod_1_0_5",
+      "points": null,
+      "size": 93
+    },
+    {
+      "V": 0,
+      "hash": "80cc5d1855c3ba6bab8f2e86509f22c1d81b434c2d13c20005bb7cd43bed9741",
+      "independent_legal": true,
+      "n_candidates": 2000,
+      "oracle_legal": true,
+      "pattern": "mod_0_1_5",
+      "points": null,
+      "size": 91
+    },
+    {
+      "V": 0,
+      "hash": "fe56a53b63d144ab91c58d591e29e4c39fb219b7dc2a1bed53597a8a2e473554",
+      "independent_legal": true,
+      "n_candidates": 2000,
+      "oracle_legal": true,
+      "pattern": "mod_1_1_5",
+      "points": null,
+      "size": 92
+    },
+    {
+      "V": 0,
+      "hash": "3e2cb9b7ad598ff5f9ca24124cec779b7317e8495df3db7f3693d85d4acc8ea1",
+      "independent_legal": true,
+      "n_candidates": 2000,
+      "oracle_legal": true,
+      "pattern": "mod_1_2_5",
+      "points": null,
+      "size": 67
+    },
+    {
+      "V": 0,
+      "hash": "d8195693cc23511cd1ebb9b49c43071f66ce7be6aa3ecd66710aaff8e8b963fd",
+      "independent_legal": true,
+      "n_candidates": 2000,
+      "oracle_legal": true,
+      "pattern": "mod_2_1_5",
+      "points": null,
+      "size": 64
+    },
+    {
+      "V": 0,
+      "hash": "d3467dcfd1d5c7758f7b6e09a1943a6b56a76a8869f494bcfe745d53f84668da",
+      "independent_legal": true,
+      "n_candidates": 1700,
+      "oracle_legal": true,
+      "pattern": "mod_1_0_6",
+      "points": null,
+      "size": 88
+    },
+    {
+      "V": 0,
+      "hash": "2b05c9cd9b63adce488372939d7d905264a2256979606bdaa796f7459e648d5a",
+      "independent_legal": true,
+      "n_candidates": 1700,
+      "oracle_legal": true,
+      "pattern": "mod_0_1_6",
+      "points": null,
+      "size": 84
+    },
+    {
+      "V": 0,
+      "hash": "11e46554be6ee3f5c60305b68d7df5ee88f9d2deb30d23e2c5a8f70556db9415",
+      "independent_legal": true,
+      "n_candidates": 1666,
+      "oracle_legal": true,
+      "pattern": "mod_1_1_6",
+      "points": null,
+      "size": 77
+    },
+    {
+      "V": 0,
+      "hash": "4c09c8d61d64317c1803db6e922a714fbe69ebdd5673dd76776afd17d773ce9b",
+      "independent_legal": true,
+      "n_candidates": 1667,
+      "oracle_legal": true,
+      "pattern": "mod_1_2_6",
+      "points": null,
+      "size": 86
+    },
+    {
+      "V": 0,
+      "hash": "33d2b569dd9940bbacc0878a3e5ec597282911773ac01241e1f4c3098190a6ab",
+      "independent_legal": true,
+      "n_candidates": 1667,
+      "oracle_legal": true,
+      "pattern": "mod_2_1_6",
+      "points": null,
+      "size": 85
+    },
+    {
+      "V": 0,
+      "hash": "8a005be3fe3a308bb440c236d3df2799adbd077d28929994300350bd743631d0",
+      "independent_legal": true,
+      "n_candidates": 1500,
+      "oracle_legal": true,
+      "pattern": "mod_1_0_7",
+      "points": null,
+      "size": 95
+    },
+    {
+      "V": 0,
+      "hash": "eb702216ee1fb8d550afef2b2fc49821d31e7bd4f1e78b980a39caad72c40e84",
+      "independent_legal": true,
+      "n_candidates": 1500,
+      "oracle_legal": true,
+      "pattern": "mod_0_1_7",
+      "points": null,
+      "size": 93
+    },
+    {
+      "V": 0,
+      "hash": "3c5ffca3f7a1029354d5b56dac277ff2c6c7bccf89b8c96cbf25c711c2e6391d",
+      "independent_legal": true,
+      "n_candidates": 1429,
+      "oracle_legal": true,
+      "pattern": "mod_1_1_7",
+      "points": null,
+      "size": 87
+    },
+    {
+      "V": 0,
+      "hash": "9287e2ffe26c7393f4aeff0a39f926837c9419107eb867da1fd7deea09ef5863",
+      "independent_legal": true,
+      "n_candidates": 1429,
+      "oracle_legal": true,
+      "pattern": "mod_1_2_7",
+      "points": null,
+      "size": 97
+    },
+    {
+      "V": 0,
+      "hash": "0588383d91496b257e8c8b8c36f1d897a90bc93068813b60156ace3acc7f8d88",
+      "independent_legal": true,
+      "n_candidates": 1429,
+      "oracle_legal": true,
+      "pattern": "mod_2_1_7",
+      "points": null,
+      "size": 96
+    },
+    {
+      "V": 0,
+      "hash": "2b93d8da35f608543fd5d1b46d8289d28d893616749e2f2187a0296246ca9693",
+      "independent_legal": true,
+      "n_candidates": 2256,
+      "oracle_legal": true,
+      "pattern": "annulus_0_5",
+      "points": null,
+      "size": 132
+    },
+    {
+      "V": 0,
+      "hash": "b714a00cfbafc5935c0bd8fd460a25d63c0747063517ef564a46d05766d7866b",
+      "independent_legal": true,
+      "n_candidates": 3916,
+      "oracle_legal": true,
+      "pattern": "annulus_0_10",
+      "points": null,
+      "size": 132
+    },
+    {
+      "V": 0,
+      "hash": "a4c065becb8aa51fbec73679ca73d1d190e9d0ff07523b0c0ff6e3907ec64dd8",
+      "independent_legal": true,
+      "n_candidates": 3476,
+      "oracle_legal": true,
+      "pattern": "annulus_5_15",
+      "points": null,
+      "size": 120
+    },
+    {
+      "V": 0,
+      "hash": "173328229fc570fae37a3e04655a2e192151ad328c29564ea5021943f49bb97f",
+      "independent_legal": true,
+      "n_candidates": 3036,
+      "oracle_legal": true,
+      "pattern": "annulus_10_20",
+      "points": null,
+      "size": 111
+    },
+    {
+      "V": 0,
+      "hash": "d36ac9540e9042a21fb0aa10f084a93541658a50cb10567fad4e9ca10907810f",
+      "independent_legal": true,
+      "n_candidates": 2784,
+      "oracle_legal": true,
+      "pattern": "annulus_15_26",
+      "points": null,
+      "size": 98
+    },
+    {
+      "V": 0,
+      "hash": "fa63ecf043d7605b059ec06109816510f9d825be9b6df9aa68e24483edd6443d",
+      "independent_legal": true,
+      "n_candidates": 2156,
+      "oracle_legal": true,
+      "pattern": "annulus_20_30",
+      "points": null,
+      "size": 85
+    },
+    {
+      "V": 0,
+      "hash": "b7a977a0f0c01183232cac6795e7d37078341c6afa0703f1e0d98ed2852189bf",
+      "independent_legal": true,
+      "n_candidates": 5000,
+      "oracle_legal": true,
+      "pattern": "check_2_0",
+      "points": null,
+      "size": 119
+    },
+    {
+      "V": 0,
+      "hash": "0f1ca87c64bbcf29c5798f66b0487a10a9b7208d450be90e82bbc3ae25e4ccf3",
+      "independent_legal": true,
+      "n_candidates": 5000,
+      "oracle_legal": true,
+      "pattern": "check_2_1",
+      "points": null,
+      "size": 120
+    },
+    {
+      "V": 0,
+      "hash": "a47688da32a21fc95eed361b094624dfca0fad3988818b88a8a088d2c735f74c",
+      "independent_legal": true,
+      "n_candidates": 5002,
+      "oracle_legal": true,
+      "pattern": "check_3_0",
+      "points": null,
+      "size": 121
+    },
+    {
+      "V": 0,
+      "hash": "6de72f342c0941168fcaa58e152c63a5e0c7dfcd60b34d2fb96e6062eaf6a2b0",
+      "independent_legal": true,
+      "n_candidates": 4998,
+      "oracle_legal": true,
+      "pattern": "check_3_1",
+      "points": null,
+      "size": 117
+    },
+    {
+      "V": 0,
+      "hash": "8cdc7f76ec305d902bb94f0a2419136e821cf422f6046ae4c1ce11768640df70",
+      "independent_legal": true,
+      "n_candidates": 5008,
+      "oracle_legal": true,
+      "pattern": "check_4_0",
+      "points": null,
+      "size": 120
+    },
+    {
+      "V": 0,
+      "hash": "242980406363a9812a6225b48db9fdfc1062b143bc4ddc497582ab3695b3042c",
+      "independent_legal": true,
+      "n_candidates": 4992,
+      "oracle_legal": true,
+      "pattern": "check_4_1",
+      "points": null,
+      "size": 122
+    },
+    {
+      "V": 0,
+      "hash": "f50c924b81c9712e9956512c954d5ce1c2aca1ea2223ffeb1bf05b49483bba67",
+      "independent_legal": true,
+      "n_candidates": 5000,
+      "oracle_legal": true,
+      "pattern": "check_5_0",
+      "points": null,
+      "size": 119
+    },
+    {
+      "V": 0,
+      "hash": "f3becc9cdab60dc0068776d711ff62a4af5ab26f99840cef7ecb502af9ff565d",
+      "independent_legal": true,
+      "n_candidates": 5000,
+      "oracle_legal": true,
+      "pattern": "check_5_1",
+      "points": null,
+      "size": 122
+    },
+    {
+      "V": 0,
+      "hash": "e476d5e2fe73fa3cd1f70b5c95a6857cbfdce118cf11bbc477398ea26ab02e37",
+      "independent_legal": true,
+      "n_candidates": 5000,
+      "oracle_legal": true,
+      "pattern": "diag_2",
+      "points": null,
+      "size": 117
+    },
+    {
+      "V": 0,
+      "hash": "6a5cfe677a273559a05ec8d4cf4d08cd15756107e74388e3fb494d66ddfc744b",
+      "independent_legal": true,
+      "n_candidates": 4999,
+      "oracle_legal": true,
+      "pattern": "diag_3",
+      "points": null,
+      "size": 114
+    },
+    {
+      "V": 0,
+      "hash": "02b9599a4be7fb5ccfdbc7c05fa95598e819e0b81e9100cfe6889652bc4d3b86",
+      "independent_legal": true,
+      "n_candidates": 5002,
+      "oracle_legal": true,
+      "pattern": "diag_4",
+      "points": null,
+      "size": 119
+    },
+    {
+      "V": 0,
+      "hash": "b5f56288dba74a3c8d2f09ec87eb3273752f740ccde8e504f2c749e099fc0022",
+      "independent_legal": true,
+      "n_candidates": 5000,
+      "oracle_legal": true,
+      "pattern": "diag_5",
+      "points": null,
+      "size": 119
+    }
+  ],
+  "schema": "lh3_pattern_constructions_v1",
+  "wall_s": 860.7646160125732
+}
