@@ -1,34 +1,37 @@
 # RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-11 ~19:35 local  
-**Phase:** LH-3 — frame Add pools killed at r=2; V3 elites exposed as baseline+1; forced-exchange live
+**Updated:** 2026-08-11 ~19:55 local  
+**Remote:** synced frequently to `origin/master`  
+**Phase:** LH-3 — S0-neighborhood largely exhausted at small r; pivot to far-from-S0
 
 ## Incumbent
 
-- n=64: **112** / n=100: **164** — unchanged, no promotion
+- n=64: **112** / n=100: **164** DUAL_VERIFIED — no promotion
 
-## Critical discovery
+## Headline findings this run
 
-All 9 Wave2 `n100_V3` elites have **hamming_remove=0, hamming_add=1** — they are exactly `S0 ∪ {q}` with V=3. Soft fixed-card search never left the single-insertion basin (matches Gate1 min ΔV=3).
+1. **Wave2 V=3 elites = S0∪{q}** (remove 0 / add 1) — soft |S|=165 search never exchanged.
+2. **Joint VC=4** for every easiest-16 pair → r=2 cannot co-insert two exact-2 cells.
+3. **Frame Add** ring≤2 and ≤6 at r=2 with full Rem → `INFEASIBLE_SCOPED` (long runs).
+4. **LB≤5 Add** dead through r=4 (fullrem / paircover).
+5. Orbit n100 types **2,3,4** defect (short new seeds) → scoped INFEAS.
+6. Cert-seeded r=4 exchanges: pair-legal seeds with V≈25–30; residual refill did not reach V=0 (partial, 35 trials).
 
-## LH-2 shell kills (scoped)
+## Allocation shift
 
-| Universe | r | Status |
-|---|---:|---|
-| U_fullrem_LBle4 | 2,3 | INFEAS |
-| U_fullrem_LBle5 | 4 | INFEAS |
-| U_fullrem_frameR2 | 2 (long), 4 | INFEAS |
-| U_fullrem_frameR6 | 2 (long) | INFEAS |
-| U_exact2covers_LBle5 | 2 | INFEAS |
-| midband10–26 | 2,4 @120s | TIMEOUT |
-| n64 exact1covers | 1 | INFEAS |
+| Was | Now |
+|---|---|
+| 40% Hamming around S0 | **15%** cleanup only |
+| 15% soft fixed-card near S0 | **25%** forced far-init / from-scratch |
+| 20% orbit | **30%** enlarge universes / other axis types |
+| rest | critic / verify / abstraction |
 
-## Live next
+## Immediate next
 
-1. Interpret forced-exchange fixed-card (`LH3_forced_exchange`).
-2. Longer midband / full-empty r=2 if information-positive.
-3. Orbit types 3–6 short smokes; avoid baseline+1 soft search.
+1. From-scratch / random-init legal set growth toward 165 (not seeded from S0+1).
+2. Optional: midband long shell (TIMEOUT@120s) — one 600s attempt then drop if TIMEOUT/INFEAS.
+3. Keep pushing checkpoints.
 
-## Standing order
+## Hard stop
 
-Push checkpoints to `origin/master`; continue; no Hard Stop.
+Only env kill / user stop / space exhausted with certificates / full solution.

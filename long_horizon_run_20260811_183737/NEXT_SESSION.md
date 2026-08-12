@@ -1,20 +1,21 @@
 # NEXT_SESSION (≤1 page)
 
 **Run dir:** `long_horizon_run_20260811_183737/`  
-**Read first:** `RESEARCH_STATE.md`, `FAILED.md`, `REGISTRY.md`.
+**Read first:** `RESEARCH_STATE.md`, `FAILED.md`, `PROCESS_LESSONS.md` (§11–12).
 
 ## Resume files
 
-- Experiments: `EXPERIMENTS/LH1_blocker_pair/`, `EXPERIMENTS/LH1_v3_residual/`, `EXPERIMENTS/LH1_n64_sandbox/`
-- Next scripts: `SCRATCH/u_fullrem_lowlb_r2.py`, then single-q large-Add shells
-- Incumbent unchanged: `INCUMBENT.json`
+- Frame kills: `EXPERIMENTS/LH2_frame_shells/`
+- Elite distance: `EXPERIMENTS/LH2_elite_distance/v3_vs_s0.json` (**all V3 = S0+1**)
+- Forced exchange: `EXPERIMENTS/LH3_forced_exchange/` (best V=28)
+- Cert-seeded partial: `EXPERIMENTS/LH3_cert_seeded/cert_seeded_minv_partial.json` (min V_seed=25)
 
 ## Next 3 actions
 
-1. Finish / interpret `U_fullrem_LBle4_r2` Hamming CP-SAT (n100, r=2).
-2. Single exact-2 q: Rem=its size-2 covers, Add=all LB≤5 cells, search r=2.
-3. Short Agent-B orbit smoke (new seed/type); no TIMEOUT grind.
+1. Leave official-S0 Hamming neighborhood: from-scratch / far-init constructions (n100 primary).
+2. Longer midband shell only if still information-positive; else abandon Add-restricted shells around S0.
+3. Orbit types 5–6 short; expand universe beyond Wave2 halo if type3/4 stay INFEAS.
 
 ## Standing order
 
-After each meaningful checkpoint: `git add -A` → commit → `git push origin master` (no force). Continue research; do not Hard Stop on Wave complete.
+`git add -A` → commit → `git push origin master` after meaningful checkpoints. No force. Do not Hard Stop.

@@ -86,3 +86,18 @@
 - Level: `HEURISTIC`.
 - Status: operator underperforms Wave2 C (V=3); deprioritize unless redesigned.
 
+### LH-F010 — frame fullrem r=2 long (R=2 and R=6)
+- Evidence: `U_fullrem_frameR2_r2_long.json`, `U_fullrem_frameR6_r2_long.json` — both `INFEASIBLE_SCOPED`.
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD** frame-only Add at r=2 with full Rem.
+
+### LH-F011 — forced-exchange soft min-V (r_min=2)
+- Evidence: best V=28 (seeds 401–404); no V=0.
+- Level: `HEURISTIC`.
+- Status: weak operators; keep constraint idea, change neighborhood.
+
+### LH-F012 — cert-seeded paircover + residual refill (partial)
+- Evidence: `LH3_cert_seeded/cert_seeded_minv_partial.json` — 35 trials, min V_seed=25, 0 legal.
+- Level: `HEURISTIC` / partial.
+- Status: no V=0 signal; do not grind same 45s residual refills.
+
