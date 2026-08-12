@@ -1,0 +1,63 @@
+{
+  "rows": [
+    {
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\enlarged_n100_t0_defect_s201_20260812T010746Z.json",
+      "job": {
+        "dmax": 10,
+        "dmin": 1,
+        "mode": "defect",
+        "n": 100,
+        "seed": 201,
+        "symmetry_type": 0,
+        "time": 180.0
+      },
+      "model_hash": "431fe63efd7b7c72f684ff901b2b709326f57bce50fa5e5d2961e24e95323f4a",
+      "n_defect_points": 220,
+      "n_free_orbits": 261,
+      "size": 0,
+      "status": "TIMEOUT",
+      "universe_id": "orb_t0_defect_core41_free261_def220_part0_h14",
+      "wall_time_s": 179.66613817214966
+    },
+    {
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\enlarged_n100_t1_defect_s202_20260812T011046Z.json",
+      "job": {
+        "dmax": 10,
+        "dmin": 1,
+        "mode": "defect",
+        "n": 100,
+        "seed": 202,
+        "symmetry_type": 1,
+        "time": 180.0
+      },
+      "model_hash": "e03da02b3416592acbd93c7a1ddd366f53df7bd9ce2eb24dd9265060ab0f49ee",
+      "n_defect_points": 220,
+      "n_free_orbits": 221,
+      "size": 0,
+      "status": "TIMEOUT",
+      "universe_id": "orb_t1_defect_core0_free221_def220_part0_h14",
+      "wall_time_s": 180.30449080467224
+    },
+    {
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\enlarged_n100_t1_pure_s203_20260812T011047Z.json",
+      "job": {
+        "dmax": 0,
+        "dmin": 0,
+        "mode": "pure",
+        "n": 100,
+        "seed": 203,
+        "symmetry_type": 1,
+        "time": 90.0
+      },
+      "model_hash": "0f5e1f3b59c19321ed317cd7e4b34c4c02dce143841417faf868934c3e6531bf",
+      "n_defect_points": 0,
+      "n_free_orbits": 221,
+      "size": 0,
+      "status": "INFEASIBLE",
+      "universe_id": "orb_t1_pure_core0_free221_def0_part0_h14",
+      "wall_time_s": 0.7394683361053467
+    }
+  ],
+  "schema": "lh4_orbit_enlarged_v1",
+  "wall_s": 360.8769292831421
+}
