@@ -1,0 +1,83 @@
+{
+  "schema": "w3_rem2_residual_v1",
+  "source": "d:\\others\\grid_no_isosceles_bigbang\\long_horizon_run_20260811_183737\\EXPERIMENTS\\LH3_forced_exchange\\seed504_points_v25.json",
+  "start_V": 25,
+  "n_witnesses": 25,
+  "n_involved": 44,
+  "core_size": 121,
+  "core_legal": true,
+  "rows": [
+    {
+      "method": "greedy_involved_halo4",
+      "size": 164,
+      "V": null,
+      "dual": null
+    },
+    {
+      "U_id": "U_rem2res_r2_inv44",
+      "r": 2,
+      "status": "ERROR",
+      "universe_hash": "588caec24e521ad15494358081f60b6b31299840b06d584a8604b87f749c6772",
+      "n_rem": 44,
+      "n_add": 2719,
+      "best_illegal_V": null,
+      "rounds": null,
+      "final_cuts": null,
+      "wall_time_s": 0.28799962997436523,
+      "size": 0
+    },
+    {
+      "U_id": "U_rem2res_r3_inv44",
+      "r": 3,
+      "status": "ERROR",
+      "universe_hash": "588caec24e521ad15494358081f60b6b31299840b06d584a8604b87f749c6772",
+      "n_rem": 44,
+      "n_add": 2719,
+      "best_illegal_V": null,
+      "rounds": null,
+      "final_cuts": null,
+      "wall_time_s": 0.0,
+      "size": 0
+    },
+    {
+      "U_id": "U_rem2res_r4_inv44",
+      "r": 4,
+      "status": "ERROR",
+      "universe_hash": "588caec24e521ad15494358081f60b6b31299840b06d584a8604b87f749c6772",
+      "n_rem": 44,
+      "n_add": 2719,
+      "best_illegal_V": null,
+      "rounds": null,
+      "final_cuts": null,
+      "wall_time_s": 0.0010004043579101562,
+      "size": 0
+    },
+    {
+      "U_id": "U_rem2res_r6_inv44",
+      "r": 6,
+      "status": "ERROR",
+      "universe_hash": "588caec24e521ad15494358081f60b6b31299840b06d584a8604b87f749c6772",
+      "n_rem": 44,
+      "n_add": 2719,
+      "best_illegal_V": null,
+      "rounds": null,
+      "final_cuts": null,
+      "wall_time_s": 0.0009996891021728516,
+      "size": 0
+    },
+    {
+      "U_id": "U_rem2res_r22_inv44",
+      "r": 22,
+      "status": "ERROR",
+      "universe_hash": "588caec24e521ad15494358081f60b6b31299840b06d584a8604b87f749c6772",
+      "n_rem": 44,
+      "n_add": 2719,
+      "best_illegal_V": null,
+      "rounds": null,
+      "final_cuts": null,
+      "wall_time_s": 0.0,
+      "size": 0
+    }
+  ],
+  "any_legal": false
+}
