@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""Maximize legal extension of rem2 soft core (k=5 -> core ~160).
-
-Lazy CP-SAT: maximize free vars; on illegal add witness cuts; on legal raise LB.
-"""
+"""Maximize legal extension of rem2 soft core160 with restricted free halo."""
 from __future__ import annotations
 
 import json
@@ -46,6 +43,19 @@ def witnesses(points: Sequence[Point]):
     return out
 
 
+def halo(seeds, radius, forbidden):
+    out = set()
+    for x, y in seeds:
+        for dx in range(-radius, radius + 1):
+            for dy in range(-radius, radius + 1):
+                if max(abs(dx), abs(dy)) > radius:
+                    continue
+                p = (x + dx, y + dy)
+                if 0 <= p[0] < N and 0 <= p[1] < N and p not in forbidden:
+                    out.add(p)
+    return out
+
+
 def main():
     try:
         sys.stdout.reconfigure(line_buffering=True)
@@ -66,17 +76,34 @@ def main():
         if st.can_add(p)[0]:
             st.add_point(p)
             core.append(p)
-    free = [(x, y) for x in range(N) for y in range(N) if (x, y) not in set(core)]
-    print(json.dumps({"core": len(core), "free": len(free)}), flush=True)
+    # greedy seed extension (full grid order) for lower bound
+    greedy = list(core)
+    stg = IncrementalIsoscelesFreeSet(N)
+    for p in greedy:
+        stg.add_point(p)
+    for p in sorted((x, y) for x in range(N) for y in range(N) if (x, y) not in stg.points):
+        if stg.can_add(p)[0]:
+            stg.add_point(p)
+            greedy.append(p)
+    print(json.dumps({"core": len(core), "greedy_ext": len(greedy)}), flush=True)
+
+    radius = int(os.environ.get("W3_HALO", "14"))
+    free = sorted(halo(core + list(strip), radius, set(core)))
+    # ensure greedy extras beyond core are in free if possible
+    for p in greedy:
+        if p not in set(core) and p not in free:
+            free.append(p)
+    free = sorted(set(free))
+    print(json.dumps({"n_free": len(free), "halo": radius}), flush=True)
 
     time_s = float(os.environ.get("W3_CHEAP_S", "1800"))
     workers = int(os.environ.get("W3_WORKERS", "6"))
     cuts: Set[Tuple[Point, Point, Point]] = set()
     t0 = time.time()
     rounds = 0
-    best_size = len(core)
-    best_pts = list(core)
-    lb_extra = 0  # minimum free points beyond core
+    best_size = len(greedy)
+    best_pts = list(greedy)
+    lb_extra = max(0, best_size - len(core))
     status = "TIMEOUT"
     proved_max = None
     while time.time() - t0 < time_s:
@@ -92,14 +119,13 @@ def main():
                 model.Add(sum(free_in) <= len(free_in) - 1)
         solver = cp_model.CpSolver()
         rem = max(0.5, time_s - (time.time() - t0))
-        solver.parameters.max_time_in_seconds = min(40.0, rem)
+        solver.parameters.max_time_in_seconds = min(30.0, rem)
         solver.parameters.num_search_workers = workers
-        solver.parameters.random_seed = 9500 + rounds
+        solver.parameters.random_seed = 9600 + rounds
         code = solver.Solve(model)
         if code == cp_model.INFEASIBLE:
-            # cannot reach lb_extra free points
             proved_max = best_size
-            status = "MAX_PROVED" if best_size >= len(core) else "INFEASIBLE_SCOPED"
+            status = "MAX_PROVED_SCOPED"
             break
         if code not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
             status = "TIMEOUT"
@@ -111,7 +137,6 @@ def main():
                 best_size = len(sel)
                 best_pts = sel
                 print(json.dumps({"new_best_legal": best_size, "round": rounds}), flush=True)
-            # search for strictly larger
             lb_extra = best_size - len(core) + 1
             if best_size >= 165:
                 status = "FEASIBLE_LEGAL_GE165"
@@ -123,22 +148,20 @@ def main():
         if len(cuts) == before:
             status = "TIMEOUT"
             break
-        if rounds % 100 == 0:
+        if rounds % 50 == 0:
             print(
                 json.dumps(
-                    {
-                        "round": rounds,
-                        "cuts": len(cuts),
-                        "best": best_size,
-                        "lb_extra": lb_extra,
-                    }
+                    {"round": rounds, "cuts": len(cuts), "best": best_size, "lb_extra": lb_extra}
                 ),
                 flush=True,
             )
 
     out = {
-        "schema": "w3_rem2_core_maximize_v1",
+        "schema": "w3_rem2_core_maximize_halo_v1",
         "core_size": len(core),
+        "n_free": len(free),
+        "halo": radius,
+        "greedy_ext": len(greedy),
         "best_legal_size": best_size,
         "proved_max": proved_max,
         "status": status,
@@ -153,16 +176,7 @@ def main():
         cand = os.path.join(RUN, "CANDIDATES", "rem2_core160_max_legal.json")
         json.dump({"points": [list(p) for p in best_pts], **out}, open(cand, "w"), indent=2)
         out["candidate"] = cand
-    elif best_size > len(core):
-        # save best legal extension even if <165
-        path_pts = os.path.join(RUN, "EXPERIMENTS", "W3_rem2_residual", f"core160_best{best_size}.json")
-        json.dump(
-            {"points": [list(p) for p in best_pts], "size": best_size},
-            open(path_pts, "w"),
-            indent=2,
-        )
-        out["best_points_path"] = path_pts
-    path = os.path.join(RUN, "EXPERIMENTS", "W3_rem2_residual", "core160_maximize.json")
+    path = os.path.join(RUN, "EXPERIMENTS", "W3_rem2_residual", "core160_maximize_halo.json")
     json.dump(out, open(path, "w"), indent=2)
     open(path, "a").write("\n")
     print(json.dumps(out, indent=2), flush=True)
