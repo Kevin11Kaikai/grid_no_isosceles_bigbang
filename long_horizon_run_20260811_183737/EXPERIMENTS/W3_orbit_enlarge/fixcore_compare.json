@@ -1,0 +1,29 @@
+{
+  "schema": "w3_fixcore_compare_v1",
+  "rows": [
+    {
+      "tag": "fixcore",
+      "fix_core": true,
+      "status": "INFEASIBLE",
+      "size": 0,
+      "universe_id": "orb_t0_defect_core41_free241_def200_part0_h14",
+      "model_hash": "de9b9c785913bd2d6792178caecacaea93443d30ea5c5f2608dbe505c0c17434",
+      "wall_time_s": 8.042129516601562,
+      "rounds": 233,
+      "final_cuts": 1378,
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_fixcore_n100_t0_s831_20260812T072530Z.json"
+    },
+    {
+      "tag": "softcore",
+      "fix_core": false,
+      "status": "TIMEOUT",
+      "size": 0,
+      "universe_id": "orb_t0_defect_core41_free241_def200_part0_h14",
+      "model_hash": "2650eced46edce3d96bf801919ac6b94bddc006e8571c6ba416a84d6656bc6a7",
+      "wall_time_s": 599.9822149276733,
+      "rounds": 1519,
+      "final_cuts": 22157,
+      "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_softcore_n100_t0_s832_20260812T073530Z.json"
+    }
+  ]
+}

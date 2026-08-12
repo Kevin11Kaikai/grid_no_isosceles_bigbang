@@ -208,3 +208,8 @@
 - Level: `TIMEOUT_INCONCLUSIVE` (short probe).
 - Status: **Not killed**; Types 0â€“6 xlarge all TIMEOUTâ‰ INFEAS under tested budgets.
 
+
+### LH-F033 ¡ª Type0 fix_core=True vs soft_core (enlarged U)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/fixcore_compare.json` ¡ª fix_core `INFEASIBLE` in ~8s (scoped); soft_core `TIMEOUT` 600s size=0 on same free241/def200/h14.
+- Level: `SCOPED_INFEASIBLE` (fix) + `TIMEOUT_INCONCLUSIVE` (soft).
+- Status: **fix_core killed for this U**; soft_core remains the live TIMEOUT path (default). Not a global UB.
