@@ -441,3 +441,18 @@
 - Evidence: `EXPERIMENTS/W3_new_families/family_ring_even_esc.json` — grow from even-ring S0 seed recovers **incumbent S0** hash `8a84216d…`; even_core_forbid_odd `MAX_PROVED` 130; grow+forbid CAPACITY_FAIL 164.
 - Level: `SCOPED_MAX` + S0-snap.
 - Status: **DEAD ring-even as leave-S0 seed** (snaps to S0).
+
+### LH-F074 — S0-avoiding grow + maximize (family G)
+- Evidence: `EXPERIMENTS/W3_new_families/family_G_avoid_S0.json` — grows 129–132, all `CAPACITY_FAIL` free=0 under S0 blacklist. `any_plus=false`.
+- Level: `CAPACITY_FAIL`.
+- Status: **Avoid-S0 intact sets near-maximal ≤132**; need destroy (G2).
+
+### LH-F075 — Avoid-S0 destroy-refill (G2)
+- Evidence: `EXPERIMENTS/W3_new_families/family_G2_destroy.json` — best **134** TIMEOUT; colmod/rand40 `MAX_PROVED` 132. Still ≪165.
+- Level: `SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
+- Status: **Avoid-S0 lineage plateaus ≤134** at these budgets.
+
+### LH-F076 — Densest row/col band blacklist (H)
+- Evidence: `EXPERIMENTS/W3_new_families/family_H_rowband.json` — ban_rows_top8 `MAX_PROVED` 129; top12 TIMEOUT best 134–135; top16/20 TIMEOUT stalled at core. `any_plus=false`.
+- Level: `SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
+- Status: **Row/col band blacklist does not reach 165** in 4min; deprioritize shallow k.

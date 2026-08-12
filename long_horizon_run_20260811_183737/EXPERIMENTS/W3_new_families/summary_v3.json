@@ -1,0 +1,11 @@
+{
+  "schema": "w3_newfam_v3_v1",
+  "phases": {
+    "H": {
+      "best": 135,
+      "any_plus": false
+    }
+  },
+  "any_plus": false,
+  "best": 135
+}

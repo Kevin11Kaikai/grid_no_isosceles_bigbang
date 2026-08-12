@@ -1,0 +1,83 @@
+{
+  "schema": "w3_newfam_G2_v1",
+  "rows": [
+    {
+      "status": "MAX_PROVED",
+      "core": 94,
+      "free": 106,
+      "best_legal_size": 132,
+      "proved_max": 132,
+      "rounds": 3,
+      "final_cuts": 778,
+      "wall_s": 2.872647285461426,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 132,
+        "hash": "75e76441b7944ab9b7580fcb35e8a49f449bc03490a93a6f1db68503235221e5"
+      },
+      "best_hash": "75e76441b7944ab9b7580fcb35e8a49f449bc03490a93a6f1db68503235221e5",
+      "plan": "avoid_colmod3",
+      "grow_size": 132
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 69,
+      "free": 661,
+      "best_legal_size": 134,
+      "proved_max": null,
+      "rounds": 15,
+      "final_cuts": 86443,
+      "wall_s": 420.2278437614441,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 134,
+        "hash": "8a9b994de6d90c484c946a9ebad179c156dafaff03b46cf525c26fb726e5a0a6"
+      },
+      "best_hash": "8a9b994de6d90c484c946a9ebad179c156dafaff03b46cf525c26fb726e5a0a6",
+      "plan": "avoid_ring_even",
+      "grow_size": 132
+    },
+    {
+      "status": "MAX_PROVED",
+      "core": 92,
+      "free": 126,
+      "best_legal_size": 132,
+      "proved_max": 132,
+      "rounds": 3,
+      "final_cuts": 1142,
+      "wall_s": 3.63193941116333,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 132,
+        "hash": "a9fec4a8bcd923b3d88e7868252eb9341ec3444b5b3445d45d9432c7ae907fff"
+      },
+      "best_hash": "a9fec4a8bcd923b3d88e7868252eb9341ec3444b5b3445d45d9432c7ae907fff",
+      "plan": "avoid_rand40",
+      "grow_size": 132
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 62,
+      "free": 1255,
+      "best_legal_size": 133,
+      "proved_max": null,
+      "rounds": 11,
+      "final_cuts": 563059,
+      "wall_s": 426.4534809589386,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 133,
+        "hash": "1f85a979ec215430d25c6db62c37b4fded36f909d35d942f74c662e48492c7c6"
+      },
+      "best_hash": "1f85a979ec215430d25c6db62c37b4fded36f909d35d942f74c662e48492c7c6",
+      "plan": "avoid_rand70",
+      "grow_size": 132
+    }
+  ],
+  "best": 134,
+  "any_plus": false
+}
