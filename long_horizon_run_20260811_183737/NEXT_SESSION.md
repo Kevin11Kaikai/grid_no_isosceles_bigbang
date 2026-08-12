@@ -5,24 +5,22 @@
 
 ## Status
 
-Wave3 post-Gate2. Incumbents **112/164**. No legal +1. FunSearch held. C S0+1 blocked.
+Wave3. Incumbents **112/164**. No legal +1. FunSearch held. C S0+1 blocked.
 
-## Major result
+## Key Wave3 outcomes
 
-**s811 Type0 mega 2h** (free401/def360/h20) → **TIMEOUT size=0** (121106 cuts). Still TIMEOUT≠INFEASIBLE.
+- Ranking: R1 orbit TIMEOUT; R2 cert Hamming/HS micros SCOPED INFEAS (LH-F015–F022).
+- **fix_core=True → SCOPED INFEAS** (LH-F033); soft_core required for open TIMEOUT path.
+- Two 2h Type0 runs TIMEOUT size=0: mega s811 (free401/h20, 121k cuts) and s901 (free361/h18, 92k cuts).
 
 ## Live
 
-- **s901 Type0 2h** (parallel; free361/h18 agent_c) — still running (~85min).
-
-## Finished (all TIMEOUT size=0 unless noted)
-
-Types 0–4 xlarge; cert_lb2 t0/t1; partial; n64 enlarge; mega s811. R2 Hamming/HS micros SCOPED INFEAS (LH-F015–F022).
+- **s841 mega+cert_lb2** 90min (`…/mega_certlb2_job.py`) — new combo U.
 
 ## Resume
 
-1. Collect s901 final.
-2. If TIMEOUT: **new formulation** (not more same-U 30–60min) — e.g. different defect_rank, unfixed-core variants, or residual nonlocal exact with remove≥2 outside killed U_ids.
-3. Dual-verify any |S|≥165 before promote.
+1. Collect `mega_certlb2_t0_s841_90m.json`.
+2. If TIMEOUT: invent new formulation (not more same soft Type0 agent_c enlargements).
+3. Dual-verify any ≥165 before promote.
 
-Push checkpoints; no force-push; ignore `.venv_solver`.
+Push; no force-push; ignore `.venv_solver`.
