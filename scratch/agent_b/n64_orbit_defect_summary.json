@@ -1,0 +1,200 @@
+{
+  "n": 64,
+  "target": 113,
+  "git_commit": "797afdeb5e2cb4da0f4850e138a28735bf809518",
+  "num_workers": 5,
+  "runs": [
+    {
+      "tag": "long_n64_t0_defect_d1-8_s41",
+      "n": 64,
+      "symmetry_type": 0,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        8
+      ],
+      "status": "TIMEOUT",
+      "size": 0,
+      "wall_time_s": 2400.051169872284,
+      "model_hash": "fe48a306f50c6bbd7cc31c92d2124591dfaab6b1455057bed42378375cca82ac",
+      "universe_id": "orb_t0_defect_core27_free107_def80_part0_h8",
+      "candidate": null,
+      "verify": {
+        "A": null,
+        "B": null
+      },
+      "infeasible_record": null,
+      "scope": {
+        "n": 64,
+        "symmetry_type": 0,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "universe_id": "orb_t0_defect_core27_free107_def80_part0_h8",
+        "time_limit_s": 2400.0,
+        "seed": 41,
+        "model_hash": "fe48a306f50c6bbd7cc31c92d2124591dfaab6b1455057bed42378375cca82ac"
+      }
+    },
+    {
+      "tag": "long_n64_t1_pure_d0-0_s42",
+      "n": 64,
+      "symmetry_type": 1,
+      "mode": "pure",
+      "defect_budget": [
+        0,
+        0
+      ],
+      "status": "INFEASIBLE",
+      "size": 0,
+      "wall_time_s": 0.29076480865478516,
+      "model_hash": "ca5eac2e03d1dc8dc1a33eed60f92287e029aa5203567b68ae5328dddb7ed388",
+      "universe_id": "orb_t1_pure_core0_free81_def0_part0_h8",
+      "candidate": null,
+      "verify": {
+        "A": null,
+        "B": null
+      },
+      "infeasible_record": {
+        "n": 64,
+        "axis": 1,
+        "mode": "pure",
+        "defect_budget": [
+          0,
+          0
+        ],
+        "core_def": {
+          "soft_core": true,
+          "fix_core": false,
+          "n_core_orbits": 0,
+          "core_orbit_ids": [],
+          "core_points_note": 0
+        },
+        "universe": "orb_t1_pure_core0_free81_def0_part0_h8",
+        "time_s": 0.21729254722595215,
+        "status": "INFEASIBLE",
+        "model_hash": "ca5eac2e03d1dc8dc1a33eed60f92287e029aa5203567b68ae5328dddb7ed388",
+        "note": "Scoped to this universe/mode only; not a global upper bound."
+      },
+      "scope": {
+        "n": 64,
+        "symmetry_type": 1,
+        "mode": "pure",
+        "defect_budget": [
+          0,
+          0
+        ],
+        "universe_id": "orb_t1_pure_core0_free81_def0_part0_h8",
+        "time_limit_s": 1800.0,
+        "seed": 42,
+        "model_hash": "ca5eac2e03d1dc8dc1a33eed60f92287e029aa5203567b68ae5328dddb7ed388"
+      }
+    },
+    {
+      "tag": "long_n64_t1_defect_d1-8_s43",
+      "n": 64,
+      "symmetry_type": 1,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        8
+      ],
+      "status": "TIMEOUT",
+      "size": 0,
+      "wall_time_s": 1500.1353089809418,
+      "model_hash": "2fd6c20286d1a107bb00749287f67eba090101ba46caffccd82cd8a0ce3f5c37",
+      "universe_id": "orb_t1_defect_core0_free81_def80_part0_h8",
+      "candidate": null,
+      "verify": {
+        "A": null,
+        "B": null
+      },
+      "infeasible_record": null,
+      "scope": {
+        "n": 64,
+        "symmetry_type": 1,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "universe_id": "orb_t1_defect_core0_free81_def80_part0_h8",
+        "time_limit_s": 1500.0,
+        "seed": 43,
+        "model_hash": "2fd6c20286d1a107bb00749287f67eba090101ba46caffccd82cd8a0ce3f5c37"
+      }
+    },
+    {
+      "tag": "long_n64_t3_defect_d1-8_s53",
+      "n": 64,
+      "symmetry_type": 3,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        8
+      ],
+      "status": "TIMEOUT",
+      "size": 0,
+      "wall_time_s": 1200.1515283584595,
+      "model_hash": "4c87ad66b945b337c328a77493596b933934b32a1fe5282dbed2956eb76768ba",
+      "universe_id": "orb_t3_defect_core4_free84_def80_part0_h8",
+      "candidate": null,
+      "verify": {
+        "A": null,
+        "B": null
+      },
+      "infeasible_record": null,
+      "scope": {
+        "n": 64,
+        "symmetry_type": 3,
+        "mode": "defect",
+        "defect_budget": [
+          1,
+          8
+        ],
+        "universe_id": "orb_t3_defect_core4_free84_def80_part0_h8",
+        "time_limit_s": 1200.0,
+        "seed": 53,
+        "model_hash": "4c87ad66b945b337c328a77493596b933934b32a1fe5282dbed2956eb76768ba"
+      }
+    }
+  ],
+  "best": {
+    "tag": "long_n64_t0_defect_d1-8_s41",
+    "n": 64,
+    "symmetry_type": 0,
+    "mode": "defect",
+    "defect_budget": [
+      1,
+      8
+    ],
+    "status": "TIMEOUT",
+    "size": 0,
+    "wall_time_s": 2400.051169872284,
+    "model_hash": "fe48a306f50c6bbd7cc31c92d2124591dfaab6b1455057bed42378375cca82ac",
+    "universe_id": "orb_t0_defect_core27_free107_def80_part0_h8",
+    "candidate": null,
+    "verify": {
+      "A": null,
+      "B": null
+    },
+    "infeasible_record": null,
+    "scope": {
+      "n": 64,
+      "symmetry_type": 0,
+      "mode": "defect",
+      "defect_budget": [
+        1,
+        8
+      ],
+      "universe_id": "orb_t0_defect_core27_free107_def80_part0_h8",
+      "time_limit_s": 2400.0,
+      "seed": 41,
+      "model_hash": "fe48a306f50c6bbd7cc31c92d2124591dfaab6b1455057bed42378375cca82ac"
+    }
+  },
+  "wall_time_s": 5100.62877202034,
+  "any_legal_plus1": false
+}
