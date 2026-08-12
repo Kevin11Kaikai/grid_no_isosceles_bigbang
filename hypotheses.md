@@ -139,6 +139,12 @@ against both certified JSON files: exact match, 2/112 (n=64), 0/164 (n=100).
 
 **Status:** OBSERVATION, independently reproduced by two separate scripts
 (Proposer's and the main agent's), still a sample of 2 constructions.
+**Further cross-validated by an entirely separate, independently-running
+concurrent agent session** via a different algorithm (minimum-vertex-cover
+blocker-graph analysis rather than direct simulation) — see
+`CONCURRENT_AGENT_AUDIT.md` and `claim_registry.md` Claim 8. Three independent
+implementations now agree on the same numbers (2/112 for n=64, 0/164 for n=100),
+which is unusually strong corroboration for an OBSERVATION-level entry.
 
 ## H-006b (Round 2, orbit-space extension of H-006)
 

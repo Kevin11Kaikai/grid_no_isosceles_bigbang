@@ -59,24 +59,6 @@ happen to try.
 (longer budget); this n=64 result is treated as a completed negative data point for
 this session's compute budget, not as proof that 113 is unreachable.
 
-## F-004: Tabu with informed removal (Strategy A), seeded from official baselines
-
-**What was tried:** `src/search/tabu.py` — trial-remove small batches scored by how
-many sampled empty cells they free, tabu tenure on re-add, boundary-biased refill.
-Also multi-seed greedy LNS (4×90s, seeds 101–104) and a center-probe exact-MILP
-variant that frees frame points then repairs over the empty center box.
-
-**Result:**
-- Tabu n=64, ~150s effective (early plateau), seed=3: 4252 iters, stayed at 112
-- Tabu n=100, ~210s, seed=11: 1810 iters, stayed at 164
-- Greedy LNS n=64 multiseed: all four seeds stayed at 112 (~22k iters combined)
-- Direct check: 0 center cells (ring>11 / >26) are individually addable to either
-  baseline without removals
-
-**Status:** NEGATIVE under these budgets/seeds — not a proof that 113/165 are
-unreachable; different trajectories (SA+exact repair, longer multi-region destroy)
-remain open.
-
 ## F-004: Tabu search with informed removal (Proposer Strategy A) — PROVENANCE ANOMALY
 
 **What was tried:** `src/search/tabu.py`: remove the point(s) whose removal is
@@ -240,13 +222,68 @@ solve is already meaningfully constrained.
 **Result (first, unseeded attempt):** No improvement found (112->112, 164->164),
 but n=100's single round did not converge to a legal solution within budget at
 all -- an INCONCLUSIVE outcome for that specific run, not a clean negative one.
-Re-run with seeding (see STATUS.md / ROUND_LOG.md for final numbers) to get a
-fair, efficient test of this strategy before drawing a conclusion.
+
+**Result (seeded re-run, n=100):** Revealed a SECOND, different inefficiency:
+`cpsat_lazy_maximize`'s loop aborts entirely (via an early `break`) the first
+time a round's solver status comes back `UNKNOWN` (i.e. the per-round time limit
+elapsed before the solver found ANY feasible incumbent), rather than retrying
+with more time. With 2,000,000 seeded cuts already loaded, just building the
+CP-SAT model consumed most of the round's wall time, leaving the solver too
+little of its 20s per-round slice to find an incumbent at all -- so the n=100
+seeded run terminated after a single 44.6s round with status UNKNOWN, using only
+44.6s of its 1800s budget. This is an honest INCONCLUSIVE result and a real,
+disclosed implementation limitation (not a mathematical finding): this specific
+combination of "very large seeded cut count" + "short per-round time limit" +
+"abort-on-UNKNOWN" makes the seeded-maximize variant unproductive for n=100 as
+currently written. A fix (increase the per-round time limit for large seeded cut
+sets, or retry UNKNOWN rounds instead of aborting) was identified but not
+implemented/re-run this session -- recorded as future work rather than iterated
+on indefinitely.
+
+**Result (seeded re-run, n=64):** 2 rounds, 128.7s total (`logs/cpsat_maximize_n64_seed1.json`).
+Round 1 (773,812 seeded cuts): FEASIBLE status, but the incumbent selected 3664
+of 4096 cells with 29,278,875 remaining violations -- nowhere near a legal
+solution, since 773,812 baseline-pivot-only cuts are a small fraction of the true
+~40.2 million total constraints for n=64 (see F-011/Claim 7's full-enumeration
+attempt). Round 2 hit the same UNKNOWN-abort limitation described above.
+`best_legal_size` stayed at its warm-started initial value of 112 throughout --
+no improvement, and this specific seeded-maximize variant did not make
+meaningful incremental progress toward a legal large solution in the time
+available. Same conclusion as F-009's n=100 result: an honest INCONCLUSIVE/
+negative outcome plus a disclosed implementation limitation, not a mathematical
+finding about C(64).
 
 **Status:** See ROUND_LOG.md Round 2 section for the final, properly-seeded
 outcome; this entry documents the honest first-attempt inefficiency and its fix,
 per this project's discipline of disclosing what didn't work on the first try
 rather than only reporting the polished final version.
+
+## F-010 (from a concurrent, independently-running agent — see CONCURRENT_AGENT_AUDIT.md): re-run of tabu/greedy-LNS/center-probe
+
+**Provenance:** This entry's ID originally collided with F-004 above (both were
+titled "F-004") because it was written by a **separate, independently-running
+Cursor AI agent session** that was operating on this exact same repository
+concurrently with this session, discovered and disclosed in
+`CONCURRENT_AGENT_AUDIT.md`. Renumbered to F-010 here to resolve the collision;
+content otherwise preserved as that agent wrote it.
+
+**What was tried:** `src/search/tabu.py` (same file discovered/disclosed in F-004
+above) — trial-remove small batches scored by how many sampled empty cells they
+free, tabu tenure on re-add, boundary-biased refill. Also multi-seed greedy LNS
+(4x90s, seeds 101-104) and a center-probe exact-MILP variant that frees frame
+points then repairs over the empty center box.
+
+**Result:**
+- Tabu n=64, ~150s effective (early plateau), seed=3: 4252 iters, stayed at 112
+- Tabu n=100, ~210s, seed=11: 1810 iters, stayed at 164
+- Greedy LNS n=64 multiseed: all four seeds stayed at 112 (~22k iters combined)
+- Direct check: 0 center cells (ring>11 / >26) are individually addable to either
+  baseline without removals (independently consistent with this project's own
+  H-005 and the Round 1 tabu.py sanity pilot)
+
+**Status:** NEGATIVE under these budgets/seeds, from an independent source —
+additional corroborating evidence, not double-counted as this project's own
+search budget.
 
 ## Bonus result (not a failure): small-n exact C(n) sweep
 

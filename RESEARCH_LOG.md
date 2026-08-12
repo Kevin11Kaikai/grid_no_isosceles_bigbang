@@ -156,4 +156,54 @@ any additional solver dependency (e.g. OR-Tools for CP-SAT) will be installed
 only inside a project-local virtual environment, never into the global/base
 interpreter.
 
+## Round 2 execution
+
+- Isolated venv (`.venv_solver/`) created; OR-Tools CP-SAT installed there only.
+- Implemented and tested `sa_exact_repair.py`, `lns_multiregion.py`,
+  `symmetry_guided.py`, `cpsat_lazy.py`, `cpsat_small_n_sweep.py`,
+  `cpsat_full_upper_bound.py`. Two more hand-verified-legal test fixture bugs
+  caught and fixed (same class as Round 1's).
+- Dispatched Round 2 Proposer subagent (`scratch/proposer/proposal_round2.md`):
+  gap analysis of Round 1, design recommendations for all 4 strategies, new
+  structural hypotheses H-005 to H-008. Independently re-confirmed H-006/H-006b.
+- Ran all 4 new strategies for 30 min each on n=64 and n=100, plus a full-budget
+  greedy multistart. No improvement over 112/164 found by any route (see
+  `failed_ideas.md` F-005 to F-009, `ROUND_LOG.md` Round 2).
+- Small-n exact sweep produced genuine new results: C(4)=6, C(5)=7, C(6)=9,
+  C(7)=10 (machine-proven). A separate full-constraint-enumeration attempt for
+  n=64 at target 113 was inconclusive after ~97 minutes.
+
+## Discovery: a concurrent agent session on the same repository
+
+While finishing Round 2 documentation, discovered (via an unexpected file,
+`src/search/orbit_defect_search.py`) that a separate, independently-running
+Cursor AI agent session had been operating on this exact same repository
+concurrently. Investigated the full scope (a `.cursor/plans/` file, an extensive
+`long_horizon_run_20260811_183737/` campaign, `scratch/agent_c/`,
+`scratch/audit/`, `scratch/red_team_wave2/` trees, 72+ commits and growing,
+a `git remote origin` pointing to a GitHub repo). Paused all further writes and
+asked the user for guidance before proceeding (see conversation) rather than
+silently absorbing, ignoring, or trying to reconcile the situation unilaterally.
+User confirmed: this is their own authorized concurrent work via a different
+tool, and asked for the other session's Wave 2 results to be given a proper
+unified audit rather than either ignored or blindly trusted.
+
+Audited the other session's Gate 0/Gate 1/Wave 2 mathematical claims (its Wave 3
+was still live/a moving target during this audit and was explicitly excluded from
+scope). Found its work disciplined, honestly hedged, and free of overclaim
+language. Its core novel finding (a Hamming-shell structural exclusion for n=100,
+derived via minimum-vertex-cover blocker-graph analysis) exactly cross-validates
+this project's own independently-derived H-006 (derived via direct brute-force
+simulation) -- two different algorithms agreeing on identical numbers for both
+grids. Incorporated as `claim_registry.md` Claim 8, with full attribution and
+methodology disclosure in the new `CONCURRENT_AGENT_AUDIT.md`.
+
+Fixed one concrete data-integrity casualty of the entangled commit: a duplicate
+"F-004" section in `failed_ideas.md`, resolved by renumbering the other session's
+entry to F-010 with a provenance note (content preserved, not deleted).
+
+Dispatched a Round 2 Red Team subagent to independently audit all new Round 2
+code AND the concurrent-agent audit's own fairness/overclaim discipline. See
+`audits/red_team_round2.md`.
+
 *(Log continues below.)*

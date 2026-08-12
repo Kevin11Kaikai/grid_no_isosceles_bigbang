@@ -1,0 +1,30 @@
+{
+  "4": {
+    "n": 4,
+    "lower_bound_found": 6,
+    "lower_bound_meta": {
+      "trials_run": 1206282,
+      "wall_time_s": 30.000195503234863
+    },
+    "target_tested": 7,
+    "status": "INFEASIBLE_PROVEN",
+    "ub_wall_time_s": 0.2343754768371582,
+    "ub_rounds": 15,
+    "ub_final_cuts": 122,
+    "verdict": "EXACT: C(4) = 6 (upper bound machine-proven via lazy CP-SAT, lower bound via greedy construction)"
+  },
+  "5": {
+    "n": 5,
+    "lower_bound_found": 7,
+    "lower_bound_meta": {
+      "trials_run": 796350,
+      "wall_time_s": 30.015546798706055
+    },
+    "target_tested": 8,
+    "status": "INFEASIBLE_PROVEN",
+    "ub_wall_time_s": 0.8333792686462402,
+    "ub_rounds": 47,
+    "ub_final_cuts": 375,
+    "verdict": "EXACT: C(5) = 7 (upper bound machine-proven via lazy CP-SAT, lower bound via greedy construction)"
+  }
+}

@@ -182,3 +182,48 @@ remains inconclusive.
 the other. This entry exists to pre-register the experiment and its exact
 interpretation rules before the result is known, per this project's discipline of
 not adjusting claimed methodology after seeing results.
+
+**RESOLUTION:** INCONCLUSIVE. The full n=64 constraint set (40,207,368
+constraints, all 4096 grid points as apex) was successfully enumerated (222s) and
+built into a CP-SAT model (390s), but the feasibility solve for target=113 did not
+resolve within its 3600s time limit (status UNKNOWN). This is an honest negative/
+inconclusive result, not a proof either way — see `failed_ideas.md` and
+`logs/cpsat_full_upperbound_n64_target113.json`.
+
+## Claim 8 (cross-validated structural exclusion, n=100 Hamming r=1 shell)
+
+**Statement:** No legal 165-point set exists within Hamming radius 1 of the
+certified n=100 baseline (i.e. no legal set reachable by removing exactly 1 point
+and adding exactly 2). Analogously for n=64: only 2 of the 3984 empty cells are
+reachable via a single-point deletion (both requiring exactly 1 deletion); all
+others require >=2 deletions.
+
+**Type:** STRUCTURAL_EXCLUSION (explicitly NOT a claim that C(100)<=164 or
+C(64)<=112 — this excludes one specific small neighborhood of the known baseline,
+not all of solution space).
+
+**Type/provenance note:** This claim was independently derived by TWO separate
+concurrent research efforts working on this repository this session: (a) this
+project's own H-006 (direct brute-force single-point-removal simulation via
+`IncrementalIsoscelesFreeSet`, main-agent-independently-reconfirmed), and (b) a
+separate, user-authorized concurrent Cursor agent session's Gate-1 "Agent A"
+audit (a minimum-vertex-cover blocker-graph computation, a completely different
+algorithm). Both report the identical numbers: n=100, 0/164 points open any
+cell alone (deletion LB >= 2 for all 9836 unselected cells); n=64, exactly 2/112
+points open exactly 1 cell each (deletion LB = 1 for exactly 2 cells, >= 2 for
+the other 3982). See `CONCURRENT_AGENT_AUDIT.md` for the full audit of the
+second source before this claim was accepted.
+
+**Evidence:**
+- This project: `hypotheses.md` H-006, independently re-run by the main agent.
+- Concurrent source: `scratch/audit/agent_a/agent_a_report.md`,
+  `scratch/audit/gate1_decision.md` (both reviewed, not re-executed, by this
+  session — see `CONCURRENT_AGENT_AUDIT.md`).
+
+**Allowed wording:** "No legal construction of size 165 exists within Hamming
+distance 1 of the certified n=100 baseline (independently derived by two
+different methods); this is a narrow structural exclusion of one neighborhood,
+not a proof that C(100) <= 164."
+
+**Forbidden wording:** "C(100) <= 164", "no larger construction exists anywhere",
+"proven optimal" — none of these follow from a single-neighborhood exclusion.
