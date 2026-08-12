@@ -1,4 +1,3 @@
-{"start": "t3_xlarge", "seed": 531, "time_s": 1800.0}
 {
   "status": "TIMEOUT",
   "size": 0,
@@ -14,4 +13,3 @@
   "symmetry_type": 3,
   "seed": 531
 }
-{"start": "t4_xlarge", "seed": 541, "time_s": 1800.0}
