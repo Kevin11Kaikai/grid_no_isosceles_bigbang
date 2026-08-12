@@ -283,3 +283,8 @@
 - Evidence: `EXPERIMENTS/W3_rem3_residual/summary.json` + `core_maximize_s802.json` â€” s802 soft/partial INFEAS; maximize soft-core â†’ legal **164** (not +1); s801 soft `TIMEOUT` (~32s escalate-open), partial INFEAS.
 - Level: `SCOPED_INFEASIBLE` / `TIMEOUT_INCONCLUSIVE` (s801 soft).
 - Status: **Deprioritize rem3 residual for these elites**; optional long soft s801 only if pattern/from-scratch stall.
+
+### LH-F042 ¡ª From-scratch grow long batch (partial)
+- Evidence: `EXPERIMENTS/W3_from_scratch/grow_long.json` ¡ª best legal size **137** (boundary_first); far below 165; matches prior grow plateau ~135.
+- Level: `WEAK_NEGATIVE`.
+- Status: **Deprioritize plain grow**; need stronger destroy/refill or structure.

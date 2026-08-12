@@ -1,0 +1,18 @@
+﻿{
+  "schema": "w3_from_scratch_grow_v2_partial",
+  "note": "Process killed mid-batch; rows recovered from terminal logs.",
+  "best_size": 137,
+  "rows": [
+    {"n": 100, "seed": 102, "mode": "boundary_first", "size": 137, "V": 0},
+    {"n": 100, "seed": 101, "mode": "boundary_first", "size": 133, "V": 0},
+    {"n": 100, "seed": 104, "mode": "boundary_first", "size": 133, "V": 0},
+    {"n": 100, "seed": 103, "mode": "boundary_first", "size": 131, "V": 0},
+    {"n": 100, "seed": 102, "mode": "spiral_mix", "size": 134, "V": 0},
+    {"n": 100, "seed": 103, "mode": "spiral_mix", "size": 134, "V": 0},
+    {"n": 100, "seed": 101, "mode": "spiral_mix", "size": 133, "V": 0},
+    {"n": 100, "seed": 101, "mode": "random", "size": 132, "V": 0},
+    {"n": 100, "seed": 103, "mode": "random", "size": 132, "V": 0},
+    {"n": 100, "seed": 102, "mode": "random", "size": 131, "V": 0},
+    {"n": 100, "seed": 101, "mode": "center_first", "size": 128, "V": 0}
+  ]
+}

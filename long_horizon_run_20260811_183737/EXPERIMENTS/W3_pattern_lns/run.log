@@ -22,3 +22,5 @@
 {"kind": "annulus", "params": {"r0": 2, "r1": 8}, "cand_size": 2492, "size": 128, "V": 0, "oracle_legal": true, "independent_legal": true, "hash": "1f504520c54545845efcf34973bd8aee8d6367c7911cadfdaebbb9a918a186ed"}
 {"kind": "annulus", "params": {"r0": 4, "r1": 12}, "cand_size": 2988, "size": 123, "V": 0, "oracle_legal": true, "independent_legal": true, "hash": "0f47026a56d56b1a17010dfb6589c7e0e0f96fdd2668f3d168207f299f43d1c2"}
 {"kind": "annulus", "params": {"r0": 6, "r1": 14}, "cand_size": 2844, "size": 117, "V": 0, "oracle_legal": true, "independent_legal": true, "hash": "102b429ef8f25c897696eeadd1ca75bfda6cb198a7608d15d0fb49a96cf4a327"}
+{"kind": "annulus", "params": {"r0": 8, "r1": 18}, "cand_size": 3212, "size": 115, "V": 0, "oracle_legal": true, "independent_legal": true, "hash": "91c48c4a6fde28f8fdc87ee955f52d9a0fe5f1a0dc930c0ce37b0fa1ba8ef31b"}
+{"phase": "lns", "rank": 0, "start_size": 105, "kind": "annulus", "params": {"r0": 2, "r1": 8}, "cand_size": 2492, "size": 128, "V": 0, "oracle_legal": true, "independent_legal": true, "hash": "1f504520c54545845efcf34973bd8aee8d6367c7911cadfdaebbb9a918a186ed"}

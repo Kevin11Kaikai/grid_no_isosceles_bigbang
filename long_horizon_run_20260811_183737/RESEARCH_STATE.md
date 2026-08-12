@@ -1,24 +1,29 @@
 ﻿# RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-12 (dispersed Hamming + rem3 residual harvest)
+**Updated:** 2026-08-12 (Wave3 continued under push standing order)  
+**Phase:** Explore continues; incumbents unchanged.
 
 ## Incumbent
-- n=64 **112** / n=100 **164** — **no legal +1**
 
-## Wave3 kills (recent)
-- Spatial knn-block Hamming (LH-F042) and dispersed-stride Hamming (LH-F044): SCOPED INFEAS.
-- rem3 residual s802: soft/partial INFEAS; soft-core maximize = **164** dual-legal (LH-F045).
-- rem3 soft swap plateau V=42 (LH-F041); rem2 residual dead earlier.
+- n=64 **112** / n=100 **164** — **no legal +1**; no dual-verified promotion
 
-## Live
-- Pattern screen+LNS (`W3_pattern_lns`) — annulus legalize ~128; checker ~124.
-- From-scratch grow_v3 — boundary ~135 so far.
-- Exact LNS from ring-bias start=111 (`W3_from_scratch/run_job.py`).
+## Closed / deprioritized this stretch
 
-## Next 3
-1. Finish pattern LNS / from-scratch LNS; dual-verify if ≥165.
-2. LNS warm-start from best grow (~135) and best pattern (~128+).
-3. Do not reopen killed Hamming U_ids / rem2 residual / S0+1 soft.
+| Family | Result |
+|---|---|
+| Orbit Types 0–6 xlarge + cert_lb2 + Type0 2h | TIMEOUT size=0 (not INFEAS) |
+| Joint HS pairs / HS2 micros | SCOPED INFEAS (LH-F020–F022) |
+| rem≥2 residual soft+fullstrip | CAPACITY_FAIL / SCOPED INFEAS (LH-F036–F040) |
+| rem≥3 swap LS | best_V=42 (LH-F041) |
+| From-scratch grow | best legal **137** (LH-F042) |
 
-## Blocked
-- C S0+1; FunSearch held; spatial/dispersed Hamming; rem2 residual; rem3 residual for s802.
+## Live lead / next
+
+1. New defect-pool constructions (not agent_c truncation replay).  
+2. Structured destroy/refill from legal 137–164 sets (not S0+1).  
+3. Keep killed Hamming U_ids and rem2 residual cores closed.
+
+## Discipline
+
+TIMEOUT ≠ INFEASIBLE; scoped INFEAS ≠ global UB; dual-verify before promote.  
+Standing order: commit+push after checkpoints; no force-push.
