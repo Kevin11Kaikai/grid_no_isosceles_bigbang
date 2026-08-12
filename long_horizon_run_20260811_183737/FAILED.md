@@ -391,3 +391,8 @@
 - Evidence: `EXPERIMENTS/W3_nons0_fixedcard/summary_proper.json` — start/best_V=**84**; 105k iters / 13.7k accepts; ham_rem=96; no V drop; not legal.
 - Level: `WEAK_NEGATIVE` (plateau ≫ rem2 basin V≈25–29).
 - Status: **Non-S0 midset pad has much harder V landscape** than S0+1; exact-repair loop next.
+
+### LH-F064 — Exact-repair loop on non-S0 padded165 (20min)
+- Evidence: `EXPERIMENTS/W3_nons0_fixedcard/summary_exact_repair.json` — 1277 repairs; best_V stuck **84**; repairs return V≈100–130; not legal.
+- Level: `WEAK_NEGATIVE`.
+- Status: **Deprioritize this midset's soft-165 repair**; try global maximize from legal midset core (no pad).

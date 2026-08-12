@@ -1,0 +1,153 @@
+{
+  "schema": "w3_nons0_exact_repair_v1",
+  "start_V": 84,
+  "best_V": 84,
+  "iters": 1277,
+  "oracle": false,
+  "indep": false,
+  "hash": "ff5b395053b36a66098bc57ed11897992de1208690a962248f5197c4368c4875",
+  "ham_rem": 96,
+  "wall_s": 1200.5303959846497,
+  "rows_tail": [
+    {
+      "iter": 1258,
+      "V": 105,
+      "status": "ok",
+      "fixed": 127,
+      "need": 38
+    },
+    {
+      "iter": 1259,
+      "V": 101,
+      "status": "ok",
+      "fixed": 126,
+      "need": 39
+    },
+    {
+      "iter": 1260,
+      "V": 107,
+      "status": "ok",
+      "fixed": 129,
+      "need": 36
+    },
+    {
+      "iter": 1261,
+      "V": 114,
+      "status": "ok",
+      "fixed": 128,
+      "need": 37
+    },
+    {
+      "iter": 1262,
+      "V": 114,
+      "status": "ok",
+      "fixed": 122,
+      "need": 43
+    },
+    {
+      "iter": 1263,
+      "V": 111,
+      "status": "ok",
+      "fixed": 124,
+      "need": 41
+    },
+    {
+      "iter": 1264,
+      "V": 120,
+      "status": "ok",
+      "fixed": 119,
+      "need": 46
+    },
+    {
+      "iter": 1265,
+      "V": 116,
+      "status": "ok",
+      "fixed": 126,
+      "need": 39
+    },
+    {
+      "iter": 1266,
+      "V": 134,
+      "status": "ok",
+      "fixed": 120,
+      "need": 45
+    },
+    {
+      "iter": 1267,
+      "V": 132,
+      "status": "ok",
+      "fixed": 123,
+      "need": 42
+    },
+    {
+      "iter": 1268,
+      "V": 116,
+      "status": "ok",
+      "fixed": 127,
+      "need": 38
+    },
+    {
+      "iter": 1269,
+      "V": 121,
+      "status": "ok",
+      "fixed": 122,
+      "need": 43
+    },
+    {
+      "iter": 1270,
+      "V": 108,
+      "status": "ok",
+      "fixed": 125,
+      "need": 40
+    },
+    {
+      "iter": 1271,
+      "V": 118,
+      "status": "ok",
+      "fixed": 123,
+      "need": 42
+    },
+    {
+      "iter": 1272,
+      "V": 119,
+      "status": "ok",
+      "fixed": 126,
+      "need": 39
+    },
+    {
+      "iter": 1273,
+      "V": 130,
+      "status": "ok",
+      "fixed": 116,
+      "need": 49
+    },
+    {
+      "iter": 1274,
+      "V": 120,
+      "status": "ok",
+      "fixed": 127,
+      "need": 38
+    },
+    {
+      "iter": 1275,
+      "V": 112,
+      "status": "ok",
+      "fixed": 122,
+      "need": 43
+    },
+    {
+      "iter": 1276,
+      "V": 115,
+      "status": "ok",
+      "fixed": 126,
+      "need": 39
+    },
+    {
+      "iter": 1277,
+      "V": 102,
+      "status": "ok",
+      "fixed": 124,
+      "need": 41
+    }
+  ]
+}
