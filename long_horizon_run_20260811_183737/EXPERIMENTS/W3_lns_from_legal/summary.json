@@ -1,0 +1,96 @@
+{
+  "schema": "w3_lns_from_legal_v1",
+  "rows": [
+    {
+      "tag": "lns_from_S0_164",
+      "start_size": 164,
+      "final_size": 164,
+      "beats_164": false,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "meta": {
+        "iterations": 131044,
+        "milp_calls": 131044,
+        "improvements": [],
+        "wall_time_s": 1800.0049936771393,
+        "final_size": 164
+      },
+      "wall_wrapper_s": 1800.0362432003021
+    },
+    {
+      "tag": "lns_from_grow_bf302",
+      "start_size": 124,
+      "final_size": 132,
+      "beats_164": false,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 132,
+        "hash": "4a4ca54601d5f33ceda866b29e39576ee11d2d0b8af68ef543ab68b555bbd522"
+      },
+      "meta": {
+        "iterations": 145991,
+        "milp_calls": 145991,
+        "improvements": [
+          {
+            "iteration": 79,
+            "size": 125,
+            "t": 0.7727832794189453,
+            "region_kind": "row_col"
+          },
+          {
+            "iteration": 100,
+            "size": 126,
+            "t": 0.9602851867675781,
+            "region_kind": "row_col"
+          },
+          {
+            "iteration": 174,
+            "size": 127,
+            "t": 1.6449031829833984,
+            "region_kind": "row_col"
+          },
+          {
+            "iteration": 3161,
+            "size": 128,
+            "t": 31.788771867752075,
+            "region_kind": "row_col"
+          },
+          {
+            "iteration": 3351,
+            "size": 129,
+            "t": 33.59434509277344,
+            "region_kind": "row_col"
+          },
+          {
+            "iteration": 5002,
+            "size": 130,
+            "t": 51.00719690322876,
+            "region_kind": "row_col"
+          },
+          {
+            "iteration": 6090,
+            "size": 131,
+            "t": 62.30144953727722,
+            "region_kind": "row_col"
+          },
+          {
+            "iteration": 9593,
+            "size": 132,
+            "t": 98.79761409759521,
+            "region_kind": "box"
+          }
+        ],
+        "wall_time_s": 1500.0007681846619,
+        "final_size": 132
+      },
+      "wall_wrapper_s": 1500.0320172309875
+    }
+  ],
+  "best_final": 164,
+  "any_plus": false
+}

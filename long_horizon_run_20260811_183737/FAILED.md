@@ -315,3 +315,13 @@
   - `EXPERIMENTS/W3_global_refill/summary_long.json` — frame_d3/d4_long 20min each: best=164, escalate `TIMEOUT` (not MAX_PROVED), incumbent hash.
 - Level: `WEAK_NEGATIVE` (S0 LNS plateau) + `TIMEOUT_INCONCLUSIVE` (d3/d4 prove >164).
 - Status: **S0 region-LNS unlikely to leave 164 in 30min**; d2 still the only proved max=164 under frame complement.
+
+### LH-F050 — Exact-LNS from legal S0 / grow (long)
+- Evidence: `EXPERIMENTS/W3_lns_from_legal/summary.json` — S0: 30min / 131k MILP, 0 improvements, size=164; grow124: 25min → **132** (plateau early). `any_plus=false`.
+- Level: `WEAK_NEGATIVE`.
+- Status: **Deprioritize stock exact-LNS region repair from S0/grow** at these budgets.
+
+### LH-F051 — HS2-delete then global maximize (8 easiest qs)
+- Evidence: `EXPERIMENTS/W3_hs2_delete_max/summary.json` — 8/8 `MAX_PROVED` best=164 (=incumbent hash); each core=162, free=3, cap=165 but cannot select all 3.
+- Level: `SCOPED_MAX` (strong micro-obstruction: keep S0\{hs2} ⇒ max legal 164).
+- Status: **DEAD \"delete one easy HS2 then refill to 165 keeping the rest of S0\"**; aligns with LH-F020 Hamming INFEAS.
