@@ -1,49 +1,44 @@
 # RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-12 (Wave3 started post-Gate2)  
+**Updated:** 2026-08-12 (Wave3 mid-loop)  
 **Remote:** `origin/master`  
-**Phase:** Gate2 **PASS/CLOSED**; Wave3 ranking funded; Explore→CheapKill loop active.
+**Phase:** Gate2 CLOSED; Wave3 Explore→CheapKill→Compute active.
 
 ## Incumbent
 
 - n=64 **112** / n=100 **164** — no promotion; **no legal +1**
 
-## Wave3 ranking (funded)
+## Wave3 ranking
 
-Canonical: `scratch/wave3/ranking_memo.md` (LH copy `WAVE3_RANKING.md`)
+Canonical: `scratch/wave3/ranking_memo.md`
 
 | Rank | Route | Status |
 |---|---|---|
-| R1 PRIMARY | Enlarged Type0 orbit-defect TIMEOUT | s401 45min in flight (`def220/h14`); next = xlarge 320/h18/`U_large` |
-| R2 SECONDARY | Cert-driven Hamming Rem/Add outside Wave2 U_* | several new U_ids cheap-killed SCOPED INFEAS; cross-knn pilots running |
-| BLOCKED | Agent C S0+1 soft grind | `scratch/wave3/agent_c_s0plus1_block.md` |
-| HOLD | FunSearch | no new structure yet |
+| R1 PRIMARY | Enlarged Type0 orbit-defect | s401 45min **TIMEOUT** size=0; n64 enlarge TIMEOUT; **xlarge 320/h18/U_large s501 60min + partial s511 in flight** |
+| R2 SECONDARY | Cert Hamming / microproblems | many new U_ids SCOPED INFEAS (see FAILED LH-F015–F020) |
+| BLOCKED | Agent C S0+1 soft grind | active block |
+| HOLD | FunSearch | no new structure |
 
-## Wave3 cheap-kill ledger (n100 r=2 unless noted)
+## Key Wave3 negatives (scoped, not global UB)
 
-| U_id | Status | Notes |
-|---|---|---|
-| `U_cert_involved_e16_Add_e56_r2` | INFEASIBLE_SCOPED | <1s; LH-F015 |
-| `U_certfreq_top48_Add_LBle5_r2` | INFEASIBLE_SCOPED | ~4.5s; LH-F015 |
-| `U_cert_involved_e56_Add_LBle6_r2` | INFEASIBLE_SCOPED | ~24s |
-| `U_fullrem_Add_multicomm4_r2` | TIMEOUT_INCONCLUSIVE | ~9800 Add ≈ unrestricted; **deprioritized** |
-| Cross-knn community shells | running | `EXPERIMENTS/W3_cross_community/` |
+- Cert-involved / certfreq / cross-knn r=2&3 → `INFEASIBLE_SCOPED`
+- Forced exact HS2 for 8 easiest qs + large Add → 8/8 `INFEASIBLE_SCOPED` (LH-F020)
+- Near-full multicomm Add → TIMEOUT deprioritized
+- Type0 enlarged 20–45min still TIMEOUT≠INFEAS
 
-## Live lead (R1)
+## Live compute
 
-| Run | Status | Notes |
-|---|---|---|
-| Type0 20min s301 | TIMEOUT | 1921 rounds / 32186 cuts |
-| Type1 20min s302 | TIMEOUT | 114 rounds / 19919 cuts |
-| Type0 **45min** s401 | in flight | mid-checkpoints under `scratch/agent_b/checkpoints/` |
-| Type0 xlarge s501 | queued | `SCRATCH/w3_orbit_enlarge_next.py` after s401 |
+| Job | Universe | Budget | Status |
+|---|---|---:|---|
+| s501 xlarge defect | max_extra=320, halo=18, U_large, dmax=16 | 3600s | running |
+| s511 partial | max_extra=280, halo=16, U_large | 1200s | running |
 
 ## Discipline
 
-TIMEOUT ≠ INFEASIBLE; scoped INFEAS ≠ global UB; no seed grinding; dual-verify before promote.
+TIMEOUT ≠ INFEASIBLE; scoped INFEAS ≠ global UB; dual-verify before promote.
 
-## Next 3 actions
+## Next 3
 
-1. Collect s401 45min result; if TIMEOUT, launch xlarge Type0 (320/18/U_large, ≥60min).
-2. Finish cross-community cheap-kills; escalate only structured TIMEOUT survivors.
-3. Keep C S0+1 blocked; hold FunSearch.
+1. Collect s501/s511; if TIMEOUT keep enlarging / change core policy; if FEASIBLE dual-verify.
+2. Prefer multi-q joint certificate micros over more single-HS2.
+3. Keep C S0+1 blocked; FunSearch held.
