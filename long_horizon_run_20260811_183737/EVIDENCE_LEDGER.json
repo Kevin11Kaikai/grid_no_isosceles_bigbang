@@ -146,6 +146,19 @@
         "EXPERIMENTS/LH4_orbit_enlarged/long_t0_defect_s401_45min.json",
         "EXPERIMENTS/W3_orbit_enlarge/n64_t0_defect_s641.json"
       ]
+    },
+    {
+      "id": "E014",
+      "utc": "2026-08-12TWave3",
+      "event": "w3_orbit_xlarge_t0_t1_timeout",
+      "summary": "Type0 xlarge s501 60min TIMEOUT size=0 (86273 cuts, free361/def320/h18); Type1 xlarge s521/s601 40min TIMEOUT size=0; partial s511 TIMEOUT; still not INFEASIBLE.",
+      "level": "TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_orbit_enlarge/long_t0_defect_s501_xlarge.json",
+        "EXPERIMENTS/W3_orbit_enlarge/long_t1_defect_s521_xlarge.json",
+        "EXPERIMENTS/W3_orbit_enlarge/xlarge_t1_defect_s601.json",
+        "EXPERIMENTS/W3_orbit_enlarge/partial_t0_s511.json"
+      ]
     }
   ]
 }

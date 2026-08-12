@@ -163,3 +163,13 @@
 - Level: `TIMEOUT_INCONCLUSIVE` (not killed).
 - Status: **Open but deprioritize short partial vs Type0/1 defect longs**; escalate only with new partial-orbit selection.
 
+### LH-F024 — Type0 xlarge defect s501 (60min)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/long_t0_defect_s501_xlarge.json` — `TIMEOUT` size=0; `orb_t0_defect_core41_free361_def320_part0_h18`; 2568 rounds / 86273 cuts / ~3600s; hash `2a1b8eb9…`.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Still open**; enlarging alone not enough for +1 in 1h; next = other types / new defect construction / longer only if information-positive.
+
+### LH-F025 — Type1 xlarge defect s601/s521 (40min)
+- Evidence: `xlarge_t1_defect_s601.json` + `long_t1_defect_s521_xlarge.json` — both `TIMEOUT` size=0; universe `orb_t1_defect_core0_free321_def320_part0_h18`; ~407–429 rounds / ~68–77k cuts.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Open**; Type1 remains cut-heavy / round-sparse vs Type0.
+

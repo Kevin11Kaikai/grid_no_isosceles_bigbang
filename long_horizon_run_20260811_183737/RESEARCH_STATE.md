@@ -1,46 +1,40 @@
 # RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-12 (Wave3 mid-loop)  
-**Remote:** `origin/master`  
-**Phase:** Gate2 CLOSED; Wave3 Explore→CheapKill→Compute active.
+**Updated:** 2026-08-12 (Wave3 after xlarge Type0/1 TIMEOUT)  
+**Phase:** Wave3 loop continues; incumbents unchanged.
 
 ## Incumbent
 
-- n=64 **112** / n=100 **164** — no promotion; **no legal +1**
+- n=64 **112** / n=100 **164** — **no legal +1**
 
-## Wave3 ranking
+## Wave3 ranking (still in force)
 
-Canonical: `scratch/wave3/ranking_memo.md`
+- **R1 PRIMARY:** enlarged Type0/1/… orbit-defect TIMEOUT track  
+- **R2:** cert Hamming/microproblems — heavily `INFEASIBLE_SCOPED` (LH-F015–F022)  
+- **BLOCKED:** Agent C S0+1 soft grind  
+- **HOLD:** FunSearch  
 
-| Rank | Route | Status |
-|---|---|---|
-| R1 PRIMARY | Enlarged orbit-defect | s401 45min TIMEOUT; s511 partial 20min TIMEOUT; **s501 Type0 xlarge 60min running**; **s601 Type1 xlarge 40min launched** |
-| R2 SECONDARY | Cert Hamming / microproblems | LH-F015–F022 many SCOPED INFEAS; joint-HS pairs dead |
-| BLOCKED | Agent C S0+1 soft grind | active block |
-| HOLD | FunSearch | no new structure |
+## Orbit campaign results (TIMEOUT ≠ INFEASIBLE)
 
-## Key Wave3 negatives (scoped, not global UB)
+| Job | Universe | Wall | Cuts | Status |
+|---|---|---:|---:|---|
+| s401 Type0 | free261/def220/h14 | 2700s | 34563 | TIMEOUT size=0 |
+| s641 n64 Type0 | free187/def160/h12 | 1200s | 24024 | TIMEOUT size=0 |
+| s511 Type0 partial | free321/def280/part24/h16 | 1200s | 71759 | TIMEOUT size=0 |
+| s501 Type0 xlarge | **free361/def320/h18** | 3600s | **86273** | TIMEOUT size=0 |
+| s521 Type1 xlarge | free321/def320/h18 | 2400s | 68574 | TIMEOUT size=0 |
+| s601 Type1 xlarge | free321/def320/h18 | 2400s | 76897 | TIMEOUT size=0 |
+| Type2 xlarge | (SCRATCH live) | — | — | running |
+| Type3/4 xlarge | queued | 1800s ea | — | next |
 
-- Cert-involved / certfreq / cross-knn r=2&3 → `INFEASIBLE_SCOPED`
-- Forced exact HS2 for 8 easiest qs + large Add → 8/8 `INFEASIBLE_SCOPED` (LH-F020)
-- Joint HS pairs among easiest-6 → 10/10 `INFEASIBLE_SCOPED` at r=4 (LH-F022)
-- Near-full multicomm Add → TIMEOUT deprioritized
-- Type0 enlarged 20–45min still TIMEOUT≠INFEAS
+Cut growth on Type0 xlarge (34k→86k) shows search still exploring; no FEASIBLE yet.
 
-## Live compute
+## R2 cert micro obstruction map
 
-| Job | Universe | Budget | Status |
-|---|---|---:|---|
-| s501 Type0 xlarge defect | free361/def320/h18 | 3600s | running (~20min: 1606 rounds / 68400 cuts, size=0) |
-| s601 Type1 xlarge defect | 320/h18/dmax20 | 2400s | **launched** |
-| s511 Type0 partial | free321/def280/part24/h16 | 1200s | **TIMEOUT** size=0 (1562r / 71759 cuts) |
-
-## Discipline
-
-TIMEOUT ≠ INFEASIBLE; scoped INFEAS ≠ global UB; dual-verify before promote.
+Single-HS2 (8/8) and joint-HS pairs (10/10) `INFEASIBLE_SCOPED` under large Add — strong scoped obstruction to “clear easy certificate covers then refill”. Not a global UB.
 
 ## Next 3
 
-1. Collect s501/s601; FEASIBLE → dual-verify; TIMEOUT → change core policy / longer / other types.
-2. No more joint-HS pair micros (LH-F022); Hamming only for novel Rem/Add.
-3. Keep C S0+1 blocked; FunSearch held.
+1. Finish Type2 live; run Type3/4 enlarged defects.  
+2. If all TIMEOUT: try longer Type0 (≥2h) **or** new core/defect policy (not same U).  
+3. Keep R2 from reopening killed U_ids; no C S0+1; FunSearch held.

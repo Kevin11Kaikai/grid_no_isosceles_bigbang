@@ -1,0 +1,23 @@
+{
+  "status": "TIMEOUT",
+  "size": 0,
+  "universe_id": "orb_t0_defect_core41_free361_def320_part0_h18",
+  "n_free_orbits": 361,
+  "n_defect_points": 320,
+  "model_hash": "2a1b8eb93418b40c2e99d375bda4222f629cc1b0e400c15fd3fabc36cf87d648",
+  "wall_time_s": 3600.3532309532166,
+  "rounds": 2568,
+  "final_cuts": 86273,
+  "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_xlarge_n100_t0_defect_s501_20260812T033857Z.json",
+  "candidate": null,
+  "elapsed_outer_s": 3600.4452333450317,
+  "cfg": {
+    "max_extra_orbits": 320,
+    "max_defect_pool": 320,
+    "halo_radius": 18,
+    "agent_c_universe": "U_large",
+    "dmax": 16,
+    "time_s": 3600.0,
+    "seed": 501
+  }
+}

@@ -7,12 +7,10 @@
 
 - Certified lower bounds unchanged: \(C(64)\ge 112\), \(C(100)\ge 164\).
 - No dual-verified improvement found.
-- Gate2 CLOSED / Wave3 ranking funded (`scratch/wave3/ranking_memo.md`): R1 enlarged Type0 orbit TIMEOUT; R2 cert Hamming outside killed U_ids; C S0+1 soft grind blocked; FunSearch held.
-- Major structural finding: Wave2 Agent-C V=3 elites are exactly **baseline + one cell**; soft |S|=165 search never left that basin.
-- Wave3 cert cheap-kills (involved e16/e56, certfreq-top48, cross-knn bridge_top) → `INFEASIBLE_SCOPED` quickly; near-full multicomm Add TIMEOUT deprioritized.
-- Hamming shells around official S0 with low-LB / frame Add pools are heavily `INFEASIBLE_SCOPED` for small r; midband remains TIMEOUT@600s.
-- Far-from-S0 greedy/pattern constructions reach ~130–135; exact LNS from partial (~136) climbs back to **164** without exceeding it.
-- Orbit n100 types 2–6 (short new seeds, Wave2-style universes) report scoped INFEASIBLE; enlarged Type0 remains TIMEOUT-open (s401 45min in flight).
+- Gate2 CLOSED / Wave3 ranking funded: R1 enlarged orbit TIMEOUT; R2 cert Hamming; C S0+1 blocked; FunSearch held.
+- Wave3 R2: cert-involved/certfreq/cross-knn/forced-HS2/joint-HS micros → `INFEASIBLE_SCOPED` (not global UB).
+- Wave3 R1: Type0 xlarge 60min (free361/def320/h18) still **TIMEOUT size=0** with 86k cuts (search progressing, not proven empty); Type1 xlarge likewise TIMEOUT.
+- Soft |S|=165 elites remain S0∪{q} basin.
 
 ## Methods tested this run
 

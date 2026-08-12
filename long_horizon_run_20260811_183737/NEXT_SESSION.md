@@ -5,28 +5,22 @@
 
 ## Status
 
-Gate2 CLOSED. Wave3 active. Incumbents 112/164. No legal +1.
+Wave3 active post-Gate2. Incumbents **112 / 164**. No legal +1. FunSearch held. C S0+1 blocked.
 
-## Orbit R1
+## Orbit R1 (TIMEOUT open, not empty)
 
-| Job | Result |
-|---|---|
-| s401 Type0 45min def220/h14 | TIMEOUT size=0 |
-| s641 n64 Type0 enlarge | TIMEOUT size=0 |
-| s511 Type0 partial xlarge 20min | TIMEOUT size=0 (71759 cuts) |
-| s501 Type0 xlarge 60min free361/def320/h18 | **RUNNING** (~20min mid: 68400 cuts, size=0) |
-| s521 Type1 xlarge 40min | **RUNNING** |
+Finished TIMEOUT size=0: s401, s641(n64), s511 partial, **s501 Type0 xlarge 60min (86k cuts)**, s521/s601 Type1 xlarge.  
+**Live:** Type2 xlarge (`SCRATCH/w3_orbit_t2_xlarge.py`).  
+**Next:** Type3/4 xlarge (`SCRATCH/w3_orbit_t34_xlarge.py`) then consider ≥2h Type0 or new defect policy.
 
-## R2 cert micros
+## R2
 
-All cheap-killed SCOPED INFEAS: cert-involved, certfreq, cross-knn r2/r3, forced HS2 (8/8), joint HS pairs (10/10). Near-full Add TIMEOUT deprioritized. C S0+1 blocked. FunSearch held.
+Cert/cross/HS2/joint-HS micros all `INFEASIBLE_SCOPED` (LH-F015–F022). Do not reopen without new Rem/Add.
 
-## Resume
+## Resume commands
 
-1. Collect s501 + s521 finals. TIMEOUT≠INFEAS; if still open, next policy: still-larger defect / alternate symmetry / longer wall.
-2. Do not reopen LH-F015–F022 U_ids without new Rem/Add reason.
-3. Dual-verify any size≥165 before promote.
+```text
+.venv_solver\Scripts\python.exe -u long_horizon_run_20260811_183737\SCRATCH\w3_orbit_t34_xlarge.py
+```
 
-## Standing order
-
-Commit+push checkpoints. No force-push. Ignore `.venv_solver`.
+Dual-verify any |S|≥165 before promote. Push checkpoints; no force-push; ignore `.venv_solver`.
