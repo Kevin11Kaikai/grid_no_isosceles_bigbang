@@ -1,22 +1,26 @@
 # NEXT_SESSION (≤1 page)
 
 **Run:** `long_horizon_run_20260811_183737/`  
-**Git:** `origin/master` (auto-pushed checkpoints)  
-**Read:** `RESEARCH_STATE.md`, `FAILED.md`, `PROCESS_LESSONS.md` §11–12
+**HEAD tip:** see `git log -1` on `origin/master`  
+**Read:** `RESEARCH_STATE.md`, `FAILED.md`, `EXPERIMENTS/LH4_orbit_enlarged/`
 
-## Key resume facts
+## Live lead
 
-- Incumbent still 112/164.
-- V3 elites = S0+1 only.
-- Frame/low-LB Hamming shells largely INFEAS; midband TIMEOUT@600s.
-- Far-from-S0 constructions ≤136 unless seeded with large S0 core (then LNS returns to 164).
+Enlarged Type0/1 **defect** orbits TIMEOUT (not INFEAS) with universe ~free261/def220/h14.  
+Long 1200s Type0 run: `EXPERIMENTS/LH4_orbit_enlarged/long_t0_defect_s301.json` (or in progress).
+
+## Do not repeat without new reason
+
+- baseline+1 soft |S|=165 search  
+- U_small_r2 / low-LB≤5 r≤4 / frame r=2 fullrem (INFEAS)  
+- treating TIMEOUT as INFEASIBLE
 
 ## Next 3 actions
 
-1. Interpret `EXPERIMENTS/LH4_hybrid/hybrid_rem40_r2.json`.
-2. Enlarge orbit universes beyond Wave2 halo caps (types 0/1 defect).
-3. Hybrid annulus + partial-S0 core + exact LNS; avoid baseline+1 soft search.
+1. Read long Type0 result; if TIMEOUT, push budget or diversify seeds/types with same enlarged caps.
+2. Type1 enlarged defect long run.
+3. Hybrid annulus∪S0-core LNS only after orbit long results land.
 
 ## Standing order
 
-Commit+push after meaningful events; continue research; no Hard Stop for report polish.
+Push checkpoints to `origin/master`; continue; no Hard Stop for polish.
