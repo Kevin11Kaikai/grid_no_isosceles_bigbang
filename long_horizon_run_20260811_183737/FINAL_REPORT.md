@@ -6,11 +6,15 @@
 ## Bottom line (live)
 
 - Certified lower bounds unchanged: \(C(64)\ge 112\), \(C(100)\ge 164\).
-- No dual-verified improvement found.
-- Gate2 CLOSED / Wave3 ranking funded: R1 enlarged orbit TIMEOUT; R2 cert Hamming; C S0+1 blocked; FunSearch held.
-- Wave3 R2: cert-involved/certfreq/cross-knn/forced-HS2/joint-HS micros → `INFEASIBLE_SCOPED` (not global UB).
-- Wave3 R1: Type0 xlarge 60min (free361/def320/h18) still **TIMEOUT size=0** with 86k cuts (search progressing, not proven empty); Type1 xlarge likewise TIMEOUT.
-- Soft |S|=165 elites remain S0∪{q} basin.
+- **No dual-verified improvement** in Wave3.
+- Soft_core orbit enlargements (types 0–4, mega free401/h20 @2h, cert_lb2, mega+cert_lb2) all **TIMEOUT size=0** — TIMEOUT ≠ INFEASIBLE.
+- `fix_core=True` on enlarged Type0 → **SCOPED INFEASIBLE** (LH-F033).
+- Certificate Hamming / forced-HS2 / joint-HS / cross-knn → **SCOPED INFEASIBLE** (not global UB).
+- Agent C S0+1 soft grinding **blocked**; FunSearch **held**.
+
+## Methods tested this run (Wave3+)
+
+Enlarged orbit/defect (soft+fix core); cert_lb2 defect ranking; mega caps; Type5/6 diversify; certificate Hamming Rem/Add; forced/joint HS micros; n64 HS2 sandbox.
 
 ## Methods tested this run
 

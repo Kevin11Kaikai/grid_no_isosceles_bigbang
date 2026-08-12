@@ -1,0 +1,80 @@
+{
+  "schema": "w3_rem2_soft_core_extend_v1",
+  "source": "d:\\others\\grid_no_isosceles_bigbang\\long_horizon_run_20260811_183737\\EXPERIMENTS\\LH3_forced_exchange\\seed504_points_v25.json",
+  "full_involved_strip_ref": "core_extend_s504.json INFEASIBLE_SCOPED",
+  "rows": [
+    {
+      "status": "TIMEOUT",
+      "core_size": 160,
+      "rounds": 1458,
+      "final_cuts": 52372,
+      "wall_time_s": 360.15001225471497,
+      "plan": "top_pivots",
+      "k": 5
+    },
+    {
+      "status": "TIMEOUT",
+      "core_size": 155,
+      "rounds": 1113,
+      "final_cuts": 80262,
+      "wall_time_s": 360.2420060634613,
+      "plan": "top_pivots",
+      "k": 10
+    },
+    {
+      "status": "TIMEOUT",
+      "core_size": 152,
+      "rounds": 968,
+      "final_cuts": 88245,
+      "wall_time_s": 360.24898982048035,
+      "plan": "top_pivots",
+      "k": 15
+    },
+    {
+      "status": "TIMEOUT",
+      "core_size": 152,
+      "rounds": 965,
+      "final_cuts": 87942,
+      "wall_time_s": 360.4464795589447,
+      "plan": "top_pivots",
+      "k": 20
+    },
+    {
+      "status": "TIMEOUT",
+      "core_size": 152,
+      "rounds": 966,
+      "final_cuts": 88046,
+      "wall_time_s": 360.3868463039398,
+      "plan": "top_pivots",
+      "k": 25
+    },
+    {
+      "status": "TIMEOUT",
+      "core_size": 147,
+      "rounds": 1213,
+      "final_cuts": 60000,
+      "wall_time_s": 360.33349537849426,
+      "plan": "first_involved",
+      "k": 15
+    },
+    {
+      "status": "TIMEOUT",
+      "core_size": 139,
+      "rounds": 762,
+      "final_cuts": 115886,
+      "wall_time_s": 360.49331998825073,
+      "plan": "first_involved",
+      "k": 25
+    },
+    {
+      "status": "TIMEOUT",
+      "core_size": 130,
+      "rounds": 489,
+      "final_cuts": 197531,
+      "wall_time_s": 360.9049446582794,
+      "plan": "first_involved",
+      "k": 35
+    }
+  ],
+  "any_legal": false
+}

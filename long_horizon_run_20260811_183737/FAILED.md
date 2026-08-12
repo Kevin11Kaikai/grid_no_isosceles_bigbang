@@ -238,3 +238,8 @@
 - Evidence: `EXPERIMENTS/W3_rem2_residual/core_extend_s504.json` ¡ª legal core size 121 from V=25 rem>=2 set; greedy max 164; exact extend `INFEASIBLE_SCOPED` (~541s, 296 rounds / 244k cuts).
 - Level: `SCOPED_INFEASIBLE` (this core cannot reach 165).
 - Status: **DEAD for that core**; try soft-strip / other rem2 seeds; max legal containing this core is <=164.
+
+### LH-F037 ¡ª rem2 soft-strip core extend (6min each)
+- Evidence: `EXPERIMENTS/W3_rem2_residual/soft_core_extend_summary.json` ¡ª 8 plans all `TIMEOUT` (cores 130¨C160); full-involved strip was INFEAS (LH-F036).
+- Level: `TIMEOUT_INCONCLUSIVE` (soft) + prior scoped INFEAS (full strip).
+- Status: **Escalate largest cores (160/155)** with longer budget; not yet killed.
