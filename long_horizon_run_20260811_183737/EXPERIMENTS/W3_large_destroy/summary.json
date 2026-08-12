@@ -1,0 +1,294 @@
+{
+  "schema": "w3_large_destroy_v1",
+  "rows": [
+    {
+      "tag": "frame_d2",
+      "n_removed": 52,
+      "n_fixed": 112,
+      "n_cands": 500,
+      "n_selected": 52,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 56,
+        "num_constraints": 24,
+        "milp_status": 0,
+        "milp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "selected_count": 52
+      },
+      "wall_s": 0.015624284744262695
+    },
+    {
+      "tag": "frame_d3",
+      "n_removed": 80,
+      "n_fixed": 84,
+      "n_cands": 500,
+      "n_selected": 80,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 111,
+        "num_constraints": 492,
+        "milp_status": 0,
+        "milp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "selected_count": 80
+      },
+      "wall_s": 0.04687643051147461
+    },
+    {
+      "tag": "frame_d4",
+      "n_removed": 92,
+      "n_fixed": 72,
+      "n_cands": 500,
+      "n_selected": 92,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 129,
+        "num_constraints": 667,
+        "milp_status": 0,
+        "milp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "selected_count": 92
+      },
+      "wall_s": 0.031249046325683594
+    },
+    {
+      "tag": "frame_d5",
+      "n_removed": 116,
+      "n_fixed": 48,
+      "n_cands": 500,
+      "n_selected": 116,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 268,
+        "num_constraints": 5397,
+        "milp_status": 0,
+        "milp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "selected_count": 116
+      },
+      "wall_s": 0.1718745231628418
+    },
+    {
+      "tag": "box_25_25_r12",
+      "n_removed": 0,
+      "n_fixed": 164,
+      "n_cands": 500,
+      "n_selected": 0,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 0
+      },
+      "wall_s": 0.0156252384185791
+    },
+    {
+      "tag": "box_50_50_r14",
+      "n_removed": 0,
+      "n_fixed": 164,
+      "n_cands": 500,
+      "n_selected": 0,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 0
+      },
+      "wall_s": 0.015624761581420898
+    },
+    {
+      "tag": "box_75_75_r12",
+      "n_removed": 0,
+      "n_fixed": 164,
+      "n_cands": 500,
+      "n_selected": 0,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 0
+      },
+      "wall_s": 0.015625715255737305
+    },
+    {
+      "tag": "box_50_20_r15",
+      "n_removed": 1,
+      "n_fixed": 163,
+      "n_cands": 500,
+      "n_selected": 1,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 1,
+        "num_constraints": 0
+      },
+      "wall_s": 0.0312504768371582
+    },
+    {
+      "tag": "box_20_50_r15",
+      "n_removed": 6,
+      "n_fixed": 158,
+      "n_cands": 500,
+      "n_selected": 6,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 6,
+        "num_constraints": 0
+      },
+      "wall_s": 0.031249284744262695
+    },
+    {
+      "tag": "rows_0_8",
+      "n_removed": 46,
+      "n_fixed": 118,
+      "n_cands": 500,
+      "n_selected": 46,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 56,
+        "num_constraints": 151,
+        "milp_status": 0,
+        "milp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "selected_count": 46
+      },
+      "wall_s": 0.031250715255737305
+    },
+    {
+      "tag": "rows_46_54",
+      "n_removed": 8,
+      "n_fixed": 156,
+      "n_cands": 500,
+      "n_selected": 8,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 8,
+        "num_constraints": 0
+      },
+      "wall_s": 0.027412891387939453
+    },
+    {
+      "tag": "rows_92_100",
+      "n_removed": 46,
+      "n_fixed": 118,
+      "n_cands": 500,
+      "n_selected": 46,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 55,
+        "num_constraints": 152,
+        "milp_status": 0,
+        "milp_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "selected_count": 46
+      },
+      "wall_s": 0.0325164794921875
+    },
+    {
+      "tag": "rows_20_35",
+      "n_removed": 0,
+      "n_fixed": 164,
+      "n_cands": 500,
+      "n_selected": 0,
+      "final_size": 164,
+      "delta_vs_164": 0,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 164,
+        "hash": "8a84216d28f5afbbbd6b06301b159eab1b57c85bb814d78dd708da2be65cbdc1"
+      },
+      "repair_meta": {
+        "region_size": 500,
+        "after_prefilter": 0
+      },
+      "wall_s": 0.01562952995300293
+    }
+  ],
+  "best_final": 164,
+  "any_plus": false
+}

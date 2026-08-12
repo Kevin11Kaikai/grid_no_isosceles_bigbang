@@ -298,3 +298,8 @@
   - `core_maximize_s802.json` — maximize soft core → legal **164** with incumbent hash `8a84216d…` (not a new construction).
 - Level: `WEAK_NEGATIVE` (grow/pattern plateau) + `TIMEOUT_INCONCLUSIVE` (s801 soft) + `SCOPED` (s802 max=164).
 - Status: **Deprioritize plain pattern/grow LNS at 10–15min**; escalate destroy-refill from S0/legal-135. rem3 residual elites closed except optional mega-budget on s801 only if needed.
+
+### LH-F047 — One-shot large destroy+region MILP on S0
+- Evidence: `EXPERIMENTS/W3_large_destroy/summary.json` — 13 plans (frames d2–d5, boxes, row bands); all `final_size=164`; several recover incumbent hash `8a84216d…`; center boxes remove 0 (empty-center). `any_plus=false`.
+- Level: `SCOPED` region-optimal under tested destroys (not global UB).
+- Status: **Region-local repair from S0 does not beat 164** on these plans; try global-refill after destroy / long LNS.
