@@ -233,3 +233,8 @@
 - Evidence: `EXPERIMENTS/W3_orbit_enlarge/certlb2_t1_defect_s821.json` ¡ª `TIMEOUT` size=0; `orb_t1_defect_core0_free321_def320_part0_h18_rkcert_lb2`; 432 rounds / 75187 cuts / ~2400s.
 - Level: `TIMEOUT_INCONCLUSIVE`.
 - Status: **Open**; cert_lb2 on Type1 did not beat agent_c Type1 TIMEOUT profile.
+
+### LH-F036 ¡ª rem2 residual full-involved core extend to 165
+- Evidence: `EXPERIMENTS/W3_rem2_residual/core_extend_s504.json` ¡ª legal core size 121 from V=25 rem>=2 set; greedy max 164; exact extend `INFEASIBLE_SCOPED` (~541s, 296 rounds / 244k cuts).
+- Level: `SCOPED_INFEASIBLE` (this core cannot reach 165).
+- Status: **DEAD for that core**; try soft-strip / other rem2 seeds; max legal containing this core is <=164.
