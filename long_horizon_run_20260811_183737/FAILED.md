@@ -228,3 +228,8 @@
 - Evidence: `EXPERIMENTS/W3_n64_hitset/summary.json` ¡ª 4/4 `INFEASIBLE_SCOPED` in ~1s.
 - Level: `SCOPED_INFEASIBLE`.
 - Status: **DEAD that n64 micro family**; aligns with n100 LH-F020.
+
+### LH-F035 ¡ª Type1 cert_lb2 defect s821 (40min)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/certlb2_t1_defect_s821.json` ¡ª `TIMEOUT` size=0; `orb_t1_defect_core0_free321_def320_part0_h18_rkcert_lb2`; 432 rounds / 75187 cuts / ~2400s.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Open**; cert_lb2 on Type1 did not beat agent_c Type1 TIMEOUT profile.

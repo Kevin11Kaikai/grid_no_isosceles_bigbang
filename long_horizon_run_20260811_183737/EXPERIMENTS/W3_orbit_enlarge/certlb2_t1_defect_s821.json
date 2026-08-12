@@ -1,12 +1,13 @@
 {
   "status": "TIMEOUT",
   "size": 0,
-  "universe_id": "orb_t1_defect_core0_free281_def280_part0_h16_rkcert_lb2",
-  "model_hash": "ebff30f21524569556115367a67a2b944d1d16afe532c77b8081d8dfabbe6b9d",
-  "wall_time_s": 1800.3582015037537,
-  "rounds": 242,
-  "final_cuts": 43150,
+  "universe_id": "orb_t1_defect_core0_free321_def320_part0_h18_rkcert_lb2",
+  "model_hash": "6b38fcd0d00642439d8c5a5f433b3bf366544ea4708d00c8033d62ac6cec4ed7",
+  "wall_time_s": 2400.6527230739594,
+  "rounds": 432,
+  "final_cuts": 75187,
   "defect_rank": "cert_lb2",
-  "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_certlb2_n100_t1_defect_s821_20260812T063334Z.json",
-  "candidate": null
+  "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_certlb2_n100_t1_defect_s821_20260812T083959Z.json",
+  "candidate": null,
+  "elapsed_wrapper_s": 2400.702273130417
 }
