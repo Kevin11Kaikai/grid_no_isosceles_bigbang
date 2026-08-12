@@ -1,0 +1,13 @@
+{
+  "status": "TIMEOUT",
+  "size": 0,
+  "universe_id": "orb_t0_defect_core41_free361_def320_part0_h18_rkcert_lb2",
+  "model_hash": "979c41f082cfd0d35e8a52a0cf3fd422447273d7c84865c6a5744a6544a00f1f",
+  "wall_time_s": 2700.250946998596,
+  "rounds": 4114,
+  "final_cuts": 50113,
+  "defect_rank": "cert_lb2",
+  "checkpoint": "D:\\others\\grid_no_isosceles_bigbang\\scratch\\agent_b\\checkpoints\\w3_certlb2_n100_t0_defect_s801_20260812T055819Z.json",
+  "candidate": null,
+  "elapsed_wrapper_s": 2700.320097923279
+}

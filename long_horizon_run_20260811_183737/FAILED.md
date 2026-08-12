@@ -193,3 +193,8 @@
 - Level: `TIMEOUT_INCONCLUSIVE`.
 - Status: **Open**; Types 0–4 xlarge all TIMEOUT≠INFEAS; cert_lb2 Type0 is next distinct U.
 
+### LH-F030 — Type0 cert_lb2 defect s801 (45min)
+- Evidence: `EXPERIMENTS/W3_orbit_enlarge/certlb2_t0_defect_s801.json` — `TIMEOUT` size=0; `orb_t0_defect_core41_free361_def320_part0_h18_rkcert_lb2`; 4114 rounds / 50113 cuts / ~2700s; hash `979c41f0…`.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Open but distinct U did not yield +1 in 45min**; escalate with ≥2h Type0 agent_c or other types+cert_lb2.
+
