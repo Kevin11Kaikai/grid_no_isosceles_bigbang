@@ -396,3 +396,8 @@
 - Evidence: `EXPERIMENTS/W3_nons0_fixedcard/summary_exact_repair.json` — 1277 repairs; best_V stuck **84**; repairs return V≈100–130; not legal.
 - Level: `WEAK_NEGATIVE`.
 - Status: **Deprioritize this midset's soft-165 repair**; try global maximize from legal midset core (no pad).
+
+### LH-F065 — Global maximize from intact non-S0 midset 137
+- Evidence: `EXPERIMENTS/W3_midset_global_max/summary.json` — free=1, cap=138, `CAPACITY_FAIL`.
+- Level: `CAPACITY_FAIL` (near-maximal under individual addability).
+- Status: **Must destroy midset to grow**; intact midset cannot reach 165.

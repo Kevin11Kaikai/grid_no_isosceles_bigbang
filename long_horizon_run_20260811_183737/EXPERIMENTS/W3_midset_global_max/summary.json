@@ -1,0 +1,8 @@
+{
+  "schema": "w3_midset_global_max_v1",
+  "status": "CAPACITY_FAIL",
+  "core": 137,
+  "free": 1,
+  "best_legal_size": 137,
+  "proved_max": 138
+}
