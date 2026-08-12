@@ -23,6 +23,7 @@ Canonical: `scratch/wave3/ranking_memo.md`
 
 - Cert-involved / certfreq / cross-knn r=2&3 → `INFEASIBLE_SCOPED`
 - Forced exact HS2 for 8 easiest qs + large Add → 8/8 `INFEASIBLE_SCOPED` (LH-F020)
+- Joint HS pairs among easiest-6 → 10/10 `INFEASIBLE_SCOPED` at r=4 (LH-F022)
 - Near-full multicomm Add → TIMEOUT deprioritized
 - Type0 enlarged 20–45min still TIMEOUT≠INFEAS
 
@@ -30,7 +31,7 @@ Canonical: `scratch/wave3/ranking_memo.md`
 
 | Job | Universe | Budget | Status |
 |---|---|---:|---|
-| s501 xlarge defect | max_extra=320, halo=18, U_large, dmax=16 | 3600s | running |
+| s501 xlarge defect | max_extra=320, halo=18, U_large, dmax=16 | 3600s | running (~5min mid: rounds/cuts advancing) |
 | s511 partial | max_extra=280, halo=16, U_large | 1200s | running |
 
 ## Discipline
@@ -39,6 +40,6 @@ TIMEOUT ≠ INFEASIBLE; scoped INFEAS ≠ global UB; dual-verify before promote.
 
 ## Next 3
 
-1. Collect s501/s511; if TIMEOUT keep enlarging / change core policy; if FEASIBLE dual-verify.
-2. Prefer multi-q joint certificate micros over more single-HS2.
+1. Collect s501/s511; if TIMEOUT try soft_core=False / Type1 xlarge / longer budget; if FEASIBLE dual-verify.
+2. Stop new joint-HS pair micros (LH-F022 dead); only novel Rem/Add structure.
 3. Keep C S0+1 blocked; FunSearch held.

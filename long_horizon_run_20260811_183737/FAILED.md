@@ -154,7 +154,7 @@
 - Status: **Deprioritized**; do not spend primary long budget on ≈full-grid Add.
 
 ### LH-F022 — Joint exact-HS pairs (r=|Rem|) among easiest qs
-- Evidence: `EXPERIMENTS/W3_joint_hs/` — 10/10 pairs `INFEASIBLE_SCOPED` at r=4 with large Add (~32–?s each).
+- Evidence: `EXPERIMENTS/W3_joint_hs/summary.json` — 10/10 pairs `INFEASIBLE_SCOPED` at r=4 (disjoint HS unions; |Add|≈2206–2210; ~29–30s each; hashes e.g. `682e9889…`, `e2e0f7e2…`).
 - Level: `SCOPED_INFEASIBLE`.
-- Status: **DEAD that pair-HS forced-delete family** for sampled easiest pairs; orbit / other formulations remain.
+- Status: **DEAD that pair-HS forced-delete family** for sampled easiest-6 pairs; no Rem=3 overlaps; orbit / other formulations remain.
 
