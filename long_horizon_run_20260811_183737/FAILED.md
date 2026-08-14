@@ -596,3 +596,13 @@
 - Evidence: `EXPERIMENTS/W3_new_families/family_S2_n64_esc.json`, `best_n64_asymm.json`. Maximize 12min TIMEOUT stuck **88**; LNS 26k iters / 480s ? **91** dual-OK hash `3a017008?844b76`. Cap remains 186. Not 113.
 - Level: `DUAL_VERIFIED_CONSTRUCTION` of size 91 (not a record vs 112).
 - Status: **LIVE but slow climb** (88?91). Continue LNS; do not treat 91 as +1.
+
+### LH-F104 --- Extra LNS from n64-91 (family S3)
+- Evidence: `EXPERIMENTS/W3_new_families/family_S3_n64_lns.json` --- 2 seeds, 23k+22k iters / 400s, **0 improvements**, hash unchanged.
+- Level: `WEAK_NEGATIVE`.
+- Status: **Stock LNS plateau on 91** at these fracs (same pattern as 147 / F097).
+
+### LH-F105 --- Destroy+refill from n64-91 (family S4)
+- Evidence: `EXPERIMENTS/W3_new_families/family_S4_n64_destroy.json` --- d12/d20 CAPACITY_FAIL cap<=111<113; d32 MAX_PROVED 90-91; d45 TIMEOUT <=91 cap 460+. `any_plus=false`.
+- Level: `CAPACITY_FAIL / SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
+- Status: **91 basin mirrors 147:** shallow destroy under-cap; medium snaps back; large-free TIMEOUT not +1.

@@ -1,6 +1,6 @@
 ﻿# RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-14 (S2 n64-asymm 91; 147 still best non-incumbent)
+**Updated:** 2026-08-14 (recovery complete through F105; no +1)
 
 ## Incumbent
 - n=64 **112** / n=100 **164** — **no legal +1**
@@ -14,12 +14,13 @@
 ## Closed this recovery (do not reopen as primary)
 - Hamming N/Q/P r≤4 INFEAS; R mixed TIMEOUT
 - Pattern grow O ≤135 CAPACITY_FAIL
-- 147 singleton-maximal; shallow destroy snaps (M3/M4)
-- n64 asymm maximize plateau 88; LNS climbed to 91 (F103) — still ≪113
+- 147 singleton-maximal; LNS 0-improve; shallow destroy snaps (M3/M4/F097)
+- n64-91: extra LNS 0-improve (F104); destroy snaps / under-cap (F105)
 
-## Live
-- Further LNS / destroy from n64-91 and n100-147 (slow)
-- Sealed tournament wave2 closed at n64=90 / n100=137 (F102)
+## Next (if continuing)
+- New cores outside 147/91 snap-back (not more stock LNS)
+- Exact micros with Rem-as-variables on non-S0 cores
+- Dual-verify ≥165/113 before promote
 
 ## Discipline
 TIMEOUT ≠ INFEAS; scoped ≠ global; standing order push.
