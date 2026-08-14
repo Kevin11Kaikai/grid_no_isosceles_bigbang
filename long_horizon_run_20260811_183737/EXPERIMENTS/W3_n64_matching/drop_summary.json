@@ -1,0 +1,147 @@
+{
+  "schema": "n64_matching_drop_v1",
+  "max_rows": [
+    {
+      "status": "TIMEOUT",
+      "core": 42,
+      "free": 708,
+      "best_legal_size": 87,
+      "proved_max": null,
+      "rounds": 3,
+      "final_cuts": 254549,
+      "wall_s": 53.216129779815674,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 87,
+        "hash": "4402ceaae7b0e455e47c1f4b99eec59d64f634ae37b379aa85d0483277c340c1"
+      },
+      "best_hash": "4402ceaae7b0e455e47c1f4b99eec59d64f634ae37b379aa85d0483277c340c1",
+      "plan": "drop16"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 46,
+      "free": 515,
+      "best_legal_size": 87,
+      "proved_max": null,
+      "rounds": 4,
+      "final_cuts": 107336,
+      "wall_s": 52.29558968544006,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 87,
+        "hash": "5ecb8eac48cd8b45224e82cf5b045f80f695dd3bf5d03f051c1e42418fbf052d"
+      },
+      "best_hash": "5ecb8eac48cd8b45224e82cf5b045f80f695dd3bf5d03f051c1e42418fbf052d",
+      "plan": "drop12"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 50,
+      "free": 369,
+      "best_legal_size": 89,
+      "proved_max": null,
+      "rounds": 3,
+      "final_cuts": 42763,
+      "wall_s": 46.97648477554321,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 89,
+        "hash": "c6e600871b9f1ac20a54c32daa5a4779f9e39111ee7ccda38f5a1b574680551b"
+      },
+      "best_hash": "c6e600871b9f1ac20a54c32daa5a4779f9e39111ee7ccda38f5a1b574680551b",
+      "plan": "drop8"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 54,
+      "free": 247,
+      "best_legal_size": 90,
+      "proved_max": null,
+      "rounds": 4,
+      "final_cuts": 15022,
+      "wall_s": 50.03682470321655,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 90,
+        "hash": "85167a5055133c895fb484160efbf4255794c0f63c80621e1f8eb42767bacda7"
+      },
+      "best_hash": "85167a5055133c895fb484160efbf4255794c0f63c80621e1f8eb42767bacda7",
+      "plan": "drop4"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 56,
+      "free": 192,
+      "best_legal_size": 89,
+      "proved_max": null,
+      "rounds": 3,
+      "final_cuts": 7801,
+      "wall_s": 45.186864614486694,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 89,
+        "hash": "1414a67aa9fdcdd04f66beeb277ba867c1cbb0cad72e9a8425b6abd70b002e22"
+      },
+      "best_hash": "1414a67aa9fdcdd04f66beeb277ba867c1cbb0cad72e9a8425b6abd70b002e22",
+      "plan": "s_greedybits"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 56,
+      "free": 128,
+      "best_legal_size": 88,
+      "proved_max": null,
+      "rounds": 4,
+      "final_cuts": 2580,
+      "wall_s": 50.04126214981079,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 88,
+        "hash": "32de3160e30ca328c7685fb51333b6c68885aaae1317eb1be5d97608cddb3018"
+      },
+      "best_hash": "32de3160e30ca328c7685fb51333b6c68885aaae1317eb1be5d97608cddb3018",
+      "plan": "s_lex"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 54,
+      "free": 247,
+      "best_legal_size": 90,
+      "proved_max": null,
+      "rounds": 8,
+      "final_cuts": 15022,
+      "wall_s": 241.03563976287842,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 90,
+        "hash": "85167a5055133c895fb484160efbf4255794c0f63c80621e1f8eb42767bacda7"
+      },
+      "best_hash": "85167a5055133c895fb484160efbf4255794c0f63c80621e1f8eb42767bacda7",
+      "plan": "drop4_esc"
+    },
+    {
+      "plan": "lns",
+      "iterations": 3274,
+      "wall_time_s": 150.03791666030884,
+      "final_size": 90,
+      "initial_size": 90,
+      "seed": 67001,
+      "oracle": true,
+      "indep": true,
+      "size": 90,
+      "hash": "85167a5055133c895fb484160efbf4255794c0f63c80621e1f8eb42767bacda7"
+    }
+  ],
+  "best": 90,
+  "best_name": "drop4",
+  "any_plus": false,
+  "wall_s": 689.7295815944672
+}

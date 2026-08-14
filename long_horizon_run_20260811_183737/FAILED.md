@@ -595,7 +595,7 @@
 ### LH-F103 --- n64 asymm-keepbl escalate + LNS (family S2)
 - Evidence: `EXPERIMENTS/W3_new_families/family_S2_n64_esc.json`, `best_n64_asymm.json`. Maximize 12min TIMEOUT stuck **88**; LNS 26k iters / 480s ? **91** dual-OK hash `3a017008?844b76`. Cap remains 186. Not 113.
 - Level: `DUAL_VERIFIED_CONSTRUCTION` of size 91 (not a record vs 112).
-- Status: **LIVE but slow climb** (88?91). Continue LNS; do not treat 91 as +1.
+- Status: **Superseded by F104/F105.** 88?91 then stock LNS plateau; destroy snaps/under-cap. Not a record vs 112. Do not treat 91 as +1.
 
 ### LH-F104 --- Extra LNS from n64-91 (family S3)
 - Evidence: `EXPERIMENTS/W3_new_families/family_S3_n64_lns.json` --- 2 seeds, 23k+22k iters / 400s, **0 improvements**, hash unchanged.
@@ -606,3 +606,8 @@
 - Evidence: `EXPERIMENTS/W3_new_families/family_S4_n64_destroy.json` --- d12/d20 CAPACITY_FAIL cap<=111<113; d32 MAX_PROVED 90-91; d45 TIMEOUT <=91 cap 460+. `any_plus=false`.
 - Level: `CAPACITY_FAIL / SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
 - Status: **91 basin mirrors 147:** shallow destroy under-cap; medium snaps back; large-free TIMEOUT not +1.
+
+### LH-F106 --- n64 keepbl matching tournament (not lex/west-all)
+- Evidence: `EXPERIMENTS/W3_n64_matching/summary.json`, `drop_summary.json`. 54 S0 twins + 4 unpaired. Screen 68 matchings, all cap>=113; greedy_cap **cap=218** (core 58, free 160) vs old lex keepbl ~186. Cheap maximize 85-87; 6min escalate stuck **87**; LNS 87 to **90**. Drop-k: drop16 cap=750 but 254k cuts to 87; drop4 core 54 free 247 to **90** (4min escalate + 150s LNS 0-improve). s_lex reproduced 88. `any_plus=false`.
+- Level: `HEURISTIC` / `TIMEOUT_INCONCLUSIVE` + dual-OK constructions <=90.
+- Status: **This matching/drop family did not beat the existing 91 basin, let alone 113.** Larger cap did not yield larger legal sets under these CP-SAT budgets. Do not grind the same keepbl maximize/LNS kernel. Next n64 idea should change the symmetry type (notebook 7-axis) or abandon half-S0 cores.

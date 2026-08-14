@@ -1,0 +1,618 @@
+{
+  "schema": "n64_matching_screen_v1",
+  "rows": [
+    {
+      "name": "greedy_cap",
+      "keep_hash": "53e522115e3f3d8949b23f9b21c4be94038b60559d816dae27a356e9bdb8c84a",
+      "core": 58,
+      "free": 160,
+      "cap": 218,
+      "illegal_core": false,
+      "n_bits": 11
+    },
+    {
+      "name": "flip4_t6",
+      "keep_hash": "31bac8d5b39878b719614c74179c96bfd0ad30f13fb90960c6c10b35f356a39a",
+      "core": 58,
+      "free": 121,
+      "cap": 179,
+      "illegal_core": false,
+      "n_bits": 4
+    },
+    {
+      "name": "flip4_t4",
+      "keep_hash": "5be44b817d65ea761e408cf5afad14f2db5f6c1fcd98d886076bd6db9ab08291",
+      "core": 58,
+      "free": 119,
+      "cap": 177,
+      "illegal_core": false,
+      "n_bits": 4
+    },
+    {
+      "name": "flip4_t5",
+      "keep_hash": "97ac1df04483bd50508baf1915038ed6a77f2c6b78c6651ef43012e66eeaffe2",
+      "core": 58,
+      "free": 118,
+      "cap": 176,
+      "illegal_core": false,
+      "n_bits": 4
+    },
+    {
+      "name": "flip4_t3",
+      "keep_hash": "3ca88d6716544e2903a32a28fbdbd885cde1bfb397dd6cd7f8f0b7ca1f013209",
+      "core": 58,
+      "free": 115,
+      "cap": 173,
+      "illegal_core": false,
+      "n_bits": 4
+    },
+    {
+      "name": "flip8_t4",
+      "keep_hash": "261c7abecaca4a2e6525651ea2193dbbb6aa5289e502000b289130f5f9105e46",
+      "core": 58,
+      "free": 115,
+      "cap": 173,
+      "illegal_core": false,
+      "n_bits": 8
+    },
+    {
+      "name": "lex_a",
+      "keep_hash": "87f8aa2d4313284d199a2ff172035c88673470fae5bf06f23c6d1524a2725353",
+      "core": 58,
+      "free": 112,
+      "cap": 170,
+      "illegal_core": false,
+      "n_bits": 0
+    },
+    {
+      "name": "flip12_t1",
+      "keep_hash": "df3984d5e39f41f08ac9a46df35610e4077719f6870b1ce7efe853f405fe2e60",
+      "core": 58,
+      "free": 111,
+      "cap": 169,
+      "illegal_core": false,
+      "n_bits": 12
+    },
+    {
+      "name": "rand_t12",
+      "keep_hash": "c8ddb940b0ce791a0ddf2463121c9895900038956fca628664c0936f3381bd58",
+      "core": 58,
+      "free": 111,
+      "cap": 169,
+      "illegal_core": false,
+      "n_bits": 36
+    },
+    {
+      "name": "lex_b",
+      "keep_hash": "8fdc7be5b5772c87bd9b02504a6597da46444143af06a38734c02151ec073c8e",
+      "core": 58,
+      "free": 110,
+      "cap": 168,
+      "illegal_core": false,
+      "n_bits": 54
+    },
+    {
+      "name": "flip12_t6",
+      "keep_hash": "ae193baff0d97b638d262004fd0ffeec09248836778b718e680b63fdd8f5d428",
+      "core": 58,
+      "free": 108,
+      "cap": 166,
+      "illegal_core": false,
+      "n_bits": 12
+    },
+    {
+      "name": "rand_t7",
+      "keep_hash": "e014b03f69aad4079dd84b5df3e38fe50c0b68d2dacd99aaa357c94c63162303",
+      "core": 58,
+      "free": 108,
+      "cap": 166,
+      "illegal_core": false,
+      "n_bits": 33
+    },
+    {
+      "name": "flip4_t2",
+      "keep_hash": "a7f247a441122d0e06904f2e2d142d4e50ce97647704d2b93fe2f7f76760d408",
+      "core": 58,
+      "free": 107,
+      "cap": 165,
+      "illegal_core": false,
+      "n_bits": 4
+    },
+    {
+      "name": "flip12_t2",
+      "keep_hash": "f54f6825ec52b6fc85283736182505cc2bba0f7014c97c626c53dd27fb4052a6",
+      "core": 58,
+      "free": 107,
+      "cap": 165,
+      "illegal_core": false,
+      "n_bits": 12
+    },
+    {
+      "name": "flip8_t3",
+      "keep_hash": "cc254d0b080a0b6a8cb2a542d6a2406e5b9251e7c3d31d30caed0a5d7b8895ee",
+      "core": 58,
+      "free": 105,
+      "cap": 163,
+      "illegal_core": false,
+      "n_bits": 8
+    },
+    {
+      "name": "flip8_t7",
+      "keep_hash": "a61b639d93019a7613096c6fa1daa87b5e3efd99d35eb64a061b84c8dc3cba6a",
+      "core": 58,
+      "free": 105,
+      "cap": 163,
+      "illegal_core": false,
+      "n_bits": 8
+    },
+    {
+      "name": "flip4_t7",
+      "keep_hash": "a060359bd959d24f679d732391b8e5c0c0ad5cc765de0b6936697a77d73bb48e",
+      "core": 58,
+      "free": 104,
+      "cap": 162,
+      "illegal_core": false,
+      "n_bits": 4
+    },
+    {
+      "name": "flip12_t5",
+      "keep_hash": "0b17431617ba3d2eb674b9a3b4c3727b599498b92fdbb61a3761922cc598f344",
+      "core": 58,
+      "free": 104,
+      "cap": 162,
+      "illegal_core": false,
+      "n_bits": 12
+    },
+    {
+      "name": "rand_t1",
+      "keep_hash": "f14003d147e882a20588a1352f8b72c6d633b66bc090f68b82038e6e5283b520",
+      "core": 58,
+      "free": 103,
+      "cap": 161,
+      "illegal_core": false,
+      "n_bits": 27
+    },
+    {
+      "name": "flip4_t1",
+      "keep_hash": "9f6dca30fc7aa143107300d2dbaa34b3a7b77bee31f32fd810fa245fe06c769f",
+      "core": 58,
+      "free": 102,
+      "cap": 160,
+      "illegal_core": false,
+      "n_bits": 4
+    },
+    {
+      "name": "flip20_t6",
+      "keep_hash": "b4473f9bab49803d7abc246ba4d183e6ba4544b651dc38d6d1d3b633df3231e0",
+      "core": 58,
+      "free": 101,
+      "cap": 159,
+      "illegal_core": false,
+      "n_bits": 20
+    },
+    {
+      "name": "flip8_t5",
+      "keep_hash": "1d559841dd003db4cd9a4c25d50d4c0e123b22667518c04d0c852b2b88b95966",
+      "core": 58,
+      "free": 100,
+      "cap": 158,
+      "illegal_core": false,
+      "n_bits": 8
+    },
+    {
+      "name": "flip8_t1",
+      "keep_hash": "990de672cc530c5c8274a986bc6b7be95abd6c61540f9d9e5d6eb0eac2bc03a6",
+      "core": 58,
+      "free": 99,
+      "cap": 157,
+      "illegal_core": false,
+      "n_bits": 8
+    },
+    {
+      "name": "rand_t10",
+      "keep_hash": "8a059ce1d72bdb118ab035cb4e75908660274232eb30ba54faf8685ca285718a",
+      "core": 58,
+      "free": 99,
+      "cap": 157,
+      "illegal_core": false,
+      "n_bits": 23
+    },
+    {
+      "name": "flip8_t2",
+      "keep_hash": "3fe2599f69c8884fcc51d36bfbc6f64c5f1498ceca40c757c6a1d732ec848278",
+      "core": 58,
+      "free": 98,
+      "cap": 156,
+      "illegal_core": false,
+      "n_bits": 8
+    },
+    {
+      "name": "flip12_t3",
+      "keep_hash": "a9a9f10023d3760c6d8e5576db08357887a3055f46ee8827de4b3fa94867aef4",
+      "core": 58,
+      "free": 97,
+      "cap": 155,
+      "illegal_core": false,
+      "n_bits": 12
+    },
+    {
+      "name": "flip16_t6",
+      "keep_hash": "16593022647f8dd748eba43dac54734df74818cbb41e8d93ffa3e0d897bde646",
+      "core": 58,
+      "free": 97,
+      "cap": 155,
+      "illegal_core": false,
+      "n_bits": 16
+    },
+    {
+      "name": "flip8_t6",
+      "keep_hash": "1f8d091d2962579fcd2d11f71e65a74085187c2ebd437843c95936455dac80cb",
+      "core": 58,
+      "free": 96,
+      "cap": 154,
+      "illegal_core": false,
+      "n_bits": 8
+    },
+    {
+      "name": "flip20_t5",
+      "keep_hash": "6a3b9bd75bcc319104c41eb07cdd068ea0bf66b4fac4a1eeab19929f493cb3ad",
+      "core": 58,
+      "free": 96,
+      "cap": 154,
+      "illegal_core": false,
+      "n_bits": 20
+    },
+    {
+      "name": "rand_t0",
+      "keep_hash": "065265e2e36c074057fc587e41e12d36dd3993d7bf9759c7e2d21495641a9f41",
+      "core": 58,
+      "free": 94,
+      "cap": 152,
+      "illegal_core": false,
+      "n_bits": 29
+    },
+    {
+      "name": "rand_t4",
+      "keep_hash": "2d9fe4c1ff669430b3f297be913f690b74d98efda1c88ae8d429c3af18e03a9a",
+      "core": 58,
+      "free": 94,
+      "cap": 152,
+      "illegal_core": false,
+      "n_bits": 30
+    },
+    {
+      "name": "south_y",
+      "keep_hash": "12c450d534a286f2d70cc382361b9d9e5dae925b763e76267e257f81d33b5bfa",
+      "core": 58,
+      "free": 93,
+      "cap": 151,
+      "illegal_core": false,
+      "n_bits": 27
+    },
+    {
+      "name": "flip12_t0",
+      "keep_hash": "38f38b124b264e8660fbfde2025fcb3287de2f2f2448f10a86547a2de056c75b",
+      "core": 58,
+      "free": 93,
+      "cap": 151,
+      "illegal_core": false,
+      "n_bits": 12
+    },
+    {
+      "name": "flip20_t3",
+      "keep_hash": "fe267af4477b26e5df8fc645eea54fcf572de25275d6023a5b76c9747e079601",
+      "core": 58,
+      "free": 93,
+      "cap": 151,
+      "illegal_core": false,
+      "n_bits": 20
+    },
+    {
+      "name": "flip4_t0",
+      "keep_hash": "c1ddd6b7a2e953fe436e1c5558044d09e78496d7ac21e412ddc4729c2345e0c6",
+      "core": 58,
+      "free": 92,
+      "cap": 150,
+      "illegal_core": false,
+      "n_bits": 4
+    },
+    {
+      "name": "flip24_t7",
+      "keep_hash": "7b9b88b090d4b574459fd2ebcce820ba9455e39c0fcd440bc9bfb1dbe73b440a",
+      "core": 58,
+      "free": 92,
+      "cap": 150,
+      "illegal_core": false,
+      "n_bits": 24
+    },
+    {
+      "name": "rand_t9",
+      "keep_hash": "fbc15378ab8179baf63dc03a79bd5b3348676b83ca5cd9c820b25db6beb9d635",
+      "core": 58,
+      "free": 92,
+      "cap": 150,
+      "illegal_core": false,
+      "n_bits": 27
+    },
+    {
+      "name": "flip8_t0",
+      "keep_hash": "e24e9e4e8c0d3d5490fce5895c9caa49ff6d060f52527a0fd5e8ea6f4139b02f",
+      "core": 58,
+      "free": 91,
+      "cap": 149,
+      "illegal_core": false,
+      "n_bits": 8
+    },
+    {
+      "name": "flip16_t3",
+      "keep_hash": "a7f484c1d4135cf9e07648a35bcb44f6f2d6cd8c500806822982a445c9ac8faf",
+      "core": 58,
+      "free": 91,
+      "cap": 149,
+      "illegal_core": false,
+      "n_bits": 16
+    },
+    {
+      "name": "flip16_t4",
+      "keep_hash": "b66d91bebf15e8dd57083c05615965bc268fc516df9501cb344ea794ae20e349",
+      "core": 58,
+      "free": 90,
+      "cap": 148,
+      "illegal_core": false,
+      "n_bits": 16
+    },
+    {
+      "name": "flip20_t4",
+      "keep_hash": "49616dc0e95c5df6ed4e188b17718f30bbd5e1721804ee57681d5a98e11293d1",
+      "core": 58,
+      "free": 90,
+      "cap": 148,
+      "illegal_core": false,
+      "n_bits": 20
+    },
+    {
+      "name": "flip16_t5",
+      "keep_hash": "bc9e420847892d14a35c5e473b233022f5d0b7ca69d29f17ac147dee456d9041",
+      "core": 58,
+      "free": 88,
+      "cap": 146,
+      "illegal_core": false,
+      "n_bits": 16
+    },
+    {
+      "name": "flip24_t3",
+      "keep_hash": "9141e2928ef4b0d5c87f2cdf6b7c67857bda9b37bbe8835374c2ef025a36ad51",
+      "core": 58,
+      "free": 88,
+      "cap": 146,
+      "illegal_core": false,
+      "n_bits": 24
+    },
+    {
+      "name": "rand_t3",
+      "keep_hash": "b1fa3b4650b2652ad823c82e4566ef3bc367f2131e6d517a3ed96e0d0f8fce7f",
+      "core": 58,
+      "free": 88,
+      "cap": 146,
+      "illegal_core": false,
+      "n_bits": 30
+    },
+    {
+      "name": "flip20_t0",
+      "keep_hash": "5d28141216d7be535dcf2f04ebeaef1fd774e800d948d0148a4bdac09b51e2df",
+      "core": 58,
+      "free": 87,
+      "cap": 145,
+      "illegal_core": false,
+      "n_bits": 20
+    },
+    {
+      "name": "flip24_t4",
+      "keep_hash": "93300ecbf89f83c34e3ff4174249d78d8304e8de82474ba31f02978dacab332a",
+      "core": 58,
+      "free": 87,
+      "cap": 145,
+      "illegal_core": false,
+      "n_bits": 24
+    },
+    {
+      "name": "rand_t11",
+      "keep_hash": "2f12bd7a1496a871bd257f8094c6c6ff0ebbab0e31b2cf027bae51cd65eaf976",
+      "core": 58,
+      "free": 87,
+      "cap": 145,
+      "illegal_core": false,
+      "n_bits": 27
+    },
+    {
+      "name": "flip12_t7",
+      "keep_hash": "15cd322edf0a42898003c8afbda41774aa08bea063bd9849b4918fc52b4df081",
+      "core": 58,
+      "free": 85,
+      "cap": 143,
+      "illegal_core": false,
+      "n_bits": 12
+    },
+    {
+      "name": "rand_t2",
+      "keep_hash": "f065481726a3722e99cecf1ee90d3f16b7d8bf5d72c26e85697d73f11b5999a5",
+      "core": 58,
+      "free": 85,
+      "cap": 143,
+      "illegal_core": false,
+      "n_bits": 28
+    },
+    {
+      "name": "flip12_t4",
+      "keep_hash": "0f5f2eac349a505e1c3d3ac984382b0a6e79f599c84966a24ca8045bebb145ea",
+      "core": 58,
+      "free": 84,
+      "cap": 142,
+      "illegal_core": false,
+      "n_bits": 12
+    },
+    {
+      "name": "flip16_t7",
+      "keep_hash": "55c83cf4c45c3cbe7bf43c72adf39e590b5284bda120de6675119f54ab967369",
+      "core": 58,
+      "free": 83,
+      "cap": 141,
+      "illegal_core": false,
+      "n_bits": 16
+    },
+    {
+      "name": "rand_t14",
+      "keep_hash": "60c5e50a6f226424867e47a2fa6a84aafc511d8484810233024961e1035f7000",
+      "core": 58,
+      "free": 82,
+      "cap": 140,
+      "illegal_core": false,
+      "n_bits": 22
+    },
+    {
+      "name": "flip20_t7",
+      "keep_hash": "924e55c24d23f4437885648f9ddee047a3e76328d15a9b27849bdc853193b61b",
+      "core": 58,
+      "free": 81,
+      "cap": 139,
+      "illegal_core": false,
+      "n_bits": 20
+    },
+    {
+      "name": "flip16_t2",
+      "keep_hash": "3a33fa8bbbbe3f21c8d3005fd20f8c19d54239dd9118840446bb2849c4de514a",
+      "core": 58,
+      "free": 80,
+      "cap": 138,
+      "illegal_core": false,
+      "n_bits": 16
+    },
+    {
+      "name": "flip20_t2",
+      "keep_hash": "e2923dd013546834227dbde0a2dea527a4d3ecfc8c5474d38810c6dbeec9e872",
+      "core": 58,
+      "free": 80,
+      "cap": 138,
+      "illegal_core": false,
+      "n_bits": 20
+    },
+    {
+      "name": "flip24_t0",
+      "keep_hash": "93fbe2853a7535d2c2e165c1e35a1866e919a46ab16401364ab5c89ac2ea2f8a",
+      "core": 58,
+      "free": 79,
+      "cap": 137,
+      "illegal_core": false,
+      "n_bits": 24
+    },
+    {
+      "name": "flip24_t1",
+      "keep_hash": "be67127c100fa6ffc24cccb51f7181239f40dbc6fc431f2b08f70f34b290f761",
+      "core": 58,
+      "free": 77,
+      "cap": 135,
+      "illegal_core": false,
+      "n_bits": 24
+    },
+    {
+      "name": "flip24_t6",
+      "keep_hash": "57d2d60abf20c2925f5dd8408430ada1aa02be917d9fcdee8b2d75a27dd5fc82",
+      "core": 58,
+      "free": 76,
+      "cap": 134,
+      "illegal_core": false,
+      "n_bits": 24
+    },
+    {
+      "name": "rand_t13",
+      "keep_hash": "7eb74e3e1b8e461f3205e70120bdf0c7f4447cf0f9307243db9ea6247954a939",
+      "core": 58,
+      "free": 76,
+      "cap": 134,
+      "illegal_core": false,
+      "n_bits": 29
+    },
+    {
+      "name": "flip24_t5",
+      "keep_hash": "facf28850c2ea572767353977f6b964c5d144dc279998f81bf32ab74f90f2e5a",
+      "core": 58,
+      "free": 75,
+      "cap": 133,
+      "illegal_core": false,
+      "n_bits": 24
+    },
+    {
+      "name": "flip16_t0",
+      "keep_hash": "9cc85d44e76ed8fb3ec775495ce6194a290958b73dd48a3d625f436d8cda88e3",
+      "core": 58,
+      "free": 74,
+      "cap": 132,
+      "illegal_core": false,
+      "n_bits": 16
+    },
+    {
+      "name": "rand_t8",
+      "keep_hash": "3a456977828e60c5bc34aa5b5344a0239925e82ba84380934290a4f6d0f91c0a",
+      "core": 58,
+      "free": 73,
+      "cap": 131,
+      "illegal_core": false,
+      "n_bits": 32
+    },
+    {
+      "name": "flip16_t1",
+      "keep_hash": "d978bc72a6a186f24922f692e10018a4f7f05e31f325ec7227e3e2c122d4a51a",
+      "core": 58,
+      "free": 72,
+      "cap": 130,
+      "illegal_core": false,
+      "n_bits": 16
+    },
+    {
+      "name": "rand_t15",
+      "keep_hash": "eb5a5dbdd4a309a7dbfcb77cd7d8d0e9607e413e908652009b76362bfac99da9",
+      "core": 58,
+      "free": 72,
+      "cap": 130,
+      "illegal_core": false,
+      "n_bits": 28
+    },
+    {
+      "name": "rand_t6",
+      "keep_hash": "e76b1955e5b4a1d6eb6d4d6897bdcf0b3e68bd34dbc6caa43ad7c4ad35d86ee6",
+      "core": 58,
+      "free": 70,
+      "cap": 128,
+      "illegal_core": false,
+      "n_bits": 28
+    },
+    {
+      "name": "flip20_t1",
+      "keep_hash": "ff9b30928e6a0c64136e81d0e58cb5bdfba0c251d3544b35363ace30ab9030b8",
+      "core": 58,
+      "free": 69,
+      "cap": 127,
+      "illegal_core": false,
+      "n_bits": 20
+    },
+    {
+      "name": "flip24_t2",
+      "keep_hash": "c1462d4f642c4ad7ee172ddf4bc342cb38421b13f7be9008508f0921f4f5f1d5",
+      "core": 58,
+      "free": 66,
+      "cap": 124,
+      "illegal_core": false,
+      "n_bits": 24
+    },
+    {
+      "name": "rand_t5",
+      "keep_hash": "e5214ae59ca252b45800e5d5cc34868f04e09a3980bfce2b15bcbfeb40373a0e",
+      "core": 58,
+      "free": 63,
+      "cap": 121,
+      "illegal_core": false,
+      "n_bits": 26
+    }
+  ],
+  "wall_s": 3.2406044006347656
+}

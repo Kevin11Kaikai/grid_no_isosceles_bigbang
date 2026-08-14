@@ -1,0 +1,158 @@
+{
+  "schema": "n64_matching_v1",
+  "n_pairs": 54,
+  "n_unpaired": 4,
+  "n_screen": 68,
+  "n_viable": 68,
+  "best_cap_screen": 218,
+  "max_rows": [
+    {
+      "status": "TIMEOUT",
+      "core": 58,
+      "free": 160,
+      "best_legal_size": 87,
+      "proved_max": null,
+      "rounds": 3,
+      "final_cuts": 5026,
+      "wall_s": 40.17539739608765,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 87,
+        "hash": "b8d3c422f9d2721aa138cfd83c3cb4d173fab8899fdd321737a2cfda861d7bfb"
+      },
+      "best_hash": "b8d3c422f9d2721aa138cfd83c3cb4d173fab8899fdd321737a2cfda861d7bfb",
+      "plan": "greedy_cap",
+      "keep_hash": "53e522115e3f3d8949b23f9b21c4be94038b60559d816dae27a356e9bdb8c84a"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 58,
+      "free": 121,
+      "best_legal_size": 87,
+      "proved_max": null,
+      "rounds": 3,
+      "final_cuts": 2425,
+      "wall_s": 40.11911678314209,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 87,
+        "hash": "590fed4fb3b622aa576a03b41490cb85fa6155887e37dcab9aab72af1edb3c7f"
+      },
+      "best_hash": "590fed4fb3b622aa576a03b41490cb85fa6155887e37dcab9aab72af1edb3c7f",
+      "plan": "flip4_t6",
+      "keep_hash": "31bac8d5b39878b719614c74179c96bfd0ad30f13fb90960c6c10b35f356a39a"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 58,
+      "free": 119,
+      "best_legal_size": 87,
+      "proved_max": null,
+      "rounds": 4,
+      "final_cuts": 2022,
+      "wall_s": 45.01998496055603,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 87,
+        "hash": "e14a5a93ef0ad083ca045b2fed344a49d606bd1e9924d707441f1f1c0638094b"
+      },
+      "best_hash": "e14a5a93ef0ad083ca045b2fed344a49d606bd1e9924d707441f1f1c0638094b",
+      "plan": "flip4_t4",
+      "keep_hash": "5be44b817d65ea761e408cf5afad14f2db5f6c1fcd98d886076bd6db9ab08291"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 58,
+      "free": 118,
+      "best_legal_size": 85,
+      "proved_max": null,
+      "rounds": 4,
+      "final_cuts": 2081,
+      "wall_s": 45.0287446975708,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 85,
+        "hash": "8d215495f996998a22e463c7fac46da2a7b8605e0a5669a500355b6088253eaf"
+      },
+      "best_hash": "8d215495f996998a22e463c7fac46da2a7b8605e0a5669a500355b6088253eaf",
+      "plan": "flip4_t5",
+      "keep_hash": "97ac1df04483bd50508baf1915038ed6a77f2c6b78c6651ef43012e66eeaffe2"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 58,
+      "free": 115,
+      "best_legal_size": 87,
+      "proved_max": null,
+      "rounds": 4,
+      "final_cuts": 1985,
+      "wall_s": 45.02875781059265,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 87,
+        "hash": "55b686d12d19408d1018400a58f1c1b64884406f14c5f8dc72301b4566ab1037"
+      },
+      "best_hash": "55b686d12d19408d1018400a58f1c1b64884406f14c5f8dc72301b4566ab1037",
+      "plan": "flip4_t3",
+      "keep_hash": "3ca88d6716544e2903a32a28fbdbd885cde1bfb397dd6cd7f8f0b7ca1f013209"
+    },
+    {
+      "status": "MAX_PROVED",
+      "core": 58,
+      "free": 115,
+      "best_legal_size": 86,
+      "proved_max": 86,
+      "rounds": 3,
+      "final_cuts": 2096,
+      "wall_s": 19.541844606399536,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 86,
+        "hash": "090073359230cc0b4de3c2058a334c6c5cf4bfea9dbc1d6e7f9ae990e1c3ad68"
+      },
+      "best_hash": "090073359230cc0b4de3c2058a334c6c5cf4bfea9dbc1d6e7f9ae990e1c3ad68",
+      "plan": "flip8_t4",
+      "keep_hash": "261c7abecaca4a2e6525651ea2193dbbb6aa5289e502000b289130f5f9105e46"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 58,
+      "free": 160,
+      "best_legal_size": 87,
+      "proved_max": null,
+      "rounds": 10,
+      "final_cuts": 5026,
+      "wall_s": 360.25687193870544,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 87,
+        "hash": "e19fa0aa682c6fe75716395c5fcba8a2e57ad2d3f44b0b22ea25a30f9b8b5a8d"
+      },
+      "best_hash": "e19fa0aa682c6fe75716395c5fcba8a2e57ad2d3f44b0b22ea25a30f9b8b5a8d",
+      "plan": "greedy_cap_esc"
+    },
+    {
+      "plan": "lns_from_best_matching",
+      "iterations": 5831,
+      "wall_time_s": 180.0216987133026,
+      "final_size": 90,
+      "initial_size": 87,
+      "seed": 65001,
+      "oracle": true,
+      "indep": true,
+      "size": 90,
+      "hash": "182c3a329ca69546c1aa79b91af9985649dd4a44cd6fc1b734baa0267e163f4e"
+    }
+  ],
+  "best": 90,
+  "best_name": "greedy_cap",
+  "any_plus": false,
+  "wall_s": 778.6074557304382
+}
