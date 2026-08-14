@@ -1,0 +1,88 @@
+{
+  "schema": "w3_n64_lns_v1",
+  "rows": [
+    {
+      "seed": 1001,
+      "frac": [
+        0.1,
+        0.35
+      ],
+      "iterations": 24651,
+      "wall_time_s": 600.0468394756317,
+      "improvements": [],
+      "final_size": 112,
+      "initial_size": 112,
+      "oracle": true,
+      "indep": true,
+      "size": 112,
+      "hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292"
+    },
+    {
+      "seed": 1002,
+      "frac": [
+        0.2,
+        0.5
+      ],
+      "iterations": 23675,
+      "wall_time_s": 600.0303478240967,
+      "improvements": [],
+      "final_size": 112,
+      "initial_size": 112,
+      "oracle": true,
+      "indep": true,
+      "size": 112,
+      "hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292"
+    },
+    {
+      "seed": 1003,
+      "frac": [
+        0.3,
+        0.6
+      ],
+      "iterations": 22642,
+      "wall_time_s": 600.031697511673,
+      "improvements": [],
+      "final_size": 112,
+      "initial_size": 112,
+      "oracle": true,
+      "indep": true,
+      "size": 112,
+      "hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292"
+    },
+    {
+      "seed": 1004,
+      "frac": [
+        0.15,
+        0.45
+      ],
+      "iterations": 36628,
+      "wall_time_s": 900.0314738750458,
+      "improvements": [],
+      "final_size": 112,
+      "initial_size": 112,
+      "oracle": true,
+      "indep": true,
+      "size": 112,
+      "hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292"
+    },
+    {
+      "seed": 1005,
+      "frac": [
+        0.25,
+        0.55
+      ],
+      "iterations": 34694,
+      "wall_time_s": 900.031142950058,
+      "improvements": [],
+      "final_size": 112,
+      "initial_size": 112,
+      "oracle": true,
+      "indep": true,
+      "size": 112,
+      "hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292"
+    }
+  ],
+  "best": 112,
+  "any_plus": false,
+  "best_hash": "47d42165b7804493a847e064494ef067e97bc8ac12121cd04ac19f23fee9c292"
+}

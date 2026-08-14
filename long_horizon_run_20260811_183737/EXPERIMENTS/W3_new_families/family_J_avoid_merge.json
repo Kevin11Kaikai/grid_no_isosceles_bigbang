@@ -1,0 +1,59 @@
+{
+  "schema": "w3_avoid_merge_v1",
+  "a_hash": "b2b7c1387dbdce6475dad4a12f50e521a60dca14ac1cff1c5948302009303647",
+  "b_hash": "56cb24615c344782ac8648d3f1a0beaeb2d606a873a04e22cbe911caef2a146b",
+  "rows": [
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 102,
+      "free": 60,
+      "best_legal_size": 102,
+      "proved_max": 162,
+      "plan": "merge_desA30",
+      "inter": 2,
+      "union": 262
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 82,
+      "free": 305,
+      "best_legal_size": 134,
+      "proved_max": null,
+      "rounds": 17,
+      "final_cuts": 10896,
+      "wall_s": 480.09348917007446,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 134,
+        "hash": "ca9fca3e39c9cb4962d4492a96ec21096fd541a0122ff53dd6615a22ff00be58"
+      },
+      "best_hash": "ca9fca3e39c9cb4962d4492a96ec21096fd541a0122ff53dd6615a22ff00be58",
+      "plan": "merge_desA50",
+      "inter": 2,
+      "union": 262
+    },
+    {
+      "status": "MAX_PROVED",
+      "core": 92,
+      "free": 142,
+      "best_legal_size": 133,
+      "proved_max": 133,
+      "rounds": 3,
+      "final_cuts": 1802,
+      "wall_s": 27.015807628631592,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 133,
+        "hash": "564d38b3db95a46c30e5145034fabed232bbe66dad6688040839ae0cc0fe6019"
+      },
+      "best_hash": "564d38b3db95a46c30e5145034fabed232bbe66dad6688040839ae0cc0fe6019",
+      "plan": "merge_desB40",
+      "inter": 2,
+      "union": 262
+    }
+  ],
+  "best": 134,
+  "any_plus": false
+}

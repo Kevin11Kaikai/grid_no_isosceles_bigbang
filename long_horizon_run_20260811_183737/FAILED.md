@@ -456,3 +456,23 @@
 - Evidence: `EXPERIMENTS/W3_new_families/family_H_rowband.json` — ban_rows_top8 `MAX_PROVED` 129; top12 TIMEOUT best 134–135; top16/20 TIMEOUT stalled at core. `any_plus=false`.
 - Level: `SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
 - Status: **Row/col band blacklist does not reach 165** in 4min; deprioritize shallow k.
+
+### LH-F077 --- n64 aggressive LNS from S0 (family I)
+- Evidence: `EXPERIMENTS/W3_new_families/family_I_n64_lns.json` --- 5 seeds, destroy frac 0.10-0.60, 10-15min each, 22k-36k iters, **0 improvements**, final=112, dual OK hash `47d42165...e9c292` (incumbent). `any_plus=false`.
+- Level: `WEAK_NEGATIVE`.
+- Status: **DEAD stock greedy LNS from n64 S0** at these fracs/budgets; do not re-spend as primary.
+
+### LH-F078 --- Avoid-S0 pair-merge destroy+max (family J)
+- Evidence: `EXPERIMENTS/W3_new_families/family_J_avoid_merge.json` --- two avoid-S0 grows nearly disjoint (inter=2, union=262); merge_desA30 `CAPACITY_FAIL` cap=162; merge_desA50 TIMEOUT best=134; merge_desB40 `MAX_PROVED` 133. `any_plus=false`.
+- Level: `CAPACITY_FAIL / SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
+- Status: **Avoid-S0 merge lineage plateaus <=134** (same band as G/G2); do not reopen as primary.
+
+### LH-F079 --- n64 rem-k frozen-core maximize (family K)
+- Evidence: `EXPERIMENTS/W3_new_families/family_K_n64_remk.json` --- rem1/2/3/5/8/12 and outer5/10/15: almost all `CAPACITY_FAIL` with cap<=112 (individually-addable free ~= k_removed). rem8_s2 and rem12_s2 `MAX_PROVED` 112 (cap 113/113). Outer forbid free=0. `any_plus=false`.
+- Level: `CAPACITY_FAIL / SCOPED_MAX`.
+- Status: **DEAD n64 frozen-core + addable-only free after small Rem**; +1 needs Rem-as-variables (Hamming) or a non-S0 core.
+
+### LH-F080 --- n64 full-grid free frozen-core (family L)
+- Evidence: `EXPERIMENTS/W3_new_families/family_L_n64_fullfree.json` --- core 104-112 with free~3984 (no can_add filter); all `TIMEOUT` size<=112; 2 rounds / **40,207,368 cuts** each (~12-15min). Dual OK on incumbents/cores only.
+- Level: `TIMEOUT_INCONCLUSIVE` (low information; cut explosion).
+- Status: **Deprioritize frozen-core + unrestricted full-grid Add** on n64; encoding dumps cuts, does not search Hamming shells.

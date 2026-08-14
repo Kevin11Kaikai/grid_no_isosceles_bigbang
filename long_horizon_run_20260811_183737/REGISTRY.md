@@ -36,6 +36,10 @@
 | W3-R3 | rem3 residual elites repair to 165 | **REJECTED** s802; s801 soft TIMEOUT (LH-F045/046) | 鈥?|
 | W3-A5 | Delete easy HS2 / joint HS2 from S0 then global max 鈬?165 | **REJECTED** MAX_PROVED 164 (LH-F051/052) | 鈥?|
 | W3-G2 | Structured destroy+global max from grow/midset ⇒ 165 | **weakened** ≤139 (F053/066) | new cores |
+| W3-I1 | n64 aggressive LNS from S0 ⇒ 113 | **REJECTED** 0 improve (F077) | — |
+| W3-J1 | Merge two avoid-S0 grows ⇒ 165 | **REJECTED** ≤134 (F078) | — |
+| W3-K1 | n64 frozen-core rem-k + addable free ⇒ 113 | **REJECTED** cap≤112 (F079) | Hamming Rem-as-vars |
+| W3-L1 | n64 frozen-core full-grid Add | **deprioritized** 40M-cut TIMEOUT (F080) | — |
 
 ## Frozen Wave2 facts (import)
 

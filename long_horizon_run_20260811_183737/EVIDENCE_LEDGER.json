@@ -264,6 +264,20 @@
         "EXPERIMENTS/W3_midset_destroy_max/summary.json",
         "EXPERIMENTS/W3_nons0_fixedcard/summary_proper.json"
       ]
+    },
+    {
+      "id": "E023",
+      "utc": "2026-08-14T13:46:00Z",
+      "event": "recover_e09ce853_harvest_IJKL",
+      "summary": "Orchestrator e09ce853 connection_failed. Harvested untracked I/J/K/L: n64 LNS 0-improve@112; avoid-merge best 134; n64 rem-k cap<=112; n64 fullfree TIMEOUT 40M cuts. No +1.",
+      "level": "WEAK_NEGATIVE / CAPACITY_FAIL / SCOPED_MAX / TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_new_families/family_I_n64_lns.json",
+        "EXPERIMENTS/W3_new_families/family_J_avoid_merge.json",
+        "EXPERIMENTS/W3_new_families/family_K_n64_remk.json",
+        "EXPERIMENTS/W3_new_families/family_L_n64_fullfree.json",
+        "LOGS/connection_failed.md"
+      ]
     }
   ],
   "events": [

@@ -1,0 +1,10 @@
+{
+  "schema": "w3_n64_merge_v1",
+  "phases": {
+    "I": {
+      "best": 112,
+      "any_plus": false
+    }
+  },
+  "any_plus": false
+}
