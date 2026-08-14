@@ -30,3 +30,4 @@ See `FAILED.md` IMP-F003–F005 and Agent A summaries. All `INFEASIBLE_SCOPED` u
 7. Sampled k-deletes (random / top-degree / outer, k=2..16) open 0 unselected cells; first positive n_unsel at k=24 (3–4) still surplus-negative vs k+1.
 
 8. **n=64 vs official S0, exhaustive k=1:** all 112 one-deletions checked. Exactly two open any unselected cell: `(56,2)→{(62,2)}` and `(56,61)→{(62,61)}`. None opens ≥2 unselected cells. Therefore frozen-core r=1 cannot produce |S|=113 around this S0. Not a global C(64) upper bound.
+9. **n=64 exhaustive k=2:** all 6216 pairs. max n_unsel=2; n_ge3=0. Frozen-core r=2 cannot produce |S|=113 around this S0 (need ≥3 unselected addables).

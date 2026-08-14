@@ -175,6 +175,78 @@ def family_M(workers: int, per: float) -> dict:
     return out
 
 
+def _asymm_west_core():
+    n = 100
+    s0 = set((int(x), int(y)) for x, y in SOL_100)
+    partner = lambda p: (n - 1 - p[0], n - 1 - p[1])
+    keep, bl = set(), set()
+    for p in s0:
+        q = partner(p)
+        if p <= q:
+            keep.add(p)
+            if q != p and q in s0:
+                bl.add(q)
+        else:
+            bl.add(p)
+    return sorted(keep), bl
+
+
+def family_M2(workers: int, max_s: float, lns_s: float) -> dict:
+    """Escalate best M plan (asymm west + twin blacklist). Save points; LNS if <165."""
+    from src.search.lns import lns_run
+
+    n, target = 100, 165
+    core, bl = _asymm_west_core()
+    print(json.dumps({"M2": "asymm_west_escalate", "core": len(core), "bl": len(bl), "max_s": max_s}), flush=True)
+    res = maximize_core(
+        n,
+        list(core),
+        max_s,
+        workers,
+        seed=11101,
+        target=target,
+        blacklist=set(bl),
+        keep_points=True,
+        round_s=90.0,
+    )
+    row = {k: v for k, v in res.items() if k != "points"}
+    row["plan"] = "asymm_west_esc"
+    print(json.dumps(row, indent=2), flush=True)
+    pts = None
+    if res.get("points"):
+        pts = [tuple(p) for p in res["points"]]
+        _dump(
+            os.path.join(EXP, "best_asymm_west.json"),
+            {"points": res["points"], **row},
+        )
+        if res.get("best_legal_size", 0) >= target:
+            _maybe_promote(n, target, pts, "famM2_asymm_west")
+    rows = [row]
+    if pts and res.get("best_legal_size", 0) < target and lns_s > 0:
+        print(json.dumps({"M2_lns": True, "start": len(pts), "budget": lns_s}), flush=True)
+        best, meta = lns_run(n, pts, lns_s, seed=11111, destroy_frac_range=(0.15, 0.45))
+        d = dual(best, n)
+        lns_row = {"plan": "asymm_west_lns", **meta, **d}
+        rows.append(lns_row)
+        print(json.dumps({k: v for k, v in lns_row.items() if k != "improvements"}, indent=2), flush=True)
+        if d["size"] >= target and d["oracle"] and d["indep"]:
+            _maybe_promote(n, target, best, "famM2_lns")
+        if d["oracle"] and d["indep"] and d["size"] >= (res.get("best_legal_size") or 0):
+            _dump(
+                os.path.join(EXP, "best_asymm_west.json"),
+                {"points": [list(p) for p in best], **d, "from": "lns"},
+            )
+    best_sz = max((r.get("best_legal_size") or r.get("size") or r.get("final_size") or 0) for r in rows)
+    out = {
+        "schema": "w3_newfam_M2_escalate_v1",
+        "rows": [{k: v for k, v in r.items() if k != "points"} for r in rows],
+        "best": best_sz,
+        "any_plus": best_sz >= target,
+    }
+    _dump(os.path.join(EXP, "family_M2_escalate.json"), out)
+    return out
+
+
 def family_N(workers: int, cheap: float) -> dict:
     """Empty-row / empty-col inject Hamming — Add lives on unused rows of S0."""
     n = 100
@@ -464,6 +536,8 @@ def main():
     m_s = float(os.environ.get("W3_M_S", "75"))
     grow_s = float(os.environ.get("W3_GROW_S", "50"))
     max_s = float(os.environ.get("W3_O_S", "90"))
+    m2_s = float(os.environ.get("W3_M2_S", "720"))
+    lns_s = float(os.environ.get("W3_LNS_S", "480"))
     sum_path = os.path.join(EXP, "summary_v4.json")
     if os.path.exists(sum_path):
         try:
@@ -481,13 +555,14 @@ def main():
         ("Q", lambda: family_Q(workers, cheap)),
         ("P", lambda: family_P(workers, cheap)),
         ("R", lambda: family_R(workers, cheap)),
+        ("M2", lambda: family_M2(workers, m2_s, lns_s)),
         ("O", lambda: family_O(workers, grow_s, max_s)),
     ]
     for name, fn in order:
         if phase not in (name, "all", "cheap"):
             continue
-        if phase == "cheap" and name == "O":
-            continue  # O is grow+max; run after Hamming cheap-kill
+        if phase == "cheap" and name in ("O", "M2"):
+            continue  # long escalate / grow after cheap-kill
         print(json.dumps({"start_phase": name}), flush=True)
         res = fn()
         summary["phases"][name] = {
