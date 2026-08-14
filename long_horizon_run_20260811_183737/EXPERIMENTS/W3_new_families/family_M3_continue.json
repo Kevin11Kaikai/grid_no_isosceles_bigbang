@@ -1,0 +1,54 @@
+{
+  "schema": "w3_newfam_M3_continue_v1",
+  "rows": [
+    {
+      "plan": "lns_11201",
+      "iterations": 6416,
+      "wall_time_s": 360.0544798374176,
+      "final_size": 147,
+      "initial_size": 147,
+      "seed": 11201,
+      "oracle": true,
+      "indep": true,
+      "size": 147,
+      "hash": "0c03a3170836a55b6eb9b2d906bc16bb95171fc026346c91f54bd7cf6deebcf0",
+      "n_impr": 0
+    },
+    {
+      "plan": "lns_11202",
+      "iterations": 6009,
+      "wall_time_s": 360.03260231018066,
+      "final_size": 147,
+      "initial_size": 147,
+      "seed": 11202,
+      "oracle": true,
+      "indep": true,
+      "size": 147,
+      "hash": "0c03a3170836a55b6eb9b2d906bc16bb95171fc026346c91f54bd7cf6deebcf0",
+      "n_impr": 0
+    },
+    {
+      "plan": "lns_11203",
+      "iterations": 6116,
+      "wall_time_s": 360.0470504760742,
+      "final_size": 147,
+      "initial_size": 147,
+      "seed": 11203,
+      "oracle": true,
+      "indep": true,
+      "size": 147,
+      "hash": "0c03a3170836a55b6eb9b2d906bc16bb95171fc026346c91f54bd7cf6deebcf0",
+      "n_impr": 0
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 147,
+      "free": 0,
+      "best_legal_size": 147,
+      "proved_max": 147,
+      "plan": "max_nobl"
+    }
+  ],
+  "best": 147,
+  "any_plus": false
+}

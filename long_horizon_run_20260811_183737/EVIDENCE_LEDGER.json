@@ -278,6 +278,26 @@
         "EXPERIMENTS/W3_new_families/family_L_n64_fullfree.json",
         "LOGS/connection_failed.md"
       ]
+    },
+    {
+      "id": "E024",
+      "utc": "2026-08-14T14:50:00Z",
+      "event": "newfam_MNOPQRS_m4",
+      "summary": "N/Q/P Hamming r<=4 INFEAS; R mixed TIMEOUT; O grow<=135 CAPACITY_FAIL; M/M2 dual-OK 147; M3/M4 147 maximal/snap-back; n64 asymm-keepbl 88 cap=186 (S2 in flight). No +1.",
+      "level": "SCOPED_INFEASIBLE / CAPACITY_FAIL / DUAL_VERIFIED_CONSTRUCTION / TIMEOUT_INCONCLUSIVE",
+      "artifacts": [
+        "EXPERIMENTS/W3_new_families/family_N_emptyrow.json",
+        "EXPERIMENTS/W3_new_families/family_Q_interior.json",
+        "EXPERIMENTS/W3_new_families/family_P_n64_hamming.json",
+        "EXPERIMENTS/W3_new_families/family_R_largerr.json",
+        "EXPERIMENTS/W3_new_families/family_M_asymm.json",
+        "EXPERIMENTS/W3_new_families/family_M2_escalate.json",
+        "EXPERIMENTS/W3_new_families/best_asymm_west.json",
+        "EXPERIMENTS/W3_new_families/family_O_pattern.json",
+        "EXPERIMENTS/W3_new_families/family_M3_continue.json",
+        "EXPERIMENTS/W3_new_families/family_M4_destroy147.json",
+        "EXPERIMENTS/W3_new_families/family_S_n64_asymm.json"
+      ]
     }
   ],
   "events": [

@@ -528,31 +528,61 @@
 - Status: **n64 frozen-core r=2 around this S0 cannot +1.**
 
 ### LH-F090 --- Family M2 asymm-west escalate
-- Evidence: `EXPERIMENTS/W3_new_families/family_M2_escalate.json`, `best_asymm_west.json`. Maximize TIMEOUT 146 dual-OK; LNS 5k iters / 300s ? **147** dual-OK hash `0c03a317?ebcf0`. Not 165.
+- Evidence: `EXPERIMENTS/W3_new_families/family_M2_escalate.json`, `best_asymm_west.json`. Maximize TIMEOUT 146 dual-OK; LNS 8k iters / 480s ? **147** dual-OK hash `0c03a317?ebcf0`. Not 165.
 - Level: `DUAL_VERIFIED_CONSTRUCTION` of size 147 (not a record).
-- Status: **LIVE basin** (best non-S0 legal this run). Longer LNS in flight.
+- Status: **LIVE basin** (best non-S0 legal this run). Longer LNS / pattern grow next.
 
-### LH-F089 --- Empty-row/col inject Hamming r=2,3,4 (family N)
-- Evidence: `EXPERIMENTS/W3_new_families/family_N_emptyrow.json` --- 12/12 `INFEASIBLE_SCOPED` in 3-12s. U_ids: outer8 adjRem, inner6 fullRem, outer col8 fullRem, outer4 tight. Hashes `1259edf7...`, `1d5fcdd0...`, `94ebda5a...`, `3ae09f52...`. `any_plus=false`.
+### LH-F091 --- Empty-row/col inject Hamming r=2,3,4 (family N)
+- Evidence: `EXPERIMENTS/W3_new_families/family_N_emptyrow.json` --- 12/12 `INFEASIBLE_SCOPED` in 3-12s. U_ids: outer8 adjRem, inner6 fullRem, outer col8 fullRem, outer4 tight.
 - Level: `SCOPED_INFEASIBLE`.
-- Status: **DEAD those empty-row Hamming U_ids at r<=4.** Larger r is family R (mixed TIMEOUT).
+- Status: **DEAD those empty-row Hamming U_ids at r<=4.**
 
-### LH-F090 --- Corner/interior/knight Hamming r=2,3,4 (family Q)
-- Evidence: `EXPERIMENTS/W3_new_families/family_Q_interior.json` --- 9/9 `INFEASIBLE_SCOPED`. outerRem x interiorAdd; midRem x midinterior; knightAdd x nearRem. `any_plus=false`.
+### LH-F092 --- Corner/interior/knight Hamming r=2,3,4 (family Q)
+- Evidence: `EXPERIMENTS/W3_new_families/family_Q_interior.json` --- 9/9 `INFEASIBLE_SCOPED`.
 - Level: `SCOPED_INFEASIBLE`.
 - Status: **DEAD those geometric Hamming U_ids at r<=4.**
 
-### LH-F091 --- n64 empty-row / interior Hamming r=2,3 (family P)
+### LH-F093 --- n64 empty-row / interior Hamming r=2,3 (family P)
 - Evidence: `EXPERIMENTS/W3_new_families/family_P_n64_hamming.json` --- 6/6 `INFEASIBLE_SCOPED` in <8s.
 - Level: `SCOPED_INFEASIBLE`.
 - Status: **DEAD those n64 geometric Hamming U_ids at r<=3.**
 
-### LH-F092 --- Larger-r Hamming r=6,8,12 (family R)
-- Evidence: `EXPERIMENTS/W3_new_families/family_R_largerr.json` --- 3 `INFEASIBLE_SCOPED` (emptyrow r6; outer-interior r6/r8) + 6 `TIMEOUT_INCONCLUSIVE` (r=8/12 emptyrow/col; r=12 interior). No legal 165. `any_plus=false`.
+### LH-F094 --- Larger-r Hamming r=6,8,12 (family R)
+- Evidence: `EXPERIMENTS/W3_new_families/family_R_largerr.json` --- 3 `INFEASIBLE_SCOPED` + 6 `TIMEOUT_INCONCLUSIVE`. No legal 165.
 - Level: `SCOPED_INFEASIBLE / TIMEOUT_INCONCLUSIVE`.
-- Status: **Kill INFEAS U_ids; deprioritize same-U r=8/12 wall vs M2 145 basin.**
+- Status: **Kill INFEAS U_ids; deprioritize same-U r=8/12 wall vs 147 basin.**
 
-### LH-F093 --- Forced-asymm half-S0 maximize cheap (family M)
-- Evidence: `EXPERIMENTS/W3_new_families/family_M_asymm.json` --- 4 plans TIMEOUT 50s; best **145** dual OK hash `a9dc8a89...` (not S0); cap=488. East 144 / geom-west 142 / north 141. Left S0 and beat midset 139.
-- Level: `TIMEOUT_INCONCLUSIVE` (live basin, not +1).
-- Status: **Escalate (M2)**; do not treat 145 as a plateau kill.
+### LH-F095 --- Forced-asymm half-S0 maximize cheap (family M)
+- Evidence: `EXPERIMENTS/W3_new_families/family_M_asymm.json` --- 4 plans TIMEOUT 50s; best **145** dual OK hash `a9dc8a89...` (not S0); cap=488.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **Superseded by M2 147**; cheap wave found the basin.
+
+### LH-F096 --- Sealed tournament wave1 n=64 (T-A..F)
+- Evidence: `TOURNAMENT_SEALED/EXPERIMENTS/summary_n64.json`. Dual-OK sizes 69?84; LNS 77?84 then plateau (11010 iters / 180s). Threshold 113 not met. `beat=false`.
+- Level: `HEURISTIC` / compute-budget negative for those constructors.
+- Status: **DEAD as primary** those weak greedy/algebraic/beam routes. Wave2 (greedy-multistart / symmetry / pattern / CP-SAT) is the live sealed attempt.
+
+### LH-F097 --- Unsealed 147 LNS 3?400s (seeds 21?23)
+- Evidence: `EXPERIMENTS/W3_asymm147_lns/summary.json`. 7017+6783+6650 iters; all `final_size=147`; `any_plus=false`; hash unchanged `0c03a317?ebcf0`.
+- Level: `HEURISTIC` / compute-budget negative for those destroy fractions.
+- Status: **This LNS kernel/budget dead on 147**. Basin still live via other destroy/maximize; not a record.
+
+### LH-F098 --- Pattern grow knight/quad/stair/perm (family O)
+- Evidence: `EXPERIMENTS/W3_new_families/family_O_pattern.json` --- grows 127-135, all `CAPACITY_FAIL` free=0, no S0-snap. Best 135 (quad_a3_b7).
+- Level: `CAPACITY_FAIL`.
+- Status: **Intact pattern grows near-maximal <=135**; same plateau as lattice/avoid-S0. Need destroy (not funded vs 147).
+
+### LH-F099 --- Continue 147: extra LNS + nobl max (family M3)
+- Evidence: `EXPERIMENTS/W3_new_families/family_M3_continue.json` --- 3 LNS seeds 0 improve; intact 147 `CAPACITY_FAIL` free=0 even without twin blacklist.
+- Level: `CAPACITY_FAIL` / `WEAK_NEGATIVE`.
+- Status: **147 is singleton-maximal**; must destroy to grow. Aligns with F097.
+
+### LH-F100 --- Destroy+refill from 147 (family M4)
+- Evidence: `EXPERIMENTS/W3_new_families/family_M4_destroy147.json` --- des20 cap<165 CAPACITY_FAIL; des35/50 MAX_PROVED 146-147 (snap to 147 basin); des70 TIMEOUT <=147; outer4 TIMEOUT 131-134 with huge cuts. `any_plus=false`.
+- Level: `CAPACITY_FAIL / SCOPED_MAX / TIMEOUT_INCONCLUSIVE`.
+- Status: **Shallow destroy of 147 snaps back; not a +1.** Large-free des70 still TIMEOUT != proved max.
+
+### LH-F101 --- n64 forced-asymm half-S0 cheap (family S)
+- Evidence: `EXPERIMENTS/W3_new_families/family_S_n64_asymm.json` --- keepbl TIMEOUT **88** dual-OK cap=186; nobl TIMEOUT **112** (hash `9827efc7...` != incumbent); geom-west 88. `any_plus=false`.
+- Level: `TIMEOUT_INCONCLUSIVE`.
+- Status: **LIVE n64 path** (keepbl cap>>113). Escalate S2. nobl returns to size-112 basin (different hash).

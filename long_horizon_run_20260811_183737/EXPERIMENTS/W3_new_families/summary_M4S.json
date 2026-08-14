@@ -1,0 +1,14 @@
+{
+  "schema": "w3_m4s_v1",
+  "phases": {
+    "S": {
+      "best": 112,
+      "any_plus": false
+    },
+    "M4": {
+      "best": 147,
+      "any_plus": false
+    }
+  },
+  "any_plus": false
+}

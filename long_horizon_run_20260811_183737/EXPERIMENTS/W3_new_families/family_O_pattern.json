@@ -1,0 +1,118 @@
+{
+  "schema": "w3_newfam_O_pattern_v1",
+  "rows": [
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 132,
+      "free": 0,
+      "best_legal_size": 132,
+      "proved_max": 132,
+      "plan": "knight_r0",
+      "grow_size": 132,
+      "grow_hash": "1981f3c6e84bef4a6c36d930fdf074530eab4f0a03d4d6050aaaedb89fd01dbe",
+      "s0_snap": false
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 132,
+      "free": 0,
+      "best_legal_size": 132,
+      "proved_max": 132,
+      "plan": "knight_r1",
+      "grow_size": 132,
+      "grow_hash": "ba11631d58f134c6d95a2503007f5f8a35997ed4047e2c04008c0fdc1b242d75",
+      "s0_snap": false
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 132,
+      "free": 0,
+      "best_legal_size": 132,
+      "proved_max": 132,
+      "plan": "knight_r2",
+      "grow_size": 132,
+      "grow_hash": "685acbb331d7a611c0a8f4b7892bb55fa012c8bd6a320975094a27a603b74237",
+      "s0_snap": false
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 131,
+      "free": 0,
+      "best_legal_size": 131,
+      "proved_max": 131,
+      "plan": "quad_a1_b0",
+      "grow_size": 131,
+      "grow_hash": "8d2fbd536db693e0b2be07b5968741270df840855a8e6b057561e2d3705466a4",
+      "s0_snap": false
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 135,
+      "free": 0,
+      "best_legal_size": 135,
+      "proved_max": 135,
+      "plan": "quad_a3_b7",
+      "grow_size": 135,
+      "grow_hash": "5cf1b17a0471e41eb6c80115619425af3e021ca92b51499dcf7597d2d525865b",
+      "s0_snap": false
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 131,
+      "free": 0,
+      "best_legal_size": 131,
+      "proved_max": 131,
+      "plan": "quad_a7_b13",
+      "grow_size": 131,
+      "grow_hash": "16e10988e832eb6c8ea9c55d137ef76fa3cf6635e66b466478c95740a2cf1f54",
+      "s0_snap": false
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 127,
+      "free": 0,
+      "best_legal_size": 127,
+      "proved_max": 127,
+      "plan": "stair_k3",
+      "grow_size": 127,
+      "grow_hash": "5fc3bed98c4534efe1662e3e4b7e4857081452f0a6f8d7f4e25ec6512e711cfb",
+      "s0_snap": false
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 128,
+      "free": 0,
+      "best_legal_size": 128,
+      "proved_max": 128,
+      "plan": "stair_k7",
+      "grow_size": 128,
+      "grow_hash": "bfdfb1cd5ab05afcaeaadbc73c4c0e35192da7a65b8779f40e73f629868a7da9",
+      "s0_snap": false
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 127,
+      "free": 0,
+      "best_legal_size": 127,
+      "proved_max": 127,
+      "plan": "stair_k11",
+      "grow_size": 127,
+      "grow_hash": "9b8641af125665ee74ddfa15652226abbc5d8418e9dccbf3de982b5e6559a15b",
+      "s0_snap": false
+    },
+    {
+      "status": "CAPACITY_FAIL",
+      "core": 127,
+      "free": 0,
+      "best_legal_size": 127,
+      "proved_max": 127,
+      "plan": "perm40_emptybias",
+      "grow_size": 127,
+      "grow_hash": "a9d47ff116698cb64fa5951910ed90d3f2af096fb0494d078d26ede95a3190b5",
+      "s0_snap": false
+    }
+  ],
+  "best": 135,
+  "any_plus": false,
+  "any_s0_snap": false
+}

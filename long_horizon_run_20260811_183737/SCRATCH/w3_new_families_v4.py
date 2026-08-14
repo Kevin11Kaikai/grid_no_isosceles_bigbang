@@ -247,6 +247,60 @@ def family_M2(workers: int, max_s: float, lns_s: float) -> dict:
     return out
 
 
+def family_M3(workers: int, lns_s: float, max_s: float) -> dict:
+    """Continue 147 basin: multi-seed LNS + maximize without twin blacklist."""
+    from src.search.lns import lns_run
+
+    n, target = 100, 165
+    path = os.path.join(EXP, "best_asymm_west.json")
+    blob = json.load(open(path, encoding="utf-8"))
+    start = [tuple(p) for p in blob["points"]]
+    print(json.dumps({"M3_start": len(start), "hash": blob.get("hash")}), flush=True)
+    rows = []
+    best_pts = list(start)
+    best_sz = len(start)
+    for seed, frac in [(11201, (0.08, 0.25)), (11202, (0.20, 0.50)), (11203, (0.12, 0.40))]:
+        print(json.dumps({"M3_lns": seed, "frac": frac, "start": best_sz}), flush=True)
+        best, meta = lns_run(n, best_pts, lns_s, seed=seed, destroy_frac_range=frac)
+        d = dual(best, n)
+        row = {"plan": f"lns_{seed}", **{k: v for k, v in meta.items() if k != "improvements"}, **d, "n_impr": len(meta.get("improvements") or [])}
+        rows.append(row)
+        print(json.dumps(row, indent=2), flush=True)
+        if d["oracle"] and d["indep"] and d["size"] > best_sz:
+            best_sz = d["size"]
+            best_pts = list(best)
+            _dump(os.path.join(EXP, "best_asymm_west.json"), {"points": [list(p) for p in best], **d, "from": f"M3_lns_{seed}"})
+            if best_sz >= target:
+                _maybe_promote(n, target, best, f"famM3_lns_{seed}")
+                break
+    # Allow former twins / S0 points back
+    if best_sz < target:
+        print(json.dumps({"M3_max_nobl": True, "core": best_sz}), flush=True)
+        res = maximize_core(
+            n, list(best_pts), max_s, workers, seed=11301, target=target, blacklist=None, keep_points=True, round_s=60.0
+        )
+        row = {k: v for k, v in res.items() if k != "points"}
+        row["plan"] = "max_nobl"
+        if str(res.get("best_hash", "")).startswith(S0_HASH_100):
+            row["s0_snap"] = True
+        rows.append(row)
+        print(json.dumps(row, indent=2), flush=True)
+        if res.get("best_legal_size", 0) > best_sz and res.get("points"):
+            best_sz = res["best_legal_size"]
+            best_pts = [tuple(p) for p in res["points"]]
+            _dump(os.path.join(EXP, "best_asymm_west.json"), {"points": res["points"], **row, "from": "M3_max_nobl"})
+        if res.get("best_legal_size", 0) >= target and res.get("points"):
+            _maybe_promote(n, target, [tuple(p) for p in res["points"]], "famM3_max_nobl")
+    out = {
+        "schema": "w3_newfam_M3_continue_v1",
+        "rows": rows,
+        "best": best_sz,
+        "any_plus": best_sz >= target,
+    }
+    _dump(os.path.join(EXP, "family_M3_continue.json"), out)
+    return out
+
+
 def family_N(workers: int, cheap: float) -> dict:
     """Empty-row / empty-col inject Hamming — Add lives on unused rows of S0."""
     n = 100
@@ -556,12 +610,13 @@ def main():
         ("P", lambda: family_P(workers, cheap)),
         ("R", lambda: family_R(workers, cheap)),
         ("M2", lambda: family_M2(workers, m2_s, lns_s)),
+        ("M3", lambda: family_M3(workers, float(os.environ.get("W3_M3_LNS_S", "360")), float(os.environ.get("W3_M3_MAX_S", "300")))),
         ("O", lambda: family_O(workers, grow_s, max_s)),
     ]
     for name, fn in order:
         if phase not in (name, "all", "cheap"):
             continue
-        if phase == "cheap" and name in ("O", "M2"):
+        if phase == "cheap" and name in ("O", "M2", "M3"):
             continue  # long escalate / grow after cheap-kill
         print(json.dumps({"start_phase": name}), flush=True)
         res = fn()

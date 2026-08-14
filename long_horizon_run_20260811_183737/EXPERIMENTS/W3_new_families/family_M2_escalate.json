@@ -7,9 +7,9 @@
       "free": 406,
       "best_legal_size": 146,
       "proved_max": null,
-      "rounds": 11,
+      "rounds": 9,
       "final_cuts": 32974,
-      "wall_s": 900.1533470153809,
+      "wall_s": 720.0659823417664,
       "dual": {
         "oracle": true,
         "indep": true,
@@ -21,13 +21,13 @@
     },
     {
       "plan": "asymm_west_lns",
-      "iterations": 5050,
-      "wall_time_s": 300.0539972782135,
+      "iterations": 8034,
+      "wall_time_s": 480.0372519493103,
       "improvements": [
         {
           "iteration": 4432,
           "size": 147,
-          "t": 263.19219303131104
+          "t": 264.92419147491455
         }
       ],
       "final_size": 147,

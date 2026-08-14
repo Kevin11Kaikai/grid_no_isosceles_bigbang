@@ -1,0 +1,55 @@
+{
+  "schema": "w3_asymm147_lns_v1",
+  "rows": [
+    {
+      "iterations": 7017,
+      "wall_time_s": 400.0519058704376,
+      "improvements": [],
+      "final_size": 147,
+      "initial_size": 147,
+      "seed": 21,
+      "oracle": true,
+      "indep": true,
+      "size": 147,
+      "hash": "0c03a3170836a55b6eb9b2d906bc16bb95171fc026346c91f54bd7cf6deebcf0",
+      "frac": [
+        0.08,
+        0.3
+      ]
+    },
+    {
+      "iterations": 6783,
+      "wall_time_s": 400.0644040107727,
+      "improvements": [],
+      "final_size": 147,
+      "initial_size": 147,
+      "seed": 22,
+      "oracle": true,
+      "indep": true,
+      "size": 147,
+      "hash": "0c03a3170836a55b6eb9b2d906bc16bb95171fc026346c91f54bd7cf6deebcf0",
+      "frac": [
+        0.15,
+        0.45
+      ]
+    },
+    {
+      "iterations": 6650,
+      "wall_time_s": 400.0597960948944,
+      "improvements": [],
+      "final_size": 147,
+      "initial_size": 147,
+      "seed": 23,
+      "oracle": true,
+      "indep": true,
+      "size": 147,
+      "hash": "0c03a3170836a55b6eb9b2d906bc16bb95171fc026346c91f54bd7cf6deebcf0",
+      "frac": [
+        0.2,
+        0.55
+      ]
+    }
+  ],
+  "best": 147,
+  "any_plus": false
+}

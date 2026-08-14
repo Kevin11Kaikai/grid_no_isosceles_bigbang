@@ -19,7 +19,19 @@
       "n_infeas": null,
       "n_timeout": null
     },
+    "R": {
+      "best": null,
+      "any_plus": false,
+      "n_infeas": 3,
+      "n_timeout": 6
+    },
     "M2": {
+      "best": 147,
+      "any_plus": false,
+      "n_infeas": null,
+      "n_timeout": null
+    },
+    "M3": {
       "best": 147,
       "any_plus": false,
       "n_infeas": null,
