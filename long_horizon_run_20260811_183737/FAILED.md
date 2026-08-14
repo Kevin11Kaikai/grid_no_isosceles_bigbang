@@ -591,3 +591,8 @@
 - Evidence: `TOURNAMENT_SEALED/EXPERIMENTS/wave2_summary_n64.json`, `wave2_summary_n100.json`. n64 best **90** dual-OK (T-F from tabu 84); n100 greedy 118 / pattern 120 / tabu 130 / T-K keep55 **135** / LNS **137** hash `971f1240?68bd95`. Thresholds 113/165 not met. `any_beat=false`.
 - Level: `HEURISTIC` + dual-verified constructions below threshold.
 - Status: **This wave's budgets closed.** T-K keep55 (core 70, free 719, cap 789) is the only sealed mechanism that moved size on n=100; keep40 (free 2260, 3.1M cuts) is unusable. Do not claim 113/165. Unsealed 147 still larger.
+
+### LH-F103 --- n64 asymm-keepbl escalate + LNS (family S2)
+- Evidence: `EXPERIMENTS/W3_new_families/family_S2_n64_esc.json`, `best_n64_asymm.json`. Maximize 12min TIMEOUT stuck **88**; LNS 26k iters / 480s ? **91** dual-OK hash `3a017008?844b76`. Cap remains 186. Not 113.
+- Level: `DUAL_VERIFIED_CONSTRUCTION` of size 91 (not a record vs 112).
+- Status: **LIVE but slow climb** (88?91). Continue LNS; do not treat 91 as +1.
