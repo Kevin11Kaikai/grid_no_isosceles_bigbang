@@ -1,6 +1,6 @@
 ﻿# NEXT_SESSION
 Incumbents 112/164. No +1.
-n100 frozen-core r=2 cannot +1 (PROVED.md §6). n64 exhaustive k=1 and k=2: frozen-core r=1/r=2 cannot +1 (PROVED.md §8–9).
-Live: family M2 asymm-west escalate (dual-verified legal 145 TIMEOUT at 50s; 15min maximize in flight).
-Avoid F081–F088 and older closed basins.
+Best other legal: **147** dual-OK (`EXPERIMENTS/W3_new_families/best_asymm_west.json`).
+S0 frozen-core r=1/r=2 dead on n64 (exhaustive) and n100 r=2 (Gate1+joint VC).
+Live: harvest `EXPERIMENTS/W3_asymm147_lns/`; if still <165, more LNS or maximize without twin blacklist.
 Standing order: commit+push origin/master.

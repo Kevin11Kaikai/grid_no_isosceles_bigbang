@@ -521,3 +521,38 @@
 - Evidence: `EXPERIMENTS/W3_n64_kdelete_unsel/summary.json` and `all_k1.json`. **Exhaustive k=1 over all 112 S0 points:** max n_unsel=1; n_ge2=0; n_ge1=2 (exactly the Gate1 blockers). Joint both covers: n_unsel=2, surplus -1. Random k=2-4: 0.
 - Level: `FINITE_VERIFIED` (exhaustive k=1).
 - Status: **n64 frozen-core r=1 around this S0 cannot +1.** Joint r=2 of both exact-1 covers still surplus -1.
+
+### LH-F089 --- n64 exhaustive k=2 unselected surplus
+- Evidence: `EXPERIMENTS/W3_n64_kdelete_unsel/all_k2.json`. 6216 pairs; max n_unsel=2; n_ge3=0. Six pairs open 2 cells (the two Gate1 qs or (4,26)/(4,37)).
+- Level: `FINITE_VERIFIED` (exhaustive).
+- Status: **n64 frozen-core r=2 around this S0 cannot +1.**
+
+### LH-F090 --- Family M2 asymm-west escalate
+- Evidence: `EXPERIMENTS/W3_new_families/family_M2_escalate.json`, `best_asymm_west.json`. Maximize TIMEOUT 146 dual-OK; LNS 5k iters / 300s ? **147** dual-OK hash `0c03a317?ebcf0`. Not 165.
+- Level: `DUAL_VERIFIED_CONSTRUCTION` of size 147 (not a record).
+- Status: **LIVE basin** (best non-S0 legal this run). Longer LNS in flight.
+
+### LH-F089 --- Empty-row/col inject Hamming r=2,3,4 (family N)
+- Evidence: `EXPERIMENTS/W3_new_families/family_N_emptyrow.json` --- 12/12 `INFEASIBLE_SCOPED` in 3-12s. U_ids: outer8 adjRem, inner6 fullRem, outer col8 fullRem, outer4 tight. Hashes `1259edf7...`, `1d5fcdd0...`, `94ebda5a...`, `3ae09f52...`. `any_plus=false`.
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD those empty-row Hamming U_ids at r<=4.** Larger r is family R (mixed TIMEOUT).
+
+### LH-F090 --- Corner/interior/knight Hamming r=2,3,4 (family Q)
+- Evidence: `EXPERIMENTS/W3_new_families/family_Q_interior.json` --- 9/9 `INFEASIBLE_SCOPED`. outerRem x interiorAdd; midRem x midinterior; knightAdd x nearRem. `any_plus=false`.
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD those geometric Hamming U_ids at r<=4.**
+
+### LH-F091 --- n64 empty-row / interior Hamming r=2,3 (family P)
+- Evidence: `EXPERIMENTS/W3_new_families/family_P_n64_hamming.json` --- 6/6 `INFEASIBLE_SCOPED` in <8s.
+- Level: `SCOPED_INFEASIBLE`.
+- Status: **DEAD those n64 geometric Hamming U_ids at r<=3.**
+
+### LH-F092 --- Larger-r Hamming r=6,8,12 (family R)
+- Evidence: `EXPERIMENTS/W3_new_families/family_R_largerr.json` --- 3 `INFEASIBLE_SCOPED` (emptyrow r6; outer-interior r6/r8) + 6 `TIMEOUT_INCONCLUSIVE` (r=8/12 emptyrow/col; r=12 interior). No legal 165. `any_plus=false`.
+- Level: `SCOPED_INFEASIBLE / TIMEOUT_INCONCLUSIVE`.
+- Status: **Kill INFEAS U_ids; deprioritize same-U r=8/12 wall vs M2 145 basin.**
+
+### LH-F093 --- Forced-asymm half-S0 maximize cheap (family M)
+- Evidence: `EXPERIMENTS/W3_new_families/family_M_asymm.json` --- 4 plans TIMEOUT 50s; best **145** dual OK hash `a9dc8a89...` (not S0); cap=488. East 144 / geom-west 142 / north 141. Left S0 and beat midset 139.
+- Level: `TIMEOUT_INCONCLUSIVE` (live basin, not +1).
+- Status: **Escalate (M2)**; do not treat 145 as a plateau kill.

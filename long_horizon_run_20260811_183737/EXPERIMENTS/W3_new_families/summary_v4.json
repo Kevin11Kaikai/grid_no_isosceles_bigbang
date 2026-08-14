@@ -18,6 +18,12 @@
       "any_plus": false,
       "n_infeas": null,
       "n_timeout": null
+    },
+    "M2": {
+      "best": 147,
+      "any_plus": false,
+      "n_infeas": null,
+      "n_timeout": null
     }
   },
   "any_plus": false
