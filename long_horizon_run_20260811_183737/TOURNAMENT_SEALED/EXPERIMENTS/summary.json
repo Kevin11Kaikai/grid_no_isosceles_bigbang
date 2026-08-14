@@ -1,0 +1,31 @@
+{
+  "n64_wave1": {
+    "schema": "sealed_tournament_v1",
+    "n": 64,
+    "threshold": 113,
+    "beat": false,
+    "best_size": 84,
+    "best_mech": "T-F",
+    "best_hash": "4c0d83a51ef455648e378e17578d9a82b7afc717cf0fb7ae09b5adebe2dcebaf"
+  },
+  "n64_wave2": {
+    "schema": "sealed_tournament_wave2_v1",
+    "n": 64,
+    "threshold": 113,
+    "beat": false,
+    "best_size": 90,
+    "best_mech": "T-F",
+    "best_hash": "de1148b1f4a9f9c709bf0cd8321f77ab3c742ce8e76539602b9ee94753dfb92c"
+  },
+  "n100_wave2": {
+    "schema": "sealed_tournament_wave2_v1",
+    "n": 100,
+    "threshold": 165,
+    "beat": false,
+    "best_size": 137,
+    "best_mech": "T-F",
+    "best_hash": "971f1240933f8d630560995c6f5dec52a5ce27d99569f63827e5f6a84068bd95"
+  },
+  "any_beat": false,
+  "note": "All sizes dual-verified (oracle + independent). No candidate promoted. Sealed best 90/137 vs thresholds 113/165. Unsealed 147 remains larger than sealed n100."
+}

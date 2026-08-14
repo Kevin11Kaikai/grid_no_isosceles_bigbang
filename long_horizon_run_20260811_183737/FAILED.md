@@ -586,3 +586,8 @@
 - Evidence: `EXPERIMENTS/W3_new_families/family_S_n64_asymm.json` --- keepbl TIMEOUT **88** dual-OK cap=186; nobl TIMEOUT **112** (hash `9827efc7...` != incumbent); geom-west 88. `any_plus=false`.
 - Level: `TIMEOUT_INCONCLUSIVE`.
 - Status: **LIVE n64 path** (keepbl cap>>113). Escalate S2. nobl returns to size-112 basin (different hash).
+
+### LH-F102 --- Sealed tournament wave2 (T-G..L, no S0)
+- Evidence: `TOURNAMENT_SEALED/EXPERIMENTS/wave2_summary_n64.json`, `wave2_summary_n100.json`. n64 best **90** dual-OK (T-F from tabu 84); n100 greedy 118 / pattern 120 / tabu 130 / T-K keep55 **135** / LNS **137** hash `971f1240?68bd95`. Thresholds 113/165 not met. `any_beat=false`.
+- Level: `HEURISTIC` + dual-verified constructions below threshold.
+- Status: **This wave's budgets closed.** T-K keep55 (core 70, free 719, cap 789) is the only sealed mechanism that moved size on n=100; keep40 (free 2260, 3.1M cuts) is unusable. Do not claim 113/165. Unsealed 147 still larger.

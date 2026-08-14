@@ -1,0 +1,111 @@
+{
+  "schema": "sealed_tournament_v1",
+  "n": 64,
+  "threshold": 113,
+  "beat": false,
+  "best_size": 84,
+  "best_mech": "T-F",
+  "best_hash": "4c0d83a51ef455648e378e17578d9a82b7afc717cf0fb7ae09b5adebe2dcebaf",
+  "rows": [
+    {
+      "mech": "T-A",
+      "n": 64,
+      "oracle": true,
+      "indep": true,
+      "size": 70,
+      "hash": "63b3c5da8160e030a71b4bfb75b53a0b456d49a13f38930cbdbafa0e9b8a586d",
+      "wall_s": 1.3412752151489258
+    },
+    {
+      "mech": "T-B",
+      "n": 64,
+      "oracle": true,
+      "indep": true,
+      "size": 75,
+      "hash": "d16ff27565697e3a740c6f1509be77e0b7d488a271de37360a9ce0d0964d413d",
+      "wall_s": 4.81005859375
+    },
+    {
+      "mech": "T-C",
+      "n": 64,
+      "oracle": true,
+      "indep": true,
+      "size": 74,
+      "hash": "3cff59a7a7dc384daa77609feac03bf6e8c299a9d38a652ebc2a44015aac0397",
+      "wall_s": 0.7489314079284668
+    },
+    {
+      "mech": "T-D",
+      "n": 64,
+      "oracle": true,
+      "indep": true,
+      "size": 77,
+      "hash": "5665ddc3c448e7d947d4b82c3cba67c46318071e8b1e452b8a71037da57b243a",
+      "wall_s": 40.02484321594238
+    },
+    {
+      "mech": "T-E",
+      "n": 64,
+      "oracle": true,
+      "indep": true,
+      "size": 69,
+      "hash": "3f6005d8960c0974b376e67d74a0cce0fe3249f1a9f37cdc9f39d04f9871d2fb",
+      "wall_s": 5.8335630893707275
+    },
+    {
+      "mech": "T-F",
+      "n": 64,
+      "oracle": true,
+      "indep": true,
+      "size": 84,
+      "hash": "4c0d83a51ef455648e378e17578d9a82b7afc717cf0fb7ae09b5adebe2dcebaf",
+      "from": "T-D",
+      "lns": {
+        "iterations": 11010,
+        "wall_time_s": 180.0119981765747,
+        "improvements": [
+          {
+            "iteration": 2,
+            "size": 78,
+            "t": 0.027946949005126953
+          },
+          {
+            "iteration": 12,
+            "size": 79,
+            "t": 0.18680357933044434
+          },
+          {
+            "iteration": 187,
+            "size": 80,
+            "t": 3.006244659423828
+          },
+          {
+            "iteration": 629,
+            "size": 81,
+            "t": 10.10313868522644
+          },
+          {
+            "iteration": 667,
+            "size": 82,
+            "t": 10.732303142547607
+          },
+          {
+            "iteration": 751,
+            "size": 83,
+            "t": 12.128664016723633
+          },
+          {
+            "iteration": 755,
+            "size": 84,
+            "t": 12.187406301498413
+          }
+        ],
+        "final_size": 84,
+        "initial_size": 77,
+        "seed": 973
+      },
+      "wall_s": 180.02046275138855
+    }
+  ],
+  "wall_s": 232.79622721672058
+}

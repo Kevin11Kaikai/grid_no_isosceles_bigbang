@@ -1,0 +1,12 @@
+{
+  "n100": {
+    "schema": "sealed_tournament_wave2_v1",
+    "n": 100,
+    "threshold": 165,
+    "beat": false,
+    "best_size": 137,
+    "best_mech": "T-F",
+    "best_hash": "971f1240933f8d630560995c6f5dec52a5ce27d99569f63827e5f6a84068bd95",
+    "wall_s": 697.9796142578125
+  }
+}

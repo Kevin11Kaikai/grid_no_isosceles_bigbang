@@ -1,0 +1,78 @@
+{
+  "schema": "sealed_tournament_wave2_v1",
+  "n": 100,
+  "threshold": 165,
+  "beat": false,
+  "best_size": 137,
+  "best_mech": "T-F",
+  "best_hash": "971f1240933f8d630560995c6f5dec52a5ce27d99569f63827e5f6a84068bd95",
+  "rows": [
+    {
+      "mech": "T-G",
+      "n": 100,
+      "oracle": true,
+      "indep": true,
+      "size": 118,
+      "hash": "747778a892746cbd4f3434030b5e2b969fa0fd96cefb7b39946741db9151af95",
+      "wall_s": 50.09774160385132
+    },
+    {
+      "mech": "T-H",
+      "n": 100,
+      "oracle": true,
+      "indep": true,
+      "size": 116,
+      "hash": "f1f26e7e090a38dd2f62d19a8cecd202d7ed53c13589ed6779cafdf41684f7c4",
+      "wall_s": 50.03300595283508
+    },
+    {
+      "mech": "T-I",
+      "n": 100,
+      "oracle": true,
+      "indep": true,
+      "size": 120,
+      "hash": "309ea8e823154533bfd5ea8f8e1b95e404f384f05e450040b63f094e23bdcca1",
+      "wall_s": 1.1259129047393799
+    },
+    {
+      "mech": "T-J",
+      "n": 100,
+      "oracle": true,
+      "indep": true,
+      "size": 130,
+      "hash": "9d043af34a07dbb8fb26230a17503ba9ad3d7bbc0f676afe8a28b96a6679a01e",
+      "wall_s": 90.1841151714325
+    },
+    {
+      "mech": "T-K",
+      "n": 100,
+      "oracle": true,
+      "indep": true,
+      "size": 135,
+      "hash": "96dd49c9242a9471926da4f37435d530374e269490b1756742e4cb8eee38e738",
+      "wall_s": 227.01173758506775
+    },
+    {
+      "mech": "T-L",
+      "n": 100,
+      "oracle": true,
+      "indep": true,
+      "size": 135,
+      "hash": "96dd49c9242a9471926da4f37435d530374e269490b1756742e4cb8eee38e738",
+      "wall_s": 38.85498571395874
+    },
+    {
+      "mech": "T-F",
+      "n": 100,
+      "oracle": true,
+      "indep": true,
+      "size": 137,
+      "hash": "971f1240933f8d630560995c6f5dec52a5ce27d99569f63827e5f6a84068bd95",
+      "from": "T-K",
+      "lns_final": 137,
+      "lns_iters": 3345,
+      "wall_s": 240.59789299964905
+    }
+  ],
+  "wall_s": 697.9796142578125
+}

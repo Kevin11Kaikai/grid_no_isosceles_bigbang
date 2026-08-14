@@ -1,6 +1,6 @@
 ﻿# RESEARCH_STATE — long_horizon_run_20260811_183737
 
-**Updated:** 2026-08-14 (M3/M4/O/S closed; S2 n64-asymm escalate in flight)
+**Updated:** 2026-08-14 (sealed tournament wave1+2 closed; no beat)
 
 ## Incumbent
 - n=64 **112** / n=100 **164** — **no legal +1**
@@ -18,8 +18,8 @@
 - n64 asymm-keepbl: dual-OK **88**, cap=186 (S) — live
 
 ## Live
-- **S2** n64 forced-asymm keepbl maximize 12min + LNS (from 88, cap 186)
-- Sealed-S0 tournament `TOURNAMENT_SEALED/` wave2 (see F096)
+- **S2** n64 forced-asymm keepbl maximize (unsealed; from 88, cap 186) if still in flight
+- Sealed-S0 tournament closed for this budget: n64 **90**, n100 **137** (LH-F102); next sealed branch = longer T-K keep55-style, not S0 Hamming
 
 ## Discipline
 TIMEOUT ≠ INFEAS; scoped ≠ global; standing order push.
