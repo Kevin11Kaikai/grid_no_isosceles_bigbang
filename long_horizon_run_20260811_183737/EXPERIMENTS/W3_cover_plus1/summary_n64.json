@@ -1,0 +1,376 @@
+{
+  "schema": "w3_cover_plus1_v1",
+  "n": 64,
+  "target": 113,
+  "n_covers": 2,
+  "n_tried_extras": 20,
+  "any_plus": false,
+  "max_best_cap": 113,
+  "rows": [
+    {
+      "q": [
+        62,
+        2
+      ],
+      "cover": [
+        [
+          56,
+          2
+        ]
+      ],
+      "base_free": 2,
+      "n_conflict_extras": 2,
+      "n_tried": 10,
+      "best_cap": 113,
+      "any_feas": false,
+      "n_cap_ge_target": 10,
+      "n_infeas": 10,
+      "n_capfail": 0,
+      "extras": [
+        {
+          "extra": [
+            53,
+            0
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.02182936668395996
+        },
+        {
+          "extra": [
+            55,
+            2
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.016922950744628906
+        },
+        {
+          "extra": [
+            57,
+            1
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.016000032424926758
+        },
+        {
+          "extra": [
+            58,
+            1
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.017230510711669922
+        },
+        {
+          "extra": [
+            58,
+            7
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.015099048614501953
+        },
+        {
+          "extra": [
+            59,
+            26
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "conflict",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.015026330947875977
+        },
+        {
+          "extra": [
+            59,
+            37
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "conflict",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.016891002655029297
+        },
+        {
+          "extra": [
+            61,
+            11
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.015887022018432617
+        },
+        {
+          "extra": [
+            62,
+            3
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.01695871353149414
+        },
+        {
+          "extra": [
+            63,
+            1
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.012269973754882812
+        }
+      ]
+    },
+    {
+      "q": [
+        62,
+        61
+      ],
+      "cover": [
+        [
+          56,
+          61
+        ]
+      ],
+      "base_free": 2,
+      "n_conflict_extras": 2,
+      "n_tried": 10,
+      "best_cap": 113,
+      "any_feas": false,
+      "n_cap_ge_target": 10,
+      "n_infeas": 10,
+      "n_capfail": 0,
+      "extras": [
+        {
+          "extra": [
+            53,
+            63
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.020798921585083008
+        },
+        {
+          "extra": [
+            55,
+            61
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.016000032424926758
+        },
+        {
+          "extra": [
+            57,
+            62
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.016965389251708984
+        },
+        {
+          "extra": [
+            58,
+            56
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.009303808212280273
+        },
+        {
+          "extra": [
+            58,
+            62
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.01715683937072754
+        },
+        {
+          "extra": [
+            59,
+            26
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "conflict",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.014069318771362305
+        },
+        {
+          "extra": [
+            59,
+            37
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "conflict",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.01805877685546875
+        },
+        {
+          "extra": [
+            61,
+            52
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.01699972152709961
+        },
+        {
+          "extra": [
+            62,
+            60
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.01043844223022461
+        },
+        {
+          "extra": [
+            63,
+            62
+          ],
+          "core": 110,
+          "free": 3,
+          "cap": 113,
+          "source": "geo",
+          "status": "SCOPED_INFEAS_TARGET",
+          "best_legal_size": 110,
+          "proved_max": 112,
+          "rounds": 2,
+          "final_cuts": 2,
+          "wall_s": 0.016000747680664062
+        }
+      ]
+    }
+  ],
+  "wall_s": 0.6740567684173584
+}

@@ -1,0 +1,456 @@
+{
+  "schema": "w3_kdelete_unsel_v1",
+  "rows": [
+    {
+      "k": 2,
+      "recipe": "random",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "top_degree",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "outer",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 3,
+      "recipe": "random",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "top_degree",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "outer",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 4,
+      "recipe": "random",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "top_degree",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "outer",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 6,
+      "recipe": "random",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 7,
+      "surplus": -7
+    },
+    {
+      "k": 6,
+      "recipe": "top_degree",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 7,
+      "surplus": -7
+    },
+    {
+      "k": 6,
+      "recipe": "outer",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 7,
+      "surplus": -7
+    },
+    {
+      "k": 8,
+      "recipe": "random",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 9,
+      "surplus": -9
+    },
+    {
+      "k": 8,
+      "recipe": "top_degree",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 9,
+      "surplus": -9
+    },
+    {
+      "k": 8,
+      "recipe": "outer",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 9,
+      "surplus": -9
+    },
+    {
+      "k": 12,
+      "recipe": "random",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 13,
+      "surplus": -13
+    },
+    {
+      "k": 12,
+      "recipe": "top_degree",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 13,
+      "surplus": -13
+    },
+    {
+      "k": 12,
+      "recipe": "outer",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 13,
+      "surplus": -13
+    },
+    {
+      "k": 16,
+      "recipe": "random",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 17,
+      "surplus": -17
+    },
+    {
+      "k": 16,
+      "recipe": "top_degree",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 17,
+      "surplus": -17
+    },
+    {
+      "k": 16,
+      "recipe": "outer",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 17,
+      "surplus": -17
+    },
+    {
+      "k": 24,
+      "recipe": "random",
+      "n_unsel": 3,
+      "need_for_frozen_plus1": 25,
+      "surplus": -22
+    },
+    {
+      "k": 24,
+      "recipe": "top_degree",
+      "n_unsel": 4,
+      "need_for_frozen_plus1": 25,
+      "surplus": -21
+    },
+    {
+      "k": 24,
+      "recipe": "outer",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 25,
+      "surplus": -25
+    },
+    {
+      "k": 32,
+      "recipe": "random",
+      "n_unsel": 4,
+      "need_for_frozen_plus1": 33,
+      "surplus": -29
+    },
+    {
+      "k": 32,
+      "recipe": "top_degree",
+      "n_unsel": 8,
+      "need_for_frozen_plus1": 33,
+      "surplus": -25
+    },
+    {
+      "k": 32,
+      "recipe": "outer",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 33,
+      "surplus": -33
+    },
+    {
+      "k": 2,
+      "recipe": "random_s0",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s1",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s2",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s3",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s4",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s5",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s6",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s7",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s8",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s9",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s10",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 2,
+      "recipe": "random_s11",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 3,
+      "surplus": -3
+    },
+    {
+      "k": 3,
+      "recipe": "random_s0",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s1",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s2",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s3",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s4",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s5",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s6",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s7",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s8",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s9",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s10",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 3,
+      "recipe": "random_s11",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 4,
+      "surplus": -4
+    },
+    {
+      "k": 4,
+      "recipe": "random_s0",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s1",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s2",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s3",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s4",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s5",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s6",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s7",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s8",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s9",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s10",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    },
+    {
+      "k": 4,
+      "recipe": "random_s11",
+      "n_unsel": 0,
+      "need_for_frozen_plus1": 5,
+      "surplus": -5
+    }
+  ],
+  "max_n_unsel": 8,
+  "any_surplus_ge0": false,
+  "best": {
+    "k": 2,
+    "recipe": "random",
+    "n_unsel": 0,
+    "need_for_frozen_plus1": 3,
+    "surplus": -3
+  },
+  "wall_s": 3.2821130752563477
+}

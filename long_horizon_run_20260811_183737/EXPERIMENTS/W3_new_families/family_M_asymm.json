@@ -1,0 +1,79 @@
+{
+  "schema": "w3_newfam_M_asymm_v1",
+  "rows": [
+    {
+      "status": "TIMEOUT",
+      "core": 82,
+      "free": 406,
+      "best_legal_size": 145,
+      "proved_max": null,
+      "rounds": 3,
+      "final_cuts": 32974,
+      "wall_s": 50.03067207336426,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 145,
+        "hash": "a9dc8a89c7ea636bd04438edc77d3f4c9e4e7061a229527a105d79913766af11"
+      },
+      "best_hash": "a9dc8a89c7ea636bd04438edc77d3f4c9e4e7061a229527a105d79913766af11",
+      "plan": "asymm_west_bl_twins"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 82,
+      "free": 406,
+      "best_legal_size": 144,
+      "proved_max": null,
+      "rounds": 3,
+      "final_cuts": 32974,
+      "wall_s": 50.05690574645996,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 144,
+        "hash": "b08b90a1198f4005191469e5ebc864a59a481b31ca6baf9671e914fa6a6b9f05"
+      },
+      "best_hash": "b08b90a1198f4005191469e5ebc864a59a481b31ca6baf9671e914fa6a6b9f05",
+      "plan": "asymm_east_bl_twins"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 82,
+      "free": 406,
+      "best_legal_size": 142,
+      "proved_max": null,
+      "rounds": 3,
+      "final_cuts": 32974,
+      "wall_s": 50.02789878845215,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 142,
+        "hash": "2c3fb2aa72ebeceb6de7db0900a6bec19f44a25c48cc681945db36c2b1a8c25f"
+      },
+      "best_hash": "2c3fb2aa72ebeceb6de7db0900a6bec19f44a25c48cc681945db36c2b1a8c25f",
+      "plan": "geom_west_bl_eastS0"
+    },
+    {
+      "status": "TIMEOUT",
+      "core": 82,
+      "free": 324,
+      "best_legal_size": 141,
+      "proved_max": null,
+      "rounds": 3,
+      "final_cuts": 14822,
+      "wall_s": 50.039039850234985,
+      "dual": {
+        "oracle": true,
+        "indep": true,
+        "size": 141,
+        "hash": "7ad5608152405bf8e6ffdb98af8991597f55b22847dd960205c0e92d0c815bb4"
+      },
+      "best_hash": "7ad5608152405bf8e6ffdb98af8991597f55b22847dd960205c0e92d0c815bb4",
+      "plan": "geom_north_bl_southS0"
+    }
+  ],
+  "best": 145,
+  "any_plus": false
+}

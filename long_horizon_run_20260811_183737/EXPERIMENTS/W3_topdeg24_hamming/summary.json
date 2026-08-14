@@ -1,0 +1,42 @@
+{
+  "n_rem": 24,
+  "n_add": 4,
+  "add": [
+    [
+      7,
+      47
+    ],
+    [
+      7,
+      52
+    ],
+    [
+      92,
+      47
+    ],
+    [
+      92,
+      52
+    ]
+  ],
+  "universe_hash": "e62c91a3e2ce7f6e2422cce99177a3e11e5f3338d73558d5f505fa2bbb305218",
+  "rows": [
+    {
+      "r": 1,
+      "status": "INFEASIBLE_SCOPED",
+      "size": 0
+    },
+    {
+      "r": 2,
+      "status": "INFEASIBLE_SCOPED",
+      "size": 0
+    },
+    {
+      "r": 3,
+      "status": "INFEASIBLE_SCOPED",
+      "size": 0
+    }
+  ],
+  "any_plus": false,
+  "wall_s": 0.39542603492736816
+}

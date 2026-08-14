@@ -1,0 +1,152 @@
+{
+  "schema": "w3_newfam_N_emptyrow_hamming_v1",
+  "rows": [
+    {
+      "U_id": "U_emptyrow_outer8_Add_adjRem_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 36,
+      "n_add": 400,
+      "universe_hash": "1259edf7e39b2d4b6ca524ae5987310c7d6eb40f15097f197fb26f7861190d5e",
+      "rounds": 134,
+      "final_cuts": 2686,
+      "best_illegal_V": 31,
+      "wall_s": 6.131207466125488
+    },
+    {
+      "U_id": "U_emptyrow_outer8_Add_adjRem_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 36,
+      "n_add": 400,
+      "universe_hash": "1259edf7e39b2d4b6ca524ae5987310c7d6eb40f15097f197fb26f7861190d5e",
+      "rounds": 101,
+      "final_cuts": 2650,
+      "best_illegal_V": 40,
+      "wall_s": 4.582052230834961
+    },
+    {
+      "U_id": "U_emptyrow_outer8_Add_adjRem_r4",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 4,
+      "n_rem": 36,
+      "n_add": 400,
+      "universe_hash": "1259edf7e39b2d4b6ca524ae5987310c7d6eb40f15097f197fb26f7861190d5e",
+      "rounds": 81,
+      "final_cuts": 2614,
+      "best_illegal_V": 58,
+      "wall_s": 3.715669870376587
+    },
+    {
+      "U_id": "U_emptyrow_inner6_Add_fullRem_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 164,
+      "n_add": 400,
+      "universe_hash": "1d5fcdd00afcb558b2153bfbf7bba1de72c1bf52532d8e89f0a0f0a4d924d254",
+      "rounds": 134,
+      "final_cuts": 7416,
+      "best_illegal_V": 34,
+      "wall_s": 12.335020780563354
+    },
+    {
+      "U_id": "U_emptyrow_inner6_Add_fullRem_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 164,
+      "n_add": 400,
+      "universe_hash": "1d5fcdd00afcb558b2153bfbf7bba1de72c1bf52532d8e89f0a0f0a4d924d254",
+      "rounds": 101,
+      "final_cuts": 7416,
+      "best_illegal_V": 41,
+      "wall_s": 9.38136100769043
+    },
+    {
+      "U_id": "U_emptyrow_inner6_Add_fullRem_r4",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 4,
+      "n_rem": 164,
+      "n_add": 400,
+      "universe_hash": "1d5fcdd00afcb558b2153bfbf7bba1de72c1bf52532d8e89f0a0f0a4d924d254",
+      "rounds": 81,
+      "final_cuts": 7308,
+      "best_illegal_V": 63,
+      "wall_s": 7.955233573913574
+    },
+    {
+      "U_id": "U_emptycol_outer8_Add_fullRem_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 164,
+      "n_add": 400,
+      "universe_hash": "94ebda5aa3cf0c560363d759a831adb6afc7c5243e7c74104eb40443c61609e7",
+      "rounds": 134,
+      "final_cuts": 5284,
+      "best_illegal_V": 25,
+      "wall_s": 10.68059754371643
+    },
+    {
+      "U_id": "U_emptycol_outer8_Add_fullRem_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 164,
+      "n_add": 400,
+      "universe_hash": "94ebda5aa3cf0c560363d759a831adb6afc7c5243e7c74104eb40443c61609e7",
+      "rounds": 101,
+      "final_cuts": 5293,
+      "best_illegal_V": 33,
+      "wall_s": 8.282095193862915
+    },
+    {
+      "U_id": "U_emptycol_outer8_Add_fullRem_r4",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 4,
+      "n_rem": 164,
+      "n_add": 400,
+      "universe_hash": "94ebda5aa3cf0c560363d759a831adb6afc7c5243e7c74104eb40443c61609e7",
+      "rounds": 81,
+      "final_cuts": 5264,
+      "best_illegal_V": 46,
+      "wall_s": 6.8784894943237305
+    },
+    {
+      "U_id": "U_emptyrow_outer4_tight_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 88,
+      "n_add": 250,
+      "universe_hash": "3ae09f521c8ccccda4bb5a590e54f6e9c87fe08848baed267c748e3264677515",
+      "rounds": 84,
+      "final_cuts": 3678,
+      "best_illegal_V": 29,
+      "wall_s": 4.429105043411255
+    },
+    {
+      "U_id": "U_emptyrow_outer4_tight_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 88,
+      "n_add": 250,
+      "universe_hash": "3ae09f521c8ccccda4bb5a590e54f6e9c87fe08848baed267c748e3264677515",
+      "rounds": 63,
+      "final_cuts": 3688,
+      "best_illegal_V": 54,
+      "wall_s": 3.4138834476470947
+    },
+    {
+      "U_id": "U_emptyrow_outer4_tight_r4",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 4,
+      "n_rem": 88,
+      "n_add": 250,
+      "universe_hash": "3ae09f521c8ccccda4bb5a590e54f6e9c87fe08848baed267c748e3264677515",
+      "rounds": 51,
+      "final_cuts": 3683,
+      "best_illegal_V": 67,
+      "wall_s": 2.7162790298461914
+    }
+  ],
+  "any_plus": false,
+  "n_infeas": 12,
+  "n_timeout": 0
+}

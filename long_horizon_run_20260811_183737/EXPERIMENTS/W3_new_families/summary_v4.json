@@ -1,0 +1,24 @@
+{
+  "schema": "w3_new_families_v4",
+  "phases": {
+    "Q": {
+      "best": null,
+      "any_plus": false,
+      "n_infeas": 9,
+      "n_timeout": 0
+    },
+    "P": {
+      "best": null,
+      "any_plus": false,
+      "n_infeas": 6,
+      "n_timeout": 0
+    },
+    "M": {
+      "best": 145,
+      "any_plus": false,
+      "n_infeas": null,
+      "n_timeout": null
+    }
+  },
+  "any_plus": false
+}

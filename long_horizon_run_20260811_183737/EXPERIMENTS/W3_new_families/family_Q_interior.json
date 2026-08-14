@@ -1,0 +1,116 @@
+{
+  "schema": "w3_newfam_Q_corner_interior_v1",
+  "rows": [
+    {
+      "U_id": "U_outerRem_interiorAdd_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 132,
+      "n_add": 400,
+      "universe_hash": "4ec3daf797f2acf07db0e861c041563b930d8767634bb98907d2533e02db15b8",
+      "rounds": 134,
+      "final_cuts": 9175,
+      "best_illegal_V": 49,
+      "wall_s": 11.741712808609009
+    },
+    {
+      "U_id": "U_outerRem_interiorAdd_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 132,
+      "n_add": 400,
+      "universe_hash": "4ec3daf797f2acf07db0e861c041563b930d8767634bb98907d2533e02db15b8",
+      "rounds": 101,
+      "final_cuts": 9108,
+      "best_illegal_V": 67,
+      "wall_s": 8.91887903213501
+    },
+    {
+      "U_id": "U_outerRem_interiorAdd_r4",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 4,
+      "n_rem": 132,
+      "n_add": 400,
+      "universe_hash": "4ec3daf797f2acf07db0e861c041563b930d8767634bb98907d2533e02db15b8",
+      "rounds": 81,
+      "final_cuts": 9063,
+      "best_illegal_V": 86,
+      "wall_s": 7.028409004211426
+    },
+    {
+      "U_id": "U_midRem_midinteriorAdd_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 24,
+      "n_add": 400,
+      "universe_hash": "c874db6fa99e8447ad1e3337df52ba12903ce48bc8f70ecb83a20c97a3238d82",
+      "rounds": 134,
+      "final_cuts": 1440,
+      "best_illegal_V": 22,
+      "wall_s": 5.516253471374512
+    },
+    {
+      "U_id": "U_midRem_midinteriorAdd_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 24,
+      "n_add": 400,
+      "universe_hash": "c874db6fa99e8447ad1e3337df52ba12903ce48bc8f70ecb83a20c97a3238d82",
+      "rounds": 101,
+      "final_cuts": 1443,
+      "best_illegal_V": 39,
+      "wall_s": 4.323054075241089
+    },
+    {
+      "U_id": "U_midRem_midinteriorAdd_r4",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 4,
+      "n_rem": 24,
+      "n_add": 400,
+      "universe_hash": "c874db6fa99e8447ad1e3337df52ba12903ce48bc8f70ecb83a20c97a3238d82",
+      "rounds": 81,
+      "final_cuts": 1439,
+      "best_illegal_V": 51,
+      "wall_s": 3.3318183422088623
+    },
+    {
+      "U_id": "U_knightAdd_nearRem_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 100,
+      "n_add": 237,
+      "universe_hash": "6d2dcef06e62527ebc955aff1efd898606d71264d6ecb06d9f6fe7525561e1fe",
+      "rounds": 80,
+      "final_cuts": 2815,
+      "best_illegal_V": 21,
+      "wall_s": 3.9852237701416016
+    },
+    {
+      "U_id": "U_knightAdd_nearRem_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 100,
+      "n_add": 237,
+      "universe_hash": "6d2dcef06e62527ebc955aff1efd898606d71264d6ecb06d9f6fe7525561e1fe",
+      "rounds": 60,
+      "final_cuts": 2816,
+      "best_illegal_V": 30,
+      "wall_s": 3.062321901321411
+    },
+    {
+      "U_id": "U_knightAdd_nearRem_r4",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 4,
+      "n_rem": 100,
+      "n_add": 237,
+      "universe_hash": "6d2dcef06e62527ebc955aff1efd898606d71264d6ecb06d9f6fe7525561e1fe",
+      "rounds": 48,
+      "final_cuts": 2817,
+      "best_illegal_V": 51,
+      "wall_s": 2.4383511543273926
+    }
+  ],
+  "any_plus": false,
+  "n_infeas": 9,
+  "n_timeout": 0
+}

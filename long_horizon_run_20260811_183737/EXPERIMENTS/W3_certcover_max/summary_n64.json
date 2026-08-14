@@ -1,0 +1,153 @@
+{
+  "schema": "w3_certcover_max_v1",
+  "n": 64,
+  "target": 113,
+  "exact_k": 1,
+  "n_easy": 2,
+  "capacity": [
+    {
+      "q": [
+        62,
+        2
+      ],
+      "cover": [
+        [
+          56,
+          2
+        ]
+      ],
+      "k": 1,
+      "core": 111,
+      "free": 2,
+      "cap": 113,
+      "q_in_free": true
+    },
+    {
+      "q": [
+        62,
+        61
+      ],
+      "cover": [
+        [
+          56,
+          61
+        ]
+      ],
+      "k": 1,
+      "core": 111,
+      "free": 2,
+      "cap": 113,
+      "q_in_free": true
+    }
+  ],
+  "n_cap_ge_target": 2,
+  "max_cap": 113,
+  "joint": [
+    {
+      "q1": [
+        62,
+        2
+      ],
+      "q2": [
+        62,
+        61
+      ],
+      "joint_k": 2,
+      "cover": [
+        [
+          56,
+          2
+        ],
+        [
+          56,
+          61
+        ]
+      ],
+      "core": 110,
+      "free": 4,
+      "cap": 114,
+      "both_in_free": true
+    }
+  ],
+  "solves": [
+    {
+      "status": "SCOPED_INFEAS_TARGET",
+      "core": 111,
+      "free": 2,
+      "cap": 113,
+      "best_legal_size": 111,
+      "proved_max": 112,
+      "rounds": 2,
+      "final_cuts": 2,
+      "wall_s": 0.05699944496154785,
+      "q": [
+        62,
+        2
+      ],
+      "cover": [
+        [
+          56,
+          2
+        ]
+      ],
+      "k": 1
+    },
+    {
+      "status": "SCOPED_INFEAS_TARGET",
+      "core": 111,
+      "free": 2,
+      "cap": 113,
+      "best_legal_size": 111,
+      "proved_max": 112,
+      "rounds": 2,
+      "final_cuts": 2,
+      "wall_s": 0.016072750091552734,
+      "q": [
+        62,
+        61
+      ],
+      "cover": [
+        [
+          56,
+          61
+        ]
+      ],
+      "k": 1
+    },
+    {
+      "status": "SCOPED_INFEAS_TARGET",
+      "core": 110,
+      "free": 4,
+      "cap": 114,
+      "best_legal_size": 110,
+      "proved_max": 112,
+      "rounds": 3,
+      "final_cuts": 4,
+      "wall_s": 0.033051252365112305,
+      "q1": [
+        62,
+        2
+      ],
+      "q2": [
+        62,
+        61
+      ],
+      "joint_k": 2,
+      "cover": [
+        [
+          56,
+          2
+        ],
+        [
+          56,
+          61
+        ]
+      ],
+      "both_in_free": true,
+      "kind": "joint"
+    }
+  ],
+  "any_plus": false,
+  "best": 111,
+  "wall_s": 0.19712495803833008
+}

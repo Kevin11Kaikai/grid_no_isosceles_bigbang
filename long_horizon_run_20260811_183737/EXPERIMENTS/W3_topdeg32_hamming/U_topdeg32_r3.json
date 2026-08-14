@@ -1,0 +1,58 @@
+{
+  "row": {
+    "r": 3,
+    "status": "INFEASIBLE_SCOPED",
+    "n_add": 8,
+    "universe_hash": "3108292e7013a18381091ac0d22e9dd49df3885f1f1bf2976a36406a62a35469",
+    "meta": {
+      "scope": {
+        "n": 100,
+        "r": 3,
+        "U_id": "U_topdeg32_r3",
+        "universe_hash": "3108292e7013a18381091ac0d22e9dd49df3885f1f1bf2976a36406a62a35469",
+        "halo": "none",
+        "symmetry_mode": "asymmetric",
+        "time_limit_s": 40.0,
+        "seed": 1
+      },
+      "git_commit": null,
+      "rounds": 3,
+      "final_cuts": 44,
+      "wall_time_s": 0.06756043434143066,
+      "num_workers": 4,
+      "round_log": [
+        {
+          "round": 1,
+          "solver_status": "OPTIMAL",
+          "selected_size": 165,
+          "V": 22,
+          "n_witness_cuts": 22,
+          "n_cuts_total": 0,
+          "t": 0.008000850677490234,
+          "cuts_added": 22
+        },
+        {
+          "round": 2,
+          "solver_status": "OPTIMAL",
+          "selected_size": 165,
+          "V": 22,
+          "n_witness_cuts": 22,
+          "n_cuts_total": 22,
+          "t": 0.044344186782836914,
+          "cuts_added": 22
+        },
+        {
+          "round": 3,
+          "solver_status": "INFEASIBLE",
+          "n_cuts": 44,
+          "t": 0.06756043434143066
+        }
+      ],
+      "claim_note": "INFEASIBLE under declared scope only; not a global upper bound",
+      "best_illegal_V": 22,
+      "time_to_best_illegal_s": 0.008000850677490234
+    },
+    "size": 0
+  },
+  "points": null
+}

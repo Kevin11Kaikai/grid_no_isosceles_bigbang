@@ -1,0 +1,30 @@
+{
+  "row": {
+    "q": [
+      3,
+      17
+    ],
+    "cover": [
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        61
+      ]
+    ],
+    "n_rem": 12,
+    "n_add": 13,
+    "n_fixed": 152,
+    "universe_hash": "f7523bbbb7f0f470860348d6843d905188c5f97ab0d2452190e963eaf763866b",
+    "r": 3,
+    "status": "ERROR",
+    "points_n": 0,
+    "meta": {}
+  },
+  "meta_full": {
+    "error": "Add intersects S0"
+  },
+  "points": null
+}

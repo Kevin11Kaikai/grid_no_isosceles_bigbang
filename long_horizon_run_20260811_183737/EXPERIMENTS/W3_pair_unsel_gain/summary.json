@@ -1,0 +1,274 @@
+{
+  "schema": "w3_pair_unsel_gain_v1",
+  "n_pairs": 205,
+  "n_unsel_ge3": 0,
+  "max_n_unsel": 1,
+  "max_gain": -1,
+  "best": {
+    "T": [
+      [
+        2,
+        43
+      ],
+      [
+        22,
+        43
+      ]
+    ],
+    "tag": "easy_cover",
+    "n_unsel": 1,
+    "unsel": [
+      [
+        0,
+        43
+      ]
+    ],
+    "gain": -1,
+    "cap_if_take_all_unsel": 163
+  },
+  "by_tag_max": {
+    "easy_cover": {
+      "n": 24,
+      "max_n_unsel": 1,
+      "n_ge3": 0
+    },
+    "top_cert": {
+      "n": 36,
+      "max_n_unsel": 0,
+      "n_ge3": 0
+    },
+    "top_degree_pair": {
+      "n": 66,
+      "max_n_unsel": 0,
+      "n_ge3": 0
+    },
+    "random": {
+      "n": 79,
+      "max_n_unsel": 0,
+      "n_ge3": 0
+    }
+  },
+  "top10": [
+    {
+      "T": [
+        [
+          2,
+          43
+        ],
+        [
+          22,
+          43
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          0,
+          43
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    },
+    {
+      "T": [
+        [
+          2,
+          56
+        ],
+        [
+          22,
+          56
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          0,
+          56
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    },
+    {
+      "T": [
+        [
+          2,
+          18
+        ],
+        [
+          3,
+          61
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          3,
+          17
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    },
+    {
+      "T": [
+        [
+          2,
+          81
+        ],
+        [
+          3,
+          38
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          3,
+          82
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    },
+    {
+      "T": [
+        [
+          3,
+          2
+        ],
+        [
+          7,
+          48
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          4,
+          1
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    },
+    {
+      "T": [
+        [
+          3,
+          2
+        ],
+        [
+          10,
+          95
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          4,
+          1
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    },
+    {
+      "T": [
+        [
+          3,
+          97
+        ],
+        [
+          7,
+          51
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          4,
+          98
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    },
+    {
+      "T": [
+        [
+          3,
+          97
+        ],
+        [
+          10,
+          4
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          4,
+          98
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    },
+    {
+      "T": [
+        [
+          22,
+          4
+        ],
+        [
+          91,
+          6
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          24,
+          18
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    },
+    {
+      "T": [
+        [
+          22,
+          4
+        ],
+        [
+          92,
+          15
+        ]
+      ],
+      "tag": "easy_cover",
+      "n_unsel": 1,
+      "unsel": [
+        [
+          24,
+          18
+        ]
+      ],
+      "gain": -1,
+      "cap_if_take_all_unsel": 163
+    }
+  ],
+  "wall_s": 10.765319347381592
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "w3_certcover_max_merged_v1",
+  "n64": {
+    "schema": "w3_certcover_max_v1",
+    "n": 64,
+    "target": 113,
+    "exact_k": 1,
+    "n_easy": 2,
+    "n_cap_ge_target": 2,
+    "max_cap": 113,
+    "any_plus": false,
+    "best": 111,
+    "wall_s": 0.19712495803833008
+  },
+  "n100": {
+    "schema": "w3_certcover_max_v1",
+    "n": 100,
+    "target": 165,
+    "exact_k": 2,
+    "n_easy": 16,
+    "n_cap_ge_target": 24,
+    "max_cap": 165,
+    "any_plus": false,
+    "best": 162,
+    "wall_s": 2.5490496158599854
+  },
+  "any_plus": false
+}

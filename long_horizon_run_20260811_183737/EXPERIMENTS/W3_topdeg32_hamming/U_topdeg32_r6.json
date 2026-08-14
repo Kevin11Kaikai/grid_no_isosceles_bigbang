@@ -1,0 +1,48 @@
+{
+  "row": {
+    "r": 6,
+    "status": "INFEASIBLE_SCOPED",
+    "n_add": 8,
+    "universe_hash": "3108292e7013a18381091ac0d22e9dd49df3885f1f1bf2976a36406a62a35469",
+    "meta": {
+      "scope": {
+        "n": 100,
+        "r": 6,
+        "U_id": "U_topdeg32_r6",
+        "universe_hash": "3108292e7013a18381091ac0d22e9dd49df3885f1f1bf2976a36406a62a35469",
+        "halo": "none",
+        "symmetry_mode": "asymmetric",
+        "time_limit_s": 40.0,
+        "seed": 1
+      },
+      "git_commit": null,
+      "rounds": 2,
+      "final_cuts": 35,
+      "wall_time_s": 0.03212261199951172,
+      "num_workers": 4,
+      "round_log": [
+        {
+          "round": 1,
+          "solver_status": "OPTIMAL",
+          "selected_size": 165,
+          "V": 35,
+          "n_witness_cuts": 35,
+          "n_cuts_total": 0,
+          "t": 0.010059595108032227,
+          "cuts_added": 35
+        },
+        {
+          "round": 2,
+          "solver_status": "INFEASIBLE",
+          "n_cuts": 35,
+          "t": 0.03212261199951172
+        }
+      ],
+      "claim_note": "INFEASIBLE under declared scope only; not a global upper bound",
+      "best_illegal_V": 35,
+      "time_to_best_illegal_s": 0.010059595108032227
+    },
+    "size": 0
+  },
+  "points": null
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "w3_newfam_P_n64_hamming_v1",
+  "rows": [
+    {
+      "U_id": "U64_emptyrow6_fullRem_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 112,
+      "n_add": 300,
+      "universe_hash": "9233d05de39f75bf784630e6e97f9ccdbaed4047be2160e2d4a55fef1a28fb0d",
+      "rounds": 101,
+      "final_cuts": 4446,
+      "best_illegal_V": 29,
+      "wall_s": 6.011456727981567
+    },
+    {
+      "U_id": "U64_emptyrow6_fullRem_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 112,
+      "n_add": 300,
+      "universe_hash": "9233d05de39f75bf784630e6e97f9ccdbaed4047be2160e2d4a55fef1a28fb0d",
+      "rounds": 76,
+      "final_cuts": 4360,
+      "best_illegal_V": 45,
+      "wall_s": 4.574665784835815
+    },
+    {
+      "U_id": "U64_interiorAdd_outerRem_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 92,
+      "n_add": 350,
+      "universe_hash": "7a00186303385baed5f84b0a216fbf3b52418debf5390f278fa0eeacb4e56cb9",
+      "rounds": 117,
+      "final_cuts": 6439,
+      "best_illegal_V": 30,
+      "wall_s": 7.411304473876953
+    },
+    {
+      "U_id": "U64_interiorAdd_outerRem_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 92,
+      "n_add": 350,
+      "universe_hash": "7a00186303385baed5f84b0a216fbf3b52418debf5390f278fa0eeacb4e56cb9",
+      "rounds": 88,
+      "final_cuts": 6342,
+      "best_illegal_V": 54,
+      "wall_s": 5.6578569412231445
+    },
+    {
+      "U_id": "U64_emptycol6_fullRem_r2",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 2,
+      "n_rem": 112,
+      "n_add": 300,
+      "universe_hash": "cdeeccd1ac267edabf80a9b68bfbd8dbc4565ef36631e54964d72574e53fc5ac",
+      "rounds": 102,
+      "final_cuts": 4430,
+      "best_illegal_V": 11,
+      "wall_s": 5.980316877365112
+    },
+    {
+      "U_id": "U64_emptycol6_fullRem_r3",
+      "status": "INFEASIBLE_SCOPED",
+      "r": 3,
+      "n_rem": 112,
+      "n_add": 300,
+      "universe_hash": "cdeeccd1ac267edabf80a9b68bfbd8dbc4565ef36631e54964d72574e53fc5ac",
+      "rounds": 77,
+      "final_cuts": 4429,
+      "best_illegal_V": 11,
+      "wall_s": 4.77432656288147
+    }
+  ],
+  "any_plus": false,
+  "n_infeas": 6,
+  "n_timeout": 0
+}

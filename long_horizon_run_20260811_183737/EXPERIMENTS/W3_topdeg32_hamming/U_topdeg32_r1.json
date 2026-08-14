@@ -1,0 +1,78 @@
+{
+  "row": {
+    "r": 1,
+    "status": "INFEASIBLE_SCOPED",
+    "n_add": 8,
+    "universe_hash": "3108292e7013a18381091ac0d22e9dd49df3885f1f1bf2976a36406a62a35469",
+    "meta": {
+      "scope": {
+        "n": 100,
+        "r": 1,
+        "U_id": "U_topdeg32_r1",
+        "universe_hash": "3108292e7013a18381091ac0d22e9dd49df3885f1f1bf2976a36406a62a35469",
+        "halo": "none",
+        "symmetry_mode": "asymmetric",
+        "time_limit_s": 40.0,
+        "seed": 1
+      },
+      "git_commit": null,
+      "rounds": 5,
+      "final_cuts": 44,
+      "wall_time_s": 0.1400008201599121,
+      "num_workers": 4,
+      "round_log": [
+        {
+          "round": 1,
+          "solver_status": "OPTIMAL",
+          "selected_size": 165,
+          "V": 11,
+          "n_witness_cuts": 11,
+          "n_cuts_total": 0,
+          "t": 0.018999338150024414,
+          "cuts_added": 11
+        },
+        {
+          "round": 2,
+          "solver_status": "OPTIMAL",
+          "selected_size": 165,
+          "V": 11,
+          "n_witness_cuts": 11,
+          "n_cuts_total": 11,
+          "t": 0.04999899864196777,
+          "cuts_added": 11
+        },
+        {
+          "round": 3,
+          "solver_status": "OPTIMAL",
+          "selected_size": 165,
+          "V": 11,
+          "n_witness_cuts": 11,
+          "n_cuts_total": 22,
+          "t": 0.08099889755249023,
+          "cuts_added": 11
+        },
+        {
+          "round": 4,
+          "solver_status": "OPTIMAL",
+          "selected_size": 165,
+          "V": 11,
+          "n_witness_cuts": 11,
+          "n_cuts_total": 33,
+          "t": 0.11099863052368164,
+          "cuts_added": 11
+        },
+        {
+          "round": 5,
+          "solver_status": "INFEASIBLE",
+          "n_cuts": 44,
+          "t": 0.1400008201599121
+        }
+      ],
+      "claim_note": "INFEASIBLE under declared scope only; not a global upper bound",
+      "best_illegal_V": 11,
+      "time_to_best_illegal_s": 0.018999338150024414
+    },
+    "size": 0
+  },
+  "points": null
+}

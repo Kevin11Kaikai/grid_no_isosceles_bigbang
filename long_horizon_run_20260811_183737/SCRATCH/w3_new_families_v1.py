@@ -71,6 +71,8 @@ def maximize_core(
     seed: int,
     target: int,
     blacklist: Optional[Set[Point]] = None,
+    keep_points: bool = False,
+    round_s: float = 30.0,
 ) -> dict:
     st = IncrementalIsoscelesFreeSet(n)
     for p in core:
@@ -117,7 +119,7 @@ def maximize_core(
                 model.Add(sum(free_in) <= len(free_in) - 1)
         solver = cp_model.CpSolver()
         rem = max(0.5, time_s - (time.time() - t0))
-        solver.parameters.max_time_in_seconds = min(30.0, rem)
+        solver.parameters.max_time_in_seconds = min(round_s, rem)
         solver.parameters.num_search_workers = workers
         solver.parameters.random_seed = seed + rounds
         code = solver.Solve(model)
@@ -157,10 +159,10 @@ def maximize_core(
         "final_cuts": len(cuts),
         "wall_s": time.time() - t0,
     }
-    if best_pts and (best_size > len(core) or best_size >= target):
+    if best_pts and (best_size > len(core) or best_size >= target or keep_points):
         out["dual"] = dual(best_pts, n)
         out["best_hash"] = out["dual"]["hash"]
-    if best_size >= target and out.get("dual", {}).get("oracle") and out.get("dual", {}).get("indep"):
+    if best_pts and (keep_points or (best_size >= target and out.get("dual", {}).get("oracle") and out.get("dual", {}).get("indep"))):
         out["points"] = [list(p) for p in best_pts]
     return out
 
