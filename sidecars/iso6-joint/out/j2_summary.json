@@ -1,0 +1,7 @@
+{
+  "named_J2": null,
+  "reason": "No one-parameter stencil on all of Z^2 besides \u00b190\u00b0 and 180\u00b0 (collinear 3-AP). Non-J1 leftovers are generic equal-length pairs. Naming the whole leftover class is RF1 minus Q4, i.e. the original problem. J2 is therefore NOT named. Record the census only.",
+  "fourfold_any_other": true,
+  "fourfold_any_ap3": false,
+  "greedy_any_other": true
+}

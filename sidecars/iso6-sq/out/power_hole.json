@@ -1,0 +1,102 @@
+{
+  "attempt": "Q_SQ = O(n^{3/2}) via G \u2265 c P and G \u2264 m n \u21d2 m = O(n)",
+  "note": "G \u2264 m n would actually give O(n), which Phase 0 falsifies. The measured G/P is the fraction of pair-completions that stay in-grid.",
+  "observation": [
+    {
+      "name": "peel_m6",
+      "G/P": 1.0526841448189763,
+      "G <= m*n": true,
+      "sq_free": true,
+      "m": 90,
+      "n": 348
+    },
+    {
+      "name": "peel_m8",
+      "G/P": 1.0251405571173013,
+      "G <= m*n": true,
+      "sq_free": true,
+      "m": 560,
+      "n": 2796
+    },
+    {
+      "name": "peel_m9",
+      "G/P": 0.8236574349811395,
+      "G <= m*n": true,
+      "sq_free": true,
+      "m": 1680,
+      "n": 6892
+    },
+    {
+      "name": "full_row_16",
+      "G/P": 1.0,
+      "G <= m*n": true,
+      "sq_free": true,
+      "m": 16,
+      "n": 16
+    },
+    {
+      "name": "full_row_32",
+      "G/P": 1.0,
+      "G <= m*n": true,
+      "sq_free": true,
+      "m": 32,
+      "n": 32
+    },
+    {
+      "name": "full_row_64",
+      "G/P": 1.0,
+      "G <= m*n": true,
+      "sq_free": true,
+      "m": 64,
+      "n": 64
+    },
+    {
+      "name": "random_16_40",
+      "G/P": 0.7794871794871795,
+      "G <= m*n": false,
+      "sq_free": false,
+      "m": 40,
+      "n": 16
+    },
+    {
+      "name": "random_32_80",
+      "G/P": 0.8243670886075949,
+      "G <= m*n": false,
+      "sq_free": false,
+      "m": 80,
+      "n": 32
+    },
+    {
+      "name": "random_24_60",
+      "G/P": 0.8437853107344633,
+      "G <= m*n": false,
+      "sq_free": false,
+      "m": 60,
+      "n": 24
+    },
+    {
+      "name": "diag_16",
+      "G/P": 0.9333333333333333,
+      "G <= m*n": true,
+      "sq_free": true,
+      "m": 16,
+      "n": 16
+    },
+    {
+      "name": "diag_32",
+      "G/P": 0.967741935483871,
+      "G <= m*n": true,
+      "sq_free": true,
+      "m": 32,
+      "n": 32
+    },
+    {
+      "name": "diag_64",
+      "G/P": 0.9841269841269841,
+      "G <= m*n": true,
+      "sq_free": true,
+      "m": 64,
+      "n": 64
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "n": 1,
+  "size": 1,
+  "size_over_n": 1.0,
+  "exact": true,
+  "seconds": 0.0004,
+  "nodes": 1,
+  "set": [
+    [
+      0,
+      0
+    ]
+  ]
+}

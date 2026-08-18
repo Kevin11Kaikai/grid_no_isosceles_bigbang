@@ -1,0 +1,202 @@
+[
+  {
+    "n": 7,
+    "|S_star|": 16,
+    "|S_rest|": 0,
+    "r": 8,
+    "tmax": 1,
+    "mu": 2,
+    "rho": 4,
+    "|Dh|": 0,
+    "|Ah|": 0,
+    "thresh": 4.3,
+    "max_t": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "max_k": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "max_dia_rest": 0,
+    "n_dia_rest": 0,
+    "unused_dia": 5
+  },
+  {
+    "n": 8,
+    "|S_star|": 8,
+    "|S_rest|": 8,
+    "r": 4,
+    "tmax": 1,
+    "mu": 1,
+    "rho": 3,
+    "|Dh|": 0,
+    "|Ah|": 0,
+    "thresh": 4.76,
+    "max_t": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "max_k": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "max_dia_rest": 2,
+    "n_dia_rest": 6,
+    "unused_dia": 11
+  },
+  {
+    "n": 16,
+    "|S_star|": 32,
+    "|S_rest|": 0,
+    "r": 16,
+    "tmax": 1,
+    "mu": 2,
+    "rho": 4,
+    "|Dh|": 0,
+    "|Ah|": 0,
+    "thresh": 8.0,
+    "max_t": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "max_k": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "max_dia_rest": 0,
+    "n_dia_rest": 0,
+    "unused_dia": 15
+  },
+  {
+    "n": 32,
+    "|S_star|": 42,
+    "|S_rest|": 22,
+    "r": 21,
+    "tmax": 1,
+    "mu": 3,
+    "rho": 4,
+    "|Dh|": 0,
+    "|Ah|": 0,
+    "thresh": 13.45,
+    "max_t": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "max_k": [
+      3,
+      3,
+      3,
+      2,
+      2
+    ],
+    "max_dia_rest": 2,
+    "n_dia_rest": 21,
+    "unused_dia": 42
+  },
+  {
+    "n": 81,
+    "|S_star|": 164,
+    "|S_rest|": 9,
+    "r": 78,
+    "tmax": 2,
+    "mu": 3,
+    "rho": 4,
+    "|Dh|": 0,
+    "|Ah|": 0,
+    "thresh": 27.0,
+    "max_t": [
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    "max_k": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "max_dia_rest": 2,
+    "n_dia_rest": 8,
+    "unused_dia": 83
+  },
+  {
+    "n": 128,
+    "|S_star|": 252,
+    "|S_rest|": 36,
+    "r": 109,
+    "tmax": 2,
+    "mu": 4,
+    "rho": 5,
+    "|Dh|": 0,
+    "|Ah|": 0,
+    "thresh": 38.05,
+    "max_t": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "max_k": [
+      4,
+      4,
+      3,
+      3,
+      3
+    ],
+    "max_dia_rest": 2,
+    "n_dia_rest": 34,
+    "unused_dia": 146
+  },
+  {
+    "n": 243,
+    "|S_star|": 508,
+    "|S_rest|": 43,
+    "r": 235,
+    "tmax": 2,
+    "mu": 4,
+    "rho": 5,
+    "|Dh|": 0,
+    "|Ah|": 0,
+    "thresh": 61.55,
+    "max_t": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "max_k": [
+      4,
+      4,
+      3,
+      3,
+      3
+    ],
+    "max_dia_rest": 2,
+    "n_dia_rest": 42,
+    "unused_dia": 250
+  }
+]

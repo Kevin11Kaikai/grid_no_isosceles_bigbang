@@ -1,0 +1,205 @@
+{
+  "zi": {
+    "n": 8,
+    "checked": 249984,
+    "mismatches": 0,
+    "ok": true
+  },
+  "one_row": {
+    "ok": true,
+    "rows": [
+      {
+        "n": 8,
+        "kind": "row",
+        "sq_free": true,
+        "|S|": 8
+      },
+      {
+        "n": 8,
+        "kind": "col",
+        "sq_free": true,
+        "|S|": 8
+      },
+      {
+        "n": 16,
+        "kind": "row",
+        "sq_free": true,
+        "|S|": 16
+      },
+      {
+        "n": 16,
+        "kind": "col",
+        "sq_free": true,
+        "|S|": 16
+      },
+      {
+        "n": 32,
+        "kind": "row",
+        "sq_free": true,
+        "|S|": 32
+      },
+      {
+        "n": 32,
+        "kind": "col",
+        "sq_free": true,
+        "|S|": 32
+      },
+      {
+        "n": 48,
+        "kind": "row",
+        "sq_free": true,
+        "|S|": 48
+      },
+      {
+        "n": 48,
+        "kind": "col",
+        "sq_free": true,
+        "|S|": 48
+      }
+    ]
+  },
+  "three_rows": {
+    "n": 16,
+    "triples_tested": 1680,
+    "n_sq_free": 0,
+    "ok": true,
+    "sample_bad": {
+      "rows": [
+        0,
+        1,
+        2
+      ],
+      "sq_free": false,
+      "|S|": 48
+    },
+    "sample_free": null
+  },
+  "witness_close": {
+    "b": [
+      1,
+      0
+    ],
+    "a": [
+      3,
+      1
+    ],
+    "c": [
+      0,
+      2
+    ],
+    "fits": true,
+    "j1": true
+  },
+  "witness_far": {
+    "fits": false
+  },
+  "two_rows": {
+    "ok": true,
+    "rows": [
+      {
+        "n": 4,
+        "ok": true,
+        "witness": {
+          "n": 4,
+          "rows": [
+            0,
+            1
+          ],
+          "pts": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "j1": true
+        }
+      },
+      {
+        "n": 8,
+        "ok": true,
+        "witness": {
+          "n": 8,
+          "rows": [
+            0,
+            1
+          ],
+          "pts": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "j1": true
+        }
+      },
+      {
+        "n": 16,
+        "ok": true,
+        "witness": {
+          "n": 16,
+          "rows": [
+            0,
+            1
+          ],
+          "pts": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "j1": true
+        }
+      },
+      {
+        "n": 24,
+        "ok": true,
+        "witness": {
+          "n": 24,
+          "rows": [
+            0,
+            1
+          ],
+          "pts": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "j1": true
+        }
+      }
+    ]
+  }
+}

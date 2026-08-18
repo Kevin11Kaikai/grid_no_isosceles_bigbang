@@ -1,0 +1,292 @@
+{
+  "enum": [
+    {
+      "n": 2,
+      "F_2": 2,
+      "2n-2": 2,
+      "match_2n-2": true,
+      "best": {
+        "d": 1,
+        "A": [],
+        "B": [
+          0,
+          1
+        ],
+        "|S|": 2
+      },
+      "n_combo_ok": 11,
+      "n_is_sq_free": 11,
+      "mismatch": false
+    },
+    {
+      "n": 3,
+      "F_2": 4,
+      "2n-2": 4,
+      "match_2n-2": true,
+      "best": {
+        "d": 1,
+        "A": [
+          0,
+          2
+        ],
+        "B": [
+          0,
+          2
+        ],
+        "|S|": 4
+      },
+      "n_combo_ok": 77,
+      "n_is_sq_free": 77,
+      "mismatch": false
+    },
+    {
+      "n": 4,
+      "F_2": 6,
+      "2n-2": 6,
+      "match_2n-2": true,
+      "best": {
+        "d": 3,
+        "A": [
+          1,
+          2
+        ],
+        "B": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "|S|": 6
+      },
+      "n_combo_ok": 395,
+      "n_is_sq_free": 395,
+      "mismatch": false
+    },
+    {
+      "n": 5,
+      "F_2": 8,
+      "2n-2": 8,
+      "match_2n-2": true,
+      "best": {
+        "d": 4,
+        "A": [
+          1,
+          2,
+          3
+        ],
+        "B": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "|S|": 8
+      },
+      "n_combo_ok": 1842,
+      "n_is_sq_free": 1842,
+      "mismatch": false
+    },
+    {
+      "n": 6,
+      "F_2": 10,
+      "2n-2": 10,
+      "match_2n-2": true,
+      "best": {
+        "d": 5,
+        "A": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "B": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "|S|": 10
+      },
+      "n_combo_ok": 8037,
+      "n_is_sq_free": 8037,
+      "mismatch": false
+    },
+    {
+      "n": 7,
+      "F_2": 12,
+      "2n-2": 12,
+      "match_2n-2": true,
+      "best": {
+        "d": 6,
+        "A": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "B": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "|S|": 12
+      },
+      "n_combo_ok": 34129,
+      "n_is_sq_free": 34129,
+      "mismatch": false
+    },
+    {
+      "n": 8,
+      "F_2": 14,
+      "2n-2": 14,
+      "match_2n-2": true,
+      "best": {
+        "d": 7,
+        "A": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "B": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "|S|": 14
+      },
+      "n_combo_ok": 141189,
+      "n_is_sq_free": 141189,
+      "mismatch": false
+    }
+  ],
+  "equality": [
+    {
+      "n": 3,
+      "which": "left",
+      "|S|": 4,
+      "2n-2": 4,
+      "sq_free": true
+    },
+    {
+      "n": 3,
+      "which": "right",
+      "|S|": 4,
+      "2n-2": 4,
+      "sq_free": true
+    },
+    {
+      "n": 4,
+      "which": "left",
+      "|S|": 6,
+      "2n-2": 6,
+      "sq_free": true
+    },
+    {
+      "n": 4,
+      "which": "right",
+      "|S|": 6,
+      "2n-2": 6,
+      "sq_free": true
+    },
+    {
+      "n": 5,
+      "which": "left",
+      "|S|": 8,
+      "2n-2": 8,
+      "sq_free": true
+    },
+    {
+      "n": 5,
+      "which": "right",
+      "|S|": 8,
+      "2n-2": 8,
+      "sq_free": true
+    },
+    {
+      "n": 8,
+      "which": "left",
+      "|S|": 14,
+      "2n-2": 14,
+      "sq_free": true
+    },
+    {
+      "n": 8,
+      "which": "right",
+      "|S|": 14,
+      "2n-2": 14,
+      "sq_free": true
+    },
+    {
+      "n": 16,
+      "which": "left",
+      "|S|": 30,
+      "2n-2": 30,
+      "sq_free": true
+    },
+    {
+      "n": 16,
+      "which": "right",
+      "|S|": 30,
+      "2n-2": 30,
+      "sq_free": true
+    },
+    {
+      "n": 32,
+      "which": "left",
+      "|S|": 62,
+      "2n-2": 62,
+      "sq_free": true
+    },
+    {
+      "n": 32,
+      "which": "right",
+      "|S|": 62,
+      "2n-2": 62,
+      "sq_free": true
+    },
+    {
+      "n": 48,
+      "which": "left",
+      "|S|": 94,
+      "2n-2": 94,
+      "sq_free": true
+    },
+    {
+      "n": 48,
+      "which": "right",
+      "|S|": 94,
+      "2n-2": 94,
+      "sq_free": true
+    },
+    {
+      "n": 64,
+      "which": "left",
+      "|S|": 126,
+      "2n-2": 126,
+      "sq_free": true
+    },
+    {
+      "n": 64,
+      "which": "right",
+      "|S|": 126,
+      "2n-2": 126,
+      "sq_free": true
+    }
+  ]
+}

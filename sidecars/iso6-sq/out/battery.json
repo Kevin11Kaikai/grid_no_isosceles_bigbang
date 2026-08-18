@@ -1,0 +1,1013 @@
+[
+  {
+    "family": "graph_linear",
+    "n": 32,
+    "|S|": 32,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0,
+    "a": 1,
+    "b": 0
+  },
+  {
+    "family": "graph_linear",
+    "n": 32,
+    "|S|": 32,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0,
+    "a": 2,
+    "b": 3
+  },
+  {
+    "family": "graph_quadratic",
+    "n": 32,
+    "|S|": 32,
+    "|S|/n": 1.0,
+    "sq_free": false,
+    "n_corners": 15,
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "family": "graph_quadratic+repair",
+    "n": 32,
+    "|S|": 25,
+    "|S|/n": 0.78125,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 32,
+    "n_corners_before": 15,
+    "deleted": 7,
+    "leftover_corners": 0
+  },
+  {
+    "family": "graph_cubic",
+    "n": 32,
+    "|S|": 32,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "graph_parabola_embed",
+    "n": 32,
+    "|S|": 6,
+    "|S|/n": 0.1875,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "graph_linear",
+    "n": 64,
+    "|S|": 64,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0,
+    "a": 1,
+    "b": 0
+  },
+  {
+    "family": "graph_linear",
+    "n": 64,
+    "|S|": 64,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0,
+    "a": 2,
+    "b": 3
+  },
+  {
+    "family": "graph_quadratic",
+    "n": 64,
+    "|S|": 64,
+    "|S|/n": 1.0,
+    "sq_free": false,
+    "n_corners": 23,
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "family": "graph_quadratic+repair",
+    "n": 64,
+    "|S|": 52,
+    "|S|/n": 0.8125,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 64,
+    "n_corners_before": 23,
+    "deleted": 12,
+    "leftover_corners": 0
+  },
+  {
+    "family": "graph_cubic",
+    "n": 64,
+    "|S|": 64,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "graph_parabola_embed",
+    "n": 64,
+    "|S|": 8,
+    "|S|/n": 0.125,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "graph_linear",
+    "n": 128,
+    "|S|": 128,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0,
+    "a": 1,
+    "b": 0
+  },
+  {
+    "family": "graph_linear",
+    "n": 128,
+    "|S|": 128,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0,
+    "a": 2,
+    "b": 3
+  },
+  {
+    "family": "graph_quadratic",
+    "n": 128,
+    "|S|": 128,
+    "|S|/n": 1.0,
+    "sq_free": false,
+    "n_corners": 45,
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "family": "graph_quadratic+repair",
+    "n": 128,
+    "|S|": 103,
+    "|S|/n": 0.8046875,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 128,
+    "n_corners_before": 45,
+    "deleted": 25,
+    "leftover_corners": 0
+  },
+  {
+    "family": "graph_cubic",
+    "n": 128,
+    "|S|": 128,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "graph_parabola_embed",
+    "n": 128,
+    "|S|": 12,
+    "|S|/n": 0.09375,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "graph_linear",
+    "n": 256,
+    "|S|": 256,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0,
+    "a": 1,
+    "b": 0
+  },
+  {
+    "family": "graph_linear",
+    "n": 256,
+    "|S|": 256,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0,
+    "a": 2,
+    "b": 3
+  },
+  {
+    "family": "graph_quadratic",
+    "n": 256,
+    "|S|": 256,
+    "|S|/n": 1.0,
+    "sq_free": false,
+    "n_corners": 101,
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "family": "graph_quadratic+repair",
+    "n": 256,
+    "|S|": 200,
+    "|S|/n": 0.78125,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 256,
+    "n_corners_before": 101,
+    "deleted": 56,
+    "leftover_corners": 0
+  },
+  {
+    "family": "graph_cubic",
+    "n": 256,
+    "|S|": 256,
+    "|S|/n": 1.0,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "graph_parabola_embed",
+    "n": 256,
+    "|S|": 16,
+    "|S|/n": 0.0625,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_2rc",
+    "n": 16,
+    "|S|": 32,
+    "|S|/n": 2.0,
+    "sq_free": false,
+    "n_corners": 38
+  },
+  {
+    "family": "greedy_2rc_sq",
+    "n": 16,
+    "|S|": 24,
+    "|S|/n": 1.5,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_sq_free",
+    "n": 16,
+    "|S|": 29,
+    "|S|/n": 1.8125,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_2rc",
+    "n": 24,
+    "|S|": 48,
+    "|S|/n": 2.0,
+    "sq_free": false,
+    "n_corners": 70
+  },
+  {
+    "family": "greedy_2rc_sq",
+    "n": 24,
+    "|S|": 36,
+    "|S|/n": 1.5,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_sq_free",
+    "n": 24,
+    "|S|": 48,
+    "|S|/n": 2.0,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_2rc",
+    "n": 32,
+    "|S|": 64,
+    "|S|/n": 2.0,
+    "sq_free": false,
+    "n_corners": 111
+  },
+  {
+    "family": "greedy_2rc_sq",
+    "n": 32,
+    "|S|": 49,
+    "|S|/n": 1.53125,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_sq_free",
+    "n": 32,
+    "|S|": 69,
+    "|S|/n": 2.15625,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_2rc",
+    "n": 48,
+    "|S|": 96,
+    "|S|/n": 2.0,
+    "sq_free": false,
+    "n_corners": 157
+  },
+  {
+    "family": "greedy_2rc_sq",
+    "n": 48,
+    "|S|": 80,
+    "|S|/n": 1.6666666666666667,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_sq_free",
+    "n": 48,
+    "|S|": 105,
+    "|S|/n": 2.1875,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_2rc",
+    "n": 64,
+    "|S|": 128,
+    "|S|/n": 2.0,
+    "sq_free": false,
+    "n_corners": 212
+  },
+  {
+    "family": "greedy_2rc_sq",
+    "n": 64,
+    "|S|": 105,
+    "|S|/n": 1.640625,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "greedy_sq_free",
+    "n": 64,
+    "|S|": 146,
+    "|S|/n": 2.28125,
+    "sq_free": true,
+    "n_corners": 0
+  },
+  {
+    "family": "sidon_x_sidon",
+    "n": 32,
+    "|S|": 49,
+    "|S|/n": 1.53125,
+    "sq_free": false,
+    "n_corners": 84,
+    "|A|": 7,
+    "|B|": 7
+  },
+  {
+    "family": "sidon_x_sidon+repair",
+    "n": 32,
+    "|S|": 42,
+    "|S|/n": 1.3125,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 49,
+    "n_corners_before": 84,
+    "deleted": 7,
+    "leftover_corners": 0
+  },
+  {
+    "family": "squares_x_squares",
+    "n": 32,
+    "|S|": 36,
+    "|S|/n": 1.125,
+    "sq_free": false,
+    "n_corners": 84,
+    "|A|": 6,
+    "|B|": 6
+  },
+  {
+    "family": "squares_x_squares+repair",
+    "n": 32,
+    "|S|": 24,
+    "|S|/n": 0.75,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 36,
+    "n_corners_before": 84,
+    "deleted": 12,
+    "leftover_corners": 0
+  },
+  {
+    "family": "cubes_x_cubes",
+    "n": 32,
+    "|S|": 16,
+    "|S|/n": 0.5,
+    "sq_free": false,
+    "n_corners": 24,
+    "|A|": 4,
+    "|B|": 4
+  },
+  {
+    "family": "cubes_x_cubes+repair",
+    "n": 32,
+    "|S|": 12,
+    "|S|/n": 0.375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 16,
+    "n_corners_before": 24,
+    "deleted": 4,
+    "leftover_corners": 0
+  },
+  {
+    "family": "r3_x_r3",
+    "n": 32,
+    "|S|": 100,
+    "|S|/n": 3.125,
+    "sq_free": false,
+    "n_corners": 568,
+    "|A|": 10,
+    "|B|": 10
+  },
+  {
+    "family": "r3_x_r3+repair",
+    "n": 32,
+    "|S|": 44,
+    "|S|/n": 1.375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 100,
+    "n_corners_before": 568,
+    "deleted": 56,
+    "leftover_corners": 0
+  },
+  {
+    "family": "sidon_x_sidon",
+    "n": 64,
+    "|S|": 64,
+    "|S|/n": 1.0,
+    "sq_free": false,
+    "n_corners": 112,
+    "|A|": 8,
+    "|B|": 8
+  },
+  {
+    "family": "sidon_x_sidon+repair",
+    "n": 64,
+    "|S|": 56,
+    "|S|/n": 0.875,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 64,
+    "n_corners_before": 112,
+    "deleted": 8,
+    "leftover_corners": 0
+  },
+  {
+    "family": "squares_x_squares",
+    "n": 64,
+    "|S|": 64,
+    "|S|/n": 1.0,
+    "sq_free": false,
+    "n_corners": 162,
+    "|A|": 8,
+    "|B|": 8
+  },
+  {
+    "family": "squares_x_squares+repair",
+    "n": 64,
+    "|S|": 47,
+    "|S|/n": 0.734375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 64,
+    "n_corners_before": 162,
+    "deleted": 17,
+    "leftover_corners": 0
+  },
+  {
+    "family": "cubes_x_cubes",
+    "n": 64,
+    "|S|": 16,
+    "|S|/n": 0.25,
+    "sq_free": false,
+    "n_corners": 24,
+    "|A|": 4,
+    "|B|": 4
+  },
+  {
+    "family": "cubes_x_cubes+repair",
+    "n": 64,
+    "|S|": 12,
+    "|S|/n": 0.1875,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 16,
+    "n_corners_before": 24,
+    "deleted": 4,
+    "leftover_corners": 0
+  },
+  {
+    "family": "r3_x_r3",
+    "n": 64,
+    "|S|": 256,
+    "|S|/n": 4.0,
+    "sq_free": false,
+    "n_corners": 2876,
+    "|A|": 16,
+    "|B|": 16
+  },
+  {
+    "family": "r3_x_r3+repair",
+    "n": 64,
+    "|S|": 176,
+    "|S|/n": 2.75,
+    "sq_free": false,
+    "n_corners": 449,
+    "|S|_before": 256,
+    "n_corners_before": 2876,
+    "deleted": 80,
+    "leftover_corners": 449
+  },
+  {
+    "family": "sidon_x_sidon",
+    "n": 128,
+    "|S|": 144,
+    "|S|/n": 1.125,
+    "sq_free": false,
+    "n_corners": 264,
+    "|A|": 12,
+    "|B|": 12
+  },
+  {
+    "family": "sidon_x_sidon+repair",
+    "n": 128,
+    "|S|": 132,
+    "|S|/n": 1.03125,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 144,
+    "n_corners_before": 264,
+    "deleted": 12,
+    "leftover_corners": 0
+  },
+  {
+    "family": "squares_x_squares",
+    "n": 128,
+    "|S|": 144,
+    "|S|/n": 1.125,
+    "sq_free": false,
+    "n_corners": 448,
+    "|A|": 12,
+    "|B|": 12
+  },
+  {
+    "family": "squares_x_squares+repair",
+    "n": 128,
+    "|S|": 94,
+    "|S|/n": 0.734375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 144,
+    "n_corners_before": 448,
+    "deleted": 50,
+    "leftover_corners": 0
+  },
+  {
+    "family": "cubes_x_cubes",
+    "n": 128,
+    "|S|": 36,
+    "|S|/n": 0.28125,
+    "sq_free": false,
+    "n_corners": 60,
+    "|A|": 6,
+    "|B|": 6
+  },
+  {
+    "family": "cubes_x_cubes+repair",
+    "n": 128,
+    "|S|": 30,
+    "|S|/n": 0.234375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 36,
+    "n_corners_before": 60,
+    "deleted": 6,
+    "leftover_corners": 0
+  },
+  {
+    "family": "r3_x_r3",
+    "n": 128,
+    "|S|": 441,
+    "|S|/n": 3.4453125,
+    "sq_free": false,
+    "n_corners": 3932,
+    "|A|": 21,
+    "|B|": 21
+  },
+  {
+    "family": "r3_x_r3+repair",
+    "n": 128,
+    "|S|": 361,
+    "|S|/n": 2.8203125,
+    "sq_free": false,
+    "n_corners": 1190,
+    "|S|_before": 441,
+    "n_corners_before": 3932,
+    "deleted": 80,
+    "leftover_corners": 1190
+  },
+  {
+    "family": "sidon_x_sidon",
+    "n": 256,
+    "|S|": 256,
+    "|S|/n": 1.0,
+    "sq_free": false,
+    "n_corners": 480,
+    "|A|": 16,
+    "|B|": 16
+  },
+  {
+    "family": "sidon_x_sidon+repair",
+    "n": 256,
+    "|S|": 240,
+    "|S|/n": 0.9375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 256,
+    "n_corners_before": 480,
+    "deleted": 16,
+    "leftover_corners": 0
+  },
+  {
+    "family": "squares_x_squares",
+    "n": 256,
+    "|S|": 256,
+    "|S|/n": 1.0,
+    "sq_free": false,
+    "n_corners": 932,
+    "|A|": 16,
+    "|B|": 16
+  },
+  {
+    "family": "squares_x_squares+repair",
+    "n": 256,
+    "|S|": 176,
+    "|S|/n": 0.6875,
+    "sq_free": false,
+    "n_corners": 8,
+    "|S|_before": 256,
+    "n_corners_before": 932,
+    "deleted": 80,
+    "leftover_corners": 8
+  },
+  {
+    "family": "cubes_x_cubes",
+    "n": 256,
+    "|S|": 49,
+    "|S|/n": 0.19140625,
+    "sq_free": false,
+    "n_corners": 84,
+    "|A|": 7,
+    "|B|": 7
+  },
+  {
+    "family": "cubes_x_cubes+repair",
+    "n": 256,
+    "|S|": 42,
+    "|S|/n": 0.1640625,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 49,
+    "n_corners_before": 84,
+    "deleted": 7,
+    "leftover_corners": 0
+  },
+  {
+    "family": "r3_x_r3",
+    "n": 256,
+    "|S|": 1296,
+    "|S|/n": 5.0625,
+    "sq_free": false,
+    "n_corners": 20724,
+    "|A|": 36,
+    "|B|": 36
+  },
+  {
+    "family": "r3_x_r3+repair",
+    "n": 256,
+    "|S|": 1216,
+    "|S|/n": 4.75,
+    "sq_free": false,
+    "n_corners": 14488,
+    "|S|_before": 1296,
+    "n_corners_before": 20724,
+    "deleted": 80,
+    "leftover_corners": 14488
+  },
+  {
+    "family": "classical_corner_free",
+    "n": 27,
+    "|S|": 216,
+    "|S|/n": 8.0,
+    "sq_free": false,
+    "n_corners": 5610,
+    "|B|": 16,
+    "B_3ap": true
+  },
+  {
+    "family": "classical_corner_free+repair",
+    "n": 27,
+    "|S|": 136,
+    "|S|/n": 5.037037037037037,
+    "sq_free": false,
+    "n_corners": 791,
+    "|S|_before": 216,
+    "n_corners_before": 5610,
+    "deleted": 80,
+    "leftover_corners": 791
+  },
+  {
+    "family": "full_rows_3ap",
+    "n": 27,
+    "|S|": 216,
+    "|S|/n": 8.0,
+    "sq_free": false,
+    "n_corners": 8344,
+    "|B|": 8
+  },
+  {
+    "family": "full_rows_3ap+repair",
+    "n": 27,
+    "|S|": 136,
+    "|S|/n": 5.037037037037037,
+    "sq_free": false,
+    "n_corners": 1427,
+    "|S|_before": 216,
+    "n_corners_before": 8344,
+    "deleted": 80,
+    "leftover_corners": 1427
+  },
+  {
+    "family": "classical_corner_free",
+    "n": 81,
+    "|S|": 1296,
+    "|S|/n": 16.0,
+    "sq_free": false,
+    "n_corners": 137850,
+    "|B|": 32,
+    "B_3ap": true
+  },
+  {
+    "family": "classical_corner_free+repair",
+    "n": 81,
+    "|S|": 1216,
+    "|S|/n": 15.012345679012345,
+    "sq_free": false,
+    "n_corners": 102856,
+    "|S|_before": 1296,
+    "n_corners_before": 137850,
+    "deleted": 80,
+    "leftover_corners": 102856
+  },
+  {
+    "family": "full_rows_3ap",
+    "n": 81,
+    "|S|": 1296,
+    "|S|/n": 16.0,
+    "sq_free": false,
+    "n_corners": 203856,
+    "|B|": 16
+  },
+  {
+    "family": "full_rows_3ap+repair",
+    "n": 81,
+    "|S|": 1216,
+    "|S|/n": 15.012345679012345,
+    "sq_free": false,
+    "n_corners": 157509,
+    "|S|_before": 1296,
+    "n_corners_before": 203856,
+    "deleted": 80,
+    "leftover_corners": 157509
+  },
+  {
+    "family": "classical_corner_free",
+    "n": 162,
+    "|S|": 2912,
+    "|S|/n": 17.97530864197531,
+    "sq_free": false,
+    "n_corners": 394383,
+    "|B|": 48,
+    "B_3ap": true
+  },
+  {
+    "family": "classical_corner_free+repair",
+    "n": 162,
+    "|S|": 2832,
+    "|S|/n": 17.48148148148148,
+    "sq_free": false,
+    "n_corners": 352669,
+    "|S|_before": 2912,
+    "n_corners_before": 394383,
+    "deleted": 80,
+    "leftover_corners": 352669
+  },
+  {
+    "family": "full_rows_3ap",
+    "n": 162,
+    "|S|": 5184,
+    "|S|/n": 32.0,
+    "sq_free": false,
+    "n_corners": null,
+    "n_corners_note": "skipped_count_|S|>5000",
+    "|B|": 32
+  },
+  {
+    "family": "full_rows_3ap+repair_hit",
+    "n": 162,
+    "|S|": 5064,
+    "|S|/n": 31.25925925925926,
+    "sq_free": false,
+    "n_corners": null,
+    "n_corners_note": "skipped_count_|S|>5000",
+    "|S|_before": 5184,
+    "n_corners_before": null,
+    "deleted": 120,
+    "leftover_corners": 2162032
+  },
+  {
+    "family": "hyperbola",
+    "n": 32,
+    "|S|": 30,
+    "|S|/n": 0.9375,
+    "sq_free": false,
+    "n_corners": 16,
+    "p": 31,
+    "k": 1
+  },
+  {
+    "family": "hyperbola+repair",
+    "n": 32,
+    "|S|": 22,
+    "|S|/n": 0.6875,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 30,
+    "n_corners_before": 16,
+    "deleted": 8,
+    "leftover_corners": 0
+  },
+  {
+    "family": "quad_res_graph",
+    "n": 32,
+    "|S|": 31,
+    "|S|/n": 0.96875,
+    "sq_free": false,
+    "n_corners": 6,
+    "p": 31
+  },
+  {
+    "family": "quad_res_graph+repair",
+    "n": 32,
+    "|S|": 27,
+    "|S|/n": 0.84375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 31,
+    "n_corners_before": 6,
+    "deleted": 4,
+    "leftover_corners": 0
+  },
+  {
+    "family": "hyperbola",
+    "n": 64,
+    "|S|": 60,
+    "|S|/n": 0.9375,
+    "sq_free": false,
+    "n_corners": 24,
+    "p": 61,
+    "k": 1
+  },
+  {
+    "family": "hyperbola+repair",
+    "n": 64,
+    "|S|": 48,
+    "|S|/n": 0.75,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 60,
+    "n_corners_before": 24,
+    "deleted": 12,
+    "leftover_corners": 0
+  },
+  {
+    "family": "quad_res_graph",
+    "n": 64,
+    "|S|": 61,
+    "|S|/n": 0.953125,
+    "sq_free": false,
+    "n_corners": 22,
+    "p": 61
+  },
+  {
+    "family": "quad_res_graph+repair",
+    "n": 64,
+    "|S|": 49,
+    "|S|/n": 0.765625,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 61,
+    "n_corners_before": 22,
+    "deleted": 12,
+    "leftover_corners": 0
+  },
+  {
+    "family": "hyperbola",
+    "n": 128,
+    "|S|": 126,
+    "|S|/n": 0.984375,
+    "sq_free": false,
+    "n_corners": 64,
+    "p": 127,
+    "k": 1
+  },
+  {
+    "family": "hyperbola+repair",
+    "n": 128,
+    "|S|": 99,
+    "|S|/n": 0.7734375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 126,
+    "n_corners_before": 64,
+    "deleted": 27,
+    "leftover_corners": 0
+  },
+  {
+    "family": "quad_res_graph",
+    "n": 128,
+    "|S|": 127,
+    "|S|/n": 0.9921875,
+    "sq_free": false,
+    "n_corners": 60,
+    "p": 127
+  },
+  {
+    "family": "quad_res_graph+repair",
+    "n": 128,
+    "|S|": 99,
+    "|S|/n": 0.7734375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 127,
+    "n_corners_before": 60,
+    "deleted": 28,
+    "leftover_corners": 0
+  },
+  {
+    "family": "hyperbola",
+    "n": 256,
+    "|S|": 250,
+    "|S|/n": 0.9765625,
+    "sq_free": false,
+    "n_corners": 112,
+    "p": 251,
+    "k": 1
+  },
+  {
+    "family": "hyperbola+repair",
+    "n": 256,
+    "|S|": 208,
+    "|S|/n": 0.8125,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 250,
+    "n_corners_before": 112,
+    "deleted": 42,
+    "leftover_corners": 0
+  },
+  {
+    "family": "quad_res_graph",
+    "n": 256,
+    "|S|": 251,
+    "|S|/n": 0.98046875,
+    "sq_free": false,
+    "n_corners": 94,
+    "p": 251
+  },
+  {
+    "family": "quad_res_graph+repair",
+    "n": 256,
+    "|S|": 202,
+    "|S|/n": 0.7890625,
+    "sq_free": true,
+    "n_corners": 0,
+    "|S|_before": 251,
+    "n_corners_before": 94,
+    "deleted": 49,
+    "leftover_corners": 0
+  }
+]

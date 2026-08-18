@@ -1,0 +1,495 @@
+[
+  {
+    "n": 16,
+    "n_sets": 4,
+    "fires_J1": 4,
+    "fires_ap3": 4,
+    "fires_other": 4,
+    "sum_other_surv": 48,
+    "sum_triples": 128,
+    "samples": [
+      {
+        "name": "q4g_16_0",
+        "n": 16,
+        "m": 26,
+        "n_triples": 35,
+        "n_killed_by_q4_forms": 12,
+        "n_rot90_J1": 19,
+        "n_ap3": 6,
+        "n_other": 10,
+        "n_other_q4_survivors": 9,
+        "top_other_surv_r2": [
+          [
+            169,
+            3
+          ],
+          [
+            145,
+            2
+          ],
+          [
+            50,
+            2
+          ],
+          [
+            25,
+            1
+          ],
+          [
+            85,
+            1
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      },
+      {
+        "name": "q4g_16_1",
+        "n": 16,
+        "m": 25,
+        "n_triples": 29,
+        "n_killed_by_q4_forms": 13,
+        "n_rot90_J1": 15,
+        "n_ap3": 3,
+        "n_other": 11,
+        "n_other_q4_survivors": 8,
+        "top_other_surv_r2": [
+          [
+            25,
+            2
+          ],
+          [
+            200,
+            1
+          ],
+          [
+            145,
+            1
+          ],
+          [
+            100,
+            1
+          ],
+          [
+            85,
+            1
+          ],
+          [
+            185,
+            1
+          ],
+          [
+            169,
+            1
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      },
+      {
+        "name": "q4g_16_2",
+        "n": 16,
+        "m": 23,
+        "n_triples": 27,
+        "n_killed_by_q4_forms": 9,
+        "n_rot90_J1": 6,
+        "n_ap3": 4,
+        "n_other": 17,
+        "n_other_q4_survivors": 15,
+        "top_other_surv_r2": [
+          [
+            25,
+            5
+          ],
+          [
+            65,
+            2
+          ],
+          [
+            225,
+            2
+          ],
+          [
+            100,
+            1
+          ],
+          [
+            125,
+            1
+          ],
+          [
+            185,
+            1
+          ],
+          [
+            50,
+            1
+          ],
+          [
+            85,
+            1
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      },
+      {
+        "name": "q4g_16_3",
+        "n": 16,
+        "m": 24,
+        "n_triples": 37,
+        "n_killed_by_q4_forms": 13,
+        "n_rot90_J1": 12,
+        "n_ap3": 7,
+        "n_other": 18,
+        "n_other_q4_survivors": 16,
+        "top_other_surv_r2": [
+          [
+            25,
+            4
+          ],
+          [
+            85,
+            3
+          ],
+          [
+            145,
+            3
+          ],
+          [
+            170,
+            2
+          ],
+          [
+            130,
+            2
+          ],
+          [
+            65,
+            1
+          ],
+          [
+            125,
+            1
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      }
+    ]
+  },
+  {
+    "n": 24,
+    "n_sets": 3,
+    "fires_J1": 3,
+    "fires_ap3": 3,
+    "fires_other": 3,
+    "sum_other_surv": 87,
+    "sum_triples": 212,
+    "samples": [
+      {
+        "name": "q4g_24_0",
+        "n": 24,
+        "m": 36,
+        "n_triples": 72,
+        "n_killed_by_q4_forms": 14,
+        "n_rot90_J1": 31,
+        "n_ap3": 9,
+        "n_other": 32,
+        "n_other_q4_survivors": 29,
+        "top_other_surv_r2": [
+          [
+            25,
+            6
+          ],
+          [
+            145,
+            5
+          ],
+          [
+            290,
+            2
+          ],
+          [
+            205,
+            2
+          ],
+          [
+            377,
+            2
+          ],
+          [
+            65,
+            2
+          ],
+          [
+            130,
+            2
+          ],
+          [
+            425,
+            1
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      },
+      {
+        "name": "q4g_24_1",
+        "n": 24,
+        "m": 37,
+        "n_triples": 62,
+        "n_killed_by_q4_forms": 20,
+        "n_rot90_J1": 28,
+        "n_ap3": 6,
+        "n_other": 28,
+        "n_other_q4_survivors": 23,
+        "top_other_surv_r2": [
+          [
+            170,
+            5
+          ],
+          [
+            185,
+            2
+          ],
+          [
+            130,
+            2
+          ],
+          [
+            25,
+            2
+          ],
+          [
+            85,
+            2
+          ],
+          [
+            340,
+            2
+          ],
+          [
+            289,
+            1
+          ],
+          [
+            125,
+            1
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      },
+      {
+        "name": "q4g_24_2",
+        "n": 24,
+        "m": 38,
+        "n_triples": 78,
+        "n_killed_by_q4_forms": 16,
+        "n_rot90_J1": 33,
+        "n_ap3": 9,
+        "n_other": 36,
+        "n_other_q4_survivors": 35,
+        "top_other_surv_r2": [
+          [
+            125,
+            8
+          ],
+          [
+            130,
+            5
+          ],
+          [
+            25,
+            3
+          ],
+          [
+            85,
+            3
+          ],
+          [
+            145,
+            3
+          ],
+          [
+            340,
+            2
+          ],
+          [
+            265,
+            2
+          ],
+          [
+            169,
+            2
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      }
+    ]
+  },
+  {
+    "n": 32,
+    "n_sets": 3,
+    "fires_J1": 3,
+    "fires_ap3": 3,
+    "fires_other": 3,
+    "sum_other_surv": 197,
+    "sum_triples": 390,
+    "samples": [
+      {
+        "name": "q4g_32_0",
+        "n": 32,
+        "m": 51,
+        "n_triples": 126,
+        "n_killed_by_q4_forms": 28,
+        "n_rot90_J1": 39,
+        "n_ap3": 12,
+        "n_other": 75,
+        "n_other_q4_survivors": 67,
+        "top_other_surv_r2": [
+          [
+            125,
+            5
+          ],
+          [
+            325,
+            4
+          ],
+          [
+            85,
+            4
+          ],
+          [
+            725,
+            4
+          ],
+          [
+            170,
+            4
+          ],
+          [
+            425,
+            4
+          ],
+          [
+            65,
+            4
+          ],
+          [
+            685,
+            3
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      },
+      {
+        "name": "q4g_32_1",
+        "n": 32,
+        "m": 54,
+        "n_triples": 142,
+        "n_killed_by_q4_forms": 21,
+        "n_rot90_J1": 53,
+        "n_ap3": 16,
+        "n_other": 73,
+        "n_other_q4_survivors": 72,
+        "top_other_surv_r2": [
+          [
+            169,
+            6
+          ],
+          [
+            50,
+            6
+          ],
+          [
+            260,
+            4
+          ],
+          [
+            250,
+            4
+          ],
+          [
+            85,
+            4
+          ],
+          [
+            425,
+            3
+          ],
+          [
+            445,
+            3
+          ],
+          [
+            170,
+            3
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      },
+      {
+        "name": "q4g_32_2",
+        "n": 32,
+        "m": 53,
+        "n_triples": 122,
+        "n_killed_by_q4_forms": 28,
+        "n_rot90_J1": 46,
+        "n_ap3": 13,
+        "n_other": 63,
+        "n_other_q4_survivors": 58,
+        "top_other_surv_r2": [
+          [
+            25,
+            6
+          ],
+          [
+            170,
+            4
+          ],
+          [
+            325,
+            3
+          ],
+          [
+            425,
+            3
+          ],
+          [
+            125,
+            2
+          ],
+          [
+            265,
+            2
+          ],
+          [
+            493,
+            2
+          ],
+          [
+            65,
+            2
+          ]
+        ],
+        "fires_J1": true,
+        "fires_ap3": true,
+        "fires_other": true
+      }
+    ]
+  }
+]

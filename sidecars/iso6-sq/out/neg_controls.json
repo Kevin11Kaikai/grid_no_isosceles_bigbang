@@ -1,0 +1,158 @@
+[
+  {
+    "family": "BxB",
+    "n": 27,
+    "|S|": 64,
+    "|S|/n": 2.3703703703703702,
+    "sq_free": false,
+    "n_corners": 448,
+    "|B|": 8
+  },
+  {
+    "family": "BxB",
+    "n": 81,
+    "|S|": 256,
+    "|S|/n": 3.1604938271604937,
+    "sq_free": false,
+    "n_corners": 3840,
+    "|B|": 16
+  },
+  {
+    "family": "BxB",
+    "n": 243,
+    "|S|": 1024,
+    "|S|/n": 4.2139917695473255,
+    "sq_free": false,
+    "n_corners": 20000,
+    "|B|": 32
+  },
+  {
+    "family": "fourfold",
+    "n": 16,
+    "|S|": 4,
+    "|S|/n": 0.25,
+    "sq_free": true,
+    "n_corners": 0,
+    "|A|": 6,
+    "|B|": 7,
+    "|W|": 10,
+    "|Z|": 8,
+    "3ap": true
+  },
+  {
+    "family": "fourfold_freq",
+    "n": 16,
+    "|S|": 10,
+    "|S|/n": 0.625,
+    "sq_free": false,
+    "n_corners": 1,
+    "|A|": 7,
+    "|B|": 7,
+    "|W|": 8,
+    "|Z|": 9
+  },
+  {
+    "family": "fourfold",
+    "n": 32,
+    "|S|": 8,
+    "|S|/n": 0.25,
+    "sq_free": false,
+    "n_corners": 1,
+    "|A|": 9,
+    "|B|": 10,
+    "|W|": 14,
+    "|Z|": 16,
+    "3ap": true
+  },
+  {
+    "family": "fourfold_freq",
+    "n": 32,
+    "|S|": 16,
+    "|S|/n": 0.5,
+    "sq_free": false,
+    "n_corners": 1,
+    "|A|": 10,
+    "|B|": 10,
+    "|W|": 14,
+    "|Z|": 12
+  },
+  {
+    "family": "fourfold",
+    "n": 48,
+    "|S|": 2,
+    "|S|/n": 0.041666666666666664,
+    "sq_free": true,
+    "n_corners": 0,
+    "|A|": 13,
+    "|B|": 13,
+    "|W|": 19,
+    "|Z|": 20,
+    "3ap": true
+  },
+  {
+    "family": "fourfold_freq",
+    "n": 48,
+    "|S|": 24,
+    "|S|/n": 0.5,
+    "sq_free": false,
+    "n_corners": 1,
+    "|A|": 15,
+    "|B|": 13,
+    "|W|": 17,
+    "|Z|": 17
+  },
+  {
+    "family": "fourfold",
+    "n": 64,
+    "|S|": 9,
+    "|S|/n": 0.140625,
+    "sq_free": true,
+    "n_corners": 0,
+    "|A|": 15,
+    "|B|": 16,
+    "|W|": 22,
+    "|Z|": 22,
+    "3ap": true
+  },
+  {
+    "family": "fourfold_freq",
+    "n": 64,
+    "|S|": 23,
+    "|S|/n": 0.359375,
+    "sq_free": true,
+    "n_corners": 0,
+    "|A|": 15,
+    "|B|": 15,
+    "|W|": 19,
+    "|Z|": 19
+  },
+  {
+    "family": "fourfold_J1_embed",
+    "n": 16,
+    "|S|": 3,
+    "|S|/n": 0.1875,
+    "sq_free": false,
+    "n_corners": 1,
+    "A": [
+      0,
+      2,
+      5
+    ],
+    "B": [
+      0,
+      2,
+      3
+    ],
+    "W": [
+      2,
+      3,
+      7
+    ],
+    "Z": [
+      -3,
+      2,
+      3
+    ],
+    "3ap": true
+  }
+]

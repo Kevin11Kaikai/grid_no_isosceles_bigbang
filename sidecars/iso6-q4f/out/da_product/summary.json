@@ -1,0 +1,58 @@
+[
+  {
+    "n": 16,
+    "best_|S|": 12,
+    "best_|S|/n": 0.75,
+    "best_family": "disjoint_geom2_t2",
+    "max_r": 3
+  },
+  {
+    "n": 24,
+    "best_|S|": 16,
+    "best_|S|/n": 0.6667,
+    "best_family": "fd_biclique_t2",
+    "max_r": 4
+  },
+  {
+    "n": 32,
+    "best_|S|": 20,
+    "best_|S|/n": 0.625,
+    "best_family": "disjoint_sym_greedy_t2",
+    "max_r": 5
+  },
+  {
+    "n": 48,
+    "best_|S|": 36,
+    "best_|S|/n": 0.75,
+    "best_family": "fd_biclique_t2",
+    "max_r": 9
+  },
+  {
+    "n": 64,
+    "best_|S|": 48,
+    "best_|S|/n": 0.75,
+    "best_family": "fd_biclique_t2",
+    "max_r": 12
+  },
+  {
+    "n": 81,
+    "best_|S|": 52,
+    "best_|S|/n": 0.642,
+    "best_family": "fd_biclique_t2",
+    "max_r": 13
+  },
+  {
+    "n": 128,
+    "best_|S|": 96,
+    "best_|S|/n": 0.75,
+    "best_family": "fd_biclique_t3",
+    "max_r": 16
+  },
+  {
+    "n": 243,
+    "best_|S|": 180,
+    "best_|S|/n": 0.7407,
+    "best_family": "fd_biclique_t3",
+    "max_r": 30
+  }
+]
