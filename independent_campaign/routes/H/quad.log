@@ -1,0 +1,6 @@
+n=  4 -> 2n=  8: max simultaneous t=3  total 4t=12  C(n)=6 C(2n)=13  t/C(n)=0.500  ceiling t<=C(2n)/4=3.25
+n=  5 -> 2n= 10: max simultaneous t=3  total 4t=12  C(n)=7 C(2n)=18  t/C(n)=0.429  ceiling t<=C(2n)/4=4.50
+n=  6 -> 2n= 12: max simultaneous t=4  total 4t=16  C(n)=9 C(2n)=None  t/C(n)=0.444  ceiling t<=C(2n)/4=?
+n=  8 -> 2n= 16: max simultaneous t=5  total 4t=20  C(n)=13 C(2n)=28  t/C(n)=0.385  ceiling t<=C(2n)/4=7.00
+n= 11 -> 2n= 22: max simultaneous t=7  total 4t=28  C(n)=18 C(2n)=None  t/C(n)=0.389  ceiling t<=C(2n)/4=?
+n= 16 -> 2n= 32: max simultaneous t=10  total 4t=40  C(n)=28 C(2n)=56  t/C(n)=0.357  ceiling t<=C(2n)/4=14.00

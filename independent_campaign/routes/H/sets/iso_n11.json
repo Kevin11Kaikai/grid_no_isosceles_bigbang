@@ -1,0 +1,1 @@
+{"name": "iso_n11", "n": 11, "size": 16, "status": "VERIFIED_COMPUTATIONAL_RESULT", "note": "best found by min-conflicts+tabu, nested-seeded; LOWER BOUND on C(n)", "points": [[0, 0], [0, 8], [1, 1], [1, 6], [1, 7], [4, 8], [4, 9], [6, 0], [6, 7], [6, 8], [9, 0], [9, 7], [9, 8], [10, 1], [10, 6], [10, 9]]}

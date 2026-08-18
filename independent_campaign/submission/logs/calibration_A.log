@@ -1,0 +1,13 @@
+# Method A calibration: C(n) for n=1..11, from scratch, symmetry on
+# run 2026-08-17T21:52:12Z
+DONE grid 1x1  OPT 1  nodes 0  time 0.00  sym=1
+DONE grid 2x2  OPT 2  nodes 2  time 0.00  sym=1
+DONE grid 3x3  OPT 4  nodes 17  time 0.00  sym=1
+DONE grid 4x4  OPT 6  nodes 94  time 0.00  sym=1
+DONE grid 5x5  OPT 7  nodes 969  time 0.00  sym=1
+DONE grid 6x6  OPT 9  nodes 8415  time 0.00  sym=1
+DONE grid 7x7  OPT 10  nodes 105052  time 0.00  sym=1
+DONE grid 8x8  OPT 13  nodes 941064  time 0.00  sym=1
+DONE grid 9x9  OPT 16  nodes 6860575  time 0.01  sym=1
+DONE grid 10x10  OPT 18  nodes 91424705  time 0.16  sym=1
+DONE grid 11x11  OPT 18  nodes 1920973219  time 2.94  sym=1

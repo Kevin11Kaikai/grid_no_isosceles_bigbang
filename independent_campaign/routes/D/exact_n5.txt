@@ -1,0 +1,2 @@
+diag n=5 C=7 2C=14 exact=14 nodes=2031109 12s
+adj n=5 C=7 2C=14 exact=12 nodes=796859 4s

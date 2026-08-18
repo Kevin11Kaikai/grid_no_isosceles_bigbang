@@ -1,0 +1,28 @@
+# run 2026-08-17T21:54:40Z
+V1  the four 20-point witnesses of README section 2, checked from the definition
+  witness A (inherited)      |S| =  20  bbox = [0..11]x[0..11]  VALID
+  witness B (inherited)      |S| =  20  bbox = [0..11]x[0..11]  VALID
+  witness C (solver)         |S| =  20  bbox = [0..11]x[0..11]  VALID
+  witness D (this rerun)     |S| =  20  bbox = [0..11]x[0..11]  VALID
+     pairwise distinct: True
+
+V2  witness produced by THIS session's rerun (logs/n12_scratch.log)
+  fresh solver output        |S| =  20  bbox = [0..11]x[0..11]  VALID
+     coincides with a stored witness: True
+
+V3  independent exact values by the naive solver (no shared logic)
+     the naive solver is deliberately unoptimised and becomes impractical
+     beyond n = 7; that is the honest limit of this cross-check.
+       n  naive  supplied  agree
+       1      1         1    yes
+       2      2         2    yes
+       3      4         4    yes
+       4      6         6    yes
+       5      7         7    yes
+       6      9         9    yes
+       7     10        10    yes
+
+V4  C(1,n) must equal r_3(n) (a line's trace is a 3-AP-free set)
+     n = 1..24 checked against the Salem-Spencer sequence: 0 mismatches
+
+RESULT: ALL CHECKS PASS

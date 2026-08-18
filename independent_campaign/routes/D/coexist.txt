@@ -1,0 +1,14 @@
+      layout   n  2C(n)  found ratio/C(n)    verdict
+ contig-diag   4     12     12      2.000   ZERO-DEF
+ contig-diag   5     14     14      2.000   ZERO-DEF
+ contig-diag   6     18     18      2.000   ZERO-DEF
+ contig-diag   7     20     20      2.000   ZERO-DEF
+ contig-diag   8     26     24      1.846     gap>=2
+ contig-diag   9     32     26      1.625     gap>=6
+ contig-diag  10     36     30      1.667     gap>=6
+ contig-diag  11     36     30      1.667     gap>=6
+Traceback (most recent call last):
+  File "D:\Others\iso6\routes\D\exp_coexist.py", line 49, in <module>
+    assert ok, (name, n, w)
+           ^^
+AssertionError: ('contig-adj', 4, ((2, 2), (3, 0)))

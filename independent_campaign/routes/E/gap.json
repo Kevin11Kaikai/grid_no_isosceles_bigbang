@@ -1,0 +1,24 @@
+{
+ "7": {
+  "C": 10,
+  "n_opt_sets": 712,
+  "E": 13,
+  "max_maxadd": 3,
+  "max_nsurv": 4,
+  "mean_nsurv": 0.28,
+  "Cnext": 13,
+  "gap": 0,
+  "secs": 12.0
+ },
+ "8": {
+  "C": 13,
+  "n_opt_sets": 48,
+  "E": 14,
+  "max_maxadd": 1,
+  "max_nsurv": 1,
+  "mean_nsurv": 0.17,
+  "Cnext": 16,
+  "gap": 2,
+  "secs": 39.0
+ }
+}
