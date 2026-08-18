@@ -1,0 +1,6 @@
+# Method B calibration: n=8..11, from scratch, no symmetry
+# run 2026-08-17T21:52:15Z
+DONE-B grid 8x8  OPT 13  nodes 1320054  time 0.03
+DONE-B grid 9x9  OPT 16  nodes 9246938  time 0.26
+DONE-B grid 10x10  OPT 18  nodes 106462783  time 3.54
+DONE-B grid 11x11  OPT 18  nodes 2456884014  time 79.43

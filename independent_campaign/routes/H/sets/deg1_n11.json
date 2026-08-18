@@ -1,0 +1,1 @@
+{"name": "deg1_n11", "n": 11, "k": 1, "size": 13, "status": "VERIFIED_COMPUTATIONAL_RESULT", "note": "random greedy, D(1,inf), verified", "points": [[0, 1], [0, 6], [0, 7], [3, 0], [3, 7], [3, 9], [4, 1], [5, 3], [7, 1], [8, 0], [8, 9], [10, 9], [10, 10]]}

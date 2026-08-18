@@ -1,0 +1,11 @@
+  n=8x8 K=12 OK  t=2s
+  n=8x8 K=13 OK  t=2s
+n=8 found=13 known=13 verified=True
+  n=9x9 K=13 OK  t=14s
+  n=9x9 K=14 OK  t=14s
+n=9 found=14 known=16 verified=True
+n=10 found=13 known=18 verified=True
+n=11 found=13 known=18 verified=True
+n=16 found=19 known=28 verified=True
+n=27 found=31 known=48 verified=True
+n=32 found=36 known=56 verified=True

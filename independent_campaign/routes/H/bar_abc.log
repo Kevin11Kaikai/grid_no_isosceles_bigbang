@@ -1,0 +1,10 @@
+    n      (a)      (b)      (c)  n^2   (a)/n^2 (b)/n^2 (c)/n^2
+    8       29       16       29     64   0.453   0.250   0.453  exact_a=True exact_c=True
+   11       52       36       52    121   0.430   0.298   0.430  exact_a=True exact_c=True
+   16       92       64       92    256   0.359   0.250   0.359  exact_a=False exact_c=False
+   27      212      121      212    729   0.291   0.166   0.291  exact_a=False exact_c=False
+   32      270      144      270   1024   0.264   0.141   0.264  exact_a=False exact_c=False
+   45      504      256      504   2025   0.249   0.126   0.249  exact_a=False exact_c=False
+   64      796      324      796   4096   0.194   0.079   0.194  exact_a=False exact_c=False
+   90     1338      484     1338   8100   0.165   0.060   0.165  exact_a=False exact_c=False
+  128     2800     1024     2800  16384   0.171   0.062   0.171  exact_a=False exact_c=False
