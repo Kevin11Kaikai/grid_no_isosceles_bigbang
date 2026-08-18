@@ -174,3 +174,57 @@ phase: the marginal value of further blind generation is now low, and the ordere
 checklist in `docs/session6_final_closeout.md` §8 should be executed before more theorem
 effort is funded. **This is a recommendation to the user, not a decision — unsealing changes
 the campaign's rules and requires network access, so it is theirs to make.**
+
+---
+
+## F7 — `C(12) = 20` was already known — the campaign's only surviving contribution is a reproduction, not a result — `FALSIFIED`
+
+**Claim killed.** "`C(12) = 20` is not in the literature; the campaign's exhaustive
+certificate closes an open bracket `20 ≤ C(12) ≤ 23`." Recorded as `NOT FOUND` in
+`docs/prior_art_audit.md` §3 and shipped as the headline of `submission/`.
+
+**Counterexample, exact.** Charton–Ellenberg–Wagner–Williamson, *PatternBoost*
+([arXiv:2411.00566](https://arxiv.org/abs/2411.00566), Oct 2024), §"No isosceles
+triangles", states verbatim:
+
+> "For `n` up to `≈ 32`, SAT solvers can find the best constructions **and prove their
+> optimality**."
+
+and plots every computed value in `pics/plot1.png` ("Plotting the computed values, `f` seems
+to be linear"). The plotted points read
+`f(4..18) = 6,7,9,10,13,16,18,18,20,22,23,25,28,30,32`, then `f(21)=36, f(23)=40, f(25)=44,
+f(27)=48, f(32)=56`. **At `n = 12` the plotted value is 20**, and the whole plotted range
+agrees with this campaign's values at every point where the campaign has one — including
+`f(10)=18, f(11)=18` and the printed `f(16)=28`, `f(27)=48`, `f(32)=56`.
+
+So `C(12) = 20` was established, with a proof of optimality, two years before this campaign,
+by a different method (SAT). The campaign independently reproduced it.
+
+**Why the audit missed it.** The audit searched for the *printed number*. PatternBoost
+prints `f(4)…f(10)`, `f(16)`, `f(27)`, `f(32)` as subfigure captions and leaves
+`f(11)…f(15), f(17), f(18), f(21), f(23), f(25)` **only as dots in a scatter plot**. Every
+text-level search — the paper's own text, OEIS, the AlphaEvolve repository, the
+erdosproblems pages — therefore returned nothing at `n = 12`, and the sentence granting
+optimality for all `n ≤ 32` was not read as the assertion it is. The bracket
+`20 ≤ C(12) ≤ 23` supplied in the sealed packet was itself an artifact of the same
+reading error and was never verified against a source.
+
+**New rule: figures are data.** A prior-art audit that only searches text has not audited
+the paper. When a source says it computed a range of values, the *claim of coverage* is the
+prior art, whether or not the individual numbers are typeset — and any figure plotting
+"the computed values" must be read (it is an image; read the image) before a value inside
+its range is called new.
+
+**Second rule, sharper.** The campaign's own data contained the refutation. The sealed
+packet supplied `C(16) = 28`, `C(27) = 48`, `C(32) = 56` as exact — values only obtainable
+from a source that had computed exact values at `n = 16, 27, 32`. That such a source would
+have skipped `n = 12` was never plausible, and the inference was available before any
+network access. **Ask where the supplied numbers came from; a baseline that hands you exact
+values at `n = 32` has already answered the question you are asking at `n = 12`.**
+
+**What survives.** The computation itself, and only as verification: two exhaustive
+branch-and-bound implementations sharing no cell order, no validity oracle and no bound,
+neither using any symmetry argument, agreeing with a SAT-based result obtained
+independently elsewhere. `submission/` is accordingly re-labelled from *certificate of a
+new value* to *independent reproduction*. The campaign now has **no** novel mathematical
+contribution — the honest final count is zero.

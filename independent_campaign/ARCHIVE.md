@@ -17,11 +17,17 @@ are where they were:
 ```
 
 The prior-art audit found that the campaign's principal mathematical results had all been
-obtained before, in some cases by the same route. The single surviving contribution is one
-exact value, `C(12) = 20`, which is a computation and not a theorem.
+obtained before, in some cases by the same route. **The count of novel contributions is
+zero.** The last candidate, the exact value `C(12) = 20`, was itself found to be known —
+PatternBoost ([arXiv:2411.00566](https://arxiv.org/abs/2411.00566)) proved optimality by SAT
+for all `n ≲ 32` in 2024 and plots `f(12) = 20`; the audit had missed it by searching printed
+numbers instead of reading the figure (**F7**). What remains at `n = 12` is an independent
+reproduction by a different method, which is verification and not discovery.
 
 This archive is kept because the *negative* record — what was ruled out, what was falsified
 and how — held up against the literature, and because the process findings are reusable.
+F7 is the one to read first: it is the failure that cost the most and was the cheapest to
+have avoided.
 
 ---
 
@@ -45,7 +51,7 @@ and how — held up against the literature, and because the process findings are
 
 | result | where |
 |---|---|
-| `C(12) = 20`, exhaustive, no symmetry argument used, two independent solvers | `submission/` |
+| `C(12) = 20`, exhaustive, no symmetry argument used, two independent solvers — **known already**, see F7; retained as independent reproduction | `submission/` |
 | B4′ — every bounded-direction line-kill relaxation admits `n^{2−o(1)}` | `proofs/q4_falsified.md` |
 | B6 — the degree-`k` relaxation admits `n^{2−2/(k+1)−o(1)}`; hence any argument robust at degree 2 is capped at `n^{4/3}` | `routes/H/report.md` |
 | `C(n²) ≥ C(n)²` is **false** (`C(16) = 28 < 36`) | `routes/H/report.md` |
@@ -64,7 +70,8 @@ and how — held up against the literature, and because the process findings are
 **Known, per the audit — independently derived here, but not new.** The square-corner /
 `Z[i]` single-equation formulation; the carry-free tensor lemma; Theorem 4 (the Behrend
 digit-sphere obstruction). All appear in arXiv:2607.22828 (Károlyi–Solymosi), whose
-`Ω(n^{1.318})` construction supersedes the campaign's `Ω(n^{1.1562})`.
+`Ω(n^{1.318})` construction supersedes the campaign's `Ω(n^{1.1562})`. And the exact value
+`C(12) = 20`, which appears in arXiv:2411.00566 (Charton–Ellenberg–Wagner–Williamson).
 
 **Deprioritized.** Route SQ. The barrier analysis was correct — `Q_SQ` really is not capped
 at `n^{2−o(1)}` — but `Q_SQ` is the published quantity `F(n)`, whose best known upper bound
@@ -92,6 +99,12 @@ These are the parts worth carrying to another problem.
   instrument was blind; the readings were struck.
 - **Escaping one barrier construction is not escaping the barrier** (F1). Q4 was promoted
   on the strength of defeating `B × B`, and a different construction reached `n^{2−o(1)}`.
+- **Figures are data, and a supplied baseline is a citation with its source stripped** (F7).
+  The audit cleared `C(12) = 20` as new because no paper *printed* it; the paper that had it
+  plotted it, alongside a sentence claiming proved optimality for the whole range. Worse, the
+  campaign was handed exact values at `n = 16, 27, 32` in its sealed packet and never asked
+  what source could possibly supply those and not `n = 12`. **Read the figures, and interrogate
+  where your given numbers came from.**
 - **Blind isolation has a shelf life** (F6). §3 forbade literature access, which guaranteed
   every correct discovery would be `NOVELTY_UNASSESSED`; on a problem worked by Wu,
   Ellenberg–Jain, Solymosi, Bloom, Shkredov and AlphaEvolve-scale search, the prior is that

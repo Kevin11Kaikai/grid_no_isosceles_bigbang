@@ -86,11 +86,23 @@ statement is likely folklore-adjacent even if unstated. Modest value at best. Th
 *consequence* — that any argument surviving at degree 2 is capped at `n^{4/3}` — is the
 useful part and was not located either.
 
-## 3. Audit item (iii) — `C(12) = 20` → **NOT FOUND** (and now re-verified at root)
+## 3. Audit item (iii) — `C(12) = 20` → **KNOWN** (verdict reversed 2026-08-18; see F7)
 
-No source located giving exact values of `C_{6.59}(n)` at `n = 12`. The sealed baseline
-supplied `20 ≤ C(12) ≤ 23`, i.e. it was open when the packet was assembled. The campaign's
-exhaustive certificate closes it.
+**This section's original verdict was wrong.** It read `NOT FOUND`, on the grounds that no
+source printed an exact value of `C(n)` at `n = 12` and that the sealed baseline supplied
+`20 ≤ C(12) ≤ 23`.
+
+The value was already known. Charton–Ellenberg–Wagner–Williamson, *PatternBoost*
+([arXiv:2411.00566](https://arxiv.org/abs/2411.00566), Oct 2024) state that "for `n` up to
+`≈ 32`, SAT solvers can find the best constructions **and prove their optimality**", and
+plot every computed value; the plotted value at `n = 12` is **20**, and the plotted sequence
+agrees with this campaign's at every common point. The audit missed it because it searched
+printed numbers and did not read the figure. Full account, and the two rules it produced, in
+`ledgers/failure_ledger.md` **F7**.
+
+The campaign's contribution at `n = 12` is therefore an **independent reproduction by a
+different method**, not a new value. The computational record below stands as written — it
+is what makes the reproduction worth anything.
 
 **Re-verified at root, 2026-08-17 — it is no longer a salvaged subagent report.** Both
 decisive searches were rebuilt and re-run in-session: the symmetry-disabled run from
@@ -104,8 +116,9 @@ upper bound at `n = 12` — `32 795 784 946` nodes, 1385 s, no 21-point set — 
 `n = 8..11`. The upper bound therefore rests on two implementations, neither using
 symmetry; only a shared *conceptual* error remains unexcluded, guarded by the `r_3` test.
 
-Package: `submission/` (`README.md`, `COVER.md`, `verify_independent.py`, `code/`, `logs/`).
-The only surviving candidate contribution of the campaign.
+Package: `submission/` (`README.md`, `COVER.md`, `verify_independent.py`, `code/`, `logs/`),
+re-labelled as an independent reproduction. With this verdict reversed the campaign has **no**
+surviving novel contribution.
 
 ## 4. Theorem 4 (Behrend digit-spheres cannot be square-corner-free) → **KNOWN IN SUBSTANCE**
 

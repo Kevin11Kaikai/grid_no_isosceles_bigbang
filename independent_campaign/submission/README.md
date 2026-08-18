@@ -1,11 +1,19 @@
 # `C(12) = 20` for Erdős Problem 6.59 — computational certificate
 
 **Result.** The largest subset of the `12 × 12` grid containing no (possibly degenerate)
-isosceles triangle has exactly **20** points. This closes the previously open bracket
-`20 ≤ C(12) ≤ 23`.
+isosceles triangle has exactly **20** points.
 
-**Status.** Exhaustive computation, reproduced end-to-end. This is a data point, not a
-theorem, and it has no bearing on the asymptotic bounds
+**Status — independent reproduction, not a new value.** `C(12) = 20` was already
+established, with a proof of optimality, by Charton–Ellenberg–Wagner–Williamson,
+*PatternBoost* ([arXiv:2411.00566](https://arxiv.org/abs/2411.00566), Oct 2024), whose SAT
+computation covers all `n ≲ 32`; the value appears as a plotted point rather than a printed
+number, which is why an earlier version of this document wrongly announced it as new (see
+`../ledgers/failure_ledger.md` F7).
+
+What this package therefore is: an exhaustive re-derivation of `C(12) = 20` by a **different
+method** (two branch-and-bound solvers, no SAT, no symmetry argument), agreeing with the SAT
+result. That is worth something as verification and nothing as a discovery. It is a data
+point, not a theorem, and it has no bearing on the asymptotic bounds
 `n/√(log n) ≲ C(n) ≲ e^{-c(log n)^{1/9}} n²`.
 
 ---
@@ -205,7 +213,10 @@ implementations, neither of which uses any symmetry argument.**
 Established: `C(12) = 20`, by exhaustive search, reproduced from scratch, with the upper
 bound established **twice, by two implementations sharing no search order, no validity
 oracle and no bound**, neither using any symmetry argument, and calibrated against eleven
-known values and against `r_3`.
+known values and against `r_3`. Established *independently of*, and in agreement with, the
+prior SAT computation in arXiv:2411.00566.
+
+Not established: novelty. The value was already known — see the status note at the top.
 
 Not established: anything asymptotic. This certificate should not be read as evidence for
 or against any conjecture about the growth of `C(n)`.
@@ -219,9 +230,13 @@ Anyone re-checking this result should attack Method A's candidate invariant (§3
 
 ## 8. Provenance
 
-Produced in an isolated self-directed search campaign on Problem 6.59 that made no
-progress on the asymptotic problem; this value is its only surviving contribution. The
-campaign's other outputs were checked against the literature and found to be known, in
-particular the Gaussian-integer formulation of the isosceles-right-triangle relaxation and
-the self-similar digit construction for it, both of which appear in
-[arXiv:2607.22828](https://arxiv.org/abs/2607.22828) (Károlyi–Solymosi).
+Produced in an isolated self-directed search campaign on this problem — Problem 59 of the
+AlphaEvolve *Repository of Problems*, §6.39 of
+[arXiv:2511.02864](https://arxiv.org/abs/2511.02864) — that made no progress on the
+asymptotic problem. Every output was checked against the literature and found to be known:
+the Gaussian-integer formulation of the isosceles-right-triangle relaxation and the
+self-similar digit construction for it appear in
+[arXiv:2607.22828](https://arxiv.org/abs/2607.22828) (Károlyi–Solymosi), and the exact value
+here appears in [arXiv:2411.00566](https://arxiv.org/abs/2411.00566)
+(Charton–Ellenberg–Wagner–Williamson). The campaign produced **no** novel mathematical
+contribution; this package is retained as an independent cross-check of a known value.

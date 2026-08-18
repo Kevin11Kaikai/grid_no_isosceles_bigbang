@@ -11,22 +11,32 @@ after the fact. Everything it produced is in `independent_campaign/`.
 
 ## Headline, stated plainly
 
-**The campaign did not move the problem.** The target it pursued —
-`C(n) = O(n^{2−ε})` for a fixed `ε > 0` — was not reached, and the prior-art audit found
-that its principal mathematical results had all been obtained before. The known bounds are
-where they were: `n/√(log n) ≲ C(n) ≲ e^{−c(log n)^{1/9}} n²`.
+**The campaign did not move the problem, and it produced nothing new.** The target it
+pursued — `C(n) = O(n^{2−ε})` for a fixed `ε > 0` — was not reached, and the prior-art audit
+found that its principal mathematical results had all been obtained before. The known bounds
+are where they were: `n/√(log n) ≲ C(n) ≲ e^{−c(log n)^{1/9}} n²`.
 
-Two things in it are nonetheless new *relative to this repository*, and one existing
-registry entry gains a correction.
+**Correction, 2026-08-18.** An earlier version of this file presented `C(12) = 20` as new.
+It is not: PatternBoost ([arXiv:2411.00566](https://arxiv.org/abs/2411.00566)) proved
+optimality by SAT for all `n ≲ 32` in 2024 and plots `f(12) = 20`. The audit had missed it by
+searching printed numbers rather than reading the paper's figure. See
+`independent_campaign/ledgers/failure_ledger.md` **F7**. What is below is corrected
+accordingly; nothing in this branch is a novelty claim any more.
+
+What remains: one independent reproduction that is stronger than what this repository's own
+logs contain, and one registry entry that gains a correction.
 
 ---
 
 ## Delta 1 — `C(12) = 20`, exhaustively, with the upper bound proved
 
+Not new to the literature (see the correction above); new relative to *this repository*.
 `logs/cpsat_maximize_n12_seed1.json` on `master` records `best_legal_size: 19` with round 2
-ending `FEASIBLE`, not `OPTIMAL` — a construction, without a proof of optimality.
+ending `FEASIBLE`, not `OPTIMAL` — a construction, one short of optimal, without a proof of
+optimality.
 
-This branch supplies both halves:
+This branch supplies both halves, by a method independent of both master's CP-SAT run and
+PatternBoost's SAT computation:
 
 - **`C(12) ≥ 20`** — four mutually distinct 20-point witnesses, each checked from the
   definition by a verifier that enumerates all 1140 triples and all three apex choices.
@@ -80,6 +90,7 @@ derived independently here and are **not new** — they appear in arXiv:2607.228
 
 | campaign result | status |
 |---|---|
+| the exact value `C(12) = 20` | plotted in arXiv:2411.00566, proved optimal there by SAT |
 | the square-corner / `Z[i]` single-equation formulation of IRT-freeness | their Observation 2.1 |
 | the carry-free tensor / self-similarity lemma | the mechanism of their `Ω(n^{1.318})` construction |
 | Theorem 4, the Behrend digit-sphere obstruction | their Remark 2.5, in different clothing |
@@ -95,5 +106,7 @@ briefly appearing to refute a correct lemma. Every instance was caught the same 
 re-testing against the complete definition with a checker sharing no code, tables or data
 structures.
 
-`independent_campaign/ARCHIVE.md` is the index; read
-`independent_campaign/docs/prior_art_audit.md` first.
+`independent_campaign/ARCHIVE.md` is the index. Read
+`independent_campaign/ledgers/failure_ledger.md` **F7** first — it is the costliest failure
+in the record and the cheapest to have avoided — then
+`independent_campaign/docs/prior_art_audit.md`.
