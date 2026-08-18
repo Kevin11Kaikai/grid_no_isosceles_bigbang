@@ -22,7 +22,7 @@ point, not a theorem, and it has no bearing on the asymptotic bounds
 
 ```
 README.md                    this certificate
-COVER.md                     cover note for the problem-database maintainers
+COVER.md                     retraction note: the value was already known (F7)
 verify_independent.py        definition-only verifier + naive exact solver (§6.1)
 code/solveA.c                Method A — bitset branch and bound          (§3)
 code/solveB.c                Method B — independent second implementation (§6.2)
@@ -32,6 +32,10 @@ logs/n12_scratch.log         n = 12, symmetry on, from best = 0          (§2, �
 logs/n12_nosym.log           n = 12, NO symmetry, from best = 20         (§3, decisive)
 logs/n12_methodB.log         n = 12, Method B, from best = 20            (§6.2, decisive)
 logs/verify_independent.log  output of verify_independent.py             (§6.1)
+logs/n13_scratch.log         n = 13, symmetry on, from best = 0          (§9)
+logs/n13_nosym.log           n = 13, NO symmetry, from best = 22         (§9, decisive)
+logs/*.err                   stderr of the n = 12 and n = 13 runs — the root
+                             task counts cited in §3 and §9
 ```
 
 No compiled binaries are shipped. Build from source with the commands in §4; every number
@@ -240,3 +244,35 @@ self-similar digit construction for it appear in
 here appears in [arXiv:2411.00566](https://arxiv.org/abs/2411.00566)
 (Charton–Ellenberg–Wagner–Williamson). The campaign produced **no** novel mathematical
 contribution; this package is retained as an independent cross-check of a known value.
+
+## 9. `C(13) = 22`, added 2026-08-18
+
+The same two-sided method was run one grid further.
+
+| bound | how | evidence |
+|---|---|---|
+| `C(13) ≥ 22` | explicit 22-point set, checked from the definition over all `C(22,3)·3 = 4620` triple-and-apex combinations, **0 violations** | `logs/n13_scratch.log` |
+| `C(13) ≤ 22` | exhaustive, **no symmetry reduction**, started from `best = 22`; terminated normally without ever raising `best`, i.e. no 23-point set exists — `596 185 011 999` nodes, 2234.3 s, 10 878 root tasks | `logs/n13_nosym.log` |
+
+The witness:
+
+```
+(0,0) (0,12) (1,0) (1,12) (2,1) (2,2) (2,5) (2,7) (2,10) (2,11) (3,5)
+(3,7) (9,2) (9,10) (10,0) (10,12) (11,0) (11,5) (11,7) (11,12) (12,5) (12,7)
+```
+
+Reproduce with:
+
+```
+./solveA 13 13 0             # from scratch, symmetry on   -> OPT 22 (yields the witness)
+./solveA 13 13 22 --nosym    # decisive upper bound        -> OPT 22, no improvement
+```
+
+**Why this run was worth making.** `f(13)` is one of the values that arXiv:2411.00566 plots
+but does not print. Reading it off their figure gave 22; this computation confirms 22
+independently, which is also a check on the figure-reading that produced the retraction in
+the status note at the top of this document — the reading method that found the mistake was
+itself verified against an exhaustive computation.
+
+As with `n = 12`, no novelty is claimed: the value is inside the range those authors state
+they determined by SAT with proved optimality.
