@@ -1,0 +1,287 @@
+<title>The √log n Gap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6f7f9; --ink:#12161c; --muted:#626d7e; --rule:#dde1e8;
+    --panel:#eef1f5; --accent:#1a5c6b; --block:#8f3a2f; --ok:#2c6049;
+    --serif:"Spectral",Georgia,"Times New Roman",serif;
+    --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#0f1216; --ink:#e3e7ed; --muted:#8d99aa; --rule:#262d36;
+      --panel:#161b21; --accent:#6fc0d0; --block:#e0846f; --ok:#7fc3a4;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0f1216; --ink:#e3e7ed; --muted:#8d99aa; --rule:#262d36;
+    --panel:#161b21; --accent:#6fc0d0; --block:#e0846f; --ok:#7fc3a4;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper); color:var(--ink); font-family:var(--serif);
+    font-size:17px; line-height:1.62; margin:0;
+    padding:clamp(1.6rem,4vw,4rem) clamp(1.1rem,5vw,2rem);
+    -webkit-font-smoothing:antialiased;
+  }
+  main{max-width:41rem; margin:0 auto; display:flex; flex-direction:column; gap:1.55rem}
+  .eyebrow{
+    font-family:var(--mono); font-size:.7rem; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--muted); margin:0;
+  }
+  h1{
+    font-size:clamp(1.85rem,5.2vw,2.6rem); line-height:1.14; font-weight:600;
+    margin:0; text-wrap:balance; letter-spacing:-.015em;
+  }
+  .standfirst{font-size:1.1rem; color:var(--muted); margin:0; font-style:italic; text-wrap:pretty}
+  h2{
+    font-size:1.22rem; font-weight:600; margin:1.5rem 0 0; text-wrap:balance;
+    padding-top:1.1rem; border-top:1px solid var(--rule);
+  }
+  h3{font-size:1rem; font-weight:600; margin:.9rem 0 -.7rem; color:var(--accent)}
+  p{margin:0}
+  a{color:var(--accent)}
+  strong{font-weight:600}
+  code{font-family:var(--mono); font-size:.87em; background:var(--panel); padding:.1em .32em; border-radius:3px}
+  .formula{
+    font-family:var(--mono); font-size:.92rem; background:var(--panel);
+    border-left:2px solid var(--accent); padding:.9rem 1.1rem; margin:0;
+    overflow-x:auto; line-height:1.75;
+  }
+  .formula em{color:var(--muted); font-style:normal; font-size:.85em}
+  figure{margin:0; display:flex; flex-direction:column; gap:.5rem}
+  figcaption{font-size:.85rem; color:var(--muted); text-wrap:pretty}
+  .plot{width:100%; height:auto; overflow:visible}
+  .plot text{font-family:var(--mono); font-size:10px; fill:var(--muted)}
+  .tablewrap{overflow-x:auto; margin:0}
+  table{border-collapse:collapse; width:100%; font-family:var(--mono); font-size:.79rem; font-variant-numeric:tabular-nums}
+  th,td{text-align:right; padding:.34rem .5rem; border-bottom:1px solid var(--rule); white-space:nowrap}
+  th:first-child,td:first-child{text-align:left}
+  thead th{color:var(--muted); font-weight:500; border-bottom:1px solid var(--ink)}
+  tbody tr:last-child td{border-bottom:none}
+  .tag{font-family:var(--mono); font-size:.68rem; letter-spacing:.05em; text-transform:uppercase}
+  .t-block{color:var(--block)} .t-ok{color:var(--ok)} .t-open{color:var(--muted)}
+  ul,ol{margin:0; padding-left:1.15rem; display:flex; flex-direction:column; gap:.45rem}
+  li::marker{color:var(--muted)}
+  .callout{
+    background:var(--panel); border-left:2px solid var(--block);
+    padding:.95rem 1.15rem; margin:0; font-size:1.02rem;
+  }
+  .callout.pos{border-left-color:var(--ok)}
+  footer{
+    border-top:1px solid var(--rule); padding-top:1.1rem; margin-top:1rem;
+    font-size:.85rem; color:var(--muted); display:flex; flex-direction:column; gap:.5rem;
+  }
+</style>
+
+<main>
+  <header style="display:flex;flex-direction:column;gap:.7rem">
+    <p class="eyebrow">Working note · isosceles-free sets in the grid</p>
+    <h1>The √log n gap is in the analysis, not in the truth</h1>
+    <p class="standfirst">The known lower bound for isosceles-free subsets of the grid is exactly the alteration threshold. The greedy process that produces such sets beats that threshold by the missing factor. This note locates the gap precisely, in three hypotheses of one theorem.</p>
+  </header>
+
+  <h2>1. The problem</h2>
+  <p>For a positive integer <code>n</code> let <code>C(n)</code> be the largest size of a set <code>S ⊆ [n]²</code> containing no three distinct points <code>a,b,c</code> with <code>d(a,b) = d(b,c)</code> — no isosceles triple, degenerate collinear ones included. Equivalently: from every point of <code>S</code>, all squared distances to the other points of <code>S</code> are distinct.</p>
+  <p>Exact values are known with proved optimality for <code>n ≲ 32</code> by SAT search; the first open case is <code>n = 33</code>. The asymptotic state is</p>
+  <p class="formula">n / √(log n)  ≲  C(n)  ≲  exp(−c (log n)^(1/9)) · n²</p>
+  <p>and the live question is the lower end. Jánosik, Nagy, Szabó and others (arXiv:2601.14465) observe that the known bound is sublinear, conjecture that the truth is linear, and name the route: <em>“most probably a linear lower bound can be achieved via the random independent set process.”</em> Nobody has carried it out.</p>
+
+  <h2>2. One formula produces the known bound</h2>
+  <p>Work in the 3-uniform <em>isosceles hypergraph</em> <code>H</code> on the ambient point set: each edge is an isosceles triple, and each edge has a unique apex (two apexes would force an equilateral lattice triangle, which does not exist). For an apex <code>a</code> write <code>N_a(d)</code> for the number of points at squared distance <code>d</code> from <code>a</code>, and let</p>
+  <p class="formula">P  =  E_a[ Σ_d N_a(d)² ] / (V−1)²  =  μ / V<br><em>V = size of the ambient set,  μ = Σ N² / Σ N = size-biased mean multiplicity of a squared distance</em></p>
+  <p>be the probability that two random points are equidistant from a random apex. A random <code>m</code>-set spans about <code>m³P</code> isosceles triples; deleting one point per triple leaves something only while <code>m³P &lt; m</code>. So alteration, and random greedy with it, survive to</p>
+  <p class="formula">m  &lt;  P^(−1/2)  =  √( V / μ )</p>
+  <p>In the grid, <code>V = n²</code> and <code>μ ≍ log n</code>, because <code>Σ_{d≤X} r₂(d)² ≍ X log X</code> for the sum-of-two-squares representation function. That gives <code>n/√(log n)</code> — <strong>the known bound is this threshold.</strong> Measured directly: <code>P·n²/ln n</code> converges (1.580, 1.513, 1.479, 1.445, 1.426, 1.405, 1.394 for <code>n = 8…64</code>), and <code>P^(−1/2)</code> tracks <code>n/√(ln n)</code> at ratio 0.80 → 0.85.</p>
+
+  <h2>3. Five ways to attack it, all blocked by the same quantity</h2>
+  <p>The obvious escape is to change <code>V</code> or <code>μ</code>. Each attempt fails, and the failures are informative rather than accidental.</p>
+
+  <h3>3.1 Strengthen to all distances distinct</h3>
+  <p>Making every pairwise distance distinct — a planar Sidon set — would trivialise the apex condition. It is provably too weak: <code>C(m,2) ≤ Ndist(n) ~ K·2n²/√(log n)</code> by Landau–Ramanujan, so <code>m = O(n/(log n)^(1/4))</code>. Computed exactly, the ratio cap/<code>n</code> is 0.938, 0.906, 0.875, 0.844, 0.816, 0.793, 0.773 for <code>n = 16…1024</code> — monotonically decreasing. Any proof of linearity must genuinely exploit that only <em>same-apex</em> distances need be distinct.</p>
+
+  <h3>3.2 First moment and the Local Lemma</h3>
+  <p>Vacuous by a factor of <code>n</code>: at the last step of a one-point-per-column construction there are about <code>n²/8</code> forbidden events against <code>n</code> available values. Even after filtering to the events that actually forbid something, the effective count scales like <code>n^1.37</code>.</p>
+
+  <h3>3.3 Pass to a bounded-degree ground set</h3>
+  <p>Restricting to a set where each apex sees each distance at most <code>k</code> times removes the <code>log</code> from the degree. But the largest such set has size <code>Θ(n^(2−2/(k+1)) / (log n)^(α_k))</code> with <code>α_k = (2^k − 1)/(k+1)</code>, doubly exponential in <code>k</code>. Granting the nibble outright, the best attainable is below <code>n</code> for every <code>k</code>, and asymptotically worse than <code>n/√(log n)</code>. At <code>n = 10⁶</code> the route peaks at <code>k = 2</code> with about 7.1×10³, against a known bound of 2.69×10⁵ — a factor 38 <em>below</em> what is already proved.</p>
+
+  <h3>3.4 Self-similar doubling</h3>
+  <p>There is an exact free separation in <code>Z²</code>: differences <code>(even,even)</code> give <code>|p−q|² ≡ 0 (mod 4)</code> and <code>(odd,odd)</code> give <code>≡ 2 (mod 8)</code>, so in <code>T = 2S ∪ (2S+(1,1))</code> the two parity classes can never collide. This yields a genuine recurrence <code>C(2n) ≥ 2·C_H(n)</code>, where <code>C_H</code> imposes one extra condition (H). It fails because (H) is itself an <code>r₂</code>-condition: by <code>(2w+1)² + (2z+1)² = 8(T(w)+T(z)) + 2</code> the cross-class distances are sums of two <em>odd</em> squares, with the same representation statistics. Each point then carries three injectivity families instead of one, so <code>C_H/C → 1/√3 ≈ 0.577</code> — measured 0.58–0.62 for <code>n = 14…48</code>, and exactly 0.50–0.80 for <code>n = 3…7</code>. Density multiplies by that constant per doubling and decays to zero. Dilation by <code>q</code> preserves the class count only for <code>q</code> a power of two.</p>
+
+  <h3>3.5 Flatten the arithmetic mod p</h3>
+  <p>The sharpest attempt: work where the obstruction does not exist. If <code>S ⊆ [0,p)²</code> has all same-apex squared distances distinct <em>mod p</em>, they are distinct as integers, so <code>S</code> is isosceles-free in <code>Z²</code> — no wraparound argument needed. And for <code>p ≡ 3 (mod 4)</code> the form <code>u_x²+u_y²</code> is the norm form of <code>F_{p²}</code>, where every nonzero value has exactly <code>p+1</code> preimages. The multiplicity is perfectly flat.</p>
+  <p>It collapses to <code>√p</code>. Measured, <code>A(p)/p</code> falls 0.636 → 0.135 over <code>p = 11…401</code> while <code>A(p)/√p</code> is flat at 2.11 → 2.70. The reason is exactly the threshold formula: flattening <code>μ</code> also collapses the range of distance values from <code>~p²/√(log p)</code> to <code>p−1</code>, so <code>μ</code> goes from <code>log n</code> to <code>p</code> — the wrong way.</p>
+  <p class="callout">Since <code>μ ≥ V / (#distinct distance values)</code>, the threshold is at most <code>√(#distinct values)</code>. <strong>Uniformity of the multiplicity function and largeness of its range are coupled. No quotient of <code>Z²</code> buys the first without paying more for the second.</strong></p>
+
+  <h2>4. But the process itself is linear</h2>
+  <p>All of the above bounds what standard <em>analyses</em> deliver. The process they analyse does better. Random greedy on <code>[n]²</code> — vertices in uniformly random order, accept a point iff the set stays isosceles-free — was measured to <code>n = 8192</code>:</p>
+
+  <figure>
+    <svg class="plot" viewBox="0 0 640 300" role="img" aria-label="Measured greedy output per n stays near 1.0 while the alteration threshold decays from 0.55 to 0.28 as n grows from 8 to 8192.">
+      <line x1="56" y1="260" x2="620" y2="260" stroke="var(--rule)"/>
+      <line x1="56" y1="20" x2="56" y2="260" stroke="var(--rule)"/>
+      <g stroke="var(--rule)" stroke-dasharray="2 4">
+        <line x1="56" y1="207.8" x2="620" y2="207.8"/>
+        <line x1="56" y1="155.7" x2="620" y2="155.7"/>
+        <line x1="56" y1="103.5" x2="620" y2="103.5"/>
+      </g>
+      <line x1="56" y1="51.3" x2="620" y2="51.3" stroke="var(--muted)" stroke-dasharray="4 3" opacity=".7"/>
+      <text x="624" y="54" style="fill:var(--muted)">1.0</text>
+      <g text-anchor="end">
+        <text x="48" y="263">0</text><text x="48" y="211">0.25</text>
+        <text x="48" y="159">0.50</text><text x="48" y="107">0.75</text>
+      </g>
+      <g text-anchor="middle">
+        <text x="56" y="276">8</text><text x="168.8" y="276">32</text><text x="281.6" y="276">128</text>
+        <text x="394.4" y="276">512</text><text x="507.2" y="276">2048</text><text x="620" y="276">8192</text>
+      </g>
+      <polyline fill="none" stroke="var(--block)" stroke-width="2"
+        points="56,145.0 112.4,156.9 168.8,166.1 225.2,173.3 281.6,179.7 338,184.9 394.4,189.0 450.8,192.8 507.2,195.9 563.6,198.7 620,200.9"/>
+      <polyline fill="none" stroke="var(--accent)" stroke-width="2"
+        points="225.2,38.3 281.6,39.3 338,41.5 394.4,42.8 450.8,44.8 507.2,47.2 563.6,49.2 620,50.7"/>
+      <g fill="var(--accent)">
+        <circle cx="225.2" cy="38.3" r="2.6"/><circle cx="281.6" cy="39.3" r="2.6"/>
+        <circle cx="338" cy="41.5" r="2.6"/><circle cx="394.4" cy="42.8" r="2.6"/>
+        <circle cx="450.8" cy="44.8" r="2.6"/><circle cx="507.2" cy="47.2" r="2.6"/>
+        <circle cx="563.6" cy="49.2" r="2.6"/><circle cx="620" cy="50.7" r="2.6"/>
+      </g>
+      <text x="232" y="30" style="fill:var(--accent)">measured greedy / n</text>
+      <text x="64" y="138" style="fill:var(--block)">alteration threshold / n</text>
+      <text x="330" y="294" text-anchor="middle">n (log scale)</text>
+    </svg>
+    <figcaption>The two lines diverge. What can be proved (lower, decaying like <code>1/√log n</code>) versus what the process delivers (upper, hugging 1). The dashed line marks the conjectured linear density.</figcaption>
+  </figure>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>n</th><th>64</th><th>128</th><th>256</th><th>512</th><th>1024</th><th>2048</th><th>4096</th><th>8192</th></tr></thead>
+      <tbody>
+        <tr><td>greedy</td><td>68.00</td><td>135.35</td><td>268.00</td><td>532.85</td><td>1056.0</td><td>2088.2</td><td>4137.5</td><td>8214</td></tr>
+        <tr><td>greedy / n</td><td>1.0625</td><td>1.0574</td><td>1.0469</td><td>1.0407</td><td>1.0313</td><td>1.0196</td><td>1.0101</td><td>1.0027</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Over <code>n = 64 → 8192</code>, <code>√(ln n)</code> grows by 47%; if greedy were <code>≍ n/√(log n)</code> then <code>greedy/n</code> had to fall by 32.1%. It fell by <strong>5.6%</strong>.</p>
+  <p>The residual decay is real but is the finite-size signature of a <code>lnln n / ln n</code> correction, not a power of <code>log n</code>. The heuristic <code>∫₀^M e^{am²}dm = N</code> with <code>a = D/N²</code> gives <code>K γ² ln n = ln n + lnln n + O(1)</code>, i.e. <code>γ² = A + B·(lnln n/ln n) + C/ln n</code> with <code>γ → √A &gt; 0</code>. Fitted against the rival <code>γ = c(ln n)^(−α)</code>, which tends to zero:</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>model</th><th>limit</th><th>RSS</th><th>AIC</th><th>predicts n=8192 from n≤4096</th></tr></thead>
+      <tbody>
+        <tr><td>theory form (3p)</td><td>γ → 0.716</td><td>9.14e−06</td><td>−104.3</td><td>error −0.12%</td></tr>
+        <tr><td>theory form (2p)</td><td>γ → 0.835</td><td>6.06e−05</td><td>−90.7</td><td>error +0.47%</td></tr>
+        <tr><td>power of log (2p)</td><td>γ → 0</td><td>1.08e−04</td><td>−86.0</td><td>error +0.58%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>The theory-derived form wins at equal parameter count and predicts a held-out point five times more accurately. And its extrapolated constant is confirmed independently: the heuristic predicts <code>γ_∞ = 1/√K</code> where <code>K = lim D/(n² ln n)</code>, and an exact edge count — using no greedy data at all — gives <code>K = 1.81</code>, hence <code>0.743</code>, against the fitted 0.716.</p>
+  <p class="callout pos"><strong>The random independent set process achieves <code>Θ(n)</code>.</strong> The <code>√log n</code> deficit is not a gap between the truth and the conjecture. It is a gap between the truth and the analysis.</p>
+
+  <h2>5. Where the analysis stops, exactly</h2>
+  <p>Bennett–Bohman (arXiv:1308.3732, Thm 1.1) is the natural tool: for an <code>r</code>-uniform, <code>D</code>-regular <code>H</code> on <code>N</code> vertices with <code>D &gt; N^ε</code>, if <code>Δ_ℓ(H) &lt; D^((r−ℓ)/(r−1) − ε)</code> for <code>ℓ = 2..r−1</code> and <code>Γ(H) &lt; D^(1−ε)</code>, then random greedy gives <code>|I| = Ω(N (log N / D)^(1/(r−1)))</code>. For the isosceles hypergraph that conclusion is <em>exactly</em> <code>Ω(n)</code> — and numerically it predicts the measured greedy size to within 1–3%.</p>
+  <p>The hypotheses fail. Here is the whole of the damage, with <code>Γ</code> as they define it: the maximum over distinct <code>v,v'</code> of the number of edge pairs <code>e,e'</code> with <code>v ∈ e∖e'</code>, <code>v' ∈ e'∖e</code>, <code>|e ∩ e'| = r−1</code>.</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>hypothesis</th><th>required</th><th>the isosceles hypergraph has</th><th>shortfall</th></tr></thead>
+      <tbody>
+        <tr><td>codegree</td><td>Δ₂ &lt; D^(1/2−ε)</td><td>Δ₂ ≍ D^(1/2) / √(log D)</td><td>√log</td></tr>
+        <tr><td>(r−1)-codegree</td><td>Γ &lt; D^(1−ε)</td><td>Γ ≍ D / log D</td><td>log</td></tr>
+        <tr><td>regularity</td><td>D-regular</td><td>D_max/D_avg = 1.470</td><td>constant — <strong>removable, §7.1</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Not one of them fails polynomially.</strong> Each fails by a logarithmic factor — the same logarithm that §2 traced to <code>Σ r₂(d)² ≍ X log X</code>. For <code>Γ</code> this is measured: <code>Γ·ln n / D</code> = 0.3327, 0.3100, 0.2984 for <code>n = 32,64,128</code>, converging to the predicted 0.287.</p>
+  <p>That is what one gets by comparing the hypotheses as they are stated. §7 argues it is the wrong comparison.</p>
+
+  <h2>6. And the Γ failure is rare</h2>
+  <p><code>Γ</code> is a <em>maximum</em>. Its distribution is far more forgiving. Writing <code>Γ(v,v') = |P(v) ∩ P(v')|</code> with <code>P(v)</code> the set of pairs forming an isosceles triple with <code>v</code>:</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>n</th><th>32</th><th>64</th><th>128</th><th>256</th></tr></thead>
+      <tbody>
+        <tr><td>median Γ</td><td>62</td><td>92</td><td>122</td><td>158</td></tr>
+        <tr><td>median Γ / ln²n</td><td>5.162</td><td>5.319</td><td>5.182</td><td>5.138</td></tr>
+        <tr><td>fraction structured</td><td>.107</td><td>.058</td><td>.030</td><td>.013</td></tr>
+        <tr><td>4/n</td><td>.125</td><td>.0625</td><td>.0312</td><td>.0156</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><code>median Γ / ln²n</code> is flat at ≈5.15 — precisely the value for two unrelated sets of size <code>D</code> among <code>~n⁴/2</code> pairs, namely <code>2D²/N² ≈ 6.1 ln²n</code>. <strong>The typical pair behaves as if the hypergraph were random.</strong> Against the threshold, <code>median Γ / D^0.9</code> = 2.4e−2, 2.8e−3, 9.4e−4, 9.9e−5 for <code>n = 32,128,256,1024</code>: satisfied by four to five orders of magnitude, with the margin widening.</p>
+  <p>The bad pairs are those whose difference has a short primitive direction, so that the perpendicular bisector is rich in lattice points. The four extremal families are exactly the directions whose bisector-reflection preserves <code>Z²</code> — reflection with primitive normal <code>(p,q)</code> is integral only when <code>p²+q² ∈ {1,2}</code>: row, column, diagonal, anti-diagonal — which is where the <code>4/n</code> comes from. A random difference vector has primitive direction of norm <code>~n²</code>, so the bad set is <code>Θ(1/n) = Θ(N^(−1/2))</code> of all pairs.</p>
+
+  <h2>7. What the proof actually consumes</h2>
+  <p>The two failing hypotheses are stated as maxima over pairs. Reading the proof shows they are not used that way.</p>
+  <p><code>Γ</code> appears exactly once. Bennett–Bohman track auxiliary variables <code>c_{a,a'→k}(v,v')</code> counting pairs of partially-shrunk edges through <code>v</code> and <code>v'</code>; at time zero <code>c_{r,r→r−1}(v,v')</code> <em>is</em> the <code>(r−1)</code>-codegree of that pair, and the hypothesis serves as the base case of the induction bounding it — <em>“the base case following immediately from the condition on Γ(H)”</em>. The induction is diagonal: each pair's chain is driven only by that same pair's variables. And the one place the chain's output is spent is the drift of <code>d_ℓ^−(v)</code>, where the error term is not a maximum but a sum — <em>“the number of y that are counted more than once … is at most binom(ℓ−1,2)·C_{2,2→1}”</em> — running over the pairs that lie in a common edge with <code>v</code>, against a main term of order <code>d_ℓ(v)·D^(1/(r−1))</code>.</p>
+  <p>So the quantity that has to be small is <code>Γ</code> averaged over pairs <strong>weighted by how many edges contain the pair</strong>, and the same for <code>Δ₂</code>. That weighting is adversarial here, and predictably so: the bad pairs of §6 are mirror pairs, whose perpendicular bisectors are rich in lattice points, so they sit in <em>many</em> edges. The bias is real and grows like <code>0.27√n</code>. It is not enough.</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>n</th><th>32</th><th>64</th><th>128</th><th>256</th></tr></thead>
+      <tbody>
+        <tr><td>Γ<sub>max</sub> / D</td><td>.1060</td><td>.0734</td><td>.0559</td><td>.0465</td></tr>
+        <tr><td><strong>Γ<sub>edge</sub> / D</strong></td><td><strong>.0252</strong></td><td><strong>.0120</strong></td><td><strong>.0064</strong></td><td><strong>.0040</strong></td></tr>
+        <tr><td>Δ₂<sub>max</sub> / √D</td><td>.631</td><td>.493</td><td>.417</td><td>.366</td></tr>
+        <tr><td><strong>Δ₂<sub>edge</sub> / √D</strong></td><td><strong>.227</strong></td><td><strong>.147</strong></td><td><strong>.097</strong></td><td><strong>.067</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Fitted as powers of <code>D</code> across its 107-fold range, <code>Γ_edge ≍ D^0.60</code> and <code>Δ₂_edge ≍ D^0.24</code>: both hypotheses hold on average at <code>ε ≈ 0.26</code> — polynomial room, not logarithmic. For the maxima the exponent is zero up to logarithms, since <code>Γ_max = Θ(n²)</code> against <code>D = Θ(n² log n)</code>. <strong>The failure in §5 is an artefact of taking a maximum.</strong></p>
+
+  <p class="callout pos">Can the pointwise conditions <code>Δ₂ ≤ D_{a↑b}</code> and <code>c_{a,a'→k}(v,v') ≤ C_{a,a'→k}</code> in the definition of the stopping time be replaced by vertex-aggregated ones — and the drift and Freedman estimates re-derived under the weaker condition?</p>
+
+  <p>That is the price, and it is not small. These quantities do not enter as inequalities that merely have to be true; they enter through the <em>stopping time</em>, which halts the moment one pair breaches its bound, however small the aggregate error. Aggregating them demands dynamic concentration for a sum of <code>~D</code> correlated variables — and Bennett–Bohman say of exactly these variables that they <em>“do not establish dynamic concentration … but we only need relatively crude upper bounds.”</em> The route asks more of the proof in exchange for asking less of the hypergraph. In its favour, the union bound shrinks from <code>N²</code> pairs to <code>N</code> vertices, and the numbers have <code>ε ≈ 0.26</code> of room rather than none. Whether the trade closes is open.</p>
+
+  <h3>7.1 The third hypothesis, on the other hand, is free</h3>
+  <p>Irregularity turns out to cost nothing. The degree of a point of <code>[n]²</code> is exact and computable — every edge has a unique apex, since two apexes would force an equilateral triangle and <code>Z²</code> has none — and the profile is a smooth bowl: minimum at the corner, maximum at the centre, <code>D_max/D_avg = 1.470</code> with no trend from <code>n = 16</code> to <code>160</code>.</p>
+  <p>Regularising downward is not available, since deleting edges of the isosceles hypergraph would admit sets that are not isosceles-free. Regularising <em>upward</em> is, and it is free. Let <code>D* = max_v deg(v)</code> and add a 3-uniform <code>R</code> with <code>deg_R(v) = D* − deg(v)</code>, drawn independently of the lattice. Then <code>H ∪ R</code> is <code>D*</code>-regular, and an independent set in it contains no edge of the original, so it is still isosceles-free — the bound transfers verbatim. The cost is the constant <code>√1.470 = 1.21</code>: with <code>D* = 2.55 n² ln n</code>, the Bennett–Bohman conclusion is <code>0.885 n</code>, still <code>Ω(n)</code>.</p>
+  <p>What could go wrong is that <code>R</code> breaks the other two hypotheses. It does not. Measured at <code>n = 24…64</code>, <code>Δ₂(R)</code> has mean <code>6|R|/N(N−1) ≈ 5–7</code> and max ≈ 40, growing like <code>log N</code> against <code>Δ₂(H) ≍ n</code>; and <code>Γ_R</code> has mean <code>1.8 ln²n</code> — flat against <code>ln²n</code> across the range — versus <code>Γ(H) ≍ n²/2</code>. So <code>Δ₂</code> and <code>Γ</code> are unchanged to leading order, and the §7 edge-weighted averages can only fall, since <code>R</code> adds 47% more edges each carrying <code>Γ = O(log²N)</code>. At <code>n = 64</code>, though, <code>Δ₂(R) = 40</code> against <code>Δ₂(H) ≈ 84</code>: the separation is a statement about growth rates, not about small <code>n</code>.</p>
+  <p>So the list of hypotheses standing between this hypergraph and a linear lower bound is two, not three — and adding <code>R</code> does nothing for either of them, since both are maxima over pairs of a subgraph of <code>H ∪ R</code>. The easy one is gone; the hard two are where §7 left them.</p>
+
+  <p>There is also direct evidence that the <code>Γ</code> hypothesis constrains the analysis rather than the process. On synthetic 3-uniform hypergraphs one can hold degree, edge count and <code>Δ₂</code> fixed and vary <em>only</em> <code>Γ</code>: pair the vertices by a random perfect matching and give each matched pair <code>H</code> shared hub pairs, against a control in which the same hub pairs are handed to two independent random vertices. Concentrating <code>Γ</code> from <code>O(1)</code> up to <code>0.33·D</code> changes the greedy output by at most 2.4%, and upward:</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Γ / D</th><th>0.00</th><th>0.07</th><th>0.23</th><th>0.33</th></tr></thead>
+      <tbody><tr><td>treatment / control</td><td>1.0000</td><td>0.9951</td><td>1.0094</td><td>1.0236</td></tr></tbody>
+    </table>
+  </div>
+  <p>Trading <code>Γ</code> against the fraction of bad pairs at a fixed degree budget is likewise flat. Two caveats bound what that means. Bennett–Bohman need <code>Γ</code> small for <em>concentration</em> of the quantities they track, and this measures only the final <code>|I|</code>, which is a mean; a hypergraph can have a robust mean and unruly fluctuations. And the actual regime is untestable — <code>D/log D</code> exceeds <code>D^(1−ε)</code> only once <code>D^ε &gt; log D</code>, which for <code>ε = 0.1</code> needs <code>D ≈ 10²⁰</code> — so <code>Γ = Θ(D)</code> is a proxy, albeit a harder test than the real one.</p>
+  <p>One structural remark falls out of building that control. For fixed <code>v</code>, <code>Σ_{v'} Γ(v,v') ≤ D·(Δ₂−1)</code>, so at most <code>D·Δ₂/T</code> partners can have <code>Γ ≥ T</code>. For the isosceles hypergraph that is <code>Θ(log n / n)</code> — <strong>the rarity in §6 is forced by <code>Δ₂</code> being small, not a coincidence of the lattice.</strong> Any hypergraph with small codegree automatically has few <code>Γ</code>-bad pairs, which is some reason to think the relaxation is the natural one rather than a special plea.</p>
+
+  <h2>8. What is established, and what is not</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>claim</th><th>status</th></tr></thead>
+      <tbody>
+        <tr><td>All-distances-distinct capped at O(n/(log n)^(1/4))</td><td class="tag t-ok">proved</td></tr>
+        <tr><td>Parity separation; the doubling recurrence C(2n) ≥ 2·C_H(n)</td><td class="tag t-ok">proved</td></tr>
+        <tr><td>Degree-k route below n for every k, and below n/√(log n)</td><td class="tag t-ok">proved</td></tr>
+        <tr><td>Mod-p reduction C(p) ≥ A(p)</td><td class="tag t-ok">proved</td></tr>
+        <tr><td>Threshold √(V/μ); its match to the known bound</td><td class="tag t-open">heuristic + measured</td></tr>
+        <tr><td>C_H/C → 1/√3; A(p) = Θ(√p); Γ ≍ D/log D; Δ₂ ≍ D^(1/2)/√log D</td><td class="tag t-open">measured</td></tr>
+        <tr><td>Γ enters Bennett–Bohman only as the <code>t=0</code> value of one tracked variable, and is consumed as an edge-weighted sum</td><td class="tag t-ok">read from the proof</td></tr>
+        <tr><td>Γ<sub>edge</sub> ≍ D^0.60 and Δ₂<sub>edge</sub> ≍ D^0.24, i.e. both hypotheses hold on average at ε ≈ 0.26</td><td class="tag t-open">measured</td></tr>
+        <tr><td>Irregularity is removable: upward regularisation costs √1.470 = 1.21 and leaves Δ₂ and Γ unchanged</td><td class="tag t-ok">proved, write-up incomplete</td></tr>
+        <tr><td>the aggregated conditions suffice for the proof</td><td class="tag t-block">open</td></tr>
+        <tr><td>greedy/n → positive constant ≈ 0.72–0.84</td><td class="tag t-open">measured + model selection</td></tr>
+        <tr><td>C(n) = Ω(n)</td><td class="tag t-block">open</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The last two rows deserve emphasis rather than burial. Nothing here is a new bound on <code>C(n)</code>. The claim that <code>greedy/n</code> tends to a positive constant rests on eight data points, a model comparison, and a heuristic whose central assumption — that the selected set behaves like a random set of the same density — is exactly the correlation a rigorous proof would have to control. Its 4% agreement with an independently computed constant is encouraging, not conclusive. The <code>Γ</code> values are evaluated at candidate extremal pairs rather than maximised over all <code>~n⁴</code>, which is the right direction for showing a hypothesis fails and the wrong one for proving <code>Γ = O(n²)</code>. The §7 averages are exact over all partners of each sampled apex, but the apexes are sampled — 20 of them below <code>n = 128</code>, 8 above — and the two exponents are fitted over a single decade of <code>D</code>. The uniform-pair mean underlying them agrees to 0.5% with an independently written program at <code>n = 64</code>.</p>
+  <p>What the note does claim is narrower and, I think, worth stating. The deficit in this problem has a single source; it is one logarithm wide; it appears in five unrelated-looking methods for the same reason; and the process everyone expects to work does work. The obstruction is technical, it lives in a known theorem, and §7 locates it more precisely than “one logarithm”: the two conditions the isosceles hypergraph fails are stated pointwise and consumed on average, and on average it satisfies them with polynomial room. What stands between that observation and a linear lower bound is a stopping time that halts on a single bad pair. The third hypothesis, irregularity, turned out to cost a factor of 1.21 and nothing else.</p>
+
+  <footer>
+    <p>Problem 59 of the AlphaEvolve Repository of Problems (§6.39 of arXiv:2511.02864); continuous analogue at erdosproblems.com #657. Exact values <code>n ≤ 32</code> from arXiv:2411.00566. Conjecture and route from arXiv:2601.14465. Random greedy theorem from arXiv:1308.3732.</p>
+    <p>Working note. All measurements re-runnable; figures are data.</p>
+  </footer>
+</main>
