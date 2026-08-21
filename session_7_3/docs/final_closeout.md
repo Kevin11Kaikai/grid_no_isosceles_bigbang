@@ -1,3 +1,5 @@
+> A Chinese version of this document is at `final_closeout.zh.md`.
+
 # Final closeout — Session 7.3, twelve rounds
 
 ## Executive verdict
