@@ -3,3 +3,6 @@ __pycache__/
 .venv_solver/
 *.pyc
 .Python
+
+# Session 7.3 build artifacts
+*.exe
