@@ -4,7 +4,7 @@ Campaign: Problem 59 of the AlphaEvolve Repository of Problems = §6.39 of arXiv
 (the label "6.59" used by the `iso6` archive is a conflation and finds nothing in search).
 Workspace `D:\Others\iso7`. Archive imported from `D:\Others\iso6` (read-only).
 
-Session: 7.3 · FAR round: 11 (complete) · Stage: round 11 closed · NOTE WRITTEN
+Session: 7.3 · FAR round: 12 (complete) - CAMPAIGN CLOSED · Stage: CLOSEOUT (docs/final_closeout.md) · NOTE WRITTEN
 Last checkpoint: `checkpoints/checkpoint_latest.md`
 
 ## PRIMARY OBJECTIVE
@@ -109,6 +109,39 @@ for `R` are routine and not written. See `docs/round11_findings.md` 11.4.
 **GAPS: 3 -> 2. Adding `R` does NOTHING for the remaining two** -- they are maxima over
 pairs of a subgraph of `H'`. The easy gap is gone; the hard two are where round 10 left
 them.
+
+## WHAT ROUND 12 CHANGED - AND WHY THE CAMPAIGN IS CLOSING
+
+**The last route is closed.** Round 11 recommended attacking the `Delta_2` half of
+Obligation R10 as the separable one. It does not separate, and two of my own claims were
+wrong.
+
+CORRECTION 1: `Delta_2` is not "only a step size". Its dominant role (line 782) is the base
+case of `dlemma`'s reverse induction on `b` -- structurally IDENTICAL to `Gamma`'s role at
+line 849 -- and its consumer at line 1018 is the same edge-weighted sum. So round 10's
+averaging observation applies to it verbatim, with no new gain.
+
+CORRECTION 2: its one extra role, the Azuma step size at line 1172, is NOT repairable by
+truncation. The step is `d_{{v,y_i} up l+1}` with `y_i` UNIFORMLY chosen, so it is the
+codegree at a random partner, which is why truncation looked available. Criterion forced by
+the stopping time: `i_max * E_v[B_v(tau)] << 1` with `i_max ~ 1.07 n`. Measured
+(`experiments/r12_tail.c`, n=32..160): the transition sits EXACTLY at `Delta_2max`. Each
+vertex has 1.4-2.4 partners AT its maximum codegree (its mirror images), so truncating one
+below the max already costs `i_max * Theta(1) = Theta(n)`. **Truncation is viable only at
+tau >= Delta_2max, i.e. the original hypothesis.**
+
+Without truncation: Freedman exponent `d/(2C)` with `C = Delta_2max` is short of `log N` by
+a FLAT factor ~8 across n=32..192 (8.63, 8.10, 8.19, 8.20, 8.00, 7.90), closing only like
+`sqrt(log D)`. Symmetric Azuma with `c_i = Delta_2max` is vacuous (`exponent ~ log n / n`).
+
+CONSEQUENCE: Obligation R10 does not split. Both halves need one thing -- an argument
+tolerating a `Theta(1/n)` fraction of bad (vertex, partner) events across `Theta(n)` steps,
+which a pointwise stopping time forbids by construction. That is a different proof of
+Bennett-Bohman's theorem, not a repair to it.
+
+**The round 11 checkpoint committed in advance: "If it does not close, the campaign has
+nothing left that changes any line of the ledger, and should stop." It did not close.
+CLOSING OUT.** See `docs/round12_findings.md` and `docs/final_closeout.md`.
 
 ## NEXT ACTION
 Round 7 settled Round 6's open question: `greedy/n -> positive constant ~0.72-0.84`, so the
