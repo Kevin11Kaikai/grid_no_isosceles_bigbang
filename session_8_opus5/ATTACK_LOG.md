@@ -455,3 +455,111 @@ The `sd/mean` lesson from the previous pass stands and is preserved in HANDOFF: 
 scale-free ratios.
 
 (K1) is deliberately **not** attacked in this pass, as instructed.
+
+---
+
+# Obligation (K1b)
+
+## A20. Exact combinatorial description, and the geometric lemma
+
+`c_{2,2->1}(u,y,i)` counts pairs of size-2 edges `f ∋ u`, `f' ∋ y` with `|f ∩ f'| = 1`, i.e.
+`f = {u,w}`, `f' = {y,w}`. **Lemma H** (proved) gives the exact characterisation of the evolving
+2-graph: for `u,w ∈ V(i)`, `{u,w} ∈ H(i)` iff `∃ z ∈ I(i)` with `{u,w,z} ∈ H_n`. Hence
+```
+   c_{2,2->1}(u,y,i) = |N(u,i) ∩ N(y,i)|,      S_L(y,i) = e_{G(i)}(L ∩ V(i), N(y,i)).
+```
+So the object is the number of `G(i)`-edges between a line and the 2-neighbourhood of `y`.
+
+**Lemma G** (proved) is the geometric input: for `w ≠ z`,
+`codeg_L(w,z) <= 5` unless `L = B(w,z)` (i.e. unless `z = refl_L(w)`). Two of the three apex
+cases put `u` on a **circle** — and a circle meets a line in at most two points, regardless of
+arithmetic — while the third puts `u` on the perpendicular bisector, which meets `L` once unless
+it *is* `L`. This is the one-level-up analogue of Lemma E's dichotomy, and it is cleaner: the
+exceptional case is a single `z` per `w`, with no scale dependence.
+
+## A21. First attempt: the deterministic bound — reaches `n^2 sqrt(log n)/log log n`
+
+Lemma G gives `Λ_L(w,i) <= 5i + |L| 1[refl_L(w) ∈ I(i)]`, hence
+```
+   S_L(y,i) <= 5 i · d_2(y,i)  +  |L| · #{w ∈ N(y,i) : refl_L(w) ∈ I(i)}
+            =  Theta(n^2 sqrt(log n)/log log n)  +  O(n^2/sqrt(log n)).
+```
+**Finding: the coherent-reflection term is *not* the problem here** — it is smaller than the
+bulk term by `log n/log log n`, and (A23) it comfortably meets the requirement. This is the
+first place in the session where the reflection mechanism is harmless.
+
+The bulk term is lossy because `Λ_L(w,i) <= 5i` allows every `w` to attain the maximum, while
+globally `sum_w Λ_L(w,i) = sum_{u∈L} d_2(u,i) = Theta(n^2 sqrt(log n))`, so the average `Λ_L` is
+`Theta(sqrt(log n))` — a factor `n/log n` below the pointwise bound.
+
+## A22. Second attempt: counterexample search — the threshold is ATTAINED, not violated
+
+**Proposition K** (proved). For any set `A` of distinct odd integers in `[1,n)`,
+```
+      I_A := {(0,0)} ∪ {(a,2) : a ∈ A}
+```
+is an independent set of `H_n`. The independence check is two Diophantine equations:
+`a'(a'-2a) = 4` and `a(a-2a') = 4`, neither solvable for odd `a,a' >= 3`; triples inside the row
+are collinear hence degenerate hence not edges.
+
+With `y = (0,2)`, `L` the bottom row and `M` the row `x_2 = 1`: every `w = (x,1)` satisfies
+`|w-y|^2 = x^2+1 = |w-(0,0)|^2` and `|w-(a,0)|^2 = (x-a)^2+1 = |w-(a,2)|^2`, so by Lemma H every
+surviving `w ∈ M` is a **common** 2-neighbour of `y` and of every `(a,0)`, `a ∈ A`. Hence
+`S_L(y,i) >= #{alive a} · (|M ∩ V(i)| - 2)`.
+
+Measured exactly (`experiments/s8_k1b.c`, `V(i)` computed exactly from `I_A`, `A` a greedy Sidon
+set of odds; independence verified exhaustively, 0 violating triples):
+
+| `n` | 64 | 100 | 144 | 196 | 256 |
+|---|---|---|---|---|---|
+| `S_L/n^{3/2}` | 0.4805 | 0.4900 | 0.4815 | 0.4956 | **0.4941** |
+
+**Flat at ≈ 0.49.** So the configuration attains `Theta(n^{3/2})` exactly. It does **not**
+falsify (K1b) — an `O(n^{3/2})` upper bound with unspecified constant survives — but it shows:
+
+1. `n^{3/2}` is the right exponent and cannot be improved uniformly over legitimate `I`;
+2. **no deterministic proof of (K1b) can have room**: `|I_A| = Theta(sqrt n) << m`, so this is a
+   possible state of the process;
+3. why the family stops there. `S_L ≈ #{alive a}·|M ∩ V|`; `w = (x,1)` is blocked when
+   `x = (a+a')/2` and `(a,0)` is blocked when `2a ∈ A+A` non-trivially. Keeping `M` alive forces
+   `|A+A| = o(n)`; keeping the `(a,0)` alive forces `A` 3-AP-free. Going past `n^{3/2}` needs a
+   **3-AP-free set of size `omega(sqrt n)` with sumset `o(n)`** — implausible by Freiman/Roth,
+   not constructed here, and an additive-combinatorics question outside this session.
+
+A first, buggy version of the harness (`sums` allocated as bytes and indexed as `int`) crashed;
+after the fix a 3-AP-free-only greedy was also tried and gives a *smaller* `S_L`, because
+without the Sidon/gap conditions the row `M` is almost entirely blocked. The Sidon variant is
+the extremal one.
+
+## A23. Correction: the `O(n^{3/2})` threshold in HANDOFF was over-strict
+
+`O(n^{3/2})` was chosen in §7.2(a) merely to match Lemma E(a). Re-deriving what Theorem F′
+actually needs from the ordinary-step Freedman term gives
+```
+        S_L(y,i)  <<  sigma^2 n^2  =  n^2 / log log n        at sigma = (log log n)^{-1/2}.
+```
+Against this:
+- extremal configuration §8.3: `Theta(n^{3/2})` — below by `sqrt(n)/log log n`;
+- reflection term of (8.4): `Theta(n^2/sqrt(log n))` — below by `sqrt(log n)/log log n`;
+- **bulk term of (8.4): `Theta(n^2 sqrt(log n)/log log n)` — above by exactly `sqrt(log n)`.**
+
+## A24. Outcome
+
+**(K1b) is OPEN — neither proved nor falsified.** It reduces to
+
+> **(K1b′)** `sum_{w ∈ N(y,i)} Λ_L(w,i) <= d_2(y,i) · n/log n` for every line `L`, every
+> `y ∈ V(i)`, every `i <= T` — i.e. the average of `Λ_L` over `N(y,i)` is a `1/sqrt(log n)`
+> fraction of its deterministic maximum `5i`.
+
+Orientation: typical `Λ_L` is `Theta(sqrt(log n))`; (K1b′) asks for `Theta(n/log n)`; the
+deterministic maximum is `Theta(n/sqrt(log n))`. **The margin is `n/log n` and the shortfall is
+one square root of a logarithm.** But it is a statement that `N(y,i)` does not over-sample the
+high-`Λ_L` vertices — a correlation statement involving a line, exactly the configuration
+Corollary 6.1 flags as delicate.
+
+New and proved in this pass: **Lemma H**, **Lemma G**, the deterministic bound (8.4),
+**Proposition K**, and the corrected threshold (8.6). Theorem F′ and Lemma C remain
+**CONDITIONAL**, now on (K1b′) rather than (K1b), plus (K2), (K3), (K4). Nothing here changes
+`C(n)`, still `Omega(n/sqrt(log n))`.
+
+(K2), (K3), (K4), Candidate A and the original (K1a) were not attacked, as instructed.

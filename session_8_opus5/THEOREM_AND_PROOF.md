@@ -1155,3 +1155,210 @@ to CONDITIONAL on (K1b).
 proofs use only the counting `#{u : s(v,u) = s} <= 16n`, the bound `r_2(d) = d^{o(1)}`, the
 collinear-point count, and Cauchy–Schwarz. Nothing in §7.1–7.5 touches them. They remain
 **PROVED**, and they remain the two genuinely new pieces of mathematics in this session.
+
+---
+
+## Part VIII. Obligation (K1b)
+
+(K1b), as stated in `HANDOFF.md`: for every line `L`, every `y ∈ V(i)` and every `i <= T`,
+```
+     S_L(y,i)  :=  sum_{u ∈ L ∩ V(i)}  c_{2,2->1}(u, y, i)   =   O( n^{3/2} ).
+```
+This part gives the exact combinatorial description, proves the geometric lemma it needs,
+derives the best available deterministic bound, exhibits an explicit configuration showing the
+threshold is **attained**, and corrects the threshold itself. **(K1b) is neither proved nor
+falsified**; it is reduced to a sharp residual statement short by exactly `sqrt(log n)`.
+
+### 8.0 Exact combinatorial description
+
+**Lemma H (exact characterisation of the 2-graph).** Let `i <= T` and `u, w ∈ V(i)`, `u ≠ w`.
+Then
+```
+     {u,w} is a size-2 edge of H(i)   <=>   ∃ z ∈ I(i) with {u,w,z} ∈ H_n .        (8.1)
+```
+**Proof.** (⇐) Let `z ∈ I(i)` with `{u,w,z} ∈ H_n`. Edges of `H` only lose vertices that are
+chosen, and of `{u,w,z}` only `z` has been chosen (`u,w ∈ V(i)`), so `{u,w,z}` has shrunk
+exactly to `{u,w}`, which is an edge of `H(i)` unless the containment convention deleted it —
+and that convention deletes an edge only when it *contains* another edge, i.e. only if `{u}` or
+`{w}` is already an edge, contradicting `u,w ∈ V(i)`. (⇒) `H` is 3-uniform, so a size-2 edge of
+`H(i)` arises only by shrinkage of a size-3 edge `{u,w,z}` of `H_n` whose third vertex `z` was
+chosen. ∎
+
+Consequently, writing `N(v,i) := {w ∈ V(i) : {v,w} ∈ H(i)}` for the neighbourhood in the
+evolving 2-graph `G(i)` (so `|N(v,i)| = d_2(v,i)`), and recalling that `c_{2,2->1}(u,y,i)`
+counts pairs of size-2 edges `f ∋ u`, `f' ∋ y` with `|f ∩ f'| = 1`, i.e. `f = {u,w}`,
+`f' = {y,w}`:
+```
+     c_{2,2->1}(u,y,i)  =  | N(u,i) ∩ N(y,i) | ,
+     S_L(y,i)           =  e_{G(i)} ( L ∩ V(i),  N(y,i) )
+                        =  sum_{w ∈ N(y,i)}  Λ_L(w,i),   Λ_L(w,i) := #{ u ∈ L ∩ V(i) : {u,w} ∈ H(i) }.   (8.2)
+```
+So the object is **the number of `G(i)`-edges between a line and the 2-neighbourhood of `y`**,
+and by (8.1) every such edge is witnessed by a chosen vertex.
+
+### 8.1 The geometric input: a circle/line dichotomy
+
+Write `B(w,z)` for the perpendicular bisector of `w ≠ z`, and
+`codeg_L(w,z) := #{ u ∈ L ∩ [n]^2 : {u,w,z} ∈ H_n }`.
+
+> **Lemma G.** For all `w ≠ z` in `[n]^2` and every line `L`,
+> ```
+>    codeg_L(w,z)  <=  5      unless   L = B(w,z),  i.e. unless  z = refl_L(w),
+> ```
+> in which case `codeg_L(w,z) <= |L ∩ [n]^2|`.
+
+**Proof.** If `{u,w,z} ∈ H_n` its apex is `w`, `z` or `u`.
+- Apex `w`: `|wu| = |wz|`, so `u` lies on the circle centred at `w` of radius `|wz|`. A line
+  meets a circle in at most **2** points.
+- Apex `z`: likewise `u` lies on a circle centred at `z`; at most **2** points.
+- Apex `u`: `|uw| = |uz|`, so `u ∈ B(w,z)`. If `L ≠ B(w,z)` these are distinct lines and meet
+  in at most **1** point; if `L = B(w,z)` then every point of `L` qualifies.
+
+Summing, `codeg_L(w,z) <= 2+2+1 = 5` unless `L = B(w,z)`. Finally `L = B(w,z)` holds iff `w`
+and `z` are reflections of one another in `L`. ∎
+
+Lemma G is the exact analogue, one level up, of the dichotomy in Lemma E: **a chosen vertex can
+influence more than `O(1)` points of a line only when the line is its own bisector datum.**
+Note it is *stronger* than Lemma E in form — the exceptional case is a single `z` per `w`, not a
+scale-dependent bound — because two of the three apex cases are circles, and circles meet lines
+in at most two points regardless of arithmetic.
+
+### 8.2 The best available deterministic bound
+
+By (8.1), any `u ∈ L` with `{u,w} ∈ H(i)` is witnessed by some `z ∈ I(i)`, hence
+`Λ_L(w,i) <= sum_{z ∈ I(i)} codeg_L(w,z)`, and by Lemma G, since at most one `z ∈ I(i)` can
+equal `refl_L(w)`,
+```
+     Λ_L(w,i)  <=  5 |I(i)|  +  |L| · 1[ refl_L(w) ∈ I(i) ]  =  5i + |L| · 1[ refl_L(w) ∈ I(i) ].   (8.3)
+```
+Substituting into (8.2),
+```
+     S_L(y,i)  <=  5 i · d_2(y,i)   +   |L| · #{ w ∈ N(y,i) : refl_L(w) ∈ I(i) }.       (8.4)
+```
+Both terms are deterministic given the stopping-time conditions. Evaluating at `t = Theta(1)`,
+with `i <= m = Theta(n/sqrt(log n))`, `|L| <= n`, and the crude cap
+`d_2(y,i) <= K s_2 = Theta(n log n / log log n)` (Prop 3(3a), unconditional):
+
+```
+   term 1  =  5 m · d_2(y,i)                      =  Theta( n^2 sqrt(log n) / log log n )
+   term 2  <=  |L| · |I(i)|  =  n · m             =  Theta( n^2 / sqrt(log n) )                (8.5)
+```
+using that `w -> refl_L(w)` is injective, so `#{w : refl_L(w) ∈ I(i)} <= |I(i)| = i <= m`.
+
+**Term 2 — the geometrically dangerous one — is not the problem.** It is smaller than term 1 by
+a factor `log n / log log n`, and (§8.4) it is comfortably below the requirement. The
+coherent-reflection mechanism that dominates everywhere else in this session is *harmless* here.
+
+**Term 1 is the problem**, and it is lossy for a clear reason: (8.3) allows every one of the
+`d_2(y,i)` vertices `w` to attain `Λ_L(w,i) = 5i`, whereas globally
+`sum_{w ∈ V(i)} Λ_L(w,i) = sum_{u ∈ L ∩ V(i)} d_2(u,i) = Theta(n^2 sqrt(log n))`, so the
+*average* of `Λ_L` over the `N = n^2` vertices is only `Theta(sqrt(log n))` — a factor
+`n/log n` below the bound (8.3).
+
+### 8.3 The threshold `n^{3/2}` is attained: an explicit configuration
+
+> **Proposition K.** Let `A ⊆ {3,5,7,...} ∩ [1,n)` be any set of distinct odd integers and put
+> ```
+>       I_A  :=  { (0,0) }  ∪  { (a,2) : a ∈ A } .
+> ```
+> Then `I_A` is an independent set of `H_n`. Moreover, with `y = (0,2)`,
+> `L = {(x,0) : x ∈ [n]}` and `M = {(x,1) : x ∈ [n]}`,
+> ```
+>       c_{2,2->1}( (a,0), y, i )  >=  | M ∩ V(i) | - 2      for every a ∈ A with (a,0) ∈ V(i),
+> ```
+> hence `S_L(y,i) >= #{a ∈ A : (a,0) ∈ V(i)} · ( |M ∩ V(i)| - 2 )`.
+
+**Proof.** *Independence.* Triples inside `{(a,2)}` are collinear, hence degenerate, hence not
+edges. A triple `{(0,0),(a,2),(a',2)}` with `a ≠ a'` is isosceles only if
+(i) apex `(0,0)`: `a^2 = a'^2`, impossible for distinct positive `a,a'`;
+(ii) apex `(a,2)`: `a^2 + 4 = (a-a')^2`, i.e. `a'(a' - 2a) = 4`, which for odd `a' >= 3` forces
+`a' | 4`, impossible;
+(iii) apex `(a',2)`: symmetrically `a(a - 2a') = 4`, impossible.
+
+*The common neighbours.* Let `w = (x,1) ∈ M`. Then `|w - y|^2 = x^2 + 1 = |w - (0,0)|^2`, so
+`{y, w, (0,0)}` is isosceles with apex `w`, and it is nondegenerate unless `x = 0`. Since
+`(0,0) ∈ I_A`, Lemma H gives `{y,w} ∈ H(i)` for every `w ∈ M ∩ V(i)`, `x ≠ 0`.
+Similarly `|w - (a,0)|^2 = (x-a)^2 + 1 = |w - (a,2)|^2`, so `{(a,0), w, (a,2)}` is isosceles
+with apex `w`, nondegenerate unless `x = a`; since `(a,2) ∈ I_A`, `{(a,0),w} ∈ H(i)`. Hence
+every `w ∈ M ∩ V(i)` except possibly `x ∈ {0,a}` lies in `N((a,0),i) ∩ N(y,i)`. ∎
+
+**Measured** (`experiments/s8_k1b.c`; `V(i)` computed exactly from `I_A`, `A` a greedy Sidon set
+of odd integers, `S_L(y,i)` computed exactly):
+
+| `n` | `\|I\|-1 = k` | `\|V\|` | `d_2(y)` | `\|L ∩ V\|` | `S_L(y)` | `S_L / n^{3/2}` |
+|---|---|---|---|---|---|---|
+| 64  | 7  | 2 677  | 65  | 39  | 246   | **0.4805** |
+| 100 | 8  | 7 100  | 100 | 68  | 490   | **0.4900** |
+| 144 | 9  | 15 410 | 139 | 103 | 832   | **0.4815** |
+| 196 | 10 | 27 435 | 185 | 136 | 1 360 | **0.4956** |
+| 256 | 12 | 48 378 | 241 | 186 | 2 024 | **0.4941** |
+
+Independence was verified exhaustively in every case (0 violating triples). The ratio is **flat
+at ≈ 0.49**, so the configuration attains `S_L = Theta(n^{3/2})` exactly.
+
+**What this does and does not show.** It does **not** falsify (K1b), which asserts an upper
+bound `O(n^{3/2})` with an unspecified constant. It shows three things:
+1. `n^{3/2}` is **tight** for this mechanism — no proof can give a better exponent uniformly
+   over legitimate independent sets;
+2. **no deterministic proof of (K1b) can have room**: the extremal `I_A` is a genuine
+   independent set of size `k+1 = Theta(sqrt n) << m`, hence a possible state of the process;
+3. why the extremal family stops at `n^{3/2}`: `S_L ≈ #{alive a} · |M ∩ V|`, and `w = (x,1)` is
+   blocked whenever `x = (a+a')/2` for `a,a' ∈ A` while `(a,0)` is blocked whenever `2a ∈ A+A`
+   non-trivially. Keeping `M` alive forces `|A+A| = o(n)`; keeping the `(a,0)` alive forces `A`
+   to be 3-AP-free. Pushing past `n^{3/2}` therefore requires a **3-AP-free set of size
+   `omega(sqrt n)` with sumset `o(n)`**, which the Freiman/Roth circle of ideas makes
+   implausible. No such set is exhibited here, and whether one exists is an
+   additive-combinatorics question outside this session.
+
+### 8.4 Correction: the threshold `O(n^{3/2})` in HANDOFF was over-strict
+
+`O(n^{3/2})` was chosen in §7.2(a) to match Lemma E(a), so that the `d_2^-` contribution to
+`sum_{u ∈ L} |xi(u)|` would be absorbed by the `d_2^+` contribution. That is sufficient but not
+necessary. Re-deriving what Theorem F′ actually needs: with
+`Sigma := sum_{u ∈ L} |xi(u)| <= O(n^{3/2}) + S_L`, the ordinary-step jump of `Phi_L` is
+`2 sqrt(d_Phi) (Delta_2 · Sigma)^{1/2}`, so
+```
+   g_ord  =  d_Phi / (2 · jump)  =  sqrt(d_Phi) / ( 4 (n Sigma)^{1/2} )
+          =  sigma n^{3/2} log n / ( 4 (n Sigma)^{1/2} ),
+```
+and `g_ord >> log n` requires only
+```
+        Sigma  <<  sigma^2 n^2 / 16,     i.e.     S_L(y,i)  <<  sigma^2 n^2  =  n^2 / log log n     (8.6)
+```
+at `sigma = (log log n)^{-1/2}`. **The requirement is `S_L << n^2/log log n`, not `O(n^{3/2})`.**
+
+Against (8.6):
+- the extremal configuration of §8.3 gives `Theta(n^{3/2})`, below (8.6) by `sqrt(n)/log log n`;
+- term 2 of (8.4) gives `Theta(n^2/sqrt(log n))`, below (8.6) by `sqrt(log n)/log log n`;
+- **term 1 of (8.4) gives `Theta(n^2 sqrt(log n)/log log n)`, above (8.6) by exactly
+  `sqrt(log n)`.**
+
+So the entire obligation now reduces to improving term 1 by a factor `sqrt(log n)`.
+
+### 8.5 Status of (K1b), and the residual statement
+
+> **(K1b′)** For every line `L`, every `y ∈ V(i)` and every `i <= T`,
+> ```
+>       sum_{w ∈ N(y,i)} Λ_L(w,i)   <=   d_2(y,i) · n / log n ,
+> ```
+> i.e. the average of `Λ_L(·,i)` over `N(y,i)` is at most a `1/sqrt(log n)` fraction of its
+> deterministic maximum `5i = Theta(n/sqrt(log n))` from (8.3).
+
+For orientation, the three relevant magnitudes:
+```
+   typical value of Λ_L(w,i)  (global average)      Theta( sqrt(log n) )
+   what (K1b′) asks for       (average over N(y))   Theta( n / log n )
+   deterministic maximum      (8.3)                 Theta( n / sqrt(log n) )
+```
+So (K1b′) asks for a factor `sqrt(log n)` off the maximum, while the truth is a factor
+`n/log n` off it. **The margin is enormous and the shortfall is a single square root of a
+logarithm** — but it is a statement about `N(y,i)` not over-sampling the high-`Λ_L` vertices,
+i.e. a correlation statement of exactly the kind Corollary 6.1 warns is delicate when a line is
+involved, and it is not proved here.
+
+**Conclusion.** (K1b) is **OPEN**: not proved, not falsified. Lemma H and Lemma G are new and
+**PROVED**; the deterministic bound (8.4) is **PROVED**; Proposition K is **PROVED** and shows
+the `n^{3/2}` threshold is attained; the threshold itself is **corrected** to (8.6). Theorem F′
+and Lemma C remain **CONDITIONAL**, now on (K1b′) in place of (K1b), together with (K2), (K3),
+(K4). Nothing here changes the proved lower bound for `C(n)`, which remains
+`Omega(n/sqrt(log n))`.

@@ -228,3 +228,47 @@ Status is exactly one of **PROVED / CONDITIONAL / EMPIRICAL / FALSIFIED / OPEN**
 - "Bookkeeping" is banned as a description of anything not written down.
 - `Theta(n sqrt(log log log n)/sqrt(log n))` remains **not claimed**, and now depends on
   (K1a), (K1b), (K2), (K3), (K4).
+
+---
+
+# Obligation (K1b) — claims
+
+| # | claim | status | where |
+|---|---|---|---|
+| H1 | **Lemma H (exact characterisation).** For `i <= T` and `u,w ∈ V(i)`: `{u,w}` is a size-2 edge of `H(i)` **iff** `∃ z ∈ I(i)` with `{u,w,z} ∈ H_n`. Hence `c_{2,2->1}(u,y,i) = \|N(u,i) ∩ N(y,i)\|` and `S_L(y,i) = e_{G(i)}(L ∩ V(i), N(y,i))` | **PROVED** | §8.0 |
+| G1 | **Lemma G (circle/line dichotomy).** For `w ≠ z` and any line `L`, `codeg_L(w,z) <= 5` unless `L = B(w,z)`, i.e. unless `z = refl_L(w)`; in the exceptional case `<= \|L ∩ [n]^2\|`. Two of three apex cases put `u` on a **circle**, which meets a line in `<= 2` points regardless of arithmetic | **PROVED** | §8.1 |
+| G2 | Lemma G is stronger in form than Lemma E: the exceptional case is a single `z` per `w`, with no scale dependence | **settled** | §8.1 |
+| D1 | **Deterministic bound.** `Λ_L(w,i) <= 5i + \|L\|·1[refl_L(w) ∈ I(i)]`, hence `S_L(y,i) <= 5i·d_2(y,i) + \|L\|·#{w ∈ N(y,i) : refl_L(w) ∈ I(i)}` | **PROVED** | §8.2 |
+| D2 | evaluated: bulk term `Theta(n^2 sqrt(log n)/log log n)`; reflection term `O(n^2/sqrt(log n))`. **The coherent-reflection term is not the obstruction here** — the first time in this session that it is harmless | **PROVED** | §8.2, §8.4 |
+| K1 | **Proposition K.** For any set `A` of distinct odd integers in `[1,n)`, `I_A = {(0,0)} ∪ {(a,2) : a ∈ A}` is an independent set of `H_n`, and with `y = (0,2)`, `L` the bottom row, `M` the row `x_2 = 1`: `c_{2,2->1}((a,0),y,i) >= \|M ∩ V(i)\| - 2` for every alive `a ∈ A` | **PROVED** | §8.3 |
+| K2 | measured: `S_L/n^{3/2}` = 0.4805, 0.4900, 0.4815, 0.4956, 0.4941 at `n = 64,100,144,196,256`, independence verified exhaustively (0 violating triples). **The threshold `n^{3/2}` is attained, flat in `n`** | **EMPIRICAL** (exact, `s8_k1b.c`) | §8.3 |
+| K3 | consequences of K1+K2: (i) `n^{3/2}` is the right exponent for this mechanism; (ii) **no deterministic proof of (K1b) can have room**, since `\|I_A\| = Theta(sqrt n) << m` is a possible process state; (iii) pushing past `n^{3/2}` in this family needs a 3-AP-free set of size `omega(sqrt n)` with sumset `o(n)` — implausible by Freiman/Roth, not constructed, and outside this session | **PROVED** (i,ii); **stated, not settled** (iii) | §8.3 |
+| T1 | **CORRECTION to the HANDOFF threshold.** `O(n^{3/2})` was chosen only to match Lemma E(a). Theorem F′ actually needs `S_L(y,i) << sigma^2 n^2 = n^2/log log n` | **PROVED** | §8.4 |
+| T2 | against the corrected threshold: extremal configuration below by `sqrt(n)/log log n`; reflection term below by `sqrt(log n)/log log n`; **bulk term above by exactly `sqrt(log n)`** | **PROVED** | §8.4 |
+| R1 | **(K1b) is OPEN — neither proved nor falsified.** It reduces to **(K1b′)**: `sum_{w ∈ N(y,i)} Λ_L(w,i) <= d_2(y,i)·n/log n`, i.e. the average of `Λ_L` over `N(y,i)` is a `1/sqrt(log n)` fraction of its deterministic maximum `5i` | **OPEN** | §8.5 |
+| R2 | orientation: typical `Λ_L = Theta(sqrt(log n))`; (K1b′) asks `Theta(n/log n)`; deterministic max `Theta(n/sqrt(log n))`. Margin `n/log n`; shortfall one `sqrt(log n)` | **PROVED** | §8.5 |
+
+## Effect on earlier claims
+
+| # | claim | change |
+|---|---|---|
+| F2′ | Theorem F′ | **remains CONDITIONAL**; dependency (K1b) is replaced by **(K1b′)**, alongside (K2), (K3), (K4). No further downgrade |
+| C4 | Lemma C | **remains CONDITIONAL**, on (K1b′) |
+| — | HANDOFF's `O(n^{3/2})` threshold | **superseded** by (8.6), `S_L << sigma^2 n^2` |
+
+## Bottom line, unchanged
+
+| # | claim | status |
+|---|---|---|
+| **R1** | `C(n) = Omega(n)` | **OPEN** |
+| **R2** | `C(n) = Omega(n/sqrt(log n))` | known; **still unimproved** |
+| **R3** | any strict improvement of the lower bound | **not obtained** |
+
+## Wording rules
+
+- Lemma H, Lemma G, Proposition K and the bound (8.4) may be stated flatly — proved,
+  unconditional, deterministic.
+- **(K1b) must not be described as closed.** It is OPEN and reduces to (K1b′).
+- The `n^{3/2}` figure must always be quoted as *attained* (Proposition K), never as *proved*.
+- The operative requirement is (8.6), `S_L << n^2/log log n`, not `O(n^{3/2})`.
+- No claim about `C(n)` is made or implied by anything in Part VIII.

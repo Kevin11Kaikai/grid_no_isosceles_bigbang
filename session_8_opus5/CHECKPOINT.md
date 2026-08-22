@@ -170,3 +170,51 @@ crude cap (unconditional), Theorem 2 (conditional on (H-surv), permanently).
 
 (K1b). Do **not** start (K1a) or anything else until (K1b) is settled — it is the cheapest and
 it unblocks both conditional theorems.
+
+---
+
+# (K1b) pass
+
+**Verdict unchanged: `CONDITIONAL_BRIDGE_ONLY`.** `C(n)` unchanged at `Omega(n/sqrt(log n))`.
+(K1b) is **OPEN — neither proved nor falsified**; it is reduced to (K1b′) and its threshold is
+corrected. Theorem F′ and Lemma C remain CONDITIONAL, now on (K1b′) in place of (K1b).
+
+## Proved in this pass (all unconditional, deterministic)
+
+- **Lemma H** (§8.0): for `u,w ∈ V(i)`, `{u,w} ∈ H(i)` iff `∃z ∈ I(i)` with `{u,w,z} ∈ H_n`.
+  Hence `c_{2,2->1}(u,y,i) = |N(u,i) ∩ N(y,i)|` and
+  `S_L(y,i) = e_{G(i)}(L ∩ V(i), N(y,i)) = sum_{w∈N(y,i)} Λ_L(w,i)`.
+- **Lemma G** (§8.1): `codeg_L(w,z) <= 5` unless `z = refl_L(w)`. Two of three apex cases put
+  `u` on a **circle**, and a circle meets a line in `<= 2` points regardless of arithmetic.
+- **Deterministic bound (8.4)** (§8.2):
+  `S_L <= 5i·d_2(y,i) + |L|·#{w ∈ N(y,i) : refl_L(w) ∈ I(i)}`.
+  Reflection term `O(n^2/sqrt(log n))`; bulk term `Theta(n^2 sqrt(log n)/log log n)`.
+- **Proposition K** (§8.3): `I_A = {(0,0)} ∪ {(a,2) : a ∈ A}` is independent for any set `A` of
+  distinct odd integers, and attains `S_L = Theta(n^{3/2})`.
+- **Threshold correction (8.6)** (§8.4): Theorem F′ needs `S_L << sigma^2 n^2 = n^2/log log n`,
+  **not** `O(n^{3/2})`.
+
+## Numbers to re-derive if resuming
+
+- typical `Λ_L(w,i) = Theta(sqrt(log n))`; deterministic max `5i = Theta(n/sqrt(log n))`;
+  (K1b′) asks for average `Theta(n/log n)` over `N(y,i)`. Margin `n/log n`, shortfall
+  `sqrt(log n)`.
+- measured `S_L/n^{3/2}` for `I_A` = 0.4805, 0.4900, 0.4815, 0.4956, 0.4941 at
+  `n = 64,100,144,196,256`; independence verified exhaustively (0 violating triples).
+- against (8.6): extremal config below by `sqrt(n)/log log n`; reflection term below by
+  `sqrt(log n)/log log n`; **bulk term above by exactly `sqrt(log n)`.**
+
+## Reproduce
+
+```
+cd session_8_opus5/experiments
+gcc -O2 -o s8_k1b s8_k1b.c -lm && ./s8_k1b 256 9999
+```
+
+## Exact next action
+
+(K1b′). A deterministic proof is ruled out by Proposition K, so the argument must use the
+adapted randomness of `I(i)`. Do **not** re-attack the coherent-reflection term — it is already
+below the requirement; the obstruction is the bulk term `5i·d_2(y,i)`.
+
+(K1a), (K2), (K3), (K4) and Candidate A were not attacked in this pass, as instructed.

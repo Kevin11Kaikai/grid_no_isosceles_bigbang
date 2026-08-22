@@ -4,14 +4,14 @@ The claim-safety audit of Part VII downgraded Theorem F from PROVED to CONDITION
 session verdict to `CONDITIONAL_BRIDGE_ONLY`. There is no longer a single obligation. All of
 them are listed below, in the order they should be attacked.
 
-**Unconditional and safe to build on:** Lemma 1 (`Delta_2 = n(1+o(1))`, the fat top, the Pareto
+**Unconditional and safe to build on:** Lemma H and Lemma G and Proposition K (Part VIII), Lemma 1 (`Delta_2 = n(1+o(1))`, the fat top, the Pareto
 tail `B_v(tau) = O(n^2 log n/tau)`, `D = Theta(n^2 log n)`), **Lemma D**
 (`sum_u codeg(v,u) codeg(u,y) <= 54 n^3`), **Lemma E** (line-restricted: `O(n^{3/2})` off the
 line, `O(n^2/s_L^2)` on it), the positive-clustering counterexample, Corollary 6.1, and the
 crude cap Prop 3(3a).
 
-**Conditional:** Theorem 2 (on (H-surv), permanently), Lemma C (on K1b), Theorem F′ (on K1b,
-K2, K3, K4).
+**Conditional:** Theorem 2 (on (H-surv), permanently), Lemma C (on K1b′), Theorem F′ (on
+K1b′, K2, K3, K4).
 
 ---
 
@@ -26,21 +26,47 @@ against a requirement `Theta(s_2/polylog)`, so `n/polylog` of room; but the jump
 when the chosen vertex lies on a line common to `v` and `v'`, putting the budget at
 `Theta(sqrt(log n))` against `log n/log log n` — **the Theorem 2 shape**. It may fail.
 
-## (K1b) The line-averaged pair codegree — needed by Theorem F′ and Lemma C
+## (K1b′) The line-averaged pair codegree — needed by Theorem F′ and Lemma C
 
-> Show `sum_{u ∈ L} c_{2,2->1}(u, y, i) = O(n^{3/2})` for every line `L`, every `y ∈ V(i)`, and
-> every `i <= T`.
+**Superseded form.** (K1b) was stated as `sum_{u∈L} c_{2,2->1}(u,y,i) = O(n^{3/2})`. Part VIII
+settled its status: it is **OPEN — neither proved nor falsified** — and it was *over-strict*.
+The threshold `O(n^{3/2})` was chosen only to match Lemma E(a); what Theorem F′ actually needs
+from its ordinary-step Freedman term is
+```
+        S_L(y,i) := sum_{u ∈ L ∩ V(i)} c_{2,2->1}(u,y,i)  <<  sigma^2 n^2  =  n^2 / log log n .   (8.6)
+```
+What Part VIII proved, and what remains:
 
-This is **not** implied by (K1a): at the level (K1a) allows, the line sum is
-`Theta(n^2 sqrt(log n)/polylog)`, which exceeds both branches of Lemma E and would dominate the
-whole jump analysis of Theorem F′ (§7.2(a)). What is asked is an average of `O(sqrt n)` along a
-line against a typical value of `Theta(log n)` — far weaker than (K1a) and probably true, but
-unproved. It arises because `Delta d_2^-(u,j) <= 1 + c_{2,2->1}(u,y_j,j)`.
+- **Lemma H** (exact): for `u,w ∈ V(i)`, `{u,w} ∈ H(i)` iff `∃ z ∈ I(i)` with `{u,w,z} ∈ H_n`;
+  hence `S_L(y,i) = e_{G(i)}(L ∩ V(i), N(y,i)) = sum_{w ∈ N(y,i)} Λ_L(w,i)`.
+- **Lemma G** (circle/line dichotomy): `codeg_L(w,z) <= 5` unless `z = refl_L(w)`.
+- **Deterministic bound (8.4):** `S_L <= 5i·d_2(y,i) + |L|·#{w ∈ N(y,i) : refl_L(w) ∈ I(i)}`.
+  The reflection term is `O(n^2/sqrt(log n))` — **below (8.6)**, so the coherent-reflection
+  mechanism is *not* the obstruction here. The bulk term is
+  `Theta(n^2 sqrt(log n)/log log n)` — **above (8.6) by exactly `sqrt(log n)`.**
+- **Proposition K** (extremal configuration): `I_A = {(0,0)} ∪ {(a,2) : a ∈ A}` is independent
+  for any set `A` of distinct odd integers, and attains `S_L = Theta(n^{3/2})` — measured
+  `S_L/n^{3/2}` flat at ≈ 0.49 for `n = 64..256`. So `n^{3/2}` is *attained*, no deterministic
+  proof can have room, and the family stops there for an additive-combinatorics reason (a
+  3-AP-free set with sumset `o(n)` would be needed to go further).
 
-**Attack it first**: it is the weakest of the four and it is what makes Theorem F′ and Lemma C
-conditional. The natural route is the Lemma E template — bound `c_{2,2->1}(u,y)` by a
-codegree-type count and use the uniform-in-`s` counting `#{u : s(u,y) = s} <= 16n` restricted to
-a line, where it improves to `<= 8s`.
+> **(K1b′) — what is actually left.** For every line `L`, every `y ∈ V(i)` and every `i <= T`,
+> ```
+>       sum_{w ∈ N(y,i)} Λ_L(w,i)   <=   d_2(y,i) · n / log n ,
+>       where  Λ_L(w,i) := #{ u ∈ L ∩ V(i) : {u,w} ∈ H(i) }.
+> ```
+> Equivalently: the average of `Λ_L(·,i)` over `N(y,i)` is at most a `1/sqrt(log n)` fraction of
+> its deterministic maximum `5i = Theta(n/sqrt(log n))`.
+
+Orientation: typical `Λ_L` is `Theta(sqrt(log n))`, (K1b′) asks for `Theta(n/log n)`, and the
+deterministic maximum is `Theta(n/sqrt(log n))`. **The margin is `n/log n`; the shortfall is one
+square root of a logarithm.** But it asserts that `N(y,i)` does not over-sample the high-`Λ_L`
+vertices — a correlation statement involving a line, which Corollary 6.1 flags as exactly the
+configuration where the session's techniques have failed before. A purely deterministic proof is
+ruled out by Proposition K, so any argument must use the adapted randomness of `I(i)`.
+
+**Still attack it first**: it is the weakest of the remaining obligations and it is what makes
+Theorem F′ and Lemma C conditional.
 
 ## (K2) The `d_2^-` feedback: does the tolerance compound or self-correct?
 
@@ -122,6 +148,12 @@ closure of K1–K4.
   the bisector line, so cancellation over the line implies nothing about it (§6.0).
 - Do **not** state a result in terms of `d_2^+` and call it a result about `d_2`. That was the
   central defect found by the audit (§7.2).
+- Do **not** attempt a *deterministic* proof of (K1b′). Proposition K exhibits a legitimate
+  independent set of size `Theta(sqrt n) << m` attaining `S_L = Theta(n^{3/2})`, so the
+  deterministic route has no room; any argument must use the adapted randomness of `I(i)`.
+- Do **not** re-derive the bound via the coherent-reflection term. Part VIII shows it is
+  `O(n^2/sqrt(log n))`, already below the requirement (8.6). The obstruction here is the *bulk*
+  term `5i·d_2(y,i)` — the first place in this session where reflection is not the culprit.
 - Do **not** describe an unwritten re-derivation as "bookkeeping" (§7.5(b)).
 - Do **not** infer asymptotics from finite-`n` tables. Earlier in this session a fitting error of
   exactly that kind — `sd_y(A) = Theta(n^3)` rather than the true `Theta(n^2 log^2 n)`, the two
