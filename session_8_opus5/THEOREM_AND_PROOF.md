@@ -913,3 +913,245 @@ Every `sigma`-constraint above is met by `sigma = (log log n)^{-1/2}`. What is m
 unverified condition (`c_{2,2->1}`) and the bookkeeping of BB's §sec:dynamic under the
 substituted conditions, including the tolerance-compounding constant of §5.5 line 6. **No bound
 on `C(n)` is stated, and the proved bound remains `Omega(n/sqrt(log n))`.**
+
+---
+
+## Part VII. Claim-safety audit of Theorem F
+
+Theorem F as stated in §6.2 is **not claim-safe**. This part works through the five points of
+the audit, repairs what can be repaired, and states honestly what cannot. The outcome is that
+**Theorem F is downgraded to CONDITIONAL**, on three named obligations, and restated with full
+`t`- and `q(t)`-dependence as Theorem F′. **Lemmas 1, D and E survive unchanged**; they are
+static statements about the geometry of `H_n` and nothing below touches their proofs.
+
+### 7.1 The drift decomposition — REPAIRED
+
+§6.0 wrote `e(u,i) = sum_{j<i} xi_j(u) + O(n^{1+o(1)})` and called the error a "Riemann-sum
+discrepancy". That was wrong: the error is not a quadrature error, it is the accumulated
+failure of `d_3(u,j)` and `|V(j)|` to sit on their trajectories. Here is the correct statement.
+
+**The exact conditional expectation.** When `y_j` is chosen uniformly from `V(j)`, a size-2
+edge `{u,x}` is created exactly when `{u,x,y_j}` is a size-3 edge of `H(j)`. (No size-2 edge
+can already be present, since the containment convention would then have deleted the size-3
+edge.) Hence, with `X_j(u)` the number of size-2 edges created at `u` at step `j`,
+```
+   E[ X_j(u) | F_j ]  =  (1/|V(j)|) sum_{y ∈ V(j)}  d_{{u,y} up 3}(j)  =  2 d_3(u,j) / |V(j)|,   (7.1)
+```
+each size-3 edge `{u,x,y}` at `u` being counted once at `y` and once at `x`. (7.1) is exact,
+not an approximation, and it is BB's `E[Δ d_l^+] = (1/|V|) l d_{l+1}` at `l = 2, r = 3`.
+
+**Doob decomposition.** `d_2^+(u,i) = M_i^+(u) + A_i^+(u)` with
+`M_i^+(u) := sum_{j<i} xi_j(u)`, `xi_j(u) := X_j(u) - 2 d_3(u,j)/|V(j)|`, and
+`A_i^+(u) := sum_{j<i} 2 d_3(u,j)/|V(j)|`. Therefore
+```
+   e^+(u,i) := d_2^+(u,i) - s_2^+(t_i)  =  M_i^+(u)  +  R_i^+(u),   R_i^+(u) := A_i^+(u) - s_2^+(t_i).
+```
+
+**Bounding `R^+`.** `s_2^+(t) = D^{-1/2} ∫_0^t 2 s_3(τ)/q(τ) dτ`, so with `Δt = D^{1/2}/N` the
+per-step increment of the trajectory is `Δ s_2^+ = 2 s_3/(Nq) + O((s_2^+)'' (D^{1/2}/N)^2)`.
+The two stopping-time conditions that we **keep** are (V) for `l = 3`, `|d_3(u,j) - s_3| <= σ_3 s_3`,
+and (P), `| |V(j)| - Nq | <= ε_V N q`. Hence, per step,
+```
+   | 2 d_3(u,j)/|V(j)|  -  2 s_3/(Nq) |  <=  (2 s_3/(Nq)) [ (1+σ_3)/(1-ε_V) - 1 ]  <=  (2 s_3/(Nq)) · 2(σ_3 + ε_V)
+```
+for `σ_3, ε_V` small, and summing over `j < i`,
+```
+   | R_i^+(u) |  <=  3 (σ_3 + ε_V) · s_2^+(t_i)  +  O(log n),                       (7.2)
+```
+the `O(log n)` being the genuine second-order quadrature term
+`m · (s_2^+)'' (D^{1/2}/N)^2 = O(t^2 D q/N) = O(log n)`, which is negligible at every scale here.
+
+**Consequence for `Phi_L`.** `Phi_L <= 2 sum_{u∈L} M_i^+(u)^2 + 2 sum_{u∈L} R_i^+(u)^2` and, at
+`t = Theta(1)` where `s_2^+ = Theta(n sqrt(log n))`,
+```
+   sum_{u∈L} R_i^+(u)^2  <=  |L| · 9(σ_3+ε_V)^2 (s_2^+)^2  =  O( σ^2 n^3 log n ),
+```
+against the budget `d_Phi = kappa σ^2 n^3 (log n)^2`. The ratio is `O(1/(kappa log n))`.
+**The drift error costs a factor `log n` less than the budget, so item 1 closes** — but note it
+closes only *because* the `l = 3` pointwise condition and (P) are retained in the stopping time.
+
+### 7.2 The negative part `d_2^-` — DOES NOT CLOSE
+
+§6.2 controlled `d_2^+` and silently identified `e` with `e^+`. That is not legitimate:
+condition (A2) is about the **current degree** `d_2 = d_2^+ - d_2^-`, so
+`e(u,i) = e^+(u,i) - e^-(u,i)` and `Phi_L <= 2 sum (e^+)^2 + 2 sum (e^-)^2`. The `e^-` half
+introduces two genuinely new difficulties.
+
+**(a) The one-step jump of `d_2^-` is governed by `c_{2,2->1}` — so Theorem F depends on (K1).**
+When `y_j` is chosen the vertices leaving `V` are `y_j` itself together with every `w` such that
+`{w,y_j}` is a size-2 edge. A size-2 edge `{u,x}` at `u` dies exactly when `x` is one of them, so
+```
+   Δ d_2^-(u,j)  <=  1  +  #{ x : {u,x} and {x,y_j} both size-2 edges of H(j) }
+                  =  1  +  c_{2,2->1}(u, y_j, j).                                    (7.3)
+```
+Summing over the line, the quantity Theorem F actually needs is
+```
+   sum_{u ∈ L} c_{2,2->1}(u, y, j)   for every line L and every y.                   (7.4)
+```
+If (7.4) is only bounded by BB's own condition `c_{2,2->1} <= C_{2,2->1} = Theta(s_2/polylog)`,
+then (7.4) is `Theta(n^2 sqrt(log n)/polylog)`, which **exceeds** both of Lemma E's bounds
+(`O(n^{3/2})` off-line, `O(n^2)` on-line) and would dominate the whole jump analysis. What is
+needed is the much weaker but currently unproved
+```
+   (K1b)   sum_{u ∈ L} c_{2,2->1}(u, y, i)  =  O(n^{3/2})   for every line L, every y, every i <= T,
+```
+i.e. an average of `O(sqrt(n))` along a line, against a typical value of `Theta(log n)`.
+This is very likely true and is far weaker than (K1a) `c_{2,2->1} <= C_{2,2->1}`, but it is not
+proved. **Theorem F is therefore not independent of the (K1) family, as §6.5 asserted.**
+
+**(b) The drift of `d_2^-` feeds `e` back into itself with an `O(1)` coefficient.**
+By ind.tex line 1018 at `l = 2`, `E[Δ d_2^-(u) | F_j] = Sigma_2(u,j)/|V(j)| + O(d_2(u) C_{2,2->1}/|V|)`,
+and `s_2^-(t) = D^{-1/2} ∫_0^t s_2^2/q`, so `Δ s_2^- = s_2^2/(Nq)`. Using (A2) at `u`,
+`Sigma_2(u,j) = d_2(u,j)(s_2 ± tol_2)`, whence per step
+```
+   E[Δd_2^-(u)] - Δ s_2^-  =  (s_2/(Nq)) · e(u,j)  ±  (d_2(u,j)/(Nq)) · tol_2  ±  (terms in ε_V).
+```
+The second and third terms accumulate to `O(σ) · s_2^-`, harmless like (7.2). The **first term is
+a feedback**: its per-step coefficient is `s_2/(Nq) = Theta(sqrt(log n)/n)`, and over
+`m = Theta(n/sqrt(log n))` steps the total weight is `Theta(1)`. Hence
+```
+   R_i^-(u)  =  Theta(1) · (time-average of e(u,·))  +  O(σ) s_2^- .                 (7.5)
+```
+Feeding (7.5) into `Phi_L` gives a discrete Grönwall inequality
+`Phi_L(i) <~ 2 sum_{u∈L} M_i(u)^2 + C' · max_{j<i} Phi_L(j)`, i.e. an amplification of the
+martingale part by `e^{C t^2} = q(t)^{-C}`.
+
+Whether that amplification is real is exactly the self-correction question. The *true*
+linearised system for `(δ_2, δ_3) := (d_2 - s_2, d_3 - s_3)` is
+```
+   d/dt (δ_3) = -4t δ_3 - 2 D^{1/2} q δ_2 ,      d/dt (δ_2) = (2/(D^{1/2} q)) δ_3 - 4t δ_2 ,
+```
+whose matrix has eigenvalues `-4t ± 2i` — **stable**, so the true errors decay like `q^{+4}`.
+BB's one-sided bounding replaces the stabilising `-` by a `+` and produces `q^{-C}` growth
+instead. Which of the two governs `Phi_L` is **not resolved here**. This is obligation (K2).
+
+### 7.3 Re-centring the ordinary/line split, and the quadratic variation line by line
+
+The Freedman application in §6.2 was made to the *truncated* increments
+`ΔΨ_j · 1[ordinary]`, which are **not** martingale differences. Re-centring is required, and it
+was omitted. It costs
+```
+   | sum_{j<m} E[ ΔΨ_j 1[line] | F_j ] |  <=  mu_L · (max line-step jump)
+                                          =  Theta((log n)^{-1/2}) · Theta(σ n^3 log n)
+                                          =  Theta( σ n^3 (log n)^{1/2} ),
+```
+against `d_Phi = kappa σ^2 n^3 (log n)^2`; the ratio is `Theta(1/(kappa σ (log n)^{3/2}))`, which
+is `o(1)` whenever `σ >> (log n)^{-3/2}`. **Negligible, but it must be stated.**
+
+The predictable quadratic variation, derived line by line (`l = 2` part only, i.e. ignoring
+§7.2):
+```
+   ΔPhi_L      =  2 sum_{u∈L} e(u,i) xi_i(u)  +  sum_{u∈L} xi_i(u)^2
+   (ΔPhi_L)^2  <=  8 ( sum_u e xi )^2  +  2 ( sum_u xi^2 )^2
+   ( sum_u e xi )^2  <=  ( sum_u e^2 )( sum_u xi^2 )  =  Phi_L · sum_u xi^2  <=  d_Phi sum_u xi^2      [Cauchy-Schwarz; Phi_L <= d_Phi before T_Phi]
+   E_y[ sum_{u∈L} xi_i(u)^2 ]  <=  sum_{u∈L} E_y[ codeg(u,y)^2 ]  =  |L| · O(N n log n)/(Nq/2)  =  O(n^2 log n / q)
+       [layer cake on Lemma 1(c): sum_y codeg(u,y)^2 = 2∫_0^{Δ_2} τ B_u(τ) dτ = O(N n log n)]
+   max_y sum_{u∈L} xi^2  <=  Δ_2 · max_y sum_{u∈L} codeg(u,y)  <=  n · O(n^2)  =  O(n^3)          [Lemma E(b)]
+   E_y[ ( sum_u xi^2 )^2 ]  <=  ( max_y sum_u xi^2 ) E_y[ sum_u xi^2 ]  =  O(n^5 log n / q)
+   Var[ ΔPhi_L | F_i ]  <=  8 d_Phi O(n^2 log n/q) + 2 O(n^5 log n/q)  =  O( σ^2 n^5 (log n)^3 / q )
+   V_qv = m · Var  =  O( σ^2 n^6 (log n)^{5/2} / q ),        m = Theta(n/sqrt(log n))
+   d_Phi^2 / (4 V_qv)  =  Theta( q σ^2 (log n)^{3/2} ).
+```
+So the variance term needs `σ >> q^{-1/2}(log n)^{-1/4}`. **Item 3 closes for the `d_2^+` part**,
+with re-centring made explicit; it inherits §7.2's failure through `xi`.
+
+### 7.4 Full `t`- and `q(t)`-dependence — Theorem F′, and the horizon ceiling
+
+§6.2 was written at `t = Theta(1)`, `q = Theta(1)`, and was silent about it. Since
+`m = t N/D^{1/2} = Theta(t n/sqrt(log n))`, **`t = Theta(1)` gives only the known bound up to a
+constant**; any strict improvement needs `t -> ∞`. Redoing every scale with `q = q(t) = e^{-t^2}`:
+
+```
+   |V| = Nq(1±ε_V),   s_2 = 2 D^{1/2} t q,   s_2^+ = 2 D^{1/2} Q(t),  Q(t) := ∫_0^t q,
+   s_3 = D q^2,       codeg_{H(i)}(u,y) ≈ q · codeg_{H_n}(u,y),      Δ_2(i) ≈ q n,
+   |P(v,y)| = codeg(v,y) <= Δ_2(i) ≈ q n,     d_2(v) ≈ s_2.
+```
+The budget for `Phi_L` follows from `sum_{u∈P}|e| <= sqrt(|P| Phi_L) <= d_2(v) tol_2 = σ s_2^2`:
+```
+   d_Phi(t)  =  (σ s_2^2)^2 / (q n)  =  16 σ^2 D^2 t^4 q^3 / n  =  Theta( σ^2 n^3 (log n)^2 · t^4 q^3 ).   (7.6)
+```
+The mean is `E[Phi_L] = |L| · Theta(n^2 sqrt(log n) Q(t)) = Theta( n^3 sqrt(log n) Q(t) )`, so
+```
+   d_Phi / E[Phi_L]  =  Theta( σ^2 (log n)^{3/2} · t^4 q^3 / Q(t) ),                 (7.7)
+```
+which must be `>> 1`. The line-step jump and hazard become
+```
+   sum_{u∈L} xi^2 <= Δ_2(i) · sum_{u∈L} codeg_i(u,y) = O(qn · q n^2) = O(q^2 n^3)
+   line jump  <=  2 sqrt(d_Phi) · O(q n^{3/2}) + O(q^2 n^3)  =  Theta( σ n^3 log n · t^2 q^{5/2} )
+   g_L  =  d_Phi/(2 · line jump)  =  Theta( σ log n · t^2 q^{1/2} )                  (7.8)
+   mu_L =  sum_{j<m} |L ∩ V(j)|/|V(j)|  ≈  sum_j (qn)/(Nq)  =  m/n  =  Theta( t/sqrt(log n) )   (7.9)
+```
+— note `mu_L` is **`q`-free**, because both the line and the ambient set thin by the same factor.
+The jump-count exponent is `g_L log(g_L/(e mu_L))`, and requiring it to beat `5 log n` gives
+```
+   σ t^2 q(t)^{1/2} · log( σ t q^{1/2} (log n)^{3/2} )  >=  5 .                       (7.10)
+```
+Since `q^{1/2} = e^{-t^2/2}`, the left side of (7.10) is maximised near `t^2 = 2` and then
+decays. Writing `σ = ω/log log n` with `ω -> ∞` and `σ = o(1)` (so `ω = o(log log n)`), (7.10)
+holds iff `t^2 e^{-t^2/2} >~ 5/ω`, i.e. `t^2 <~ 2 log ω`. Taking `ω = sqrt(log log n)`:
+
+> **Theorem F′ (restated, conditional).** Assume (K1b), (K2), condition (P) and the `l = 3`
+> pointwise condition. Let `σ = (log log n)^{-1/2}` and let the horizon satisfy
+> ```
+>       t  <=  t_max  =  c · sqrt( log log log n ) .
+> ```
+> Then with probability `1 - o(1)`, `Phi_L(i) <= d_Phi(t_i)` of (7.6) for every line `L` and
+> every `i <= T`, and consequently condition (A2) for `l = 2` holds throughout.
+
+At `t = t_max` this gives `m = Theta( n sqrt(log log log n)/sqrt(log n) )`. **Item 4 therefore
+does not close as asked** — Theorem F does *not* survive to an arbitrary growing horizon. It
+survives to `t = O(sqrt(log log log n))`, and (7.10) is the exact obstruction: the line-step
+jump budget `g_L` carries a factor `q^{1/2} = e^{-t^2/2}` while the hazard `mu_L` does not.
+
+### 7.5 Non-regularity of `H_n`, and the substituted Candidate A — DOES NOT CLOSE
+
+**(a) `H_n` is not `D`-regular, and BB's Theorem 1.1 assumes it is.** Exact degrees
+(`experiments/s8_tail.c`, `sum_y codeg(v,y) = 2 D(v)`):
+
+| `n` | centre | corner | edge midpoint | max/min |
+|---|---|---|---|---|
+| 64  | 71 719  | 32 252  | 36 319  | 2.22 |
+| 128 | 341 507 | 147 848 | 170 587 | 2.31 |
+
+The ratio is a **constant bounded away from 1 and not decreasing**. Everything in BB's §sec:lower
+— the trajectories `s_l(t)`, the stopping time, the error-function system — is written for a
+single `D`. Two repairs exist and **neither is carried out here**: regularise upward by dummy
+edges (which then requires re-proving Lemmas 1, D and E for the augmented hypergraph, since they
+are statements about grid geometry), or state and prove a version of BB with vertex-dependent
+degrees `D(v)`. Per the frozen-status instruction, the earlier campaign's dummy-edge
+regularisation is **not** imported as established. This is obligation (K3).
+
+**(b) Candidate A has not been proved.** §6.5 called the remainder "bookkeeping". It is not.
+What is missing is the re-derivation of ind.tex §sec:dynamic with (A0)/(A1)/(A2) substituted for
+(V) at `l = 2`:
+- the variation equations (ind.tex 981, 995, 998) must be re-derived, since their right-hand
+  sides contain `f_2` — the error function of a variable that is no longer tracked pointwise;
+- a replacement error-function system must be exhibited and shown to satisfy the resulting
+  differential inequalities with `f(0) = 1` and `f` increasing;
+- the supermartingale property of `Z_V` and `Z_3^±` must be re-established using only the
+  averaged conditions;
+- the compounding constant `C` of §5.5 line 6 must be computed, since it and (7.10) jointly fix
+  the horizon.
+
+None of this is done. This is obligation (K4).
+
+### 7.6 Outcome of the audit
+
+| item | verdict |
+|---|---|
+| 1. drift decomposition via `2 d_3(u,i)/\|V(i)\|` | **repaired**, (7.1)–(7.2); costs a factor `log n` less than the budget |
+| 2. `d_2^-` and hence `d_2` | **fails**: jump needs (K1b); drift gives an `O(1)` feedback whose sign is unresolved (K2) |
+| 3. re-centring and the PQV | **repaired**, §7.3; re-centring cost `Theta(σ n^3 (log n)^{1/2})`, negligible |
+| 4. `t`- and `q`-dependence | **partially**: Theorem F′ holds to `t = O(sqrt(log log log n))`, not beyond; (7.10) is the exact ceiling |
+| 5. non-regularity; complete Candidate A | **fails**: (K3), (K4) |
+
+**Theorem F is downgraded from PROVED to CONDITIONAL**, on (K1b), (K2), (K3), (K4), and is
+restated as Theorem F′ with explicit `t`- and `q`-dependence. **Lemma C** inherits the same
+`d_2^-` defect — its increment `ΔW_3 = A(v,y) - E_y[A]` was computed with
+`Δe(u) = codeg(u,y) - E` and omits the `-Δ d_2^-(u)` term of (7.3) — and is likewise downgraded
+to CONDITIONAL on (K1b).
+
+**Lemmas 1, D and E are unaffected.** They are deterministic statements about `H_n`; their
+proofs use only the counting `#{u : s(v,u) = s} <= 16n`, the bound `r_2(d) = d^{o(1)}`, the
+collinear-point count, and Cauchy–Schwarz. Nothing in §7.1–7.5 touches them. They remain
+**PROVED**, and they remain the two genuinely new pieces of mathematics in this session.

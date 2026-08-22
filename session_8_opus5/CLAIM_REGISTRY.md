@@ -164,3 +164,67 @@ Status is exactly one of **PROVED / CONDITIONAL / EMPIRICAL / FALSIFIED / OPEN**
 - Theorem 2 is a **conditional obstruction theorem** and now permanently so (H6).
 - The conditional arithmetic of §5.5 (`n sqrt(log log log n)/sqrt(log n)`) is **still not
   claimed**; it now depends on K1 and on the compounding constant rather than on (Q2).
+
+---
+
+# Claim-safety audit — downgrades and corrections
+
+## Downgrades
+
+| # | claim | old | **new** | reason |
+|---|---|---|---|---|
+| F2 | Theorem F: `Phi_L(i) <= d_Phi` for every line, giving (A2) for `l = 2` | PROVED | **CONDITIONAL** on (K1b), (K2), (K3), (K4) | §7.2, §7.4, §7.5 |
+| F2′ | Theorem F′: same, with explicit `t,q` dependence and horizon ceiling `t <= c sqrt(log log log n)` | — | **CONDITIONAL**, as above | §7.4 |
+| C4 | Lemma C: `\|W_3(v,i)\| <= 2 d_3(v) tol`, closing (A2) for `l = 3` | PROVED | **CONDITIONAL** on (K1b) | its increment omits the `-Δd_2^-(u)` term of (7.3) — the identical defect |
+| R7 | the averaged programme's `l = 2` obligation | CLOSED | **CONDITIONAL** | F2 |
+| — | "Theorem F uses neither (H-surv) nor the crude cap" | asserted §6.2 | **still true**, but it *does* use (V) for `l = 3`, (P), and (K1b) | §7.1, §7.2 |
+| — | "the remainder is bookkeeping" (§6.5) | asserted | **WITHDRAWN** — it is (K3) + (K4) | §7.5 |
+
+## New claims from the audit
+
+| # | claim | status | where |
+|---|---|---|---|
+| A1 | `E[X_j(u) \| F_j] = 2 d_3(u,j)/\|V(j)\|` **exactly**; the Doob decomposition is `d_2^+ = M^+ + A^+` and the drift error is `\|R^+_i(u)\| <= 3(σ_3+ε_V) s_2^+ + O(log n)` — the accumulated failure of `d_3(u,·)` and `\|V(·)\|` to track, **not** a quadrature error | **PROVED** (given (V) `l=3` and (P)) | §7.1 |
+| A2 | the drift error contributes `O(σ^2 n^3 log n)` to `Phi_L`, a factor `log n` below the budget | **PROVED** | §7.1 |
+| A3 | `Δ d_2^-(u,j) <= 1 + c_{2,2->1}(u,y_j,j)`; hence Theorem F needs **(K1b)** `sum_{u∈L} c_{2,2->1}(u,y,i) = O(n^{3/2})`. At the level BB's own condition allows, the line sum is `Theta(n^2 sqrt(log n)/polylog)` and **exceeds both branches of Lemma E** | **PROVED** (the reduction); (K1b) itself **OPEN** | §7.2(a) |
+| A4 | the `d_2^-` drift produces an `O(1)` feedback `R^-_i(u) = Theta(1)·(time-average of e(u,·))`, hence a Grönwall amplification `q^{-C}` under one-sided bounding. The true linearised system has eigenvalues `-4t ± 2i` and is **stable**, so the amplification may be an artefact | **PROVED** (the feedback and its coefficient); which governs `Phi_L` is **OPEN** = (K2) | §7.2(b) |
+| A5 | re-centring the truncated Freedman increments costs `Theta(σ n^3 (log n)^{1/2})`, negligible for `σ >> (log n)^{-3/2}`. The PQV chain of §6.2 is otherwise correct as published | **PROVED** | §7.3 |
+| A6 | at general `t`: `d_Phi(t) = Theta(σ^2 n^3 (log n)^2 t^4 q^3)`, `g_L = Theta(σ log n · t^2 q^{1/2})`, `mu_L = Theta(t/sqrt(log n))` **`q`-free**. The asymmetry `g_L ∝ q^{1/2}` vs `mu_L ∝ q^0` caps the horizon at `t = O(sqrt(log log log n))` | **PROVED** | §7.4 |
+| A7 | `t = Theta(1)` reproduces the known bound up to a constant; any strict improvement needs `t -> ∞`. §6.2 was written at `t = Theta(1)` and was silent about it | **settled** | §7.4 |
+| A8 | **`H_n` is not `D`-regular.** Exact: `2D(v)` = 71 719 (centre) / 32 252 (corner) at `n = 64`; 341 507 / 147 848 at `n = 128`. Ratio 2.22, 2.31 — a constant bounded away from 1, not decreasing. BB's Theorem 1.1 assumes `D`-regularity | **PROVED** (exact computation, `s8_tail.c`) | §7.5(a) |
+| A9 | Theorem 2's statement should read `s_2^+ + C·tol` for an absolute constant `C`, since by (7.2) the drift error is of the same order as `tol`. Structure and deficit unaffected | **correction** | §7.1 |
+
+## Preserved unchanged
+
+| # | claim | status |
+|---|---|---|
+| G1–G6 | Lemma 1 (`Delta_2 = n(1+o(1))`, the fat top, the Pareto tail, `D = Theta(n^2 log n)`) | **PROVED** |
+| C3 | **Lemma D**: `A(v,y) <= 54 n^3 + n^{2+o(1)}` uniformly | **PROVED** |
+| E1–E3 | **Lemma E**: off-line `O(n^{3/2})`, on-line `O(n^2/s_L^2)`; no counterexample found | **PROVED** |
+| C2 | positive clustering is real and maximal; negative association is **false** for `H_n` | **PROVED** |
+| B1–B7 | Theorem 2, the barrier | **CONDITIONAL on (H-surv)**, permanently (H6) |
+| H1–H6 | Corollary 6.1 and the (H-surv) re-audit | **PROVED** |
+| H5 | Prop 3(3a), the crude cap, is unconditional | **PROVED** |
+| F1 | the reformulation of (Q2) needing no cancellation | **PROVED** |
+| F3–F5 | which term binds in Theorem F; no summation over directions is needed; the stopped bound is essential | **PROVED** (they describe F′'s internal structure) |
+
+## Bottom line
+
+| # | claim | status |
+|---|---|---|
+| **R1** | `C(n) = Omega(n)` | **OPEN** |
+| **R2** | `C(n) = Omega(n/sqrt(log n))` | known; **still unimproved** |
+| **R3** | any strict improvement of the lower bound | **not obtained** |
+| **R7** | the `l = 2` obligation | **CONDITIONAL** (was CLOSED) |
+| **R11** | Candidate A (the substituted stopping time) | **OPEN** — (K3) + (K4) |
+
+## Wording rules, updated
+
+- **Theorem F must always be quoted as Theorem F′, conditional, with its four dependencies and
+  its horizon ceiling `t = O(sqrt(log log log n))`.** It may not be called "proved" or
+  "discharging (Q2)" without them.
+- **Lemma C is conditional on (K1b).**
+- Lemmas 1, D, E may be stated flatly; they are the only unconditional new content.
+- "Bookkeeping" is banned as a description of anything not written down.
+- `Theta(n sqrt(log log log n)/sqrt(log n))` remains **not claimed**, and now depends on
+  (K1a), (K1b), (K2), (K3), (K4).

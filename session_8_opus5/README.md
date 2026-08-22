@@ -1,11 +1,11 @@
 # Session 8 — averaged stopping time for the no-isosceles grid problem
 
-**Verdict: `NEW_INTERMEDIATE_GRID_THEOREM`.**
+**Verdict: `CONDITIONAL_BRIDGE_ONLY`.**
 
-`C(n)` is **unchanged**: the proved lower bound is still `Omega(n/sqrt(log n))`. What the
-session produced is a rigorous theorem about `H_n` that removes the identified obstruction
-`(Q2)`, a matching negative result about what averaging can and cannot do, and exactly one
-remaining obligation.
+`C(n)` is **unchanged**: the proved lower bound is still `Omega(n/sqrt(log n))`. A claim-safety
+audit (Part VII) downgraded the session's main dynamic theorem from PROVED to CONDITIONAL. What
+is unconditional is three static lemmas about the geometry of `H_n`, a conditional obstruction
+theorem, and a precise map of what is left.
 
 ## Objective
 
@@ -16,97 +16,98 @@ linear, reachable "via the random independent set process" (Jánosik et al., arX
 Target: an averaged stopping-time theorem replacing a pointwise worst-case pair condition by a
 dynamically weighted exceptional budget.
 
-## The results, in dependency order
+## Unconditional results
 
 **1. The pair conditions were never the obstruction.** At `r = 3`, three of the four instances
 of Bennett–Bohman's pair-quantified conditions are monotone, hence deterministic. `Delta_2` and
-`Gamma` are initial conditions, not tracked quantities. *(PROVED.)*
+`Gamma` are initial conditions, not tracked quantities.
 
-**2. Lemma 1.** The increment of `d_2(v)` is `codeg(v,y)` at uniform `y`: mean `Theta(log n)`,
-tail `O(log n/tau)`, max `n(1+o(1))` — Pareto index 1 truncated at `n`. Hence
-`D = Theta(n^2 log n)` and `D^{1/2}/Delta_2 = Theta(sqrt(log n))`. *(PROVED.)*
+**2. Lemma 1.** The one-step increment of `d_2(v)` is `codeg(v,y)` at uniform `y`: mean
+`Theta(log n)`, tail `O(log n/tau)`, max `n(1+o(1))` — Pareto index 1 truncated at `n`. Hence
+`D = Theta(n^2 log n)` and `D^{1/2}/Delta_2 = Theta(sqrt(log n))`. The `log` in the degree *is*
+the harmonic sum over scales of primitive lattice directions.
 
-**3. Theorem 2 — a conditional obstruction theorem.** Given (H-surv), pointwise dynamic
-concentration of `d_2` at `o(1)` relative accuracy is **false** for `H_n`, for every
-concentration inequality, with deficit `sqrt(log n)/log log n`. It is now settled that this
-label is **permanent**: (H-surv) is its genuine hypothesis, and Corollary 6.1 shows the line
-technology cannot discharge it. *(CONDITIONAL, permanently.)*
+**3. Positive clustering is real and maximal.** For `v = (0,0)`, `y = (2,0)` every `u = (2k,0)`
+has `codeg(v,u), codeg(u,y) >= n-1`: one chosen vertex gives `Theta(n)` vertices a `Theta(n)`
+jump simultaneously. **Negative association is false for `H_n`**, so every independence-based
+argument is dead.
 
-**4. The clustering is real and maximal.** For `v = (0,0)`, `y = (2,0)` every `u = (2k,0)` has
-`codeg(v,u), codeg(u,y) >= n-1`: one chosen vertex gives `Theta(n)` vertices a `Theta(n)` jump
-simultaneously. **Negative association is false for `H_n`.** *(PROVED.)*
+**4. Lemma D.** `A(v,y) = sum_u codeg(v,u) codeg(u,y) <= 54 n^3` uniformly, one full logarithm
+below the trivial `Delta_2 · 2D = O(n^3 log n)`. Mechanism: `#{u : s(v,u) = s} <= 16n` is uniform
+in `s`, so `sum_u s(v,u)^{-2} < 27n` converges, and Cauchy–Schwarz pairs two divergent harmonic
+sums into one convergent one.
 
-**5. Lemma D — but bounded, one logarithm below trivial.**
-`A(v,y) = sum_u codeg(v,u) codeg(u,y) <= 54 n^3` uniformly, versus the trivial `O(n^3 log n)`.
-Mechanism: `#{u : s(v,u) = s} <= 16n` is uniform in `s`, so `sum_u s(v,u)^{-2} < 27n` converges
-and Cauchy–Schwarz pairs two divergent harmonic sums into one convergent one. *(PROVED.)*
-
-**6. Lemma C — the `l = 3` averaged condition closes.** Freedman with Lemma D gives failure
-probability `exp(-Omega(sigma^2 (log n)^{3/2}))`. The averaged statistic beats the pointwise one
-by exactly `log n`. *(PROVED.)*
-
-**7. Lemma E — the line-restricted version.** For a line `L` and `z ∈ [n]^2`:
+**5. Lemma E (line-restricted).** For a line `L` and `z ∈ [n]^2`:
 ```
    z ∉ L :  sum_{u∈L} codeg(u,z) = O(n^{3/2})       z ∈ L :  sum_{u∈L} codeg(u,z) = O(n^2/s_L^2).
 ```
-Off the line this is a factor `sqrt(n)` below the trivial `|L| Delta_2`, because on a line the
-count `a_s = #{u ∈ L : s(u,z) = s}` obeys **both** `a_s <= 8s` and `sum_s a_s <= n`, capping
-the harmonic sum at `sqrt(n)`. Case (b) is not improvable — it *is* the feared event, a single
-chosen vertex on the bisector giving every one of `Theta(n)` collinear vertices `Theta(n)` new
-2-edges in one step. *(PROVED; no counterexample found in an exact search.)*
+Off the line, a factor `sqrt(n)` below trivial, because on a line the count
+`a_s = #{u ∈ L : s(u,z) = s}` obeys **both** `a_s <= 8s` and `sum_s a_s <= n`. Case (b) is not
+improvable — it *is* the coherent event, one chosen vertex on the bisector giving `Theta(n)`
+collinear vertices `Theta(n)` new 2-edges in one step. No counterexample found in an exact
+search over all short-direction lines, `n = 48..384`.
 
-**8. Theorem F — obligation (Q2) is discharged.** For `sigma = o(1)` with
-`sigma log log n -> ∞`, the per-line second moment satisfies
-`Phi_L(i) = sum_{u∈L} e(u,i)^2 <= kappa sigma^2 n^3 (log n)^2` for every line and every
-`i <= T`, whence condition (A2) for `l = 2` holds. Two ideas made it work:
-- **No cancellation is needed.** `P(v,y)` is a *random* subset of the bisector line, so signed
-  cancellation over the line implies nothing about it. Bounding `sum |e(u)|` via the per-line
-  second moment is subset-monotone and sidesteps this entirely.
-- **The coherent line event is paid for by a jump count, not a step bound.** Budget
-  `Theta(sigma log n)` against hazard `Theta((log n)^{-1/2})`; exponent
-  `Theta(sigma log n log log n)`, clearing the `O(n^4)`-line union bound by `log log n`. The
-  stopped filtration is essential: without it the jump budget would be `Theta(1)`.
+**6. Corollary 6.1 — averaging over a line does not help.** The line-average of `d_2` obeys the
+*same* barrier as the pointwise value, deficit `sqrt(log n)/log log n`, identical mechanism. A
+line is the extremal set, because the exceptional jumps are coherent along lines. What saved the
+`l = 3` case was that the weights `codeg(v,·)` spread mass over the whole grid.
 
-Theorem F uses **neither (H-surv) nor the crude cap** — only the vertex-count condition (P),
-Lemma 1(c), and Lemmas D/E. *(PROVED on the stopped filtration.)*
+**7. The crude cap** `max_v d_2(v) <= K s_2` with `K = Theta(sqrt(log n)/log log n)` is
+unconditional given the vertex-count condition.
 
-**9. Corollary 6.1 — averaging over a line does not help.** The line-average of `d_2` obeys the
-*same* barrier as the pointwise value, with the identical deficit `sqrt(log n)/log log n`. A
-line is the extremal set for this, because the exceptional jumps are coherent along lines. What
-saved the `l = 3` case was that the weights `codeg(v,·)` spread mass over the whole grid.
-*(PROVED.)*
+## Conditional results
 
-**10. Two corrections.** (i) The crude cap Prop 3(3a) is **unconditional**, not conditional on
-(H-surv): an upper bound on a failure probability needs an *upper* bound on the hazard, not a
-lower one. `K = Theta(sqrt(log n)/log log n)`. (ii) (H-surv) is **not needed by the positive
-programme** at all; it gates only the barrier.
+**Theorem 2 — a conditional obstruction theorem, permanently.** Given (H-surv), pointwise
+dynamic concentration of `d_2` at `o(1)` relative accuracy is **false** for `H_n`, for every
+concentration inequality, with deficit `sqrt(log n)/log log n`. Corollary 6.1 shows the line
+technology cannot discharge (H-surv), so the label cannot be removed. (H-surv) is **not** needed
+by the positive programme.
 
-## What remains — exactly one obligation
+**Theorem F′ and Lemma C — conditional.** Theorem F′ bounds the per-line second moment
+`Phi_L(i) = sum_{u∈L} e(u,i)^2` and would give condition (A2) for `l = 2`; Lemma C does the same
+for `l = 3`. Both are conditional on (K1b), and Theorem F′ additionally on (K2), (K3), (K4).
 
-`HANDOFF.md`, **(K1)**: verify `c_{2,2->1}(v,v',i) <= C_{2,2->1}` for `H_n` — the codegree of a
-pair in the evolving 2-graph, the unique genuinely dynamic pair condition at `r = 3`. Typical
-value `Theta(log n)` against a requirement of `Theta(s_2/polylog)`, so there is `n/polylog` of
-room; but the jump is `Theta(n)` when a chosen vertex lies on a line common to `v` and `v'`,
-which puts the budget at `Theta(sqrt(log n))` against `log n/log log n` — **the Theorem 2
-shape.** This may well fail; it is the last thing that could.
+## What the audit found
 
-Also missing, but a computation rather than an open question: the tolerance-compounding
-constant of §5.5 line 6, which fixes the horizon. If both were settled the conditional
-arithmetic gives `Theta(n sqrt(log log log n)/sqrt(log n))` — **still not claimed.**
+Five points were checked; two repaired, three failed.
+
+| item | outcome |
+|---|---|
+| exact drift decomposition via `2 d_3(u,i)/\|V(i)\|` | **repaired.** The error is the accumulated failure of `d_3` and `\|V\|` to track, not a quadrature error; `\|R^+\| <= 3(σ_3+ε_V) s_2^+`, costing a factor `log n` less than the budget |
+| `d_2^-`, hence the current degree `d_2` | **failed.** The published argument controlled `d_2^+` and silently called it `d_2`. The jump needs (K1b); the drift gives an `O(1)` feedback whose sign is unresolved (K2) |
+| re-centring the truncated Freedman step, and the PQV | **repaired.** Re-centring was omitted; it costs `Theta(σ n^3 (log n)^{1/2})`, negligible. The PQV chain is correct as published |
+| full `t`- and `q(t)`-dependence | **partial.** §6.2 was written at `t = Theta(1)` and silent about it — which reproduces the known bound up to a constant. Redone, Theorem F′ survives only to `t = O(sqrt(log log log n))`; the ceiling is the asymmetry `g_L ∝ q^{1/2}` vs `mu_L ∝ q^0` |
+| non-regularity; complete Candidate A | **failed.** `H_n` is **not `D`-regular** — exact degrees `2D(v)` give centre/corner ratios 2.22 (`n=64`) and 2.31 (`n=128`), a constant not decreasing — and BB's theorem assumes regularity (K3). The remaining re-derivation was called "bookkeeping"; it is not (K4) |
+
+Three of the five defects came from one habit: verifying that a single statistic can be
+maintained, then describing the surrounding re-derivation as bookkeeping. **A condition is not
+verified until every variable it is stated in terms of has been carried through, at the horizon
+the conclusion needs, under the hypotheses the source theorem actually assumes.**
+
+## What remains
+
+`HANDOFF.md` lists all of it: **(K1a)** BB's own `c_{2,2->1}` condition; **(K1b)** the
+line-averaged version `sum_{u∈L} c_{2,2->1}(u,y,i) = O(n^{3/2})`, which is what makes Theorem F′
+and Lemma C conditional and is the weakest of the four — attack it first; **(K2)** whether the
+`d_2^-` feedback compounds as `q^{-C}` or self-corrects as `q^{+4}`; **(K3)** the non-regularity
+of `H_n`; **(K4)** a complete proof of the substituted Candidate A.
+
+If all closed, `m = Theta(n sqrt(log log log n)/sqrt(log n))` — a strict improvement by
+`sqrt(log log log n)`, **not claimed**. Reaching `C(n) = Omega(n)` needs `t = Theta(sqrt(log n))`,
+which the horizon ceiling forbids outright, so a linear bound requires a different treatment of
+the line-step hazard, not merely the closure of K1–K4.
 
 ## Paper potential
 
-**Not yet, and novelty is not verified.** No literature was reopened in this pass, so the
-status of Part V is inherited: `PLAUSIBLE, NOT EXHAUSTIVELY VERIFIED`. Lemmas D and E are
-elementary — every ingredient (`r_2(d) = d^{o(1)}`, primitive-direction counts, collinear-point
-counts, Cauchy–Schwarz) is standard, and only the assembly is this session's. Theorem 2 is
-permanently conditional. What would make a publishable note is (K1) plus the compounding
-constant, which together would turn Lemmas C/E and Theorem F into a first improvement of the
-lower bound; without them the material is a diagnosis, not a result about `C(n)`.
+**No.** The only unconditional new content is Lemmas D and E and the arithmetic of Lemma 1, all
+elementary — `r_2(d) = d^{o(1)}`, primitive-direction counts, collinear-point counts,
+Cauchy–Schwarz — with only the assembly belonging to this session. Novelty was not re-checked in
+this pass and remains `PLAUSIBLE, NOT EXHAUSTIVELY VERIFIED`. Theorem 2 is permanently
+conditional.
 
 ## Files
 
-`THEOREM_CONTRACT.md` · `THEOREM_AND_PROOF.md` (Parts I–VI) · `ATTACK_LOG.md` (A1–A16) ·
+`THEOREM_CONTRACT.md` · `THEOREM_AND_PROOF.md` (Parts I–VII) · `ATTACK_LOG.md` (A1–A19) ·
 `LITERATURE_NOTES.md` · `CLAIM_REGISTRY.md` · `CHECKPOINT.md` · `HANDOFF.md` ·
 `experiments/` (`s8_tail.c`, `s8_proc.c`, `s8_joint.c`, `s8_line.c`)
 
@@ -115,33 +116,34 @@ lower bound; without them the material is a diagnosis, not a result about `C(n)`
 ## 中文说明（给工程背景的读者）
 
 **问题。** `n×n` 格点里最多挑多少点不出等腰三角形，记 `C(n)`。已知至少 `n/√(log n)`，猜是
-`n`，差一个 `√(log n)`。攻法是随机贪心。
+`n`，差一个 `√(log n)`。
 
-**前两轮的结论。** 逐点控制（要求每个点的邻居数都紧贴曲线）对格点问题**本身就是错的**；改用
-平均量后，`l=3` 那一半靠 Lemma D 通了。剩下 `l=2` 那一半：选中一个点 `y` 时，新加入 `v` 的
-`Θ(n)` 个邻居**恰好是一条直线上的格点**——`v` 与 `y` 的垂直平分线。
+**这一轮做的是自查，不是新攻。** 上一轮我说「Q2 证完了」，这次按五条逐项复核，**两条修好，
+三条没过，主定理降级为有条件**。
 
-**这一轮把这条直线攻下来了。**
+**修好的两条。** 一是漂移项：原来我写成"黎曼和的误差"，那是错的——它其实是 `d_3` 和 `|V|`
+偏离各自轨道的累积，用保留下来的两个条件能卡住，代价比预算小一个 `log n`。二是截断后
+Freedman 需要重新中心化，原文漏了，补上后代价可忽略。
 
-关键有两点。**第一，不需要正负抵消。** 原来的提法要求"带符号的和很小"，但那条线上真正加入的
-只是一个**随机子集**，整条线上抵消得再好也不能推出子集上抵消。而其实根本不需要抵消：即使
-所有偏差同号，只要它们是**典型大小**就够，还余 `log^{3/4}n`。于是改成控制**每条直线上的
-平方和** `Φ_L = Σ_{u∈L} e(u)²`——这个量对子集单调，随机子集的问题自动消失。
+**没过的三条。**
 
-**第二，"一条直线同时被打" 这个事件不能靠限制单步大小来对付，要靠数次数。** 新引理（Lemma E）
-说：如果被选中的点**不在**那条线上，整条线受到的冲击只有 `n^{3/2}`——比平凡上界 `n²` 小
-`√n` 倍；如果**在**线上，就是最坏的 `n²`，无法改进。证明的窍门在于：在一条直线上，"距离尺度
-为 `s` 的点数"既 `≤ 8s` 又总共 `≤ n`，两个约束一起把调和和卡在 `√n`。
+一、**我只控制了 `d_2^+`，却当成了 `d_2`。** 真正要控制的是当前度数 `d_2 = d_2^+ − d_2^-`。
+补上 `d_2^-` 之后冒出两个新问题：它的跳变由 `c_{2,2→1}` 决定（于是主定理反而依赖我原本列为
+"另一条待证义务"的 K1），它的漂移会把 `e` 反馈回自身、系数是 `Θ(1)`（可能放大也可能自我
+修正，未定）。
 
-然后把"在线上"的步数当作**预算**来数：预算 `Θ(σ log n)` 步，而每步落在线上的风险只有
-`Θ(1/√(log n))`，指数是 `Θ(σ log n · log log n)`，压得住 `n⁴` 条直线的 union bound。
-**Q2 证完了。** 而且这个证明**不需要** (H-surv)，也不需要粗略上界。
+二、**原来的证明其实是在 `t = Θ(1)` 下写的，而我没说。** 但 `t = Θ(1)` 只能重现已知的界（差
+个常数），要改进必须 `t → ∞`。重算之后主定理只能撑到 `t = O(√(log log log n))`——瓶颈是
+跳变预算带因子 `q^{1/2}` 而风险不带。
 
-**顺带两个发现。** 一，把 (H-surv) 代进去**不成立**，而且差的正好还是 `√(log n)`——因为
-「沿一条直线取平均」和「逐点」撞同一堵墙（直线正是最坏的平均集合，大冲击沿直线是同相的）。
-二，但 (H-surv) **根本用不着**——它只是那个"负面障碍定理"的假设，对正面路线毫无作用。
+三、**`H_n` 根本不是正则图，而 Bennett–Bohman 的定理要求正则。** 精确算出来：中心点的度数是
+角点的 **2.2–2.3 倍**，而且不随 `n` 减小。这一条以前完全没注意到，是四条里最大的。
 
-**结论直说：`C(n)` 的下界这一轮仍然没有改进，还是 `n/√(log n)`；还不能发论文。** 剩下最后
-一件事（`HANDOFF` 里的 K1）：演化中的二元图里，一对点的公共邻居数有没有上界。典型值是
-`log n`，要求是 `√(log n)` 量级——余量有 `n/polylog`；但它的跳变结构又是 `√(log n)` 对
-`log n/log log n` 的老形状。**这一条很可能过不去，它是最后一个可能挡路的东西。**
+**保住的：** 三条静态引理（Lemma 1、D、E）完好无损——它们只是格点几何的初等计数，自查完全
+没碰到。还有那个障碍定理和"沿直线取平均也没用"的推论。
+
+**结论直说：`C(n)` 下界仍是 `n/√(log n)`，没有改进；不能发论文。** 剩下五条义务全部列在
+`HANDOFF.md`，建议先攻 K1b（最弱的一条，也是让主定理变成有条件的那一条）。
+
+这轮学到的教训已写进 handoff：**只验证单个统计量能维持、然后把周边推导称作"记账"，是不行的**
+——条件里出现的每一个变量都要走完，走到结论真正需要的时间尺度，并且在原定理真正假设的前提下。

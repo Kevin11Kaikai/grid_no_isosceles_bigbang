@@ -4,7 +4,7 @@
 All new work under `session_8_opus5/`. Nothing outside it modified. Master untouched.
 Pre-existing uncommitted work in `long_horizon_run_*` and `ROUND3_TOURNAMENT/` left alone.
 
-**Verdict:** `NEW_INTERMEDIATE_GRID_THEOREM` (revised in the Q2 pass) — see `README.md`.
+**Verdict:** `CONDITIONAL_BRIDGE_ONLY` (revised in the claim-safety audit) — see `README.md`.
 
 ---
 
@@ -124,3 +124,49 @@ the Theorem 2 shape, so it may fail. Then compute the tolerance-compounding cons
 §5.5 line 6, which fixes the horizon.
 
 The two-attempt budget for this pass is spent (A14 succeeded, A15 failed).
+
+---
+
+# Claim-safety audit update
+
+**Verdict:** `NEW_INTERMEDIATE_GRID_THEOREM` -> **`CONDITIONAL_BRIDGE_ONLY`**. Theorem F is
+downgraded PROVED -> CONDITIONAL and restated as Theorem F′ with explicit `t,q` dependence.
+Lemma C downgraded PROVED -> CONDITIONAL. `C(n)` unchanged at `Omega(n/sqrt(log n))`.
+
+## What the audit changed
+
+- `THEOREM_AND_PROOF.md` **Part VII**: §7.1 exact drift decomposition via `2d_3(u,i)/|V(i)|`
+  (repaired); §7.2 the `d_2^-` half (fails, two ways); §7.3 re-centring + PQV line by line
+  (repaired); §7.4 full `t,q` dependence and Theorem F′ with ceiling
+  `t = O(sqrt(log log log n))`; §7.5 non-regularity of `H_n` and Candidate A (fails);
+  §7.6 the outcome table.
+- `ATTACK_LOG.md` A17–A19; `CLAIM_REGISTRY.md` downgrades + A1–A9; `HANDOFF.md` rewritten with
+  all five obligations; `README.md` rewritten.
+
+## Survives unchanged
+
+Lemma 1, **Lemma D**, **Lemma E**, the positive-clustering counterexample, Corollary 6.1, the
+crude cap (unconditional), Theorem 2 (conditional on (H-surv), permanently).
+
+## Obligations, in attack order
+
+1. **(K1b)** `sum_{u∈L} c_{2,2->1}(u,y,i) = O(n^{3/2})` — weakest, and it is what makes
+   Theorem F′ and Lemma C conditional. Attack first, by the Lemma E template.
+2. **(K1a)** BB's own `c_{2,2->1} <= C_{2,2->1}`.
+3. **(K2)** does the `d_2^-` feedback compound as `q^{-C}` or self-correct as `q^{+4}`?
+4. **(K3)** non-regularity: `2D(v)` centre/corner = 2.22 (`n=64`), 2.31 (`n=128`).
+5. **(K4)** complete proof of substituted Candidate A.
+6. (H-surv) — barrier only, permanently conditional.
+
+## Numbers to re-derive if resuming
+
+- `E[X_j(u)|F_j] = 2 d_3(u,j)/|V(j)|` exactly; `|R^+| <= 3(σ_3+ε_V) s_2^+ + O(log n)`.
+- `Δ d_2^-(u,j) <= 1 + c_{2,2->1}(u,y_j,j)`.
+- `d_Phi(t) = Theta(σ^2 n^3 (log n)^2 t^4 q^3)`; `g_L = Theta(σ log n t^2 q^{1/2})`;
+  `mu_L = Theta(t/sqrt(log n))`, **`q`-free**. The asymmetry caps `t` at `sqrt(log log log n)`.
+- `d_Phi^2/(4V_qv) = Theta(q σ^2 (log n)^{3/2})`; re-centring cost `Theta(σ n^3 (log n)^{1/2})`.
+
+## Exact next action
+
+(K1b). Do **not** start (K1a) or anything else until (K1b) is settled — it is the cheapest and
+it unblocks both conditional theorems.

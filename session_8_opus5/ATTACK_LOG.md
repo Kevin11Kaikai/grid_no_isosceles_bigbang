@@ -349,3 +349,109 @@ stops and archives the blocker rather than opening a third direction.
 - `c_{2,2->1}` for `H_n` was not verified; it is the single remaining obligation.
 - The tolerance-compounding constant of §5.5 line 6 was not computed, so no horizon and no
   bound for `C(n)` is stated.
+
+---
+
+# Claim-safety audit of Theorem F
+
+## A17. What the audit found
+
+Five points were checked. Two repaired, three failed. Theorem F is downgraded to CONDITIONAL
+and the verdict returns to `CONDITIONAL_BRIDGE_ONLY`.
+
+**1. Drift decomposition — repaired.** §6.0's "Riemann-sum discrepancy" was a mislabel. The
+exact conditional expectation is `E[X_j(u)|F_j] = 2 d_3(u,j)/|V(j)|`, and the drift error
+`R^+_i(u) = A^+_i(u) - s_2^+(t_i)` is the accumulated failure of `d_3(u,·)` and `|V(·)|` to sit
+on their trajectories, not a quadrature error. Bounded by the two retained conditions:
+`|R^+| <= 3(σ_3 + ε_V) s_2^+ + O(log n)`, contributing `O(σ^2 n^3 log n)` to `Phi_L` against a
+budget `kappa σ^2 n^3 (log n)^2` — a factor `log n` of room. Closes, but only because (V) for
+`l = 3` and (P) are retained.
+
+**2. `d_2^-` — fails, two ways.** §6.2 silently identified `e` with `e^+`. Condition (A2) is
+about `d_2 = d_2^+ - d_2^-`.
+- *Jump.* `Δ d_2^-(u,j) <= 1 + c_{2,2->1}(u,y_j,j)`, so the line sum Theorem F needs is
+  `sum_{u∈L} c_{2,2->1}(u,y,i)`. At the level BB's own condition allows
+  (`c_{2,2->1} <= C_{2,2->1} = Theta(s_2/polylog)`) this is `Theta(n^2 sqrt(log n)/polylog)`,
+  which **exceeds both branches of Lemma E** and would dominate the entire jump analysis. The
+  needed statement is the much weaker **(K1b)** `sum_{u∈L} c_{2,2->1}(u,y,i) = O(n^{3/2})`.
+  Unproved. **So Theorem F is not independent of the (K1) family, contrary to §6.5.**
+- *Drift.* `E[Δd_2^-(u)] - Δs_2^- = (s_2/(Nq)) e(u,j) + O(σ) Δ s_2^-`. The coefficient
+  `s_2/(Nq) = Theta(sqrt(log n)/n)` over `m = Theta(n/sqrt(log n))` steps has total weight
+  `Theta(1)` — a genuine `O(1)` feedback, giving a discrete Grönwall amplification `q^{-C}` of
+  the martingale part under BB's one-sided bounding. The *true* linearised system has
+  eigenvalues `-4t ± 2i` and is stable, so the amplification may be an artefact of one-sidedness;
+  which governs `Phi_L` is unresolved. **(K2).**
+
+**3. Re-centring and the PQV — repaired.** Freedman was applied to truncated increments
+`ΔΨ 1[ordinary]`, which are not martingale differences; re-centring was omitted. Its cost is
+`mu_L × (max line jump) = Theta(σ n^3 (log n)^{1/2})`, negligible against `d_Phi` when
+`σ >> (log n)^{-3/2}`. The PQV chain was re-derived line by line and is correct as published:
+`Var <= 8 d_Phi E[sum_L xi^2] + 2 E[(sum_L xi^2)^2] = O(σ^2 n^5 (log n)^3/q)`, giving
+`d_Phi^2/(4V_qv) = Theta(q σ^2 (log n)^{3/2})`.
+
+**4. `t`- and `q`-dependence — partial.** §6.2 was written at `t = Theta(1)`, silently. Since
+`m = Theta(t n/sqrt(log n))`, `t = Theta(1)` reproduces the known bound up to a constant and
+proves nothing new; any improvement needs `t -> ∞`. Redone with `q = e^{-t^2}` throughout:
+budget `d_Phi(t) = Theta(σ^2 n^3 (log n)^2 t^4 q^3)`, line-jump budget
+`g_L = Theta(σ log n · t^2 q^{1/2})`, hazard `mu_L = Theta(t/sqrt(log n))` — **`q`-free**,
+because line and ambient set thin by the same factor. The jump-count condition
+`σ t^2 q^{1/2} log(σ t q^{1/2} (log n)^{3/2}) >= 5` is maximised near `t^2 = 2` and then decays,
+giving with `σ = (log log n)^{-1/2}` the ceiling
+```
+       t  <=  c sqrt( log log log n ),        m  =  Theta( n sqrt(log log log n) / sqrt(log n) ).
+```
+So Theorem F′ does support a growing horizon, but only that far. **The asymmetry
+`g_L ∝ q^{1/2}` versus `mu_L ∝ q^0` is the exact obstruction.**
+
+**5. Non-regularity and Candidate A — fails.** `H_n` is **not `D`-regular**, and BB's
+Theorem 1.1 assumes it is. Exact degrees `2D(v) = sum_y codeg(v,y)`:
+
+| `n` | centre | corner | edge midpoint | max/min |
+|---|---|---|---|---|
+| 64  | 71 719  | 32 252  | 36 319  | 2.22 |
+| 128 | 341 507 | 147 848 | 170 587 | 2.31 |
+
+A constant bounded away from 1, not decreasing. Either regularise by dummy edges — which then
+requires re-proving Lemmas 1, D, E for the augmented hypergraph, since they are statements about
+grid geometry — or prove a version of BB with vertex-dependent `D(v)`. Neither is done, and the
+earlier campaign's dummy-edge regularisation is not imported. **(K3).**
+
+And Candidate A itself is unproved: the variation equations (ind.tex 981, 995, 998) contain
+`f_2`, the error function of a variable no longer tracked pointwise, so a replacement
+error-function system must be exhibited and the supermartingale property of `Z_V` and `Z_3^±`
+re-established under the averaged conditions. Calling this "bookkeeping" in §6.5 was wrong.
+**(K4).**
+
+## A18. What survives, and what the audit cost
+
+**Survives, unchanged:** Lemma 1, **Lemma D**, **Lemma E**. All three are deterministic
+statements about the geometry of `H_n`, proved from the counting `#{u : s(v,u)=s} <= 16n`,
+`r_2(d) = d^{o(1)}`, the collinear-point count and Cauchy–Schwarz. Nothing in the audit touches
+them. They remain the two genuinely new pieces of mathematics in the session (D and E), together
+with the arithmetic of Lemma 1.
+
+**Also survives:** Theorem 2 (the barrier) and Corollary 6.1 (line-averaging obeys the same
+barrier). Theorem 2's statement should read `s_2^+ + C·tol` for an absolute constant `C`, since
+by (7.2) the drift error is of the same order as `tol`; the structure and the deficit
+`sqrt(log n)/log log n` are unaffected.
+
+**Downgraded:** Theorem F PROVED -> **CONDITIONAL** on (K1b), (K2), (K3), (K4), and restated as
+Theorem F′ with explicit `t,q` dependence and horizon ceiling `t = O(sqrt(log log log n))`.
+Lemma C PROVED -> **CONDITIONAL** on (K1b): its increment
+`ΔW_3 = A(v,y) - E_y[A]` was computed with `Δe(u) = codeg(u,y) - E` and omits the `-Δd_2^-(u)`
+term of (7.3), which is the identical defect.
+
+**Verdict:** `NEW_INTERMEDIATE_GRID_THEOREM` -> **`CONDITIONAL_BRIDGE_ONLY`**.
+
+## A19. Lesson recorded
+
+Three of the five defects came from the same habit: verifying that a *single* statistic can be
+maintained, and then describing the surrounding re-derivation as bookkeeping. The `d_2^-` half,
+the `t`-dependence and the regularity hypothesis were all in that residue. **A condition is not
+verified until every variable it is stated in terms of has been carried through, at the horizon
+the conclusion needs, under the hypotheses the source theorem actually assumes.**
+
+The `sd/mean` lesson from the previous pass stands and is preserved in HANDOFF: check fits with
+scale-free ratios.
+
+(K1) is deliberately **not** attacked in this pass, as instructed.
