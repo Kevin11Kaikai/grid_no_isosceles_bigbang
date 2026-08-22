@@ -70,3 +70,52 @@ Status is exactly one of **PROVED / CONDITIONAL / EMPIRICAL / FALSIFIED / OPEN**
   over the `N` vertices*. It does **not** rule out: averaged conditions, self-correcting
   error functions, non-greedy constructions, or any argument that does not union-bound over
   vertices.
+
+---
+
+# Closure pass — additional claims
+
+## Classification of Theorem 2 (asked and answered)
+
+| # | claim | status |
+|---|---|---|
+| T2a | Theorem 2 is a **conditional obstruction theorem**: complete proof given (H-surv); probability of the bad event bounded **from below**, so not a heuristic; says nothing about `C(n)` itself | **settled** (ATTACK_LOG A9) |
+| T2b | Theorem 2 is **not** a new grid theorem and must not be described as one | **settled** |
+| T2c | novelty: Guo–Warnke (arXiv:2104.07854) read at theorem level, contains neither a relaxation of BB's hypotheses nor a barrier statement | **VERIFIED for that source**; overall novelty still `PLAUSIBLE, NOT EXHAUSTIVELY VERIFIED` |
+
+## The correlation obligation
+
+| # | claim | status | where |
+|---|---|---|---|
+| C1 | `W_l(v,i) = sum_u m_v(u) e(u,i)`, and for `l = 3` its martingale increment is exactly `A(v,y) - E_y[A]` with `A(v,y) = sum_u codeg(v,u) codeg(u,y)`; the correlation obligation for `l = 3` is thereby reduced to a **deterministic** lattice sum | **PROVED** | §5.0 |
+| C2 | exceptional vertices and `v`'s neighbours are **positively clustered**, maximally: `v=(0,0)`, `y=(2,0)` gives `A(v,y) = Theta(n^3)` vs mean `Theta(n^2 log^2 n)`, one step moving `Theta(n)` coordinates coherently. **Negative association is FALSE for `H_n`** | **PROVED** (explicit counterexample) | §5.1 |
+| C3 | **Lemma D:** `A(v,y) <= 54 n^3 + n^{2+o(1)}` uniformly in `v,y` — one full logarithm below the trivial `Delta_2·2D = O(n^3 log n)`. Mechanism: `#{u : s(v,u)=s} <= 16n` is uniform in `s`, so `sum_u s(v,u)^{-2} < 27n` converges, and Cauchy–Schwarz pairs two divergent harmonic sums into one convergent one | **PROVED** (elementary, self-contained) | §5.2 |
+| C4 | **Lemma C:** given the crude cap and Lemma D, `\|W_3(v,i)\| <= 2 d_3(v) tol` with failure probability `exp(-Omega(sigma^2 log^{3/2} n))`, affordable under the union bound over `N` vertices whenever `sigma >> (log n)^{-1/4}`. The `l = 3` half of obligation (Q) is closed | **PROVED** given C3 and Prop 3(3a) | §5.3 |
+| C5 | the averaged statistic has jump budget `sigma log^{3/2} n` where the pointwise one had `sigma sqrt(log n)` — a gain of exactly `log n`, sourced entirely in Lemma D | **PROVED** given C3, C4, Thm 2 | §5.3 |
+| C6 | the `l = 2` half: the *existing-neighbour* term is `O(n^2 log log n)` against budget `Theta(sigma n^2 log n)` | **PROVED** | §5.4(i) |
+| C7 | the `l = 2` half: the *new-neighbour* term `sum_{u in P(v,y)} e(u)`, `\|P\| = codeg(v,y) <= n(1+o(1))`, is **not controlled**. Crude cap short by `1/sigma`; Cauchy–Schwarz against `sum_u e(u)^2` short by `sqrt(n)`; Lemma D inapplicable (`P(v,y)` is unweighted) | **OPEN — the single remaining obligation** | §5.4(ii), HANDOFF |
+| C8 | measured: `max_y\|A - E_y A\|/n^3` = 2.264, 2.154, 2.189 and `E_y A/(n^2 log^2 n)` = 11.61, 12.17, 12.46 at `n = 32,48,64` | **EMPIRICAL** (exact, `s8_joint.c`) | §5.1–5.2 |
+| C9 | if C7 were closed, the horizon would be capped by the `l = 3` pointwise condition plus tolerance compounding at `t = O(sqrt(log log log n))`, giving `\|I\| = Theta(n sqrt(log log log n)/sqrt(log n))` | **CONDITIONAL** — recorded, explicitly **not claimed**; rests on C7, (H-surv), Prop 3(3b) and the compounding constant | §5.5 |
+
+## Bottom line, updated
+
+| # | claim | status |
+|---|---|---|
+| **R1** | `C(n) = Omega(n)` | **OPEN** |
+| **R2** | `C(n) = Omega(n/sqrt(log n))` | known; **unimproved by this session** |
+| **R3** | any strict improvement of the lower bound | **not obtained** |
+| **R4** | pointwise dynamic concentration of `d_2` works for `H_n` | **FALSIFIED** (conditional on B1) |
+| **R5** | `{e(u)}` are negatively associated or independent enough for a first-moment argument | **FALSIFIED** (C2, unconditional) |
+| **R6** | the averaged programme's `l = 3` obligation | **CLOSED** (C4) |
+| **R7** | the averaged programme's `l = 2` obligation | **OPEN** (C7) — the one remaining |
+
+## Wording rules, updated
+
+- Lemma D and C2 are **unconditional and proved**; they may be stated flatly.
+- Lemma C is proved *given* Lemma D and the crude cap, which is itself conditional on
+  (H-surv). Quote it as "conditional on (H-surv)".
+- **"new" is still not claimed anywhere.** Lemma D is elementary; its ingredients
+  (`r_2(d) = d^{o(1)}`, collinear-point counts, Cauchy–Schwarz) are all standard, and only the
+  assembly is this session's.
+- `Theta(n sqrt(log log log n)/sqrt(log n))` must always appear with the word **conditional**
+  and with C7 named. It is not a bound on `C(n)`.

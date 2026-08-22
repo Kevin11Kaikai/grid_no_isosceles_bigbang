@@ -1,137 +1,146 @@
 # Session 8 — averaged stopping time for the no-isosceles grid problem
 
-**Verdict: `NEW_INTERMEDIATE_GRID_THEOREM`.** No new bound on `C(n)`. What was obtained is a
-proof that one specific, universally used analysis route is **false** for this hypergraph,
-with the exact size of the failure, plus the reduction that route failure forces.
+**Verdict: `CONDITIONAL_BRIDGE_ONLY`.**
+
+No new bound on `C(n)`, which remains `Omega(n / sqrt(log n))`. What exists is a conditional
+obstruction theorem, one unconditional new lemma about the grid, and a bridge whose `l = 3`
+half is closed and whose `l = 2` half is not.
 
 ## Objective
 
 `C(n)` = largest subset of `[n]^2` with no nondegenerate isosceles triangle. Known:
-`Omega(n/sqrt(log n)) <= C(n) <= n^2 exp(-c log n/log log n)` — the upper bound improved by
+`Omega(n/sqrt(log n)) <= C(n) <= n^2 exp(-c log n / log log n)`, the upper bound improved by
 Croot–Mao–Pohoata–Sheffer–Yip (arXiv:2606.17487, 2026); the lower bound unchanged and
-conjectured to be `Omega(n)`, reachable "via the random independent set process"
-(Jánosik et al., arXiv:2601.14465).
+conjectured linear, reachable "via the random independent set process" (Jánosik et al.,
+arXiv:2601.14465). The session target was an averaged stopping-time theorem replacing a
+pointwise worst-case pair condition by a dynamically weighted exceptional budget.
 
-The session target was the weakest rigorous averaged stopping-time theorem that replaces an
-unnecessary pointwise worst-case pair condition by a dynamically weighted exceptional budget.
+## What is proved
 
-## What was actually proved
+**1. The pair conditions were never the obstruction.** At `r = 3`, three of the four instances
+of Bennett–Bohman's pair-quantified stopping conditions are monotone non-increasing along the
+process, hence deterministic given the static hypothesis. `Delta_2` and `Gamma` are initial
+conditions, not tracked quantities. *(PROVED; refutes the framing carried in earlier branches
+of this repository.)*
 
-**1. The pair conditions were never the obstruction (§1.1–1.2).** At `r = 3`, the two
-Bennett–Bohman conditions quantified over pairs are, in three of their four instances,
-**monotone non-increasing** along the process — they hold deterministically once the static
-hypothesis holds at time zero. Only `c_{2,2->1}` is dynamic. `Delta_2` and `Gamma` are initial
-conditions, not tracked quantities; there is nothing about them to average. *(This refutes
-the framing carried in earlier branches of this repository.)*
+**2. Lemma 1 — the arithmetic.** The one-step increment of `d_2(v)` is `codeg(v,y)` at a
+uniform `y`, with mean `2D/N = Theta(log n)`, tail `O(log n/tau)`, and maximum
+`Delta_2 = n(1+o(1))`: Pareto index 1, truncated at `n`. Hence `D = Theta(n^2 log n)` and
+`D^{1/2}/Delta_2 = Theta(sqrt(log n))`. The `log` in the degree *is* the harmonic sum over
+scales of primitive lattice directions. *(PROVED.)*
 
-**2. The arithmetic of the increment (Lemma 1).** For `H_n`, the one-step increment of
-`d_2(v)` is `codeg(v,y)` at a uniformly random `y`, and
+**3. Theorem 2 — a conditional obstruction theorem.** Conditional on a survival hypothesis
+(H-surv), for any useful tolerance and any horizon `m = Omega(n/sqrt(log n))` the probability
+that a fixed vertex violates the pointwise condition on `d_2` is at least
+`exp(-O(sqrt(log n) log log n)) = N^{-o(1)}`. So the expected number of violators is
+`N^{1-o(1)}`: **pointwise dynamic concentration of `d_2` is not merely unprovable for `H_n`,
+it is false**, for every concentration inequality, since the bad event's probability is
+bounded from below. The deficit is `sqrt(log n)/log log n`.
 
+*This is a **conditional obstruction theorem**, not a new grid theorem.* It says nothing about
+`C(n)`; it says one method cannot be applied. Guo–Warnke (arXiv:2104.07854) has now been read
+at theorem level and contains neither a relaxation of BB's hypotheses nor a barrier statement,
+so the one named novelty risk is eliminated — novelty remains `PLAUSIBLE`, not `VERIFIED`.
+
+**4. The correlation question is answered — positively clustered, maximally.** For
+`v = (0,0)`, `y = (2,0)`, every `u = (2k,0)` has `codeg(v,u) >= n-1` and `codeg(u,y) >= n-1`,
+so a **single** chosen vertex delivers a `Theta(n)` jump to `Theta(n)` vertices simultaneously,
+all of them top-weighted in `v`'s neighbourhood. **Negative association is false for `H_n`**,
+and every independence-based argument is dead. *(PROVED, explicit counterexample.)*
+
+**5. Lemma D — but the clustering is capped one logarithm below the trivial bound.**
 ```
-   mean = 2D/N = Theta(log n),   P[X > tau] = O(log n/tau),   max = Delta_2 = n(1+o(1)).
+      A(v,y) := sum_u codeg(v,u)·codeg(u,y)  <=  54 n^3          uniformly in v, y,
 ```
+versus the trivial `Delta_2 · 2D = O(n^3 log n)`. Three lines: the count
+`#{u : s(v,u) = s} <= 16n` is **uniform in `s`**, so `sum_u s(v,u)^{-2} < 27n` converges, and
+Cauchy–Schwarz pairs the two divergent harmonic sums `sum_u 1/s(v,u)` and `sum_u 1/s(u,y)`
+into one convergent sum. *(PROVED, unconditional, elementary.)*
 
-A Pareto tail of index 1, truncated at `n`. Consequently `D(H_n) = Theta(n^2 log n)` and
-`D^{1/2}/Delta_2 = Theta(sqrt(log n))`. The `log` in the degree **is** the harmonic sum over
-the scales of primitive lattice directions: the size of `D` and the size of `Delta_2` are one
-fact, not two.
+**6. Lemma C — and that logarithm is exactly what was needed.** Feeding Lemma D into Freedman
+gives failure probability `exp(-Omega(sigma^2 (log n)^{3/2}))` for the neighbourhood-average
+condition at `l = 3`, affordable under the union bound over `N` vertices once
+`sigma >> (log n)^{-1/4}`. Against Theorem 2: the pointwise budget was `sigma sqrt(log n)`
+against a requirement `log n/log log n` (deficit); the averaged budget is
+`sigma (log n)^{3/2}` against a requirement `~log n` (surplus). **The averaged statistic beats
+the pointwise one by exactly `log n`, and Lemma D is the source.** *(PROVED given Lemma D and
+the crude cap, the latter conditional on (H-surv).)*
 
-**3. The barrier (Theorem 2, conditional on a survival hypothesis).** For any tolerance fine
-enough to be useful and any horizon `m = Omega(n/sqrt(log n))`, the probability that a fixed
-vertex violates the Bennett–Bohman pointwise condition on `d_2` is at least
+## What remains — exactly one obligation
 
-```
-   exp( - O( sqrt(log n) · log log n ) )   =   N^{-o(1)},
-```
+`HANDOFF.md`, obligation **(Q2)**: the `l = 2` case needs
+`|sum_{u in P(v,y)} e(u)| <= c |P(v,y)| s_2 / (log n)^{3/4}`, where `P(v,y)` is the set of
+`Theta(n)` vertices that become 2-neighbours of `v` when `y` is chosen — precisely the lattice
+points of **one line**, the perpendicular bisector of `v` and `y`. Lemma D does not apply:
+its weights `codeg(v,·)` are what made Cauchy–Schwarz converge, and `P(v,y)` is unweighted.
+The margin is generous (typical excesses suffice even fully aligned; only a coherent push to
+the crude cap breaks it), so the obligation is sharp rather than hopeless.
 
-so the expected number of violating vertices is `N^{1-o(1)}`. Hence:
+**Conditional arithmetic if (Q2) closed** (§5.5, recorded, *not claimed*): the horizon would
+then be capped by the `l = 3` pointwise condition plus tolerance compounding at
+`t = O(sqrt(log log log n))`, giving `|I| = Theta(n sqrt(log log log n)/sqrt(log n))` — a
+strict improvement by `sqrt(log log log n)`. This rests on (Q2), on (H-surv), on the
+independence audit of Prop 3(3b), and on the compounding constant. **It is not a bound on
+`C(n)`.**
 
-> **Pointwise dynamic concentration of `d_2(v)` at `o(1)` relative accuracy, established by a
-> union bound over the `N` vertices, is impossible for `H_n` — and the condition is not merely
-> unprovable but false.**
+## Strongest objection tested
 
-Because the argument bounds the probability of the bad event **from below**, it applies to
-every concentration inequality, every choice of the parameters `zeta, delta, eps`, every
-horizon, self-correcting error functions, and sparsified ground sets alike (ATTACK_LOG A5).
+That the averaged programme would inherit the same heavy tail as the pointwise one. It does
+not, and the reason is quantitative rather than structural: the clustering is maximal in kind
+but its total weight is `O(n^3)`, one logarithm below trivial. Had the trivial bound been the
+truth, `d/(2J) = O(sigma sqrt(log n))` and the averaged programme would have died with the
+pointwise one. It came down to one logarithm, supplied by the convergence of `sum_u 1/s^2`.
 
-The deficit is a factor `sqrt(log n)/log log n`, and it is **the same `sqrt(log n)`** that
-separates the known bound `n/sqrt(log n)` from the conjectured `n`. The constraint binds at
-`m = Theta(n/sqrt(log n))`: pointwise analysis can carry the process to the alteration
-threshold and no further.
-
-Direct simulation of the process agrees quantitatively: `max_v d_2^+ / mean_v d_2^+` is
-1.73–2.20 (not `1+o(1)`), and the excess over the mean is `Theta(n)` times the predicted
-number of exceptional steps `2 log n/log log n` — measured 4.70 / 5.56 / 6.74 against
-predicted 5.84 / 6.14 / 6.47 at `n = 64, 128, 256`.
-
-**4. The reduction that follows (Proposition 3).** Since `d_2` is consumed only as a global
-average, as a local average over `Theta(d_l(v))` vertices, and as a crude step-size cap, the
-per-vertex condition can be dropped. Three of the four replacement conditions clear the union
-bound with large margins (`exp(-Omega(n))` or better). One does not close.
-
-## What remains
-
-A single obligation, stated in `HANDOFF.md`: **the exceptional vertices and the vertices that
-join `v` in the evolving 2-graph are produced by the same short-primitive-direction lines, and
-the sign of that correlation is undetermined.** A first-moment estimate has a margin of
-`Theta(sigma log n)`; correlation could eat it.
-
-## Strongest objection tested, and how it was resolved
-
-The truncation-plus-weighted-hazard scheme (the session's own second candidate) closes **in
-expectation** — the weighted cumulative hazard is `O(log log n)` against a budget of order
-`sqrt(log n)`. The objection is that expectation control is not survival: the number of
-exceptional steps must also concentrate. It does not, and the deficit is exactly
-`sqrt(log n)/log log n`. Resolving that objection is what produced Theorem 2, by turning the
-failed positive attempt into a lower bound on the failure probability.
-
-A second objection, found in self-review, was a genuine defect in the first written proof: the
-jump count `g` had been taken as the whole trajectory in jump units rather than the tolerance
-in jump units. Corrected; the corrected statement is strictly stronger.
+A second objection, caught in self-review: a fitting error of my own briefly made
+`sd_y(A) = Theta(n^3)` rather than the true `Theta(n^2 log^2 n)` — the two differ by a factor
+4 at `n <= 64` — which would have made the averaged programme look dead. Caught by computing
+`sd/mean`, which is scale-free and came out flat at 0.22.
 
 ## Paper potential
 
-**Not yet.** Theorem 2 is a barrier for one hypergraph, conditional on an unproved survival
-hypothesis, with novelty plausible but unverified (Guo–Warnke, arXiv:2104.07854, was not read
-in full). If (H-surv) is discharged and the novelty check completed, it would be a short,
-honest note: *"the random greedy independent set process on the isosceles hypergraph cannot be
-analysed by pointwise dynamic concentration"* — of interest to people working on the
-differential-equation method, not a result about `C(n)`. If obligation (Q) is also settled,
-the picture changes completely and the target `C(n) = Omega(n)` becomes reachable.
+**Not yet.** Theorem 2 is conditional on (H-surv) and its novelty is plausible but not
+verified. Lemma D is elementary and no novelty is claimed for it. If (H-surv) is discharged,
+Theorem 2 plus Lemmas D and C would be a short honest note — *"the random greedy independent
+set process on the isosceles hypergraph cannot be analysed pointwise, but can be analysed on
+average, and here is the exact logarithm that separates the two"* — of interest to people
+working on the differential-equation method, not a result about `C(n)`. If (Q2) is also
+settled, the picture changes and `C(n) = Omega(n)` becomes reachable.
 
 ## Files
 
-`THEOREM_CONTRACT.md` · `THEOREM_AND_PROOF.md` · `ATTACK_LOG.md` · `LITERATURE_NOTES.md` ·
-`CLAIM_REGISTRY.md` · `CHECKPOINT.md` · `HANDOFF.md` · `experiments/`
+`THEOREM_CONTRACT.md` · `THEOREM_AND_PROOF.md` (Parts I–V) · `ATTACK_LOG.md` (A1–A12) ·
+`LITERATURE_NOTES.md` · `CLAIM_REGISTRY.md` · `CHECKPOINT.md` · `HANDOFF.md` · `experiments/`
+(`s8_tail.c`, `s8_proc.c`, `s8_joint.c`)
 
 ---
 
 ## 中文说明（给工程背景的读者）
 
-**问题。** 在 `n×n` 的方格点阵里，最多能挑出多少个点，使得任意三点都不构成等腰三角形？
-记作 `C(n)`。目前只知道 `C(n)` 至少是 `n/√(log n)` 量级，大家猜真相是 `n` 量级——差的正好
-是一个 `√(log n)` 因子。学界公认的攻法是"随机贪心"：随便挑一个点，把所有会和它凑成等腰
-三角形的点删掉，再挑下一个，如此反复。
+**问题。** `n×n` 格点里最多挑多少点不出等腰三角形，记 `C(n)`。已知至少 `n/√(log n)`，猜是
+`n`——差一个 `√(log n)`。标准攻法是随机贪心。
 
-**这一轮做了什么。** 分析这种贪心算法的标准工具（Bennett–Bohman 定理）要求：**每一个**
-点在每一步的"剩余可用邻居数" `d_2(v)` 都必须紧贴理论曲线，误差要小到可以忽略。本轮证明了
-**这个要求对这个格点问题是错的**——不是难证，是本来就不成立。
+**上一轮的结论。** 分析工具要求「**每一个**点的可用邻居数 `d_2(v)` 都紧贴理论曲线」，这一轮
+之前已证明这个要求对格点问题**本身就是错的**（偶尔来一个"大单"占掉某人 `n` 小时，而均值只有
+`log n`；`n²` 个人里总有人连吃几单）。所以只能改用「平均量」。
 
-**打个比方。** 想象你在管一家有 `n²` 个员工的公司，你想保证"每个人的工时都不超过均值的
-1.01 倍"。平时大家每天工作量差不多（均值 `log n` 小时）。但偶尔会来一个"大单"，一来就占掉
-某些人 `n` 小时——相当于均值的 `n/log n` 倍。大单虽然稀少，但公司有 `n²` 个人，只要有**一个**
-人连着接到几个大单，你的保证就破了。算一下：你能容忍的大单额度只有约 `√(log n)` 单，而要让
-`n²` 个人**全都**不超标，你需要容忍约 `log n / log log n` 单。**两者差了 `√(log n) / log log n`
-倍——而且这个 `√(log n)`，和上面那个没证出来的 `√(log n)` 是同一个东西。**
+**这一轮回答了唯一剩下的问题：那些"接到大单的人"和"某人的同组同事"，是不是同一批？**
 
-计算机模拟完全印证了这一点：最忙的那个人的工作量确实是平均值的 1.7–2.2 倍，而且超出的部分
-正好等于"预测的大单数 × 每单 `n` 小时"。
+**答案：是，而且是最严重的那种。** 举个最小的例子：`v=(0,0)`、`y=(2,0)`，那么 `x` 轴上所有
+`u=(2k,0)` 同时满足「`u` 和 `v` 关系密切」且「选中 `y` 会给 `u` 一个 `n` 量级的大单」。也就是
+说，**选一个点，就同时给 `Θ(n)` 个人发大单，而这 `Θ(n)` 个人恰好都是 `v` 的核心同事。** 所以
+任何假设"互相独立"或"负相关"的论证都是错的。
 
-**所以下一步该怎么走。** 既然"逐个人都达标"做不到，就别要求它。仔细查了原证明后发现：证明
-里其实**从来没有真正用到单个人的工时**，只用到了「全公司平均」和「某个人周围一圈人的平均」。
-这两个平均量的波动小得多，都能轻松满足要求。本轮把问题化简到了**唯一一件还没证的事**：接到
-大单的人，和"某个特定员工的同组同事"，是不是由同一批原因决定的（在格点里，就是同一批"短方向
-的直线"）。如果它们的相关性方向对我们有利，`C(n) = Ω(n)` 就通了；这一步本轮没做出来。
+**但——这一轮也证明了这种聚集是有上限的，而且上限正好够用。** 关键量是
+`A(v,y) = Σ_u codeg(v,u)·codeg(u,y)`。粗暴估计给 `n³·log n`，真值是 `54n³`——**正好小一个
+对数**。证明只有三行：关键在于「距离尺度为 `s` 的点有多少个」这个计数**与 `s` 无关**，于是
+`Σ 1/s²` 收敛（而 `Σ 1/s` 发散），Cauchy–Schwarz 把两个发散的和配成一个收敛的和。
 
-**结论摆明了讲：`C(n)` 的下界这一轮没有改进，仍然是 `n/√(log n)`。** 得到的是一个诊断——
-证明了一整类做法为什么走不通、差多少，以及唯一剩下的那道关卡是什么。
+**这一个对数，正好就是平均量比逐点量多出来的余量。** 逐点量差 `√(log n)/log log n`，平均量
+反过来富余 `σ√(log n)`。差别整整一个 `log n`，来源就是上面那条引理。
+
+**剩下的唯一一件事：** `l=2` 那一半。选中 `y` 时新加入 `v` 的 `Θ(n)` 个邻居，恰好是**一条直线
+上的点**（`v` 和 `y` 的垂直平分线）。要证的是这条线上的点不会系统性地都是"接了大单的人"。
+余量很宽（只要他们的偏差是典型大小，哪怕全部同号也够用），所以这是一道明确的题，不是死路。
+
+**结论直说：`C(n)` 的下界这一轮仍然没有改进，还是 `n/√(log n)`；还不能发论文。** 得到的是一条
+无条件的新引理（Lemma D）、一个条件性的障碍定理，以及一道被削到只剩一行几何的最后关卡。

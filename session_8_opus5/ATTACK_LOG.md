@@ -139,3 +139,106 @@ by anything proved here. Stated precisely in `HANDOFF.md`.
 
 Two substantive revisions of the candidate theorem were used (A1 -> A4 -> Proposition 3),
 which is the budget the contract allows. The session stops here rather than opening a third.
+
+---
+
+# Closure pass (continuation)
+
+## A9. Claim-safety audit of Theorem 2
+
+Question asked: is Theorem 2 a new theorem, a corrected obstruction lemma, a conditional
+theorem, or a heuristic supported by computation?
+
+**Answer: a conditional obstruction theorem.** Precisely:
+
+- Its proof is complete and self-contained **given (H-surv)**, which is *assumed*, not proved
+  (registry B1). So it is not unconditional.
+- It is not a heuristic: the probability of the bad event is bounded **from below** by an
+  explicit Binomial-domination argument, and the two inputs (Lemma 1(b): `|A_v| >= (n-1)/2`
+  with `codeg >= n-1` and disjoint completion sets; Lemma 1(d): `D = O(n^2 log n)`) are
+  proved. The finite-`n` tables corroborate the mechanism; nothing rests on them.
+- It is not a theorem *about `C(n)`*. It says nothing about the isosceles problem; it says
+  that one method cannot be applied to it. "Obstruction lemma" is the honest label, and its
+  scope must always be quoted with the strategy it rules out (registry B4).
+- Novelty: the specific competitor named in the plan (Guo–Warnke) has now been read at
+  theorem level and does **not** contain either a relaxation of BB's hypotheses or a barrier
+  statement (see LITERATURE_NOTES). Novelty is therefore `PLAUSIBLE` with one named
+  competitor eliminated — still not `VERIFIED`, since the search was not exhaustive.
+
+**Wording that is permitted:** "conditional obstruction theorem for the random greedy process
+on `H_n`". **Wording that is not:** "new grid theorem", "new theorem about `C(n)`".
+
+## A10. Third candidate: reduce (Q) to a deterministic lattice sum — SUCCEEDED for `l = 3`
+
+The obligation was stated as a vague correlation question. The first move was to make it
+deterministic. Writing `W_l(v,i) = sum_u m_v(u) e(u,i)`, the martingale increment for `l = 3`
+is exactly `A(v,y) - E_y[A]` with
+
+```
+   A(v,y) = sum_u codeg(v,u)·codeg(u,y),
+```
+
+a two-step codegree-weighted path count. **The whole correlation question for `l = 3` is a
+deterministic statement about `A`.** This removed the vagueness and made the question finite.
+
+**The clustering is real (§5.1).** `v = (0,0)`, `y = (2,0)`: every `u = (2k,0)` has
+`codeg(v,u) >= n-1` and `codeg(u,y) >= n-1`, so `A(v,y) = Theta(n^3)` against a mean of
+`Theta(n^2 log^2 n)`. One chosen vertex gives `Theta(n)` vertices a `Theta(n)` jump, and all
+of them are top-weighted in `v`'s neighbourhood. **Answer to the posed question: positively
+clustered, maximally so; not negatively associated.** Any independence or negative-association
+argument is dead.
+
+**But the clustering is bounded (Lemma D).** `A(v,y) <= 54 n^3` uniformly, versus the trivial
+`Delta_2 · 2D = O(n^3 log n)`. The proof is three lines: the count
+`#{u : s(v,u) = s} <= 16n` is **uniform in `s`**, so `sum_u 1/s(v,u)^2 <= 16n·pi^2/6 < 27n`
+converges, and Cauchy–Schwarz pairs the two divergent harmonic sums `sum_u 1/s(v,u)`,
+`sum_u 1/s(u,y)` into one convergent one.
+
+**The saved logarithm is exactly the one needed.** Feeding `J = O(n^3)` and
+`Var <= (max A)(mean A) = O(n^5 log^2 n)` into Freedman gives failure probability
+`exp(-Omega(sigma^2 log^{3/2} n))`, which beats `N^{-1-c}` once `sigma >> (log n)^{-1/4}`.
+Compare Theorem 2: pointwise budget `sigma sqrt(log n)` against requirement
+`log n / log log n` (deficit `sqrt(log n)/log log n`); averaged budget
+`sigma log^{3/2} n` against requirement `~log n` (surplus `sigma sqrt(log n)`). **The averaged
+statistic beats the pointwise one by exactly a factor `log n`, and Lemma D is the source.**
+
+Had the trivial bound `O(n^3 log n)` been the truth, `d/(2J) = O(sigma sqrt(log n))` and the
+averaged programme would have died with the pointwise one. It came down to one logarithm.
+
+## A11. Fourth candidate: the same for `l = 2` — FAILED, and the failure is located
+
+`W_2(v) = sum_{u ~_2 v} e(u)` against budget `Theta(sigma n^2 log n)`. Two increment terms:
+
+| term | bound | verdict |
+|---|---|---|
+| existing neighbours move, `sum_{u ~_2 v} codeg(u,y)` | worst case is the `d_2(v)` vertices smallest in `s(·,y)`; by the same uniform count `K = Theta(sqrt(log n))` and the sum is `O(n^2 log log n)` | **fine**, surplus `sigma log n/log log n` |
+| new neighbours arrive, `sum_{u in P(v,y)} e(u)`, `\|P\| <= Delta_2 = n(1+o(1))` | crude cap gives `n^2 log n` — short by `1/sigma`; *typical* excesses give `n^2 (log n)^{1/4}` even fully aligned — fine | **open** |
+
+Attempted rescues of the second term, both refuted:
+
+- **Cauchy–Schwarz against the global scalar `sum_u e(u)^2 = O(n^4 sqrt(log n))`** gives
+  `sqrt(|P|)(sum e^2)^{1/2} = n^{5/2}(log n)^{1/4}`, short by `sqrt(n)`. It assumes worst-case
+  alignment, which is exactly what has to be excluded, so it cannot work.
+- **Reuse of Lemma D.** Lemma D bounds a `codeg(v,·)`-weighted sum. `P(v,y)` is an
+  **unweighted** set of `Theta(n)` collinear points (the lattice points of the perpendicular
+  bisector of `v,y`). The weights are what made Cauchy–Schwarz converge; without them the
+  argument gives nothing.
+
+So the obligation has moved from "some unspecified correlation" to a single sharp question
+about **one line**: are the lattice points of the perpendicular bisector of `v,y`
+systematically exceptional? By §5.1 exceptional vertices are produced along
+short-primitive-direction lines, and a bisector is such a line, so the mechanism for positive
+correlation is present and undismissed.
+
+Two substantive attempts were used in this pass (A10 succeeded for `l = 3`, A11 failed for
+`l = 2`). That is the budget. The session stops, and the blocker is archived in `HANDOFF.md`
+rather than replaced by another exponent fit.
+
+## A12. What was deliberately not done
+
+- No new simulation campaign. `s8_joint.c` computes a deterministic quantity `A(v,y)` exactly
+  at `n = 32,48,64`; it was used to identify the dependence structure (and to catch a fitting
+  error of my own: `sd_y(A)` is `Theta(n^2 log^2 n)`, not `Theta(n^3)` — the two are within a
+  factor 4 at these `n`, and mistaking them would have made the averaged programme look dead).
+- No attempt to discharge (H-surv), which remains the assumption under Theorem 2.
+- No attempt on the tolerance-compounding constant of §5.5 line 6.

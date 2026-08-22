@@ -52,6 +52,28 @@ arXiv:2601.14465. Read for the problem statement and the state of the art.
   *"most probably a linear lower bound can be achieved via the random independent set
   process."* Session 8 is an attempt on exactly that route.
 
+### Guo–Warnke, *On the power of random greedy algorithms*
+arXiv:2104.07854. **Read at theorem level (closure pass).** This was the one named gap in the
+first pass's novelty check; it is now closed.
+
+- The paper's three numbered results are **Theorem 1.1** (`f_eta(n) = Theta(max{log n,
+  n^{2 eta - 1}})`, on induced bipartite subgraphs in triangle-free graphs), **Theorem 1.2**
+  (`W(r,k) = Omega(k^{r-1}/(log k)^{r-2})`, van der Waerden numbers), and **Theorem 1.3** (a
+  semi-random construction of triangle-free graphs with
+  `c sqrt(beta n log n) <= delta(G_n) <= Delta(G_n) <= C sqrt(beta n log n)`).
+- It contains **no general theorem** about the random greedy independent set process on
+  `r`-uniform hypergraphs with parameters `Delta_2, Delta_l, Gamma`. The results are
+  problem-specific; for the `r`-AP process it *relies on* Bennett–Bohman rather than
+  generalising it. So it does **not** relax BB's pair hypotheses, and the polynomial-versus-
+  logarithmic slack question is untouched there.
+- It contains **no impossibility or barrier statement** about pointwise dynamic concentration
+  failing; it demonstrates concentration succeeding, by the differential-equation method and
+  supermartingale arguments.
+
+**Consequence for novelty.** The named competitor is eliminated for both Theorem 2 (barrier)
+and Lemma D. Novelty is still recorded as `PLAUSIBLE`, not `VERIFIED`, because the search was
+not exhaustive — but the one specific risk flagged in the first pass is gone.
+
 ### Croot–Mao–Pohoata–Sheffer–Yip, *A combinatorial large sieve for Sidon sets, distances, and norm forms*
 arXiv:2606.17487 (submitted 16 Jun 2026, revised 24 Jun 2026). Abstract and result statement read.
 
@@ -69,9 +91,6 @@ arXiv:2606.17487 (submitted 16 Jun 2026, revised 24 Jun 2026). Abstract and resu
   removes the `q^{-C}` compounding of tolerances. Session 8's Theorem 2 is proved assuming
   **no** compounding, so self-correction cannot evade it. Statement not opened; not cited for
   anything load-bearing.
-- Guo–Warnke, *On the power of random greedy algorithms*, arXiv:2104.07854 — abstract only;
-  full text not obtained. Could not confirm or exclude any relaxation of BB's pair
-  hypotheses there. **This is the main gap in the novelty check.**
 - Warnke, *A gentle introduction to the differential equation method and dynamic
   concentration*, arXiv:2007.01994 — background.
 - Rödl–Sárközy–Zhao, *Independence number of hypergraphs under degree conditions* — listed by
@@ -84,8 +103,9 @@ arXiv:2606.17487 (submitted 16 Jun 2026, revised 24 Jun 2026). Abstract and resu
 Searched for published work relaxing BB's pair conditions from polynomial (`D^{1/2-eps}`) to
 logarithmic slack, and for a negative/barrier result of Theorem 2's shape. Nothing found.
 
-**But this is a negative search result over three queries, not an exhaustive check.** In
-particular Guo–Warnke was not read in full. The correct status is:
+**This is a negative search result over four sources, not an exhaustive check.** The one
+named risk (Guo–Warnke) has now been read at theorem level and eliminated. The correct status
+is:
 
 - Lemma 1: elementary; parts (`max collinear points in a grid`, `r_2(d) = d^{o(1)}`,
   `sum_{d<=X} r_2(d)^2 ≍ X log X`) are classical. `D(H_n) = Theta(n^2 log n)` is very likely
@@ -93,6 +113,13 @@ particular Guo–Warnke was not read in full. The correct status is:
   `D` and the size of `Delta_2` are the same harmonic sum.
 - Theorem 2: **novelty PLAUSIBLE, not verified.** It is a barrier specific to `H_n`, of a
   shape (heavy-tailed increment vs. union bound over vertices) that is natural enough that it
-  may exist somewhere in the `H`-free-process literature for a different hypergraph.
-- Proposition 3: a reduction, not a theorem about `C(n)`. Its components are routine given
-  Lemma 1.
+  may exist somewhere in the `H`-free-process literature for a different hypergraph. Its
+  correct label is *conditional obstruction theorem* (conditional on (H-surv)), never "new
+  grid theorem".
+- Lemma D (`sum_u codeg(v,u) codeg(u,y) = O(n^3)` uniformly): elementary. Every ingredient is
+  standard — `r_2(d) = d^{o(1)}`, the count of primitive directions, the count of lattice
+  points on a line, Cauchy–Schwarz. Only the assembly, and the observation that it is exactly
+  one logarithm below the trivial bound and that this logarithm is what the averaged
+  programme needs, belong to this session. **No novelty claimed.**
+- Proposition 3 and Lemma C: a reduction and its `l = 3` half, not theorems about `C(n)`.
+  Their components are routine given Lemma 1 and Lemma D.
