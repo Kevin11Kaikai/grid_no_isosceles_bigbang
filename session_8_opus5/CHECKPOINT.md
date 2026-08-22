@@ -4,7 +4,7 @@
 All new work under `session_8_opus5/`. Nothing outside it modified. Master untouched.
 Pre-existing uncommitted work in `long_horizon_run_*` and `ROUND3_TOURNAMENT/` left alone.
 
-**Verdict:** `CONDITIONAL_BRIDGE_ONLY` (revised in the closure pass) — see `README.md`.
+**Verdict:** `NEW_INTERMEDIATE_GRID_THEOREM` (revised in the Q2 pass) — see `README.md`.
 
 ---
 
@@ -99,3 +99,28 @@ and `z` arbitrary — the line-restricted analogue of Lemma D — then exchange 
 
 Do **not** open a new candidate theorem. The two-revision budget for this pass is spent
 (A10 succeeded for `l = 3`, A11 failed for `l = 2`).
+
+---
+
+# Q2 pass update
+
+**Verdict:** `CONDITIONAL_BRIDGE_ONLY` -> **`NEW_INTERMEDIATE_GRID_THEOREM`**. Obligation (Q2)
+is discharged by Lemma E + Theorem F (Part VI), proved on the stopped filtration using only
+condition (P), Lemma 1(c) and Lemmas D/E. `C(n)` is unchanged at `Omega(n/sqrt(log n))`.
+
+- Added `THEOREM_AND_PROOF.md` Part VI; `ATTACK_LOG.md` A13–A16; `CLAIM_REGISTRY.md` E1–E3,
+  F1–F5, H1–H6, K1–K2; `experiments/s8_line.c`. `HANDOFF.md` and `README.md` rewritten.
+- Corrections: Prop 3(3a) is unconditional (registry P1 amended, H5); (H-surv) gates only the
+  barrier (H4) and is not dischargeable by line-averaging (Corollary 6.1).
+- **Single remaining obligation: (K1)** — `c_{2,2->1} <= C_{2,2->1}` for `H_n`.
+- Reproduce: `gcc -O2 -o s8_line s8_line.c -lm && ./s8_line 384`.
+
+## Exact next action
+
+(K1), following the Theorem F template: the jump is `Theta(n)` when the chosen vertex lies on a
+line common to `v` and `v'`; the hazard of that is `Theta((log n)^{-1/2})`; the budget is
+`C_{2,2->1}/n = Theta(sqrt(log n)/polylog)` against a requirement `log n/log log n`. That is
+the Theorem 2 shape, so it may fail. Then compute the tolerance-compounding constant of
+§5.5 line 6, which fixes the horizon.
+
+The two-attempt budget for this pass is spent (A14 succeeded, A15 failed).

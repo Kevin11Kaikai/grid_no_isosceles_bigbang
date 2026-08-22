@@ -242,3 +242,110 @@ rather than replaced by another exponent fit.
   factor 4 at these `n`, and mistaking them would have made the averaged programme look dead).
 - No attempt to discharge (H-surv), which remains the assumption under Theorem 2.
 - No attempt on the tolerance-compounding constant of §5.5 line 6.
+
+---
+
+# Q2 pass
+
+## A13. Reformulating Q2 so that no cancellation is needed — the move that unlocked it
+
+The obligation as first written asked for a **signed** bound on `sum_{u ∈ P(v,y)} e(u,i)`.
+That formulation is unattackable, for a reason worth recording: `P(v,y)` is a *random*,
+`F_i`-measurable subset of the deterministic line `L(v,y)` (only the points that still survive
+and whose 3-edge has not yet shrunk join `v`), and cancellation in a sum over `L` says nothing
+about cancellation in a sum over a random subset of `L`.
+
+The fix is to notice that §5.4 never needed cancellation: with typical excesses the bound holds
+**even with all signs aligned**, with a surplus of `sigma (log n)^{3/4}`. So the target becomes
+`sum_{u ∈ L} |e(u,i)|`, and by Cauchy–Schwarz that follows from a bound on the **per-line
+second moment** `Phi_L = sum_{u ∈ L} e(u,i)^2`, which is subset-monotone and hence immune to
+the random-subset problem.
+
+Route 2 of the old handoff (a per-line second moment) is therefore the right route, and route 1
+(exchange sums, bound `sum_{u∈L} codeg(u,z)`) supplies its key input rather than being an
+alternative to it.
+
+## A14. First attempt: Lemma E and the `Phi_L` supermartingale — SUCCEEDED
+
+**Lemma E** (proved, §6.1): for a line `L` and `z ∈ [n]^2`,
+```
+   z ∉ L :  sum_{u∈L} codeg(u,z) = O(n^{3/2})        z ∈ L :  sum_{u∈L} codeg(u,z) = O(n^2/s_L^2).
+```
+Proof: on a line the count `a_s = #{u ∈ L : s(u,z) = s}` obeys `a_s <= 8s` (the `8s` lines
+through `z` of scale `s` each meet `L` once, provided `z ∉ L`) *and* `sum_s a_s <= n`.
+Maximising `sum_s a_s/s` under both gives `8S + n/S <= 6 sqrt(n)` at `S = sqrt(n)/2`. Off the
+line the total is a factor `sqrt(n)` below the trivial `|L| Delta_2 = n^2`.
+
+Case (b) is not improvable and is exactly the feared event: **if the chosen `y_j` lies on the
+bisector line, every one of the `Theta(n)` collinear points of `L` receives `Theta(n)` new
+2-edges in a single step.** The proof handles it not by bounding the step but by *counting*
+such steps.
+
+**Theorem F** (proved, §6.2): `Phi_L(i) <= kappa sigma^2 n^3 log^2 n` for every line and every
+`i <= T`, whenever `sigma = o(1)` and `sigma log log n -> ∞`. Ingredients:
+
+- Doob decomposition; the compensator is `O(n^3 sqrt(log n)/q)`, a factor
+  `sigma^2 (log n)^{3/2}` below the budget.
+- **Stopped filtration** (6.4): before `T_Phi`, `sum_{u∈L}|e| <= sqrt(|L| d_Phi)`. This is what
+  keeps the line-step jump at `sigma n^3 log n` instead of the crude `max|e| · n^2 = n^3 log n`;
+  without it the jump budget would be `Theta(1)` and the whole argument would fail.
+- Ordinary steps: Freedman with `C_ord = O(sigma n^{11/4} log n)` and
+  `V_qv = O(sigma^2 n^6 (log n)^{5/2}/q)`; margins `n^{1/4}` and `(log n)^{1/2}` respectively.
+- Line steps: jump budget `g_L = Theta(sigma log n)` (6.7) against hazard
+  `mu_L = Theta((log n)^{-1/2})` (6.8); exponent `Theta(sigma log n log log n)`, clearing the
+  `O(n^4)`-line union bound by `log log n`.
+
+Crucially Theorem F uses **neither (H-surv) nor the crude cap** — only the vertex-count
+condition (P), Lemma 1(c), and Lemmas D/E.
+
+**Counterexample search** (`experiments/s8_line.c`, all lines of primitive direction of
+sup-norm `<= 6`, `n = 48,96,192,384`): `max sum/n^{3/2}` = 3.11, 2.72, 2.32, 1.97, decreasing;
+`max sum·s_L^2/n^2` = 1.66, 1.27, 1.03, 0.89, bounded. **No counterexample.** Computation was
+used only for this search, as instructed.
+
+## A15. Second attempt: substituting Theorem F into (H-surv) — FAILED, and the failure is exact
+
+(H-surv) needs a fixed line to retain a constant fraction of its vertices, which requires the
+**line-average of `d_2` to be `O(s_2)`**, i.e. `sum_{u∈L}|e(u,i)| = O(n^2 sqrt(log n))`.
+Theorem F gives `Theta(sigma n^2 log n)` — too large by `Theta(sigma sqrt(log n))`, and
+shrinking `sigma` to repair it contradicts `sigma log log n -> ∞`. **The gap is exactly
+`sqrt(log n)`.**
+
+Trying instead the *signed* line-sum (which needs only constant relative accuracy) runs
+straight into Lemma E(b): one line step moves it by `Theta(n^2)`, so the jump budget is
+`Theta(eps sqrt(log n))` against hazard `Theta((log n)^{-1/2})`, exponent
+`Theta(sqrt(log n) log log n)` — short of `log N` by `sqrt(log n)/log log n`, **the identical
+deficit and mechanism as Theorem 2**.
+
+> **Corollary 6.1.** Averaging over a *line* does not help: the line-average of `d_2` obeys the
+> same barrier as the pointwise value. A line is the extremal set for this, because the
+> exceptional jumps are coherent along lines (Lemma E(b)); what saved the `l = 3` case in
+> Part V was that the weights `codeg(v,·)` spread mass over the whole grid.
+
+**But the substitution turned out to be unnecessary,** and this is the pass's second finding.
+Re-auditing the uses of (H-surv):
+
+- Theorem 2 (barrier) genuinely needs it — a *lower* bound on the failure probability needs a
+  *lower* bound on the hazard. Theorem 2 is negative and feeds nothing.
+- The crude cap Prop 3(3a) does **not**: an upper bound on the failure probability needs an
+  *upper* bound on the hazard, supplied by Lemma 1(c) and (P). Redone, it gives
+  `max_v d_2(v) <= K s_2` with `K = Theta(sqrt(log n)/log log n)` and exponent
+  `Theta(log n log log n)`. **Registry entry P1 is corrected from CONDITIONAL to PROVED.**
+- Prop 3(3b) is superseded by Lemma C, a Freedman estimate assuming no independence.
+- Theorem F does not use it.
+
+So (H-surv) is now only a hypothesis of the barrier, and Corollary 6.1 says the line technology
+cannot discharge it. Theorem 2 stays conditional permanently; the positive programme loses
+nothing.
+
+Two serious attempts were used (A14 succeeded, A15 failed). The budget is spent; the session
+stops and archives the blocker rather than opening a third direction.
+
+## A16. What is deliberately not done
+
+- No literature reopened; the novelty status of Part V and VI is inherited unchanged.
+- No simulation campaign. `s8_line.c` computes a deterministic quantity exactly and was run
+  only as a counterexample search against Lemma E.
+- `c_{2,2->1}` for `H_n` was not verified; it is the single remaining obligation.
+- The tolerance-compounding constant of §5.5 line 6 was not computed, so no horizon and no
+  bound for `C(n)` is stated.

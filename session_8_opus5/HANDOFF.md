@@ -1,90 +1,90 @@
 # Handoff — the single remaining mathematical obligation
 
-The obligation carried by the first pass ("do the exceptional vertices and `v`'s neighbours
-cluster?") has been **answered and half-closed**. It is superseded by the statement below.
+Obligation **(Q2)** carried by the previous pass is **discharged** (Theorem F, §6.2). The
+obligation below replaces it.
 
-- The `l = 3` half is **closed**: Lemma D (`A(v,y) <= 54 n^3` uniformly) and Lemma C
-  (Freedman gives failure probability `exp(-Omega(sigma^2 log^{3/2} n))`).
-- The clustering question itself is **settled**: the vertices are **positively clustered**,
-  maximally so — negative association is false for `H_n` (§5.1, explicit counterexample).
-  What saves the `l = 3` case is not absence of clustering but a *quantitative cap* on it.
-- The `l = 2` half is what remains, and it reduces to one line of the grid.
+Resolved along the way, and not to be reopened:
+
+- **(Q2), the `l = 2` neighbourhood average** — closed by Lemma E + Theorem F, using only the
+  vertex-count condition (P), Lemma 1(c) and Lemmas D/E. It needs neither (H-surv) nor the
+  crude cap.
+- **(H-surv)** — shown to be (i) *not dischargeable* by line-averaging, since the line-average
+  of `d_2` obeys the identical Theorem 2 barrier (Corollary 6.1), and (ii) *not needed* by the
+  positive programme, since it gates only the barrier Theorem 2. Theorem 2 is therefore
+  permanently a conditional obstruction theorem.
+- **Prop 3(3a), the crude cap** — corrected to unconditional, `K = Theta(sqrt(log n)/log log n)`.
+- **Prop 3(3b)'s independence audit** — superseded by Lemma C, a Freedman estimate assuming no
+  independence.
 
 ---
 
 ## The obligation
 
-> **(Q2) The bisector line is not systematically exceptional.**
+> **(K1) The dynamic pair codegree of `H_n`.**
 >
-> Let `e(u,i) := d_2(u,i) - s_2(t_i)` and, for `v ∈ V(i)` and `y ∈ V(i)`, let
+> `c_{2,2->1}(v,v',i)` is the number of vertices `y` such that `{v,y}` and `{v',y}` are both
+> size-2 edges of `H(i)` — i.e. the codegree of the pair `v,v'` in the evolving 2-graph
+> `G(i)`. It is the **unique genuinely dynamic pair condition at `r = 3`** (§1.1): the other
+> three instances are monotone and hence deterministic. Bennett–Bohman require
 > ```
->    P(v,y)  :=  { u : {v,u,y} ∈ H(i) }
+>       c_{2,2->1}(v,v',i)  <=  C_{2,2->1}  =  8 D^{1/2 - eps + 2 lambda}
 > ```
-> be the set of vertices that become 2-neighbours of `v` when `y` is chosen. Up to
-> `n^{o(1)}` exceptions, `P(v,y)` is exactly the set of lattice points of `[n]^2` on the
-> **perpendicular bisector of `v` and `y`**, and `|P(v,y)| = codeg(v,y)`, which can be as
-> large as `Delta_2 = n(1+o(1))`.
+> for all pairs and all `i <= T`, and consume it at ind.tex lines 1018 (drift error) and 1180
+> (step size).
 >
-> Show that, for every `v` and every `i <= T`,
+> Show that `H_n` satisfies it with a polylogarithmic rather than polynomial `eps`, i.e.
 > ```
->    | sum_{u ∈ P(v,y)}  e(u,i) |   <=   c · |P(v,y)| · s_2(t_i) / (log n)^{3/4}
+>       max_{v,v'}  c_{2,2->1}(v,v', i)   =   O( s_2(t_i) / (log n)^{A} )
 > ```
-> uniformly in `y`, with failure probability `o(N^{-1})`.
+> for a suitable constant `A > 0`, for all `i <= T`, with failure probability `o(N^{-2})`.
 
-Substituting this into §5.4(ii) closes condition (A2) for `l = 2`, hence Proposition 3, and
-then the arithmetic of §5.5 applies.
+## Why it is the right last question, and how it sits
 
-## Why it is not free, and why it is not hopeless
+- **Scale.** `G(i)` has `N = n^2` vertices and degrees `d_2 ≈ s_2 = Theta(n sqrt(log n))`, so
+  the *typical* pair codegree is `s_2^2/N = Theta(log n)` — a factor `n/polylog` below what is
+  required. The obligation is therefore about the **maximum**, not the average, and there is a
+  factor `n/polylog` of room.
+- **Why it is not automatic.** `y` is a common 2-neighbour of `v` and `v'` exactly when there
+  are chosen vertices `z, z'` with `{v,y,z}` and `{v',y,z'}` edges of `H`. By Lemma E(b) a
+  single chosen `z` can create `Theta(n)` 2-edges at `v` along one line, and a single `z'` can
+  do the same at `v'`; if those two lines coincide, `c_{2,2->1}(v,v')` jumps by `Theta(n)` in
+  one step. That is the same coherent-line mechanism as everywhere else in this session, and
+  it must be counted, not bounded stepwise.
+- **The expected shape of the proof.** Identical to Theorem F: the jump is `Theta(n)` and
+  occurs only when the chosen vertex lies on a line common to `v` and `v'`; the hazard of that
+  is `Theta((log n)^{-1/2})` per line; and the budget `C_{2,2->1}/n = Theta(sqrt(log n)/polylog)`
+  must beat `log N / log log n`. **Note this is `Theta(sqrt(log n))` against
+  `log n/log log n` — the Theorem 2 shape.** Whether it clears therefore depends on the
+  precise power of `log n` available in `C_{2,2->1}`, and on whether the two lines can in fact
+  coincide often. **This may well fail.** It is the last thing that could.
 
-**Not free.** `P(v,y)` is a set of `Theta(n)` *collinear* points. By §5.1, exceptional
-vertices in `H_n` are produced along short-primitive-direction lines — and a perpendicular
-bisector is precisely such a line. So the set being summed and the set of large values are
-again generated by one mechanism, exactly as in the `l = 3` case. The correlation is present
-and undismissed.
+## What closing it would give — and what would still be missing
 
-**Not hopeless.** The margin is generous. With *typical* excesses
-`|e(u)| = Theta(sd(e)) = Theta(n (log n)^{1/4})`, the sum is at most `n^2 (log n)^{1/4}`
-**even if every sign aligns**, against a budget `Theta(sigma n^2 log n)`. So the statement
-fails only if the points of one bisector line are driven to the *crude cap*
-`s_2 (log n)^{1/2}`, a factor `(log n)^{1/4}` above typical, coherently. What is needed is a
-bound at the level of `(log n)^{-3/4}` of the crude cap — not the absence of correlation.
-
-## Two routes, in order of promise
-
-1. **A weighted analogue of Lemma D.** Lemma D worked because `codeg(v,·)` supplied weights,
-   which turned two divergent sums `sum_u 1/s(v,u)` into one convergent `sum_u 1/s(v,u)^2`.
-   `P(v,y)` is unweighted, so that exact move is unavailable — but `e(u,i)` itself is not
-   arbitrary: `e(u,i) = sum_{j<i} (codeg(u,y_j) - E)`. Substituting and exchanging sums gives
-   ```
-      sum_{u ∈ P(v,y)} e(u,i)  =  sum_{j<i} [ sum_{u ∈ P(v,y)} codeg(u,y_j)  -  E ],
-   ```
-   and the inner sum is a **line-restricted** codegree sum. Bounding
-   `sum_{u ∈ L} codeg(u,z)` for `L` a line and `z` arbitrary is the natural analogue of
-   Lemma D, and the counting input (`#{u : s(u,z) = s} <= 16n`, uniform in `s`) restricted to
-   a line is a finite Diophantine count. This is the recommended attack.
-2. **A second-moment bound on `sum_{u ∈ L} e(u)^2` for lines `L`.** Weaker but perhaps
-   easier: it suffices to show no *line* carries an unusual share of the global scalar
-   `sum_{u ∈ V} e(u)^2 = O(n^4 sqrt(log n))`. Cauchy–Schwarz against the *global* scalar is
-   short by `sqrt(n)` (§5.4), but against a *per-line* scalar it would be tight enough.
-
-## Also outstanding, but smaller and not the obligation
-
-- **(H-surv)**, the survival hypothesis under Theorem 2 (registry B1). Should follow from
-  BB's own condition (P) plus a second-moment argument; not attempted.
-- The independence audit in Proposition 3(3b) (registry P3).
-- The tolerance-compounding constant `C` at §5.5 line 6, which fixes whether the conditional
-  horizon is `sqrt(log log log n)` or something else.
+If (K1) closes, every condition of the substituted stopping time is verified, and the horizon
+is set by the tolerance-compounding constant `C` of §5.5 line 6:
+```
+   sigma = sigma_{3,0} = (log log n)^{-1/2}          (meets every sigma-constraint, K2)
+   compounding:  sigma_{3,0} e^{C t^2}/q^2 = o(1)    =>  t = O( sqrt(log log log n) )
+   horizon:      m = t N / D^{1/2}                    =  Theta( n sqrt(log log log n)/sqrt(log n) )
+```
+That constant `C` is a **computation** with BB's error-function system (ind.tex lines 981–998),
+not an open question, but it has not been carried out and it fixes the answer. Until both are
+done, the proved bound stays `C(n) = Omega(n/sqrt(log n))`.
 
 ## What must not be redone
 
-- Do **not** revisit "average `Delta_2` or `Gamma`" (ATTACK_LOG A1; registry S1/S2/S5).
-- Do **not** try to rescue the *pointwise* `d_2` condition by any means — sharper inequality,
-  different `zeta`/`delta`, longer or shorter horizon, self-correction, sparsification.
-  Theorem 2 bounds the bad event's probability from below (ATTACK_LOG A5).
-- Do **not** assume independence or negative association of `{e(u)}`. Both are false (§5.1).
-- Do **not** use Cauchy–Schwarz against the global `sum_u e(u)^2`; it is short by `sqrt(n)`
-  and cannot be repaired, because it presumes the worst alignment (§5.4).
+- Do **not** revisit "average `Delta_2` or `Gamma`" (registry S1/S2/S5).
+- Do **not** try to rescue the *pointwise* `d_2` condition, by any means (registry B4,
+  ATTACK_LOG A5). And do **not** try to rescue it by averaging over a **line**: Corollary 6.1
+  shows the line-average obeys the same barrier.
+- Do **not** assume independence or negative association of `{e(u)}`; both are false (§5.1).
+- Do **not** use Cauchy–Schwarz against the *global* `sum_u e(u)^2`; short by `sqrt(n)` (§5.4).
+  Against the *per-line* second moment it works, and that is Theorem F.
+- Do **not** attempt a *signed* bound on `sum_{u ∈ P(v,y)} e(u)`. `P(v,y)` is a random subset
+  of the bisector line, so cancellation over the line implies nothing about it. The absolute
+  value plus the per-line second moment is the correct formulation (§6.0).
 - Do **not** infer asymptotics from the finite-`n` tables. In this session a fitting error of
-  exactly that kind (`sd_y(A) = Theta(n^3)` rather than `Theta(n^2 log^2 n)`; the two differ
-  by a factor 4 at `n <= 64`) briefly made the averaged programme look dead. It was caught by
-  computing `sd/mean`, which is scale-free.
+  exactly that kind — `sd_y(A) = Theta(n^3)` rather than the true `Theta(n^2 log^2 n)`, the two
+  differing by a factor 4 at `n <= 64` — briefly made the averaged programme look dead. It was
+  caught by computing `sd/mean`, which is scale-free and came out flat at 0.22. **Keep using
+  scale-free ratios when checking a fit.**
